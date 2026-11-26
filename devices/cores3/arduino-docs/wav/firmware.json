@@ -22,38 +22,38 @@
   },
   "files": {
     "wav.ino.bin": {
-      "path": ".local/firmware/cores3/wav/wav.ino.bin",
-      "storage": "local",
-      "sha256": "559fa2d8d59336a8b5b5f38e6c75b24f96757fa8f34c6a310bc34551abb0dfb0",
-      "bytes": 628496
+      "path": "devices/cores3/arduino-docs/wav/wav.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "cc6b687a01c0779f21c71bb0fa45b442a873f0d047f1a89b82932a42c3a66a3e",
+      "bytes": 628064
     },
     "wav.ino.merged.bin": {
-      "path": ".local/firmware/cores3/wav/wav.ino.merged.bin",
-      "storage": "local",
-      "sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+      "path": "devices/cores3/arduino-docs/wav/wav.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "e8f36a06ed036feec277119ecebb10e2443772a9c910323457ee2ea63c2a8d95",
       "bytes": 16777216
     },
     "wav.ino.bootloader.bin": {
-      "path": ".local/firmware/cores3/wav/wav.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/wav/wav.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
       "bytes": 20112
     },
     "wav.ino.partitions.bin": {
-      "path": ".local/firmware/cores3/wav/wav.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/wav/wav.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
       "bytes": 3072
     },
     "wav.ino.elf": {
-      "path": ".local/firmware/cores3/wav/wav.ino.elf",
-      "storage": "local",
-      "sha256": "06b5b2e0e2913a69f5031767a37153cae636f3cb99a65d9553379f035f2d8f03",
-      "bytes": 13218912
+      "path": "devices/cores3/arduino-docs/wav/wav.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "03e62f6e74d0fb5c99f2443a985c95cd5beafefcaf0f87f1704e6130899e7db5",
+      "bytes": 13165344
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -155,7 +155,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cores3"
     },
-    "checker_report": "evidence/cores3/verdicts.md",
+    "checker_report": "evidence/cores3/path-clean-verdicts.md",
     "runner": "tools/run_all_esp32sim.sh",
     "captures": [
       {
@@ -186,15 +186,117 @@
             "bytes": 633
           },
           ".err": {
-            "sha256": "a1d8a14b667652470e1e03c2ad2aae3aedee22e535c95643ba4c97c08cf65c6f",
-            "bytes": 1715
+            "sha256": "285af6c7f5dd5e2b9fa7183baff275dc58d453198fe75ab5ffb37b7c2b4030cd",
+            "bytes": 1620
           },
           ".wav": {
             "sha256": "7e111cf456a0d033064426e84d2f326a60bdac61a7aeda73a99c7961d3511f19",
             "bytes": 1283666
           }
-        }
+        },
+        "exit_code": 0
       }
-    ]
+    ],
+    "firmware_sha256": "e8f36a06ed036feec277119ecebb10e2443772a9c910323457ee2ea63c2a8d95"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+    "compile_record": "devices/cores3/arduino-docs/wav/compile-result.json",
+    "files": {
+      "wav.ino.bin": {
+        "path": ".local/firmware/cores3/wav/wav.ino.bin",
+        "storage": "local",
+        "sha256": "559fa2d8d59336a8b5b5f38e6c75b24f96757fa8f34c6a310bc34551abb0dfb0",
+        "bytes": 628496
+      },
+      "wav.ino.merged.bin": {
+        "path": ".local/firmware/cores3/wav/wav.ino.merged.bin",
+        "storage": "local",
+        "sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+        "bytes": 16777216
+      },
+      "wav.ino.bootloader.bin": {
+        "path": ".local/firmware/cores3/wav/wav.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+        "bytes": 20112
+      },
+      "wav.ino.partitions.bin": {
+        "path": ".local/firmware/cores3/wav/wav.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+        "bytes": 3072
+      },
+      "wav.ino.elf": {
+        "path": ".local/firmware/cores3/wav/wav.ino.elf",
+        "storage": "local",
+        "sha256": "06b5b2e0e2913a69f5031767a37153cae636f3cb99a65d9553379f035f2d8f03",
+        "bytes": 13218912
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "SD reads, 12 s of 440/660 Hz audio and USB completion marker",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cores3"
+      },
+      "checker_report": "evidence/cores3/verdicts.md",
+      "runner": "tools/run_all_esp32sim.sh",
+      "captures": [
+        {
+          "name": "wav",
+          "max_seconds": 14.0,
+          "extra_args": [
+            "--sd-rw",
+            "sd-wav.img",
+            "--wav",
+            "wav.wav",
+            "--console",
+            "usb"
+          ],
+          "script_lines": {},
+          "injected_media": {
+            "sd-wav.img": {
+              "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+              "bytes": 67108864
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "f8d17286e18a6d8260b0c3601a0ee6fa76ad811287cf8dc4e23ca4abdb835454",
+              "bytes": 230723
+            },
+            ".log": {
+              "sha256": "8a2dab872c82595e444ed4c0eab67facc68de9b2eaac8cd217d0290ca6694d65",
+              "bytes": 633
+            },
+            ".err": {
+              "sha256": "a1d8a14b667652470e1e03c2ad2aae3aedee22e535c95643ba4c97c08cf65c6f",
+              "bytes": 1715
+            },
+            ".wav": {
+              "sha256": "7e111cf456a0d033064426e84d2f326a60bdac61a7aeda73a99c7961d3511f19",
+              "bytes": 1283666
+            }
+          }
+        }
+      ]
+    }
   }
 }

@@ -22,38 +22,38 @@
   },
   "files": {
     "mic.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/mic/mic.ino.bin",
-      "storage": "local",
-      "sha256": "2cffff328536cfef43500039d8f897c7b2c7f29098fd41ef942c35d3fb1562d8",
-      "bytes": 589696
+      "path": "devices/cardputer-adv/arduino-docs/mic/mic.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "477f5bf82ea8b3c8eb54154477a789b05dc2bd0e04681a6c0dff0269f58f886f",
+      "bytes": 589344
     },
     "mic.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/mic/mic.ino.merged.bin",
-      "storage": "local",
-      "sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+      "path": "devices/cardputer-adv/arduino-docs/mic/mic.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "9a1e1a36dd4499d992254824e85a956229874c0a279146c43e599657d829bcd5",
       "bytes": 4194304
     },
     "mic.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/mic/mic.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/mic/mic.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "mic.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/mic/mic.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/mic/mic.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "mic.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/mic/mic.ino.elf",
-      "storage": "local",
-      "sha256": "68cfcc123006d399ec84ef0a6c88e5680ab73afb0a9d44eb18e4fc2c63e0504a",
-      "bytes": 13014180
+      "path": "devices/cardputer-adv/arduino-docs/mic/mic.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "7c4f6ee10e2d342dcbf7a414e0434e05246813f8543a49e539f79901456fb3fe",
+      "bytes": 12962532
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -183,10 +183,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "4e93bbcea031c8f9c0a0bcb4de93734f0baacf2654e4a78920d2ea91f04805c1",
-            "bytes": 1034
+            "sha256": "862b27ac6bb9e7d4e373a727731931dfa4b66ced7eb99f050db7314875e63888",
+            "bytes": 1002
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "mic-silence",
@@ -212,14 +213,15 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "5e5e3a0a6bd2e45fb60fae3f13f27d02b0bad96fe809244f2d858a1a233270b2",
-            "bytes": 1037
+            "sha256": "11608cb9c188e7ae57253e4b541d49803572e3a38f8843dc0d44d665c704c021",
+            "bytes": 1005
           },
           ".wav": {
             "sha256": "e14266a9eec75466039ea69e3a1f3e77ae327713a50c5efb25c0e2c793317f0e",
             "bytes": 408044
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "mic-play",
@@ -251,10 +253,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "8f44a1540f3943d6f13c774e48c05a6b0eba5c615b2123d41e97809ada1ee7fb",
-            "bytes": 1106
+            "sha256": "fa73cd95bf04161cf92e5fcf52dbf02c92726015aaf85a205f84330a83614134",
+            "bytes": 1074
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "mic",
@@ -288,15 +291,218 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "487f90983cda532e8670de58ee1e360adeb9557714a3dd72532b9ae8c4b8b2ac",
-            "bytes": 1241
+            "sha256": "1bb55f9b6070db20677b3676a1bab89957626eabfea00bc18d7dd740be03e44c",
+            "bytes": 1177
           },
           ".wav": {
             "sha256": "a97425c482bce7c5e34e1dcc23f277e479425c6321b213666b2d764e905ea90c",
             "bytes": 348206
           }
-        }
+        },
+        "exit_code": 0
       }
-    ]
+    ],
+    "firmware_sha256": "9a1e1a36dd4499d992254824e85a956229874c0a279146c43e599657d829bcd5"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+    "compile_record": "devices/cardputer-adv/arduino-docs/mic/compile-result.json",
+    "files": {
+      "mic.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/mic/mic.ino.bin",
+        "storage": "local",
+        "sha256": "2cffff328536cfef43500039d8f897c7b2c7f29098fd41ef942c35d3fb1562d8",
+        "bytes": 589696
+      },
+      "mic.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/mic/mic.ino.merged.bin",
+        "storage": "local",
+        "sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+        "bytes": 4194304
+      },
+      "mic.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/mic/mic.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "mic.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/mic/mic.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "mic.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/mic/mic.ino.elf",
+        "storage": "local",
+        "sha256": "68cfcc123006d399ec84ef0a6c88e5680ab73afb0a9d44eb18e4fc2c63e0504a",
+        "bytes": 13014180
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "REC reacts to input, G0 replays 733.0 Hz then REC resumes",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "mic-rec",
+          "max_seconds": 3.9,
+          "extra_args": [
+            "--mic-wav",
+            "0:mic-input.wav"
+          ],
+          "script_lines": {},
+          "injected_media": {
+            "mic-input.wav": {
+              "sha256": "8edb149078893052dafb83d800871c514884108a8e3ddcdb3bb96c5868ccef94",
+              "bytes": 408044
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "7aa598272c6a0be98f168012fccb027ee0bf6b304045bd49e0bb205bc34a8e8e",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "4e93bbcea031c8f9c0a0bcb4de93734f0baacf2654e4a78920d2ea91f04805c1",
+              "bytes": 1034
+            }
+          }
+        },
+        {
+          "name": "mic-silence",
+          "max_seconds": 3.9,
+          "extra_args": [
+            "--mic-wav",
+            "0:mic-silence.wav"
+          ],
+          "script_lines": {},
+          "injected_media": {
+            "mic-silence.wav": {
+              "sha256": "e14266a9eec75466039ea69e3a1f3e77ae327713a50c5efb25c0e2c793317f0e",
+              "bytes": 408044
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "4bcee36eef30079b2993d46c1da147b3e550fcea3c75ed6b1cddb7c094d64ec0",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "5e5e3a0a6bd2e45fb60fae3f13f27d02b0bad96fe809244f2d858a1a233270b2",
+              "bytes": 1037
+            },
+            ".wav": {
+              "sha256": "e14266a9eec75466039ea69e3a1f3e77ae327713a50c5efb25c0e2c793317f0e",
+              "bytes": 408044
+            }
+          }
+        },
+        {
+          "name": "mic-play",
+          "max_seconds": 5.5,
+          "extra_args": [
+            "--mic-wav",
+            "0:mic-input.wav",
+            "--script",
+            "mic.txt"
+          ],
+          "script_lines": {
+            "mic.txt": [
+              "4.5 press g0 150"
+            ]
+          },
+          "injected_media": {
+            "mic-input.wav": {
+              "sha256": "8edb149078893052dafb83d800871c514884108a8e3ddcdb3bb96c5868ccef94",
+              "bytes": 408044
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "16f77a3c652ed63e8d54a6fcb84685fd877f0af999f677c1f7e407c2f3cd8af7",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "8f44a1540f3943d6f13c774e48c05a6b0eba5c615b2123d41e97809ada1ee7fb",
+              "bytes": 1106
+            }
+          }
+        },
+        {
+          "name": "mic",
+          "max_seconds": 10.0,
+          "extra_args": [
+            "--mic-wav",
+            "0:mic-input.wav",
+            "--script",
+            "mic.txt",
+            "--wav",
+            "mic.wav"
+          ],
+          "script_lines": {
+            "mic.txt": [
+              "4.5 press g0 150"
+            ]
+          },
+          "injected_media": {
+            "mic-input.wav": {
+              "sha256": "8edb149078893052dafb83d800871c514884108a8e3ddcdb3bb96c5868ccef94",
+              "bytes": 408044
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "91ee8b215eae424abf15ea876e910a0ac2614a4e1faaffd2b6978ac733baf67b",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "487f90983cda532e8670de58ee1e360adeb9557714a3dd72532b9ae8c4b8b2ac",
+              "bytes": 1241
+            },
+            ".wav": {
+              "sha256": "a97425c482bce7c5e34e1dcc23f277e479425c6321b213666b2d764e905ea90c",
+              "bytes": 348206
+            }
+          }
+        }
+      ]
+    }
   }
 }

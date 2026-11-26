@@ -6,7 +6,7 @@ set -euo pipefail
 binary=${1:?simulator binary required}
 out=${2:?new output directory required}
 archive=$(cd "$(dirname "$0")/.." && pwd)
-firmware=${CORES3_FIRMWARE_DIR:-"$archive/.local/firmware/cores3"}
+firmware=${CORES3_FIRMWARE_DIR:-"$archive/devices/cores3/arduino-docs"}
 inputs=${CORES3_FIXTURES:-"$archive/fixtures"}
 wifi=${CORES3_RTC_WIFI:-'ssid=***********,psk=***********'}
 : "${ESP32SIM_ROM_DIR:?set ESP32SIM_ROM_DIR to the directory containing esp32s3_rev0_rom.elf}"

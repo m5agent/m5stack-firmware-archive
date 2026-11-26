@@ -22,38 +22,38 @@
   },
   "files": {
     "quickstart_display.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.bin",
-      "storage": "local",
-      "sha256": "6aa248f302be638b0c1ecc0913a6b7caea524fb283b808edbf4c07ed8924dd60",
-      "bytes": 552976
+      "path": "devices/cardputer-adv/arduino-docs/quickstart-display/quickstart_display.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "85f06a9271f96c59bb9326b8cf7818c5d988653f10f25dfb3fee5aad13661f9c",
+      "bytes": 552624
     },
     "quickstart_display.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.merged.bin",
-      "storage": "local",
-      "sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+      "path": "devices/cardputer-adv/arduino-docs/quickstart-display/quickstart_display.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "db48605950abbd5423b62d36712dff9ccbe7db9f4997b9a88a6cf8c87111899e",
       "bytes": 4194304
     },
     "quickstart_display.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/quickstart-display/quickstart_display.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "quickstart_display.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/quickstart-display/quickstart_display.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "quickstart_display.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.elf",
-      "storage": "local",
-      "sha256": "37f8b5ed0b7fba25a02b2922d52cc2eb7eb38cd940f9c0763483377f7b0ce40b",
-      "bytes": 12731824
+      "path": "devices/cardputer-adv/arduino-docs/quickstart-display/quickstart_display.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "78320d9e1874cfa6476497b62cc9c73dc9b023f92d7e0dcc4a47c9399744a7fa",
+      "bytes": 12680348
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -167,7 +167,7 @@
         "injected_media": {},
         "output_hashes": {
           ".png": {
-            "sha256": "1e9c0cbfcce2192bffa90f6400ffe992ae8dad9d334ed17782b61538ccca7919",
+            "sha256": "1fd12abc13714d496d03dd4129b73e6a25e59eb0a3c4df5e74878f2f9d7cb927",
             "bytes": 97408
           },
           ".log": {
@@ -175,10 +175,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "f8475e738ecbf8d80a163f4779610b51fc195e4cfbadcadda9023cddaf5fd361",
-            "bytes": 1022
+            "sha256": "61ec69e8d190ab98ba92b43463cd4ac900e3119af5af23fe33fd73ec7b412aa1",
+            "bytes": 990
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "quickstart-display",
@@ -188,7 +189,7 @@
         "injected_media": {},
         "output_hashes": {
           ".png": {
-            "sha256": "79f7941f525861cd27affacfc69591e737f6e300951ab243132f597914e533b0",
+            "sha256": "0ab17f989b1d16298f28eb8ce4cd9f6f1b39d8f9a6a0722abf214cc19fab9b3d",
             "bytes": 97408
           },
           ".log": {
@@ -196,14 +197,121 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "c3eb59e6bbe189727bb5879a042ce78792b834030f3c678762243eb898cd8cbb",
-            "bytes": 1022
+            "sha256": "828c27120501ac66734afd04f4c2ecd61027db5a2d0b049983b954fb557dab36",
+            "bytes": 991
           }
-        }
+        },
+        "exit_code": 0
       }
-    ]
+    ],
+    "firmware_sha256": "db48605950abbd5423b62d36712dff9ccbe7db9f4997b9a88a6cf8c87111899e"
   },
   "library": "M5Cardputer",
   "library_revision": "2d4fa6646e4e5b47e0af96214b003aa7b15b8d81",
-  "library_example": "examples/Basic/display/display.ino"
+  "library_example": "examples/Basic/display/display.ino",
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+    "compile_record": "devices/cardputer-adv/arduino-docs/quickstart-display/compile-result.json",
+    "files": {
+      "quickstart_display.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.bin",
+        "storage": "local",
+        "sha256": "6aa248f302be638b0c1ecc0913a6b7caea524fb283b808edbf4c07ed8924dd60",
+        "bytes": 552976
+      },
+      "quickstart_display.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.merged.bin",
+        "storage": "local",
+        "sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+        "bytes": 4194304
+      },
+      "quickstart_display.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "quickstart_display.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "quickstart_display.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.elf",
+        "storage": "local",
+        "sha256": "37f8b5ed0b7fba25a02b2922d52cc2eb7eb38cd940f9c0763483377f7b0ce40b",
+        "bytes": 12731824
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "colored circles and rectangles change from 3 to 8 s",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "quickstart-display-before",
+          "max_seconds": 3,
+          "extra_args": [],
+          "script_lines": {},
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "1e9c0cbfcce2192bffa90f6400ffe992ae8dad9d334ed17782b61538ccca7919",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "f8475e738ecbf8d80a163f4779610b51fc195e4cfbadcadda9023cddaf5fd361",
+              "bytes": 1022
+            }
+          }
+        },
+        {
+          "name": "quickstart-display",
+          "max_seconds": 8,
+          "extra_args": [],
+          "script_lines": {},
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "79f7941f525861cd27affacfc69591e737f6e300951ab243132f597914e533b0",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "c3eb59e6bbe189727bb5879a042ce78792b834030f3c678762243eb898cd8cbb",
+              "bytes": 1022
+            }
+          }
+        }
+      ]
+    }
+  }
 }

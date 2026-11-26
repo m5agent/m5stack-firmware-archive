@@ -22,38 +22,38 @@
   },
   "files": {
     "button.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/button/button.ino.bin",
-      "storage": "local",
-      "sha256": "5bf2522e74bf5271df1b6f993ca7b029a6ccc1535bc928689b54aab0fe37bf41",
-      "bytes": 554640
+      "path": "devices/cardputer-adv/arduino-docs/button/button.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "1168d2e01c8811f33f35cfc7d0e0413447371d5a28b58ad811d7cbbf93bd8517",
+      "bytes": 554288
     },
     "button.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/button/button.ino.merged.bin",
-      "storage": "local",
-      "sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+      "path": "devices/cardputer-adv/arduino-docs/button/button.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "00bd60f455a211d68b397e7008ff3c212acb420a0869e2deea5ee6d8ee601e2e",
       "bytes": 4194304
     },
     "button.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/button/button.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/button/button.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "button.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/button/button.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/button/button.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "button.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/button/button.ino.elf",
-      "storage": "local",
-      "sha256": "3ef769b073e04c346f299e34d7280c308922571c8697b6f99d8c546e8f5ed08b",
-      "bytes": 12719564
+      "path": "devices/cardputer-adv/arduino-docs/button/button.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "906f7ebb6e8e1752a380f3d0095adcc820d94675fa984dd0c4548a5553bca887",
+      "bytes": 12668140
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -184,11 +184,106 @@
             "bytes": 667
           },
           ".err": {
-            "sha256": "cb4f38d7e6d82d826b62d5cd5f19e58296fbc37aeb3b383b0b825adda79415b1",
-            "bytes": 1225
+            "sha256": "2b991b671da4edd7f0f518a4a2ceed0d4d0f77ba0351df39cc9a8deb13b4b75b",
+            "bytes": 1193
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "00bd60f455a211d68b397e7008ff3c212acb420a0869e2deea5ee6d8ee601e2e"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+    "compile_record": "devices/cardputer-adv/arduino-docs/button/compile-result.json",
+    "files": {
+      "button.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/button/button.ino.bin",
+        "storage": "local",
+        "sha256": "5bf2522e74bf5271df1b6f993ca7b029a6ccc1535bc928689b54aab0fe37bf41",
+        "bytes": 554640
+      },
+      "button.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/button/button.ino.merged.bin",
+        "storage": "local",
+        "sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+        "bytes": 4194304
+      },
+      "button.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/button/button.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "button.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/button/button.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "button.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/button/button.ino.elf",
+        "storage": "local",
+        "sha256": "3ef769b073e04c346f299e34d7280c308922571c8697b6f99d8c546e8f5ed08b",
+        "bytes": 12719564
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "three press/release pairs via numeric pin, btn and g0",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "button",
+          "max_seconds": 8.0,
+          "extra_args": [
+            "--script",
+            "button.txt"
+          ],
+          "script_lines": {
+            "button.txt": [
+              "2.0 press 0 150",
+              "3.0 press btn 150",
+              "4.0 press g0 150"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "fdeea095fb81bf634fe7e4d875b2a8d06dca2d547eca77ce5699dc43e13bd923",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "b8020830272a1c3f28cbf8cd26c8d1301a77ef30ebd2c0f8dbef69a5bc93ee2c",
+              "bytes": 667
+            },
+            ".err": {
+              "sha256": "cb4f38d7e6d82d826b62d5cd5f19e58296fbc37aeb3b383b0b825adda79415b1",
+              "bytes": 1225
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

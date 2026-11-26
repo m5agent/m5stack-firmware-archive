@@ -22,38 +22,38 @@
   },
   "files": {
     "keyboard.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.bin",
-      "storage": "local",
-      "sha256": "c7486bbf94df803061fab405d86a62d4b7f3038059dd7ff00ac0d65e49159134",
-      "bytes": 568880
+      "path": "devices/cardputer-adv/arduino-docs/keyboard/keyboard.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "b3831d6122b73a47e36010ff5cfd617971141e469ae4fe5f39f826aa501ff92d",
+      "bytes": 568528
     },
     "keyboard.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.merged.bin",
-      "storage": "local",
-      "sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf",
+      "path": "devices/cardputer-adv/arduino-docs/keyboard/keyboard.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ff5b8b152ba201852ded8684ca517bdf63ea155961ff99e9ff19fad11f4fcf78",
       "bytes": 4194304
     },
     "keyboard.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/keyboard/keyboard.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "keyboard.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/keyboard/keyboard.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "keyboard.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.elf",
-      "storage": "local",
-      "sha256": "c353e2b7a8f8d88eb3ea3ab8ad6881de4b7120041b6881f3bab1dcf8ab2a9d83",
-      "bytes": 12853640
+      "path": "devices/cardputer-adv/arduino-docs/keyboard/keyboard.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "bf13346709051d980cf9b5cd4e401ddc0f48300a68cbc54a3ab8d441cc652b24",
+      "bytes": 12802100
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -188,10 +188,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "dc00b4e22a7afd42880020796ca910a572c9ec330fb670c92cca03e9b38afb5f",
-            "bytes": 997
+            "sha256": "e870e0091403c5ab6bcd2e31be04def593ec48868cd7e26460fae7668e0e56c9",
+            "bytes": 964
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "keyboard",
@@ -222,10 +223,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "e78cc39ef585d98ed923a78a63d9acfc8bf1177885bd2203a15617149337a57a",
-            "bytes": 1320
+            "sha256": "67eccd88dd06b5aec650da11f4fa460871be67f3abc7c04ff5b85bb9a25ceb95",
+            "bytes": 1287
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "keyboard-chord",
@@ -257,11 +259,179 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "be41e7ac643421b2415e22442b028c8b0369daa7d11580a634c62b9e0d7bc94f",
-            "bytes": 1372
+            "sha256": "34847113d2eaed0cea557bfbde40d141ea156b3a85e4476f3960f508337a3dc7",
+            "bytes": 1339
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "ff5b8b152ba201852ded8684ca517bdf63ea155961ff99e9ff19fad11f4fcf78"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf",
+    "compile_record": "devices/cardputer-adv/arduino-docs/keyboard/compile-result.json",
+    "files": {
+      "keyboard.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.bin",
+        "storage": "local",
+        "sha256": "c7486bbf94df803061fab405d86a62d4b7f3038059dd7ff00ac0d65e49159134",
+        "bytes": 568880
+      },
+      "keyboard.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.merged.bin",
+        "storage": "local",
+        "sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf",
+        "bytes": 4194304
+      },
+      "keyboard.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "keyboard.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "keyboard.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/keyboard/keyboard.ino.elf",
+        "storage": "local",
+        "sha256": "c353e2b7a8f8d88eb3ea3ab8ad6881de4b7120041b6881f3bab1dcf8ab2a9d83",
+        "bytes": 12853640
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "space, Backspace and Enter through FIFO; Fn+Del deletes",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "keyboard-before",
+          "max_seconds": 1.8,
+          "extra_args": [
+            "--script",
+            "keyboard.txt"
+          ],
+          "script_lines": {
+            "keyboard.txt": [
+              "2.0 key a",
+              "2.3 key space",
+              "2.6 key b",
+              "2.9 key backspace",
+              "3.2 key c",
+              "3.5 key enter",
+              "4.0 key fn"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "add16a92ddbb2bf4d6cb5ef7fe3cd66588d9065c4fb1d0e780791ba94a491c1b",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "dc00b4e22a7afd42880020796ca910a572c9ec330fb670c92cca03e9b38afb5f",
+              "bytes": 997
+            }
+          }
+        },
+        {
+          "name": "keyboard",
+          "max_seconds": 8.0,
+          "extra_args": [
+            "--script",
+            "keyboard.txt"
+          ],
+          "script_lines": {
+            "keyboard.txt": [
+              "2.0 key a",
+              "2.3 key space",
+              "2.6 key b",
+              "2.9 key backspace",
+              "3.2 key c",
+              "3.5 key enter",
+              "4.0 key fn"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "f65750c4f55059b647d702fb036c2ac90b45d142f37a3f044552332bc38d5b94",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "e78cc39ef585d98ed923a78a63d9acfc8bf1177885bd2203a15617149337a57a",
+              "bytes": 1320
+            }
+          }
+        },
+        {
+          "name": "keyboard-chord",
+          "max_seconds": 5.0,
+          "extra_args": [
+            "--script",
+            "keyboard-chord.txt"
+          ],
+          "script_lines": {
+            "keyboard-chord.txt": [
+              "2.0 key a",
+              "2.3 key space",
+              "2.6 key b",
+              "2.82 key fn 250",
+              "2.9 key del 75",
+              "3.2 key c",
+              "3.5 key enter",
+              "4.0 key fn"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "971e6d80fc119416877eae6c26b8e0a3fcbc9ba994d6f87433b1da903f7e9c03",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "be41e7ac643421b2415e22442b028c8b0369daa7d11580a634c62b9e0d7bc94f",
+              "bytes": 1372
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

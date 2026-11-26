@@ -22,38 +22,38 @@
   },
   "files": {
     "button.ino.bin": {
-      "path": ".local/firmware/cores3/button/button.ino.bin",
-      "storage": "local",
-      "sha256": "5489ce900ea9b5eedc7960ec0a88c1236d6c1378aa86fd01caf8691c8f01b76b",
-      "bytes": 566384
+      "path": "devices/cores3/arduino-docs/button/button.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "0ec395db37df6334728d2f5713772b2fcc1ec459163e7e6db1046973dfa2c61f",
+      "bytes": 565952
     },
     "button.ino.merged.bin": {
-      "path": ".local/firmware/cores3/button/button.ino.merged.bin",
-      "storage": "local",
-      "sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+      "path": "devices/cores3/arduino-docs/button/button.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "58ea9e954d59f110737b02c776bfd290fe03f0e3d6dd51fc6a07607fcc16eb98",
       "bytes": 16777216
     },
     "button.ino.bootloader.bin": {
-      "path": ".local/firmware/cores3/button/button.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/button/button.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
       "bytes": 20112
     },
     "button.ino.partitions.bin": {
-      "path": ".local/firmware/cores3/button/button.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/button/button.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
       "bytes": 3072
     },
     "button.ino.elf": {
-      "path": ".local/firmware/cores3/button/button.ino.elf",
-      "storage": "local",
-      "sha256": "953a2e9350c14fc4d801f77796a0317fea44047d36e11a984de336fdac7f3a41",
-      "bytes": 12303572
+      "path": "devices/cores3/arduino-docs/button/button.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "7ed879559ec947ea3fe61753faccce7e96ba42a0eb0d2f24c89e18436405e431",
+      "bytes": 12260508
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -155,7 +155,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cores3"
     },
-    "checker_report": "evidence/cores3/verdicts.md",
+    "checker_report": "evidence/cores3/path-clean-verdicts.md",
     "runner": "tools/run_all_esp32sim.sh",
     "captures": [
       {
@@ -181,10 +181,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "137f92095e26022e868c854c2f3950f628fdb5c2c61ebf7602fd08719098c1c7",
-            "bytes": 1263
+            "sha256": "34d572e19db39ca34e54f617f1a58091bd43623932b1c795fa4a70bdd4c3a36b",
+            "bytes": 1231
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "button-before",
@@ -209,11 +210,132 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "26d27e83dd8ecae8a05eaeaf1a0a94846608b6a2a20775ece0a28bada34a5597",
-            "bytes": 1224
+            "sha256": "f2693176257fe8a3e96e35fb2806a403a7fcc7c9ce4ff850f912faed36adcfb8",
+            "bytes": 1192
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "58ea9e954d59f110737b02c776bfd290fe03f0e3d6dd51fc6a07607fcc16eb98"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+    "compile_record": "devices/cores3/arduino-docs/button/compile-result.json",
+    "files": {
+      "button.ino.bin": {
+        "path": ".local/firmware/cores3/button/button.ino.bin",
+        "storage": "local",
+        "sha256": "5489ce900ea9b5eedc7960ec0a88c1236d6c1378aa86fd01caf8691c8f01b76b",
+        "bytes": 566384
+      },
+      "button.ino.merged.bin": {
+        "path": ".local/firmware/cores3/button/button.ino.merged.bin",
+        "storage": "local",
+        "sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+        "bytes": 16777216
+      },
+      "button.ino.bootloader.bin": {
+        "path": ".local/firmware/cores3/button/button.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+        "bytes": 20112
+      },
+      "button.ino.partitions.bin": {
+        "path": ".local/firmware/cores3/button/button.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+        "bytes": 3072
+      },
+      "button.ino.elf": {
+        "path": ".local/firmware/cores3/button/button.ino.elf",
+        "storage": "local",
+        "sha256": "953a2e9350c14fc4d801f77796a0317fea44047d36e11a984de336fdac7f3a41",
+        "bytes": 12303572
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "250 ms key press displays Btn PWR",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cores3"
+      },
+      "checker_report": "evidence/cores3/verdicts.md",
+      "runner": "tools/run_all_esp32sim.sh",
+      "captures": [
+        {
+          "name": "button",
+          "max_seconds": 5.0,
+          "extra_args": [
+            "--script",
+            "button.txt"
+          ],
+          "script_lines": {
+            "button.txt": [
+              "3.0 pwrkey 250"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "a1e6764d39689d213ac0075a4ef73a821ba147973b233e00be512574228baa61",
+              "bytes": 230723
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "137f92095e26022e868c854c2f3950f628fdb5c2c61ebf7602fd08719098c1c7",
+              "bytes": 1263
+            }
+          }
+        },
+        {
+          "name": "button-before",
+          "max_seconds": 2.5,
+          "extra_args": [
+            "--script",
+            "button.txt"
+          ],
+          "script_lines": {
+            "button.txt": [
+              "3.0 pwrkey 250"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "2a1d83a5918f060852e70b1becb33a1e01ac4cfd1c02f4abefbad401bc83cf75",
+              "bytes": 230723
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "26d27e83dd8ecae8a05eaeaf1a0a94846608b6a2a20775ece0a28bada34a5597",
+              "bytes": 1224
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

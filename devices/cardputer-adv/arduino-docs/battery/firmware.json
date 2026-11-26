@@ -22,38 +22,38 @@
   },
   "files": {
     "battery.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/battery/battery.ino.bin",
-      "storage": "local",
-      "sha256": "8aa8a9caf550b0694d7489c429567cddd28f752a9152d2f8b83d0d04157ebf0b",
-      "bytes": 566928
+      "path": "devices/cardputer-adv/arduino-docs/battery/battery.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "8d4fa251f4872d7fc592f9769ca7f2cecb42c17eff8c3b3bf2fafeae3375de37",
+      "bytes": 566576
     },
     "battery.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/battery/battery.ino.merged.bin",
-      "storage": "local",
-      "sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b",
+      "path": "devices/cardputer-adv/arduino-docs/battery/battery.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ddcc555063a83c065b64abfcc720966d4f2117e44eb8a5403ec6a255530494e9",
       "bytes": 4194304
     },
     "battery.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/battery/battery.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/battery/battery.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "battery.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/battery/battery.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/battery/battery.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "battery.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/battery/battery.ino.elf",
-      "storage": "local",
-      "sha256": "95dd047cb7ab33d910cabbec68bf1da0d3e788dc59e654c4083c61091a587250",
-      "bytes": 12839352
+      "path": "devices/cardputer-adv/arduino-docs/battery/battery.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e87aa75e1581eef234c94ecb3391fe82928094614f4ab35b9a57ae728cf1192d",
+      "bytes": 12783104
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -182,10 +182,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "aa4037bed19e9495314c1a636919200f24f8350228fb6760c23565833d0fc674",
-            "bytes": 997
+            "sha256": "77a035c1551f53733e7a5225ce791f1b76b6a99451f64d5fabe8620f8bdece12",
+            "bytes": 965
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "battery",
@@ -210,11 +211,132 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "2f217491ad945788fe11f41b9ec2e208c2467c288d288c5d266288d455155594",
-            "bytes": 1034
+            "sha256": "7c371dff8053ae867bafefb5c5d6f012edf5d37a0454f936fa089c0e73bcc423",
+            "bytes": 1002
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "ddcc555063a83c065b64abfcc720966d4f2117e44eb8a5403ec6a255530494e9"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b",
+    "compile_record": "devices/cardputer-adv/arduino-docs/battery/compile-result.json",
+    "files": {
+      "battery.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/battery/battery.ino.bin",
+        "storage": "local",
+        "sha256": "8aa8a9caf550b0694d7489c429567cddd28f752a9152d2f8b83d0d04157ebf0b",
+        "bytes": 566928
+      },
+      "battery.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/battery/battery.ino.merged.bin",
+        "storage": "local",
+        "sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b",
+        "bytes": 4194304
+      },
+      "battery.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/battery/battery.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "battery.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/battery/battery.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "battery.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/battery/battery.ino.elf",
+        "storage": "local",
+        "sha256": "95dd047cb7ab33d910cabbec68bf1da0d3e788dc59e654c4083c61091a587250",
+        "bytes": 12839352
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "3700 mV / 50% to 4000 mV / 87% from ADC",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "battery-before",
+          "max_seconds": 3.0,
+          "extra_args": [
+            "--script",
+            "battery.txt"
+          ],
+          "script_lines": {
+            "battery.txt": [
+              "4.0 adc 10 2.0"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "7c7f2a5fdc0e665cbadcc1840ded3a922e1eab54e93f4785b1361b87955000c6",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "aa4037bed19e9495314c1a636919200f24f8350228fb6760c23565833d0fc674",
+              "bytes": 997
+            }
+          }
+        },
+        {
+          "name": "battery",
+          "max_seconds": 6.0,
+          "extra_args": [
+            "--script",
+            "battery.txt"
+          ],
+          "script_lines": {
+            "battery.txt": [
+              "4.0 adc 10 2.0"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "e899088cd445f767190990631ffea9eca104cb55b2c60ad1b1fe8e3ed228fdc7",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "2f217491ad945788fe11f41b9ec2e208c2467c288d288c5d266288d455155594",
+              "bytes": 1034
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

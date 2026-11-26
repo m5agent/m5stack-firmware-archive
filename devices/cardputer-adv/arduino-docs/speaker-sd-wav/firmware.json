@@ -22,38 +22,38 @@
   },
   "files": {
     "speaker_sd_wav.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.bin",
-      "storage": "local",
-      "sha256": "d56bcc552722bb6bf9fe4a9aa59b415597b55780a28a3af30bbf2b8a193a355d",
-      "bytes": 608240
+      "path": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/speaker_sd_wav.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "dee465bdbd1eb20108765442ac3523217a4ac4256990f23e0ba1b227f5a619c0",
+      "bytes": 607888
     },
     "speaker_sd_wav.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.merged.bin",
-      "storage": "local",
-      "sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b",
+      "path": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/speaker_sd_wav.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "b0b39a6f07f6c03027642c5876877d2a2e5546a86db92c8607ba93f75e8e1241",
       "bytes": 4194304
     },
     "speaker_sd_wav.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/speaker_sd_wav.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "speaker_sd_wav.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/speaker_sd_wav.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "speaker_sd_wav.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.elf",
-      "storage": "local",
-      "sha256": "cba55df3fc0307e4dae37b3842cc30228c18bb492df62b590d2fdb12ffe7d998",
-      "bytes": 12938148
+      "path": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/speaker_sd_wav.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "270c9300288aa15b4902141dc815a73b78cc2786ab82c5f0c8d435267996b611",
+      "bytes": 12889780
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -185,16 +185,18 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "33923a9e0c9445eab677a71d13f4f7558a5cedfc90ae4ed8e751e113f4462baa",
-            "bytes": 1472
+            "sha256": "784cbe6bf9183ecbef4ee57beb2ecf758c0459d13d8fee74affb6dfad5d1fb69",
+            "bytes": 1376
           },
           ".wav": {
-            "sha256": "8a602ca36bc6c43ea5169c7a35fb0a16aac809209fb53cf7551cd6b8f5eb9abb",
-            "bytes": 1235966
+            "sha256": "7d7f60d366ddb8fe63818fbbf59b1dec60230aa48097d203edf4c9a344bf1cd7",
+            "bytes": 1235968
           }
-        }
+        },
+        "exit_code": 0
       }
-    ]
+    ],
+    "firmware_sha256": "b0b39a6f07f6c03027642c5876877d2a2e5546a86db92c8607ba93f75e8e1241"
   },
   "library": "M5Unified",
   "library_tag": "0.2.8",
@@ -204,5 +206,103 @@
     "files": [
       "/sample-12s.wav"
     ]
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b",
+    "compile_record": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/compile-result.json",
+    "files": {
+      "speaker_sd_wav.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.bin",
+        "storage": "local",
+        "sha256": "d56bcc552722bb6bf9fe4a9aa59b415597b55780a28a3af30bbf2b8a193a355d",
+        "bytes": 608240
+      },
+      "speaker_sd_wav.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.merged.bin",
+        "storage": "local",
+        "sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b",
+        "bytes": 4194304
+      },
+      "speaker_sd_wav.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "speaker_sd_wav.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "speaker_sd_wav.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.elf",
+        "storage": "local",
+        "sha256": "cba55df3fc0307e4dae37b3842cc30228c18bb492df62b590d2fdb12ffe7d998",
+        "bytes": 12938148
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "SPI SD source and I2S1 capture agree for all 12 alternating 440/660 Hz seconds",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "speaker-sd-wav",
+          "max_seconds": 13.5,
+          "extra_args": [
+            "--sd",
+            "sd-wav.img",
+            "--wav",
+            "speaker-sd-wav.wav"
+          ],
+          "script_lines": {},
+          "injected_media": {
+            "sd-wav.img": {
+              "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+              "bytes": 67108864
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "fdeea095fb81bf634fe7e4d875b2a8d06dca2d547eca77ce5699dc43e13bd923",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "33923a9e0c9445eab677a71d13f4f7558a5cedfc90ae4ed8e751e113f4462baa",
+              "bytes": 1472
+            },
+            ".wav": {
+              "sha256": "8a602ca36bc6c43ea5169c7a35fb0a16aac809209fb53cf7551cd6b8f5eb9abb",
+              "bytes": 1235966
+            }
+          }
+        }
+      ]
+    }
   }
 }

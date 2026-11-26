@@ -22,38 +22,38 @@
   },
   "files": {
     "touch.ino.bin": {
-      "path": ".local/firmware/cores3/touch/touch.ino.bin",
-      "storage": "local",
-      "sha256": "fae38cc1d16ba051013d8468ec8b07776bc6a6abb1ee19e76f3d0625c9f2f770",
-      "bytes": 567680
+      "path": "devices/cores3/arduino-docs/touch/touch.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "acf4fe2758532c24601614b114f6482969217147246323732c542ef357cb4174",
+      "bytes": 567200
     },
     "touch.ino.merged.bin": {
-      "path": ".local/firmware/cores3/touch/touch.ino.merged.bin",
-      "storage": "local",
-      "sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+      "path": "devices/cores3/arduino-docs/touch/touch.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "a3b1a46231ade128d44c0f1394febcadcb236d86d68ab67008fc19ab4be48c27",
       "bytes": 16777216
     },
     "touch.ino.bootloader.bin": {
-      "path": ".local/firmware/cores3/touch/touch.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/touch/touch.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
       "bytes": 20112
     },
     "touch.ino.partitions.bin": {
-      "path": ".local/firmware/cores3/touch/touch.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/touch/touch.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
       "bytes": 3072
     },
     "touch.ino.elf": {
-      "path": ".local/firmware/cores3/touch/touch.ino.elf",
-      "storage": "local",
-      "sha256": "6c1b37c9acdfce1d759cf20bc3aa7bdbae4493ad09bacac4cdbab2efb1bf05be",
-      "bytes": 12315568
+      "path": "devices/cores3/arduino-docs/touch/touch.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "18d90b0ea99de3247d9d7e8df934a1b49b96ac12d28702d9fbcf2b826890af18",
+      "bytes": 12272424
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -155,7 +155,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cores3"
     },
-    "checker_report": "evidence/cores3/verdicts.md",
+    "checker_report": "evidence/cores3/path-clean-verdicts.md",
     "runner": "tools/run_all_esp32sim.sh",
     "captures": [
       {
@@ -184,10 +184,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "5274d4fa51444165d47091360d17925025fd15e933fe761c2fe4626585a5ef33",
-            "bytes": 1377
+            "sha256": "8a44be037f8dc45a2b741b59e7f01fabe6cbc6c60ef90644849ee20a98527679",
+            "bytes": 1345
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "touch-before",
@@ -215,11 +216,138 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "0390aaae86eb521687a86a78db976ab5c2bf666ea2cc87c748222eaabb242924",
-            "bytes": 1342
+            "sha256": "5c5605aefd7e81570a51391d48ef4e5ef407502404d4296cc34d4ee49fdac580",
+            "bytes": 1310
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "a3b1a46231ade128d44c0f1394febcadcb236d86d68ab67008fc19ab4be48c27"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+    "compile_record": "devices/cores3/arduino-docs/touch/compile-result.json",
+    "files": {
+      "touch.ino.bin": {
+        "path": ".local/firmware/cores3/touch/touch.ino.bin",
+        "storage": "local",
+        "sha256": "fae38cc1d16ba051013d8468ec8b07776bc6a6abb1ee19e76f3d0625c9f2f770",
+        "bytes": 567680
+      },
+      "touch.ino.merged.bin": {
+        "path": ".local/firmware/cores3/touch/touch.ino.merged.bin",
+        "storage": "local",
+        "sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+        "bytes": 16777216
+      },
+      "touch.ino.bootloader.bin": {
+        "path": ".local/firmware/cores3/touch/touch.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+        "bytes": 20112
+      },
+      "touch.ino.partitions.bin": {
+        "path": ".local/firmware/cores3/touch/touch.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+        "bytes": 3072
+      },
+      "touch.ino.elf": {
+        "path": ".local/firmware/cores3/touch/touch.ino.elf",
+        "storage": "local",
+        "sha256": "6c1b37c9acdfce1d759cf20bc3aa7bdbae4493ad09bacac4cdbab2efb1bf05be",
+        "bytes": 12315568
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "flick/release, coordinates and green point",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cores3"
+      },
+      "checker_report": "evidence/cores3/verdicts.md",
+      "runner": "tools/run_all_esp32sim.sh",
+      "captures": [
+        {
+          "name": "touch",
+          "max_seconds": 3.6,
+          "extra_args": [
+            "--script",
+            "touch.txt"
+          ],
+          "script_lines": {
+            "touch.txt": [
+              "3.0 touch 30 30 1",
+              "3.12 touch 70 70 1",
+              "3.17 touch 100 120 1",
+              "3.4 touch 100 120 0"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "9810b2becc2c9532945b01560b234ec4fb5cf1c6b5f29261aaa1288b8e3e9437",
+              "bytes": 230723
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "5274d4fa51444165d47091360d17925025fd15e933fe761c2fe4626585a5ef33",
+              "bytes": 1377
+            }
+          }
+        },
+        {
+          "name": "touch-before",
+          "max_seconds": 3.2,
+          "extra_args": [
+            "--script",
+            "touch.txt"
+          ],
+          "script_lines": {
+            "touch.txt": [
+              "3.0 touch 30 30 1",
+              "3.12 touch 70 70 1",
+              "3.17 touch 100 120 1",
+              "3.4 touch 100 120 0"
+            ]
+          },
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "52120b9dcd79b1748c84641303eaf09605b30263149007598dc0061c80ae8869",
+              "bytes": 230723
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "0390aaae86eb521687a86a78db976ab5c2bf666ea2cc87c748222eaabb242924",
+              "bytes": 1342
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

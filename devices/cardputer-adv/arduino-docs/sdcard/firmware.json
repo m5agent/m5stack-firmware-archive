@@ -22,38 +22,38 @@
   },
   "files": {
     "sdcard.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bin",
-      "storage": "local",
-      "sha256": "e9a60216b78fee271011228f5bf31d86dc8194f2e4ccecef4921caae4f255f90",
-      "bytes": 603856
+      "path": "devices/cardputer-adv/arduino-docs/sdcard/sdcard.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "81af1831ef43f42dea4e1cbe0d8854fd6908e221e827c1a4332732b8dcbd88ae",
+      "bytes": 603504
     },
     "sdcard.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.merged.bin",
-      "storage": "local",
-      "sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+      "path": "devices/cardputer-adv/arduino-docs/sdcard/sdcard.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "33ee9fc3513bc4e46cc5231b460ddca3e0966fbaa5874ceb8ec506a67fab8aaf",
       "bytes": 4194304
     },
     "sdcard.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/sdcard/sdcard.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "sdcard.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/sdcard/sdcard.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "sdcard.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.elf",
-      "storage": "local",
-      "sha256": "7775962f70336b5f05b43bfcd50d0d2783f9450773ccfcccc0f58266238f6603",
-      "bytes": 13405988
+      "path": "devices/cardputer-adv/arduino-docs/sdcard/sdcard.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "fb5f9a61c70b82c6d503cdf6048684bd28d18381c159efdd644046f3aedf4269",
+      "bytes": 13347540
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -183,10 +183,11 @@
             "bytes": 1754
           },
           ".err": {
-            "sha256": "8b4897e2a6baedef93c5483b3d1901ff6cc00d9b7740a99c1aebddbca80e3e85",
-            "bytes": 1330
+            "sha256": "328085b7ebd7166e671d03091bf1df87ad45d838db21bb6a63eeb917f0a85371",
+            "bytes": 1265
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "sdcard",
@@ -198,7 +199,7 @@
         "script_lines": {},
         "injected_media": {
           "sd-files.img": {
-            "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+            "sha256": "9365ea89f44f3034c73b1dac99a9d26c8a552f81425a9e29099a6199e8e345cc",
             "bytes": 67108864
           }
         },
@@ -212,11 +213,134 @@
             "bytes": 1930
           },
           ".err": {
-            "sha256": "bdc9c852dd25cafa112243e51f5b603fbadc150651d203c6fedd25e2df1b9b22",
-            "bytes": 1324
+            "sha256": "33811fd108318469e55262ab4f336f49727995134dd435d9a4f3b249675647ac",
+            "bytes": 1259
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "33ee9fc3513bc4e46cc5231b460ddca3e0966fbaa5874ceb8ec506a67fab8aaf"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+    "compile_record": "devices/cardputer-adv/arduino-docs/sdcard/compile-result.json",
+    "files": {
+      "sdcard.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bin",
+        "storage": "local",
+        "sha256": "e9a60216b78fee271011228f5bf31d86dc8194f2e4ccecef4921caae4f255f90",
+        "bytes": 603856
+      },
+      "sdcard.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.merged.bin",
+        "storage": "local",
+        "sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+        "bytes": 4194304
+      },
+      "sdcard.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "sdcard.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "sdcard.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.elf",
+        "storage": "local",
+        "sha256": "7775962f70336b5f05b43bfcd50d0d2783f9450773ccfcccc0f58266238f6603",
+        "bytes": 13405988
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "FAT32 create/append/rename/delete, 1 MiB read/write, on-disk data verified",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "sdcard-first",
+          "max_seconds": 12.0,
+          "extra_args": [
+            "--sd-rw",
+            "sd-files.img"
+          ],
+          "script_lines": {},
+          "injected_media": {
+            "sd-files.img": {
+              "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+              "bytes": 67108864
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "ea7b082e3dd9bbe16930305844ac89ef28fbdf68c7f0fc7a3ee511448ec255da",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "11959bba084f8710fc1eff768977f1f0a1132167f96f07013aebabb3fe914bec",
+              "bytes": 1754
+            },
+            ".err": {
+              "sha256": "8b4897e2a6baedef93c5483b3d1901ff6cc00d9b7740a99c1aebddbca80e3e85",
+              "bytes": 1330
+            }
+          }
+        },
+        {
+          "name": "sdcard",
+          "max_seconds": 8.0,
+          "extra_args": [
+            "--sd-rw",
+            "sd-files.img"
+          ],
+          "script_lines": {},
+          "injected_media": {
+            "sd-files.img": {
+              "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+              "bytes": 67108864
+            }
+          },
+          "output_hashes": {
+            ".png": {
+              "sha256": "9a6d9df0bb6ce9fe41d319906c744b4071e420d995b7fb82759ebdb4ac10d7a6",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "e1fe87446e72451541d19bf400afb1cf758703703eaf6860b2503a43a323c539",
+              "bytes": 1930
+            },
+            ".err": {
+              "sha256": "bdc9c852dd25cafa112243e51f5b603fbadc150651d203c6fedd25e2df1b9b22",
+              "bytes": 1324
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }

@@ -8,16 +8,18 @@ The M5Unified WAV sketch uses the documented Cardputer-Adv chip select
 and the generated SD audio fixture. The LTR5XX manifest pins the original
 documentation download and its checksum.
 
-M5Unified and M5GFX are MIT licensed. Their notices are under licenses/.
-The manifests identify the versions of M5Cardputer, M5Unit-Sonic and
-Arduino-IRremote where used. Arduino-ESP32 contains LGPL code and
-components under separate licenses, including Apache-2.0 ESP-IDF code.
-https://github.com/espressif/arduino-esp32
-https://github.com/espressif/esp-idf
+M5Unified, M5GFX, M5Cardputer and Arduino-IRremote are MIT licensed.
+Their notices are under licenses/. The manifests identify M5Unit-Sonic
+where used. The shipped Arduino-ESP32 source in M5Stack board package
+3.2.5 includes LGPL-2.1-or-later code. The ESP-IDF SDK includes Apache-2.0
+code and components with separate licenses.
+https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/arduino/m5stack-3.2.5.zip
+https://github.com/espressif/esp-idf/tree/858a988d
 
-The Arduino ELF and BIN files described in the manifests are build outputs
-of those sketches and components. Exact originals are kept locally.
-The public archive contains their hashes and flash layouts.
+The public BIN and ELF files are rebuilt outputs of those sketches and
+components. See build-records/rebuild-2026-11-26.md for exact source
+revisions and commands to rebuild or relink with modified sources.
+The manifests preserve the original-build hashes and flash layouts.
 
 UIFlow2 v2.5.3 is an official M5Stack release artifact. Its original bytes
 are available from M5Burner via the URL in the manifest.

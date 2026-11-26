@@ -6,7 +6,7 @@ set -euo pipefail
 binary=${1:?simulator binary required}
 out=${2:?new output directory required}
 archive=$(cd "$(dirname "$0")/.." && pwd)
-firmware=${ADV_FIRMWARE_DIR:-"$archive/.local/firmware/cardputer-adv"}
+firmware=${ADV_FIRMWARE_DIR:-"$archive/devices/cardputer-adv/arduino-docs"}
 seed=${ADV_SD_SEED:-"$archive/fixtures/seed.img.gz"}
 : "${ESP32SIM_ROM_DIR:?set ESP32SIM_ROM_DIR to the directory containing esp32s3_rev0_rom.elf}"
 export ESP32SIM_ROM_DIR
@@ -96,6 +96,8 @@ start speaker speaker 8 --wav "$out/speaker.wav"
 start sdcard-first sdcard 12 --sd-rw "$out/sd-files.img"
 start speaker-sd-wav speaker-sd-wav 13.5 --sd "$out/sd-wav.img" --wav "$out/speaker-sd-wav.wav"
 join
+# Record the writable card after the first boot and before the persistence replay.
+(cd "$out" && shasum -a 256 sd-files.img) >"$out/sd-files-before-replay.sha256"
 start mic-rec mic 3.9 --mic-wav "0:$out/mic-input.wav"
 start mic-silence mic 3.9 --mic-wav "0:$out/mic-silence.wav"
 start mic-play mic 5.5 --mic-wav "0:$out/mic-input.wav" --script "$out/mic.txt"

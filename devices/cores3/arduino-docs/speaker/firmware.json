@@ -22,38 +22,38 @@
   },
   "files": {
     "speaker.ino.bin": {
-      "path": ".local/firmware/cores3/speaker/speaker.ino.bin",
-      "storage": "local",
-      "sha256": "c133e292b8e265c49a6528f56b48d78916842de5de6a49c9a582270f543cd053",
-      "bytes": 584912
+      "path": "devices/cores3/arduino-docs/speaker/speaker.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "93e102e0cedbbfd932d4acaec1897c15bdf8bca7b5446673451a69d5689824b1",
+      "bytes": 584480
     },
     "speaker.ino.merged.bin": {
-      "path": ".local/firmware/cores3/speaker/speaker.ino.merged.bin",
-      "storage": "local",
-      "sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+      "path": "devices/cores3/arduino-docs/speaker/speaker.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "980f87ff390738e8b50c8819bf4050b8dc18c7d8a6edbe6936ea9ec70f245c78",
       "bytes": 16777216
     },
     "speaker.ino.bootloader.bin": {
-      "path": ".local/firmware/cores3/speaker/speaker.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/speaker/speaker.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
       "bytes": 20112
     },
     "speaker.ino.partitions.bin": {
-      "path": ".local/firmware/cores3/speaker/speaker.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cores3/arduino-docs/speaker/speaker.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
       "bytes": 3072
     },
     "speaker.ino.elf": {
-      "path": ".local/firmware/cores3/speaker/speaker.ino.elf",
-      "storage": "local",
-      "sha256": "1b4e93758884e892d48a836138eab928bbdf4208c361555f0caa83d1690a5e18",
-      "bytes": 12515088
+      "path": "devices/cores3/arduino-docs/speaker/speaker.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "3d463d5651bdff0ac1f61cfda7f55e6115d31ea27ae3dd665e8c1e1b7bd2a58e",
+      "bytes": 12471808
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -155,7 +155,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cores3"
     },
-    "checker_report": "evidence/cores3/verdicts.md",
+    "checker_report": "evidence/cores3/path-clean-verdicts.md",
     "runner": "tools/run_all_esp32sim.sh",
     "captures": [
       {
@@ -177,15 +177,108 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "c05c05981d07b0115c6dca46d96b8db44da09a47429280235bcff055b03f29c6",
-            "bytes": 1399
+            "sha256": "8a7b914918f714cea8a2f52231390f111a37046d3a3eb6bfc9b27896d72743f7",
+            "bytes": 1335
           },
           ".wav": {
             "sha256": "dc642bdd36acfd8ee63132de4a7fd400e25f870657e7179d053eac9698603ac3",
             "bytes": 516626
           }
-        }
+        },
+        "exit_code": 0
       }
-    ]
+    ],
+    "firmware_sha256": "980f87ff390738e8b50c8819bf4050b8dc18c7d8a6edbe6936ea9ec70f245c78"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+    "compile_record": "devices/cores3/arduino-docs/speaker/compile-result.json",
+    "files": {
+      "speaker.ino.bin": {
+        "path": ".local/firmware/cores3/speaker/speaker.ino.bin",
+        "storage": "local",
+        "sha256": "c133e292b8e265c49a6528f56b48d78916842de5de6a49c9a582270f543cd053",
+        "bytes": 584912
+      },
+      "speaker.ino.merged.bin": {
+        "path": ".local/firmware/cores3/speaker/speaker.ino.merged.bin",
+        "storage": "local",
+        "sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+        "bytes": 16777216
+      },
+      "speaker.ino.bootloader.bin": {
+        "path": ".local/firmware/cores3/speaker/speaker.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+        "bytes": 20112
+      },
+      "speaker.ino.partitions.bin": {
+        "path": ".local/firmware/cores3/speaker/speaker.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+        "bytes": 3072
+      },
+      "speaker.ino.elf": {
+        "path": ".local/firmware/cores3/speaker/speaker.ino.elf",
+        "storage": "local",
+        "sha256": "1b4e93758884e892d48a836138eab928bbdf4208c361555f0caa83d1690a5e18",
+        "bytes": 12515088
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "vertical title and 3× each of 10 kHz / 4 kHz",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cores3"
+      },
+      "checker_report": "evidence/cores3/verdicts.md",
+      "runner": "tools/run_all_esp32sim.sh",
+      "captures": [
+        {
+          "name": "speaker",
+          "max_seconds": 6.0,
+          "extra_args": [
+            "--wav",
+            "speaker.wav"
+          ],
+          "script_lines": {},
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "1345c5eaffe1d9561c678cf294843ab45d657434d485d294f5247ac2350e7eea",
+              "bytes": 230723
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "c05c05981d07b0115c6dca46d96b8db44da09a47429280235bcff055b03f29c6",
+              "bytes": 1399
+            },
+            ".wav": {
+              "sha256": "dc642bdd36acfd8ee63132de4a7fd400e25f870657e7179d053eac9698603ac3",
+              "bytes": 516626
+            }
+          }
+        }
+      ]
+    }
   }
 }

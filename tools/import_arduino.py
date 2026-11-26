@@ -25,7 +25,8 @@ def main():
             manifest = json.loads((ROOT / case["manifest"]).read_text())
             source = args.firmware_dir / case["device_id"] / case["case"]
             segments = manifest["flash_layout"]["segments"]
-            for name, record in manifest["files"].items():
+            original_files = manifest.get("original_build", {}).get("files", manifest["files"])
+            for name, record in original_files.items():
                 target = ROOT / record["path"]
                 if name == segments["boot_app0"]["file"]:
                     with (source / manifest["merged_image"]).open("rb") as merged:

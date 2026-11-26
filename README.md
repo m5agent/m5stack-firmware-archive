@@ -1,12 +1,12 @@
 # M5Stack 固件索引与模拟器复测
 
-记录 CoreS3（K128）和 Cardputer-Adv（K132-Adv）的文档例程版本、原始镜像 SHA-256、Flash 布局和复测脚本。2026-11-26，CoreS3 15 个例程和 Cardputer-Adv 11 个例程在固定版本的 esp32sim 上全部通过。官方 CoreS3 UIFlow2 v2.5.3 通过启动、USB CDC REPL 和 LCD 绘制检查。两项 CoreS3 Unit 用例使用 2026-11-25 的 QEMU-WASM 候选配置。所有通过项均为 **virtual-device validation**。真机验证为 **NOT RUN**。
+记录 CoreS3（K128）和 Cardputer-Adv（K132-Adv）的文档例程版本、固件 SHA-256、Flash 布局和复测脚本。2026-11-26，CoreS3 15 个例程和 Cardputer-Adv 11 个例程的去除私有编译路径版镜像在固定版本的 esp32sim 上全部通过。官方 CoreS3 UIFlow2 v2.5.3 通过启动、USB CDC REPL 和 LCD 绘制检查。两项 CoreS3 Unit 用例使用 2026-11-25 的 QEMU-WASM 候选配置。所有通过项均为 **virtual-device validation**。真机验证为 **NOT RUN**。
 
 [机器可读索引](index.json)收录完整 SHA-256。各用例清单包含文档小节、源码版本、工具链、实际输入、镜像分段和输出摘要。[来源与许可](NOTICE)记录依赖和固件出处。
 
 ## 获取与校验
 
-Git LFS 用于压缩 SD 镜像。Arduino 原始 merged BIN、应用 BIN 和 ELF 内嵌本机构建路径。Arduino 整套原始产物保存在本地忽略目录 `.local/firmware/`，公开索引记录每个文件的原始 SHA-256。UIFlow2 由脚本从 M5Burner 下载并校验。公开下载者需要另行取得原始 Arduino 构建导出才能逐字节复测。
+Git LFS 提供 26 个 Arduino 例程的合并镜像、应用 BIN、bootloader、分区表、ELF 和共享的 boot_app0，以及压缩 SD 镜像。各例程的 `original_build` 字段保留原始构建的 SHA-256 和验证记录。UIFlow2 由脚本从 M5Burner 下载并校验。
 
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/m5agent/m5stack-firmware-archive.git
@@ -14,12 +14,11 @@ cd m5stack-firmware-archive
 git lfs install --local
 git lfs pull
 python3 tools/verify.py
-python3 tools/import_arduino.py "$PREBUILT"
-python3 tools/fetch_uiflow2.py
-python3 tools/verify.py --with-local
 ```
 
-需要 Git LFS 和 Python 3.11+。将 `PREBUILT` 设为已有的原始固件导出目录，其中 `cores3/` 和 `cardputer-adv/` 下各有用例子目录。导入脚本先校验所有原件，再复制到本地。LTR553 的依赖可从其清单中列出的原始链接下载。自行重编译产生的镜像应以新 SHA-256 记录和复测。
+需要 Git LFS 和 Python 3.11+。可选的 `python3 tools/fetch_uiflow2.py` 下载官方 UIFlow2 固件。`python3 tools/import_arduino.py "$PREBUILT"` 可导入历史原件，`python3 tools/verify.py --with-local` 也校验本地原件与 UIFlow2。
+
+[重建命令和工具链](build-records/rebuild-2026-11-26.md)记录了路径映射和版本。[本次验证摘要](evidence/arduino-path-clean-summary.json)包含大小、路径扫描、两次重建的字节比较和行为对比。
 
 ## esp32sim 复测
 
@@ -54,45 +53,45 @@ QEMU-WASM Unit 证据见[候选配置摘要](evidence/cores3/accessory-qemu-wasm
 
 ## CoreS3
 
-| 用例 | 文档 | 原始合并镜像 SHA-256 | 验证结果 |
+| 用例 | 文档 | 合并镜像 SHA-256 | 验证结果 |
 | --- | --- | --- | --- |
-| [button](devices/cores3/arduino-docs/button/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/button) | `3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c` | PASS |
-| [camera](devices/cores3/arduino-docs/camera/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/camera) | `5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91` | PASS |
-| [display](devices/cores3/arduino-docs/display/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/display) | `a88182dc789c1dfe7525ad7ff9a284fd201b6c55375502c895b689cd56af13d6` | PASS |
-| [imu](devices/cores3/arduino-docs/imu/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/imu) | `3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed` | PASS |
-| [ltr553](devices/cores3/arduino-docs/ltr553/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/ltr553) | `9584d3339e863ee71b8e46ea43048bdc041028be3a0b0fb9e624185fdca40001` | PASS |
-| [mic](devices/cores3/arduino-docs/mic/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/mic) | `ced692208d6b9b778aba1624404f461cbfad1709cee82238d2bcd7abc368a1ae` | PASS |
-| [pic](devices/cores3/arduino-docs/pic/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/pic) | `f19a304c51f4f88c14c6b8157c06012357548cfd4b691ccef0d7babe7ccbbbe2` | PASS |
-| [power](devices/cores3/arduino-docs/power/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/power) | `7beb59232d1b21d7fb38d4c994582609df364ba918a4b443bf8fdcbd0982112c` | PASS |
-| [quickstart-bargraph](devices/cores3/arduino-docs/quickstart-bargraph/firmware.json) | [4. Program Compile & Upload](https://docs.m5stack.com/en/arduino/m5cores3/program) | `7635ebdc5bbddd6d33dc9bbeeb4d1fd9270c4971b0692595096c24b72f648d8a` | PASS |
-| [rtc](devices/cores3/arduino-docs/rtc/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/rtc) | `cf450835c9b8d88f815272158040afee79f0d88cf32b1f46add9bd783b8ab00d` | PASS |
-| [sdcard](devices/cores3/arduino-docs/sdcard/firmware.json) | [Build Requirements](https://docs.m5stack.com/en/arduino/m5cores3/sdcard) | `c97c3efde1aab234c4041d118b13eb9d4b506fd2158181e495ab4e8c8f9190b0` | PASS |
-| [speaker](devices/cores3/arduino-docs/speaker/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/speaker) | `035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c` | PASS |
-| [touch](devices/cores3/arduino-docs/touch/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/touch) | `3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606` | PASS |
+| [button](devices/cores3/arduino-docs/button/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/button) | `58ea9e954d59f110737b02c776bfd290fe03f0e3d6dd51fc6a07607fcc16eb98` | PASS |
+| [camera](devices/cores3/arduino-docs/camera/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/camera) | `9ed07790339a940c71e7b312404340d05777e7c0b2a99d7430d2eb8626565ec8` | PASS |
+| [display](devices/cores3/arduino-docs/display/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/display) | `44c7912db911b32efb994e43bbb4ff7164265111e6c5efcfa8867bd86e2ff4c8` | PASS |
+| [imu](devices/cores3/arduino-docs/imu/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/imu) | `c56bf2ca6e37edfb2e1c1e02002a5a07d9ff0a301b8fbf9264f1819053bfefba` | PASS |
+| [ltr553](devices/cores3/arduino-docs/ltr553/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/ltr553) | `1a80525f57bc3d5f5b0d89476b8e5e5cb7e1b756af0387a2f19337aa0b72fa47` | PASS |
+| [mic](devices/cores3/arduino-docs/mic/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/mic) | `5de68729e19eb8d0b241bb68792e38f06cc8265fcc719f079da9c9e95e07e4e0` | PASS |
+| [pic](devices/cores3/arduino-docs/pic/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/pic) | `481694418ae5015b154de8d0f9641e6660a5965935fb9b9ec82baaa0975e1f12` | PASS |
+| [power](devices/cores3/arduino-docs/power/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/power) | `ac19c6fb345ee441bd9c6b25f313bf190928af5b9e74649a721cc9945ac33a2b` | PASS |
+| [quickstart-bargraph](devices/cores3/arduino-docs/quickstart-bargraph/firmware.json) | [4. Program Compile & Upload](https://docs.m5stack.com/en/arduino/m5cores3/program) | `5812186674963e0ba558e0ee8f65941cce49a7ab1b05a23c2b12046a5c7a1e58` | PASS |
+| [rtc](devices/cores3/arduino-docs/rtc/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/rtc) | `70e500981e57fef904e8c941865fffee9d2dcf0045fa4a9255acaa516f0d68c0` | PASS |
+| [sdcard](devices/cores3/arduino-docs/sdcard/firmware.json) | [Build Requirements](https://docs.m5stack.com/en/arduino/m5cores3/sdcard) | `2a73d631e383ab932e38d2db43d100ca05fbb5023944cb184194fe1046d56f1b` | PASS |
+| [speaker](devices/cores3/arduino-docs/speaker/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/speaker) | `980f87ff390738e8b50c8819bf4050b8dc18c7d8a6edbe6936ea9ec70f245c78` | PASS |
+| [touch](devices/cores3/arduino-docs/touch/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/touch) | `a3b1a46231ade128d44c0f1394febcadcb236d86d68ab67008fc19ab4be48c27` | PASS |
 | [unit_relay](devices/cores3/arduino-docs/unit_relay/firmware.json) | [2. Example](https://docs.m5stack.com/en/arduino/projects/unit/unit_relay) | `a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca` | PASS · QEMU-WASM 候选 |
 | [unit_ultrasonic_i2c](devices/cores3/arduino-docs/unit_ultrasonic_i2c/firmware.json) | [2. Example](https://docs.m5stack.com/en/arduino/projects/unit/unit_ultrasonic_i2c) | `0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221` | PASS · QEMU-WASM 候选 |
-| [wakeup](devices/cores3/arduino-docs/wakeup/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/wakeup) | `2ddff71f4ceca5e79b709ba823b8ecf0828f2016a85e512df779e526e7a9f295` | PASS |
-| [wav](devices/cores3/arduino-docs/wav/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/wav) | `22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5` | PASS |
+| [wakeup](devices/cores3/arduino-docs/wakeup/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/wakeup) | `758e03ff538f8b09780995ba1e5bbfde19d8ba2f82d4fc37c13a3ff9c3734999` | PASS |
+| [wav](devices/cores3/arduino-docs/wav/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cores3/wav) | `e8f36a06ed036feec277119ecebb10e2443772a9c910323457ee2ea63c2a8d95` | PASS |
 | [v2.5.3](devices/cores3/uiflow2/v2.5.3/firmware.json) | [1. UiFlow2 Firmware Flashing](https://docs.m5stack.com/en/uiflow2/m5cores3/program) | `1324f12d3ddd5392f47a9eff537f9ce0b01a8e6e36d829b6bd22cdf82d2c1264` | PASS |
 
 ## Cardputer-Adv
 
-| 用例 | 文档 | 原始合并镜像 SHA-256 | 验证结果 |
+| 用例 | 文档 | 合并镜像 SHA-256 | 验证结果 |
 | --- | --- | --- | --- |
-| [battery](devices/cardputer-adv/arduino-docs/battery/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/battery) | `ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b` | PASS |
-| [button](devices/cardputer-adv/arduino-docs/button/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/button) | `07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7` | PASS |
-| [display](devices/cardputer-adv/arduino-docs/display/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/display) | `cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968` | PASS |
-| [imu](devices/cardputer-adv/arduino-docs/imu/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/imu) | `f933c50fcc3dca52d9fa8e256ed5ab5e7e1f5d68571f47d9cab976d16ec41b10` | PASS |
-| [ir_nec](devices/cardputer-adv/arduino-docs/ir_nec/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec) | `0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb` | PASS |
-| [keyboard](devices/cardputer-adv/arduino-docs/keyboard/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/keyboard) | `f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf` | PASS |
-| [mic](devices/cardputer-adv/arduino-docs/mic/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/mic) | `1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9` | PASS |
-| [quickstart-display](devices/cardputer-adv/arduino-docs/quickstart-display/firmware.json) | [4. Program Compile & Upload](https://docs.m5stack.com/en/arduino/m5cardputer/program) | `0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717` | PASS |
-| [sdcard](devices/cardputer-adv/arduino-docs/sdcard/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/sdcard) | `0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132` | PASS |
-| [speaker](devices/cardputer-adv/arduino-docs/speaker/firmware.json) | [Beep Example](https://docs.m5stack.com/en/arduino/m5cardputer/speaker) | `1be720c9f62e086081f63ff6adf7f907e71f80dcc4816af71050cddd937300b5` | PASS |
-| [speaker-sd-wav](devices/cardputer-adv/arduino-docs/speaker-sd-wav/firmware.json) | [Play WAV File Example](https://docs.m5stack.com/en/arduino/m5cardputer/speaker) | `9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b` | PASS |
+| [battery](devices/cardputer-adv/arduino-docs/battery/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/battery) | `ddcc555063a83c065b64abfcc720966d4f2117e44eb8a5403ec6a255530494e9` | PASS |
+| [button](devices/cardputer-adv/arduino-docs/button/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/button) | `00bd60f455a211d68b397e7008ff3c212acb420a0869e2deea5ee6d8ee601e2e` | PASS |
+| [display](devices/cardputer-adv/arduino-docs/display/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/display) | `67bbe34e0e965f6d0491668d45b8007f153ba80be6ab3f8ec2e31e0223ee7972` | PASS |
+| [imu](devices/cardputer-adv/arduino-docs/imu/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/imu) | `33639787c387413681e3b2837e115c727d53b7d58fe7fd3796f2e61b8afdc1a4` | PASS |
+| [ir_nec](devices/cardputer-adv/arduino-docs/ir_nec/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec) | `303e9c9c65c38332db862737b4ba78d8e0c35176c1dfd0f8e447c8dc40c39ae4` | PASS |
+| [keyboard](devices/cardputer-adv/arduino-docs/keyboard/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/keyboard) | `ff5b8b152ba201852ded8684ca517bdf63ea155961ff99e9ff19fad11f4fcf78` | PASS |
+| [mic](devices/cardputer-adv/arduino-docs/mic/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/mic) | `9a1e1a36dd4499d992254824e85a956229874c0a279146c43e599657d829bcd5` | PASS |
+| [quickstart-display](devices/cardputer-adv/arduino-docs/quickstart-display/firmware.json) | [4. Program Compile & Upload](https://docs.m5stack.com/en/arduino/m5cardputer/program) | `db48605950abbd5423b62d36712dff9ccbe7db9f4997b9a88a6cf8c87111899e` | PASS |
+| [sdcard](devices/cardputer-adv/arduino-docs/sdcard/firmware.json) | [Compilation Requirements](https://docs.m5stack.com/en/arduino/m5cardputer/sdcard) | `33ee9fc3513bc4e46cc5231b460ddca3e0966fbaa5874ceb8ec506a67fab8aaf` | PASS |
+| [speaker](devices/cardputer-adv/arduino-docs/speaker/firmware.json) | [Beep Example](https://docs.m5stack.com/en/arduino/m5cardputer/speaker) | `1a40ab54d783e5850d09bcfa10e182f8ac43662bf4fa059b75810815f4bf93c1` | PASS |
+| [speaker-sd-wav](devices/cardputer-adv/arduino-docs/speaker-sd-wav/firmware.json) | [Play WAV File Example](https://docs.m5stack.com/en/arduino/m5cardputer/speaker) | `b0b39a6f07f6c03027642c5876877d2a2e5546a86db92c8607ba93f75e8e1241` | PASS |
 
 ## English
 
 This archive maps 28 Arduino cases and one official UIFlow2 release to their documentation, exact firmware hashes, flash layouts and validation inputs. The pinned esp32sim replay passed 15 CoreS3 and 11 Cardputer-Adv Arduino cases. UIFlow2 v2.5.3 passed boot, USB CDC REPL and framebuffer checks. Two CoreS3 Unit cases passed on QEMU-WASM candidate profiles. All results are virtual-device validation. Hardware validation was NOT RUN.
 
-Run the commands above from the archive root. Git LFS supplies the compressed SD fixture. The import tool requires the original Arduino build export. It verifies and imports the exact firmware into the ignored local directory. The original merged images, app images and ELFs embed private build paths. The public index identifies those originals by their full SHA-256. The UIFlow2 fetch tool obtains the official image from M5Burner and verifies it before saving. The two Arduino runners contain the individual commands, capture times and injected inputs. See the case manifests for output hashes and validation scope.
+The public LFS checkout contains the rebuilt BIN and ELF files for all 26 native esp32sim cases. The original hashes and validation remain in each case manifest. See the [rebuild recipe](build-records/rebuild-2026-11-26.md) and [virtual-device validation summary](evidence/arduino-path-clean-summary.json) for reproduction, path scan results, and the original versus rebuilt capture comparison. The UIFlow2 fetch tool verifies the official image from M5Burner.

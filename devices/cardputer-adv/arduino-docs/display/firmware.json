@@ -22,38 +22,38 @@
   },
   "files": {
     "display.ino.bin": {
-      "path": ".local/firmware/cardputer-adv/display/display.ino.bin",
-      "storage": "local",
-      "sha256": "5e2ae4e88d37e4b28e7c693b0d95c3d6388cdff6b1290e2b3b46f2f96c914d2a",
-      "bytes": 552976
+      "path": "devices/cardputer-adv/arduino-docs/display/display.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "2f2a61a9e274d3719ab45dae35d988f8455974fcb241e0ebb93b34039e0ccbc4",
+      "bytes": 552624
     },
     "display.ino.merged.bin": {
-      "path": ".local/firmware/cardputer-adv/display/display.ino.merged.bin",
-      "storage": "local",
-      "sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+      "path": "devices/cardputer-adv/arduino-docs/display/display.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "67bbe34e0e965f6d0491668d45b8007f153ba80be6ab3f8ec2e31e0223ee7972",
       "bytes": 4194304
     },
     "display.ino.bootloader.bin": {
-      "path": ".local/firmware/cardputer-adv/display/display.ino.bootloader.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/display/display.ino.bootloader.bin",
+      "storage": "git-lfs",
       "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
       "bytes": 20112
     },
     "display.ino.partitions.bin": {
-      "path": ".local/firmware/cardputer-adv/display/display.ino.partitions.bin",
-      "storage": "local",
+      "path": "devices/cardputer-adv/arduino-docs/display/display.ino.partitions.bin",
+      "storage": "git-lfs",
       "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
       "bytes": 3072
     },
     "display.ino.elf": {
-      "path": ".local/firmware/cardputer-adv/display/display.ino.elf",
-      "storage": "local",
-      "sha256": "d40e205be0e022bc8677b1da8b7718027a0610c32283596e897de57362ed44bf",
-      "bytes": 12731780
+      "path": "devices/cardputer-adv/arduino-docs/display/display.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "ca55b8b84beda4a94203234d0ed92e47a77e1a52524d8cba9f6376bb2628e19e",
+      "bytes": 12680316
     },
     "boot_app0.bin": {
-      "path": ".local/firmware/boot_app0.bin",
-      "storage": "local",
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
       "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
       "bytes": 8192
     }
@@ -156,7 +156,7 @@
       "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
       "board": "m5stack-cardputer-adv"
     },
-    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "checker_report": "evidence/cardputer-adv/path-clean-verdicts.md",
     "runner": "tools/run_all_adv.sh",
     "captures": [
       {
@@ -167,7 +167,7 @@
         "injected_media": {},
         "output_hashes": {
           ".png": {
-            "sha256": "1e9c0cbfcce2192bffa90f6400ffe992ae8dad9d334ed17782b61538ccca7919",
+            "sha256": "1fd12abc13714d496d03dd4129b73e6a25e59eb0a3c4df5e74878f2f9d7cb927",
             "bytes": 97408
           },
           ".log": {
@@ -175,10 +175,11 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "cf4a7ec1c025e83e6f0e44ab64d651b1c1f1c2687d571452ce32e3d10c68a70b",
-            "bytes": 1011
+            "sha256": "cbb276f7040ad99317b940dbaba864bddb95d7851144f08c3a924dab2cf2bb3d",
+            "bytes": 979
           }
-        }
+        },
+        "exit_code": 0
       },
       {
         "name": "display",
@@ -188,7 +189,7 @@
         "injected_media": {},
         "output_hashes": {
           ".png": {
-            "sha256": "79f7941f525861cd27affacfc69591e737f6e300951ab243132f597914e533b0",
+            "sha256": "0ab17f989b1d16298f28eb8ce4cd9f6f1b39d8f9a6a0722abf214cc19fab9b3d",
             "bytes": 97408
           },
           ".log": {
@@ -196,11 +197,118 @@
             "bytes": 556
           },
           ".err": {
-            "sha256": "4ad5ea7f629b21ea23cc538a2c6d8229c3634c4284fe07d3dfb764137415093a",
-            "bytes": 1011
+            "sha256": "7f0b0f04054dd05e7db9fc3594ab3972ae8217442a10fbaaaec2002d8c8e58a5",
+            "bytes": 980
+          }
+        },
+        "exit_code": 0
+      }
+    ],
+    "firmware_sha256": "67bbe34e0e965f6d0491668d45b8007f153ba80be6ab3f8ec2e31e0223ee7972"
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-26.md",
+  "original_build": {
+    "firmware_sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+    "compile_record": "devices/cardputer-adv/arduino-docs/display/compile-result.json",
+    "files": {
+      "display.ino.bin": {
+        "path": ".local/firmware/cardputer-adv/display/display.ino.bin",
+        "storage": "local",
+        "sha256": "5e2ae4e88d37e4b28e7c693b0d95c3d6388cdff6b1290e2b3b46f2f96c914d2a",
+        "bytes": 552976
+      },
+      "display.ino.merged.bin": {
+        "path": ".local/firmware/cardputer-adv/display/display.ino.merged.bin",
+        "storage": "local",
+        "sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+        "bytes": 4194304
+      },
+      "display.ino.bootloader.bin": {
+        "path": ".local/firmware/cardputer-adv/display/display.ino.bootloader.bin",
+        "storage": "local",
+        "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+        "bytes": 20112
+      },
+      "display.ino.partitions.bin": {
+        "path": ".local/firmware/cardputer-adv/display/display.ino.partitions.bin",
+        "storage": "local",
+        "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+        "bytes": 3072
+      },
+      "display.ino.elf": {
+        "path": ".local/firmware/cardputer-adv/display/display.ino.elf",
+        "storage": "local",
+        "sha256": "d40e205be0e022bc8677b1da8b7718027a0610c32283596e897de57362ed44bf",
+        "bytes": 12731780
+      },
+      "boot_app0.bin": {
+        "path": ".local/firmware/boot_app0.bin",
+        "storage": "local",
+        "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+        "bytes": 8192
+      }
+    },
+    "validation": {
+      "verdict": "PASS",
+      "observation": "colored circles and rectangles change from 3 to 8 s",
+      "label": "virtual-device validation",
+      "date": "2026-11-26",
+      "lane": "native esp32sim",
+      "simulator": {
+        "repository": "https://github.com/m5agent/esp32sim",
+        "branch": "m5/main",
+        "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "tag": "m5-milestone-cores3-adv-20261126",
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer-adv"
+      },
+      "checker_report": "evidence/cardputer-adv/verdicts.md",
+      "runner": "tools/run_all_adv.sh",
+      "captures": [
+        {
+          "name": "display-before",
+          "max_seconds": 3,
+          "extra_args": [],
+          "script_lines": {},
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "1e9c0cbfcce2192bffa90f6400ffe992ae8dad9d334ed17782b61538ccca7919",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "cf4a7ec1c025e83e6f0e44ab64d651b1c1f1c2687d571452ce32e3d10c68a70b",
+              "bytes": 1011
+            }
+          }
+        },
+        {
+          "name": "display",
+          "max_seconds": 8,
+          "extra_args": [],
+          "script_lines": {},
+          "injected_media": {},
+          "output_hashes": {
+            ".png": {
+              "sha256": "79f7941f525861cd27affacfc69591e737f6e300951ab243132f597914e533b0",
+              "bytes": 97408
+            },
+            ".log": {
+              "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+              "bytes": 556
+            },
+            ".err": {
+              "sha256": "4ad5ea7f629b21ea23cc538a2c6d8229c3634c4284fe07d3dfb764137415093a",
+              "bytes": 1011
+            }
           }
         }
-      }
-    ]
+      ]
+    }
   }
 }
