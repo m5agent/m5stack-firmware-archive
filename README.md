@@ -9,8 +9,9 @@
 Git LFS 用于压缩 SD 镜像。Arduino 原始 merged BIN、应用 BIN 和 ELF 内嵌本机构建路径。Arduino 整套原始产物保存在本地忽略目录 `.local/firmware/`，公开索引记录每个文件的原始 SHA-256。UIFlow2 由脚本从 M5Burner 下载并校验。公开下载者需要另行取得原始 Arduino 构建导出才能逐字节复测。
 
 ```bash
-git clone https://github.com/m5agent/m5stack-firmware-archive.git
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/m5agent/m5stack-firmware-archive.git
 cd m5stack-firmware-archive
+git lfs install --local
 git lfs pull
 python3 tools/verify.py
 python3 tools/import_arduino.py "$PREBUILT"
@@ -18,7 +19,7 @@ python3 tools/fetch_uiflow2.py
 python3 tools/verify.py --with-local
 ```
 
-需要 Python 3.11+。将 `PREBUILT` 设为已有的原始固件导出目录，其中 `cores3/` 和 `cardputer-adv/` 下各有用例子目录。导入脚本先校验所有原件，再复制到本地。LTR553 的依赖可从其清单中列出的原始链接下载。自行重编译产生的镜像应以新 SHA-256 记录和复测。
+需要 Git LFS 和 Python 3.11+。将 `PREBUILT` 设为已有的原始固件导出目录，其中 `cores3/` 和 `cardputer-adv/` 下各有用例子目录。导入脚本先校验所有原件，再复制到本地。LTR553 的依赖可从其清单中列出的原始链接下载。自行重编译产生的镜像应以新 SHA-256 记录和复测。
 
 ## esp32sim 复测
 
