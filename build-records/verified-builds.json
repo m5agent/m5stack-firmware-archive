@@ -1,0 +1,421 @@
+{
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "cases": [
+    {
+      "board": "cores3",
+      "case": "button",
+      "source_sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/button",
+      "build": "PASS",
+      "binary_sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "camera",
+      "source_sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/camera",
+      "build": "PASS",
+      "binary_sha256": "5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "display",
+      "source_sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/display",
+      "build": "PASS",
+      "binary_sha256": "a88182dc789c1dfe7525ad7ff9a284fd201b6c55375502c895b689cd56af13d6",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "imu",
+      "source_sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/imu",
+      "build": "PASS",
+      "binary_sha256": "3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "ltr553",
+      "source_sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/ltr553",
+      "build": "PASS",
+      "binary_sha256": "9584d3339e863ee71b8e46ea43048bdc041028be3a0b0fb9e624185fdca40001",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "mic",
+      "source_sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/mic",
+      "build": "PASS",
+      "binary_sha256": "ced692208d6b9b778aba1624404f461cbfad1709cee82238d2bcd7abc368a1ae",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "pic",
+      "source_sha256": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/pic",
+      "build": "PASS",
+      "binary_sha256": "f19a304c51f4f88c14c6b8157c06012357548cfd4b691ccef0d7babe7ccbbbe2",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "power",
+      "source_sha256": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/power",
+      "build": "PASS",
+      "binary_sha256": "7beb59232d1b21d7fb38d4c994582609df364ba918a4b443bf8fdcbd0982112c",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "rtc",
+      "source_sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/rtc",
+      "build": "PASS",
+      "binary_sha256": "cf450835c9b8d88f815272158040afee79f0d88cf32b1f46add9bd783b8ab00d",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "sdcard",
+      "source_sha256": "dd780c565d411307ae9fd1cfd22473bd79b5a6a76eea47de68bb332252c81022",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/sdcard",
+      "build": "PASS",
+      "binary_sha256": "c97c3efde1aab234c4041d118b13eb9d4b506fd2158181e495ab4e8c8f9190b0",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "speaker",
+      "source_sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/speaker",
+      "build": "PASS",
+      "binary_sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "touch",
+      "source_sha256": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/touch",
+      "build": "PASS",
+      "binary_sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "wakeup",
+      "source_sha256": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/wakeup",
+      "build": "PASS",
+      "binary_sha256": "2ddff71f4ceca5e79b709ba823b8ecf0828f2016a85e512df779e526e7a9f295",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "wav",
+      "source_sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/wav",
+      "build": "PASS",
+      "binary_sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "battery",
+      "source_sha256": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/battery",
+      "build": "PASS",
+      "binary_sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "button",
+      "source_sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/button",
+      "build": "PASS",
+      "binary_sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "display",
+      "source_sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/display",
+      "build": "PASS",
+      "binary_sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "imu",
+      "source_sha256": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/imu",
+      "build": "PASS",
+      "binary_sha256": "f933c50fcc3dca52d9fa8e256ed5ab5e7e1f5d68571f47d9cab976d16ec41b10",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "ir_nec",
+      "source_sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec",
+      "build": "PASS",
+      "binary_sha256": "0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "keyboard",
+      "source_sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/keyboard",
+      "build": "PASS",
+      "binary_sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "mic",
+      "source_sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/mic",
+      "build": "PASS",
+      "binary_sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "sdcard",
+      "source_sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/sdcard",
+      "build": "PASS",
+      "binary_sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "speaker",
+      "source_sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "build": "PASS",
+      "binary_sha256": "1be720c9f62e086081f63ff6adf7f907e71f80dcc4816af71050cddd937300b5",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cores3",
+      "case": "quickstart-bargraph",
+      "source_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/program",
+      "build": "PASS",
+      "binary_sha256": "7635ebdc5bbddd6d33dc9bbeeb4d1fd9270c4971b0692595096c24b72f648d8a",
+      "binary_bytes": 16777216,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "quickstart-display",
+      "source_sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/program",
+      "build": "PASS",
+      "binary_sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "speaker-sd-wav",
+      "source_sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "build": "PASS",
+      "binary_sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b",
+      "binary_bytes": 4194304,
+      "chip_id": 9,
+      "segment_offsets": [
+        "0x0",
+        "0x8000",
+        "0xe000",
+        "0x10000"
+      ]
+    }
+  ]
+}

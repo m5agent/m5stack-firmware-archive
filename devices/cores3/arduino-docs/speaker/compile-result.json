@@ -1,0 +1,9 @@
+{
+  "case": "speaker",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+  "firmware_sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+  "firmware_bytes": 16777216
+}

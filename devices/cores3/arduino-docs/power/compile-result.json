@@ -1,0 +1,9 @@
+{
+  "case": "power",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+  "firmware_sha256": "7beb59232d1b21d7fb38d4c994582609df364ba918a4b443bf8fdcbd0982112c",
+  "firmware_bytes": 16777216
+}

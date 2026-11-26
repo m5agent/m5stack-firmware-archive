@@ -1,0 +1,9 @@
+{
+  "case": "mic",
+  "board": "cardputer-adv",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "exit_code": 0,
+  "sketch_sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+  "firmware_sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+  "firmware_bytes": 4194304
+}

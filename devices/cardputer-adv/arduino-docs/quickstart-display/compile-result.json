@@ -1,0 +1,9 @@
+{
+  "case": "quickstart-display",
+  "board": "cardputer-adv",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "exit_code": 0,
+  "sketch_sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+  "firmware_sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+  "firmware_bytes": 4194304
+}

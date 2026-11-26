@@ -1,0 +1,242 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "arduino-docs",
+  "case": "unit_ultrasonic_i2c",
+  "docs_url": "https://docs.m5stack.com/en/arduino/projects/unit/unit_ultrasonic_i2c",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/projects/unit/unit_ultrasonic_i2c.md",
+    "section": "2. Example",
+    "section_line": 18,
+    "code_first_line": 23
+  },
+  "sketch_sha256": "195175e6a0aa276d134ec11dec8ca21d969f3a4776386a46f0bc333babf3d5a3",
+  "sketch_files": {
+    "unit_ultrasonic_i2c.ino": {
+      "path": "devices/cores3/arduino-docs/unit_ultrasonic_i2c/sketch/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino",
+      "storage": "public",
+      "sha256": "195175e6a0aa276d134ec11dec8ca21d969f3a4776386a46f0bc333babf3d5a3",
+      "bytes": 675
+    }
+  },
+  "files": {
+    "unit_ultrasonic_i2c.ino.bin": {
+      "path": ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.bin",
+      "storage": "local",
+      "sha256": "25262aea06a9a94e38707e6946f7e89a076b1e74df8d14fbf1f016b5151a07ca",
+      "bytes": 584464
+    },
+    "unit_ultrasonic_i2c.ino.merged.bin": {
+      "path": ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.merged.bin",
+      "storage": "local",
+      "sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "bytes": 16777216
+    },
+    "unit_ultrasonic_i2c.ino.bootloader.bin": {
+      "path": ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "unit_ultrasonic_i2c.ino.partitions.bin": {
+      "path": ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "unit_ultrasonic_i2c.ino.elf": {
+      "path": ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.elf",
+      "storage": "local",
+      "sha256": "79e40381ad696bc87970b12325e8029e5408802cd7a4f1de53a4bac08e951063",
+      "bytes": 12452876
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "unit_ultrasonic_i2c.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "unit_ultrasonic_i2c.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "unit_ultrasonic_i2c.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "unit_ultrasonic_i2c.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x310000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "ffat",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x610000",
+        "bytes": 10354688,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0xff0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0",
+      "M5Unit-Sonic": "0.0.2"
+    }
+  },
+  "expected_behavior": "LCD distance follows the virtual I2C distance input",
+  "validation": {
+    "label": "virtual-device validation",
+    "date": "2026-11-25",
+    "lane": "QEMU-WASM candidate profile",
+    "verdict": "PASS",
+    "prototype": {
+      "verdict": "PASS",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "profile_assets_changed_locally": true,
+      "candidate_asset_sha256": {
+        "qemu-browser-profiles.json": "5789f58323c6bac9558be0766b0417a72eb00f38a26bdaa8499835e8200e7994",
+        "public-qemu-profiles.js": "68d85ceffeefddb0023cf69c821f6730ce2e86467987281ce2f4799a755423a6",
+        "public-qemu-engine.js": "c3326d1690692810cc58f1f5882c9bb29ec82d8e9fb6fd79fc4045b6b4690555"
+      },
+      "wiring": {
+        "port": "A",
+        "sda": 2,
+        "scl": 1,
+        "i2c_address": "0x57"
+      },
+      "guest_distance_sequence": [
+        {
+          "lcd_distance_mm": 1000,
+          "rgb565_sha256": "aaa7a573d55cabd5ba6a02290359a9e52a1f0e1f442ba18084b75444770d8b0d",
+          "png_sha256": "444a424a828e1d89d460f4f639e1708d835c2714bf5f2d337cc1f2234b5529f6"
+        },
+        {
+          "lcd_distance_mm": 250,
+          "rgb565_sha256": "e9858be2a9cdf7e047aa0f0b91710251d7e58e4247d59c90d50ed8422592d4dc",
+          "png_sha256": "3230a9a2abcc361e49ff9fe371e51ccfb8a1bf80a50189d972aa2f524e346c9e"
+        },
+        {
+          "lcd_distance_mm": 1700,
+          "rgb565_sha256": "c6d691614cf4288d888f709ac3586db0730d03e059f15aac564a3abd5ea2e709",
+          "png_sha256": "fbf70bf2def92d6987489537431ad452752f542823fc725f1b2a6a95836cb979"
+        },
+        {
+          "lcd_distance_mm": 1000,
+          "rgb565_sha256": "aaa7a573d55cabd5ba6a02290359a9e52a1f0e1f442ba18084b75444770d8b0d",
+          "png_sha256": "444a424a828e1d89d460f4f639e1708d835c2714bf5f2d337cc1f2234b5529f6"
+        }
+      ],
+      "controller_reads": [
+        {
+          "distanceMm": 250,
+          "source": "qemu-qom-readback",
+          "transactions": 8,
+          "readBytes": 12
+        },
+        {
+          "distanceMm": 1700,
+          "source": "qemu-qom-readback",
+          "transactions": 13,
+          "readBytes": 18
+        },
+        {
+          "distanceMm": 1000,
+          "source": "qemu-qom-readback",
+          "transactions": 17,
+          "readBytes": 24
+        }
+      ],
+      "uart_i2c_nack_lines": 0
+    },
+    "default_profile": {
+      "verdict": "FAIL",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "lcd": "4500.00mm",
+      "uart_i2c_nack_lines": 12,
+      "frame": {
+        "rgb565_sha256": "1015711d05bcfd05edd3efa8f0a7886e8607d999f0066973adc268405eb5d54c",
+        "png_sha256": "82027877cd14766fa3905cde3638873bc959c68e45bf5790ac7289bf881f7455"
+      }
+    },
+    "esp32sim": "NOT RUN"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "arduino-docs",
+  "case": "imu",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/imu",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cores3/imu.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 18
+  },
+  "sketch_sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+  "sketch_files": {
+    "imu.ino": {
+      "path": "devices/cores3/arduino-docs/imu/sketch/imu/imu.ino",
+      "storage": "public",
+      "sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "bytes": 1754
+    }
+  },
+  "files": {
+    "imu.ino.bin": {
+      "path": ".local/firmware/cores3/imu/imu.ino.bin",
+      "storage": "local",
+      "sha256": "887d455ee5681817c6960b4e62b044147405660c1bb316a242faf4842e32a948",
+      "bytes": 564656
+    },
+    "imu.ino.merged.bin": {
+      "path": ".local/firmware/cores3/imu/imu.ino.merged.bin",
+      "storage": "local",
+      "sha256": "3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed",
+      "bytes": 16777216
+    },
+    "imu.ino.bootloader.bin": {
+      "path": ".local/firmware/cores3/imu/imu.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "imu.ino.partitions.bin": {
+      "path": ".local/firmware/cores3/imu/imu.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "imu.ino.elf": {
+      "path": ".local/firmware/cores3/imu/imu.ino.elf",
+      "storage": "local",
+      "sha256": "01dea6f0f054534001dc51c636316b4a39130b6d62a01f322932bc49630e0f5f",
+      "bytes": 12309464
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "imu.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "imu.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "imu.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "imu.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x310000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "ffat",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x610000",
+        "bytes": 10354688,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0xff0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0"
+    }
+  },
+  "expected_behavior": "LCD and serial show accelerometer, gyro, magnetometer; inject two distinct states",
+  "validation": {
+    "verdict": "PASS",
+    "observation": "two injected vectors on LCD (HWCDC uninitialized by sketch)",
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cores3"
+    },
+    "checker_report": "evidence/cores3/verdicts.md",
+    "runner": "tools/run_all_esp32sim.sh",
+    "captures": [
+      {
+        "name": "imu",
+        "max_seconds": 5.0,
+        "extra_args": [
+          "--script",
+          "imu.txt"
+        ],
+        "script_lines": {
+          "imu.txt": [
+            "2 imu 0.5 -0.25 0.75 125 -250 62.5 20 -10 30",
+            "6 imu -0.375 0.625 -1 -375 500 -125 -12.5 33 -15"
+          ]
+        },
+        "injected_media": {},
+        "output_hashes": {
+          ".png": {
+            "sha256": "6099b307534984b6ba888e62606917e615fd2a75bae9431c7b827e5800b6f87b",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "2ae48adec11236c6469f5efbbcb3fba6701cc3f084b14d5cb92af2970cdcf6fa",
+            "bytes": 1322
+          }
+        }
+      },
+      {
+        "name": "imu-before",
+        "max_seconds": 9.0,
+        "extra_args": [
+          "--script",
+          "imu.txt"
+        ],
+        "script_lines": {
+          "imu.txt": [
+            "2 imu 0.5 -0.25 0.75 125 -250 62.5 20 -10 30",
+            "6 imu -0.375 0.625 -1 -375 500 -125 -12.5 33 -15"
+          ]
+        },
+        "injected_media": {},
+        "output_hashes": {
+          ".png": {
+            "sha256": "50b7f17012f1aaba56d8ac27ca729b2927e5fffac6f4460c0d20ac3194397508",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "c0c20e72a05aede3acd7c8ab39a88d3671329328c82ab4a68ec978b25aba4561",
+            "bytes": 1434
+          }
+        }
+      }
+    ]
+  }
+}

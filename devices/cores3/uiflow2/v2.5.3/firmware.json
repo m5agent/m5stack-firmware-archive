@@ -1,0 +1,109 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "uiflow2",
+  "case": "v2.5.3",
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/m5cores3/program",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/uiflow2/m5cores3/program.md",
+    "section": "1. UiFlow2 Firmware Flashing",
+    "section_line": 3
+  },
+  "sketch_sha256": null,
+  "merged_image": "uiflow2-v2.5.3.bin",
+  "files": {
+    "uiflow2-v2.5.3.bin": {
+      "path": ".local/firmware/cores3/uiflow2/v2.5.3/uiflow2-v2.5.3.bin",
+      "storage": "local",
+      "sha256": "1324f12d3ddd5392f47a9eff537f9ce0b01a8e6e36d829b6bd22cdf82d2c1264",
+      "bytes": 16121856
+    }
+  },
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "bootloader_offset": "0x0",
+    "partition_table_offset": "0x8000",
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 24576,
+        "flags": 0
+      },
+      {
+        "name": "phy_init",
+        "type": "0x1",
+        "subtype": "0x1",
+        "offset": "0xf000",
+        "bytes": 4096,
+        "flags": 0
+      },
+      {
+        "name": "factory",
+        "type": "0x0",
+        "subtype": "0x0",
+        "offset": "0x10000",
+        "bytes": 10027008,
+        "flags": 0
+      },
+      {
+        "name": "sys",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x9a0000",
+        "bytes": 1048576,
+        "flags": 0
+      },
+      {
+        "name": "vfs",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0xaa0000",
+        "bytes": 4980736,
+        "flags": 0
+      },
+      {
+        "name": "storage",
+        "type": "0x1",
+        "subtype": "0x82",
+        "offset": "0xf60000",
+        "bytes": 655360,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "official_m5burner_artifact": true,
+    "build_toolchain": "not supplied"
+  },
+  "firmware_id": "1897200000000001950",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000001950/2102696305989775362/bin/2102696305989775363.bin",
+  "expected_behavior": "Boot UIFlow2, enumerate USB CDC, answer the REPL and draw red to the LCD.",
+  "validation": {
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "verdict": "PASS",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cores3"
+    },
+    "evidence": "evidence/cores3/uiflow2-summary.json",
+    "inputs": [
+      "attach",
+      "cdc 3000",
+      "cdc 3000 \u0003",
+      "cdc 3000 print(1+1)",
+      "cdc 3000 import M5; M5.Lcd.fillScreen(0xFF0000)"
+    ],
+    "max_seconds": 18
+  }
+}

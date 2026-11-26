@@ -1,0 +1,215 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "arduino-docs",
+  "case": "rtc",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/rtc",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cores3/rtc.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 14
+  },
+  "sketch_sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+  "sketch_files": {
+    "rtc.ino": {
+      "path": "devices/cores3/arduino-docs/rtc/sketch/rtc/rtc.ino",
+      "storage": "public",
+      "sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "bytes": 4029
+    }
+  },
+  "files": {
+    "rtc.ino.bin": {
+      "path": ".local/firmware/cores3/rtc/rtc.ino.bin",
+      "storage": "local",
+      "sha256": "bbf4ae27337203b8a99a17f58d54724b6f2b58a31c2f3fe5da37509ec972b079",
+      "bytes": 1118736
+    },
+    "rtc.ino.merged.bin": {
+      "path": ".local/firmware/cores3/rtc/rtc.ino.merged.bin",
+      "storage": "local",
+      "sha256": "cf450835c9b8d88f815272158040afee79f0d88cf32b1f46add9bd783b8ab00d",
+      "bytes": 16777216
+    },
+    "rtc.ino.bootloader.bin": {
+      "path": ".local/firmware/cores3/rtc/rtc.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "rtc.ino.partitions.bin": {
+      "path": ".local/firmware/cores3/rtc/rtc.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "rtc.ino.elf": {
+      "path": ".local/firmware/cores3/rtc/rtc.ino.elf",
+      "storage": "local",
+      "sha256": "0bc3ef827431cb99e86a5f15965c17866b5b89d73717222e2f9dce04a57ed9cf",
+      "bytes": 17702516
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "rtc.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "rtc.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "rtc.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "rtc.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x310000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "ffat",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x610000",
+        "bytes": 10354688,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0xff0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0"
+    }
+  },
+  "expected_behavior": "RTC and NTP UTC plus local time after Wi-Fi and NTP; document placeholders require configured test network",
+  "validation": {
+    "verdict": "PASS",
+    "observation": "associated AP, NTP reply, RTC/system/local time advance",
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cores3"
+    },
+    "checker_report": "evidence/cores3/verdicts.md",
+    "runner": "tools/run_all_esp32sim.sh",
+    "captures": [
+      {
+        "name": "rtc",
+        "max_seconds": 10.0,
+        "extra_args": [
+          "--wifi",
+          "$wifi,epoch=1764000000",
+          "--net",
+          "none"
+        ],
+        "script_lines": {},
+        "injected_media": {},
+        "output_hashes": {
+          ".png": {
+            "sha256": "236205e772380705704cb84fea76996836fa02431ca6b3c1fe81a432b48626d3",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "957ea2ffcd4eb77771469a636f5bca99c32cc82952493211e5432987137ec6eb",
+            "bytes": 1782
+          }
+        }
+      },
+      {
+        "name": "rtc-before",
+        "max_seconds": 8.0,
+        "extra_args": [
+          "--wifi",
+          "$wifi,epoch=1764000000",
+          "--net",
+          "none"
+        ],
+        "script_lines": {},
+        "injected_media": {},
+        "output_hashes": {
+          ".png": {
+            "sha256": "df0f01b4667fac73cec106ed67a2d3504fba00e3e9dca141540b9ff4d74a110d",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "98e4d32a3f3b31725ec00da302cfe1f8cdbf45ea0bd6d14ea44e5a611ec5ecec",
+            "bytes": 1786
+          }
+        }
+      }
+    ]
+  }
+}

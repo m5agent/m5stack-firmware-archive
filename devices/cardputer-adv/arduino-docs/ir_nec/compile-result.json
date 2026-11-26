@@ -1,0 +1,9 @@
+{
+  "case": "ir_nec",
+  "board": "cardputer-adv",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "exit_code": 0,
+  "sketch_sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+  "firmware_sha256": "0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb",
+  "firmware_bytes": 4194304
+}

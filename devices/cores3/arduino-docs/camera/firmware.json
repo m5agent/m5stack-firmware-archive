@@ -1,0 +1,221 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "arduino-docs",
+  "case": "camera",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/camera",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cores3/camera.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 14
+  },
+  "sketch_sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+  "sketch_files": {
+    "camera.ino": {
+      "path": "devices/cores3/arduino-docs/camera/sketch/camera/camera.ino",
+      "storage": "public",
+      "sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+      "bytes": 1917
+    }
+  },
+  "files": {
+    "camera.ino.bin": {
+      "path": ".local/firmware/cores3/camera/camera.ino.bin",
+      "storage": "local",
+      "sha256": "665881043bf943e53658f134d8236d819b506581c868a300dc1071c50187ddd5",
+      "bytes": 616480
+    },
+    "camera.ino.merged.bin": {
+      "path": ".local/firmware/cores3/camera/camera.ino.merged.bin",
+      "storage": "local",
+      "sha256": "5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91",
+      "bytes": 16777216
+    },
+    "camera.ino.bootloader.bin": {
+      "path": ".local/firmware/cores3/camera/camera.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "camera.ino.partitions.bin": {
+      "path": ".local/firmware/cores3/camera/camera.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "camera.ino.elf": {
+      "path": ".local/firmware/cores3/camera/camera.ino.elf",
+      "storage": "local",
+      "sha256": "0a652091f597e2ce25acaacc6c0129cdafea672f4eef85f8a7579a4251e84bae",
+      "bytes": 12838644
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "camera.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "camera.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "camera.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "camera.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x310000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "ffat",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x610000",
+        "bytes": 10354688,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0xff0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0"
+    }
+  },
+  "expected_behavior": "Camera Init Success and QVGA RGB565 live frame",
+  "validation": {
+    "verdict": "PASS",
+    "observation": "two asymmetric mirrored RGB565 fixtures, zero dropped frames",
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cores3"
+    },
+    "checker_report": "evidence/cores3/verdicts.md",
+    "runner": "tools/run_all_esp32sim.sh",
+    "captures": [
+      {
+        "name": "camera",
+        "max_seconds": 6.0,
+        "extra_args": [
+          "--cam-image",
+          "camera-input.bmp"
+        ],
+        "script_lines": {},
+        "injected_media": {
+          "camera-input.bmp": {
+            "sha256": "baee95038ecbc81aaed02d91726923b3ebcb22230e572aebced423b2305274b1",
+            "bytes": 230454
+          }
+        },
+        "output_hashes": {
+          ".png": {
+            "sha256": "4c78472156f7ae4e80fda4ee7d4cd084b7d2c9ea5cbbab1b81ad61c5887373c7",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "1918eb6c7bebd993efbb2904dfd71d55acb2487d822e495a6e5d793784bb26d0",
+            "bytes": 1444
+          }
+        }
+      },
+      {
+        "name": "camera-before",
+        "max_seconds": 6.0,
+        "extra_args": [
+          "--cam-image",
+          "camera-before-input.bmp"
+        ],
+        "script_lines": {},
+        "injected_media": {
+          "camera-before-input.bmp": {
+            "sha256": "7bcb9edf6452bf46108ad660ec7edf3b9cd9dcf93f8f11c9191b2ab90f4c1ed0",
+            "bytes": 230454
+          }
+        },
+        "output_hashes": {
+          ".png": {
+            "sha256": "abab8bf6de0902d98eb704d08072fbd3f24e50f4ba77078d5802bd2a02733d1c",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "b14c619bd67caacf53a45680042541226163e9a8a021045a2ed8341c176b39ee",
+            "bytes": 1458
+          }
+        }
+      }
+    ]
+  }
+}

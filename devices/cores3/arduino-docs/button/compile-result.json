@@ -1,0 +1,9 @@
+{
+  "case": "button",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+  "firmware_sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+  "firmware_bytes": 16777216
+}

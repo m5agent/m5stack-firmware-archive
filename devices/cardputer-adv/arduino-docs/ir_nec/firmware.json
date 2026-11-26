@@ -1,0 +1,207 @@
+{
+  "device_id": "cardputer-adv",
+  "sku": "K132-Adv",
+  "source": "arduino-docs",
+  "case": "ir_nec",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cardputer/ir_nec.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 16
+  },
+  "sketch_sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+  "sketch_files": {
+    "ir_nec.ino": {
+      "path": "devices/cardputer-adv/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino",
+      "storage": "public",
+      "sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "bytes": 1744
+    }
+  },
+  "files": {
+    "ir_nec.ino.bin": {
+      "path": ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.bin",
+      "storage": "local",
+      "sha256": "2bfba14ce1945d5a88d5e185e815a9973852d6f29d39e83c17642b62092e3bf0",
+      "bytes": 564688
+    },
+    "ir_nec.ino.merged.bin": {
+      "path": ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.merged.bin",
+      "storage": "local",
+      "sha256": "0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb",
+      "bytes": 4194304
+    },
+    "ir_nec.ino.bootloader.bin": {
+      "path": ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "ir_nec.ino.partitions.bin": {
+      "path": ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "ir_nec.ino.elf": {
+      "path": ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.elf",
+      "storage": "local",
+      "sha256": "6e2403f4788115e0fbd3b2a8903098b7a6f29aebd98e3efd3e1f10f9e09d2dc0",
+      "bytes": 12903236
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "ir_nec.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "ir_nec.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "ir_nec.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "ir_nec.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x150000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "spiffs",
+        "type": "0x1",
+        "subtype": "0x82",
+        "offset": "0x290000",
+        "bytes": 1441792,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0x3f0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cardputer",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0",
+      "M5Cardputer": "1.1.1",
+      "IRremote": "4.7.1"
+    }
+  },
+  "expected_behavior": "On-screen and serial rising command numbers, actual GPIO44 NEC waveform",
+  "validation": {
+    "verdict": "PASS",
+    "observation": "serial and waveform agree for 0x1111/0x34..0x3a",
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cardputer-adv"
+    },
+    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "runner": "tools/run_all_adv.sh",
+    "captures": [
+      {
+        "name": "ir_nec-before",
+        "max_seconds": 3.0,
+        "extra_args": [],
+        "script_lines": {},
+        "injected_media": {},
+        "output_hashes": {
+          ".png": {
+            "sha256": "dc0a3970eeb12369381d2df8a15d76394c7dad517a11fef7ec502a7675b9f669",
+            "bytes": 97408
+          },
+          ".log": {
+            "sha256": "7e747356c53565d16b60796be8d278a085e89b383aa840410c3a0ccd415b7a9b",
+            "bytes": 832
+          },
+          ".err": {
+            "sha256": "00defb33ee1883f3f5e2b27e6523434d2fcb9b10799d80c29053433d350c88ca",
+            "bytes": 1161
+          }
+        }
+      },
+      {
+        "name": "ir_nec",
+        "max_seconds": 8.0,
+        "extra_args": [],
+        "script_lines": {},
+        "injected_media": {},
+        "output_hashes": {
+          ".png": {
+            "sha256": "243fc464c9b932e8c0fb82ab74a8a0552fbfbcb665a5969f7bbcb4b083e884db",
+            "bytes": 97408
+          },
+          ".log": {
+            "sha256": "bda8b7d038f2cddc314775b064f007653e8f5a9988d7c90b6d83a0c288105e36",
+            "bytes": 1200
+          },
+          ".err": {
+            "sha256": "acc2bf2c28cd5bbd712256b7b1a2c7c8fb9eb60c2588d10edc0bf89e7e5ca486",
+            "bytes": 1269
+          }
+        }
+      }
+    ]
+  }
+}

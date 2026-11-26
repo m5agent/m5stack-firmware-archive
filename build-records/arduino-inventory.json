@@ -1,0 +1,464 @@
+{
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "cases": [
+    {
+      "board": "cores3",
+      "case": "button",
+      "docs_route": "arduino/m5cores3/button",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/button",
+      "expected": "Power click changes title to Btn PWR",
+      "sketch": "devices/cores3/arduino-docs/button/sketch/button/button.ino",
+      "sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+        "zh_CN": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+        "ja": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "camera",
+      "docs_route": "arduino/m5cores3/camera",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/camera",
+      "expected": "Camera Init Success and QVGA RGB565 live frame",
+      "sketch": "devices/cores3/arduino-docs/camera/sketch/camera/camera.ino",
+      "sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+        "zh_CN": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+        "ja": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "display",
+      "docs_route": "arduino/m5cores3/display",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/display",
+      "expected": "Continuously drawn colored circles and text",
+      "sketch": "devices/cores3/arduino-docs/display/sketch/display/display.ino",
+      "sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+        "zh_CN": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+        "ja": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "imu",
+      "docs_route": "arduino/m5cores3/imu",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/imu",
+      "expected": "LCD and serial show accelerometer, gyro, magnetometer; inject two distinct states",
+      "sketch": "devices/cores3/arduino-docs/imu/sketch/imu/imu.ino",
+      "sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+        "zh_CN": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+        "ja": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "ltr553",
+      "docs_route": "arduino/m5cores3/ltr553",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/ltr553",
+      "expected": "LCD and serial proximity + ambient light readings respond to two inputs",
+      "sketch": "devices/cores3/arduino-docs/ltr553/sketch/ltr553/ltr553.ino",
+      "sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+        "zh_CN": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+        "ja": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df"
+      },
+      "dependency_sha256": {
+        "LTR5XX.zip": "c6c84b421b7f98780affd7fd9bdc7fb42c64a68dd599e96fc532179b7b01d1d3"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "mic",
+      "docs_route": "arduino/m5cores3/mic",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/mic",
+      "expected": "REC and changing waveform, power click switches to buffer playback",
+      "sketch": "devices/cores3/arduino-docs/mic/sketch/mic/mic.ino",
+      "sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+        "zh_CN": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+        "ja": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "pic",
+      "docs_route": "arduino/m5cores3/pic",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/pic",
+      "expected": "Mount FAT32; create WriteTest.txt; alternate /TestPicture01.png and /TestPicture02.png",
+      "sketch": "devices/cores3/arduino-docs/pic/sketch/pic/pic.ino",
+      "sha256": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+        "zh_CN": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+        "ja": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "power",
+      "docs_route": "arduino/m5cores3/power",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/power",
+      "expected": "On-screen charging, mV, percentage and VBus",
+      "sketch": "devices/cores3/arduino-docs/power/sketch/power/power.ino",
+      "sha256": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+        "zh_CN": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+        "ja": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "rtc",
+      "docs_route": "arduino/m5cores3/rtc",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/rtc",
+      "expected": "RTC and NTP UTC plus local time after Wi-Fi and NTP; document placeholders require configured test network",
+      "sketch": "devices/cores3/arduino-docs/rtc/sketch/rtc/rtc.ino",
+      "sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+        "zh_CN": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+        "ja": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "sdcard",
+      "docs_route": "arduino/m5cores3/sdcard",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/sdcard",
+      "expected": "Mount FAT32; create /WriteTest.txt; alternate /cores3_test_picture01.png and /cores3_test_picture02.png",
+      "sketch": "devices/cores3/arduino-docs/sdcard/sketch/sdcard/sdcard.ino",
+      "sha256": "dd780c565d411307ae9fd1cfd22473bd79b5a6a76eea47de68bb332252c81022",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "dd780c565d411307ae9fd1cfd22473bd79b5a6a76eea47de68bb332252c81022",
+        "zh_CN": "b1a32daf51f0ec1396cf157c61a64e8850d201fc01af649e628d3d47dc0fbdb7",
+        "ja": "e29270d9c4aa5dd2be06cc5b12266ab6fae071925e78103b698fd3ee28c08fbb"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "speaker",
+      "docs_route": "arduino/m5cores3/speaker",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/speaker",
+      "expected": "Speaker Test screen and alternating two speaker tones",
+      "sketch": "devices/cores3/arduino-docs/speaker/sketch/speaker/speaker.ino",
+      "sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+        "zh_CN": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+        "ja": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "touch",
+      "docs_route": "arduino/m5cores3/touch",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/touch",
+      "expected": "Touch event name and coordinate change; mark point on canvas",
+      "sketch": "devices/cores3/arduino-docs/touch/sketch/touch/touch.ino",
+      "sha256": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+        "zh_CN": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+        "ja": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "wakeup",
+      "docs_route": "arduino/m5cores3/wakeup",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/wakeup",
+      "expected": "Touch triggers power timer sleep, guest wakes after five seconds",
+      "sketch": "devices/cores3/arduino-docs/wakeup/sketch/wakeup/wakeup.ino",
+      "sha256": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af",
+        "zh_CN": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af",
+        "ja": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "wav",
+      "docs_route": "arduino/m5cores3/wav",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/wav",
+      "expected": "Mount FAT32 and play /sample-12s.wav",
+      "sketch": "devices/cores3/arduino-docs/wav/sketch/wav/wav.ino",
+      "sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+        "zh_CN": "2f0de86ba3d01e38db80e7ccab571767349a1ead83c67063098e53a067e3c2de",
+        "ja": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "battery",
+      "docs_route": "arduino/m5cardputer/battery",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/battery",
+      "expected": "On-screen battery level and voltage; charge indicator as appropriate",
+      "sketch": "devices/cardputer-adv/arduino-docs/battery/sketch/battery/battery.ino",
+      "sha256": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359",
+        "zh_CN": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359",
+        "ja": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "button",
+      "docs_route": "arduino/m5cardputer/button",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/button",
+      "expected": "G0 presses and releases produce Button A Pressed and Button A Released on Serial",
+      "sketch": "devices/cardputer-adv/arduino-docs/button/sketch/button/button.ino",
+      "sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+        "zh_CN": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+        "ja": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "display",
+      "docs_route": "arduino/m5cardputer/display",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/display",
+      "expected": "Continuously drawn colored circles and text",
+      "sketch": "devices/cardputer-adv/arduino-docs/display/sketch/display/display.ino",
+      "sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+        "zh_CN": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+        "ja": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "imu",
+      "docs_route": "arduino/m5cardputer/imu",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/imu",
+      "expected": "On-screen accelerometer and gyro readings respond to injection",
+      "sketch": "devices/cardputer-adv/arduino-docs/imu/sketch/imu/imu.ino",
+      "sha256": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3",
+        "zh_CN": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3",
+        "ja": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "ir_nec",
+      "docs_route": "arduino/m5cardputer/ir_nec",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec",
+      "expected": "On-screen and serial rising command numbers, actual GPIO44 NEC waveform",
+      "sketch": "devices/cardputer-adv/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino",
+      "sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+        "zh_CN": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+        "ja": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "keyboard",
+      "docs_route": "arduino/m5cardputer/keyboard",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/keyboard",
+      "expected": "Press keys including space, backspace, and Enter; actual typed output on LCD",
+      "sketch": "devices/cardputer-adv/arduino-docs/keyboard/sketch/keyboard/keyboard.ino",
+      "sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+        "zh_CN": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+        "ja": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "mic",
+      "docs_route": "arduino/m5cardputer/mic",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/mic",
+      "expected": "REC waveform responds to input; G0 press plays captured waveform",
+      "sketch": "devices/cardputer-adv/arduino-docs/mic/sketch/mic/mic.ino",
+      "sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+        "zh_CN": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+        "ja": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "sdcard",
+      "docs_route": "arduino/m5cardputer/sdcard",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/sdcard",
+      "expected": "Mount FAT32; file/directory operations and throughput complete on LCD and Serial",
+      "sketch": "devices/cardputer-adv/arduino-docs/sdcard/sketch/sdcard/sdcard.ino",
+      "sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+        "zh_CN": "bf195a0929c9bfec3cc6e3188b6b3ea8f9125bbce2f87fd0c21ad2c94d29d675",
+        "ja": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a"
+      }
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "speaker",
+      "docs_route": "arduino/m5cardputer/speaker",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "expected": "7000 Hz then 4000 Hz tone; sample stream, no application LCD output",
+      "sketch": "devices/cardputer-adv/arduino-docs/speaker/sketch/speaker/speaker.ino",
+      "sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+      "source_type": "inline",
+      "translation_missing_or_unparsed": [],
+      "translation_token_differences": [],
+      "raw_translation_sha256": {
+        "en": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+        "zh_CN": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+        "ja": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc"
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "quickstart-bargraph",
+      "docs_route": "arduino/m5cores3/program",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/program",
+      "expected": "Animated multi-column bar graph",
+      "sketch": "devices/cores3/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino",
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "source_type": "library",
+      "library": "M5GFX",
+      "library_example": "examples/Basic/BarGraph/BarGraph.ino",
+      "library_revision": "28d47949bdc84f30881623476f555398e2194313"
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "quickstart-display",
+      "docs_route": "arduino/m5cardputer/program",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/program",
+      "expected": "Animated colors and circles from M5Cardputer library",
+      "sketch": "devices/cardputer-adv/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino",
+      "sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+      "source_type": "library",
+      "library": "M5Cardputer",
+      "library_example": "examples/Basic/display/display.ino",
+      "library_revision": "2d4fa6646e4e5b47e0af96214b003aa7b15b8d81"
+    },
+    {
+      "board": "cardputer-adv",
+      "case": "speaker-sd-wav",
+      "docs_route": "arduino/m5cardputer/speaker",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "expected": "Mount FAT32 and play configured WAV file through ES8311",
+      "sketch": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/sketch/speaker_sd_wav/speaker_sd_wav.ino",
+      "sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
+      "source_type": "library",
+      "library": "M5Unified",
+      "library_tag": "0.2.8",
+      "original_source_sha256": "2de2712ea34f77ed3f16c3a323a3304a7a1ba31686cdba232135cc8643cd4d70",
+      "documented_configuration": {
+        "SDCARD_CSPIN": "GPIO_NUM_12",
+        "files": [
+          "/sample-12s.wav"
+        ]
+      }
+    },
+    {
+      "board": "cores3",
+      "case": "unit_relay",
+      "docs_route": "arduino/projects/unit/unit_relay",
+      "docs_url": "https://docs.m5stack.com/en/arduino/projects/unit/unit_relay",
+      "source_type": "inline",
+      "sketch": "devices/cores3/arduino-docs/unit_relay/sketch/unit_relay/unit_relay.ino",
+      "sha256": "732fd08370c764fddceedd93ba8e9b261bbfccdfe8e8a5fc8d8528b816c908e3",
+      "expected": "Touch toggles relay state via GPIO output"
+    },
+    {
+      "board": "cores3",
+      "case": "unit_ultrasonic_i2c",
+      "docs_route": "arduino/projects/unit/unit_ultrasonic_i2c",
+      "docs_url": "https://docs.m5stack.com/en/arduino/projects/unit/unit_ultrasonic_i2c",
+      "source_type": "inline",
+      "sketch": "devices/cores3/arduino-docs/unit_ultrasonic_i2c/sketch/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino",
+      "sha256": "195175e6a0aa276d134ec11dec8ca21d969f3a4776386a46f0bc333babf3d5a3",
+      "expected": "LCD distance follows the virtual I2C distance input"
+    }
+  ]
+}

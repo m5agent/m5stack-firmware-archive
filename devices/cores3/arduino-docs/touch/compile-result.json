@@ -1,0 +1,9 @@
+{
+  "case": "touch",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+  "firmware_sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+  "firmware_bytes": 16777216
+}

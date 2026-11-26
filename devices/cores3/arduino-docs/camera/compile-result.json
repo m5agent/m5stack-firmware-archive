@@ -1,0 +1,9 @@
+{
+  "case": "camera",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+  "firmware_sha256": "5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91",
+  "firmware_bytes": 16777216
+}

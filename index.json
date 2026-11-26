@@ -1,0 +1,1356 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "button",
+      "manifest": "devices/cores3/arduino-docs/button/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/button",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "camera",
+      "manifest": "devices/cores3/arduino-docs/camera/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/camera",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "display",
+      "manifest": "devices/cores3/arduino-docs/display/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/display",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "a88182dc789c1dfe7525ad7ff9a284fd201b6c55375502c895b689cd56af13d6",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "imu",
+      "manifest": "devices/cores3/arduino-docs/imu/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/imu",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "ltr553",
+      "manifest": "devices/cores3/arduino-docs/ltr553/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/ltr553",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "9584d3339e863ee71b8e46ea43048bdc041028be3a0b0fb9e624185fdca40001",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "mic",
+      "manifest": "devices/cores3/arduino-docs/mic/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/mic",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "ced692208d6b9b778aba1624404f461cbfad1709cee82238d2bcd7abc368a1ae",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "pic",
+      "manifest": "devices/cores3/arduino-docs/pic/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/pic",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "f19a304c51f4f88c14c6b8157c06012357548cfd4b691ccef0d7babe7ccbbbe2",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "power",
+      "manifest": "devices/cores3/arduino-docs/power/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/power",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "7beb59232d1b21d7fb38d4c994582609df364ba918a4b443bf8fdcbd0982112c",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "rtc",
+      "manifest": "devices/cores3/arduino-docs/rtc/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/rtc",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "cf450835c9b8d88f815272158040afee79f0d88cf32b1f46add9bd783b8ab00d",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "sdcard",
+      "manifest": "devices/cores3/arduino-docs/sdcard/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/sdcard",
+      "docs_section": "Build Requirements",
+      "firmware_sha256": "c97c3efde1aab234c4041d118b13eb9d4b506fd2158181e495ab4e8c8f9190b0",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "speaker",
+      "manifest": "devices/cores3/arduino-docs/speaker/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/speaker",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "touch",
+      "manifest": "devices/cores3/arduino-docs/touch/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/touch",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "wakeup",
+      "manifest": "devices/cores3/arduino-docs/wakeup/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/wakeup",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "2ddff71f4ceca5e79b709ba823b8ecf0828f2016a85e512df779e526e7a9f295",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "wav",
+      "manifest": "devices/cores3/arduino-docs/wav/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/wav",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "battery",
+      "manifest": "devices/cardputer-adv/arduino-docs/battery/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/battery",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "button",
+      "manifest": "devices/cardputer-adv/arduino-docs/button/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/button",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "display",
+      "manifest": "devices/cardputer-adv/arduino-docs/display/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/display",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "imu",
+      "manifest": "devices/cardputer-adv/arduino-docs/imu/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/imu",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "f933c50fcc3dca52d9fa8e256ed5ab5e7e1f5d68571f47d9cab976d16ec41b10",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "ir_nec",
+      "manifest": "devices/cardputer-adv/arduino-docs/ir_nec/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "keyboard",
+      "manifest": "devices/cardputer-adv/arduino-docs/keyboard/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/keyboard",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "mic",
+      "manifest": "devices/cardputer-adv/arduino-docs/mic/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/mic",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "sdcard",
+      "manifest": "devices/cardputer-adv/arduino-docs/sdcard/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/sdcard",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "speaker",
+      "manifest": "devices/cardputer-adv/arduino-docs/speaker/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "docs_section": "Beep Example",
+      "firmware_sha256": "1be720c9f62e086081f63ff6adf7f907e71f80dcc4816af71050cddd937300b5",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "quickstart-bargraph",
+      "manifest": "devices/cores3/arduino-docs/quickstart-bargraph/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/program",
+      "docs_section": "4. Program Compile & Upload",
+      "firmware_sha256": "7635ebdc5bbddd6d33dc9bbeeb4d1fd9270c4971b0692595096c24b72f648d8a",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "quickstart-display",
+      "manifest": "devices/cardputer-adv/arduino-docs/quickstart-display/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/program",
+      "docs_section": "4. Program Compile & Upload",
+      "firmware_sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "source": "arduino-docs",
+      "case": "speaker-sd-wav",
+      "manifest": "devices/cardputer-adv/arduino-docs/speaker-sd-wav/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "docs_section": "Play WAV File Example",
+      "firmware_sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "unit_relay",
+      "manifest": "devices/cores3/arduino-docs/unit_relay/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/projects/unit/unit_relay",
+      "docs_section": "2. Example",
+      "firmware_sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "verdict": "PASS",
+      "lane": "QEMU-WASM candidate profile"
+    },
+    {
+      "device_id": "cores3",
+      "source": "arduino-docs",
+      "case": "unit_ultrasonic_i2c",
+      "manifest": "devices/cores3/arduino-docs/unit_ultrasonic_i2c/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/projects/unit/unit_ultrasonic_i2c",
+      "docs_section": "2. Example",
+      "firmware_sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "verdict": "PASS",
+      "lane": "QEMU-WASM candidate profile"
+    },
+    {
+      "device_id": "cores3",
+      "source": "uiflow2",
+      "case": "v2.5.3",
+      "manifest": "devices/cores3/uiflow2/v2.5.3/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5cores3/program",
+      "docs_section": "1. UiFlow2 Firmware Flashing",
+      "firmware_sha256": "1324f12d3ddd5392f47a9eff537f9ce0b01a8e6e36d829b6bd22cdf82d2c1264",
+      "verdict": "PASS",
+      "lane": "native esp32sim"
+    }
+  ],
+  "public_files": {
+    "build-records/verified-builds.json": {
+      "sha256": "e5f680d8e753867a4c53bd9db52c11f9bdfde790026d8bfc66dac64b4d2e13e7",
+      "bytes": 13082
+    },
+    "build-records/compile-cores3.ndjson": {
+      "sha256": "0a5a5ce827ec4334000c367ed2119369d6a8040337688824e7eed7ce1a91ab6b",
+      "bytes": 4408
+    },
+    "build-records/compile-cardputer-adv.ndjson": {
+      "sha256": "730119f8cb6ac92411f1a2b4b2352b545259b34a4acd31757db2fd1108fdf7f3",
+      "bytes": 3352
+    },
+    "evidence/cores3/verdicts.md": {
+      "sha256": "e82c58e23ea124db720a6334227485627ef5dc923e694364912af1040deced74",
+      "bytes": 1148
+    },
+    "evidence/cardputer-adv/verdicts.md": {
+      "sha256": "6cce1b992f902a97e50ccc103dc5d8199685c70020b765241a9fcd4be15c8848",
+      "bytes": 904
+    },
+    "devices/cores3/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+      "bytes": 571
+    },
+    "devices/cores3/arduino-docs/button/compile-result.json": {
+      "sha256": "fd10d170a0eb736d557d246fac2f3d80ec082e4c0f322646a8be32a625edd730",
+      "bytes": 310
+    },
+    "devices/cores3/arduino-docs/button/firmware.json": {
+      "sha256": "2b63a75698adb9748b48419875aa62035555ab854a8f21a40d1d5986e2ff6b36",
+      "bytes": 6260
+    },
+    "devices/cores3/arduino-docs/camera/sketch/camera/camera.ino": {
+      "sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+      "bytes": 1917
+    },
+    "devices/cores3/arduino-docs/camera/compile-result.json": {
+      "sha256": "03612641085c5b05684606fa4db99e754421643d25e3d06bae7909e87a8ac035",
+      "bytes": 310
+    },
+    "devices/cores3/arduino-docs/camera/firmware.json": {
+      "sha256": "6df2bdb8bfcba2a969afc067c2ebce5320f62e9e3fd6fee24a2323321a98aa4e",
+      "bytes": 6520
+    },
+    "devices/cores3/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "bytes": 716
+    },
+    "devices/cores3/arduino-docs/display/compile-result.json": {
+      "sha256": "e62773d8e5b111b1730bc770edde8a7d3065e0527bad358518c36463f040a020",
+      "bytes": 311
+    },
+    "devices/cores3/arduino-docs/display/firmware.json": {
+      "sha256": "b099b87c2b948603f67639ba557d4fd0a1bc8415fb6aee97994479d352d92c42",
+      "bytes": 6044
+    },
+    "devices/cores3/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "bytes": 1754
+    },
+    "devices/cores3/arduino-docs/imu/compile-result.json": {
+      "sha256": "fb0f2963353847f8f3519cec956950db409981dd78b83caf8cc40abd55420594",
+      "bytes": 307
+    },
+    "devices/cores3/arduino-docs/imu/firmware.json": {
+      "sha256": "130d21d366639e755de2367fcc467620a65cc59ab81a97032c5db98a5b849689",
+      "bytes": 6424
+    },
+    "devices/cores3/arduino-docs/ltr553/sketch/ltr553/ltr553.ino": {
+      "sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "bytes": 1812
+    },
+    "devices/cores3/arduino-docs/ltr553/compile-result.json": {
+      "sha256": "5ec80406359ce3c2ef077f4df88cbdfa84c567ea4396536dafa170fcc980eccc",
+      "bytes": 310
+    },
+    "devices/cores3/arduino-docs/ltr553/firmware.json": {
+      "sha256": "382c99ceb08ed3495cc9259164423820b12815ad08fe026982378315a067c506",
+      "bytes": 6927
+    },
+    "devices/cores3/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "bytes": 4740
+    },
+    "devices/cores3/arduino-docs/mic/compile-result.json": {
+      "sha256": "27f22d9eb71128c47e94e393a35078c04be965c9a0ef7034c24379441ea0b771",
+      "bytes": 307
+    },
+    "devices/cores3/arduino-docs/mic/firmware.json": {
+      "sha256": "09687f636e50eabc5dddcfb7d5bca025ddfc58ab8bd0e7867cfc3c5de5141d9d",
+      "bytes": 6912
+    },
+    "devices/cores3/arduino-docs/pic/sketch/pic/pic.ino": {
+      "sha256": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+      "bytes": 1657
+    },
+    "devices/cores3/arduino-docs/pic/compile-result.json": {
+      "sha256": "be74c7965a9d4dfe8df6080d515f2a339e70c5c2a080012f8bcf5ec6ee2c1282",
+      "bytes": 307
+    },
+    "devices/cores3/arduino-docs/pic/firmware.json": {
+      "sha256": "070a6a133373afd7085c401471e2bcac0c9dd4824871d02115e872a1a0b555ef",
+      "bytes": 6450
+    },
+    "devices/cores3/arduino-docs/power/sketch/power/power.ino": {
+      "sha256": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+      "bytes": 890
+    },
+    "devices/cores3/arduino-docs/power/compile-result.json": {
+      "sha256": "cab33bd367a455c48a35cdba5118604a0d98816fc966f1be51e4fdea334d032a",
+      "bytes": 309
+    },
+    "devices/cores3/arduino-docs/power/firmware.json": {
+      "sha256": "06b96d0c95708c252270e34bbab8b0ce24ad1cb5b62a64187ed4ac7395cb4c0c",
+      "bytes": 6349
+    },
+    "devices/cores3/arduino-docs/rtc/sketch/rtc/rtc.ino": {
+      "sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "bytes": 4029
+    },
+    "devices/cores3/arduino-docs/rtc/compile-result.json": {
+      "sha256": "0eaf0d23f44c61c2476b01a9a8f22d6a0e4f5ca0266c1aba00c04f7a05dd4fc4",
+      "bytes": 307
+    },
+    "devices/cores3/arduino-docs/rtc/firmware.json": {
+      "sha256": "49f0797e4d51f27844ed66f5a32e5d46c701fc8eab66ac92a0597561045c3289",
+      "bytes": 6213
+    },
+    "devices/cores3/arduino-docs/sdcard/sketch/sdcard/sdcard.ino": {
+      "sha256": "dd780c565d411307ae9fd1cfd22473bd79b5a6a76eea47de68bb332252c81022",
+      "bytes": 1631
+    },
+    "devices/cores3/arduino-docs/sdcard/compile-result.json": {
+      "sha256": "8b363b5e8d2d78804cba4386fc3c6a20fa756bf9b92b221e77b80caab4fd8318",
+      "bytes": 310
+    },
+    "devices/cores3/arduino-docs/sdcard/firmware.json": {
+      "sha256": "eed31304cccf75f2778ef23f112e203ed341e368b61947986d3e72c13f204139",
+      "bytes": 6557
+    },
+    "devices/cores3/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "bytes": 524
+    },
+    "devices/cores3/arduino-docs/speaker/compile-result.json": {
+      "sha256": "8f2f6fddfb5d750238abc374231564e68c932a38ccabdeba5dc0d726a040c94c",
+      "bytes": 311
+    },
+    "devices/cores3/arduino-docs/speaker/firmware.json": {
+      "sha256": "6b8fd7f64d0fc18e6b1eef5ca8a0eebc5203938e47bf29ddc975fa2a219fea31",
+      "bytes": 5613
+    },
+    "devices/cores3/arduino-docs/touch/sketch/touch/touch.ino": {
+      "sha256": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+      "bytes": 1546
+    },
+    "devices/cores3/arduino-docs/touch/compile-result.json": {
+      "sha256": "3cf0ae6024002be85ce92275b1da3a52004f530e88167b8718e57d8faa1c5798",
+      "bytes": 309
+    },
+    "devices/cores3/arduino-docs/touch/firmware.json": {
+      "sha256": "c9fdc65ff2ede9f4f5f3dd9d560fe46560a46186d2306f162e0215c129d936dc",
+      "bytes": 6478
+    },
+    "devices/cores3/arduino-docs/wakeup/sketch/wakeup/wakeup.ino": {
+      "sha256": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af",
+      "bytes": 1081
+    },
+    "devices/cores3/arduino-docs/wakeup/compile-result.json": {
+      "sha256": "eb6f0ef13f6158b41505e5d1ab241d22b28b29628b8893ce01897e39fa144ad8",
+      "bytes": 310
+    },
+    "devices/cores3/arduino-docs/wakeup/firmware.json": {
+      "sha256": "3828a5306e19bd62a2dc729020fcaff39f2a9c78fbcca544fdcbaa7334b48d4e",
+      "bytes": 6396
+    },
+    "devices/cores3/arduino-docs/wav/sketch/wav/wav.ino": {
+      "sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+      "bytes": 6552
+    },
+    "devices/cores3/arduino-docs/wav/compile-result.json": {
+      "sha256": "d8b563e48ea8a22152aeb0bb10d968a2ea86b7cfddebbaacb5f75635750b6836",
+      "bytes": 307
+    },
+    "devices/cores3/arduino-docs/wav/firmware.json": {
+      "sha256": "36a4c8d3f1b1bbd25df982e72bd50952c01b54feebefe96c00cc6962a338f008",
+      "bytes": 5754
+    },
+    "devices/cardputer-adv/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359",
+      "bytes": 767
+    },
+    "devices/cardputer-adv/arduino-docs/battery/compile-result.json": {
+      "sha256": "5c092a00cefdd40c25f5412b7dfcb0f78c091110b421a3f548690f1fcae8af48",
+      "bytes": 320
+    },
+    "devices/cardputer-adv/arduino-docs/battery/firmware.json": {
+      "sha256": "17ab17bda6f055694d8bc3e0d30632279933f3b0b0b8cd0a5b52b0b4b6eeda2b",
+      "bytes": 6428
+    },
+    "devices/cardputer-adv/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+      "bytes": 329
+    },
+    "devices/cardputer-adv/arduino-docs/button/compile-result.json": {
+      "sha256": "1a0cdfecfeae4741cba72dea72328c251a07b93d819d33e5d02b2db38c8c490d",
+      "bytes": 319
+    },
+    "devices/cardputer-adv/arduino-docs/button/firmware.json": {
+      "sha256": "10b458a5dc6416f6cca5eb3e12fddf173013d0969bf732e987a5d305b87b6dd0",
+      "bytes": 5714
+    },
+    "devices/cardputer-adv/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+      "bytes": 724
+    },
+    "devices/cardputer-adv/arduino-docs/display/compile-result.json": {
+      "sha256": "76df66b54b76f402bfa92557b8ea814c875258a59240eb9c3ec50ebdd60d5d0b",
+      "bytes": 320
+    },
+    "devices/cardputer-adv/arduino-docs/display/firmware.json": {
+      "sha256": "a4b4af2955152485aeb9436008b445dc67714f0d620429d4640b99bf78e7513b",
+      "bytes": 6148
+    },
+    "devices/cardputer-adv/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3",
+      "bytes": 808
+    },
+    "devices/cardputer-adv/arduino-docs/imu/compile-result.json": {
+      "sha256": "e9aa1d6fe10e417fbc14a8c8d4fd201fd5d950d80308036fe05d8942462939da",
+      "bytes": 316
+    },
+    "devices/cardputer-adv/arduino-docs/imu/firmware.json": {
+      "sha256": "9d627a92debd1b0fdd1529e2d955e0b1a66a78fe350db0ac90ed912cb01c99b7",
+      "bytes": 6433
+    },
+    "devices/cardputer-adv/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "bytes": 1744
+    },
+    "devices/cardputer-adv/arduino-docs/ir_nec/compile-result.json": {
+      "sha256": "f9494f531f334254318c499de2641fb6dc0a26f93f267dac189b69610d7459d5",
+      "bytes": 319
+    },
+    "devices/cardputer-adv/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "d08cb2c2ef2635599222a9406acc0627162d1e9eb78e23fded25313dedb8210c",
+      "bytes": 6177
+    },
+    "devices/cardputer-adv/arduino-docs/keyboard/sketch/keyboard/keyboard.ino": {
+      "sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+      "bytes": 1605
+    },
+    "devices/cardputer-adv/arduino-docs/keyboard/compile-result.json": {
+      "sha256": "ef9ba95a84c3200e21c742cda767184ee9a8db4e135dee2e158db814ea5b2dc3",
+      "bytes": 321
+    },
+    "devices/cardputer-adv/arduino-docs/keyboard/firmware.json": {
+      "sha256": "3e6f94473aa567f71099d31a3bb32de30e682b22fe0316046cc18a41cdbd7fdb",
+      "bytes": 7791
+    },
+    "devices/cardputer-adv/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "bytes": 4126
+    },
+    "devices/cardputer-adv/arduino-docs/mic/compile-result.json": {
+      "sha256": "a2d5ed9a5430f9df79dcf1f0d79ffdcd3af847ab04a2819c35c6ae521d514f96",
+      "bytes": 316
+    },
+    "devices/cardputer-adv/arduino-docs/mic/firmware.json": {
+      "sha256": "d265ee4d1eb80187e560d6f1b819dcd98f2d90034c9dbf6c6ed41d0d0de46017",
+      "bytes": 8843
+    },
+    "devices/cardputer-adv/arduino-docs/sdcard/sketch/sdcard/sdcard.ino": {
+      "sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+      "bytes": 6342
+    },
+    "devices/cardputer-adv/arduino-docs/sdcard/compile-result.json": {
+      "sha256": "a6cdd0869c46bdccab76321e358b17c07c19d4a596eb8d2ebf4fd57281f96db3",
+      "bytes": 319
+    },
+    "devices/cardputer-adv/arduino-docs/sdcard/firmware.json": {
+      "sha256": "c7427294b7a8f27edc762487e43f30cd2ce989586119a3b673b6b15e4ee1c8d5",
+      "bytes": 6635
+    },
+    "devices/cardputer-adv/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+      "bytes": 267
+    },
+    "devices/cardputer-adv/arduino-docs/speaker/compile-result.json": {
+      "sha256": "737976ff51ed7b792a1584aa10a19bc007b2f9f498012b61c7d8e2d9caecdeb0",
+      "bytes": 320
+    },
+    "devices/cardputer-adv/arduino-docs/speaker/firmware.json": {
+      "sha256": "5bc4a553ab519bb997de0fd272f6247814b12e7a1bbd5ce2759fea99bf177941",
+      "bytes": 5715
+    },
+    "devices/cores3/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino": {
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    },
+    "devices/cores3/arduino-docs/quickstart-bargraph/compile-result.json": {
+      "sha256": "73c7a97eb948a15653940af72a2bb63fe7041e7dc4131b5ec2c5b8aee3328894",
+      "bytes": 323
+    },
+    "devices/cores3/arduino-docs/quickstart-bargraph/firmware.json": {
+      "sha256": "3681e281788589fb63fb0b7b28ccccffc4b41d1d51fa3ff020883c9455c3ea9d",
+      "bytes": 6497
+    },
+    "devices/cardputer-adv/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino": {
+      "sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+      "bytes": 1142
+    },
+    "devices/cardputer-adv/arduino-docs/quickstart-display/compile-result.json": {
+      "sha256": "19decca1ca8fc961f17b7d94ffe7bd392167271583da1fcd5ea66b9dd397277e",
+      "bytes": 331
+    },
+    "devices/cardputer-adv/arduino-docs/quickstart-display/firmware.json": {
+      "sha256": "5fdf271492b93bfb6dbad9502697059b1f6b1b834968814ca07f55f18c0aa18b",
+      "bytes": 6603
+    },
+    "devices/cardputer-adv/arduino-docs/speaker-sd-wav/sketch/speaker_sd_wav/speaker_sd_wav.ino": {
+      "sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
+      "bytes": 3460
+    },
+    "devices/cardputer-adv/arduino-docs/speaker-sd-wav/compile-result.json": {
+      "sha256": "866f5748bf0eba1c64bbad1089d7b391412feaad5032ebaee519f4406b5c180b",
+      "bytes": 327
+    },
+    "devices/cardputer-adv/arduino-docs/speaker-sd-wav/firmware.json": {
+      "sha256": "c2e3ab5adcd2a0f581352c0e04fa90eac2d13f20c60e653604db7ec6ef3ddaf5",
+      "bytes": 6407
+    },
+    "devices/cores3/arduino-docs/unit_relay/sketch/unit_relay/unit_relay.ino": {
+      "sha256": "732fd08370c764fddceedd93ba8e9b261bbfccdfe8e8a5fc8d8528b816c908e3",
+      "bytes": 885
+    },
+    "devices/cores3/arduino-docs/unit_relay/firmware.json": {
+      "sha256": "3d5466b3b3bf250f93bebe03d21edd60adc6d0e28960851577c5d68d15f89834",
+      "bytes": 7130
+    },
+    "devices/cores3/arduino-docs/unit_ultrasonic_i2c/sketch/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino": {
+      "sha256": "195175e6a0aa276d134ec11dec8ca21d969f3a4776386a46f0bc333babf3d5a3",
+      "bytes": 675
+    },
+    "devices/cores3/arduino-docs/unit_ultrasonic_i2c/firmware.json": {
+      "sha256": "da2ecc6e29a1380436b1d17a0fa3ea6abf99456c504dfafbef14175e33d62d4c",
+      "bytes": 7913
+    },
+    "devices/cores3/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "70e7f1bd173c6429f2fdbcfa1a085bb6a12573c4b2eddb2bead0378c9b8e1877",
+      "bytes": 3043
+    },
+    "tools/import_arduino.py": {
+      "sha256": "de823867f2b295c8c1a7e0bb27d284c57d9628f52a124c67e63e85b0ee9c84dd",
+      "bytes": 2149
+    },
+    "tools/check_uiflow2.py": {
+      "sha256": "51a9283275a5ac172ada4d1cb707a130a175e17ce5854a140dc6ce84256c982a",
+      "bytes": 1008
+    },
+    "tools/fetch_uiflow2.py": {
+      "sha256": "df65bb4f3a43140fa3e3ba7ffec99f80a7149188bfd34951169e5d12692c8937",
+      "bytes": 1313
+    },
+    "tools/run_all_esp32sim.sh": {
+      "sha256": "6d19572a97f7efa59b24527bb1798337c426ea2eb64da886aeeee28b5cc9f6b7",
+      "bytes": 4274
+    },
+    "tools/check_adv.py": {
+      "sha256": "6f6d87c10a35f92ddadd1278189d1dff14177e2cdacd3ac33bee7728e58409e7",
+      "bytes": 10587
+    },
+    "tools/verify.py": {
+      "sha256": "1e635ba4de444480df691cff4435bbdc1f5816a5e3e94b223bda5c17060af783",
+      "bytes": 1683
+    },
+    "tools/run_all_adv.sh": {
+      "sha256": "65aa86fea174eb4b8d84ced64eced7872b1bac08f9cf517f0c48c0f0f47276f6",
+      "bytes": 3963
+    },
+    "tools/check_cores3.py": {
+      "sha256": "9dcf8c4433aea2188f1d2025553f813d04adb389efd32209aa3aac7875d3902b",
+      "bytes": 18336
+    },
+    "fixtures/imu.txt": {
+      "sha256": "0913242e8cb96afc52356b3391de775e725722abf78efd9d288318f573fddba2",
+      "bytes": 94
+    },
+    "fixtures/uiflow2-usb.txt": {
+      "sha256": "bd21b98011da8afa8d25f58927ed207745f5f84059443803713cbfe47d652fc4",
+      "bytes": 95
+    },
+    "fixtures/mic-733hz.wav": {
+      "sha256": "55dc06fbe30596d35016860f9c95a2c621332655bc7218154bcefc271a2b999f",
+      "bytes": 408044
+    },
+    "fixtures/seed.img.gz": {
+      "sha256": "dfeb293178fbcc95b561b7b1d62e3bd63454b87e71d57fca479152ad28cf6635",
+      "bytes": 85914,
+      "uncompressed": {
+        "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+        "bytes": 67108864
+      }
+    },
+    "fixtures/pic-a.bmp": {
+      "sha256": "baee95038ecbc81aaed02d91726923b3ebcb22230e572aebced423b2305274b1",
+      "bytes": 230454
+    },
+    "fixtures/pic-b.bmp": {
+      "sha256": "7bcb9edf6452bf46108ad660ec7edf3b9cd9dcf93f8f11c9191b2ab90f4c1ed0",
+      "bytes": 230454
+    },
+    "fixtures/ltr553.txt": {
+      "sha256": "ac5f76159581d16efbee2942074de0e7a6d3150bb001e93dd14b242b7253ffa9",
+      "bytes": 38
+    },
+    "fixtures/sd-contents.json": {
+      "sha256": "cd675a2d723003f70cb54d8a36b41f15cfbb302b12de3e294a3414177e3b1995",
+      "bytes": 668
+    },
+    "evidence/cores3/uiflow2-summary.json": {
+      "sha256": "b0a6543d0a328a9cfbecfa11880d879fa549b3b8809547fcd919bb992883608f",
+      "bytes": 400
+    },
+    "evidence/cores3/accessory-qemu-wasm-summary.json": {
+      "sha256": "0fcb01bf8280f317ea8d2f6d81aad164aa36c5c50099dc5f061fde24ca4a426e",
+      "bytes": 6912
+    },
+    "build-records/arduino-inventory.json": {
+      "sha256": "8b3c329ecb30f8c389a3fc5c8e3b6b4f948685984151f15c361dec5a139983b4",
+      "bytes": 22792
+    },
+    ".gitattributes": {
+      "bytes": 96,
+      "sha256": "452c702a509c6ff643716be6c4000fe03b9ffe9ea0e1de6f52cba736263f4f35"
+    },
+    ".gitignore": {
+      "bytes": 22,
+      "sha256": "ea49267c9c71ac9716166e54bec1a327076f8dbb2fad79475e87c48511d82e01"
+    },
+    "README.md": {
+      "bytes": 11488,
+      "sha256": "a6d5d2b44b32b1430630b94aa9c0206c00cc5ec9e13a899cfcd73a3d47a26609"
+    },
+    "NOTICE": {
+      "bytes": 1372,
+      "sha256": "9f747f3c5132bb0d1247a2b395ef0c6a750223e7bdbf4594c2fbcac7254ab617"
+    },
+    "licenses/M5GFX-MIT.txt": {
+      "bytes": 1064,
+      "sha256": "2076614535b2a8ea22d46dc9c5469a924e1a726e9d81a7cb2723a5e9833fe7a3"
+    },
+    "licenses/M5Unified-MIT.txt": {
+      "bytes": 1063,
+      "sha256": "44611d917bece311f5c8eeffce83d8bf9e9ca3f815d262f694ff4a7996af50ea"
+    },
+    "licenses/esp32sim-MIT.txt": {
+      "bytes": 1150,
+      "sha256": "9de2fd8155bb09da4f50be6e5eb0688bfbcc4808e9a94f7713145a321d52a396"
+    }
+  },
+  "local_files": {
+    ".local/firmware/cores3/button/button.ino.bin": {
+      "sha256": "5489ce900ea9b5eedc7960ec0a88c1236d6c1378aa86fd01caf8691c8f01b76b",
+      "bytes": 566384
+    },
+    ".local/firmware/cores3/button/button.ino.merged.bin": {
+      "sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/button/button.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/button/button.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/button/button.ino.elf": {
+      "sha256": "953a2e9350c14fc4d801f77796a0317fea44047d36e11a984de336fdac7f3a41",
+      "bytes": 12303572
+    },
+    ".local/firmware/boot_app0.bin": {
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    },
+    ".local/firmware/cores3/camera/camera.ino.bin": {
+      "sha256": "665881043bf943e53658f134d8236d819b506581c868a300dc1071c50187ddd5",
+      "bytes": 616480
+    },
+    ".local/firmware/cores3/camera/camera.ino.merged.bin": {
+      "sha256": "5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/camera/camera.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/camera/camera.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/camera/camera.ino.elf": {
+      "sha256": "0a652091f597e2ce25acaacc6c0129cdafea672f4eef85f8a7579a4251e84bae",
+      "bytes": 12838644
+    },
+    ".local/firmware/cores3/display/display.ino.bin": {
+      "sha256": "88687d156ea2c8f5d0c5490681feb4722fbebac7ff46e4a2f6a39355ed11c593",
+      "bytes": 560704
+    },
+    ".local/firmware/cores3/display/display.ino.merged.bin": {
+      "sha256": "a88182dc789c1dfe7525ad7ff9a284fd201b6c55375502c895b689cd56af13d6",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/display/display.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/display/display.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/display/display.ino.elf": {
+      "sha256": "2354d9e89de138a92fca9a951e8d2bb5a448f61c1cc75480def9a45ab6bf27bd",
+      "bytes": 12299052
+    },
+    ".local/firmware/cores3/imu/imu.ino.bin": {
+      "sha256": "887d455ee5681817c6960b4e62b044147405660c1bb316a242faf4842e32a948",
+      "bytes": 564656
+    },
+    ".local/firmware/cores3/imu/imu.ino.merged.bin": {
+      "sha256": "3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/imu/imu.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/imu/imu.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/imu/imu.ino.elf": {
+      "sha256": "01dea6f0f054534001dc51c636316b4a39130b6d62a01f322932bc49630e0f5f",
+      "bytes": 12309464
+    },
+    ".local/firmware/cores3/ltr553/ltr553.ino.bin": {
+      "sha256": "eb66244f52393260dfad1762bb3db80ff6cef7d0e6167093c36a669dd407293c",
+      "bytes": 567952
+    },
+    ".local/firmware/cores3/ltr553/ltr553.ino.merged.bin": {
+      "sha256": "9584d3339e863ee71b8e46ea43048bdc041028be3a0b0fb9e624185fdca40001",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/ltr553/ltr553.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/ltr553/ltr553.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/ltr553/ltr553.ino.elf": {
+      "sha256": "22d1b25873ea1775e3bed99e86056974c402140b4b3c537dea84256f224fd1a2",
+      "bytes": 12374804
+    },
+    ".local/firmware/cores3/mic/mic.ino.bin": {
+      "sha256": "baf42e11cd22ff3defebbf6f082b0cf0c76072a4bff02695985b7dd707cffe17",
+      "bytes": 594592
+    },
+    ".local/firmware/cores3/mic/mic.ino.merged.bin": {
+      "sha256": "ced692208d6b9b778aba1624404f461cbfad1709cee82238d2bcd7abc368a1ae",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/mic/mic.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/mic/mic.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/mic/mic.ino.elf": {
+      "sha256": "0c28758ddb66fb67b565e2a406946d2061e00cfc581457e743e8ce335608f846",
+      "bytes": 12605888
+    },
+    ".local/firmware/cores3/pic/pic.ino.bin": {
+      "sha256": "ec598de3bf788676c46d4330e176e68e41435ff15937fe35df640897dd1d3950",
+      "bytes": 619840
+    },
+    ".local/firmware/cores3/pic/pic.ino.merged.bin": {
+      "sha256": "f19a304c51f4f88c14c6b8157c06012357548cfd4b691ccef0d7babe7ccbbbe2",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/pic/pic.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/pic/pic.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/pic/pic.ino.elf": {
+      "sha256": "59fef0cf5499b6e12a39f93d7bcafe197e412ea223fea28eebf974d57f8e4964",
+      "bytes": 13040856
+    },
+    ".local/firmware/cores3/power/power.ino.bin": {
+      "sha256": "8fa265308a9ab7fcefc3287e4f6abc3d965a5760429929d79fa53a6253ced30f",
+      "bytes": 571584
+    },
+    ".local/firmware/cores3/power/power.ino.merged.bin": {
+      "sha256": "7beb59232d1b21d7fb38d4c994582609df364ba918a4b443bf8fdcbd0982112c",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/power/power.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/power/power.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/power/power.ino.elf": {
+      "sha256": "d0a26f50fff6b7f2f8d115a187baf4c0c54b65ac1a0a62f809f2ca448f56eb16",
+      "bytes": 12420960
+    },
+    ".local/firmware/cores3/rtc/rtc.ino.bin": {
+      "sha256": "bbf4ae27337203b8a99a17f58d54724b6f2b58a31c2f3fe5da37509ec972b079",
+      "bytes": 1118736
+    },
+    ".local/firmware/cores3/rtc/rtc.ino.merged.bin": {
+      "sha256": "cf450835c9b8d88f815272158040afee79f0d88cf32b1f46add9bd783b8ab00d",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/rtc/rtc.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/rtc/rtc.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/rtc/rtc.ino.elf": {
+      "sha256": "0bc3ef827431cb99e86a5f15965c17866b5b89d73717222e2f9dce04a57ed9cf",
+      "bytes": 17702516
+    },
+    ".local/firmware/cores3/sdcard/sdcard.ino.bin": {
+      "sha256": "0bd214227a56cfac01e4cc7f84c73bdc0394607b858a338d5b9ebfb601905571",
+      "bytes": 618816
+    },
+    ".local/firmware/cores3/sdcard/sdcard.ino.merged.bin": {
+      "sha256": "c97c3efde1aab234c4041d118b13eb9d4b506fd2158181e495ab4e8c8f9190b0",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/sdcard/sdcard.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/sdcard/sdcard.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/sdcard/sdcard.ino.elf": {
+      "sha256": "2bed3643f5117ac08818ca3da869a6e280cc5272aac689c31561fc5992ad9b48",
+      "bytes": 13043028
+    },
+    ".local/firmware/cores3/speaker/speaker.ino.bin": {
+      "sha256": "c133e292b8e265c49a6528f56b48d78916842de5de6a49c9a582270f543cd053",
+      "bytes": 584912
+    },
+    ".local/firmware/cores3/speaker/speaker.ino.merged.bin": {
+      "sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/speaker/speaker.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/speaker/speaker.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/speaker/speaker.ino.elf": {
+      "sha256": "1b4e93758884e892d48a836138eab928bbdf4208c361555f0caa83d1690a5e18",
+      "bytes": 12515088
+    },
+    ".local/firmware/cores3/touch/touch.ino.bin": {
+      "sha256": "fae38cc1d16ba051013d8468ec8b07776bc6a6abb1ee19e76f3d0625c9f2f770",
+      "bytes": 567680
+    },
+    ".local/firmware/cores3/touch/touch.ino.merged.bin": {
+      "sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/touch/touch.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/touch/touch.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/touch/touch.ino.elf": {
+      "sha256": "6c1b37c9acdfce1d759cf20bc3aa7bdbae4493ad09bacac4cdbab2efb1bf05be",
+      "bytes": 12315568
+    },
+    ".local/firmware/cores3/wakeup/wakeup.ino.bin": {
+      "sha256": "48aff2d46e428f4185922be1a722da08f88511bfabf8f3177a1ff88efb8c73fb",
+      "bytes": 581120
+    },
+    ".local/firmware/cores3/wakeup/wakeup.ino.merged.bin": {
+      "sha256": "2ddff71f4ceca5e79b709ba823b8ecf0828f2016a85e512df779e526e7a9f295",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/wakeup/wakeup.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/wakeup/wakeup.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/wakeup/wakeup.ino.elf": {
+      "sha256": "d5dbc8c568cc9d0de62d2d600abc0999eed12a2d03b9362b6848543ee826f9b2",
+      "bytes": 12430048
+    },
+    ".local/firmware/cores3/wav/wav.ino.bin": {
+      "sha256": "559fa2d8d59336a8b5b5f38e6c75b24f96757fa8f34c6a310bc34551abb0dfb0",
+      "bytes": 628496
+    },
+    ".local/firmware/cores3/wav/wav.ino.merged.bin": {
+      "sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/wav/wav.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/wav/wav.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/wav/wav.ino.elf": {
+      "sha256": "06b5b2e0e2913a69f5031767a37153cae636f3cb99a65d9553379f035f2d8f03",
+      "bytes": 13218912
+    },
+    ".local/firmware/cardputer-adv/battery/battery.ino.bin": {
+      "sha256": "8aa8a9caf550b0694d7489c429567cddd28f752a9152d2f8b83d0d04157ebf0b",
+      "bytes": 566928
+    },
+    ".local/firmware/cardputer-adv/battery/battery.ino.merged.bin": {
+      "sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/battery/battery.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/battery/battery.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/battery/battery.ino.elf": {
+      "sha256": "95dd047cb7ab33d910cabbec68bf1da0d3e788dc59e654c4083c61091a587250",
+      "bytes": 12839352
+    },
+    ".local/firmware/cardputer-adv/button/button.ino.bin": {
+      "sha256": "5bf2522e74bf5271df1b6f993ca7b029a6ccc1535bc928689b54aab0fe37bf41",
+      "bytes": 554640
+    },
+    ".local/firmware/cardputer-adv/button/button.ino.merged.bin": {
+      "sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/button/button.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/button/button.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/button/button.ino.elf": {
+      "sha256": "3ef769b073e04c346f299e34d7280c308922571c8697b6f99d8c546e8f5ed08b",
+      "bytes": 12719564
+    },
+    ".local/firmware/cardputer-adv/display/display.ino.bin": {
+      "sha256": "5e2ae4e88d37e4b28e7c693b0d95c3d6388cdff6b1290e2b3b46f2f96c914d2a",
+      "bytes": 552976
+    },
+    ".local/firmware/cardputer-adv/display/display.ino.merged.bin": {
+      "sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/display/display.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/display/display.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/display/display.ino.elf": {
+      "sha256": "d40e205be0e022bc8677b1da8b7718027a0610c32283596e897de57362ed44bf",
+      "bytes": 12731780
+    },
+    ".local/firmware/cardputer-adv/imu/imu.ino.bin": {
+      "sha256": "242d220081410fc22e2ba7e2a6524aaa6a0155432dfe1216470119763c6f3060",
+      "bytes": 556816
+    },
+    ".local/firmware/cardputer-adv/imu/imu.ino.merged.bin": {
+      "sha256": "f933c50fcc3dca52d9fa8e256ed5ab5e7e1f5d68571f47d9cab976d16ec41b10",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/imu/imu.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/imu/imu.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/imu/imu.ino.elf": {
+      "sha256": "ec6808db24c327fb02168460282bbc645700221241e8d8d51825c27e4ba22565",
+      "bytes": 12741932
+    },
+    ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.bin": {
+      "sha256": "2bfba14ce1945d5a88d5e185e815a9973852d6f29d39e83c17642b62092e3bf0",
+      "bytes": 564688
+    },
+    ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.merged.bin": {
+      "sha256": "0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/ir_nec/ir_nec.ino.elf": {
+      "sha256": "6e2403f4788115e0fbd3b2a8903098b7a6f29aebd98e3efd3e1f10f9e09d2dc0",
+      "bytes": 12903236
+    },
+    ".local/firmware/cardputer-adv/keyboard/keyboard.ino.bin": {
+      "sha256": "c7486bbf94df803061fab405d86a62d4b7f3038059dd7ff00ac0d65e49159134",
+      "bytes": 568880
+    },
+    ".local/firmware/cardputer-adv/keyboard/keyboard.ino.merged.bin": {
+      "sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/keyboard/keyboard.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/keyboard/keyboard.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/keyboard/keyboard.ino.elf": {
+      "sha256": "c353e2b7a8f8d88eb3ea3ab8ad6881de4b7120041b6881f3bab1dcf8ab2a9d83",
+      "bytes": 12853640
+    },
+    ".local/firmware/cardputer-adv/mic/mic.ino.bin": {
+      "sha256": "2cffff328536cfef43500039d8f897c7b2c7f29098fd41ef942c35d3fb1562d8",
+      "bytes": 589696
+    },
+    ".local/firmware/cardputer-adv/mic/mic.ino.merged.bin": {
+      "sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/mic/mic.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/mic/mic.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/mic/mic.ino.elf": {
+      "sha256": "68cfcc123006d399ec84ef0a6c88e5680ab73afb0a9d44eb18e4fc2c63e0504a",
+      "bytes": 13014180
+    },
+    ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bin": {
+      "sha256": "e9a60216b78fee271011228f5bf31d86dc8194f2e4ccecef4921caae4f255f90",
+      "bytes": 603856
+    },
+    ".local/firmware/cardputer-adv/sdcard/sdcard.ino.merged.bin": {
+      "sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/sdcard/sdcard.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/sdcard/sdcard.ino.elf": {
+      "sha256": "7775962f70336b5f05b43bfcd50d0d2783f9450773ccfcccc0f58266238f6603",
+      "bytes": 13405988
+    },
+    ".local/firmware/cardputer-adv/speaker/speaker.ino.bin": {
+      "sha256": "22fcb00e6c407a34ed681dece847b4d3693a53b80f99cc28b3a22b325130a97e",
+      "bytes": 572016
+    },
+    ".local/firmware/cardputer-adv/speaker/speaker.ino.merged.bin": {
+      "sha256": "1be720c9f62e086081f63ff6adf7f907e71f80dcc4816af71050cddd937300b5",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/speaker/speaker.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/speaker/speaker.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/speaker/speaker.ino.elf": {
+      "sha256": "4d7cd570a7d0330639d0251235fd6bc9740d401ca17b5fc9321d946473efe8b2",
+      "bytes": 12911792
+    },
+    ".local/firmware/cores3/quickstart-bargraph/quickstart_bargraph.ino.bin": {
+      "sha256": "a7b55da74e40400eab4b3fb37fb5abd59121ede7aff26e6a57aa904a52faacc4",
+      "bytes": 490304
+    },
+    ".local/firmware/cores3/quickstart-bargraph/quickstart_bargraph.ino.merged.bin": {
+      "sha256": "7635ebdc5bbddd6d33dc9bbeeb4d1fd9270c4971b0692595096c24b72f648d8a",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/quickstart-bargraph/quickstart_bargraph.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/quickstart-bargraph/quickstart_bargraph.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/quickstart-bargraph/quickstart_bargraph.ino.elf": {
+      "sha256": "564a7c8b4f4e09d8895483b94c5ce233eb7e68eb88470bbdd25b8282014d4585",
+      "bytes": 10914372
+    },
+    ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.bin": {
+      "sha256": "6aa248f302be638b0c1ecc0913a6b7caea524fb283b808edbf4c07ed8924dd60",
+      "bytes": 552976
+    },
+    ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.merged.bin": {
+      "sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/quickstart-display/quickstart_display.ino.elf": {
+      "sha256": "37f8b5ed0b7fba25a02b2922d52cc2eb7eb38cd940f9c0763483377f7b0ce40b",
+      "bytes": 12731824
+    },
+    ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.bin": {
+      "sha256": "d56bcc552722bb6bf9fe4a9aa59b415597b55780a28a3af30bbf2b8a193a355d",
+      "bytes": 608240
+    },
+    ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.merged.bin": {
+      "sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b",
+      "bytes": 4194304
+    },
+    ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    ".local/firmware/cardputer-adv/speaker-sd-wav/speaker_sd_wav.ino.elf": {
+      "sha256": "cba55df3fc0307e4dae37b3842cc30228c18bb492df62b590d2fdb12ffe7d998",
+      "bytes": 12938148
+    },
+    ".local/firmware/cores3/unit_relay/unit_relay.ino.bin": {
+      "sha256": "bea245e8bd1f7718bc8e194e4d0d3bf18a77e254131f2177f0cda343f7ae2a6a",
+      "bytes": 564944
+    },
+    ".local/firmware/cores3/unit_relay/unit_relay.ino.merged.bin": {
+      "sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/unit_relay/unit_relay.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/unit_relay/unit_relay.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/unit_relay/unit_relay.ino.elf": {
+      "sha256": "660a07190138eb55e8eb75661b1d416324b91589b8423195830a7077f509353d",
+      "bytes": 12307856
+    },
+    ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.bin": {
+      "sha256": "25262aea06a9a94e38707e6946f7e89a076b1e74df8d14fbf1f016b5151a07ca",
+      "bytes": 584464
+    },
+    ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.merged.bin": {
+      "sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "bytes": 16777216
+    },
+    ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    ".local/firmware/cores3/unit_ultrasonic_i2c/unit_ultrasonic_i2c.ino.elf": {
+      "sha256": "79e40381ad696bc87970b12325e8029e5408802cd7a4f1de53a4bac08e951063",
+      "bytes": 12452876
+    },
+    ".local/firmware/cores3/uiflow2/v2.5.3/uiflow2-v2.5.3.bin": {
+      "sha256": "1324f12d3ddd5392f47a9eff537f9ce0b01a8e6e36d829b6bd22cdf82d2c1264",
+      "bytes": 16121856
+    }
+  }
+}

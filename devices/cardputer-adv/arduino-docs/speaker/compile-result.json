@@ -1,0 +1,9 @@
+{
+  "case": "speaker",
+  "board": "cardputer-adv",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "exit_code": 0,
+  "sketch_sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+  "firmware_sha256": "1be720c9f62e086081f63ff6adf7f907e71f80dcc4816af71050cddd937300b5",
+  "firmware_bytes": 4194304
+}

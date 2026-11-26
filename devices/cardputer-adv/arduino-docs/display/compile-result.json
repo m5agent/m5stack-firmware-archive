@@ -1,0 +1,9 @@
+{
+  "case": "display",
+  "board": "cardputer-adv",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "exit_code": 0,
+  "sketch_sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+  "firmware_sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968",
+  "firmware_bytes": 4194304
+}

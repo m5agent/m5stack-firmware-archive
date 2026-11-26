@@ -1,0 +1,9 @@
+{
+  "case": "imu",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+  "firmware_sha256": "3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed",
+  "firmware_bytes": 16777216
+}

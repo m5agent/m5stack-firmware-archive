@@ -1,0 +1,222 @@
+{
+  "device_id": "cardputer-adv",
+  "sku": "K132-Adv",
+  "source": "arduino-docs",
+  "case": "sdcard",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/sdcard",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cardputer/sdcard.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 16
+  },
+  "sketch_sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+  "sketch_files": {
+    "sdcard.ino": {
+      "path": "devices/cardputer-adv/arduino-docs/sdcard/sketch/sdcard/sdcard.ino",
+      "storage": "public",
+      "sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+      "bytes": 6342
+    }
+  },
+  "files": {
+    "sdcard.ino.bin": {
+      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bin",
+      "storage": "local",
+      "sha256": "e9a60216b78fee271011228f5bf31d86dc8194f2e4ccecef4921caae4f255f90",
+      "bytes": 603856
+    },
+    "sdcard.ino.merged.bin": {
+      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.merged.bin",
+      "storage": "local",
+      "sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132",
+      "bytes": 4194304
+    },
+    "sdcard.ino.bootloader.bin": {
+      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "sdcard.ino.partitions.bin": {
+      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "sdcard.ino.elf": {
+      "path": ".local/firmware/cardputer-adv/sdcard/sdcard.ino.elf",
+      "storage": "local",
+      "sha256": "7775962f70336b5f05b43bfcd50d0d2783f9450773ccfcccc0f58266238f6603",
+      "bytes": 13405988
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "sdcard.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "sdcard.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "sdcard.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "sdcard.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x150000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "spiffs",
+        "type": "0x1",
+        "subtype": "0x82",
+        "offset": "0x290000",
+        "bytes": 1441792,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0x3f0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cardputer",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0",
+      "M5Cardputer": "1.1.1"
+    }
+  },
+  "expected_behavior": "Mount FAT32; file/directory operations and throughput complete on LCD and Serial",
+  "validation": {
+    "verdict": "PASS",
+    "observation": "FAT32 create/append/rename/delete, 1 MiB read/write, on-disk data verified",
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cardputer-adv"
+    },
+    "checker_report": "evidence/cardputer-adv/verdicts.md",
+    "runner": "tools/run_all_adv.sh",
+    "captures": [
+      {
+        "name": "sdcard-first",
+        "max_seconds": 12.0,
+        "extra_args": [
+          "--sd-rw",
+          "sd-files.img"
+        ],
+        "script_lines": {},
+        "injected_media": {
+          "sd-files.img": {
+            "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+            "bytes": 67108864
+          }
+        },
+        "output_hashes": {
+          ".png": {
+            "sha256": "ea7b082e3dd9bbe16930305844ac89ef28fbdf68c7f0fc7a3ee511448ec255da",
+            "bytes": 97408
+          },
+          ".log": {
+            "sha256": "11959bba084f8710fc1eff768977f1f0a1132167f96f07013aebabb3fe914bec",
+            "bytes": 1754
+          },
+          ".err": {
+            "sha256": "8b4897e2a6baedef93c5483b3d1901ff6cc00d9b7740a99c1aebddbca80e3e85",
+            "bytes": 1330
+          }
+        }
+      },
+      {
+        "name": "sdcard",
+        "max_seconds": 8.0,
+        "extra_args": [
+          "--sd-rw",
+          "sd-files.img"
+        ],
+        "script_lines": {},
+        "injected_media": {
+          "sd-files.img": {
+            "sha256": "1919da05ef7d8a5a2fe1c72bd53a4adddcbfd4725c3190f3b9737658e4007ee6",
+            "bytes": 67108864
+          }
+        },
+        "output_hashes": {
+          ".png": {
+            "sha256": "9a6d9df0bb6ce9fe41d319906c744b4071e420d995b7fb82759ebdb4ac10d7a6",
+            "bytes": 97408
+          },
+          ".log": {
+            "sha256": "e1fe87446e72451541d19bf400afb1cf758703703eaf6860b2503a43a323c539",
+            "bytes": 1930
+          },
+          ".err": {
+            "sha256": "bdc9c852dd25cafa112243e51f5b603fbadc150651d203c6fedd25e2df1b9b22",
+            "bytes": 1324
+          }
+        }
+      }
+    ]
+  }
+}

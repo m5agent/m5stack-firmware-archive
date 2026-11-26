@@ -1,0 +1,22 @@
+{
+  "TestPicture01.png": {
+    "sha256": "2769be62f2c990c12f58b8ec5c61e7a2aabe65020d7bd8b0073b8a36c8c20b30",
+    "bytes": 1537
+  },
+  "TestPicture02.png": {
+    "sha256": "cbce0a9abdbfcb73532b95c82605f5035fdf7b4bb6aad50f6e822ddc8d57b2ab",
+    "bytes": 1503
+  },
+  "cores3_test_picture01.png": {
+    "sha256": "2769be62f2c990c12f58b8ec5c61e7a2aabe65020d7bd8b0073b8a36c8c20b30",
+    "bytes": 1537
+  },
+  "cores3_test_picture02.png": {
+    "sha256": "cbce0a9abdbfcb73532b95c82605f5035fdf7b4bb6aad50f6e822ddc8d57b2ab",
+    "bytes": 1503
+  },
+  "sample-12s.wav": {
+    "sha256": "f24b12a40e74bc9f3dc0977f127d55923b7d73183445ad2a9c23f1410f65604c",
+    "bytes": 384044
+  }
+}

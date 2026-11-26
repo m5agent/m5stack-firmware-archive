@@ -1,0 +1,231 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "arduino-docs",
+  "case": "unit_relay",
+  "docs_url": "https://docs.m5stack.com/en/arduino/projects/unit/unit_relay",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/projects/unit/unit_relay.md",
+    "section": "2. Example",
+    "section_line": 17,
+    "code_first_line": 22
+  },
+  "sketch_sha256": "732fd08370c764fddceedd93ba8e9b261bbfccdfe8e8a5fc8d8528b816c908e3",
+  "sketch_files": {
+    "unit_relay.ino": {
+      "path": "devices/cores3/arduino-docs/unit_relay/sketch/unit_relay/unit_relay.ino",
+      "storage": "public",
+      "sha256": "732fd08370c764fddceedd93ba8e9b261bbfccdfe8e8a5fc8d8528b816c908e3",
+      "bytes": 885
+    }
+  },
+  "files": {
+    "unit_relay.ino.bin": {
+      "path": ".local/firmware/cores3/unit_relay/unit_relay.ino.bin",
+      "storage": "local",
+      "sha256": "bea245e8bd1f7718bc8e194e4d0d3bf18a77e254131f2177f0cda343f7ae2a6a",
+      "bytes": 564944
+    },
+    "unit_relay.ino.merged.bin": {
+      "path": ".local/firmware/cores3/unit_relay/unit_relay.ino.merged.bin",
+      "storage": "local",
+      "sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "bytes": 16777216
+    },
+    "unit_relay.ino.bootloader.bin": {
+      "path": ".local/firmware/cores3/unit_relay/unit_relay.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "unit_relay.ino.partitions.bin": {
+      "path": ".local/firmware/cores3/unit_relay/unit_relay.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "unit_relay.ino.elf": {
+      "path": ".local/firmware/cores3/unit_relay/unit_relay.ino.elf",
+      "storage": "local",
+      "sha256": "660a07190138eb55e8eb75661b1d416324b91589b8423195830a7077f509353d",
+      "bytes": 12307856
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "unit_relay.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "unit_relay.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "unit_relay.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "unit_relay.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x310000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "ffat",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x610000",
+        "bytes": 10354688,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0xff0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0"
+    }
+  },
+  "expected_behavior": "Touch toggles relay state via GPIO output",
+  "validation": {
+    "label": "virtual-device validation",
+    "date": "2026-11-25",
+    "lane": "QEMU-WASM candidate profile",
+    "verdict": "PASS",
+    "prototype": {
+      "verdict": "PASS",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "profile_assets_changed_locally": true,
+      "candidate_asset_sha256": {
+        "qemu-browser-profiles.json": "7d82551178b36ec3b4b5c77093a8c145b2cdf1721f2b94436732955cd2e96be2",
+        "public-qemu-profiles.js": "83c6f4554bc34781c62a3a07d9abe009dc7a81d99c597b8de9d0a02c96d568e4",
+        "public-qemu-engine.js": "70b7b596ec3a70b9eca80fd0b30936ac7c03abc92e4cebe94909fb4cd1222c38"
+      },
+      "wiring": {
+        "port": "B",
+        "yellow": 9,
+        "white": 8
+      },
+      "touch_xy": [
+        144,
+        122
+      ],
+      "guest_relay_sequence": [
+        {
+          "lcd_no_com_closed": false,
+          "rgb565_sha256": "22d872398cf01bbf2064c35e417377ab74f0b9252d855ca271336f89ed499d7f",
+          "png_sha256": "d4088691d5143b801696034b2eb49ffa6a42df8f4aabb4c2d8aadda5e34b6770"
+        },
+        {
+          "lcd_no_com_closed": true,
+          "rgb565_sha256": "1f8da50b414a70df3c1c9b683e1dc69f5432ed78296edb00e4e6102419182253",
+          "png_sha256": "421611c280778481e67103e8fec6267937a50903ba932e1143155506553797e9"
+        },
+        {
+          "lcd_no_com_closed": false,
+          "rgb565_sha256": "22d872398cf01bbf2064c35e417377ab74f0b9252d855ca271336f89ed499d7f",
+          "png_sha256": "d4088691d5143b801696034b2eb49ffa6a42df8f4aabb4c2d8aadda5e34b6770"
+        }
+      ],
+      "controller_reads": [
+        {
+          "level": false,
+          "outputTransitions": 1,
+          "source": "qemu-qom-readback"
+        },
+        {
+          "level": true,
+          "outputTransitions": 2,
+          "source": "qemu-qom-readback"
+        },
+        {
+          "level": false,
+          "outputTransitions": 3,
+          "source": "qemu-qom-readback"
+        }
+      ]
+    },
+    "default_profile": {
+      "verdict": "PARTIAL",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "lcd": "Open -> Closed -> Open",
+      "relay_model": "not attached"
+    },
+    "esp32sim": "NOT RUN"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "case": "wav",
+  "board": "cores3",
+  "fqbn": "m5stack:esp32:m5stack_cores3",
+  "exit_code": 0,
+  "sketch_sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+  "firmware_sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5",
+  "firmware_bytes": 16777216
+}

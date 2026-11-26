@@ -1,0 +1,241 @@
+{
+  "device_id": "cores3",
+  "sku": "K128",
+  "source": "arduino-docs",
+  "case": "mic",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cores3/mic",
+  "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cores3/mic.md",
+    "section": "Compilation Requirements",
+    "section_line": 5,
+    "code_first_line": 12
+  },
+  "sketch_sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/cores3/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "bytes": 4740
+    }
+  },
+  "files": {
+    "mic.ino.bin": {
+      "path": ".local/firmware/cores3/mic/mic.ino.bin",
+      "storage": "local",
+      "sha256": "baf42e11cd22ff3defebbf6f082b0cf0c76072a4bff02695985b7dd707cffe17",
+      "bytes": 594592
+    },
+    "mic.ino.merged.bin": {
+      "path": ".local/firmware/cores3/mic/mic.ino.merged.bin",
+      "storage": "local",
+      "sha256": "ced692208d6b9b778aba1624404f461cbfad1709cee82238d2bcd7abc368a1ae",
+      "bytes": 16777216
+    },
+    "mic.ino.bootloader.bin": {
+      "path": ".local/firmware/cores3/mic/mic.ino.bootloader.bin",
+      "storage": "local",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "mic.ino.partitions.bin": {
+      "path": ".local/firmware/cores3/mic/mic.ino.partitions.bin",
+      "storage": "local",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "mic.ino.elf": {
+      "path": ".local/firmware/cores3/mic/mic.ino.elf",
+      "storage": "local",
+      "sha256": "0c28758ddb66fb67b565e2a406946d2061e00cfc581457e743e8ce335608f846",
+      "bytes": 12605888
+    },
+    "boot_app0.bin": {
+      "path": ".local/firmware/boot_app0.bin",
+      "storage": "local",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "merged_image": "mic.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "mic.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "mic.ino.partitions.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "mic.ino.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      }
+    },
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x310000",
+        "bytes": 3145728,
+        "flags": 0
+      },
+      {
+        "name": "ffat",
+        "type": "0x1",
+        "subtype": "0x81",
+        "offset": "0x610000",
+        "bytes": 10354688,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0xff0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ]
+  },
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0"
+    }
+  },
+  "expected_behavior": "REC and changing waveform, power click switches to buffer playback",
+  "validation": {
+    "verdict": "PASS",
+    "observation": "REC waveform → PLAY, 733.09 Hz, RMS 946.8",
+    "label": "virtual-device validation",
+    "date": "2026-11-26",
+    "lane": "native esp32sim",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+      "tag": "m5-milestone-cores3-adv-20261126",
+      "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cores3"
+    },
+    "checker_report": "evidence/cores3/verdicts.md",
+    "runner": "tools/run_all_esp32sim.sh",
+    "captures": [
+      {
+        "name": "mic",
+        "max_seconds": 9.0,
+        "extra_args": [
+          "--mic-wav",
+          "mic-input.wav",
+          "--script",
+          "mic.txt",
+          "--wav",
+          "mic.wav"
+        ],
+        "script_lines": {
+          "mic.txt": [
+            "6.0 touch 160 120 1",
+            "6.2 touch 160 120 0"
+          ]
+        },
+        "injected_media": {
+          "mic-input.wav": {
+            "sha256": "55dc06fbe30596d35016860f9c95a2c621332655bc7218154bcefc271a2b999f",
+            "bytes": 408044
+          }
+        },
+        "output_hashes": {
+          ".png": {
+            "sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "b940efd7efb7a881076903aeb359fbd67e11ce7a6eb3c0c312ef669eff697d91",
+            "bytes": 1480
+          },
+          ".wav": {
+            "sha256": "e51e1a046ef9f8357d6fb688093f4b3fd33a0f63d5c67cb988e0ed04e3106d68",
+            "bytes": 262268
+          }
+        }
+      },
+      {
+        "name": "mic-before",
+        "max_seconds": 4.0,
+        "extra_args": [
+          "--mic-wav",
+          "mic-input.wav",
+          "--script",
+          "mic.txt"
+        ],
+        "script_lines": {
+          "mic.txt": [
+            "6.0 touch 160 120 1",
+            "6.2 touch 160 120 0"
+          ]
+        },
+        "injected_media": {
+          "mic-input.wav": {
+            "sha256": "55dc06fbe30596d35016860f9c95a2c621332655bc7218154bcefc271a2b999f",
+            "bytes": 408044
+          }
+        },
+        "output_hashes": {
+          ".png": {
+            "sha256": "9aa80c841aa53a63e463a3400422b7938ab306f59c9a018d1e022e2eebc0414b",
+            "bytes": 230723
+          },
+          ".log": {
+            "sha256": "8cf40a5783da8b916df67e37dae7314cb6492ca8145d5a945bbded32cedb7ca0",
+            "bytes": 556
+          },
+          ".err": {
+            "sha256": "cf6abae36171320e876da471e8c2ef04fd755cb49095f16b60efa00c0dabcb14",
+            "bytes": 1267
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "UIFlow2 version": "PASS",
+    "CDC REPL response": "PASS",
+    "USB host completion": "PASS",
+    "red framebuffer": "PASS"
+  },
+  "frame": {
+    "sha256": "d7dc0484987ca872b2c471b21304ba7233f2efa284013b9052bb56054cf63414",
+    "bytes": 230723
+  },
+  "frame_pixels": "76800 red RGB pixels at 320x240",
+  "usb_result": "CDC script completed, 0 data PID errors, REPL returned 2"
+}

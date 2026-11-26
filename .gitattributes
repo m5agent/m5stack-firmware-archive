@@ -1,0 +1,2 @@
+fixtures/seed.img.gz filter=lfs diff=lfs merge=lfs -text
+devices/**/sketch/** -whitespace -text

@@ -1,0 +1,192 @@
+{
+  "date": "2026-11-25",
+  "validation": "virtual-device validation",
+  "arduino": {
+    "cli_version": "1.3.1",
+    "board_package_version": "3.2.5"
+  },
+  "relay": {
+    "doc": "https://docs.m5stack.com/en/arduino/projects/unit/unit_relay",
+    "source_sha256": "732fd08370c764fddceedd93ba8e9b261bbfccdfe8e8a5fc8d8528b816c908e3",
+    "default": {
+      "verdict": "PARTIAL",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "lcd": "Open -> Closed -> Open",
+      "relay_model": "not attached"
+    },
+    "prototype": {
+      "verdict": "PASS",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "profile_assets_changed_locally": true,
+      "candidate_asset_sha256": {
+        "qemu-browser-profiles.json": "7d82551178b36ec3b4b5c77093a8c145b2cdf1721f2b94436732955cd2e96be2",
+        "public-qemu-profiles.js": "83c6f4554bc34781c62a3a07d9abe009dc7a81d99c597b8de9d0a02c96d568e4",
+        "public-qemu-engine.js": "70b7b596ec3a70b9eca80fd0b30936ac7c03abc92e4cebe94909fb4cd1222c38"
+      },
+      "wiring": {
+        "port": "B",
+        "yellow": 9,
+        "white": 8
+      },
+      "touch_xy": [
+        144,
+        122
+      ],
+      "guest_relay_sequence": [
+        {
+          "lcd_no_com_closed": false,
+          "rgb565_sha256": "22d872398cf01bbf2064c35e417377ab74f0b9252d855ca271336f89ed499d7f",
+          "png_sha256": "d4088691d5143b801696034b2eb49ffa6a42df8f4aabb4c2d8aadda5e34b6770"
+        },
+        {
+          "lcd_no_com_closed": true,
+          "rgb565_sha256": "1f8da50b414a70df3c1c9b683e1dc69f5432ed78296edb00e4e6102419182253",
+          "png_sha256": "421611c280778481e67103e8fec6267937a50903ba932e1143155506553797e9"
+        },
+        {
+          "lcd_no_com_closed": false,
+          "rgb565_sha256": "22d872398cf01bbf2064c35e417377ab74f0b9252d855ca271336f89ed499d7f",
+          "png_sha256": "d4088691d5143b801696034b2eb49ffa6a42df8f4aabb4c2d8aadda5e34b6770"
+        }
+      ],
+      "controller_reads": [
+        {
+          "level": false,
+          "outputTransitions": 1,
+          "source": "qemu-qom-readback"
+        },
+        {
+          "level": true,
+          "outputTransitions": 2,
+          "source": "qemu-qom-readback"
+        },
+        {
+          "level": false,
+          "outputTransitions": 3,
+          "source": "qemu-qom-readback"
+        }
+      ]
+    }
+  },
+  "ultrasonic_i2c": {
+    "doc": "https://docs.m5stack.com/en/arduino/projects/unit/unit_ultrasonic_i2c",
+    "source_sha256": "195175e6a0aa276d134ec11dec8ca21d969f3a4776386a46f0bc333babf3d5a3",
+    "dependency_m5unit_sonic": {
+      "version": "0.0.2",
+      "commit": "0fc7fffed7d0c07e77d682e8757440510a5cbebf"
+    },
+    "default": {
+      "verdict": "FAIL",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "lcd": "4500.00mm",
+      "uart_i2c_nack_lines": 12,
+      "frame": {
+        "rgb565_sha256": "1015711d05bcfd05edd3efa8f0a7886e8607d999f0066973adc268405eb5d54c",
+        "png_sha256": "82027877cd14766fa3905cde3638873bc959c68e45bf5790ac7289bf881f7455"
+      }
+    },
+    "prototype": {
+      "verdict": "PASS",
+      "qemu_source_commit": "40edccac415693c5130f91c01d84176ae6008566",
+      "qemu_wasm_sha256": "96c7f8baf1d5f2fd760c560a0827ef7305ad06a1cefb28c905d05d796dc540d8",
+      "profile": "cores3-wasm-vm-div8",
+      "firmware_sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
+      "firmware_normalization": "none",
+      "workers": {
+        "all_closed": true,
+        "observed": 6,
+        "live": 0,
+        "acknowledged": true
+      },
+      "guest_resets": 0,
+      "profile_assets_changed_locally": true,
+      "candidate_asset_sha256": {
+        "qemu-browser-profiles.json": "5789f58323c6bac9558be0766b0417a72eb00f38a26bdaa8499835e8200e7994",
+        "public-qemu-profiles.js": "68d85ceffeefddb0023cf69c821f6730ce2e86467987281ce2f4799a755423a6",
+        "public-qemu-engine.js": "c3326d1690692810cc58f1f5882c9bb29ec82d8e9fb6fd79fc4045b6b4690555"
+      },
+      "wiring": {
+        "port": "A",
+        "sda": 2,
+        "scl": 1,
+        "i2c_address": "0x57"
+      },
+      "guest_distance_sequence": [
+        {
+          "lcd_distance_mm": 1000,
+          "rgb565_sha256": "aaa7a573d55cabd5ba6a02290359a9e52a1f0e1f442ba18084b75444770d8b0d",
+          "png_sha256": "444a424a828e1d89d460f4f639e1708d835c2714bf5f2d337cc1f2234b5529f6"
+        },
+        {
+          "lcd_distance_mm": 250,
+          "rgb565_sha256": "e9858be2a9cdf7e047aa0f0b91710251d7e58e4247d59c90d50ed8422592d4dc",
+          "png_sha256": "3230a9a2abcc361e49ff9fe371e51ccfb8a1bf80a50189d972aa2f524e346c9e"
+        },
+        {
+          "lcd_distance_mm": 1700,
+          "rgb565_sha256": "c6d691614cf4288d888f709ac3586db0730d03e059f15aac564a3abd5ea2e709",
+          "png_sha256": "fbf70bf2def92d6987489537431ad452752f542823fc725f1b2a6a95836cb979"
+        },
+        {
+          "lcd_distance_mm": 1000,
+          "rgb565_sha256": "aaa7a573d55cabd5ba6a02290359a9e52a1f0e1f442ba18084b75444770d8b0d",
+          "png_sha256": "444a424a828e1d89d460f4f639e1708d835c2714bf5f2d337cc1f2234b5529f6"
+        }
+      ],
+      "controller_reads": [
+        {
+          "distanceMm": 250,
+          "source": "qemu-qom-readback",
+          "transactions": 8,
+          "readBytes": 12
+        },
+        {
+          "distanceMm": 1700,
+          "source": "qemu-qom-readback",
+          "transactions": 13,
+          "readBytes": 18
+        },
+        {
+          "distanceMm": 1000,
+          "source": "qemu-qom-readback",
+          "transactions": 17,
+          "readBytes": 24
+        }
+      ],
+      "uart_i2c_nack_lines": 0
+    }
+  }
+}

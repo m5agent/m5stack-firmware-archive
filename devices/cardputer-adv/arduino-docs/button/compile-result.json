@@ -1,0 +1,9 @@
+{
+  "case": "button",
+  "board": "cardputer-adv",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "exit_code": 0,
+  "sketch_sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+  "firmware_sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7",
+  "firmware_bytes": 4194304
+}

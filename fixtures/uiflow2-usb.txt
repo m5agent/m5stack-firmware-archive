@@ -1,0 +1,5 @@
+attach
+cdc 3000
+cdc 3000 
+cdc 3000 print(1+1)
+cdc 3000 import M5; M5.Lcd.fillScreen(0xFF0000)
