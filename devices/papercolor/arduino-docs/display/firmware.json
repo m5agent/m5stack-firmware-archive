@@ -1,0 +1,149 @@
+{
+  "device_id": "papercolor",
+  "case": "display",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/display",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papercolor/display.md",
+    "section": "Basic Display",
+    "code_first_line": 16
+  },
+  "sketch_sha256": "afa258df21c99f837c04986970ee8ffd3a32c052813f10ce3c0a6a1ad6ee525b",
+  "expected_behavior": "PaperColor Display. Observe the documented drawing/animation and verify the expected geometry and visible pixels.",
+  "sketch_files": {
+    "display.ino": {
+      "path": "devices/papercolor/arduino-docs/display/sketch/display/display.ino",
+      "storage": "public",
+      "sha256": "afa258df21c99f837c04986970ee8ffd3a32c052813f10ce3c0a6a1ad6ee525b",
+      "bytes": 2843
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papercolor/arduino-docs/display/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "ffeae0ee94d80fa7d3978297ce4eec0dd3efffbeebb45a298686dbec22322774",
+      "bytes": 618640
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papercolor/arduino-docs/display/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papercolor/arduino-docs/display/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papercolor/arduino-docs/display/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "e4a5b443d96bf5e347300a622c9cfc03a9610c63a4e629d31edbb83ca591650c",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papercolor/arduino-docs/display/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "31c2963e14d3d7054af7b868ea539b0805d9b91cb8c3a2410cc0a3469ff65bf8",
+      "bytes": 12587948
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "f55aacea7586dab6cf67e9d4cb0205a6eb1417e99f257c9988d0cb8bb056e186",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "e4a5b443d96bf5e347300a622c9cfc03a9610c63a4e629d31edbb83ca591650c",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papercolor"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papercolor",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "display",
+          "verdict": "PASS",
+          "reason": "All six colors after refresh and white early control"
+        },
+        "capture_comparison": {
+          "display-early.png": {
+            "original": {
+              "png_sha256": "7fdca07b47b8bff976da3cda788053ba1422c408d71ef104d91ae190465f7a45"
+            },
+            "rebuilt": {
+              "png_sha256": "7fdca07b47b8bff976da3cda788053ba1422c408d71ef104d91ae190465f7a45"
+            },
+            "byte_identical": true
+          },
+          "display.png": {
+            "original": {
+              "png_sha256": "3224949affa6258243ff792d324d66bb9e874f8e1e01eda4c3283bc6bcc8cbb1"
+            },
+            "rebuilt": {
+              "png_sha256": "3224949affa6258243ff792d324d66bb9e874f8e1e01eda4c3283bc6bcc8cbb1"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (311 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

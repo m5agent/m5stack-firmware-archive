@@ -1,0 +1,149 @@
+{
+  "device_id": "papercolor",
+  "case": "battery",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/battery",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papercolor/battery.md",
+    "section": "Build Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "f8816a764b5b07bbc7aee63b1a65b88988ba6230f56f99627bcb86a17787c075",
+  "expected_behavior": "PaperColor Battery. Inject two battery values and compare the documented voltage/percentage and charge indications.",
+  "sketch_files": {
+    "battery.ino": {
+      "path": "devices/papercolor/arduino-docs/battery/sketch/battery/battery.ino",
+      "storage": "public",
+      "sha256": "f8816a764b5b07bbc7aee63b1a65b88988ba6230f56f99627bcb86a17787c075",
+      "bytes": 3059
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papercolor/arduino-docs/battery/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "786716563486e3284eba119a5f9b8e64e0cb2f7b0705bc28b0e8bc918a69157e",
+      "bytes": 625408
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papercolor/arduino-docs/battery/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papercolor/arduino-docs/battery/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papercolor/arduino-docs/battery/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "cfef1ae0d17f7b97453f3e089bfda7430d6de543314b8f2eb0ea619b2541acd8",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papercolor/arduino-docs/battery/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "5c80733974044910ee6b9afbda2dd7fe0eaaa56fd3548b28010ec0effd6c81ed",
+      "bytes": 12719520
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "949a5eb24a523c353dc312b053d1784552e4afb77e6a49ce50ed90b78669f5ef",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "cfef1ae0d17f7b97453f3e089bfda7430d6de543314b8f2eb0ea619b2541acd8",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papercolor"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papercolor",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "battery",
+          "verdict": "PASS",
+          "reason": "Guest reported 3678 mV unplugged and 4200 mV plugged against baseline"
+        },
+        "capture_comparison": {
+          "battery-control.png": {
+            "original": {
+              "png_sha256": "6aacb26634f8e3ffc4d89a029dd354bf1f2507066191fc004c8302f805d50e36"
+            },
+            "rebuilt": {
+              "png_sha256": "6aacb26634f8e3ffc4d89a029dd354bf1f2507066191fc004c8302f805d50e36"
+            },
+            "byte_identical": true
+          },
+          "battery.png": {
+            "original": {
+              "png_sha256": "c07510ece6305f83594df645587ab2e65a4cc613fad650c768e342939f0c1a9d"
+            },
+            "rebuilt": {
+              "png_sha256": "c07510ece6305f83594df645587ab2e65a4cc613fad650c768e342939f0c1a9d"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (877 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2140 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

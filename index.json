@@ -5481,6 +5481,518 @@
           "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
         ]
       }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/battery.md",
+        "section": "Build Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "f8816a764b5b07bbc7aee63b1a65b88988ba6230f56f99627bcb86a17787c075",
+      "manifest": "devices/papercolor/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "cfef1ae0d17f7b97453f3e089bfda7430d6de543314b8f2eb0ea619b2541acd8",
+      "original_build": {
+        "firmware_sha256": "949a5eb24a523c353dc312b053d1784552e4afb77e6a49ce50ed90b78669f5ef",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/button.md",
+        "section": "Build Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "c6671e64341c439c53cdbad4e1be073922e35dd6fee4f2b10f6d35502abd2d8c",
+      "manifest": "devices/papercolor/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "956c60ca42d887bdb759bd3adaa1894b6a88b238f62186ec512baff294e838a6",
+      "original_build": {
+        "firmware_sha256": "cadf01adda0d9674798f1dcaf5a90bbbb73b04bf17439b72c3705bc2bab36283",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/display.md",
+        "section": "Basic Display",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "afa258df21c99f837c04986970ee8ffd3a32c052813f10ce3c0a6a1ad6ee525b",
+      "manifest": "devices/papercolor/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e4a5b443d96bf5e347300a622c9cfc03a9610c63a4e629d31edbb83ca591650c",
+      "original_build": {
+        "firmware_sha256": "f55aacea7586dab6cf67e9d4cb0205a6eb1417e99f257c9988d0cb8bb056e186",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/ir_nec.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "1eca86b0a89284791877e84eba536782fb138930c695fdc52f810ced0ed44ef9",
+      "manifest": "devices/papercolor/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c16ecfa37c83b285d300c324cb2fd502805679f5d3f11296042424d103128cfe",
+      "original_build": {
+        "firmware_sha256": "5fc987dc296c6f48ec879ad8ff8f46ed467ac6b54f0a24fbf1a1f26b682b8d89",
+        "verdict": "DOCS-DEFECT",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "DOCS-DEFECT",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "m5pm1-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/m5pm1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/m5pm1.md",
+        "section": "Scheduled Power On / Off Example",
+        "code_first_line": 120
+      },
+      "sketch_sha256": "6cbe027198c3ca658c477caec2313be5e5d5f5e1ff2ef8385dbcc4f6d48cf629",
+      "manifest": "devices/papercolor/arduino-docs/m5pm1-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "73f1689c6158936a04bd0f6fb3e1d2ac87605b7ee037b871acdbe9b235cec5c5",
+      "original_build": {
+        "firmware_sha256": "2e3cadc8f84366389f997523671ab406523b7241b493ca91e1d307ec6c413f19",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "m5pm1-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/m5pm1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/m5pm1.md",
+        "section": "4. RTC M5PM1 Wake-Up",
+        "code_first_line": 246
+      },
+      "sketch_sha256": "36332281ed38471186f63f212160efa5e5c9a203d8b0d11124139d5d4872c823",
+      "manifest": "devices/papercolor/arduino-docs/m5pm1-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "94c4c6c27c70af630c57883b38f2063c4d7e38ac7418f3b105675bb487161980",
+      "original_build": {
+        "firmware_sha256": "349640e3e0bf72f481a067a9d65f9c91543c93365097a3efeed3d9f7cabbaf0b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/mic.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "c395e1cbec5b90282c60f1090a7f3d211ae9a1e0d961a6e1ac364b3773771056",
+      "manifest": "devices/papercolor/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "29a99397fe8d0a490699a281835dc378260d90d3efe1f6c1447e84197164a563",
+      "original_build": {
+        "firmware_sha256": "83a868a75273aa3193fab5bdc664ee81f10bcc68d1283426356efb9b9d2bd71e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "microsd",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/microsd",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/microsd.md",
+        "section": "Display microSD PNG Images",
+        "code_first_line": 19
+      },
+      "sketch_sha256": "14f4d7234512b1df568ae3d946a35ba22c2a967b66ea2ec26186299fd94b0f0d",
+      "manifest": "devices/papercolor/arduino-docs/microsd/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "22815044b5edf5ca763bd27a237c347eea292b2d032ceb7e12adcad8fa8d5b4a",
+      "original_build": {
+        "firmware_sha256": "3158b2e5a2b1b28b3424d053a77c4195ee38a8a67f62d78fa9452c890b08223f",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "program",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/program.md",
+        "section": "3. Compilation & Flashing",
+        "code_first_line": 26
+      },
+      "sketch_sha256": "8a4c38f4bdf5f73323ba5939444a6c86daa96de7c963588576ceaaab37e7a252",
+      "manifest": "devices/papercolor/arduino-docs/program/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c5708f86ce358a905d2a174f6b985d62cc054ad1fb1ceec5b1499b5af0508fd6",
+      "original_build": {
+        "firmware_sha256": "a9257f684db83eecdc74135896bc0d74f675c459baf942bf4740114f27fe98a1",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "rgb_led",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/rgb_led",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/rgb_led.md",
+        "section": "Build Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "88325c55fee2a012fcd50eade3c76caac5dec6bd40c5eaa9a5b9516c17e6562b",
+      "manifest": "devices/papercolor/arduino-docs/rgb_led/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "d09f2c170bde30d9d24e9a9a9177cfaf7e43aaed451118d639613462ba884586",
+      "original_build": {
+        "firmware_sha256": "81003980f0a394272b6ee535f66400d8a4758d51b1c17110870d09140d0a6966",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "rtc-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/rtc.md",
+        "section": "Set Local Time",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "3f66ee248d5afeeb4645ec871236471e6ada432438d7d906cadf950862b56f15",
+      "manifest": "devices/papercolor/arduino-docs/rtc-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "22585d81bd34ac6b6244de921b29578f89f76701e4a1f354f6b5d3df63d757cc",
+      "original_build": {
+        "firmware_sha256": "3316ac0f7b1360cc386202a2152f08badda5690461ffb5c7aa3fcd13954f65f5",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "rtc-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/rtc.md",
+        "section": "SNTP Network Time",
+        "code_first_line": 135
+      },
+      "sketch_sha256": "4984758b99652cee5bced04832a3c02e762d89aec15cc9edec47b8068e8704a6",
+      "manifest": "devices/papercolor/arduino-docs/rtc-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ac6f85e6861accd3d74936c567bcc4d215da674ed98dc13c4831fc1623b08e6c",
+      "original_build": {
+        "firmware_sha256": "9f4fb99c2100ef81be18651561093e155bf01ecdd4a0f3780094f9c1895fb8fd",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "sht40",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/sht40",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/sht40.md",
+        "section": "Build Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "0880592191f198bd6ee37223841765599b6ec0c6b182ff0eec0671b17453fac8",
+      "manifest": "devices/papercolor/arduino-docs/sht40/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "47693ff5486b705e39767d17dcb0bc47831791571d779aaea6261a5bbbfc6d6f",
+      "original_build": {
+        "firmware_sha256": "d88ee92b394b0a0256c882dc7c5463d5fc4eba641186213141a7058c64ecdf8f",
+        "verdict": "DOCS-DEFECT",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "DOCS-DEFECT",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/speaker.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "abfb05a6fbd36d09dbef10ebb64a6a8c8de549918238862883cc3decdb58461e",
+      "manifest": "devices/papercolor/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "f0903faa1243ec589ba79d332facf6a504ecf2f9130fcbd9aa6eab713f011a28",
+      "original_build": {
+        "firmware_sha256": "f2f20597a4ffe71e41258ad907756dc66e50d612d09943e9d5ab5d71f562b478",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "wakeup-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/wakeup.md",
+        "section": "RTC Wakeup for ESP32-S3",
+        "code_first_line": 19
+      },
+      "sketch_sha256": "08df0301886dceb773551da682fdbbfeaf79d144645f1b495dd13b1e4a5f91f7",
+      "manifest": "devices/papercolor/arduino-docs/wakeup-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "43d716f3b233a4f3e15547064fb5bd5a65d6992a56350f1dc25c1670802a076e",
+      "original_build": {
+        "firmware_sha256": "74d962912e352e1cedddbd2230681a066b5657185d5d382127dcdf0337429f99",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papercolor",
+      "case": "wakeup-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papercolor/wakeup.md",
+        "section": "M5PM1 Timer Wakeup",
+        "code_first_line": 76
+      },
+      "sketch_sha256": "805818aa62b7a9286760d4a9985b76793426edc7e6d75921dd23abf0d7e06334",
+      "manifest": "devices/papercolor/arduino-docs/wakeup-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "f0c486bdbc60f3b2ca1f0d1151889ab9b54042bdab193feed7c933f1b5e2ad81",
+      "original_build": {
+        "firmware_sha256": "4b3b949d2b2e0d1d990c57f0ee0d991fe67d4c6b6dc6e393499f96caafc3cb50",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papercolor"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -10009,6 +10521,454 @@
     "devices/papers3/arduino-docs/quickstart-bargraph/firmware.json": {
       "sha256": "127f9465ad5fe2b920b31c08bcc947b0e2ce91b9afe5e276654a7690a912b71b",
       "bytes": 6513
+    },
+    "devices/papercolor/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "f8816a764b5b07bbc7aee63b1a65b88988ba6230f56f99627bcb86a17787c075",
+      "bytes": 3059
+    },
+    "devices/papercolor/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "786716563486e3284eba119a5f9b8e64e0cb2f7b0705bc28b0e8bc918a69157e",
+      "bytes": 625408
+    },
+    "devices/papercolor/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "cfef1ae0d17f7b97453f3e089bfda7430d6de543314b8f2eb0ea619b2541acd8",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "5c80733974044910ee6b9afbda2dd7fe0eaaa56fd3548b28010ec0effd6c81ed",
+      "bytes": 12719520
+    },
+    "devices/papercolor/arduino-docs/battery/firmware.json": {
+      "sha256": "d3803006c285ac9a811a39ff745cb59f8fc22eaa3ce2d06f288520f35a354730",
+      "bytes": 5919
+    },
+    "devices/papercolor/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "c6671e64341c439c53cdbad4e1be073922e35dd6fee4f2b10f6d35502abd2d8c",
+      "bytes": 791
+    },
+    "devices/papercolor/arduino-docs/button/migration.ino.bin": {
+      "sha256": "570d9c79477b6e98d0ecc2d5102f4d9421d8ef5a202b29b69aa866cbbee5f2ab",
+      "bytes": 608224
+    },
+    "devices/papercolor/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "956c60ca42d887bdb759bd3adaa1894b6a88b238f62186ec512baff294e838a6",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/button/migration.ino.elf": {
+      "sha256": "8fc83cb68cd1354ca33c993638c0b111f84d1c3fbd3ed217a70d0be64a32fa22",
+      "bytes": 12503984
+    },
+    "devices/papercolor/arduino-docs/button/firmware.json": {
+      "sha256": "927deed2214eccc5744f3d4cb4b3932c9ef5bfeff824a261d07b9afd001eebc7",
+      "bytes": 5889
+    },
+    "devices/papercolor/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "afa258df21c99f837c04986970ee8ffd3a32c052813f10ce3c0a6a1ad6ee525b",
+      "bytes": 2843
+    },
+    "devices/papercolor/arduino-docs/display/migration.ino.bin": {
+      "sha256": "ffeae0ee94d80fa7d3978297ce4eec0dd3efffbeebb45a298686dbec22322774",
+      "bytes": 618640
+    },
+    "devices/papercolor/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "e4a5b443d96bf5e347300a622c9cfc03a9610c63a4e629d31edbb83ca591650c",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/display/migration.ino.elf": {
+      "sha256": "31c2963e14d3d7054af7b868ea539b0805d9b91cb8c3a2410cc0a3469ff65bf8",
+      "bytes": 12587948
+    },
+    "devices/papercolor/arduino-docs/display/firmware.json": {
+      "sha256": "d4ef9c81b4c3b3159b222d785e229019ff800a37ca9b417e48bcfe42e5e38aa5",
+      "bytes": 5893
+    },
+    "devices/papercolor/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "1eca86b0a89284791877e84eba536782fb138930c695fdc52f810ced0ed44ef9",
+      "bytes": 3501
+    },
+    "devices/papercolor/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "8da723f23d7bc077b54f7a8a3774de8ae7a6288a576821e87de06179a363b012",
+      "bytes": 623680
+    },
+    "devices/papercolor/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "c16ecfa37c83b285d300c324cb2fd502805679f5d3f11296042424d103128cfe",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "ec0c6899f3c421dc5e6a54c63d4296710d27ef5ecac390ade1c2c34d8720ff97",
+      "bytes": 12770176
+    },
+    "devices/papercolor/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "ad1c076e632c115cd50cf11f1764c615e3ab28d2d349919cea47599f30f19fbf",
+      "bytes": 6478
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/sketch/m5pm1_1/m5pm1_1.ino": {
+      "sha256": "6cbe027198c3ca658c477caec2313be5e5d5f5e1ff2ef8385dbcc4f6d48cf629",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/migration.ino.bin": {
+      "sha256": "f28fb43bb4d794b3c3966d9cc3890ac8bc2293e5517dc1771a69cab1d5d0d12b",
+      "bytes": 640304
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/migration.ino.merged.bin": {
+      "sha256": "73f1689c6158936a04bd0f6fb3e1d2ac87605b7ee037b871acdbe9b235cec5c5",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/migration.ino.elf": {
+      "sha256": "23ea0b98042118489428133009d0198b2022d373e1764b7c88ce70c77d783109",
+      "bytes": 12935492
+    },
+    "devices/papercolor/arduino-docs/m5pm1-1/firmware.json": {
+      "sha256": "203640ce502152d38fa479648d845b8de05cf1813e3464a2a472a46b807c4c69",
+      "bytes": 5831
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/sketch/m5pm1_2/m5pm1_2.ino": {
+      "sha256": "36332281ed38471186f63f212160efa5e5c9a203d8b0d11124139d5d4872c823",
+      "bytes": 1645
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.bin": {
+      "sha256": "490fd8df46b68fa121defa73b66d7370206366f36b762c833fdbfefe7ac6a949",
+      "bytes": 628448
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.merged.bin": {
+      "sha256": "94c4c6c27c70af630c57883b38f2063c4d7e38ac7418f3b105675bb487161980",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.elf": {
+      "sha256": "d84b6d8ff3317a7257963ac2663cde1ba4cdb945c1c9e3d43e260bd7dfdaabd8",
+      "bytes": 12897388
+    },
+    "devices/papercolor/arduino-docs/m5pm1-2/firmware.json": {
+      "sha256": "34820830f8c8c451f7856cae26a694d343d97204ac46c515d25fb0c4bc91b17d",
+      "bytes": 5829
+    },
+    "devices/papercolor/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "c395e1cbec5b90282c60f1090a7f3d211ae9a1e0d961a6e1ac364b3773771056",
+      "bytes": 2922
+    },
+    "devices/papercolor/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "7e69a60242727919843d47da9b87ed74d9e5a17e46207715892a0a9bc4bc3375",
+      "bytes": 630912
+    },
+    "devices/papercolor/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "29a99397fe8d0a490699a281835dc378260d90d3efe1f6c1447e84197164a563",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "793f15b3194df3f9439b262003a4f60256ab86c7876de3e6052b8396aab12f1a",
+      "bytes": 12820788
+    },
+    "devices/papercolor/arduino-docs/mic/firmware.json": {
+      "sha256": "aa75b4cc4af5715f352538b3c130ebe949f13c653c8b6171c913f09cfd1aa8fd",
+      "bytes": 8234
+    },
+    "devices/papercolor/arduino-docs/microsd/sketch/microsd/microsd.ino": {
+      "sha256": "14f4d7234512b1df568ae3d946a35ba22c2a967b66ea2ec26186299fd94b0f0d",
+      "bytes": 3807
+    },
+    "devices/papercolor/arduino-docs/microsd/migration.ino.bin": {
+      "sha256": "1289d838aafdcddc587acffe4b56c33ea6924b46414c2cff05830e2e1d129225",
+      "bytes": 680208
+    },
+    "devices/papercolor/arduino-docs/microsd/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/microsd/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/microsd/migration.ino.merged.bin": {
+      "sha256": "22815044b5edf5ca763bd27a237c347eea292b2d032ceb7e12adcad8fa8d5b4a",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/microsd/migration.ino.elf": {
+      "sha256": "8548711415bdb68d5388eae8db7317e352c09fa32dd935bcee81f4c50d210875",
+      "bytes": 13561196
+    },
+    "devices/papercolor/arduino-docs/microsd/firmware.json": {
+      "sha256": "cd1272c6d7e21808b1670fdc03b0ac42761eb1a392ee77c8d041764af9361041",
+      "bytes": 6261
+    },
+    "devices/papercolor/arduino-docs/program/sketch/program/program.ino": {
+      "sha256": "8a4c38f4bdf5f73323ba5939444a6c86daa96de7c963588576ceaaab37e7a252",
+      "bytes": 2140
+    },
+    "devices/papercolor/arduino-docs/program/migration.ino.bin": {
+      "sha256": "0b98dd6918affe2cc48a3713eabacd007761730e4088f10837b374cedfdcebe9",
+      "bytes": 613904
+    },
+    "devices/papercolor/arduino-docs/program/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/program/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/program/migration.ino.merged.bin": {
+      "sha256": "c5708f86ce358a905d2a174f6b985d62cc054ad1fb1ceec5b1499b5af0508fd6",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/program/migration.ino.elf": {
+      "sha256": "50c1a4da9f69f3a2862d2c459dd319b82589df2e938634f2a7c8106deeccda7a",
+      "bytes": 12587012
+    },
+    "devices/papercolor/arduino-docs/program/firmware.json": {
+      "sha256": "1f793f74d3a9b9a80c5453ede91d34dc8c72c782d9f8af3667a99b03f4317a68",
+      "bytes": 5478
+    },
+    "devices/papercolor/arduino-docs/rgb_led/sketch/rgb_led/rgb_led.ino": {
+      "sha256": "88325c55fee2a012fcd50eade3c76caac5dec6bd40c5eaa9a5b9516c17e6562b",
+      "bytes": 2002
+    },
+    "devices/papercolor/arduino-docs/rgb_led/migration.ino.bin": {
+      "sha256": "021ac108fc59d57c0532e0e17438451279e57e4d3c42bc33bc6679db1b465b78",
+      "bytes": 634720
+    },
+    "devices/papercolor/arduino-docs/rgb_led/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/rgb_led/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/rgb_led/migration.ino.merged.bin": {
+      "sha256": "d09f2c170bde30d9d24e9a9a9177cfaf7e43aaed451118d639613462ba884586",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/rgb_led/migration.ino.elf": {
+      "sha256": "27331ede1eed120019af0987e027ef020e2d68f11db2d375bd91517066ec17e7",
+      "bytes": 12875520
+    },
+    "devices/papercolor/arduino-docs/rgb_led/firmware.json": {
+      "sha256": "4cf3600de19ad7757bf7f6b1bbc8d515d8b450eded4cf497d8aa750c776f4589",
+      "bytes": 5537
+    },
+    "devices/papercolor/arduino-docs/rtc-1/sketch/rtc_1/rtc_1.ino": {
+      "sha256": "3f66ee248d5afeeb4645ec871236471e6ada432438d7d906cadf950862b56f15",
+      "bytes": 3049
+    },
+    "devices/papercolor/arduino-docs/rtc-1/migration.ino.bin": {
+      "sha256": "1bc0cd8aa85341e08cc40203149a5d02f115ea03ebbdf62c2ae2bfacadc67be6",
+      "bytes": 641024
+    },
+    "devices/papercolor/arduino-docs/rtc-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/rtc-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/rtc-1/migration.ino.merged.bin": {
+      "sha256": "22585d81bd34ac6b6244de921b29578f89f76701e4a1f354f6b5d3df63d757cc",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/rtc-1/migration.ino.elf": {
+      "sha256": "28f290d8bde4c1b9117b3c1fe66c5bc52515d7fb58db22557451b09b0cd0d4d9",
+      "bytes": 12913640
+    },
+    "devices/papercolor/arduino-docs/rtc-1/firmware.json": {
+      "sha256": "689d9b714253bf00415d433c9470fed8ad4845205a8e7eee05b8d5a50043bc77",
+      "bytes": 5511
+    },
+    "devices/papercolor/arduino-docs/rtc-2/sketch/rtc_2/rtc_2.ino": {
+      "sha256": "4984758b99652cee5bced04832a3c02e762d89aec15cc9edec47b8068e8704a6",
+      "bytes": 5953
+    },
+    "devices/papercolor/arduino-docs/rtc-2/migration.ino.bin": {
+      "sha256": "d48bf66355770c86f9d038441f46e0a91b99e6b887a6feec69b1c40d8121d387",
+      "bytes": 1198832
+    },
+    "devices/papercolor/arduino-docs/rtc-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/rtc-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/rtc-2/migration.ino.merged.bin": {
+      "sha256": "ac6f85e6861accd3d74936c567bcc4d215da674ed98dc13c4831fc1623b08e6c",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/rtc-2/migration.ino.elf": {
+      "sha256": "410b1e0826cfbc7805c6cd63fb17906d09495a0220259ce60033482b840674a2",
+      "bytes": 18275784
+    },
+    "devices/papercolor/arduino-docs/rtc-2/firmware.json": {
+      "sha256": "aaee2627a88b7c3543ff3bedb5d7457731ce26998f8d68f65804f942ffde2bee",
+      "bytes": 5908
+    },
+    "devices/papercolor/arduino-docs/sht40/sketch/sht40/sht40.ino": {
+      "sha256": "0880592191f198bd6ee37223841765599b6ec0c6b182ff0eec0671b17453fac8",
+      "bytes": 2224
+    },
+    "devices/papercolor/arduino-docs/sht40/migration.ino.bin": {
+      "sha256": "240f92588ff42403815b00ef02c1a76c912345e8996dff4b8d143d3063d5b6f7",
+      "bytes": 645712
+    },
+    "devices/papercolor/arduino-docs/sht40/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/sht40/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/sht40/migration.ino.merged.bin": {
+      "sha256": "47693ff5486b705e39767d17dcb0bc47831791571d779aaea6261a5bbbfc6d6f",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/sht40/migration.ino.elf": {
+      "sha256": "bb1510733207b1615a9c2f49573a08625a86fa6a1a61e55082f2a668fff00552",
+      "bytes": 16852984
+    },
+    "devices/papercolor/arduino-docs/sht40/firmware.json": {
+      "sha256": "fec33b86c69b72c32f80e2ce520c93b9313b7ce704c8dca612e4c15ea454ae5b",
+      "bytes": 6816
+    },
+    "devices/papercolor/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "abfb05a6fbd36d09dbef10ebb64a6a8c8de549918238862883cc3decdb58461e",
+      "bytes": 572
+    },
+    "devices/papercolor/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "229486e00a6f10cd874209ab4e0cd591b532946f1693130a0621eb22d4069728",
+      "bytes": 626608
+    },
+    "devices/papercolor/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "f0903faa1243ec589ba79d332facf6a504ecf2f9130fcbd9aa6eab713f011a28",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "f7c97b6cb0e387354b7a395cf173d051b08978a9678fef61a367a5604d73c889",
+      "bytes": 12707884
+    },
+    "devices/papercolor/arduino-docs/speaker/firmware.json": {
+      "sha256": "a1967553b048b49c8eb763848fdb28a1746d821e04874f1118104f6d94f24a5f",
+      "bytes": 6184
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/sketch/wakeup_1/wakeup_1.ino": {
+      "sha256": "08df0301886dceb773551da682fdbbfeaf79d144645f1b495dd13b1e4a5f91f7",
+      "bytes": 889
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/migration.ino.bin": {
+      "sha256": "70fe7f485d876eb1f9becfa9f0ac4aee4635445ecad6c1eec7b611e16d231993",
+      "bytes": 618080
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/migration.ino.merged.bin": {
+      "sha256": "43d716f3b233a4f3e15547064fb5bd5a65d6992a56350f1dc25c1670802a076e",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/migration.ino.elf": {
+      "sha256": "e1117333e5e85842ba6e10febc71ab1da15b81535bf02b7ccc5222fa03fefc96",
+      "bytes": 12679012
+    },
+    "devices/papercolor/arduino-docs/wakeup-1/firmware.json": {
+      "sha256": "25b60a2af73a1e3e14f35d0c4fc1144f7954c71d47f9eca8f3225981dc9b0fde",
+      "bytes": 5953
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/sketch/wakeup_2/wakeup_2.ino": {
+      "sha256": "805818aa62b7a9286760d4a9985b76793426edc7e6d75921dd23abf0d7e06334",
+      "bytes": 1965
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/migration.ino.bin": {
+      "sha256": "ae89bd21027ad3e3e584bf2d311fad3f4aaeb438e1cbf4d680a73d12f353210c",
+      "bytes": 631776
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/migration.ino.merged.bin": {
+      "sha256": "f0c486bdbc60f3b2ca1f0d1151889ab9b54042bdab193feed7c933f1b5e2ad81",
+      "bytes": 16777216
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/migration.ino.elf": {
+      "sha256": "00b4c5e5664453925bdec1d1bee7bd23f2cee644882ecdeb4820a3b84680ef2a",
+      "bytes": 12892988
+    },
+    "devices/papercolor/arduino-docs/wakeup-2/firmware.json": {
+      "sha256": "3d32c744ecd3b9bf753e6701037c82dd4d50e79e553998b7429556326ef884c7",
+      "bytes": 5940
     }
   },
   "local_files": {
@@ -10584,7 +11544,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 139,
+    "published_cases": 155,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

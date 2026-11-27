@@ -1,0 +1,149 @@
+{
+  "device_id": "papercolor",
+  "case": "wakeup-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/wakeup",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papercolor/wakeup.md",
+    "section": "RTC Wakeup for ESP32-S3",
+    "code_first_line": 19
+  },
+  "sketch_sha256": "08df0301886dceb773551da682fdbbfeaf79d144645f1b495dd13b1e4a5f91f7",
+  "expected_behavior": "PaperColor Wakeup Sleep & Wake. Observe the documented sleep/standby transition, inject the wake source, and verify guest resume/reset.",
+  "sketch_files": {
+    "wakeup_1.ino": {
+      "path": "devices/papercolor/arduino-docs/wakeup-1/sketch/wakeup_1/wakeup_1.ino",
+      "storage": "public",
+      "sha256": "08df0301886dceb773551da682fdbbfeaf79d144645f1b495dd13b1e4a5f91f7",
+      "bytes": 889
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papercolor/arduino-docs/wakeup-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "70fe7f485d876eb1f9becfa9f0ac4aee4635445ecad6c1eec7b611e16d231993",
+      "bytes": 618080
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papercolor/arduino-docs/wakeup-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papercolor/arduino-docs/wakeup-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papercolor/arduino-docs/wakeup-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "43d716f3b233a4f3e15547064fb5bd5a65d6992a56350f1dc25c1670802a076e",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papercolor/arduino-docs/wakeup-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e1117333e5e85842ba6e10febc71ab1da15b81535bf02b7ccc5222fa03fefc96",
+      "bytes": 12679012
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "74d962912e352e1cedddbd2230681a066b5657185d5d382127dcdf0337429f99",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "43d716f3b233a4f3e15547064fb5bd5a65d6992a56350f1dc25c1670802a076e",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papercolor"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papercolor",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "wakeup-1",
+          "verdict": "PASS",
+          "reason": "Button A armed the timer and the device restarted five seconds later"
+        },
+        "capture_comparison": {
+          "wakeup-1-control.png": {
+            "original": {
+              "png_sha256": "7fdca07b47b8bff976da3cda788053ba1422c408d71ef104d91ae190465f7a45"
+            },
+            "rebuilt": {
+              "png_sha256": "7fdca07b47b8bff976da3cda788053ba1422c408d71ef104d91ae190465f7a45"
+            },
+            "byte_identical": true
+          },
+          "wakeup-1.png": {
+            "original": {
+              "png_sha256": "c8f3d92bb2e3948cfe27792c1a2ab4c97d44e55c1c37691a89869597b5d9989a"
+            },
+            "rebuilt": {
+              "png_sha256": "c8f3d92bb2e3948cfe27792c1a2ab4c97d44e55c1c37691a89869597b5d9989a"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (320 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (874 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2120 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

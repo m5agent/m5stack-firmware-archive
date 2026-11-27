@@ -1,0 +1,148 @@
+{
+  "device_id": "papercolor",
+  "case": "m5pm1-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/m5pm1",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papercolor/m5pm1.md",
+    "section": "4. RTC M5PM1 Wake-Up",
+    "code_first_line": 246
+  },
+  "sketch_sha256": "36332281ed38471186f63f212160efa5e5c9a203d8b0d11124139d5d4872c823",
+  "expected_behavior": "PaperColor M5PM1 Power Management. Exercise documented PMIC reads/writes and verify the guest-visible state or rail transitions.",
+  "sketch_files": {
+    "m5pm1_2.ino": {
+      "path": "devices/papercolor/arduino-docs/m5pm1-2/sketch/m5pm1_2/m5pm1_2.ino",
+      "storage": "public",
+      "sha256": "36332281ed38471186f63f212160efa5e5c9a203d8b0d11124139d5d4872c823",
+      "bytes": 1645
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "490fd8df46b68fa121defa73b66d7370206366f36b762c833fdbfefe7ac6a949",
+      "bytes": 628448
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "94c4c6c27c70af630c57883b38f2063c4d7e38ac7418f3b105675bb487161980",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papercolor/arduino-docs/m5pm1-2/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "d84b6d8ff3317a7257963ac2663cde1ba4cdb945c1c9e3d43e260bd7dfdaabd8",
+      "bytes": 12897388
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "349640e3e0bf72f481a067a9d65f9c91543c93365097a3efeed3d9f7cabbaf0b",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "94c4c6c27c70af630c57883b38f2063c4d7e38ac7418f3b105675bb487161980",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papercolor"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papercolor",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "m5pm1-2",
+          "verdict": "PASS",
+          "reason": "Wake source restored the simulated power rail and restarted the guest"
+        },
+        "capture_comparison": {
+          "m5pm1-2-control.png": {
+            "original": {
+              "png_sha256": "21b1ff8b47ba4e184748af2b2d7c8adf5b75ee22493e2c71396c8b1ac1c9b28b"
+            },
+            "rebuilt": {
+              "png_sha256": "21b1ff8b47ba4e184748af2b2d7c8adf5b75ee22493e2c71396c8b1ac1c9b28b"
+            },
+            "byte_identical": true
+          },
+          "m5pm1-2.png": {
+            "original": {
+              "png_sha256": "21b1ff8b47ba4e184748af2b2d7c8adf5b75ee22493e2c71396c8b1ac1c9b28b"
+            },
+            "rebuilt": {
+              "png_sha256": "21b1ff8b47ba4e184748af2b2d7c8adf5b75ee22493e2c71396c8b1ac1c9b28b"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (314 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

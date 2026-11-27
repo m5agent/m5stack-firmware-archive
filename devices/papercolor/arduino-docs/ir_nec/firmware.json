@@ -1,0 +1,157 @@
+{
+  "device_id": "papercolor",
+  "case": "ir_nec",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papercolor/ir_nec",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papercolor/ir_nec.md",
+    "section": "Build Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "1eca86b0a89284791877e84eba536782fb138930c695fdc52f810ced0ed44ef9",
+  "expected_behavior": "PaperColor IR NEC Transmitter. Verify address/command and timing on the actual NEC waveform or receiver input.",
+  "sketch_files": {
+    "ir_nec.ino": {
+      "path": "devices/papercolor/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino",
+      "storage": "public",
+      "sha256": "1eca86b0a89284791877e84eba536782fb138930c695fdc52f810ced0ed44ef9",
+      "bytes": 3501
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papercolor/arduino-docs/ir_nec/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "8da723f23d7bc077b54f7a8a3774de8ae7a6288a576821e87de06179a363b012",
+      "bytes": 623680
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papercolor/arduino-docs/ir_nec/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papercolor/arduino-docs/ir_nec/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papercolor/arduino-docs/ir_nec/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "c16ecfa37c83b285d300c324cb2fd502805679f5d3f11296042424d103128cfe",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papercolor/arduino-docs/ir_nec/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "ec0c6899f3c421dc5e6a54c63d4296710d27ef5ecac390ade1c2c34d8720ff97",
+      "bytes": 12770176
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "5fc987dc296c6f48ec879ad8ff8f46ed467ac6b54f0a24fbf1a1f26b682b8d89",
+    "verdict": "DOCS-DEFECT",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "DOCS-DEFECT",
+    "original_verdict": "DOCS-DEFECT",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "c16ecfa37c83b285d300c324cb2fd502805679f5d3f11296042424d103128cfe",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papercolor"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papercolor",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "DOCS-DEFECT",
+        "original_verdict": "DOCS-DEFECT",
+        "checker": {
+          "case": "ir_nec",
+          "verdict": "DOCS-DEFECT",
+          "reason": "IRremote send feedback drives the built-in RGB LED alias on the same GPIO48"
+        },
+        "capture_comparison": {
+          "ir_nec-early.png": {
+            "original": {
+              "png_sha256": "7fdca07b47b8bff976da3cda788053ba1422c408d71ef104d91ae190465f7a45"
+            },
+            "rebuilt": {
+              "png_sha256": "7fdca07b47b8bff976da3cda788053ba1422c408d71ef104d91ae190465f7a45"
+            },
+            "byte_identical": true
+          },
+          "ir_nec.png": {
+            "original": {
+              "png_sha256": "f1e3195b032f853ddb999339565acc3c05abc196f97dd68cefc5c8805fe18338"
+            },
+            "rebuilt": {
+              "png_sha256": "f1e3195b032f853ddb999339565acc3c05abc196f97dd68cefc5c8805fe18338"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ],
+    "defect": {
+      "file_line": "static/en/arduino/papercolor/ir_nec.md:19,115–116",
+      "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+    }
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (311 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "DOCS-DEFECT",
+  "defect": {
+    "file_line": "static/en/arduino/papercolor/ir_nec.md:19,115–116",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+  }
+}
