@@ -1,0 +1,166 @@
+{
+  "device_id": "stickc",
+  "case": "lcd_m5stickc-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc/lcd_m5stickc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc/lcd_m5stickc.md",
+    "section": "fillScreen",
+    "code_first_line": 54
+  },
+  "sketch_sha256": "4f8e06bd7d5cfc5c42ea3be4ea2d435fba701dc10865615c3541d53010857e72",
+  "expected_behavior": "StickC LCD Display. Verify legacy TFT operations against the documented ST7735 geometry.",
+  "sketch_files": {
+    "lcd_m5stickc_1.ino": {
+      "path": "devices/stickc/arduino-docs/lcd_m5stickc-1/sketch/lcd_m5stickc_1/lcd_m5stickc_1.ino",
+      "storage": "public",
+      "sha256": "4f8e06bd7d5cfc5c42ea3be4ea2d435fba701dc10865615c3541d53010857e72",
+      "bytes": 96
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc/arduino-docs/lcd_m5stickc-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "6462fd444efb23852f6af543ef30c98f92bc4669fe34abe5cdc8d46e46fe1d00",
+      "bytes": 364320
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc/arduino-docs/lcd_m5stickc-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc/arduino-docs/lcd_m5stickc-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc/arduino-docs/lcd_m5stickc-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "337a8d0bf9671df1dd872942d85ca6e9e3098bcbd102da171e5507a1b21ce786",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc/arduino-docs/lcd_m5stickc-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "354f606e5466169ce9fbf8bab91745affb59f6c84ac0b0a76ffea3033b5f6813",
+      "bytes": 517836
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "9a521939aeeb4b88c89585fa1038dc72568e4e702b46b0eeccec8f02773e351d",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "337a8d0bf9671df1dd872942d85ca6e9e3098bcbd102da171e5507a1b21ce786",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Visible pixel count or fill color matches the sketch operation",
+          "frame": {
+            "w": 80,
+            "h": 160,
+            "lit": 12800,
+            "bounds": [
+              0,
+              0,
+              79,
+              159
+            ],
+            "colors": 1,
+            "palette": [
+              [
+                "0000ff",
+                12800
+              ]
+            ],
+            "regions": {
+              "0000ff": [
+                0,
+                0,
+                79,
+                159
+              ]
+            },
+            "crc32": "6c648fe0"
+          }
+        },
+        "capture_comparison": {
+          "lcd_m5stickc-1.png": {
+            "original": {
+              "png_sha256": "9db14e9603b84386f280bac230122d68b5a6dcc3b086fdaeea3f12d05bccbed3"
+            },
+            "rebuilt": {
+              "png_sha256": "9db14e9603b84386f280bac230122d68b5a6dcc3b086fdaeea3f12d05bccbed3"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (236 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

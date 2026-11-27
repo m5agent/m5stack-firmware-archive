@@ -1,0 +1,194 @@
+{
+  "device_id": "stickc",
+  "case": "imu-4",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc/imu",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc/imu.md",
+    "section": "getAhrsData()",
+    "code_first_line": 96
+  },
+  "sketch_sha256": "ee41af6401b49a4ebafbe98a79e3accb3320c20f39751cb6170bdd1c16826139",
+  "expected_behavior": "StickC IMU. Inject two distinct orientations and verify axis readings on the documented output.",
+  "sketch_files": {
+    "imu_4.ino": {
+      "path": "devices/stickc/arduino-docs/imu-4/sketch/imu_4/imu_4.ino",
+      "storage": "public",
+      "sha256": "ee41af6401b49a4ebafbe98a79e3accb3320c20f39751cb6170bdd1c16826139",
+      "bytes": 261
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc/arduino-docs/imu-4/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "056a93398abdf3b0cfe704a6eb6def34b5be4ed55230e0ce5ce535930f655532",
+      "bytes": 369680
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc/arduino-docs/imu-4/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc/arduino-docs/imu-4/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc/arduino-docs/imu-4/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "b70422b480d15522da9841e48b4550205fa31fbc90d016526ce94d1b99b033ef",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc/arduino-docs/imu-4/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "eb25f203903788657dfdff61c6ef1449656204fba982c4f52c9de60989851b7a",
+      "bytes": 528948
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "8e4b1e1c3c497e8f3661cf5a7280d5c3ffba1f952794ef5ee385fda90a127505",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "b70422b480d15522da9841e48b4550205fa31fbc90d016526ce94d1b99b033ef",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Distinct injected sensor inputs changed the application display versus idle",
+          "frame": {
+            "w": 80,
+            "h": 160,
+            "lit": 237,
+            "bounds": [
+              0,
+              45,
+              76,
+              59
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                12563
+              ],
+              [
+                "ffffff",
+                237
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                79,
+                159
+              ],
+              "ffffff": [
+                0,
+                45,
+                76,
+                59
+              ]
+            },
+            "crc32": "3e911e5b"
+          }
+        },
+        "capture_comparison": {
+          "imu-4-first.png": {
+            "original": {
+              "png_sha256": "485ece617e0400a167be711499b13ee0890f25418c762965ea783e8a75383c4f"
+            },
+            "rebuilt": {
+              "png_sha256": "485ece617e0400a167be711499b13ee0890f25418c762965ea783e8a75383c4f"
+            },
+            "byte_identical": true
+          },
+          "imu-4-idle.png": {
+            "original": {
+              "png_sha256": "77829e5837801aa5f9062715f3e9cf77f7e1834bf9edd9d5e4fdd38d66f846f0"
+            },
+            "rebuilt": {
+              "png_sha256": "77829e5837801aa5f9062715f3e9cf77f7e1834bf9edd9d5e4fdd38d66f846f0"
+            },
+            "byte_identical": true
+          },
+          "imu-4.png": {
+            "original": {
+              "png_sha256": "7338281e848eb56dfd0f65a7f39875135f726f74bb401636560246c9f06ad85a"
+            },
+            "rebuilt": {
+              "png_sha256": "7338281e848eb56dfd0f65a7f39875135f726f74bb401636560246c9f06ad85a"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (236 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

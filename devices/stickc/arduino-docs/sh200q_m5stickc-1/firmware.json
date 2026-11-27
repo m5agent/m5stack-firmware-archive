@@ -1,0 +1,44 @@
+{
+  "device_id": "stickc",
+  "case": "sh200q_m5stickc-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc/sh200q_m5stickc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc/sh200q_m5stickc.md",
+    "section": "Init()",
+    "code_first_line": 16
+  },
+  "sketch_sha256": "297f57c8243d46c69b7f3ec4bba6305b6cc50dcf214f8ad15c77a6e28e034256",
+  "expected_behavior": "StickC SH200Q IMU. Check the legacy SH200Q I2C output on the SKU that has the chip.",
+  "sketch_files": {
+    "sh200q_m5stickc_1.ino": {
+      "path": "devices/stickc/arduino-docs/sh200q_m5stickc-1/sketch/sh200q_m5stickc_1/sh200q_m5stickc_1.ino",
+      "storage": "public",
+      "sha256": "297f57c8243d46c69b7f3ec4bba6305b6cc50dcf214f8ad15c77a6e28e034256",
+      "bytes": 219
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "verdict": "DOCS-DEFECT",
+  "defect": {
+    "location": "static/en/arduino/m5stickc/sh200q_m5stickc.md:23",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+  },
+  "compile": {
+    "status": "FAIL",
+    "exit_code": 1,
+    "diagnostic": "error: 'class IMU' has no member named 'I2C_Read_NBytes'"
+  },
+  "files": {},
+  "validation": {
+    "status": "NOT RUN",
+    "reason": "Original sketch did not compile."
+  }
+}

@@ -1,0 +1,7 @@
+#include <M5StickC.h>
+
+void setup() {
+  M5.begin();
+  M5.Lcd.drawTriangle(22, 22, 69, 98, 51, 22, RED);
+}
+void loop() {}

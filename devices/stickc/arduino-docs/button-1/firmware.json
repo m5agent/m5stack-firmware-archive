@@ -1,0 +1,194 @@
+{
+  "device_id": "stickc",
+  "case": "button-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc/button",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc/button.md",
+    "section": "read",
+    "code_first_line": 38
+  },
+  "sketch_sha256": "52d93435f4ca97696bfb6d862d6d8a6772cbc1e48c92085ac202572e897d018e",
+  "expected_behavior": "button. Press and release each documented key and observe the corresponding event or screen change.",
+  "sketch_files": {
+    "button_1.ino": {
+      "path": "devices/stickc/arduino-docs/button-1/sketch/button_1/button_1.ino",
+      "storage": "public",
+      "sha256": "52d93435f4ca97696bfb6d862d6d8a6772cbc1e48c92085ac202572e897d018e",
+      "bytes": 199
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc/arduino-docs/button-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "6f0a18a26ba9b9f56c43113bc447753dc368ac84d68765b4091fbdb67be84447",
+      "bytes": 364752
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc/arduino-docs/button-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc/arduino-docs/button-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc/arduino-docs/button-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "9e33e858bb75f5e82880fe925f3f6dbb3bcb3b705fb405d2ded51c8920a6baa7",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc/arduino-docs/button-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "33631185780116a7d1abca6f5f98b550e7cb5c2894a021cf274e657786d4b041",
+      "bytes": 522544
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "c150f847948b2c253c3933b0bf181bf0d44b44ed98c0fe3fd65edd983b0284f5",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "9e33e858bb75f5e82880fe925f3f6dbb3bcb3b705fb405d2ded51c8920a6baa7",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Scripted GPIO input changed the documented button display versus idle",
+          "frame": {
+            "w": 80,
+            "h": 160,
+            "lit": 237,
+            "bounds": [
+              0,
+              0,
+              76,
+              14
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                12563
+              ],
+              [
+                "ffffff",
+                237
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                79,
+                159
+              ],
+              "ffffff": [
+                0,
+                0,
+                76,
+                14
+              ]
+            },
+            "crc32": "c961d988"
+          }
+        },
+        "capture_comparison": {
+          "button-1-held.png": {
+            "original": {
+              "png_sha256": "487efbed01b019e1e1edab87d8f356b6eb1e01d8f4cfcc8433c6f31c0698c3ba"
+            },
+            "rebuilt": {
+              "png_sha256": "487efbed01b019e1e1edab87d8f356b6eb1e01d8f4cfcc8433c6f31c0698c3ba"
+            },
+            "byte_identical": true
+          },
+          "button-1-idle.png": {
+            "original": {
+              "png_sha256": "6161bafdf5a3d72e1e90582a84b36ec6758c9500d5edc7e0e48db50644ae40a6"
+            },
+            "rebuilt": {
+              "png_sha256": "6161bafdf5a3d72e1e90582a84b36ec6758c9500d5edc7e0e48db50644ae40a6"
+            },
+            "byte_identical": true
+          },
+          "button-1.png": {
+            "original": {
+              "png_sha256": "6161bafdf5a3d72e1e90582a84b36ec6758c9500d5edc7e0e48db50644ae40a6"
+            },
+            "rebuilt": {
+              "png_sha256": "6161bafdf5a3d72e1e90582a84b36ec6758c9500d5edc7e0e48db50644ae40a6"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (236 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}
