@@ -6,8 +6,9 @@
   "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
   "docs_location": {
     "path_at_revision": "static/en/arduino/m5cardputer/speaker.md",
-    "section": "Example Program",
-    "section_line": 7
+    "section": "Play WAV File Example",
+    "section_line": 35,
+    "reference_line": 37
   },
   "sketch_sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
   "expected_behavior": "Mount SD on CS GPIO12 and play /sample-12s.wav over the speaker.",

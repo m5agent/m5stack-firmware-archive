@@ -101,9 +101,9 @@ QEMU-WASM Unit 证据见[候选配置摘要](evidence/cores3/accessory-qemu-wasm
 
 ## English
 
-This archive maps 28 Arduino cases and one official UIFlow2 release to their documentation, exact firmware hashes, flash layouts and validation inputs. The pinned esp32sim replay passed 15 CoreS3 and 11 Cardputer-Adv Arduino cases. UIFlow2 v2.5.3 passed boot, USB CDC REPL and framebuffer checks. Two CoreS3 Unit cases passed on QEMU-WASM candidate profiles. All results are virtual-device validation. Hardware validation was NOT RUN.
+The [index](index.json) links 358 Arduino firmware sets and 13 compile failures to their documentation. It also has the recorded locations and replay outcomes for cases whose verdict changed and whose rebuilt images were withheld. Each firmware set includes exact hashes, flash layouts and validation inputs. The [matrix recipe](build-records/rebuild-2026-11-27-matrix.md) describes the additional board builds. The pinned esp32sim replay passed 15 CoreS3 and 11 Cardputer-Adv Arduino cases. UIFlow2 v2.5.3 passed boot, USB CDC REPL and framebuffer checks. Two CoreS3 Unit cases passed on QEMU-WASM candidate profiles. All results are virtual-device validation. Hardware validation was NOT RUN.
 
-The public LFS checkout contains the rebuilt BIN and ELF files for all 26 native esp32sim cases. The original hashes and validation remain in each case manifest. See the [rebuild recipe](build-records/rebuild-2026-11-26.md) and [virtual-device validation summary](evidence/arduino-path-clean-summary.json) for reproduction, path scan results, and the original versus rebuilt capture comparison. The UIFlow2 fetch tool verifies the official image from M5Burner.
+The public LFS checkout contains the rebuilt BIN and ELF files. The original hashes and validation remain in each case manifest. See the [rebuild recipe](build-records/rebuild-2026-11-26.md) and [virtual-device validation summary](evidence/arduino-path-clean-summary.json) for reproduction, path scan results, and the original versus rebuilt capture comparison. The UIFlow2 fetch tool verifies the official image from M5Burner.
 
 ## Cardputer K132 · 2026-11-27
 

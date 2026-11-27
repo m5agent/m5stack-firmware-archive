@@ -101,7 +101,7 @@
       {
         "board": "m5stack-nanoc6",
         "run_command": "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
-        "check_command": "python3 $SIM_SRC/tools/check-nanoc6.py $OUT $OUT-peers",
+        "check_command": "python3 $SIM_SRC/tools/check-nanoc6.py $OUT $PEER_OUT",
         "environment": {
           "ESP32SIM_ROM_DIR": "$ROM_DIR"
         },

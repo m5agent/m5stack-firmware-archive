@@ -51,6 +51,11 @@ Copy or symlink these from the corresponding verified archive files.
 `$OUT` names a new capture directory. Use the matching fixtures and stock
 firmware listed in the integration record for the relevant board.
 
+The Cardputer, Dial, StickS3 and StopWatch S3B runner uses a Bash 3
+compatibility guard in the ELF hash check. Replace the empty-array
+expansion `${flags[*]}` with `${flags[*]-}` in that check on macOS system
+Bash. The guard leaves the simulator command and fixture inputs intact.
+
 Classic ESP32 ELFs include a path from debug sections in a precompiled
 SDK library. Those cases use the pinned `xtensa-esp-elf-objcopy --strip-debug`
 on each ELF after the Arduino build. The defined-symbol names and addresses
@@ -74,3 +79,9 @@ Set `ESP32SIM_P4` to the pinned `esp32sim-p4` executable and
 ESP-Hosted 2.0.13 SDIO fixture using the recipe there and use its matched
 C6 segments as `$C6_COPROCESSOR`. Each manifest gives the runner commands
 and the outcome for its rebuilt image.
+
+The NanoC6 peer commands in the index use `$PEER_OUT` as the common parent
+of the Thread and Zigbee captures. Run each distinct peer command once in a
+fresh output directory before invoking the checker. Set `$ARCHIVE` to the
+root of this firmware archive to find the exact ENV III inputs and button
+actions. The sensor pair uses board `m5stack-nanoc6-enviii`.

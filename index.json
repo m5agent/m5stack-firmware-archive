@@ -1306,7 +1306,8 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r-cam $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r-cam.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
-      }
+      },
+      "configuration": "Documented USE_ATOMS3R_CAM or USE_ATOMS3R_M12 define"
     },
     {
       "device_id": "atoms3r-m12",
@@ -1338,7 +1339,8 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r-m12 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r-cam.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
-      }
+      },
+      "configuration": "Documented USE_ATOMS3R_CAM or USE_ATOMS3R_M12 define"
     },
     {
       "device_id": "tab5",
@@ -1742,7 +1744,9 @@
             "i2c1"
           ]
         ]
-      }
+      },
+      "variant_of": "speaker-1",
+      "configuration": "Removed the extra # from the first include."
     },
     {
       "device_id": "tab5",
@@ -2038,7 +2042,9 @@
             "wifi-frames"
           ]
         ]
-      }
+      },
+      "variant_of": "wifi-1",
+      "configuration": "Enabled the documented AP block."
     },
     {
       "device_id": "tab5",
@@ -2808,8 +2814,9 @@
       "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
       "docs_location": {
         "path_at_revision": "static/en/arduino/m5cardputer/speaker.md",
-        "section": "Example Program",
-        "section_line": 7
+        "section": "Play WAV File Example",
+        "section_line": 35,
+        "reference_line": 37
       },
       "sketch_sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
       "manifest": "devices/cardputer/arduino-docs/speaker-sd-wav/firmware.json",
@@ -2829,6 +2836,12 @@
         ],
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      },
+      "configuration": {
+        "SDCARD_CSPIN": "GPIO_NUM_12",
+        "files": [
+          "/sample-12s.wav"
         ]
       }
     },
@@ -2862,6 +2875,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3-lite $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3-lite.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5atoms3/button.md:12–14,20,24",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -2960,6 +2977,10 @@
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5atoms3/button.md:12–14,20,24",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -3028,6 +3049,10 @@
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5atoms3/imu.md:10–12,33,35",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -4034,6 +4059,10 @@
         "run_commands": [
           "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5core/imu.md:1,5,9",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -5608,6 +5637,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/papercolor/ir_nec.md:19,115–116",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -5896,6 +5929,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/papercolor/sht40.md:69,84",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -6536,6 +6573,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/papermono/nfc.md:817–818,858",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -6984,6 +7025,10 @@
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5sticks3/m5pm1.md:154,175",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -7016,6 +7061,10 @@
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5sticks3/m5pm1.md:236,270",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -7048,6 +7097,10 @@
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5sticks3/m5pm1.md:343,396",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -7144,6 +7197,10 @@
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5sticks3/wakeup.md:32",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -7176,6 +7233,10 @@
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/m5sticks3/wakeup.md:80,100",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -7528,6 +7589,10 @@
         "run_commands": [
           "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md:726–727,758–762",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -8514,6 +8579,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
         ]
+      },
+      "defect": {
+        "file_line": "static/en/arduino/stackchan/nfc.md:230,264",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -9948,6 +10017,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
+      },
+      "defect": {
+        "file_line": "M5StickCPlus 0.1.1/src/utility/Speaker.cpp:14,31,55",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -11164,6 +11237,10 @@
         "run_commands": [
           "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
+      },
+      "defect": {
+        "file_line": "M5StickC 0.3.0/src/utility/MPU6886.cpp:208–212",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
     },
     {
@@ -12749,8 +12826,8 @@
       "bytes": 1919
     },
     "README.md": {
-      "sha256": "7ff2c1151831758b91bf53f72dc09330811f29d2d610f58fb57799569b86b3bf",
-      "bytes": 12724
+      "sha256": "877e46a670362ec7c256213cd34e1c83662e7790c1f9fa8b312c36993eb44bc5",
+      "bytes": 12951
     },
     "build-records/arduino-inventory.json": {
       "sha256": "8b3c329ecb30f8c389a3fc5c8e3b6b4f948685984151f15c361dec5a139983b4",
@@ -13991,8 +14068,8 @@
       "bytes": 1055
     },
     "build-records/rebuild-2026-11-27-matrix.md": {
-      "sha256": "29a13a9de4d3e82ade16c96db2752fd4bdfb84f58b6dee3aa1eba764700eb75c",
-      "bytes": 4396
+      "sha256": "2f3bd30d6af91747ea349e7899eca227b8e1fe53d5666fc5c0679655572df4df",
+      "bytes": 5039
     },
     "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/quickstart_echorest.ino": {
       "sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
@@ -15147,8 +15224,8 @@
       "bytes": 12889696
     },
     "devices/cardputer/arduino-docs/speaker-sd-wav/firmware.json": {
-      "sha256": "b4ed356210ae52e6ea5aea493712fcf0bdbe59e4cbd87fb697bdabd2c8b807e2",
-      "bytes": 6427
+      "sha256": "d453803cb7b69b733dc7cbac8e8b600a3a9e8b2f5452ef81dd60ebe25e756c5b",
+      "bytes": 6460
     },
     "devices/atoms3-lite/arduino-docs/button/sketch/button/button.ino": {
       "sha256": "a0f7c6c6ba01fa4bf27fe0d99e7c71d481c14625cefae0521ecbccb6b39f7b1c",
@@ -22819,8 +22896,8 @@
       "bytes": 5851392
     },
     "devices/nanoc6/arduino-docs/button/firmware.json": {
-      "sha256": "e27558ad34b4d59e5cf1e851f3718b7df2c78e843d8ff0e25da9afde7fa7aa8c",
-      "bytes": 4990
+      "sha256": "13bd53f0a99d3b53dd86d5d27a231d7e06e934e073d3ecbaf10ec91d2d486cde",
+      "bytes": 4989
     },
     "devices/nanoc6/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
       "sha256": "7458578490f911bafc647ce0ed9fded507c2812658bca0ded75652920ad7a882",
@@ -22847,8 +22924,8 @@
       "bytes": 6333304
     },
     "devices/nanoc6/arduino-docs/ir_nec/firmware.json": {
-      "sha256": "223c97ac5a5f8e0b49b41bde067f7d94eb4b162dc8fab6c6aa6dbb5493c456a2",
-      "bytes": 4991
+      "sha256": "77707ba1c75b2281f787178749f482ce6eb5a81047bdbc96a4e52cce288b9bea",
+      "bytes": 4990
     },
     "devices/nanoc6/arduino-docs/led/sketch/led/led.ino": {
       "sha256": "3c8aaec000cfd103f8284f8be8201cda0e109bebb978437aae303949bab03832",
@@ -22875,8 +22952,8 @@
       "bytes": 5851748
     },
     "devices/nanoc6/arduino-docs/led/firmware.json": {
-      "sha256": "5c6e60d4a1b5ce3dfd0735f61fe5531a0a7e648bb5c0aac174ee93ee82d75a2e",
-      "bytes": 4939
+      "sha256": "e79d8e9a67126a4c21a3b64115c1fe95509dc49bda9edbf2f047e5292c096b48",
+      "bytes": 4938
     },
     "devices/nanoc6/arduino-docs/program/sketch/program/program.ino": {
       "sha256": "9218198d9c651ef7a9afdb43e966864775ef8e8d3ee47e226bda1d7d76510f5a",
@@ -22903,8 +22980,8 @@
       "bytes": 6215916
     },
     "devices/nanoc6/arduino-docs/program/firmware.json": {
-      "sha256": "5e9504766f404b8f3710ca4ce92bbf0548612cd7d42a38e57a2af3bbca60a0d8",
-      "bytes": 5020
+      "sha256": "4526fca5d4aad9ce96838f247f72193a6d295e7e2af5d041b926513a7190c4c8",
+      "bytes": 5019
     },
     "devices/nanoc6/arduino-docs/thread-1/sketch/thread_1/thread_1.ino": {
       "sha256": "a7c9bc9ec76d779efa1faa1a31b4fe92786e1d485b09281b031a7a29588e1945",
@@ -22931,8 +23008,8 @@
       "bytes": 11312440
     },
     "devices/nanoc6/arduino-docs/thread-1/firmware.json": {
-      "sha256": "8ecd34712732e67c93020a9a584e6e7c2bda205f8e9ad9bd6f84d00bc9209e59",
-      "bytes": 5013
+      "sha256": "3348846c4a6aa0adef08944ea29cafde3208dad3afc25f93f733bbb45ed87c84",
+      "bytes": 5012
     },
     "devices/nanoc6/arduino-docs/thread-2/sketch/thread_2/thread_2.ino": {
       "sha256": "a5e51b7a2e6594b84f9a60d720d5a58dcc2681a9b9f068ebddc1fa7c8a7b2b1e",
@@ -22959,8 +23036,8 @@
       "bytes": 11317236
     },
     "devices/nanoc6/arduino-docs/thread-2/firmware.json": {
-      "sha256": "0082fe55cc0ea6a4b6c1a1e2b934139d13dee5493e4f4e905ba57755c83289b3",
-      "bytes": 5334
+      "sha256": "44047288a41f242af3f6a6b0a1dc7a1c353f2ee5f537afab3273cd9c2ac3cdad",
+      "bytes": 5333
     },
     "devices/nanoc6/arduino-docs/thread-3/sketch/thread_3/thread_3.ino": {
       "sha256": "987721d7f14ecf8e97af8ec5fcd313e81bca847ed560c1195a8c5bb39b8d4a7c",
@@ -22987,8 +23064,8 @@
       "bytes": 11317388
     },
     "devices/nanoc6/arduino-docs/thread-3/firmware.json": {
-      "sha256": "083e30c1d6744f3128e1f8ac04320b6e57608f04d512854415932dc1a51f359b",
-      "bytes": 5335
+      "sha256": "3ac70adad61308884b58245a3055ed463a22a3e031026d82f9543402a8dbe219",
+      "bytes": 5334
     },
     "devices/nanoc6/arduino-docs/thread-4/sketch/thread_4/thread_4.ino": {
       "sha256": "ca801e9a808f79c6b4a39f0cd1968b61a2975d2eba6f37c4edc866ae77bef6f6",
@@ -23015,8 +23092,8 @@
       "bytes": 11313056
     },
     "devices/nanoc6/arduino-docs/thread-4/firmware.json": {
-      "sha256": "9a3bb7fff7af60f36a89ba3304c42e2dd3acbba90b6e54d22b59a596207eaf50",
-      "bytes": 5334
+      "sha256": "efeeb01f7b797b3757331488ac8b942ec04fab04824c1cc915490bf652523a92",
+      "bytes": 5333
     },
     "devices/nanoc6/arduino-docs/thread-5/sketch/thread_5/thread_5.ino": {
       "sha256": "937e33f485e2cb310c6c431f504c458c52e45434f47bcf962d817a03ab4a96a3",
@@ -23043,8 +23120,8 @@
       "bytes": 11312160
     },
     "devices/nanoc6/arduino-docs/thread-5/firmware.json": {
-      "sha256": "5413796f69bf146f2e66bac2f02558d785776cf044515771304ad3afb6e7371d",
-      "bytes": 5013
+      "sha256": "597e8fd88ef10f8638e287a5397ace7f2a0b3b00529bda3ceadd69e42283b142",
+      "bytes": 5012
     },
     "devices/nanoc6/arduino-docs/thread-6/sketch/thread_6/thread_6.ino": {
       "sha256": "4badb87d4cf67b86dece83d4c8feff531f0e5d9a38ca092df8bd02cc2c796395",
@@ -23071,8 +23148,8 @@
       "bytes": 11327248
     },
     "devices/nanoc6/arduino-docs/thread-6/firmware.json": {
-      "sha256": "505aac261b21b295aa021f319c0aca205aeda89e63398d8bc0cfeb39a90202ab",
-      "bytes": 5031
+      "sha256": "5eaf207ff1e598bfde88165c4c7f6262aa5b49dbe5c6faf5961d61160afa2571",
+      "bytes": 5030
     },
     "devices/nanoc6/arduino-docs/zigbee-1/sketch/zigbee_1/zigbee_1.ino": {
       "sha256": "a9cdadcf3667a089f68e7f928c1d904cf94b13f81cac1710503c5880a01bca0b",
@@ -23099,8 +23176,8 @@
       "bytes": 8602540
     },
     "devices/nanoc6/arduino-docs/zigbee-1/firmware.json": {
-      "sha256": "b3e40df10c5e5a355e30881d2820c20da9805d1505f72b83234d02367a292dfc",
-      "bytes": 5500
+      "sha256": "33383597bc50221c51425c3903e796bb01c45c96b5d590e9632d1e024ccc787d",
+      "bytes": 5499
     },
     "devices/nanoc6/arduino-docs/zigbee-2/sketch/zigbee_2/zigbee_2.ino": {
       "sha256": "d852a5bc1448986d8ef69c536836557bcd1ba0ac9b1266ca7a25e27937a419ab",
@@ -23127,8 +23204,8 @@
       "bytes": 8683804
     },
     "devices/nanoc6/arduino-docs/zigbee-2/firmware.json": {
-      "sha256": "2112e90f13b42fe1cd981af8bbe88186b95daf9d63f268f10eab57262b8fd982",
-      "bytes": 5499
+      "sha256": "06acc5320698861ef6c42f5ac27b9bd12348dddcac763210071e394cfcc11e4d",
+      "bytes": 5498
     },
     "devices/nanoc6/arduino-docs/zigbee-3/sketch/zigbee_3/zigbee_3.ino": {
       "sha256": "7546ca93c003095ffbe939797c9d11761ce69931f7c29fd0011d781ac3388e7b",
@@ -23155,8 +23232,8 @@
       "bytes": 8530008
     },
     "devices/nanoc6/arduino-docs/zigbee-3/firmware.json": {
-      "sha256": "88850c94d22d837f63da3ea6478f403f7e328906c96fc4390381e56cc3d5225a",
-      "bytes": 5384
+      "sha256": "06de8d32d09104b4367e7888cec5bc03e2d07755492132f98235f209ac9adec6",
+      "bytes": 5383
     },
     "devices/nanoc6/arduino-docs/zigbee-4/sketch/zigbee_4/zigbee_4.ino": {
       "sha256": "8bc5a0fc91e4c5e59851980ff77cb11f0d659b4a5861ee1de821da4bf974b78a",
@@ -23183,8 +23260,8 @@
       "bytes": 8672288
     },
     "devices/nanoc6/arduino-docs/zigbee-4/firmware.json": {
-      "sha256": "7f29e245a5d12a4d1774dc3c648b6a7d0d46ca54a2539c0bf70540b145d31747",
-      "bytes": 5485
+      "sha256": "80162be0d3db889cc215459655588c05e677fdb3e85688e93b8047ee2645ca9b",
+      "bytes": 5484
     },
     "devices/nanoc6/arduino-docs/zigbee-5/sketch/zigbee_5/zigbee_5.ino": {
       "sha256": "a0dc68f46fc6d2f39fb916f1effca20876d9fd73e5f0c71236bbe69e65f21a20",
@@ -23211,8 +23288,8 @@
       "bytes": 8383404
     },
     "devices/nanoc6/arduino-docs/zigbee-5/firmware.json": {
-      "sha256": "61c930da390893c1cabd5e5caa326ea6ffed2aa05288ff472472b3e2dda4a5b3",
-      "bytes": 5483
+      "sha256": "496f0771f4a5700b89954f75cc42d6d6c2935cf5704f601587a1140bdadb8904",
+      "bytes": 5482
     },
     "devices/nanoc6/arduino-docs/fixtures/env-actions.txt": {
       "sha256": "06918bd6501af417c1e825aa035f1ed5842cfd360bf2d53eb0f1581ea41bf5b5",
@@ -24068,6 +24145,158 @@
     },
     "tab5_uncompiled_documentation_paths": {
       "rs485": "The pinned Tab5 Arduino documentation has no RS485 sketch."
-    }
+    },
+    "withheld_cases": [
+      {
+        "device_id": "nesso-n1",
+        "case": "lora-1",
+        "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/lora",
+        "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+        "docs_location": {
+          "path_at_revision": "static/en/arduino/arduino_nesso_n1/lora.md",
+          "section": "Transmitter",
+          "code_first_line": 21
+        },
+        "sketch_sha256": "d9a576f48bb958dd9b540eab0ec292650329a1ffb599bf58055b7879de50cb49",
+        "publication": "WITHHELD",
+        "historical_verdict": "FAIL",
+        "rebuilt_verdict": "PASS",
+        "original_firmware_sha256": "9f1c21052bf82232c937a781a882feaedc5bacd9606e11a77d2a77d402ec2256",
+        "rebuilt_firmware_sha256": "03dd92aa76ebb8fda984faf92d374187a7a8babdfbe9ca47f5a1e9de69ea74b1",
+        "esp32sim": {
+          "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+          "boards": [
+            "arduino-nesso-n1"
+          ],
+          "run_commands": [
+            "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+            "python3 \"$SIM_SRC/tools/run-nesso-n1-lora.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nesso-n1\" \"$PEER_OUT/lora-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 240",
+            "python3 \"$SIM_SRC/tools/run-nesso-n1-lora.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nesso-n1\" \"$PEER_OUT/lora-isolated\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 240 --isolated"
+          ]
+        },
+        "historical_runtime": "9ac09fb79cefe4a2cb6f911172ffa6cbdfbd784a",
+        "original_firmware_replay_verdict": "PASS"
+      },
+      {
+        "device_id": "nesso-n1",
+        "case": "lora-2",
+        "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/lora",
+        "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+        "docs_location": {
+          "path_at_revision": "static/en/arduino/arduino_nesso_n1/lora.md",
+          "section": "Receiver",
+          "code_first_line": 142
+        },
+        "sketch_sha256": "33c2a0ecb931eb4e677121380843afb6f61c2140b41b1aaced1616bcf2784323",
+        "publication": "WITHHELD",
+        "historical_verdict": "FAIL",
+        "rebuilt_verdict": "PASS",
+        "original_firmware_sha256": "5e1a635e2e438201285ea1b659325ac2602cfb649c23b04199f38f37e8a5e8b6",
+        "rebuilt_firmware_sha256": "2af659cb1750990b769dc2642479e20fb26f8dafdeec6914dd21ee8ca048261d",
+        "esp32sim": {
+          "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+          "boards": [
+            "arduino-nesso-n1"
+          ],
+          "run_commands": [
+            "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+            "python3 \"$SIM_SRC/tools/run-nesso-n1-lora.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nesso-n1\" \"$PEER_OUT/lora-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 240",
+            "python3 \"$SIM_SRC/tools/run-nesso-n1-lora.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nesso-n1\" \"$PEER_OUT/lora-isolated\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 240 --isolated"
+          ]
+        },
+        "historical_runtime": "9ac09fb79cefe4a2cb6f911172ffa6cbdfbd784a",
+        "original_firmware_replay_verdict": "PASS"
+      },
+      {
+        "device_id": "papermono",
+        "case": "imu",
+        "docs_url": "https://docs.m5stack.com/en/arduino/papermono/imu",
+        "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+        "docs_location": {
+          "path_at_revision": "static/en/arduino/papermono/imu.md",
+          "section": "Build Requirements",
+          "code_first_line": 14
+        },
+        "sketch_sha256": "906baa7cb18fc9451451aca6295f508fc168c12f4d6232fa5fcd75f6e914aa6f",
+        "publication": "WITHHELD",
+        "historical_verdict": "PASS",
+        "rebuilt_verdict": "FAIL",
+        "original_firmware_sha256": "e739badce88a8a18fe791f51d34597494e5673a5985cb94a765fe8b4afc9ffed",
+        "rebuilt_firmware_sha256": "1e24e9e8f8b2377b27bb959e69b6c5b67ba091c231b4b91033280eff8965a7dc",
+        "esp32sim": {
+          "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+          "boards": [
+            "m5stack-papermono"
+          ],
+          "run_commands": [
+            "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+          ]
+        },
+        "historical_runtime": "9ac09fb79cefe4a2cb6f911172ffa6cbdfbd784a",
+        "original_firmware_replay_verdict": "PASS"
+      },
+      {
+        "device_id": "papermono",
+        "case": "lora-1",
+        "docs_url": "https://docs.m5stack.com/en/arduino/papermono/lora",
+        "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+        "docs_location": {
+          "path_at_revision": "static/en/arduino/papermono/lora.md",
+          "section": "Transmitter",
+          "code_first_line": 25
+        },
+        "sketch_sha256": "29e58e7ca109064c3c657cdeec3de9fb1f723731dd6ed8cfa5ed2169ea6a3d9e",
+        "publication": "WITHHELD",
+        "historical_verdict": "FAIL",
+        "rebuilt_verdict": "PASS",
+        "original_firmware_sha256": "c80930408643fde59a8bc7b7f9f3bdfaafe6881966eff197db4037e04062b2ef",
+        "rebuilt_firmware_sha256": "c4348ee83420afa678ad1b803a9cc5918e8b76a70877bed248d1656f581dfe04",
+        "esp32sim": {
+          "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+          "boards": [
+            "m5stack-papermono"
+          ],
+          "run_commands": [
+            "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+          ]
+        },
+        "historical_runtime": "9ac09fb79cefe4a2cb6f911172ffa6cbdfbd784a",
+        "original_firmware_replay_verdict": "PASS"
+      },
+      {
+        "device_id": "papermono",
+        "case": "lora-2",
+        "docs_url": "https://docs.m5stack.com/en/arduino/papermono/lora",
+        "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+        "docs_location": {
+          "path_at_revision": "static/en/arduino/papermono/lora.md",
+          "section": "Receiver",
+          "code_first_line": 237
+        },
+        "sketch_sha256": "dfb5f39477d40507baeb810d9dce5ee6b31fc396bc988e0e0fb5bacab38ce38a",
+        "publication": "WITHHELD",
+        "historical_verdict": "FAIL",
+        "rebuilt_verdict": "PASS",
+        "original_firmware_sha256": "b271c68ab780c9ec386a84d21cab5c807d48c98bc2fb379754a5a3f4485c7497",
+        "rebuilt_firmware_sha256": "4d85733b8dcd883084f8c15a2290882c350d4518ff0978221248fd62fdbf819b",
+        "esp32sim": {
+          "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+          "boards": [
+            "m5stack-papermono"
+          ],
+          "run_commands": [
+            "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+          ]
+        },
+        "historical_runtime": "9ac09fb79cefe4a2cb6f911172ffa6cbdfbd784a",
+        "original_firmware_replay_verdict": "PASS"
+      }
+    ],
+    "matrix_recipe": "build-records/rebuild-2026-11-27-matrix.md"
   }
 }
