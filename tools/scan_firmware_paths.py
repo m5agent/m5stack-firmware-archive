@@ -14,6 +14,7 @@ import sys
 SDK_PREFIXES = (
     "/home/runner/work/esp32-arduino-lib-builder/",
     "/home/runner/.espressif/tools/xtensa-esp-elf/",
+    "/home/runner/.espressif/tools/riscv32-esp-elf/",
     "/builds/idf/crosstool-NG/",
     "/IDF/components/",
 )
