@@ -1,0 +1,59 @@
+{
+  "device_id": "atom-echo",
+  "case": "quickstart-echorest",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5atomecho/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5atomecho/program.md",
+    "section": null,
+    "reference_line": 40
+  },
+  "sketch_sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
+  "expected_behavior": "Initialize Wi-Fi and exchange documented recorded/playback audio through the REST endpoint.",
+  "sketch_files": {
+    "quickstart_echorest.ino": {
+      "path": "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/quickstart_echorest.ino",
+      "storage": "public",
+      "sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
+      "bytes": 4364
+    },
+    "BaiduRest.h": {
+      "path": "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/BaiduRest.h",
+      "storage": "public",
+      "sha256": "d9a55a3df928acd12e16f5bb5acabd5fc6b12227395110ef7cd4a987a54ee8bb",
+      "bytes": 1292
+    },
+    "BaiduRest.cpp": {
+      "path": "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/BaiduRest.cpp",
+      "storage": "public",
+      "sha256": "964362d633c266194f3c5055053da12df42d51c7fe403a59ec5e2e5d98f6a5b3",
+      "bytes": 6317
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_atom",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5Atom",
+  "library_example": "examples/Echo/EchoRest/EchoRest.ino",
+  "library_source_sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
+  "verdict": "DOCS-DEFECT",
+  "defect": {
+    "location": "static/en/arduino/m5atomecho/program.md:40,81",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+  },
+  "compile": {
+    "status": "FAIL",
+    "exit_code": 1,
+    "diagnostic": "error: 'WiFiClient' was not declared in this scope"
+  },
+  "files": {},
+  "validation": {
+    "status": "NOT RUN",
+    "reason": "Original sketch did not compile."
+  }
+}

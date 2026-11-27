@@ -665,6 +665,84 @@
       "sketch_sha256": "12d62591b8400f84dce2560601b4fe7939785ef6be1f9b574c1b419a58b2ce40",
       "firmware_sha256": null,
       "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_tx_example/example.json"
+    },
+    {
+      "device_id": "atom-echo",
+      "case": "quickstart-echorest",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atomecho/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atomecho/program.md",
+        "section": null,
+        "reference_line": 40
+      },
+      "sketch_sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
+      "manifest": "devices/atom-echo/arduino-docs/quickstart-echorest/firmware.json",
+      "lane": "native esp32sim",
+      "verdict": "DOCS-DEFECT",
+      "firmware_sha256": null,
+      "compile": {
+        "status": "FAIL",
+        "exit_code": 1,
+        "diagnostic": "error: 'WiFiClient' was not declared in this scope"
+      },
+      "defect": {
+        "location": "static/en/arduino/m5atomecho/program.md:40,81",
+        "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+      }
+    },
+    {
+      "device_id": "atom-echo",
+      "case": "quickstart-playmusic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atomecho/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atomecho/program.md",
+        "section": null,
+        "reference_line": 82
+      },
+      "sketch_sha256": "54f018e1bd97cb7eab56fa80266ae8fc8286f9dc7187c62a63fb2fc0eefcf55e",
+      "manifest": "devices/atom-echo/arduino-docs/quickstart-playmusic/firmware.json",
+      "lane": "native esp32sim",
+      "verdict": "DOCS-DEFECT",
+      "firmware_sha256": null,
+      "compile": {
+        "status": "FAIL",
+        "exit_code": 1,
+        "diagnostic": "error: 'boolean' does not name a type; did you mean 'bool'?"
+      },
+      "defect": {
+        "location": "static/en/arduino/m5atomecho/program.md:82",
+        "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+      }
+    },
+    {
+      "device_id": "atom-echo",
+      "case": "quickstart-recordplay",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atomecho/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atomecho/program.md",
+        "section": null,
+        "reference_line": 83
+      },
+      "sketch_sha256": "26c9824965a70a98befe11edf159e256ceebdf5deeb1d0a75806375b6bfa3f49",
+      "manifest": "devices/atom-echo/arduino-docs/quickstart-recordplay/firmware.json",
+      "lane": "native esp32sim",
+      "verdict": "DOCS-DEFECT",
+      "firmware_sha256": null,
+      "compile": {
+        "status": "FAIL",
+        "exit_code": 1,
+        "diagnostic": "error: 'boolean' does not name a type; did you mean 'bool'?"
+      },
+      "defect": {
+        "location": "static/en/arduino/m5atomecho/program.md:83",
+        "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+      }
     }
   ],
   "public_files": {
@@ -1921,6 +1999,46 @@
     "devices/cardputer-adv/uiflow2/README.md": {
       "sha256": "e30a0aae4b8a69810bbb9f3667b5e85ea41d0823910837dc852bc926b3608b72",
       "bytes": 976
+    },
+    "build-records/rebuild-2026-11-27-matrix.md": {
+      "sha256": "c80f6f25afacc50e8b70bbb8b7402fccdd56fdc53e8d57a6f48c68fa46d84e79",
+      "bytes": 794
+    },
+    "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/quickstart_echorest.ino": {
+      "sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
+      "bytes": 4364
+    },
+    "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/BaiduRest.h": {
+      "sha256": "d9a55a3df928acd12e16f5bb5acabd5fc6b12227395110ef7cd4a987a54ee8bb",
+      "bytes": 1292
+    },
+    "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/BaiduRest.cpp": {
+      "sha256": "964362d633c266194f3c5055053da12df42d51c7fe403a59ec5e2e5d98f6a5b3",
+      "bytes": 6317
+    },
+    "devices/atom-echo/arduino-docs/quickstart-echorest/firmware.json": {
+      "sha256": "72180d4e6c30eb8698caf453dba2e85543b4be2469e26795067dad3f1f0e6eef",
+      "bytes": 2353
+    },
+    "devices/atom-echo/arduino-docs/quickstart-playmusic/sketch/quickstart_playmusic/quickstart_playmusic.ino": {
+      "sha256": "54f018e1bd97cb7eab56fa80266ae8fc8286f9dc7187c62a63fb2fc0eefcf55e",
+      "bytes": 2765
+    },
+    "devices/atom-echo/arduino-docs/quickstart-playmusic/sketch/quickstart_playmusic/chocobo.c": {
+      "sha256": "190690547728f7b54368534fc14014859609371d9818fd738bd6d00a04108dd5",
+      "bytes": 7373570
+    },
+    "devices/atom-echo/arduino-docs/quickstart-playmusic/firmware.json": {
+      "sha256": "6972d2d1430265ccbd16ffa41e497bfd87865541b5a4bdf6f2593aeeb93f82e8",
+      "bytes": 2062
+    },
+    "devices/atom-echo/arduino-docs/quickstart-recordplay/sketch/quickstart_recordplay/quickstart_recordplay.ino": {
+      "sha256": "26c9824965a70a98befe11edf159e256ceebdf5deeb1d0a75806375b6bfa3f49",
+      "bytes": 3054
+    },
+    "devices/atom-echo/arduino-docs/quickstart-recordplay/firmware.json": {
+      "sha256": "a6e420a38b00536cea0e9e6d12aea679635265632574d056bbf357c667268b67",
+      "bytes": 1815
     }
   },
   "local_files": {
