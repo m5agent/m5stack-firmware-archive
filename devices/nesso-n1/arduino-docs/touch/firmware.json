@@ -1,0 +1,155 @@
+{
+  "device_id": "nesso-n1",
+  "case": "touch",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/touch",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/arduino_nesso_n1/touch.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "a2b653d2167db6a3db4c49fc8aec33709d1d8168ea9eef29497314a57971ec50",
+  "expected_behavior": "Arduino Nesso N1 Touch. Inject two separated points and a release, then verify event and transformed coordinates.",
+  "sketch_files": {
+    "touch.ino": {
+      "path": "devices/nesso-n1/arduino-docs/touch/sketch/touch/touch.ino",
+      "storage": "public",
+      "sha256": "a2b653d2167db6a3db4c49fc8aec33709d1d8168ea9eef29497314a57971ec50",
+      "bytes": 1263
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:arduino_nesso_n1",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/nesso-n1/arduino-docs/touch/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "8aa276ef3b6360d88779e7213991c1d19d73e883045dc95cd6f41391bea9698f",
+      "bytes": 446304
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/nesso-n1/arduino-docs/touch/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/nesso-n1/arduino-docs/touch/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/nesso-n1/arduino-docs/touch/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ed3dde5fe4ac0f74addfa7644ac05e54b81a2d7d867a32eb5d5ebdcab20eddbc",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/nesso-n1/arduino-docs/touch/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "98855e42afa777537d16806e5ef37924ca137b293d824b609937fd494df633b3",
+      "bytes": 11052788
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "02ec0fb459709d7dc3dd778c514bbff0f0224ddbfe7ec21758a8156e22d90e09",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ed3dde5fe4ac0f74addfa7644ac05e54b81a2d7d867a32eb5d5ebdcab20eddbc",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "arduino-nesso-n1"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+      ]
+    },
+    "runs": [
+      {
+        "board": "arduino-nesso-n1",
+        "run_command": "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "check_command": "python3 $SIM_SRC/tools/check-nesso-n1.py $OUT $PEER_OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS"
+        },
+        "capture_comparison": {
+          "touch-control.png": {
+            "original": {
+              "png_sha256": "7db8240bd81b6febb3be58b2553bef628e00bd2619dd94d9128690a3783c08a7"
+            },
+            "rebuilt": {
+              "png_sha256": "7db8240bd81b6febb3be58b2553bef628e00bd2619dd94d9128690a3783c08a7"
+            },
+            "byte_identical": true
+          },
+          "touch-first.png": {
+            "original": {
+              "png_sha256": "c39ef9d869a5cbdee76993aaab59fc5fda5e8f424e5a80dd2229e5682d2b4bf6"
+            },
+            "rebuilt": {
+              "png_sha256": "c39ef9d869a5cbdee76993aaab59fc5fda5e8f424e5a80dd2229e5682d2b4bf6"
+            },
+            "byte_identical": true
+          },
+          "touch.png": {
+            "original": {
+              "png_sha256": "34524d4f25f52b422285aee643822eaebd6bb1860d768b9bae687119347a5d19"
+            },
+            "rebuilt": {
+              "png_sha256": "34524d4f25f52b422285aee643822eaebd6bb1860d768b9bae687119347a5d19"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (321 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (118 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (790 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1864 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

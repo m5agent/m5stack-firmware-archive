@@ -12419,6 +12419,320 @@
           "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-4/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-5/sketch.merged.bin\" \"$PEER_OUT/zigbee-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 38.0 --script 0 \"$ARCHIVE/devices/nanoc6/arduino-docs/fixtures/zigbee-final-actions.txt\" --observe-leds"
         ]
       }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "5bb2e92ba2bce20e07c9dd21df03c33baba0477b92d5739e45786dd7e02796c1",
+      "manifest": "devices/nesso-n1/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "97f25d397bae460885c05fc90ffa1c6508db3a299ee1299be883407a57424aa5",
+      "original_build": {
+        "firmware_sha256": "9800e8cd64c9378a39aa8d8867a6f4a96a9a4a1fbb9cd61fdd8099ceb2c45489",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "buzzer",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/buzzer",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/buzzer.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "a9751a5d9a05a7bff0ae082fe6380cf9b742f6d820c9a5ff4108cf1cfc0efbca",
+      "manifest": "devices/nesso-n1/arduino-docs/buzzer/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "f9842fa14ea15ac1382534627cc051b622d776c7c864ea07e4ab00248cfd1d1f",
+      "original_build": {
+        "firmware_sha256": "9025b50eece3e0791d837d4759e35b35142f0688b7c4f6e7677d82cef6c17e2b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/display.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "e46dc619f5ba9747a01290aa2276c97bf90a83cedc590520e2597bab1e359e82",
+      "manifest": "devices/nesso-n1/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1c32bb0880f5810b2d229fbdbf31356bd45cf6de3c0fb7263be5b4a7627a47cb",
+      "original_build": {
+        "firmware_sha256": "8f15b23f4334820ffad1315fd96318f32ea08bc4f2836b78bac0716e49be1b9c",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "imu",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/imu.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "7ea93e7876f616475bdd61e4688c97e27a6bf138420b29a42d81d8e74485d726",
+      "manifest": "devices/nesso-n1/arduino-docs/imu/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "0bdbd9eb9c9fd965f79525dfe4ca10a9d157673a78874ea227da3c77668c0e3b",
+      "original_build": {
+        "firmware_sha256": "b4f673bf315678f8b93cf55d96066d12e64666e7384aa6c7e7bec353d245bb08",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "d6fa1e114f8a5d2e444a6844f344cf1c68607777e6ba0f8bcd43c21c1239f99c",
+      "manifest": "devices/nesso-n1/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "fa7b8dc926c904d4c114718afe345575793420d3c89bf42311a02973e0ec7775",
+      "original_build": {
+        "firmware_sha256": "fad0ed35fe7773448a48173ea2d20e6d5e7a1fa2663bc181f665330e9bcff9c2",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "led",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/led",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/led.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "6230f066eac41b2e210901a1f9c5eb4ec9f3bc171688efec8f67f068797591d3",
+      "manifest": "devices/nesso-n1/arduino-docs/led/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b3c3957df65eeb74e88072bdae752b9a02413bcc20ba846ea3dc6937ffa67b25",
+      "original_build": {
+        "firmware_sha256": "6577e65e2055caee107f49d2ed2e5fb10c10e7c448379ed708c6057d4b3b4020",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "power-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/power",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/power.md",
+        "section": "Battery Status",
+        "code_first_line": 18
+      },
+      "sketch_sha256": "6f873cfe93403dada0ab60520b8a299ac176321d139c4b394616d6c7c871ab78",
+      "manifest": "devices/nesso-n1/arduino-docs/power-1/firmware.json",
+      "lane": "native esp32sim",
+      "verdict": "DOCS-DEFECT",
+      "firmware_sha256": null,
+      "compile": {
+        "status": "FAIL",
+        "exit_code": 1,
+        "diagnostic": "error: cannot convert 'bool' to 'm5::Power_Class::is_charging_t' in initialization"
+      },
+      "defect": {
+        "location": "static/en/arduino/arduino_nesso_n1/power.md:46–47",
+        "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "power-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/power",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/power.md",
+        "section": "Grove Port Power Supply",
+        "code_first_line": 58
+      },
+      "sketch_sha256": "84d917064357af4683b390e7d6834d14c9025a4d6a472a98b3d70a1ca3223126",
+      "manifest": "devices/nesso-n1/arduino-docs/power-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1c1b09058db6d9f79cd4609b99d95592b523f8832155a83d4ee113e8f919884d",
+      "original_build": {
+        "firmware_sha256": "ca34e23ea8807af9e998c31a4e0c0c65fb706696d9df35f8d37c6462440b1015",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "touch",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/touch.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "a2b653d2167db6a3db4c49fc8aec33709d1d8168ea9eef29497314a57971ec50",
+      "manifest": "devices/nesso-n1/arduino-docs/touch/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ed3dde5fe4ac0f74addfa7644ac05e54b81a2d7d867a32eb5d5ebdcab20eddbc",
+      "original_build": {
+        "firmware_sha256": "02ec0fb459709d7dc3dd778c514bbff0f0224ddbfe7ec21758a8156e22d90e09",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "quickstart-bargraph",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/arduino_nesso_n1/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 27
+      },
+      "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "manifest": "devices/nesso-n1/arduino-docs/quickstart-bargraph/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "f5f239728f78d055f99523fb51711e5661b8412da095f839007249537205ec9d",
+      "original_build": {
+        "firmware_sha256": "e2f1987faf1c36754437a5365dd121e52f47050d8c4bd3c318042bbe11e103b8",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "arduino-nesso-n1"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -22907,6 +23221,266 @@
     "devices/nanoc6/arduino-docs/fixtures/zigbee-final-actions.txt": {
       "sha256": "8de88e821925eb8098f630fa6112dae110bb241ed1293619f647eaeb1bc4b82a",
       "bytes": 90
+    },
+    "devices/nesso-n1/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "5bb2e92ba2bce20e07c9dd21df03c33baba0477b92d5739e45786dd7e02796c1",
+      "bytes": 476
+    },
+    "devices/nesso-n1/arduino-docs/button/migration.ino.bin": {
+      "sha256": "7864693d82e24dec4968d224b945e19d945600ac9f2ac5b1fc07555d9ec58f6f",
+      "bytes": 437904
+    },
+    "devices/nesso-n1/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "97f25d397bae460885c05fc90ffa1c6508db3a299ee1299be883407a57424aa5",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/button/migration.ino.elf": {
+      "sha256": "eaf2d0b20916df15bacdbae748988920acefada0380c0cd74aaa95fc48de49cc",
+      "bytes": 11021240
+    },
+    "devices/nesso-n1/arduino-docs/button/firmware.json": {
+      "sha256": "6dbdf550c5eec93e6244037714f316a5f32fe5642f1016de6a1ed890b776af2c",
+      "bytes": 5757
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/sketch/buzzer/buzzer.ino": {
+      "sha256": "a9751a5d9a05a7bff0ae082fe6380cf9b742f6d820c9a5ff4108cf1cfc0efbca",
+      "bytes": 523
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/migration.ino.bin": {
+      "sha256": "e8388878e27cb33eb46ab4a2ca97a5e1f8336195451a8e3a6cf93be2d1a8b86d",
+      "bytes": 468032
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/migration.ino.merged.bin": {
+      "sha256": "f9842fa14ea15ac1382534627cc051b622d776c7c864ea07e4ab00248cfd1d1f",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/migration.ino.elf": {
+      "sha256": "12461562ee53ef7d37014727d001afe0a0608863e29251a4cf59eb75a2c9917c",
+      "bytes": 11343472
+    },
+    "devices/nesso-n1/arduino-docs/buzzer/firmware.json": {
+      "sha256": "e54a7823a98430926eb504563e56e7e76edb4a54866f5e8eb96969a8d71112c9",
+      "bytes": 6057
+    },
+    "devices/nesso-n1/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "e46dc619f5ba9747a01290aa2276c97bf90a83cedc590520e2597bab1e359e82",
+      "bytes": 560
+    },
+    "devices/nesso-n1/arduino-docs/display/migration.ino.bin": {
+      "sha256": "541270d1509177dfce9dce90689915880a02e02ffd430e5f136a2109adaaf4fb",
+      "bytes": 438928
+    },
+    "devices/nesso-n1/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "1c32bb0880f5810b2d229fbdbf31356bd45cf6de3c0fb7263be5b4a7627a47cb",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/display/migration.ino.elf": {
+      "sha256": "d0b260f9707ddc437bc684736ea0810debc86410994884d2e9ba31d59a3260d0",
+      "bytes": 11031532
+    },
+    "devices/nesso-n1/arduino-docs/display/firmware.json": {
+      "sha256": "91d0d4fd192463c75310c65da9cf8f1d5e2af6017073f85eb2809e465b01c070",
+      "bytes": 5420
+    },
+    "devices/nesso-n1/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "7ea93e7876f616475bdd61e4688c97e27a6bf138420b29a42d81d8e74485d726",
+      "bytes": 1563
+    },
+    "devices/nesso-n1/arduino-docs/imu/migration.ino.bin": {
+      "sha256": "2bf55d3552eae9235f626a0f7f2d177d46c75e4ee2d689352490fc15cc86fbc3",
+      "bytes": 443168
+    },
+    "devices/nesso-n1/arduino-docs/imu/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/imu/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/imu/migration.ino.merged.bin": {
+      "sha256": "0bdbd9eb9c9fd965f79525dfe4ca10a9d157673a78874ea227da3c77668c0e3b",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/imu/migration.ino.elf": {
+      "sha256": "0529185b6b437bc127836284ea56c4e63cce4473aa592577cb3ce8123470d077",
+      "bytes": 11040120
+    },
+    "devices/nesso-n1/arduino-docs/imu/firmware.json": {
+      "sha256": "0224550d10181fffde76dba2fb0ea11b97e6c5ab2895ff878ace0aa9ff953460",
+      "bytes": 6409
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "d6fa1e114f8a5d2e444a6844f344cf1c68607777e6ba0f8bcd43c21c1239f99c",
+      "bytes": 1934
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "22da6a321eef2173b5edace8b852f575ea026ef43ee6d8e205096949e14de513",
+      "bytes": 447984
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "fa7b8dc926c904d4c114718afe345575793420d3c89bf42311a02973e0ec7775",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "c44e7522455a16d0dceb7cbff6bb510200f1df62f4be3dfe2ef24e03b7c4047a",
+      "bytes": 11205448
+    },
+    "devices/nesso-n1/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "8c8d60ff1051e6a590489cf9f3c932dec83a88e75d13b5af54bae18ac191aa97",
+      "bytes": 5393
+    },
+    "devices/nesso-n1/arduino-docs/led/sketch/led/led.ino": {
+      "sha256": "6230f066eac41b2e210901a1f9c5eb4ec9f3bc171688efec8f67f068797591d3",
+      "bytes": 252
+    },
+    "devices/nesso-n1/arduino-docs/led/migration.ino.bin": {
+      "sha256": "a37d02cb5cfce79ddbb913350cdcd5a3567f8cfa9cb15ab652449f4e4ada6527",
+      "bytes": 437616
+    },
+    "devices/nesso-n1/arduino-docs/led/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/led/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/led/migration.ino.merged.bin": {
+      "sha256": "b3c3957df65eeb74e88072bdae752b9a02413bcc20ba846ea3dc6937ffa67b25",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/led/migration.ino.elf": {
+      "sha256": "381a8b5e705af4615c7838b71b042fa85cbe8cb2c29348e9d93f5c4777b4cea2",
+      "bytes": 11025016
+    },
+    "devices/nesso-n1/arduino-docs/led/firmware.json": {
+      "sha256": "bfb9fb50928468a79ff2a0f1b43af096274544af170b4d5594c07217d8ff0e8c",
+      "bytes": 5339
+    },
+    "devices/nesso-n1/arduino-docs/power-1/sketch/power_1/power_1.ino": {
+      "sha256": "6f873cfe93403dada0ab60520b8a299ac176321d139c4b394616d6c7c871ab78",
+      "bytes": 915
+    },
+    "devices/nesso-n1/arduino-docs/power-1/firmware.json": {
+      "sha256": "23a689f78b3706fbd98f4d450ab0304e51d2456585abffef45e24ff07a28c300",
+      "bytes": 1661
+    },
+    "devices/nesso-n1/arduino-docs/power-2/sketch/power_2/power_2.ino": {
+      "sha256": "84d917064357af4683b390e7d6834d14c9025a4d6a472a98b3d70a1ca3223126",
+      "bytes": 694
+    },
+    "devices/nesso-n1/arduino-docs/power-2/migration.ino.bin": {
+      "sha256": "f4c4362b308d7ad33bfeb316d6e49839e03cbe1e6b94d06693e97ca75a9f3a1d",
+      "bytes": 446688
+    },
+    "devices/nesso-n1/arduino-docs/power-2/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/power-2/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/power-2/migration.ino.merged.bin": {
+      "sha256": "1c1b09058db6d9f79cd4609b99d95592b523f8832155a83d4ee113e8f919884d",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/power-2/migration.ino.elf": {
+      "sha256": "154a674aaf8b1a947fc015f82fdd4620edd85270a15a714dae4485e88d8ed627",
+      "bytes": 11042136
+    },
+    "devices/nesso-n1/arduino-docs/power-2/firmware.json": {
+      "sha256": "5210ad97b59f0e7644d13b382718690295fde9c0145bd6b04fc1ab2f337f4fba",
+      "bytes": 5410
+    },
+    "devices/nesso-n1/arduino-docs/touch/sketch/touch/touch.ino": {
+      "sha256": "a2b653d2167db6a3db4c49fc8aec33709d1d8168ea9eef29497314a57971ec50",
+      "bytes": 1263
+    },
+    "devices/nesso-n1/arduino-docs/touch/migration.ino.bin": {
+      "sha256": "8aa276ef3b6360d88779e7213991c1d19d73e883045dc95cd6f41391bea9698f",
+      "bytes": 446304
+    },
+    "devices/nesso-n1/arduino-docs/touch/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/touch/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/touch/migration.ino.merged.bin": {
+      "sha256": "ed3dde5fe4ac0f74addfa7644ac05e54b81a2d7d867a32eb5d5ebdcab20eddbc",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/touch/migration.ino.elf": {
+      "sha256": "98855e42afa777537d16806e5ef37924ca137b293d824b609937fd494df633b3",
+      "bytes": 11052788
+    },
+    "devices/nesso-n1/arduino-docs/touch/firmware.json": {
+      "sha256": "7e99d5929a42b89a33e19cb11b9850bc35d9d34801a2c4c6f72460e0b522d50d",
+      "bytes": 6091
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino": {
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.bin": {
+      "sha256": "e59c50fa41cf95c7421cd221548424c53a8aa33f1f9fad21c2e436027b51db8b",
+      "bytes": 392432
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin": {
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.merged.bin": {
+      "sha256": "f5f239728f78d055f99523fb51711e5661b8412da095f839007249537205ec9d",
+      "bytes": 16777216
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.elf": {
+      "sha256": "bd70a4a5ce82150c4283bd19850baafdf695893087c9052cef6682f25a21fb3b",
+      "bytes": 9871940
+    },
+    "devices/nesso-n1/arduino-docs/quickstart-bargraph/firmware.json": {
+      "sha256": "986b7d9def261fd24a2c2da90d4eb6ebaf854833093502e9e77c4791ce305f44",
+      "bytes": 5672
     }
   },
   "local_files": {
@@ -23482,7 +24056,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 349,
+    "published_cases": 358,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

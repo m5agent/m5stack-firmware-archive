@@ -1,0 +1,164 @@
+{
+  "device_id": "nesso-n1",
+  "case": "imu",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/imu",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/arduino_nesso_n1/imu.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "7ea93e7876f616475bdd61e4688c97e27a6bf138420b29a42d81d8e74485d726",
+  "expected_behavior": "Arduino Nesso N1 IMU. Inject two distinct orientations and verify axis readings on the documented output.",
+  "sketch_files": {
+    "imu.ino": {
+      "path": "devices/nesso-n1/arduino-docs/imu/sketch/imu/imu.ino",
+      "storage": "public",
+      "sha256": "7ea93e7876f616475bdd61e4688c97e27a6bf138420b29a42d81d8e74485d726",
+      "bytes": 1563
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:arduino_nesso_n1",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/nesso-n1/arduino-docs/imu/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "2bf55d3552eae9235f626a0f7f2d177d46c75e4ee2d689352490fc15cc86fbc3",
+      "bytes": 443168
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/nesso-n1/arduino-docs/imu/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/nesso-n1/arduino-docs/imu/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/nesso-n1/arduino-docs/imu/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "0bdbd9eb9c9fd965f79525dfe4ca10a9d157673a78874ea227da3c77668c0e3b",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/nesso-n1/arduino-docs/imu/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "0529185b6b437bc127836284ea56c4e63cce4473aa592577cb3ce8123470d077",
+      "bytes": 11040120
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "b4f673bf315678f8b93cf55d96066d12e64666e7384aa6c7e7bec353d245bb08",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "0bdbd9eb9c9fd965f79525dfe4ca10a9d157673a78874ea227da3c77668c0e3b",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "arduino-nesso-n1"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+      ]
+    },
+    "runs": [
+      {
+        "board": "arduino-nesso-n1",
+        "run_command": "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "check_command": "python3 $SIM_SRC/tools/check-nesso-n1.py $OUT $PEER_OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS"
+        },
+        "capture_comparison": {
+          "imu-control.png": {
+            "original": {
+              "png_sha256": "949a411dbbf6e17108abc2427d1ec13899bb7eda43156c52212fade4a1f5c6cb"
+            },
+            "rebuilt": {
+              "png_sha256": "949a411dbbf6e17108abc2427d1ec13899bb7eda43156c52212fade4a1f5c6cb"
+            },
+            "byte_identical": true
+          },
+          "imu-motion-first.png": {
+            "original": {
+              "png_sha256": "12c8b7b05a811f655a055e879c63bb1661e474a16629b21375412174a0c2a2dd"
+            },
+            "rebuilt": {
+              "png_sha256": "12c8b7b05a811f655a055e879c63bb1661e474a16629b21375412174a0c2a2dd"
+            },
+            "byte_identical": true
+          },
+          "imu-motion.png": {
+            "original": {
+              "png_sha256": "9b127a58a4b45b65a60d5cf10b91e97cdb5ab2106abcc98752ef9b9c7fcc5ce5"
+            },
+            "rebuilt": {
+              "png_sha256": "9b127a58a4b45b65a60d5cf10b91e97cdb5ab2106abcc98752ef9b9c7fcc5ce5"
+            },
+            "byte_identical": true
+          },
+          "imu.png": {
+            "original": {
+              "png_sha256": "949a411dbbf6e17108abc2427d1ec13899bb7eda43156c52212fade4a1f5c6cb"
+            },
+            "rebuilt": {
+              "png_sha256": "949a411dbbf6e17108abc2427d1ec13899bb7eda43156c52212fade4a1f5c6cb"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (321 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (118 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (790 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1864 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

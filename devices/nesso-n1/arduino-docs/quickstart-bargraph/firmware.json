@@ -1,0 +1,140 @@
+{
+  "device_id": "nesso-n1",
+  "case": "quickstart-bargraph",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/arduino_nesso_n1/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/arduino_nesso_n1/program.md",
+    "section": "4. Program Compile & Upload",
+    "section_line": 27
+  },
+  "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+  "expected_behavior": "Display animated colored bar graph on the board framebuffer.",
+  "sketch_files": {
+    "quickstart_bargraph.ino": {
+      "path": "devices/nesso-n1/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino",
+      "storage": "public",
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:arduino_nesso_n1",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5GFX",
+  "library_example": "examples/Basic/BarGraph/BarGraph.ino",
+  "library_source_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "e59c50fa41cf95c7421cd221548424c53a8aa33f1f9fad21c2e436027b51db8b",
+      "bytes": 392432
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a5afe1a0991c4f69d30947991b7350b8984f13cd855220de6216ace8ee60cdb2",
+      "bytes": 20672
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "f5f239728f78d055f99523fb51711e5661b8412da095f839007249537205ec9d",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/nesso-n1/arduino-docs/quickstart-bargraph/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "bd70a4a5ce82150c4283bd19850baafdf695893087c9052cef6682f25a21fb3b",
+      "bytes": 9871940
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "e2f1987faf1c36754437a5365dd121e52f47050d8c4bd3c318042bbe11e103b8",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "f5f239728f78d055f99523fb51711e5661b8412da095f839007249537205ec9d",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "arduino-nesso-n1"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+      ]
+    },
+    "runs": [
+      {
+        "board": "arduino-nesso-n1",
+        "run_command": "python3 $SIM_SRC/tools/run-nesso-n1-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nesso-n1 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nesso-n1.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "check_command": "python3 $SIM_SRC/tools/check-nesso-n1.py $OUT $PEER_OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS"
+        },
+        "capture_comparison": {
+          "quickstart-bargraph.png": {
+            "original": {
+              "png_sha256": "5ad8c59dd6754aae5abe732ad82e54a92f3edda1217c20d811eaeb572f426891"
+            },
+            "rebuilt": {
+              "png_sha256": "5ad8c59dd6754aae5abe732ad82e54a92f3edda1217c20d811eaeb572f426891"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (315 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (110 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (778 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1826 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
