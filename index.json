@@ -807,6 +807,225 @@
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r-m12 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r-cam.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
       }
+    },
+    {
+      "device_id": "tab5",
+      "case": "imu-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/imu.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "e997870fd0e53eb9d301917540b606f40088c7a92fdf4ad6c442c9d485288a41",
+      "manifest": "devices/tab5/arduino-docs/imu-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a87588586e83cdf30f68314a9ee6a8d911ea5fc68881e3cb648f392c2ee3ffdb",
+      "original_build": {
+        "firmware_sha256": "db07b7600ac15c653d954e7619475e7b592f1fc250e64a423addb3881d0da3df",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-imu",
+            "$FIRMWARE",
+            "4",
+            "--script",
+            "imu.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "speaker-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/speaker.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "e164999e8b49674bb90d7dbef270c57e239eff39e82cc6c5f45a3b1134ebed7e",
+      "manifest": "devices/tab5/arduino-docs/speaker-1/firmware.json",
+      "lane": "native esp32sim",
+      "verdict": "DOCS-DEFECT",
+      "firmware_sha256": null,
+      "compile": {
+        "status": "FAIL",
+        "exit_code": 1,
+        "diagnostic": "The first preprocessor directive is ##include."
+      },
+      "defect": {
+        "location": "static/en/arduino/m5tab5/speaker.md:15",
+        "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "mic-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/mic.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "83860b91c73186915ab04d6c1b037b146a8cc31d63c824ae815dc686b78b1f02",
+      "manifest": "devices/tab5/arduino-docs/mic-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "89d1f4fd16cb0420e019d75fcc815a750605969a583752ba48d2e5646f322aa4",
+      "original_build": {
+        "firmware_sha256": "6c8b0680ac655020ef900d3ec93d4c577c35566aff3034ce364ef4e2e9eefe76",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "mic-final-tone",
+            "$FIRMWARE",
+            "4",
+            "--mic-wav",
+            "mic-tone.wav"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "mic-final-silence",
+            "$FIRMWARE",
+            "4",
+            "--mic-wav",
+            "mic-silence.wav"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "mic-final-play",
+            "$FIRMWARE",
+            "16",
+            "--mic-wav",
+            "mic-tone.wav",
+            "--wav",
+            "mic-final-play.wav",
+            "--script",
+            "mic-play.txt"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "microsd-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/microsd",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/microsd.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "c93f534c2cf993f7eb650e435062b6df7afb0a3013d44241fe7fd70055d56e04",
+      "manifest": "devices/tab5/arduino-docs/microsd-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "28711afa2c44378e1e604bd479544da4bd61ba5c074fab4be88ff7d5bbb95fba",
+      "original_build": {
+        "firmware_sha256": "36a9e3d299ee4f737502dffaa4eea3649152728d08232a0e1ea2a652f46e9325",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sd",
+            "$FIRMWARE",
+            "6",
+            "--sd-rw",
+            "tab5-sd-run.img",
+            "--debug",
+            "spi2"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sd-render",
+            "$FIRMWARE",
+            "6.2",
+            "--sd-rw",
+            "tab5-sd-render.img",
+            "--debug",
+            "spi2"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sd-render-second",
+            "$FIRMWARE",
+            "7.2",
+            "--sd-rw",
+            "tab5-sd-render-second.img",
+            "--debug",
+            "spi2"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/Tab5/program",
+      "firmware_sha256": "787d5e3c282bc3d200be941a48d7b7ff24acdbe0d9e682a2cfc14796b392feec",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002379/2098280943676772353/bin/2098280943676772354.bin",
+      "bytes": 16121856,
+      "manifest": "devices/tab5/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "tab5",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/Tab5/program",
+      "firmware_sha256": "94b6b43c02a95cfac1e7c70a6166ad669f308d0d16389c272de5ca7c2d45ef37",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002379/2116031597838635009/bin/2116031597838635010.bin",
+      "bytes": 16121856,
+      "manifest": "devices/tab5/uiflow2/v2.5.4/firmware.json"
     }
   ],
   "public_files": {
@@ -2167,6 +2386,106 @@
     "devices/atoms3r-m12/arduino-docs/quickstart-camera/firmware.json": {
       "sha256": "fd6eb927403d780d50eba17c4456870de71e6ce3bd69d802b8be7ee02496ba4b",
       "bytes": 8407
+    },
+    "devices/tab5/arduino-docs/imu-1/sketch/sketch/sketch.ino": {
+      "sha256": "e997870fd0e53eb9d301917540b606f40088c7a92fdf4ad6c442c9d485288a41",
+      "bytes": 791
+    },
+    "devices/tab5/arduino-docs/imu-1/sketch.ino.bin": {
+      "sha256": "10e97d2994754964d84890c99b78ec863667cda0393ed93e069cb1b3d6ac54e7",
+      "bytes": 539856
+    },
+    "devices/tab5/arduino-docs/imu-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/imu-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/imu-1/sketch.ino.merged.bin": {
+      "sha256": "a87588586e83cdf30f68314a9ee6a8d911ea5fc68881e3cb648f392c2ee3ffdb",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/imu-1/sketch.ino.elf": {
+      "sha256": "92bb42cdbd9ebbbeb24763e6bc50fd2ee7e17cf151583dfeb836d043c9149b89",
+      "bytes": 12675996
+    },
+    "devices/tab5/arduino-docs/imu-1/firmware.json": {
+      "sha256": "27f34890ba871d9fba0bc9d2c21afa3abc0c23e5aa13ff9e2d468ed4a52f6815",
+      "bytes": 5288
+    },
+    "devices/tab5/arduino-docs/speaker-1/sketch/sketch/sketch.ino": {
+      "sha256": "e164999e8b49674bb90d7dbef270c57e239eff39e82cc6c5f45a3b1134ebed7e",
+      "bytes": 568
+    },
+    "devices/tab5/arduino-docs/speaker-1/firmware.json": {
+      "sha256": "24f7ec56f38fc55854b5f23706d67ce43874b7139314c73dea503c2b6e434ed2",
+      "bytes": 1549
+    },
+    "devices/tab5/arduino-docs/mic-1/sketch/sketch/sketch.ino": {
+      "sha256": "83860b91c73186915ab04d6c1b037b146a8cc31d63c824ae815dc686b78b1f02",
+      "bytes": 4294
+    },
+    "devices/tab5/arduino-docs/mic-1/sketch.ino.bin": {
+      "sha256": "f6696c6611443d7e1bb17d2b69729f7823a9f9ce78452255edb7c33702a7f5f2",
+      "bytes": 573232
+    },
+    "devices/tab5/arduino-docs/mic-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/mic-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/mic-1/sketch.ino.merged.bin": {
+      "sha256": "89d1f4fd16cb0420e019d75fcc815a750605969a583752ba48d2e5646f322aa4",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/mic-1/sketch.ino.elf": {
+      "sha256": "b295ad5911f517f02df050c9f5126e98e48c332e4aeb901080dcd3aea479d56b",
+      "bytes": 13134908
+    },
+    "devices/tab5/arduino-docs/mic-1/firmware.json": {
+      "sha256": "ca53e692b11617c4063a715605b39d7153bf5a4ab33a121619bba60b0373a89e",
+      "bytes": 7333
+    },
+    "devices/tab5/arduino-docs/microsd-1/sketch/sketch/sketch.ino": {
+      "sha256": "c93f534c2cf993f7eb650e435062b6df7afb0a3013d44241fe7fd70055d56e04",
+      "bytes": 1788
+    },
+    "devices/tab5/arduino-docs/microsd-1/sketch.ino.bin": {
+      "sha256": "3c5d12bb280edfa122a235e3240645dc0603c09e21aacf5cadc10adf931bdcb9",
+      "bytes": 596208
+    },
+    "devices/tab5/arduino-docs/microsd-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/microsd-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/microsd-1/sketch.ino.merged.bin": {
+      "sha256": "28711afa2c44378e1e604bd479544da4bd61ba5c074fab4be88ff7d5bbb95fba",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/microsd-1/sketch.ino.elf": {
+      "sha256": "e00727b11cb71f4e1f6fdfb41f07da6620ca37490dbcc68b10d98dbc84f270d6",
+      "bytes": 13520104
+    },
+    "devices/tab5/arduino-docs/microsd-1/firmware.json": {
+      "sha256": "c39398de38f9950d741accfa1430ee6373a92c4a6089ce2c8c5b9821511b419f",
+      "bytes": 6933
+    },
+    "devices/tab5/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "cb4e0c058f7df4aec0dcc895148358a35bf3abc70e4d19bb4fa47c6d5abde436",
+      "bytes": 776
+    },
+    "devices/tab5/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "800546a85887d3a1c3b859b09e0daae4a1cb5b958274a5424629d2fdf094b87c",
+      "bytes": 776
     }
   },
   "local_files": {
@@ -2742,7 +3061,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 31,
+    "published_cases": 34,
     "storage": "git-lfs"
   }
 }

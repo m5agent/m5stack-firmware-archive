@@ -1,0 +1,209 @@
+{
+  "device_id": "tab5",
+  "case": "microsd-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/microsd",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5tab5/microsd.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "c93f534c2cf993f7eb650e435062b6df7afb0a3013d44241fe7fd70055d56e04",
+  "expected_behavior": "Exercise the microsd behavior described in the pinned documentation.",
+  "sketch_files": {
+    "sketch.ino": {
+      "path": "devices/tab5/arduino-docs/microsd-1/sketch/sketch/sketch.ino",
+      "storage": "public",
+      "sha256": "c93f534c2cf993f7eb650e435062b6df7afb0a3013d44241fe7fd70055d56e04",
+      "bytes": 1788
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_tab5",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "sketch.ino.bin": {
+      "path": "devices/tab5/arduino-docs/microsd-1/sketch.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "3c5d12bb280edfa122a235e3240645dc0603c09e21aacf5cadc10adf931bdcb9",
+      "bytes": 596208
+    },
+    "sketch.ino.bootloader.bin": {
+      "path": "devices/tab5/arduino-docs/microsd-1/sketch.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "sketch.ino.partitions.bin": {
+      "path": "devices/tab5/arduino-docs/microsd-1/sketch.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "sketch.ino.merged.bin": {
+      "path": "devices/tab5/arduino-docs/microsd-1/sketch.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "28711afa2c44378e1e604bd479544da4bd61ba5c074fab4be88ff7d5bbb95fba",
+      "bytes": 16777216
+    },
+    "sketch.ino.elf": {
+      "path": "devices/tab5/arduino-docs/microsd-1/sketch.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e00727b11cb71f4e1f6fdfb41f07da6620ca37490dbcc68b10d98dbc84f270d6",
+      "bytes": 13520104
+    }
+  },
+  "merged_image": "sketch.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "sketch.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "sketch.ino.bootloader.bin",
+        "offset": "0x2000"
+      },
+      "partitions": {
+        "file": "sketch.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "36a9e3d299ee4f737502dffaa4eea3649152728d08232a0e1ea2a652f46e9325",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "28711afa2c44378e1e604bd479544da4bd61ba5c074fab4be88ff7d5bbb95fba",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+      "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+      "boards": [
+        "m5stack-tab5"
+      ],
+      "run_commands": [
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "tab5-sd",
+          "$FIRMWARE",
+          "6",
+          "--sd-rw",
+          "tab5-sd-run.img",
+          "--debug",
+          "spi2"
+        ],
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "tab5-sd-render",
+          "$FIRMWARE",
+          "6.2",
+          "--sd-rw",
+          "tab5-sd-render.img",
+          "--debug",
+          "spi2"
+        ],
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "tab5-sd-render-second",
+          "$FIRMWARE",
+          "7.2",
+          "--sd-rw",
+          "tab5-sd-render-second.img",
+          "--debug",
+          "spi2"
+        ]
+      ]
+    },
+    "runs": [
+      {
+        "checker": {
+          "case": "microSD",
+          "status": "PASS",
+          "evidence": "SPI SD mount, exact WriteTest.txt bytes, and two full-frame PNGs"
+        },
+        "capture_comparison": {
+          "tab5-sd/frame.png": {
+            "original_sha256": "2306df75d10cde5545dfcdde3c8ff2b10e2065b915652f18b4116b9a8ddc9591",
+            "rebuilt_sha256": "2306df75d10cde5545dfcdde3c8ff2b10e2065b915652f18b4116b9a8ddc9591",
+            "byte_identical": true
+          },
+          "tab5-sd-render/frame.png": {
+            "original_sha256": "6afd183f048f3573eb052a422f5d8219c65cd54cc3277d2206323553804456b2",
+            "rebuilt_sha256": "6afd183f048f3573eb052a422f5d8219c65cd54cc3277d2206323553804456b2",
+            "byte_identical": true
+          },
+          "tab5-sd-render-second/frame.png": {
+            "original_sha256": "8732d88e0484920e87a9028992f9745c9d3973eec2b382112af0bbe0fbc208ad",
+            "rebuilt_sha256": "8732d88e0484920e87a9028992f9745c9d3973eec2b382112af0bbe0fbc208ad",
+            "byte_identical": true
+          }
+        },
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sd",
+            "$FIRMWARE",
+            "6",
+            "--sd-rw",
+            "tab5-sd-run.img",
+            "--debug",
+            "spi2"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sd-render",
+            "$FIRMWARE",
+            "6.2",
+            "--sd-rw",
+            "tab5-sd-render.img",
+            "--debug",
+            "spi2"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sd-render-second",
+            "$FIRMWARE",
+            "7.2",
+            "--sd-rw",
+            "tab5-sd-render-second.img",
+            "--debug",
+            "spi2"
+          ]
+        ],
+        "boards": [
+          "m5stack-tab5"
+        ]
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (334 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (169 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (816 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1993 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "sketch"
+  },
+  "verdict": "PASS"
+}

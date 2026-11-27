@@ -1,0 +1,19 @@
+{
+  "device_id": "tab5",
+  "case": "v2.5.4",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/Tab5/program",
+  "firmware_sha256": "94b6b43c02a95cfac1e7c70a6166ad669f308d0d16389c272de5ca7c2d45ef37",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002379/2116031597838635009/bin/2116031597838635010.bin",
+  "bytes": 16121856,
+  "validation": {
+    "download_sha256_verified": true,
+    "retrieved": "2026-11-27",
+    "previous_virtual_device_validation": {
+      "verdict": "PASS",
+      "scope": "GT911 home, touch and REPL",
+      "record": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+    }
+  }
+}
