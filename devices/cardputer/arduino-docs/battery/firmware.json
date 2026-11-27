@@ -1,0 +1,163 @@
+{
+  "device_id": "cardputer",
+  "case": "battery",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/battery",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cardputer/battery.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "c30ac3477d3119c6783ec558ade75eae593d7f6c781299eeb5c93df4874ff559",
+  "expected_behavior": "Cardputer Battery Status. Inject two battery values and compare the documented voltage/percentage and charge indications.",
+  "sketch_files": {
+    "battery.ino": {
+      "path": "devices/cardputer/arduino-docs/battery/sketch/battery/battery.ino",
+      "storage": "public",
+      "sha256": "c30ac3477d3119c6783ec558ade75eae593d7f6c781299eeb5c93df4874ff559",
+      "bytes": 819
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cardputer",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "board_scope": "Inspect revision and battery API, shared docs page",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/cardputer/arduino-docs/battery/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "2583eba5f515143c548a06e392b82346f17b18813ac66f09630aaeca04358302",
+      "bytes": 568000
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/cardputer/arduino-docs/battery/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/cardputer/arduino-docs/battery/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/cardputer/arduino-docs/battery/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "f3437b349e9785214707368a0f537fd8fc565c7189175d1627ad3a127f2e7b17",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/cardputer/arduino-docs/battery/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "f601e3a208896866cbe89ab50b658b9dc6967fff63a5ce813b46a60917da5f75",
+      "bytes": 12788092
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "2d99427292ed47ff5104779d783be6ccf09a50ed1a2f472e13993d44cd80185e",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "f3437b349e9785214707368a0f537fd8fc565c7189175d1627ad3a127f2e7b17",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-cardputer"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-cardputer",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/cardputer.bin",
+          "S3B_SD_SEED": "$FIXTURES_DIR/agent-sd/seed.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "idle and both sensor inputs produced distinct states"
+        },
+        "capture_comparison": {
+          "battery-first.png": {
+            "original": {
+              "png_sha256": "34514d1f9cff7c6b1dc1ef091037d8b48881ddd49f9d5b7ad3ab4b1be290ef05"
+            },
+            "rebuilt": {
+              "png_sha256": "34514d1f9cff7c6b1dc1ef091037d8b48881ddd49f9d5b7ad3ab4b1be290ef05"
+            },
+            "byte_identical": true
+          },
+          "battery-idle.png": {
+            "original": {
+              "png_sha256": "7c7f2a5fdc0e665cbadcc1840ded3a922e1eab54e93f4785b1361b87955000c6"
+            },
+            "rebuilt": {
+              "png_sha256": "7c7f2a5fdc0e665cbadcc1840ded3a922e1eab54e93f4785b1361b87955000c6"
+            },
+            "byte_identical": true
+          },
+          "battery.png": {
+            "original": {
+              "png_sha256": "e899088cd445f767190990631ffea9eca104cb55b2c60ad1b1fe8e3ed228fdc7"
+            },
+            "rebuilt": {
+              "png_sha256": "e899088cd445f767190990631ffea9eca104cb55b2c60ad1b1fe8e3ed228fdc7"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (296 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (842 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2025 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

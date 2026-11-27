@@ -2075,6 +2075,230 @@
           "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
         ]
       }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/battery.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "c30ac3477d3119c6783ec558ade75eae593d7f6c781299eeb5c93df4874ff559",
+      "manifest": "devices/cardputer/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "f3437b349e9785214707368a0f537fd8fc565c7189175d1627ad3a127f2e7b17",
+      "original_build": {
+        "firmware_sha256": "2d99427292ed47ff5104779d783be6ccf09a50ed1a2f472e13993d44cd80185e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 19
+      },
+      "sketch_sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+      "manifest": "devices/cardputer/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "3038aa70a40806d866a1b5a9d121ef49664e715a463ea8f73cba7f47c4a8e626",
+      "original_build": {
+        "firmware_sha256": "c58804fac2c50f9d40a2d4b90e3c338c5fc67b29e870287f3f54f5a352062c94",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "manifest": "devices/cardputer/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "64a6da43a579378a5dc69c947722022c2e30c1fed5b56b76ea807e7d70e17f4a",
+      "original_build": {
+        "firmware_sha256": "13a8bd0998665d96d07bb703704c53db584782bdbcd6a8172c23b764f43bcbea",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/mic.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "manifest": "devices/cardputer/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "2f1297bf2214b2ecf2e1fbef9be8428ab50c48c7d6bb073db263a849c49dcdba",
+      "original_build": {
+        "firmware_sha256": "9036343eeed18d4f7042fd3c604bac86e0ee8583c4a10b35130c544c57c49251",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/speaker.md",
+        "section": "Beep Example",
+        "code_first_line": 19
+      },
+      "sketch_sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+      "manifest": "devices/cardputer/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1ab2e92e40f1df03162926265d158aca4f9510d06bf2c2dd06ae1f8202f2e55b",
+      "original_build": {
+        "firmware_sha256": "3925c2c1b3434e405c4021185d32eb047bb64b0f848a4fdbc81f1316cf27b8ba",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "quickstart-display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 28
+      },
+      "sketch_sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+      "manifest": "devices/cardputer/arduino-docs/quickstart-display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "605f3c5d5b619eff75754be0091bd115ead38aa253d3378c6d0fc619f23fdc99",
+      "original_build": {
+        "firmware_sha256": "c5a4d892ed9fa3509b01c5e172d6019bc6d347e011123ed5f9ae5dd6c1956bbf",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "case": "speaker-sd-wav",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/speaker.md",
+        "section": "Example Program",
+        "section_line": 7
+      },
+      "sketch_sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
+      "manifest": "devices/cardputer/arduino-docs/speaker-sd-wav/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "83bd577bdd5df20b737dee13e3b60a80bd0f84abefa65d8cb802c46f28568819",
+      "original_build": {
+        "firmware_sha256": "c033dd16ac1eb79ca331440082ab94b09a9c5ec2c480281d268ea6e6da65b3f7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -4295,6 +4519,202 @@
     "devices/dial/arduino-docs/quickstart-display/firmware.json": {
       "sha256": "0275c8ac5e7ccac630e3d178cb97e67d71b53b9549cc3e885535b2ef8ace927b",
       "bytes": 5883
+    },
+    "devices/cardputer/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "c30ac3477d3119c6783ec558ade75eae593d7f6c781299eeb5c93df4874ff559",
+      "bytes": 819
+    },
+    "devices/cardputer/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "2583eba5f515143c548a06e392b82346f17b18813ac66f09630aaeca04358302",
+      "bytes": 568000
+    },
+    "devices/cardputer/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "f3437b349e9785214707368a0f537fd8fc565c7189175d1627ad3a127f2e7b17",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "f601e3a208896866cbe89ab50b658b9dc6967fff63a5ce813b46a60917da5f75",
+      "bytes": 12788092
+    },
+    "devices/cardputer/arduino-docs/battery/firmware.json": {
+      "sha256": "7f94dc2edbed9a7dc9ebbc871fb268d87e619b3e96a676f42c90007a02d5b754",
+      "bytes": 6177
+    },
+    "devices/cardputer/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+      "bytes": 329
+    },
+    "devices/cardputer/arduino-docs/button/migration.ino.bin": {
+      "sha256": "e1731dd4b6e158aa474cf12fa44e11bfaa3e4aab5976bd8cf09eb27934352397",
+      "bytes": 554288
+    },
+    "devices/cardputer/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "3038aa70a40806d866a1b5a9d121ef49664e715a463ea8f73cba7f47c4a8e626",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/button/migration.ino.elf": {
+      "sha256": "9c78e4b5e76426c8f589dc32b6a62f3742087b27b7ed81db305462ec471ea3ec",
+      "bytes": 12668088
+    },
+    "devices/cardputer/arduino-docs/button/firmware.json": {
+      "sha256": "4cf424b82fcf9f9ecaf1c765f824016de554d01fe5a6591e2303d6ddf307fbe5",
+      "bytes": 5369
+    },
+    "devices/cardputer/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "bytes": 1744
+    },
+    "devices/cardputer/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "9f279f64ffd98261eac7619fc5c8f39ef9c5f6fc1036fbf535bf115ab87829f4",
+      "bytes": 564336
+    },
+    "devices/cardputer/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "64a6da43a579378a5dc69c947722022c2e30c1fed5b56b76ea807e7d70e17f4a",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "a20dbab77488852b6a5958acc6ff2fead95b648b0bf395e79a0cbb04f2a3fb05",
+      "bytes": 12851472
+    },
+    "devices/cardputer/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "1bd0a8066c7884365af6a122d25813610ecd8c3f7bb48f3461996416f5aaf6f6",
+      "bytes": 5374
+    },
+    "devices/cardputer/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "bytes": 4126
+    },
+    "devices/cardputer/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "b76970f23bf0f0dc0294662aaf291999b59ea87045afe2a578ee7ab7ea803b16",
+      "bytes": 589344
+    },
+    "devices/cardputer/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "2f1297bf2214b2ecf2e1fbef9be8428ab50c48c7d6bb073db263a849c49dcdba",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "bf612d210615b661004d2083fe83f52c141b0554262ebe822472c798382ea689",
+      "bytes": 12962488
+    },
+    "devices/cardputer/arduino-docs/mic/firmware.json": {
+      "sha256": "9ff4665a320350208e73d09a9bea82e2dde7accf2a272bb0ce23651c2e8176ae",
+      "bytes": 8434
+    },
+    "devices/cardputer/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+      "bytes": 267
+    },
+    "devices/cardputer/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "643fb8d68cbe1d64f4d564d33a501ce1c2ef5ff9c1adf5ae200fd0e965ca28c7",
+      "bytes": 571664
+    },
+    "devices/cardputer/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "1ab2e92e40f1df03162926265d158aca4f9510d06bf2c2dd06ae1f8202f2e55b",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "615cd9bc024717f1884835e071e2228840282ef5d4aad4781862a9ace15c696b",
+      "bytes": 12860316
+    },
+    "devices/cardputer/arduino-docs/speaker/firmware.json": {
+      "sha256": "3e901fdc49df3be6275aa740673df2d4a15cb5116a6ba26e84faa9581aaee0ef",
+      "bytes": 7065
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino": {
+      "sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+      "bytes": 1142
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/migration.ino.bin": {
+      "sha256": "af1c6b2edddb3a004923b531885ed2f25d3655b3de3d3db86cfe33ddbec8954c",
+      "bytes": 552624
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/migration.ino.merged.bin": {
+      "sha256": "605f3c5d5b619eff75754be0091bd115ead38aa253d3378c6d0fc619f23fdc99",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/migration.ino.elf": {
+      "sha256": "5357589e03235bbb76c0a513b9db040303165a7620d07f11bfe0dd8c4d1451f1",
+      "bytes": 12680248
+    },
+    "devices/cardputer/arduino-docs/quickstart-display/firmware.json": {
+      "sha256": "88305591073e5942f9ea3b3cd9adf14eb9ce9fb717ca91472f6592f71b4c1535",
+      "bytes": 6022
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/sketch/speaker_sd_wav/speaker_sd_wav.ino": {
+      "sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
+      "bytes": 3460
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/migration.ino.bin": {
+      "sha256": "7ec821ea933b2a60c617e52e1d4004c16964ee75e4cde36c0a04a894db2af784",
+      "bytes": 607888
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/migration.ino.merged.bin": {
+      "sha256": "83bd577bdd5df20b737dee13e3b60a80bd0f84abefa65d8cb802c46f28568819",
+      "bytes": 4194304
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/migration.ino.elf": {
+      "sha256": "89084c14b9eb881c1e440f659c2ff463df861d84ece27184f51c78b2626ff912",
+      "bytes": 12889696
+    },
+    "devices/cardputer/arduino-docs/speaker-sd-wav/firmware.json": {
+      "sha256": "b4ed356210ae52e6ea5aea493712fcf0bdbe59e4cbd87fb697bdabd2c8b807e2",
+      "bytes": 6427
     }
   },
   "local_files": {
@@ -4870,7 +5290,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 61,
+    "published_cases": 68,
     "storage": "git-lfs"
   }
 }

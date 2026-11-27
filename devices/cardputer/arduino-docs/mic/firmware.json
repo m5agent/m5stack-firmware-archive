@@ -1,0 +1,216 @@
+{
+  "device_id": "cardputer",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cardputer/mic.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+  "expected_behavior": "Cardputer Mic. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/cardputer/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "bytes": 4126
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cardputer",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/cardputer/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "b76970f23bf0f0dc0294662aaf291999b59ea87045afe2a578ee7ab7ea803b16",
+      "bytes": 589344
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/cardputer/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/cardputer/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/cardputer/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "2f1297bf2214b2ecf2e1fbef9be8428ab50c48c7d6bb073db263a849c49dcdba",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/cardputer/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "bf612d210615b661004d2083fe83f52c141b0554262ebe822472c798382ea689",
+      "bytes": 12962488
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "9036343eeed18d4f7042fd3c604bac86e0ee8583c4a10b35130c544c57c49251",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "2f1297bf2214b2ecf2e1fbef9be8428ab50c48c7d6bb073db263a849c49dcdba",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-cardputer"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-cardputer",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh cardputer $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/cardputer.bin",
+          "S3B_SD_SEED": "$FIXTURES_DIR/agent-sd/seed.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "two rendered capture signals differ from silence and 733 Hz reaches speaker"
+        },
+        "capture_comparison": {
+          "mic-alt.png": {
+            "original": {
+              "png_sha256": "577c84670f2d2ee6854388c06051e8a09f961458f69e9da0eeece713b5a2e68f"
+            },
+            "rebuilt": {
+              "png_sha256": "577c84670f2d2ee6854388c06051e8a09f961458f69e9da0eeece713b5a2e68f"
+            },
+            "byte_identical": true
+          },
+          "mic-alt.wav": {
+            "original": {
+              "wav_sha256": "099566985afe172833069eab6150a0e8fbbe59df138cc4199ae4f542e0870628",
+              "pcm_sha256": "3a1a9d363d87bebd447bd52cf91df2225a03bc0d900700ca56fe544d43fad448",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "rebuilt": {
+              "wav_sha256": "099566985afe172833069eab6150a0e8fbbe59df138cc4199ae4f542e0870628",
+              "pcm_sha256": "3a1a9d363d87bebd447bd52cf91df2225a03bc0d900700ca56fe544d43fad448",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "byte_identical": true
+          },
+          "mic-output.wav": {
+            "original": {
+              "wav_sha256": "7f5223f289130ea5c74cb646482f3a9469ec419eae610464f8d94ed4f65adab9",
+              "pcm_sha256": "60d118546407ffd8dfc6a99b7f23f672f89c7f961edc4c2473b81220d8ee69dc",
+              "frames": 174081,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "7f5223f289130ea5c74cb646482f3a9469ec419eae610464f8d94ed4f65adab9",
+              "pcm_sha256": "60d118546407ffd8dfc6a99b7f23f672f89c7f961edc4c2473b81220d8ee69dc",
+              "frames": 174081,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          },
+          "mic-silent.png": {
+            "original": {
+              "png_sha256": "4bcee36eef30079b2993d46c1da147b3e550fcea3c75ed6b1cddb7c094d64ec0"
+            },
+            "rebuilt": {
+              "png_sha256": "4bcee36eef30079b2993d46c1da147b3e550fcea3c75ed6b1cddb7c094d64ec0"
+            },
+            "byte_identical": true
+          },
+          "mic-tone.png": {
+            "original": {
+              "png_sha256": "ad32b0bb260dc667fbde459bc6718e651a9446b125cf30f67c04bce98966cd5d"
+            },
+            "rebuilt": {
+              "png_sha256": "ad32b0bb260dc667fbde459bc6718e651a9446b125cf30f67c04bce98966cd5d"
+            },
+            "byte_identical": true
+          },
+          "mic.png": {
+            "original": {
+              "png_sha256": "77f9df716c14cbd25927c8ef434597b734ee10e32f8d7f55129933f0aafa3e3f"
+            },
+            "rebuilt": {
+              "png_sha256": "77f9df716c14cbd25927c8ef434597b734ee10e32f8d7f55129933f0aafa3e3f"
+            },
+            "byte_identical": true
+          },
+          "mic.wav": {
+            "original": {
+              "wav_sha256": "18cffd89141440ef9c8e597305b1e0230078d57aa83462322637b3e901da8d88",
+              "pcm_sha256": "d476dd9c779437a57b7e020c3b17f1075452ac41edf08f5137702068101a6956",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "rebuilt": {
+              "wav_sha256": "18cffd89141440ef9c8e597305b1e0230078d57aa83462322637b3e901da8d88",
+              "pcm_sha256": "d476dd9c779437a57b7e020c3b17f1075452ac41edf08f5137702068101a6956",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (296 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (847 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2053 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
