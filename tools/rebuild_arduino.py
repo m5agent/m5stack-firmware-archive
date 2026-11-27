@@ -47,14 +47,16 @@ def rebuild(entry, args, flags, env):
     manifest = json.loads((ROOT / entry["manifest"]).read_text())
     build_info = manifest["toolchain"]
     scratch = args.out / "work" / board / case
-    source = scratch / board
+    reproducibility = manifest.get("reproducibility", {})
+    build_name = reproducibility.get("build_sketch_name", board)
+    source = scratch / build_name
     source.mkdir(parents=True)
     firmware = args.out / "firmware" / board / case
     firmware.mkdir(parents=True)
     for name, record in manifest["sketch_files"].items():
         original = ROOT / record["path"]
         check(original, record)
-        shutil.copyfile(original, source / (board + ".ino" if name.endswith(".ino") else name))
+        shutil.copyfile(original, source / (build_name + ".ino" if name.endswith(".ino") else name))
     if "dependencies" in build_info:
         copy_dependencies(build_info["dependencies"], source, args.ltr_zip)
     command = [
@@ -64,8 +66,21 @@ def rebuild(entry, args, flags, env):
     ]
     if args.esptool_dir:
         command += ["--build-property", f"runtime.tools.esptool_py.path={args.esptool_dir}"]
+    case_flags = flags
+    if reproducibility:
+        work_name = "override-" + case if build_info.get("library_overrides") else "normal"
+        case_flags += " " + prefix_flags({scratch: f"/build-env/work/{board}/{work_name}"})
+    for library, info in build_info.get("library_overrides", {}).items():
+        if args.library_overrides is None:
+            raise ValueError(f"{board}/{case} requires --library-overrides")
+        location = args.library_overrides / library
+        if not location.is_dir():
+            location = location.with_name(f"{library}-{info['version']}")
+        if not location.is_dir():
+            raise ValueError(f"{board}/{case} missing {library} {info['version']}")
+        command += ["--library", str(location)]
     for prop in FLAG_PROPERTIES:
-        command += ["--build-property", f"{prop}={flags}"]
+        command += ["--build-property", f"{prop}={case_flags}"]
     log_path = scratch / "compile.log"
     with log_path.open("w") as log:
         rc = subprocess.run([*command, str(source)], cwd=scratch, env=env,
@@ -74,8 +89,17 @@ def rebuild(entry, args, flags, env):
         raise RuntimeError(f"{board}/{case} build failed ({rc}): {log_path}")
     sketch = manifest["merged_image"].removesuffix(".merged.bin")
     for suffix in SUFFIXES:
-        shutil.copyfile(scratch / "build" / (board + ".ino" + suffix), firmware / (sketch + suffix))
+        shutil.copyfile(scratch / "build" / (build_name + ".ino" + suffix), firmware / (sketch + suffix))
     print(f"{board}/{case} {digest(firmware / manifest['merged_image'])}", flush=True)
+
+
+def prefix_flags(paths):
+    # GCC applies the last matching prefix, so put nested paths after their parents.
+    return " ".join(
+        f'"-f{kind}-prefix-map={path}={paths[path]}"'
+        for path in sorted(paths, key=lambda item: len(item.parts))
+        for kind in ("file", "debug", "macro")
+    )
 
 
 def main():
@@ -85,13 +109,14 @@ def main():
     parser.add_argument("--data", type=Path, required=True, help="Arduino data directory in the CLI config")
     parser.add_argument("--user", type=Path, required=True, help="Arduino user directory in the CLI config")
     parser.add_argument("--esptool-dir", type=Path, help="optional esptool override directory")
+    parser.add_argument("--library-overrides", type=Path, help="directory containing pinned override libraries")
     parser.add_argument("--ltr-zip", type=Path, help="use a local copy of the pinned LTR5XX ZIP")
     parser.add_argument("--out", type=Path, required=True, help="new build output directory")
     parser.add_argument("--jobs", type=int, default=2, help="concurrent cases")
     parser.add_argument("--compiler-jobs", type=int, default=4, help="jobs per compiler invocation")
     parser.add_argument("cases", nargs="*", metavar="DEVICE/CASE")
     args = parser.parse_args()
-    for key in ("cli", "config", "data", "user", "esptool_dir", "ltr_zip", "out"):
+    for key in ("cli", "config", "data", "user", "esptool_dir", "library_overrides", "ltr_zip", "out"):
         value = getattr(args, key)
         if value is not None:
             setattr(args, key, value.resolve())
@@ -103,12 +128,9 @@ def main():
     }
     if len(paths) != 3:
         parser.error("data, user and out must be distinct directories")
-    # GCC applies the last matching prefix, so put nested paths after their parents.
-    flags = " ".join(
-        f'"-f{kind}-prefix-map={path}={paths[path]}"'
-        for path in sorted(paths, key=lambda item: len(item.parts))
-        for kind in ("file", "debug", "macro")
-    )
+    if args.library_overrides:
+        paths[args.library_overrides] = "/build-env/library-overrides"
+    flags = prefix_flags(paths)
     env = dict(
         os.environ,
         ARDUINO_DIRECTORIES_DATA=str(args.data),
@@ -119,7 +141,7 @@ def main():
     entries = {
         f"{case['device_id']}/{case['case']}": case
         for case in json.loads((ROOT / "index.json").read_text())["cases"]
-        if case["source"] == "arduino-docs" and case["lane"] == "native esp32sim"
+        if case["source"] == "arduino-docs" and case["lane"] == "native esp32sim" and "original_build" in case
     }
     if unknown := set(args.cases) - entries.keys():
         parser.error(f"unknown cases: {', '.join(sorted(unknown))}")

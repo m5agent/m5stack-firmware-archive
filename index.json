@@ -743,6 +743,38 @@
         "location": "static/en/arduino/m5atomecho/program.md:83",
         "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
       }
+    },
+    {
+      "device_id": "atoms3r-cam",
+      "case": "quickstart-camera",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3r-cam/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atoms3r-cam/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 26
+      },
+      "sketch_sha256": "d7f254203882876c7b53e7e98f60b1582144a08510f68a31903496cf5da1ebc6",
+      "manifest": "devices/atoms3r-cam/arduino-docs/quickstart-camera/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "42c14915bec18ff9e59d8da9f2465b21a03b8309d035b9e76b41bb82304c3863",
+      "original_build": {
+        "firmware_sha256": "fb09d32de0bc4f022574e20f88f4fd441f12af83285898deec71203aea5b60df",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atoms3r-cam"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r-cam $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r-cam.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -1743,8 +1775,8 @@
       "bytes": 2242
     },
     "tools/rebuild_arduino.py": {
-      "sha256": "f5c363700ebc1154b465e6e44a7a7da8d973f910681e36ce704d7c9751375c0b",
-      "bytes": 5715
+      "sha256": "1303d0243f97c8ea1abd92a529cf3b841526b5ae0ff06b8712b8825a557394f3",
+      "bytes": 6932
     },
     "tools/run_all_adv.sh": {
       "sha256": "d80f57d0c0c56e0dac1c57364cec2f1e949dd985ec151636925a6eef37bdc093",
@@ -1759,8 +1791,8 @@
       "bytes": 2482
     },
     "tools/verify.py": {
-      "sha256": "aa25e8c9c38e999706cb1e0be3c1dac9bb09ab673389010d5f955980ee3f1fdf",
-      "bytes": 3973
+      "sha256": "5da7caf13a009327448eee9d35c64046a347dc3bb4b3c8152e422a4a945f7cdc",
+      "bytes": 4015
     },
     "devices/cardputer/arduino-docs/display/display.ino.bin": {
       "bytes": 552624,
@@ -2001,8 +2033,8 @@
       "bytes": 976
     },
     "build-records/rebuild-2026-11-27-matrix.md": {
-      "sha256": "c80f6f25afacc50e8b70bbb8b7402fccdd56fdc53e8d57a6f48c68fa46d84e79",
-      "bytes": 794
+      "sha256": "4eaa91aaaf1b2c8a2ed2e01432b94efaa1ae342e5892f7790a9800dd11213bee",
+      "bytes": 3013
     },
     "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/quickstart_echorest.ino": {
       "sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
@@ -2035,6 +2067,42 @@
     "devices/atom-echo/arduino-docs/quickstart-recordplay/firmware.json": {
       "sha256": "a6e420a38b00536cea0e9e6d12aea679635265632574d056bbf357c667268b67",
       "bytes": 1815
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/sketch/quickstart_camera/quickstart_camera.ino": {
+      "sha256": "d7f254203882876c7b53e7e98f60b1582144a08510f68a31903496cf5da1ebc6",
+      "bytes": 6099
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/sketch/quickstart_camera/camera_pins.h": {
+      "sha256": "e85ee85d6858c3cf427542ac27f22b150b29c57e921e5bec6d25c4657c4961c3",
+      "bytes": 505
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/migration.ino.bin": {
+      "sha256": "51b82fc07cd23a024893f191d3d918232b5f32d200834f19f5b9245761b09cef",
+      "bytes": 969168
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/migration.ino.merged.bin": {
+      "sha256": "42c14915bec18ff9e59d8da9f2465b21a03b8309d035b9e76b41bb82304c3863",
+      "bytes": 8388608
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/migration.ino.elf": {
+      "sha256": "c8aab04ddeb2e98a9854bc5cce387087c312c5749fdd8f5583768818010ac3c8",
+      "bytes": 12804164
+    },
+    "devices/atoms3r-cam/arduino-docs/quickstart-camera/firmware.json": {
+      "sha256": "3ac7d5049c2189ef50b73f438d88691d0ad811a59496b8d770ed42dd73548727",
+      "bytes": 8401
+    },
+    "build-records/arduino-matrix-library-lock.json": {
+      "sha256": "0ff7eb61857e8dbebf69669fd3afa07d91e0fdefaf25151a7a3415109cafc38b",
+      "bytes": 20421
     }
   },
   "local_files": {
@@ -2610,7 +2678,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 29,
+    "published_cases": 30,
     "storage": "git-lfs"
   }
 }

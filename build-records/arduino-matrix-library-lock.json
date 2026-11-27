@@ -1,0 +1,431 @@
+{
+  "libraries": {
+    "IRremote": {
+      "version": "4.7.1",
+      "commit": "498dc591b255d8ba2e239c875804bdab2ab0fe91",
+      "directory": "Arduino-IRremote",
+      "url": "https://github.com/Arduino-IRremote/Arduino-IRremote"
+    },
+    "M5Cardputer": {
+      "version": "1.1.1",
+      "commit": "2d4fa6646e4e5b47e0af96214b003aa7b15b8d81",
+      "directory": "M5Cardputer",
+      "url": "https://github.com/m5stack/M5Cardputer"
+    },
+    "M5GFX": {
+      "version": "0.3.0",
+      "commit": "28d47949bdc84f30881623476f555398e2194313",
+      "directory": "M5GFX",
+      "url": "https://github.com/m5stack/M5GFX"
+    },
+    "M5Unified": {
+      "version": "0.3.0",
+      "commit": "96576a14247ddc935149145aa6b51943464120f1",
+      "directory": "M5Unified",
+      "url": "https://github.com/m5stack/M5Unified"
+    },
+    "M5Unit-Sonic": {
+      "version": "0.0.2",
+      "commit": "0fc7fffed7d0c07e77d682e8757440510a5cbebf",
+      "directory": "M5Unit-Sonic",
+      "url": "https://github.com/m5stack/M5Unit-Sonic"
+    },
+    "M5HAL": {
+      "version": "0.1.4",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5HAL-0.1.4.zip",
+      "checksum": "SHA-256:534ec5148ebb8e5abd3df89e986d3f13e2e3d9f25ca3a4454193510c8a32ab90"
+    },
+    "ArduinoRS485": {
+      "version": "1.1.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/arduino-libraries/ArduinoRS485-1.1.1.zip",
+      "checksum": "SHA-256:5ba87df4df0d2141ca006d564b5415181e33ba8b7b77c215bc15ea7fab6a757a"
+    },
+    "Adafruit NeoPixel": {
+      "version": "1.15.5",
+      "url": "https://downloads.arduino.cc/libraries/github.com/adafruit/Adafruit_NeoPixel-1.15.5.zip",
+      "checksum": "SHA-256:3d767caa011ab3078df7fe3c3e0456359ce2bc309eba343932690a2c1612fd16"
+    },
+    "M5UnitUnified": {
+      "version": "0.6.5",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5UnitUnified-0.6.5.zip",
+      "checksum": "SHA-256:f9b1caa227464e3267314451e186d902dbdea80b0f5e7e55fa4d018364686395"
+    },
+    "ArduinoModbus": {
+      "version": "1.0.9",
+      "url": "https://downloads.arduino.cc/libraries/github.com/arduino-libraries/ArduinoModbus-1.0.9.zip",
+      "checksum": "SHA-256:24c206ecd4985e021dab3fda62f2decb33cd8741a39ba9c5497920111f07a8e9"
+    },
+    "M5Utility": {
+      "version": "0.3.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Utility-0.3.1.zip",
+      "checksum": "SHA-256:b7270f70efcba2bbaf708d1a3fd64fe45379f4b7cae27082245463fc7a8d0a51"
+    },
+    "M5Unit-NFC": {
+      "version": "0.1.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_NFC-0.1.2.zip",
+      "checksum": "SHA-256:459d4df0913cc16441d8eec9ba5470eef52726f557460ca9421900c07c66eda4"
+    },
+    "M5Unit-ENV": {
+      "version": "1.7.4",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_ENV-1.7.4.zip",
+      "checksum": "SHA-256:5ffc96acdd145c6a6da38a2d2c5d7e09ca6c0ff0511f5cc5d8373185d50ae1f3"
+    },
+    "M5StamPLC": {
+      "version": "1.2.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5StamPLC-1.2.1.zip",
+      "checksum": "SHA-256:820ca904822c4df79a4ed82287073c25906594cf3ad93d20366d7b0b50ef5e9f"
+    },
+    "BME68x Sensor library": {
+      "version": "1.3.40408",
+      "url": "https://downloads.arduino.cc/libraries/github.com/BoschSensortec/BME68x_Sensor_library-1.3.40408.zip",
+      "checksum": "SHA-256:70cbc291bb1ebbdf5cb351c2be8cf79551ff07877a13abe961e02da9bdb71a8d"
+    },
+    "M5StackChan": {
+      "version": "1.1.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5StackChan-1.1.1.zip",
+      "checksum": "SHA-256:bed87c78b9130989c28399caf9138c1be08dd60898a7139d8e828824356cc2ee"
+    },
+    "M5StickCPlus2": {
+      "version": "1.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5StickCPlus2-1.0.1.zip",
+      "checksum": "SHA-256:4d67e1f87bc5c91e526ca66bca72efa306a94c311295817ce4e8147761c50bb5"
+    },
+    "SparkFun BMI270 Arduino Library": {
+      "version": "1.0.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/sparkfun/SparkFun_BMI270_Arduino_Library-1.0.3.zip",
+      "checksum": "SHA-256:61dc90f94d0521ff27c2d91bc92b2adab54f94cabb82467cb48c06a45d17b174"
+    },
+    "M5Family": {
+      "version": "0.1.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Family-0.1.3.zip",
+      "checksum": "SHA-256:7114add8737f1e139c4b9daea4a5f89fe30a80ae5864574d604bb0a11007f207"
+    },
+    "M5NanoC6": {
+      "version": "1.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5NanoC6-1.0.0.zip",
+      "checksum": "SHA-256:3d12a7e94176f30097349e84360db839cb72905f8e4ac740f189c8034c5052c7"
+    },
+    "M5IOE1": {
+      "version": "1.0.9",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5IOE1-1.0.9.zip",
+      "checksum": "SHA-256:48f6d3a0cf99493484820e6aad0bc7a21d41d3320c501a400b95851c38c3e8f4"
+    },
+    "ArduinoHttpClient": {
+      "version": "0.6.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/arduino-libraries/ArduinoHttpClient-0.6.2.zip",
+      "checksum": "SHA-256:4e1f20d155ac1d4f71a324c0a4aa291c69e98ad7dbfaba7fcbccfd7493458954"
+    },
+    "M5PM1": {
+      "version": "1.0.7",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5PM1-1.0.7.zip",
+      "checksum": "SHA-256:b1d8e5d309f922802a374228e75978b33d7b36d8ef59aca2e4b333ed34bcdc46"
+    },
+    "UNIT_GLASS": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/UNIT_GLASS-0.0.1.zip",
+      "checksum": "SHA-256:049d691af9b2b28f73d84397f0bf19e1ebe83fd3736caeca6fce807802791944"
+    },
+    "ArduinoECCX08": {
+      "version": "1.4.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/arduino-libraries/ArduinoECCX08-1.4.1.zip",
+      "checksum": "SHA-256:c1f9067fd0ef154534fc15471db7787753f9f87d6ff24e574a90ce66d41b03a8"
+    },
+    "DFRobot_GP8XXX": {
+      "version": "1.1.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/DFRobot/DFRobot_GP8XXX-1.1.0.zip",
+      "checksum": "SHA-256:a02b4c87c099015531df8d1fc606d704e54c2cb1e7cc07f36cb882a030828b90"
+    },
+    "mcp_can": {
+      "version": "1.5.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/coryjfowler/mcp_can-1.5.1.zip",
+      "checksum": "SHA-256:2152afef5fbddf53d4123d2620f83bf8a86e8380f525b84c9e51136b9a47fb8e"
+    },
+    "TinyGPSPlus": {
+      "version": "1.0.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/mikalhart/TinyGPSPlus-1.0.3.zip",
+      "checksum": "SHA-256:4f057c0dfa1f047a968eb00fb2ee98e33e07448493fbf5209c82c2a8a3281cc2"
+    },
+    "RadioLib": {
+      "version": "8.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/jgromes/RadioLib-8.0.0.zip",
+      "checksum": "SHA-256:cecc3f6d9366670d01292c852d1cdea7d83417cf1bace5a8b22b4c87b2bdcd9a"
+    },
+    "SparkFun MAX3010x Pulse and Proximity Sensor Library": {
+      "version": "1.1.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/sparkfun/SparkFun_MAX3010x_Pulse_and_Proximity_Sensor_Library-1.1.2.zip",
+      "checksum": "SHA-256:abf7c924a779bd0b9d8107abf1ef599bf0c223af1d2783753098dc5bfa3476af"
+    },
+    "VL53L0X": {
+      "version": "1.3.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/pololu/VL53L0X-1.3.1.zip",
+      "checksum": "SHA-256:ec5dedc3be0af0ace3dba598aa501c3b22753602dd83c6878d4a168a18a7c74a"
+    },
+    "M5-Ethernet": {
+      "version": "4.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_Ethernet-4.0.0.zip",
+      "checksum": "SHA-256:f34d6913f9b7a8c58cb95a931042c1db8668bc918771ada77b38489385ae54b8"
+    },
+    "USB Host Shield Library 2.0": {
+      "version": "1.7.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/felis/USB_Host_Shield_Library_2_0-1.7.0.zip",
+      "checksum": "SHA-256:f2c19e3428a6e38b535573a548d85331149400dd1b8f3d1f17fdf2e737d3f89a"
+    },
+    "DFRobot_PAJ7620U2": {
+      "version": "1.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/DFRobot/DFRobot_PAJ7620U2-1.0.1.zip",
+      "checksum": "SHA-256:ff86a48278878a29fdfe2f98445004c7df972dba12eff0bb493e3b38340d2f68"
+    },
+    "IRremoteESP8266": {
+      "version": "2.9.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/markszabo/IRremoteESP8266-2.9.0.zip",
+      "checksum": "SHA-256:b3d44bad787191ad5ad09435fe4fd759969a3b1f2e9703db37d43f4cd8a37724"
+    },
+    "BlynkNcpDriver": {
+      "version": "0.7.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/Blynk-Technologies/BlynkNcpDriver-0.7.0.zip",
+      "checksum": "SHA-256:65a85f4c20b24b39eea135e4c4c522c309cce5e31ff8a46182b4094951f39fea"
+    },
+    "TinyGSM": {
+      "version": "0.10.6",
+      "url": "https://downloads.arduino.cc/libraries/github.com/vshymanskyy/TinyGSM-0.10.6.zip",
+      "checksum": "SHA-256:a00d23fb03f218042bd6dda9f3fbd1ba9c276bb295419c1d1dca254589a60999"
+    },
+    "LoRa": {
+      "version": "0.8.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/sandeepmistry/LoRa-0.8.0.zip",
+      "checksum": "SHA-256:a173d1125619ea98e766faaa9b990098a07bd5104bc12247f9684d20f5005bc0"
+    },
+    "ClosedCube TCA9548A": {
+      "version": "2019.3.23",
+      "url": "https://downloads.arduino.cc/libraries/github.com/closedcube/ClosedCube_TCA9548A-2019.3.23.zip",
+      "checksum": "SHA-256:ecb1b7a2c49aab8f6b518f0d71f84f6c6b9d59124bc910336fba439d8d61b066"
+    },
+    "TFTTerminal": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/Tinyu-Zhao/TFTTerminal-0.0.1.zip",
+      "checksum": "SHA-256:019f8c17a51eb8b33a5396b222addaaf89a225944180fbb59f4603f5a0dd6b65"
+    },
+    "arduinoFFT": {
+      "version": "2.0.4",
+      "url": "https://downloads.arduino.cc/libraries/github.com/kosme/arduinoFFT-2.0.4.zip",
+      "checksum": "SHA-256:7f798ad9b9d76aff8b365e5cd2a67d709dec564e75e9bd3bf813f66ba5b83dff"
+    },
+    "Blynk": {
+      "version": "1.4.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/Blynk-Technologies/Blynk-1.4.0.zip",
+      "checksum": "SHA-256:474d9080ec3ce706f9f956149e7b87fc26bec062c2a8328ed11ba278593792e7"
+    },
+    "ArduinoJson": {
+      "version": "7.3.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/bblanchon/ArduinoJson-7.3.2.zip",
+      "checksum": "SHA-256:75b39f5b0fa856b6ff36a60fc56a0ef0cab0365bed84efd3eaf95e6fc89d8776"
+    },
+    "PubSubClient": {
+      "version": "2.8.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/knolleary/PubSubClient-2.8.0.zip",
+      "checksum": "SHA-256:f0849b93a2b02e263a6c157c374d6103caefba753a47dcbef64bbec620b079fe"
+    },
+    "Adafruit SGP30 Sensor": {
+      "version": "2.0.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/adafruit/Adafruit_SGP30_Sensor-2.0.3.zip",
+      "checksum": "SHA-256:b294fcc816b18288c85d1baeb82a4cdd1cc1ffddf0ddf1bdc72282a0edbb164d"
+    },
+    "PCA9554": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/Tinyu-Zhao/PCA9554-0.0.1.zip",
+      "checksum": "SHA-256:7bc2430b6177fc92c35fc06b8183ccf6822055b1867c50352ad1ef95ff84ed26"
+    },
+    "Adafruit BusIO": {
+      "version": "1.17.4",
+      "url": "https://downloads.arduino.cc/libraries/github.com/adafruit/Adafruit_BusIO-1.17.4.zip",
+      "checksum": "SHA-256:c7bab1b6c6eee64b50964c8e149b795719a01f1d9dfcdcef170b35daa696349b"
+    },
+    "HX711 Arduino Library": {
+      "version": "0.7.5",
+      "url": "https://downloads.arduino.cc/libraries/github.com/bogde/HX711_Arduino_Library-0.7.5.zip",
+      "checksum": "SHA-256:11a72d1d462a0306e8e0c5cf33d215cefded2e9c9b7ce05e1f1d2d42b47291f6"
+    },
+    "MFRC522_I2C": {
+      "version": "1.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/kkloesener/MFRC522_I2C-1.0.0.zip",
+      "checksum": "SHA-256:a0474bcd68e8045f2515084f22d58c7d7cf87a0be96320e8c5c57200e4d668ef"
+    },
+    "TinyGPSPlus-ESP32": {
+      "version": "0.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/Tinyu-Zhao/TinyGPSPlus_ESP32-0.0.2.zip",
+      "checksum": "SHA-256:f194703ab94b58828d40344feff8916ee5beb6119d8a02c3c1277eb3f99d8ab5"
+    },
+    "M5_EzData": {
+      "version": "0.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_EzData-0.0.2.zip",
+      "checksum": "SHA-256:9d214c6fcb9899d4844b72aeaa7d76bfc4694c206ccb15f36facb1312de08f62"
+    },
+    "Adafruit MCP4725": {
+      "version": "2.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/adafruit/Adafruit_MCP4725-2.0.2.zip",
+      "checksum": "SHA-256:18285d595e6ebb809eb86c7855030cfef8682bcfb90f79008f5934c3b49b339a"
+    },
+    "M5-FPC1020A": {
+      "version": "1.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_FPC1020A-1.0.0.zip",
+      "checksum": "SHA-256:b9f5903e847e2d53456cbd2f3b1b3200c81d0b1ccf70b40bc6a3eea29ff6f35e"
+    },
+    "Adafruit TCS34725": {
+      "version": "1.4.4",
+      "url": "https://downloads.arduino.cc/libraries/github.com/adafruit/Adafruit_TCS34725-1.4.4.zip",
+      "checksum": "SHA-256:95d281f847b9837955b330253ea25bc913f807206e65bb2ad43f0ae1f14c486e"
+    },
+    "MAX30100lib": {
+      "version": "1.2.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/oxullo/MAX30100lib-1.2.1.zip",
+      "checksum": "SHA-256:a1fcad0a6f262b9fc91ea16d39c5aa657bc2654872f414af76066e400464079a"
+    },
+    "M5Unit-RTC": {
+      "version": "0.2.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_RTC-0.2.0.zip",
+      "checksum": "SHA-256:6f9c8f9ca6542e6e4cb86a2f962bb168c023cef22687545f0e4d9504560a4274"
+    },
+    "ADXL345": {
+      "version": "0.2.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/jakalada/ADXL345-0.2.0.zip",
+      "checksum": "SHA-256:962e50a1e3c9c0c79f449fda4348f1d26fdc04cb6a61728ef4721847dfbe1518"
+    },
+    "M5-ADS1115": {
+      "version": "1.0.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_ADS1115-1.0.0.zip",
+      "checksum": "SHA-256:aaf3af25e1fa09555ce264c0273edb280c41c48e8b257ea170cb2b23837f9fc8"
+    },
+    "M5-DLight": {
+      "version": "0.0.5",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_DLight-0.0.5.zip",
+      "checksum": "SHA-256:c4d5cf22e9185accf2cecbf68a49f027edf2132b0efc37d346c6f7e2f49c236c"
+    },
+    "M5Unit-UHF-RFID": {
+      "version": "0.0.4",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_UHF_RFID-0.0.4.zip",
+      "checksum": "SHA-256:76f2196e1901b856e7bd2761cfc1cb49a240c7ff48cc61f65757f1d5bd23c372"
+    },
+    "M5-RoverC": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_RoverC-0.0.1.zip",
+      "checksum": "SHA-256:7db5189b47709c1390020e120b75720e9c7c6224cedeb6cb4565f0c8a6abe76a"
+    },
+    "ESP8266Audio": {
+      "version": "2.4.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/earlephilhower/ESP8266Audio-2.4.3.zip",
+      "checksum": "SHA-256:ee54f898a91e81a0a977e3036c7e0c357e7945516cdcbffa358015091dcfbe94"
+    },
+    "M5Unit-MQTT": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_MQTT-0.0.1.zip",
+      "checksum": "SHA-256:65c789b48a030c3313d270c65af4d6001d3ea02dd5dc174fbc655b707dd073d6"
+    },
+    "M5Unit-PoESP32": {
+      "version": "0.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_PoESP32-0.0.2.zip",
+      "checksum": "SHA-256:ebf2a81355688530f610fc60fd50f5a423cee20eaab07afd218b3e05235f039f"
+    },
+    "M5-ADS1100": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5_ADS1100-0.0.1.zip",
+      "checksum": "SHA-256:cfcdb91a63806bcf3f39f7941f46839ae5b31acca329e5faa910f3d7173a03b1"
+    },
+    "M5Unit-DDS": {
+      "version": "0.2.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_DDS-0.2.0.zip",
+      "checksum": "SHA-256:eca19c1eaa477b94e3096b519c16df3afb05ce28ee9a31a65be5fe67ce0c8460"
+    },
+    "M5Unit-Encoder": {
+      "version": "0.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_Encoder-0.0.2.zip",
+      "checksum": "SHA-256:738c120c83333da241064afb5b2db20200403e1a4508b55d542723fa32969b7b"
+    },
+    "M5Unit-KMeter": {
+      "version": "0.1.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_KMeter-0.1.1.zip",
+      "checksum": "SHA-256:f59202a071b31651a1593254c7143cc25702c094eb65137c2f1327960158c728"
+    },
+    "M5Unit-ACSSR": {
+      "version": "0.0.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_ACSSR-0.0.3.zip",
+      "checksum": "SHA-256:8c123e52763fd060bb8cba28e87ada0d5c7957e994c919caa07f5bc2e99ebd11"
+    },
+    "M5Unit-EXTIO2": {
+      "version": "1.0.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_EXTIO2-1.0.3.zip",
+      "checksum": "SHA-256:1b2bc50b357d3d015ed4897d0cdd8be5d9f47e2d4c0153ad89eee92152df6e87"
+    },
+    "M5Unit-RELAY": {
+      "version": "0.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Unit_RELAY-0.0.2.zip",
+      "checksum": "SHA-256:c49ef60735da7e61a389af9e28c5208e27c35ac36e2416ff1d1d732b92b5f26d"
+    },
+    "M5Hat-JoyC": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Hat_JoyC-0.0.1.zip",
+      "checksum": "SHA-256:cb93a713bc60f5946f78bf4fc6c68eb6e56253cb21aa04877121f4b094827315"
+    },
+    "U8g2": {
+      "version": "2.36.19",
+      "url": "https://downloads.arduino.cc/libraries/github.com/olikraus/U8g2-2.36.19.zip",
+      "checksum": "SHA-256:c9de6e5a5aa2e2884d3296c6a86be4bc2770e27b11d4302ab5134273ccb6a670"
+    },
+    "M5StickCPlus": {
+      "version": "0.1.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5StickCPlus-0.1.1.zip",
+      "checksum": "SHA-256:d8bf28d870ed95f5214ea8d03022271fc15c8cd1d131885d7a9831ea2b64b9fc"
+    },
+    "M5Hat-8Servos": {
+      "version": "0.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Hat_8Servos-0.0.2.zip",
+      "checksum": "SHA-256:d2b834df9dbd17c0a7a3da83376831fd40486d1a94157898df2f0f7f9753d702"
+    },
+    "M5Dial": {
+      "version": "1.0.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Dial-1.0.3.zip",
+      "checksum": "SHA-256:72c4c0c37bc15512c13f9225e1d34e0161b77802c07e84e6a800612614f452c8"
+    },
+    "M5AtomS3": {
+      "version": "1.0.2",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5AtomS3-1.0.2.zip",
+      "checksum": "SHA-256:5995c850bb26bfb704d8fe3722b30cd52ac5ef9bf81aee69b2e7a0d38f281cd3"
+    },
+    "ATOM_DTU_CAT1": {
+      "version": "0.0.1",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/ATOM_DTU_CAT1-0.0.1.zip",
+      "checksum": "SHA-256:746669190574f0955c937f1b2c10177178b2fa346ebf051f7fa4315b8211de52"
+    },
+    "M5StickC": {
+      "version": "0.3.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5StickC-0.3.0.zip",
+      "checksum": "SHA-256:188dd1c9c8661d1ce9e880611346b25b2fc15c88bf3ceb221f604b8be8a14c50"
+    },
+    "FastLED": {
+      "version": "3.10.10",
+      "url": "https://downloads.arduino.cc/libraries/github.com/FastLED/FastLED-3.10.10.zip",
+      "checksum": "SHA-256:ec3042d0a80529ecc1331b9f08b7590f21411093c409995186d82087befb2175"
+    },
+    "M5Atom": {
+      "version": "0.1.3",
+      "url": "https://downloads.arduino.cc/libraries/github.com/m5stack/M5Atom-0.1.3.zip",
+      "checksum": "SHA-256:13ee8261e260e257d22187b9acb836e7068a20f57e316b41ff2ded1deda80edc"
+    }
+  },
+  "overrides": {
+    "ArduinoRS485": {
+      "version": "1.0.2",
+      "commit": "2dd70d2c3fc16626c38c1598244daab2ba508d35",
+      "url": "https://github.com/m5stack/ArduinoRS485"
+    },
+    "ArduinoModbus": {
+      "version": "1.0.6",
+      "commit": "f903d0acb782fee791f70f21ab96d1fc9e580d34",
+      "url": "https://github.com/m5stack/ArduinoModbus"
+    },
+    "RadioLib": {
+      "version": "7.3.0",
+      "url": "https://downloads.arduino.cc/libraries/github.com/jgromes/RadioLib-7.3.0.zip",
+      "checksum": "SHA-256:d9605f8f2cb64648da9946355aa6b83101898daece8b85cdb0855c4a9a48ccdd"
+    }
+  }
+}

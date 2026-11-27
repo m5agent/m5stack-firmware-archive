@@ -41,9 +41,9 @@ def check_published_case(case, index, rebuilt_dir):
                 raise ValueError(f"merged contents differ from segment {segment['file']}")
     if rebuilt_dir:
         folder = rebuilt_dir / case["device_id"] / case["case"]
-        boot_app = manifest["flash_layout"]["segments"]["boot_app0"]["file"]
+        boot_app = manifest["flash_layout"]["segments"].get("boot_app0", {}).get("file")
         for name, record in files.items():
-            if name != boot_app:
+            if name not in {boot_app, "flash-bootloader.bin"}:
                 check(folder / name, record)
 
 
