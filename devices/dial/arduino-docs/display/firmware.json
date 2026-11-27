@@ -1,0 +1,152 @@
+{
+  "device_id": "dial",
+  "case": "display",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/display",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5dial/display.md",
+    "section": "Build Requirements",
+    "code_first_line": 13
+  },
+  "sketch_sha256": "5bba76d1b86b328dfd22c85f3e7c3ecc02daa964c3379d3f31badbf85ee20dd3",
+  "expected_behavior": "Dial Display. Observe the documented drawing/animation and verify the expected geometry and visible pixels.",
+  "sketch_files": {
+    "display.ino": {
+      "path": "devices/dial/arduino-docs/display/sketch/display/display.ino",
+      "storage": "public",
+      "sha256": "5bba76d1b86b328dfd22c85f3e7c3ecc02daa964c3379d3f31badbf85ee20dd3",
+      "bytes": 711
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_dial",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/dial/arduino-docs/display/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "19c64f0a9d2895b0039da85782173762a96565938eac34c31779f1b12d7633b0",
+      "bytes": 566240
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/dial/arduino-docs/display/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/dial/arduino-docs/display/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/dial/arduino-docs/display/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "23901efd1b0a5254e9caedf801249785dd5845b853b6c96eed426b699604a29c",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/dial/arduino-docs/display/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "112ea817d75d69b4df3983cd9b53c0af3f678ed76c1603e745da668c2caa1bec",
+      "bytes": 12458732
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "df4b515a73a73ce1ab481f213c793d3e8d4a08b0ec7cb875da2ca93a8c5a1e6f",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "23901efd1b0a5254e9caedf801249785dd5845b853b6c96eed426b699604a29c",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-dial"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-dial",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/dial.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "display contains multicolor drawing and changes over time"
+        },
+        "capture_comparison": {
+          "display-early.png": {
+            "original": {
+              "png_sha256": "2078639c6c08990df5fd871cbf8b731c5fff835447723e49c1d034e2ff356189"
+            },
+            "rebuilt": {
+              "png_sha256": "1f32b2c492e8a24db7146095e247b78761604e2df6cd0fb6e546dcefa98ca4b0"
+            },
+            "byte_identical": false
+          },
+          "display.png": {
+            "original": {
+              "png_sha256": "48db0e2deba61686798915f559b2e45b1a68934726c9612ce94a47678ce9c40d"
+            },
+            "rebuilt": {
+              "png_sha256": "b4b9338763b742f810b13cc3d082ef13dbd5ba6195bcb35fe17519b1adc8ca4e"
+            },
+            "byte_identical": false
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (293 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (825 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1968 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

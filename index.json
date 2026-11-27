@@ -1755,6 +1755,326 @@
           "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-lite $OUT"
         ]
       }
+    },
+    {
+      "device_id": "dial",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/button.md",
+        "section": "Build Requirements",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "021a3c6b4e83c66335c5d0ff1e7f23fc2c632d45e9a353861f601f5849681cce",
+      "manifest": "devices/dial/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "5db2a8f62d9a032d2b0ecd70fdbda4c51754f08b18295ccc443be47cabd09b62",
+      "original_build": {
+        "firmware_sha256": "98ceea1e60eb19b969712bb226ebe13733cbcb7d6a4992a26bcc9fe69dbb2f9d",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "buzzer",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/buzzer",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/buzzer.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "69f26ae54343c993b717eea1fcb7135bfb4179291599fd636730804ad98850d0",
+      "manifest": "devices/dial/arduino-docs/buzzer/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "bfb62c35a42906fa0e0ecba7d256392f4f1d72c4c54b0d972525ce285cc0e1e3",
+      "original_build": {
+        "firmware_sha256": "f648e15e4ce0fa84244ac20c7dec771eeb34a77b84a4ab9cb710b9e217a82233",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/display.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "5bba76d1b86b328dfd22c85f3e7c3ecc02daa964c3379d3f31badbf85ee20dd3",
+      "manifest": "devices/dial/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "23901efd1b0a5254e9caedf801249785dd5845b853b6c96eed426b699604a29c",
+      "original_build": {
+        "firmware_sha256": "df4b515a73a73ce1ab481f213c793d3e8d4a08b0ec7cb875da2ca93a8c5a1e6f",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "encoder",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/encoder",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/encoder.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "6974bd184b5eaa01774ee96b3c92a7e65db5446279ae8e320551c26f69c9c63f",
+      "manifest": "devices/dial/arduino-docs/encoder/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "4e1f476627626d26a5940fb7bb264ec81da8a86893b6d9fa7508586258229270",
+      "original_build": {
+        "firmware_sha256": "932f968f47e4df6d86f2173f0a3309dc2c4b3f6d9a268eabcbadbe800e9f9475",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "rfid-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/rfid",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/rfid.md",
+        "section": "Read UID Example",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "37aa6d57bcd63ba3e7dcb15af13262a38fee437cc5dc6a8c08cbcb7917ce7d5d",
+      "manifest": "devices/dial/arduino-docs/rfid-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e1e79250d4182abbf7751e3f6a88b226221d8de549bf397319ffbd29650f3d5c",
+      "original_build": {
+        "firmware_sha256": "463a5d03f52ecbe02dcc54e511a21b020fa65512b2efd2ed3c1f31f4189a12b9",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "rfid-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/rfid",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/rfid.md",
+        "section": "Read/Write Card Example",
+        "code_first_line": 56
+      },
+      "sketch_sha256": "7ce1642fed8aadb991937939b3bac4492e38206ce2fcb75ee189b9a9669b41ef",
+      "manifest": "devices/dial/arduino-docs/rfid-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8c561ddd56568e143fe6a6c9fdca7fcc82be03ef8369e344a03af3c935a30f4d",
+      "original_build": {
+        "firmware_sha256": "ab62b0f0b3667336d918bbd159e5428f1e7fa8e768282e149516bed4a219e294",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "rtc",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/rtc.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "74b41425405f12a2393bff7e74fa2455869fdead5b1efb872da91f063e22775a",
+      "manifest": "devices/dial/arduino-docs/rtc/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "99c2732bcb2d109f4dece63576b4cb13c95b272c3f364ea570959cf22e58bcb3",
+      "original_build": {
+        "firmware_sha256": "73b7bbc278888eec911d20b0fd99fc177474aa89ee5a2bf2b1a1c39f708bab42",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "touch",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/touch.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "598ebd53f6b129fec13def9b5229513bde95cd5266f19477d5f847b1f7bb194c",
+      "manifest": "devices/dial/arduino-docs/touch/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "5f50e2701c97899a955d6947f826179bf77a0f5d4a324c7df31eb5b49cd4a7e3",
+      "original_build": {
+        "firmware_sha256": "8a7136d47e9f569684ccd85e190f031535008cb990b33cd6baa2825ef07a9022",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "wakeup",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/wakeup.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "c872c2f20fc9e1329f19cfd62a30e5621d1124869d11e9d1501417a305b72568",
+      "manifest": "devices/dial/arduino-docs/wakeup/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "81a46c3264a99157d72beebb7b6851aa2060248c2993a6e5bb0cb232e090f444",
+      "original_build": {
+        "firmware_sha256": "0e484d4ac32570d7fa07cde7a07927941f531a1c49addb4091b3c9f3068e99c9",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "dial",
+      "case": "quickstart-display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5dial/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 26
+      },
+      "sketch_sha256": "a4c27b75a82974c532ef2ad739b92253d3c163c8a2f59002990ebe1fbff8b430",
+      "manifest": "devices/dial/arduino-docs/quickstart-display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "da9df2158a4849b222528cc7adfa51cb5ab7c1e0b31012d888546d8b94edc1bc",
+      "original_build": {
+        "firmware_sha256": "4e9910603a7fee9357278f1f0fc89eff62ba5eef20f6d5a5b9dffa9528a40aa7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-dial"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -3695,6 +4015,286 @@
     "devices/atom-lite/arduino-docs/quickstart-logoutput/firmware.json": {
       "sha256": "1bc1969d697e469f88fc42e33318ad39b80d893cdbbc8b7ecc3c89c228cf9d82",
       "bytes": 4976
+    },
+    "devices/dial/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "021a3c6b4e83c66335c5d0ff1e7f23fc2c632d45e9a353861f601f5849681cce",
+      "bytes": 336
+    },
+    "devices/dial/arduino-docs/button/migration.ino.bin": {
+      "sha256": "8c33834d3d0c1ab04a82cdb4efbe2e7f298580424291a040a77b1edcb546bec0",
+      "bytes": 565920
+    },
+    "devices/dial/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "5db2a8f62d9a032d2b0ecd70fdbda4c51754f08b18295ccc443be47cabd09b62",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/button/migration.ino.elf": {
+      "sha256": "bad885b2765490e819b6055c48074e6ef946c076acdf974e6d766718a60037f3",
+      "bytes": 12445196
+    },
+    "devices/dial/arduino-docs/button/firmware.json": {
+      "sha256": "e8cbc2b3215b46138cc9412fbad802c67588ed4a369291a742a1808f01a5aeb2",
+      "bytes": 5223
+    },
+    "devices/dial/arduino-docs/buzzer/sketch/buzzer/buzzer.ino": {
+      "sha256": "69f26ae54343c993b717eea1fcb7135bfb4179291599fd636730804ad98850d0",
+      "bytes": 280
+    },
+    "devices/dial/arduino-docs/buzzer/migration.ino.bin": {
+      "sha256": "662588bfe114465d0ab51bd674e3ccd9ffd877bc90f92c5d316c310d84518f90",
+      "bytes": 585344
+    },
+    "devices/dial/arduino-docs/buzzer/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/buzzer/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/buzzer/migration.ino.merged.bin": {
+      "sha256": "bfb62c35a42906fa0e0ecba7d256392f4f1d72c4c54b0d972525ce285cc0e1e3",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/buzzer/migration.ino.elf": {
+      "sha256": "b12d17a491adea864812bb550648b679cc815851d45e0eee07d7dc71330390fc",
+      "bytes": 12634804
+    },
+    "devices/dial/arduino-docs/buzzer/firmware.json": {
+      "sha256": "d6c1640d00c98298f5616ea4d67811292bc954d2146fbc7b4e3b9e85843acf95",
+      "bytes": 5892
+    },
+    "devices/dial/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "5bba76d1b86b328dfd22c85f3e7c3ecc02daa964c3379d3f31badbf85ee20dd3",
+      "bytes": 711
+    },
+    "devices/dial/arduino-docs/display/migration.ino.bin": {
+      "sha256": "19c64f0a9d2895b0039da85782173762a96565938eac34c31779f1b12d7633b0",
+      "bytes": 566240
+    },
+    "devices/dial/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "23901efd1b0a5254e9caedf801249785dd5845b853b6c96eed426b699604a29c",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/display/migration.ino.elf": {
+      "sha256": "112ea817d75d69b4df3983cd9b53c0af3f678ed76c1603e745da668c2caa1bec",
+      "bytes": 12458732
+    },
+    "devices/dial/arduino-docs/display/firmware.json": {
+      "sha256": "82d7c2ccbe38af5d443d20803b66eb2f425ae51eb7034a702e3adbf071c15580",
+      "bytes": 5607
+    },
+    "devices/dial/arduino-docs/encoder/sketch/encoder/encoder.ino": {
+      "sha256": "6974bd184b5eaa01774ee96b3c92a7e65db5446279ae8e320551c26f69c9c63f",
+      "bytes": 848
+    },
+    "devices/dial/arduino-docs/encoder/migration.ino.bin": {
+      "sha256": "9f87b522f899e37fca7fdce0bcb8cd8460e221302ac2732eb531d6db65240690",
+      "bytes": 594096
+    },
+    "devices/dial/arduino-docs/encoder/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/encoder/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/encoder/migration.ino.merged.bin": {
+      "sha256": "4e1f476627626d26a5940fb7bb264ec81da8a86893b6d9fa7508586258229270",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/encoder/migration.ino.elf": {
+      "sha256": "04512c0e947c0e7b6be8d7376f8f5843aa74f6f25592597b838461323196a78b",
+      "bytes": 12674156
+    },
+    "devices/dial/arduino-docs/encoder/firmware.json": {
+      "sha256": "ae318983bce6e1729d0b8947c4f902328fbfc22d7ec717b50aba0d87cc86afca",
+      "bytes": 5588
+    },
+    "devices/dial/arduino-docs/rfid-1/sketch/rfid_1/rfid_1.ino": {
+      "sha256": "37aa6d57bcd63ba3e7dcb15af13262a38fee437cc5dc6a8c08cbcb7917ce7d5d",
+      "bytes": 993
+    },
+    "devices/dial/arduino-docs/rfid-1/migration.ino.bin": {
+      "sha256": "c3fa9722e4247f0dbda6eff009e5e2954a9f33e0fa8ceb5d7e9e073f534c3f95",
+      "bytes": 568272
+    },
+    "devices/dial/arduino-docs/rfid-1/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/rfid-1/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/rfid-1/migration.ino.merged.bin": {
+      "sha256": "e1e79250d4182abbf7751e3f6a88b226221d8de549bf397319ffbd29650f3d5c",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/rfid-1/migration.ino.elf": {
+      "sha256": "994bedb0b9697c40f65ad26f09e61cbd81193dc7adaaa9a6afbb23a967a998cf",
+      "bytes": 12458400
+    },
+    "devices/dial/arduino-docs/rfid-1/firmware.json": {
+      "sha256": "91b9e062db388f4e4e5c3ce921db8cd7a5e8977f0820f2a766a5957ef5b7df20",
+      "bytes": 5560
+    },
+    "devices/dial/arduino-docs/rfid-2/sketch/rfid_2/rfid_2.ino": {
+      "sha256": "7ce1642fed8aadb991937939b3bac4492e38206ce2fcb75ee189b9a9669b41ef",
+      "bytes": 5750
+    },
+    "devices/dial/arduino-docs/rfid-2/migration.ino.bin": {
+      "sha256": "08e7d3dd40157b3cb3f901aae364a4f7ffaa41743114c8430afc0b50590cda7c",
+      "bytes": 572400
+    },
+    "devices/dial/arduino-docs/rfid-2/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/rfid-2/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/rfid-2/migration.ino.merged.bin": {
+      "sha256": "8c561ddd56568e143fe6a6c9fdca7fcc82be03ef8369e344a03af3c935a30f4d",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/rfid-2/migration.ino.elf": {
+      "sha256": "0b8d44f6d8e47eb289005548eeb5077149a26ad0e1010bd597dc8f702c799d2c",
+      "bytes": 12475080
+    },
+    "devices/dial/arduino-docs/rfid-2/firmware.json": {
+      "sha256": "effd2c80876e29ed3deb66a46ad733a66b149a68dd000bd810dae5cdd8d163e6",
+      "bytes": 5568
+    },
+    "devices/dial/arduino-docs/rtc/sketch/rtc/rtc.ino": {
+      "sha256": "74b41425405f12a2393bff7e74fa2455869fdead5b1efb872da91f063e22775a",
+      "bytes": 3284
+    },
+    "devices/dial/arduino-docs/rtc/migration.ino.bin": {
+      "sha256": "7024931a5e3c0521982a57b7be5628df64aed1ad0c23e1b4dbb85c9a0966400e",
+      "bytes": 1126592
+    },
+    "devices/dial/arduino-docs/rtc/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/rtc/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/rtc/migration.ino.merged.bin": {
+      "sha256": "99c2732bcb2d109f4dece63576b4cb13c95b272c3f364ea570959cf22e58bcb3",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/rtc/migration.ino.elf": {
+      "sha256": "029cdf07561095b7284fbe6cce022225ed3c86713c58bb7619bd1004a48b72f9",
+      "bytes": 17875332
+    },
+    "devices/dial/arduino-docs/rtc/firmware.json": {
+      "sha256": "287311882e2125ea86d598e07e2c10096864cd53ee08757554fbebd4417674d5",
+      "bytes": 5548
+    },
+    "devices/dial/arduino-docs/touch/sketch/touch/touch.ino": {
+      "sha256": "598ebd53f6b129fec13def9b5229513bde95cd5266f19477d5f847b1f7bb194c",
+      "bytes": 608
+    },
+    "devices/dial/arduino-docs/touch/migration.ino.bin": {
+      "sha256": "8679acdb97f9fba594ea5a9d9d198640cb0fe3da44ae164977d5a9da0dfcc847",
+      "bytes": 571152
+    },
+    "devices/dial/arduino-docs/touch/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/touch/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/touch/migration.ino.merged.bin": {
+      "sha256": "5f50e2701c97899a955d6947f826179bf77a0f5d4a324c7df31eb5b49cd4a7e3",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/touch/migration.ino.elf": {
+      "sha256": "f17470e051e4b46fd11ef8e85aa62fa40eaeeb660d14af9084529c263d188a4b",
+      "bytes": 12458424
+    },
+    "devices/dial/arduino-docs/touch/firmware.json": {
+      "sha256": "66d35048cc85a1375900319ed3c481368d9110f594b9284a19ef09f29e75a4f3",
+      "bytes": 5915
+    },
+    "devices/dial/arduino-docs/wakeup/sketch/wakeup/wakeup.ino": {
+      "sha256": "c872c2f20fc9e1329f19cfd62a30e5621d1124869d11e9d1501417a305b72568",
+      "bytes": 1001
+    },
+    "devices/dial/arduino-docs/wakeup/migration.ino.bin": {
+      "sha256": "1c70812bef2b2a87d48f463327ec20a554da9d02dd13ef540c0a5eb6d3ddab72",
+      "bytes": 585984
+    },
+    "devices/dial/arduino-docs/wakeup/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/wakeup/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/wakeup/migration.ino.merged.bin": {
+      "sha256": "81a46c3264a99157d72beebb7b6851aa2060248c2993a6e5bb0cb232e090f444",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/wakeup/migration.ino.elf": {
+      "sha256": "2a42b62851f71b65b7ced21ded82e1299eae1ee70b9090498ff2870114e1acc9",
+      "bytes": 12574208
+    },
+    "devices/dial/arduino-docs/wakeup/firmware.json": {
+      "sha256": "61abc721692e2845d4a1f874e0f82f3cbd2202e1e364b98b90f99a600d8806f7",
+      "bytes": 5254
+    },
+    "devices/dial/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino": {
+      "sha256": "a4c27b75a82974c532ef2ad739b92253d3c163c8a2f59002990ebe1fbff8b430",
+      "bytes": 1101
+    },
+    "devices/dial/arduino-docs/quickstart-display/migration.ino.bin": {
+      "sha256": "6dfc6cf264cc69048efd4f9aedea4e88b41478a06605ac04754e50511f4de910",
+      "bytes": 566240
+    },
+    "devices/dial/arduino-docs/quickstart-display/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/dial/arduino-docs/quickstart-display/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/dial/arduino-docs/quickstart-display/migration.ino.merged.bin": {
+      "sha256": "da9df2158a4849b222528cc7adfa51cb5ab7c1e0b31012d888546d8b94edc1bc",
+      "bytes": 4194304
+    },
+    "devices/dial/arduino-docs/quickstart-display/migration.ino.elf": {
+      "sha256": "c711c747bd257aa96cef614a30059b4975206ff25d2c929509a8dbef4e87ddc4",
+      "bytes": 12458692
+    },
+    "devices/dial/arduino-docs/quickstart-display/firmware.json": {
+      "sha256": "0275c8ac5e7ccac630e3d178cb97e67d71b53b9549cc3e885535b2ef8ace927b",
+      "bytes": 5883
     }
   },
   "local_files": {
@@ -4270,7 +4870,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 51,
+    "published_cases": 61,
     "storage": "git-lfs"
   }
 }

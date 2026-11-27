@@ -1,0 +1,152 @@
+{
+  "device_id": "dial",
+  "case": "rfid-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/rfid",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5dial/rfid.md",
+    "section": "Read UID Example",
+    "code_first_line": 17
+  },
+  "sketch_sha256": "37aa6d57bcd63ba3e7dcb15af13262a38fee437cc5dc6a8c08cbcb7917ce7d5d",
+  "expected_behavior": "Dial RFID (NFC). Present a virtual card and check UID or data operation.",
+  "sketch_files": {
+    "rfid_1.ino": {
+      "path": "devices/dial/arduino-docs/rfid-1/sketch/rfid_1/rfid_1.ino",
+      "storage": "public",
+      "sha256": "37aa6d57bcd63ba3e7dcb15af13262a38fee437cc5dc6a8c08cbcb7917ce7d5d",
+      "bytes": 993
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_dial",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/dial/arduino-docs/rfid-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "c3fa9722e4247f0dbda6eff009e5e2954a9f33e0fa8ceb5d7e9e073f534c3f95",
+      "bytes": 568272
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/dial/arduino-docs/rfid-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/dial/arduino-docs/rfid-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/dial/arduino-docs/rfid-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "e1e79250d4182abbf7751e3f6a88b226221d8de549bf397319ffbd29650f3d5c",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/dial/arduino-docs/rfid-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "994bedb0b9697c40f65ad26f09e61cbd81193dc7adaaa9a6afbb23a967a998cf",
+      "bytes": 12458400
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "463a5d03f52ecbe02dcc54e511a21b020fa65512b2efd2ed3c1f31f4189a12b9",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "e1e79250d4182abbf7751e3f6a88b226221d8de549bf397319ffbd29650f3d5c",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-dial"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-dial",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/dial.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "separate virtual UIDs read through I2C FIFO and no UID without a tag"
+        },
+        "capture_comparison": {
+          "rfid-1-idle.png": {
+            "original": {
+              "png_sha256": "45a1f6ca46f8191dc0d47c202917f88b906665e137c9d3ad1477c83d5450efe6"
+            },
+            "rebuilt": {
+              "png_sha256": "45a1f6ca46f8191dc0d47c202917f88b906665e137c9d3ad1477c83d5450efe6"
+            },
+            "byte_identical": true
+          },
+          "rfid-1.png": {
+            "original": {
+              "png_sha256": "45a1f6ca46f8191dc0d47c202917f88b906665e137c9d3ad1477c83d5450efe6"
+            },
+            "rebuilt": {
+              "png_sha256": "45a1f6ca46f8191dc0d47c202917f88b906665e137c9d3ad1477c83d5450efe6"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (293 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (825 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1968 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

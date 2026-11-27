@@ -1,0 +1,161 @@
+{
+  "device_id": "dial",
+  "case": "touch",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/touch",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5dial/touch.md",
+    "section": "Build Requirements",
+    "code_first_line": 13
+  },
+  "sketch_sha256": "598ebd53f6b129fec13def9b5229513bde95cd5266f19477d5f847b1f7bb194c",
+  "expected_behavior": "Dial Touch. Inject two separated points and a release, then verify event and transformed coordinates.",
+  "sketch_files": {
+    "touch.ino": {
+      "path": "devices/dial/arduino-docs/touch/sketch/touch/touch.ino",
+      "storage": "public",
+      "sha256": "598ebd53f6b129fec13def9b5229513bde95cd5266f19477d5f847b1f7bb194c",
+      "bytes": 608
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_dial",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/dial/arduino-docs/touch/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "8679acdb97f9fba594ea5a9d9d198640cb0fe3da44ae164977d5a9da0dfcc847",
+      "bytes": 571152
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/dial/arduino-docs/touch/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/dial/arduino-docs/touch/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/dial/arduino-docs/touch/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "5f50e2701c97899a955d6947f826179bf77a0f5d4a324c7df31eb5b49cd4a7e3",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/dial/arduino-docs/touch/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "f17470e051e4b46fd11ef8e85aa62fa40eaeeb660d14af9084529c263d188a4b",
+      "bytes": 12458424
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "8a7136d47e9f569684ccd85e190f031535008cb990b33cd6baa2825ef07a9022",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "5f50e2701c97899a955d6947f826179bf77a0f5d4a324c7df31eb5b49cd4a7e3",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-dial"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-dial",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/dial.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "idle and both sensor inputs produced distinct states"
+        },
+        "capture_comparison": {
+          "touch-first.png": {
+            "original": {
+              "png_sha256": "1806b93c9258d29ad60820ed71222dfb1bd2bc3d97cf39e53d83850669bb3e16"
+            },
+            "rebuilt": {
+              "png_sha256": "1806b93c9258d29ad60820ed71222dfb1bd2bc3d97cf39e53d83850669bb3e16"
+            },
+            "byte_identical": true
+          },
+          "touch-idle.png": {
+            "original": {
+              "png_sha256": "d743997cfbb07e3f2100bb7da3e905507adf26b7325d2aa0bc2b9298a5f77431"
+            },
+            "rebuilt": {
+              "png_sha256": "d743997cfbb07e3f2100bb7da3e905507adf26b7325d2aa0bc2b9298a5f77431"
+            },
+            "byte_identical": true
+          },
+          "touch.png": {
+            "original": {
+              "png_sha256": "bdbc9efafbfc85e949aa2c8b755816ae21049830ded26407fb454fdaff167a3e"
+            },
+            "rebuilt": {
+              "png_sha256": "bdbc9efafbfc85e949aa2c8b755816ae21049830ded26407fb454fdaff167a3e"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (293 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (825 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1968 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

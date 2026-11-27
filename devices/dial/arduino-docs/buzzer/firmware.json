@@ -1,0 +1,158 @@
+{
+  "device_id": "dial",
+  "case": "buzzer",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5dial/buzzer",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5dial/buzzer.md",
+    "section": "Build Requirements",
+    "code_first_line": 13
+  },
+  "sketch_sha256": "69f26ae54343c993b717eea1fcb7135bfb4179291599fd636730804ad98850d0",
+  "expected_behavior": "Dial Buzzer. Verify the output pin/PCM and documented buzzer frequency and duration.",
+  "sketch_files": {
+    "buzzer.ino": {
+      "path": "devices/dial/arduino-docs/buzzer/sketch/buzzer/buzzer.ino",
+      "storage": "public",
+      "sha256": "69f26ae54343c993b717eea1fcb7135bfb4179291599fd636730804ad98850d0",
+      "bytes": 280
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_dial",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/dial/arduino-docs/buzzer/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "662588bfe114465d0ab51bd674e3ccd9ffd877bc90f92c5d316c310d84518f90",
+      "bytes": 585344
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/dial/arduino-docs/buzzer/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/dial/arduino-docs/buzzer/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/dial/arduino-docs/buzzer/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "bfb62c35a42906fa0e0ecba7d256392f4f1d72c4c54b0d972525ce285cc0e1e3",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/dial/arduino-docs/buzzer/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "b12d17a491adea864812bb550648b679cc815851d45e0eee07d7dc71330390fc",
+      "bytes": 12634804
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "f648e15e4ce0fa84244ac20c7dec771eeb34a77b84a4ab9cb710b9e217a82233",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "bfb62c35a42906fa0e0ecba7d256392f4f1d72c4c54b0d972525ce285cc0e1e3",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-dial"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-dial",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh dial $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/dial.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "GPIO3 PDM output contains 10000 Hz and 4000 Hz tones"
+        },
+        "capture_comparison": {
+          "buzzer-output.wav": {
+            "original": {
+              "wav_sha256": "52780f057976fda4995dbe42a3c2da39f95193ffa17b0c4615c09e02b8375858",
+              "pcm_sha256": "c193e576fa97161e8fc5e2b068031db4e3b2bf08fd6f0d40fb30b945e97e93f7",
+              "frames": 231099,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "52780f057976fda4995dbe42a3c2da39f95193ffa17b0c4615c09e02b8375858",
+              "pcm_sha256": "c193e576fa97161e8fc5e2b068031db4e3b2bf08fd6f0d40fb30b945e97e93f7",
+              "frames": 231099,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          },
+          "buzzer.png": {
+            "original": {
+              "png_sha256": "45a1f6ca46f8191dc0d47c202917f88b906665e137c9d3ad1477c83d5450efe6"
+            },
+            "rebuilt": {
+              "png_sha256": "45a1f6ca46f8191dc0d47c202917f88b906665e137c9d3ad1477c83d5450efe6"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (299 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (843 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2037 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
