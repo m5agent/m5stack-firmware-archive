@@ -1037,6 +1037,90 @@
       "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000936/2122949439364481025/bin/2122949439364481026.bin",
       "bytes": 8384512,
       "manifest": "devices/cardputer-adv/uiflow2/v2.5.5/firmware.json"
+    },
+    {
+      "device_id": "tab5",
+      "case": "power-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/power",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/power.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "6f0a3b313a5771dab99c39b63c5c7facdfdde8857e8d9611495ebd52123bf195",
+      "manifest": "devices/tab5/arduino-docs/power-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "0ef3a8ef35f4b61d296889367f48f433391c1fb85f235e0ac48dc363e07fa765",
+      "original_build": {
+        "firmware_sha256": "c8f2a196f8c87c36ff8707d08b2189ce992d638688bc9bb25c8a4f0366abe3a6",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-power",
+            "$FIRMWARE",
+            "4",
+            "--script",
+            "battery.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "rtc-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/rtc.md",
+        "section": "Configure Local Time",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "b4563df7c483beb502de382a3713bd3e3a577389fa925edd1b4eb1c9fec6a0a6",
+      "manifest": "devices/tab5/arduino-docs/rtc-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "15b6a61f455400154e3849d8b1e69cbc6196e54ee60ca912fae5223ec0498a93",
+      "original_build": {
+        "firmware_sha256": "39e7697733b5681359667b4d1b39502b80093d9305cbff81f355dcad5eaec299",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-rtc",
+            "$FIRMWARE",
+            "5",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
     }
   ],
   "public_files": {
@@ -2501,6 +2585,62 @@
     "devices/cardputer-adv/uiflow2/v2.5.5/firmware.json": {
       "sha256": "a7d10ababdcd619eb70afc5f9253bef83a032b7009d20d54cc27b5894a6dfbdb",
       "bytes": 748
+    },
+    "devices/tab5/arduino-docs/power-1/sketch/sketch/sketch.ino": {
+      "sha256": "6f0a3b313a5771dab99c39b63c5c7facdfdde8857e8d9611495ebd52123bf195",
+      "bytes": 734
+    },
+    "devices/tab5/arduino-docs/power-1/sketch.ino.bin": {
+      "sha256": "e1b050604281818081b6540935632e38e2f8b7b5e9db34e69df83c4d80a4ea35",
+      "bytes": 540576
+    },
+    "devices/tab5/arduino-docs/power-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/power-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/power-1/sketch.ino.merged.bin": {
+      "sha256": "0ef3a8ef35f4b61d296889367f48f433391c1fb85f235e0ac48dc363e07fa765",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/power-1/sketch.ino.elf": {
+      "sha256": "9c5986636968748a8a681bf70e2eca5eee2ba7d53316bc46e1c9e6e322db0c96",
+      "bytes": 12677932
+    },
+    "devices/tab5/arduino-docs/power-1/firmware.json": {
+      "sha256": "fed29564fddb2d93bfcb19eabf32c5511735f66ca6c2819ae1c50c3e3de17a22",
+      "bytes": 5348
+    },
+    "devices/tab5/arduino-docs/rtc-1/sketch/sketch/sketch.ino": {
+      "sha256": "b4563df7c483beb502de382a3713bd3e3a577389fa925edd1b4eb1c9fec6a0a6",
+      "bytes": 1220
+    },
+    "devices/tab5/arduino-docs/rtc-1/sketch.ino.bin": {
+      "sha256": "7f6815b4166fc47381f96ccdb0eedcd345a822c465363bf70d1a0e0cea5ee818",
+      "bytes": 539776
+    },
+    "devices/tab5/arduino-docs/rtc-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/rtc-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/rtc-1/sketch.ino.merged.bin": {
+      "sha256": "15b6a61f455400154e3849d8b1e69cbc6196e54ee60ca912fae5223ec0498a93",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/rtc-1/sketch.ino.elf": {
+      "sha256": "399b6520c5997a29a5915b3d57383e3bd6ec8afbc3dd03e1d6525cc3e108a464",
+      "bytes": 12670480
+    },
+    "devices/tab5/arduino-docs/rtc-1/firmware.json": {
+      "sha256": "d59cc880874c4f9e649e7d34911416f95a2cdce0a5390eb561d51fcb2bb8a4a2",
+      "bytes": 5194
     }
   },
   "local_files": {
@@ -3076,7 +3216,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 34,
+    "published_cases": 36,
     "storage": "git-lfs"
   }
 }

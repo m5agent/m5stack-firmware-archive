@@ -1,0 +1,155 @@
+{
+  "device_id": "tab5",
+  "case": "power-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/power",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5tab5/power.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "6f0a3b313a5771dab99c39b63c5c7facdfdde8857e8d9611495ebd52123bf195",
+  "expected_behavior": "Exercise the power behavior described in the pinned documentation.",
+  "sketch_files": {
+    "sketch.ino": {
+      "path": "devices/tab5/arduino-docs/power-1/sketch/sketch/sketch.ino",
+      "storage": "public",
+      "sha256": "6f0a3b313a5771dab99c39b63c5c7facdfdde8857e8d9611495ebd52123bf195",
+      "bytes": 734
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_tab5",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "sketch.ino.bin": {
+      "path": "devices/tab5/arduino-docs/power-1/sketch.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "e1b050604281818081b6540935632e38e2f8b7b5e9db34e69df83c4d80a4ea35",
+      "bytes": 540576
+    },
+    "sketch.ino.bootloader.bin": {
+      "path": "devices/tab5/arduino-docs/power-1/sketch.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "sketch.ino.partitions.bin": {
+      "path": "devices/tab5/arduino-docs/power-1/sketch.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "sketch.ino.merged.bin": {
+      "path": "devices/tab5/arduino-docs/power-1/sketch.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "0ef3a8ef35f4b61d296889367f48f433391c1fb85f235e0ac48dc363e07fa765",
+      "bytes": 16777216
+    },
+    "sketch.ino.elf": {
+      "path": "devices/tab5/arduino-docs/power-1/sketch.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "9c5986636968748a8a681bf70e2eca5eee2ba7d53316bc46e1c9e6e322db0c96",
+      "bytes": 12677932
+    }
+  },
+  "merged_image": "sketch.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "sketch.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "sketch.ino.bootloader.bin",
+        "offset": "0x2000"
+      },
+      "partitions": {
+        "file": "sketch.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "c8f2a196f8c87c36ff8707d08b2189ce992d638688bc9bb25c8a4f0366abe3a6",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "0ef3a8ef35f4b61d296889367f48f433391c1fb85f235e0ac48dc363e07fa765",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+      "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+      "boards": [
+        "m5stack-tab5"
+      ],
+      "run_commands": [
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "tab5-power",
+          "$FIRMWARE",
+          "4",
+          "--script",
+          "battery.txt",
+          "--debug",
+          "i2c1"
+        ]
+      ]
+    },
+    "runs": [
+      {
+        "checker": {
+          "case": "battery and charging",
+          "status": "PASS",
+          "evidence": "tab5-power: Bat Charging: Yes, Bat Voltage: 7980mv, Bat Level: 86"
+        },
+        "capture_comparison": {
+          "tab5-power/frame.png": {
+            "original_sha256": "73723268c44352eb41dda7994c150ae2a3c28ea5036e7a87c22bf0931afe3556",
+            "rebuilt_sha256": "73723268c44352eb41dda7994c150ae2a3c28ea5036e7a87c22bf0931afe3556",
+            "byte_identical": true
+          }
+        },
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-power",
+            "$FIRMWARE",
+            "4",
+            "--script",
+            "battery.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ],
+        "boards": [
+          "m5stack-tab5"
+        ]
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (328 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (800 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1971 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "sketch"
+  },
+  "verdict": "PASS"
+}
