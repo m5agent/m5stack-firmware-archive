@@ -1,0 +1,139 @@
+{
+  "device_id": "stackchan",
+  "case": "nfc-5",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+    "section": "NDEF Format Card Reading and Writing",
+    "code_first_line": 925
+  },
+  "sketch_sha256": "5670727e662d6c018ce9b18405c637d9b4c9a89317dd7d0148127d480cebbfb2",
+  "expected_behavior": "StackChan NFC Near Field Communication. Bring a deterministic virtual tag into range and verify UID or data readback and IRQ.",
+  "sketch_files": {
+    "nfc_5.ino": {
+      "path": "devices/stackchan/arduino-docs/nfc-5/sketch/nfc_5/nfc_5.ino",
+      "storage": "public",
+      "sha256": "5670727e662d6c018ce9b18405c637d9b4c9a89317dd7d0148127d480cebbfb2",
+      "bytes": 14010
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/nfc-5/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "8135a1a542d35c4b951b630fe319ec2253e537158a13c54e8b746fd025009a08",
+      "bytes": 768400
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/nfc-5/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/nfc-5/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/nfc-5/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "126b3f9e03ef6e0d82b5cccedb3d044b11c9f10b4e53feb71d624015d9f110ed",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/nfc-5/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "fce277ebf6802e0cac0503623b1f3d7412ca432be2fe3e72d50ade60ac76b1bd",
+      "bytes": 20315724
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "9eca708b13db6e8126c51b2413386c05bb1aa0b87aa2989ad82ab4faac8758b3",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "126b3f9e03ef6e0d82b5cccedb3d044b11c9f10b4e53feb71d624015d9f110ed",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "guest formats and writes a synthetic Type 2 tag, then reads the NDEF URI",
+          "expected": "StackChan NFC Near Field Communication. Bring a deterministic virtual tag into range and verify UID or data readback and IRQ."
+        },
+        "capture_comparison": {
+          "nfc-5.png": {
+            "original": {
+              "png_sha256": "a7e2aa648e64b428a33b6c4bbce50df8043bbbbc3e40b488e05b5ce404ad57b4"
+            },
+            "rebuilt": {
+              "png_sha256": "a7e2aa648e64b428a33b6c4bbce50df8043bbbbc3e40b488e05b5ce404ad57b4"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (311 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (180 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (874 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2106 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

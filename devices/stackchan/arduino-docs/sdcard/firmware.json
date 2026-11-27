@@ -1,0 +1,148 @@
+{
+  "device_id": "stackchan",
+  "case": "sdcard",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/sdcard",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/sdcard.md",
+    "section": "Build Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "8fda97dc43c02781600c2a32bfd5f2d7e4722646c82cf1f5a1046952de8ec93c",
+  "expected_behavior": "StackChan microSD Card. Mount a seeded card and verify the documented directory, read/write, or throughput operation.",
+  "sketch_files": {
+    "sdcard.ino": {
+      "path": "devices/stackchan/arduino-docs/sdcard/sketch/sdcard/sdcard.ino",
+      "storage": "public",
+      "sha256": "8fda97dc43c02781600c2a32bfd5f2d7e4722646c82cf1f5a1046952de8ec93c",
+      "bytes": 1517
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/sdcard/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "cadc968f648dbe483bf1cc582721e0caebf128a3a200d41d28933b2d45e5fcb6",
+      "bytes": 618320
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/sdcard/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/sdcard/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/sdcard/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "8e8fc425858858880b80f5b6df60d9d64c02650fa5cf21e2f80757fbf1abafea",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/sdcard/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "87a38e423a8e5bc6e3ce3d5d4258fd40d6f7985e7ca63fc1268eb6097559f0b6",
+      "bytes": 12992184
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "b1cf969db7586d05ed5dee4e2177c7a08e05b766ad9bcbe6d4aef84528baa87f",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "8e8fc425858858880b80f5b6df60d9d64c02650fa5cf21e2f80757fbf1abafea",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "file reads are visible in the framebuffer and use SPI SD",
+          "expected": "StackChan microSD Card. Mount a seeded card and verify the documented directory, read/write, or throughput operation."
+        },
+        "capture_comparison": {
+          "sdcard-control.png": {
+            "original": {
+              "png_sha256": "44d42e2e271b2bc41d33c1f02db409c69231ec55f4ae8cad6cfaea6403ebc3de"
+            },
+            "rebuilt": {
+              "png_sha256": "44d42e2e271b2bc41d33c1f02db409c69231ec55f4ae8cad6cfaea6403ebc3de"
+            },
+            "byte_identical": true
+          },
+          "sdcard.png": {
+            "original": {
+              "png_sha256": "ded880037f1bcd4ddf40332b2519edffd62cae587901bf65cc800abe3413149c"
+            },
+            "rebuilt": {
+              "png_sha256": "ded880037f1bcd4ddf40332b2519edffd62cae587901bf65cc800abe3413149c"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (305 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (169 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (855 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2027 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

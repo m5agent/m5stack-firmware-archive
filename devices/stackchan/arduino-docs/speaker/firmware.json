@@ -1,0 +1,154 @@
+{
+  "device_id": "stackchan",
+  "case": "speaker",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/speaker",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/speaker.md",
+    "section": "Build Requirements",
+    "code_first_line": 13
+  },
+  "sketch_sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+  "expected_behavior": "StackChan Speaker. Verify the emitted tones or raw PCM on the board audio route.",
+  "sketch_files": {
+    "speaker.ino": {
+      "path": "devices/stackchan/arduino-docs/speaker/sketch/speaker/speaker.ino",
+      "storage": "public",
+      "sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "bytes": 524
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/speaker/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "a5b12d7d17c04a6bfaef969d27d2a2ab0ea520cd948bbffb77674cb666f5078e",
+      "bytes": 584480
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/speaker/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/speaker/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/speaker/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "13badd40a80d4ab5db554048a1001ce3c26b05851f648ce15287323d5ed37de6",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/speaker/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "ac2826f227c1587522714d3e9649cf09b7a7df31360dfffcf432a961b9a32e8c",
+      "bytes": 12471812
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "11238ba9c7acb410c18eceed6d7c8057c3bef5aeb5c4946853397a75a1affa08",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "13badd40a80d4ab5db554048a1001ce3c26b05851f648ce15287323d5ed37de6",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "I²S speaker emitted both documented frequency bands",
+          "expected": "StackChan Speaker. Verify the emitted tones or raw PCM on the board audio route."
+        },
+        "capture_comparison": {
+          "speaker.png": {
+            "original": {
+              "png_sha256": "1345c5eaffe1d9561c678cf294843ab45d657434d485d294f5247ac2350e7eea"
+            },
+            "rebuilt": {
+              "png_sha256": "1345c5eaffe1d9561c678cf294843ab45d657434d485d294f5247ac2350e7eea"
+            },
+            "byte_identical": true
+          },
+          "speaker.wav": {
+            "original": {
+              "wav_sha256": "b7ffae198b05781a990caa3d73b1c8ccbc7eef733650ad7e33c51067308f703f",
+              "pcm_sha256": "91eaa9e4e256baebfe8d3c3175bc8e1c4510b1c5dd8b5326ac3ea4356dffffb6",
+              "frames": 354291,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "98c38b8b4d861fe297fac99ce178d7e8c6d339bb851d77e9a9f9d33fbced4ee7",
+              "pcm_sha256": "69589983f3e5c8d7b0eb064f939912b20be04b1650674e797f0f6b99a3d8fe5f",
+              "frames": 354291,
+              "sample_rate": 48000
+            },
+            "byte_identical": false
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (305 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (855 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2074 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

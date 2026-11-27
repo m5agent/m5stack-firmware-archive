@@ -1,0 +1,139 @@
+{
+  "device_id": "stackchan",
+  "case": "ir_nec",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/ir_nec",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/ir_nec.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 12
+  },
+  "sketch_sha256": "c2480cef0f4597e6a8b3a3f3e91b3e36e186f6647298552c9c7c3996719dab71",
+  "expected_behavior": "StackChan IR Infrared Communication. Verify address/command and timing on the actual NEC waveform or receiver input.",
+  "sketch_files": {
+    "ir_nec.ino": {
+      "path": "devices/stackchan/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino",
+      "storage": "public",
+      "sha256": "c2480cef0f4597e6a8b3a3f3e91b3e36e186f6647298552c9c7c3996719dab71",
+      "bytes": 3698
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/ir_nec/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "df07f08fee3c9dbcd559b1e6282f7a4b973d4449fb25341ba9d065ec9a985695",
+      "bytes": 616624
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/ir_nec/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/ir_nec/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/ir_nec/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ab3a84b75f46fe23d1b58383858c71e1362a0cc7f5ec377d1ebe20577255d6d7",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/ir_nec/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "4690a906c3f41b540198d8cd8c656e716495a55c6b1d82ebf120cee859fd04e8",
+      "bytes": 13663036
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "bf86d0dfcd44d183861808e9d9c7a6620798d3b8e727e3e2a6c27a0071b725f7",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ab3a84b75f46fe23d1b58383858c71e1362a0cc7f5ec377d1ebe20577255d6d7",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "GPIO carrier delivered two valid NEC frames",
+          "expected": "StackChan IR Infrared Communication. Verify address/command and timing on the actual NEC waveform or receiver input."
+        },
+        "capture_comparison": {
+          "ir_nec.png": {
+            "original": {
+              "png_sha256": "b76325484ea86b07fca0aec7c8088d6afd069d49c352c8bed88f51089f285371"
+            },
+            "rebuilt": {
+              "png_sha256": "b76325484ea86b07fca0aec7c8088d6afd069d49c352c8bed88f51089f285371"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (305 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (179 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (847 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2044 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

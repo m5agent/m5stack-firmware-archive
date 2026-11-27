@@ -8195,6 +8195,838 @@
           "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
         ]
       }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/battery.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "7db184ac2cd14c370d67d3e28479e85d98f9e24abf81576c51b3416ec053761f",
+      "manifest": "devices/stackchan/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "6900044ee3eece1c4f6c1d3ebf016ee9d66367fa35b604de145df6f8f3e8b478",
+      "original_build": {
+        "firmware_sha256": "dfb1ea5f77428dc9fc3923cabd5f2120768f218d7bf6fa6b330b27a93c8b10dc",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/button.md",
+        "section": "Build Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+      "manifest": "devices/stackchan/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "44a3c9a60a94a5425b6a456d47fddcc410931822ee3000db49da9d790d662b58",
+      "original_build": {
+        "firmware_sha256": "629f38f0099ad8a048d8258c352c180f586e9be0f20cb0f5cdd47e3d157e88b0",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "camera",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/camera",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/camera.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "613d22246775e1cc1c07a4aaed13a897bef83e085f666f1f69d75a14b2529cab",
+      "manifest": "devices/stackchan/arduino-docs/camera/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "faf5d2051aa1ec02536f03b4cd8d503ce38eff71cd00577b234e227c5d4c2e26",
+      "original_build": {
+        "firmware_sha256": "1c8135dc04034797d774ba83f6f412ab0f8392a6c71f1d9a0666d7f76c6b3144",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/display.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "manifest": "devices/stackchan/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "5e4b5ea08b398396f7d1accec14df2e4f5c711ee3f73476e247a51b870603215",
+      "original_build": {
+        "firmware_sha256": "08207782837f37b1a2f5441bae56cd2f3c616631bfb3463d2604fe837a69ccd2",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "imu",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/imu.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "manifest": "devices/stackchan/arduino-docs/imu/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "28644bf6f8538ebe06675154a7c1bc12a613725f3d211b9bc7c8de7ba345ed88",
+      "original_build": {
+        "firmware_sha256": "c78f1c0f9caa66c096c744bd6e995c68d2767d700d80eaf0a55bca82f50441ab",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 12
+      },
+      "sketch_sha256": "c2480cef0f4597e6a8b3a3f3e91b3e36e186f6647298552c9c7c3996719dab71",
+      "manifest": "devices/stackchan/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ab3a84b75f46fe23d1b58383858c71e1362a0cc7f5ec377d1ebe20577255d6d7",
+      "original_build": {
+        "firmware_sha256": "bf86d0dfcd44d183861808e9d9c7a6620798d3b8e727e3e2a6c27a0071b725f7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "ltr553",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/ltr553",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/ltr553.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "manifest": "devices/stackchan/arduino-docs/ltr553/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ade222ce1cd7dfadd9d7717fe8a1213e8d8939979c0cf999cfaaa66184e27233",
+      "original_build": {
+        "firmware_sha256": "a4c29eeca65e774c517358a73a5227d5453794013f9ec18444234193f9b851ec",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/mic.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "manifest": "devices/stackchan/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "105c273bd254d6ce29cda5da2f2b6a6859a474021190c3792e79a781f4d5cb55",
+      "original_build": {
+        "firmware_sha256": "0a54dee47b884d943c8bf602fac27d75580024c48a62ef6c02d7339d21756512",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "nfc-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+        "section": "Quick Scan Identification",
+        "code_first_line": 107
+      },
+      "sketch_sha256": "6594e2d67f6a36ed58df4d75fdaec3d9d02383c13385d3e05b98bd976334b8f3",
+      "manifest": "devices/stackchan/arduino-docs/nfc-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "45171cd101a38a3862d99ee50e7a59f0021a6054643e6bb6eaaf81afe5e46e08",
+      "original_build": {
+        "firmware_sha256": "e5186f23b5ee44c340515d69d351c8780cc250e9ebe61c100558e95b6d20e4f4",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "nfc-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+        "section": "Complete Data Reading",
+        "code_first_line": 205
+      },
+      "sketch_sha256": "c27402c35d8ca67d7a5df8fd188ec6a9ff719277f1e7ab5543e4319e2fc6b5a2",
+      "manifest": "devices/stackchan/arduino-docs/nfc-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a1a6509751e255b9c291465991dcaf92d3058d178ac9c491484833fff67ecde7",
+      "original_build": {
+        "firmware_sha256": "641734b97cce0d940ee98bd7247c2e14dee6039c6ea21688a1da4e2122f4b3c3",
+        "verdict": "DOCS-DEFECT",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "DOCS-DEFECT",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "nfc-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+        "section": "Tag Emulation",
+        "code_first_line": 373
+      },
+      "sketch_sha256": "dabf91a02a089f23407d64a78c0018e380546ded32ea7c246b1b12ace265e734",
+      "manifest": "devices/stackchan/arduino-docs/nfc-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "5f5273302c3efaba69c547f7704d16d9dbf69dfb7a211ebc6d85198ca749c344",
+      "original_build": {
+        "firmware_sha256": "62316a840164093954a168550efff4669c79dd0009b4819da63b6c097985cca7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "nfc-4",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+        "section": "Direct Card Reading and Writing",
+        "code_first_line": 643
+      },
+      "sketch_sha256": "b1cde9b85bedcaafffd4f91202a7862bca8fea346f70564aceeb9cc2e6a5531e",
+      "manifest": "devices/stackchan/arduino-docs/nfc-4/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "d3664c72bd40f44477ae3db2dd76e32c667693ee387b115f689e66ac7f2bae56",
+      "original_build": {
+        "firmware_sha256": "b3dbc78ff658eea7687130e85f5e60f79aaf384d76959e894afd73c0b25f40bc",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "nfc-5",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+        "section": "NDEF Format Card Reading and Writing",
+        "code_first_line": 925
+      },
+      "sketch_sha256": "5670727e662d6c018ce9b18405c637d9b4c9a89317dd7d0148127d480cebbfb2",
+      "manifest": "devices/stackchan/arduino-docs/nfc-5/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "126b3f9e03ef6e0d82b5cccedb3d044b11c9f10b4e53feb71d624015d9f110ed",
+      "original_build": {
+        "firmware_sha256": "9eca708b13db6e8126c51b2413386c05bb1aa0b87aa2989ad82ab4faac8758b3",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "nfc-6",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/nfc.md",
+        "section": "Code",
+        "code_first_line": 1312
+      },
+      "sketch_sha256": "072ce1be795d4eed45f51363d05a72def128e6fe3e1ad4a9156b9caef0c947e5",
+      "manifest": "devices/stackchan/arduino-docs/nfc-6/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "55246b997e6f29b5bc93361ad67f1aa6025a434d7b2ccb0dd04e2bf4a9b44dab",
+      "original_build": {
+        "firmware_sha256": "5f54137633a83b2512481d94566d9cdfb02b6586f46cb6a886ae2f2abbeec6e7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "pic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/pic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/pic.md",
+        "section": "Build Requirements",
+        "code_first_line": 12
+      },
+      "sketch_sha256": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+      "manifest": "devices/stackchan/arduino-docs/pic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b3baf3b52ca6548e7a061cb9322a76b5a5906f50849f062fed64d707ad9a1b7b",
+      "original_build": {
+        "firmware_sha256": "8ebbd4137dd74d7148ed598fe5007e3e3a18cb580364e9eeea3ee7db9caba91e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "rgb",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/rgb",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/rgb.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 11
+      },
+      "sketch_sha256": "480dcc6b2b32e27bb43ecf0e0ec02de7d926f29417a63b40f2ade6efb2581399",
+      "manifest": "devices/stackchan/arduino-docs/rgb/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a79bdbcc89ca26e5de3b87d24ae573b29dd727b4bf62e205d484b11f632d7dd4",
+      "original_build": {
+        "firmware_sha256": "0a5e7d65a0be9a7ab08b7b7a81c96dee3a6b0a207afbf4b9a743511fa8aef854",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "rtc",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/rtc.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "manifest": "devices/stackchan/arduino-docs/rtc/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "049c07bd57ba654ca78dccae3f3310e20ffade2240b87bcb2580a50b539a1244",
+      "original_build": {
+        "firmware_sha256": "c87fa8b1d1615297d362a17c3b29e33973540495950cc60f9b3af97a4cb41542",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "sdcard",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/sdcard",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/sdcard.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "8fda97dc43c02781600c2a32bfd5f2d7e4722646c82cf1f5a1046952de8ec93c",
+      "manifest": "devices/stackchan/arduino-docs/sdcard/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8e8fc425858858880b80f5b6df60d9d64c02650fa5cf21e2f80757fbf1abafea",
+      "original_build": {
+        "firmware_sha256": "b1cf969db7586d05ed5dee4e2177c7a08e05b766ad9bcbe6d4aef84528baa87f",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "servo-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/servo",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/servo.md",
+        "section": "Calibration",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "add84ce5ff41a75e389f55386d0639539da37bd44111697e8ec8bd8f48bab54d",
+      "manifest": "devices/stackchan/arduino-docs/servo-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "87ee92e5a4f91214c449616802344e56097acb1d16e143c1c486446e4a55120a",
+      "original_build": {
+        "firmware_sha256": "1e680b232c6a99aac344340a3064ebdb78d7c02af51447298a9bb6f0bf5bbde8",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "servo-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/servo",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/servo.md",
+        "section": "Servo Control",
+        "code_first_line": 125
+      },
+      "sketch_sha256": "76aa1a352c55922b7439e8dcca5e204976652dcf2eaa0406603cf6424ccef704",
+      "manifest": "devices/stackchan/arduino-docs/servo-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9d0e3639aab9ad81b15bc5b3e242c10bc3c11c80b11028809d2c980dd481b97e",
+      "original_build": {
+        "firmware_sha256": "e8dad195cc59598722b1f8fbb6517b4f93b5c3d3a89eeb950bfbaf8564a7d968",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/speaker.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "manifest": "devices/stackchan/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "13badd40a80d4ab5db554048a1001ce3c26b05851f648ce15287323d5ed37de6",
+      "original_build": {
+        "firmware_sha256": "11238ba9c7acb410c18eceed6d7c8057c3bef5aeb5c4946853397a75a1affa08",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "touch",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/touch.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "38bc2916a6c7d0180ab19116c38a7b16bd9b714944b604cd98ffd96c10cd74da",
+      "manifest": "devices/stackchan/arduino-docs/touch/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "7497a0620f6714f668973a0f78479c74577b214b92226a0323f3f2baeac21c4e",
+      "original_build": {
+        "firmware_sha256": "2deea8fdd92a8565c5f785d5746a73aa21cb0b51a9857efce261e306462e22da",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "touchsensor",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/touchsensor",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/touchsensor.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 11
+      },
+      "sketch_sha256": "3077e71babdbf696e7c7613be5e5f8e4f0f416dbdab374502e972ace9adea85b",
+      "manifest": "devices/stackchan/arduino-docs/touchsensor/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8ee8f928e35b92d673c1e357c6b1f3f2227fe96a01a9e0e1d01fa385e1ee6996",
+      "original_build": {
+        "firmware_sha256": "27830904d7fd72a8495d6c46ca4eccf65274a846678c31c69956d54b389867a3",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "wakeup",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/wakeup.md",
+        "section": "Build Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "b2d7fb62d209af8058bd1c55e9dc63633f4548b3b343b7f85b2d6f3ea08db2ea",
+      "manifest": "devices/stackchan/arduino-docs/wakeup/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "255b42da1866ab99155d64096ec2e95a1b981ca3c474941fadd920d606749f84",
+      "original_build": {
+        "firmware_sha256": "9656bf138503f0c0061a5ee07554f651329fad7b6e82abe700f87df0d8f934b4",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "wav",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/wav",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/wav.md",
+        "section": "Build Requirements",
+        "code_first_line": 12
+      },
+      "sketch_sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+      "manifest": "devices/stackchan/arduino-docs/wav/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "775f9eb63c34fa39f091196b7936e0511e8afa401be89ac0ae0be9e65f823017",
+      "original_build": {
+        "firmware_sha256": "863b78c35e9a593bd6bc8e1e5e3a8a0f6f4fd29862b2f0dd6a6fda82a3cd3d8f",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
+    },
+    {
+      "device_id": "stackchan",
+      "case": "quickstart-rgb",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stackchan/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 27
+      },
+      "sketch_sha256": "bb8facc87eb9f6795e2f91b37b03d873419138efa11691246a9a3e6306e9ebeb",
+      "manifest": "devices/stackchan/arduino-docs/quickstart-rgb/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "789c0690be360cae9853510ddc21acd2be90f55687bbb7a235b2c2ff4f0c93a1",
+      "original_build": {
+        "firmware_sha256": "437f10330d4e7590e32556a35495537c1292ce5da73ccfc4a141ca4c3968d814",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stackchan"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+        ]
+      }
     }
   ],
   "public_files": {
@@ -15083,6 +15915,742 @@
     "devices/stamplc/arduino-docs/quickstart-display/firmware.json": {
       "sha256": "8caefa3d9ed5140fd821a886b0652fc21f3217d0e70ee47392a1cbb5779ccdc9",
       "bytes": 5943
+    },
+    "devices/stackchan/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "7db184ac2cd14c370d67d3e28479e85d98f9e24abf81576c51b3416ec053761f",
+      "bytes": 654
+    },
+    "devices/stackchan/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "78a419fbc1b3b2f2ab68df4f4847b02f77e3c2dcd4c6fb2c7329849f3c49c8b4",
+      "bytes": 602336
+    },
+    "devices/stackchan/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "6900044ee3eece1c4f6c1d3ebf016ee9d66367fa35b604de145df6f8f3e8b478",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "8ea81cd45a95c50ac74329114027c61c7c83089ba5c6ffe6f8c39e8e1295f7b2",
+      "bytes": 13352104
+    },
+    "devices/stackchan/arduino-docs/battery/firmware.json": {
+      "sha256": "35ed1727df41fe128e4dd4161ec94645971451558541163c5170e29a397c07d6",
+      "bytes": 7009
+    },
+    "devices/stackchan/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+      "bytes": 571
+    },
+    "devices/stackchan/arduino-docs/button/migration.ino.bin": {
+      "sha256": "bb1a6b5f3d62fe558598704e79f7ff07a8e0264ba4160acea9f2dd037c389c41",
+      "bytes": 565952
+    },
+    "devices/stackchan/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "44a3c9a60a94a5425b6a456d47fddcc410931822ee3000db49da9d790d662b58",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/button/migration.ino.elf": {
+      "sha256": "14c3e01d89f3318465cc681dd2d62eda052f45c6dfb307156c25585bde9a38cf",
+      "bytes": 12260512
+    },
+    "devices/stackchan/arduino-docs/button/firmware.json": {
+      "sha256": "d645bc923c6bb2c7b8b2823807a6131f47e2c008ec655ca45f3e60ea7a89f481",
+      "bytes": 6511
+    },
+    "devices/stackchan/arduino-docs/camera/sketch/camera/camera.ino": {
+      "sha256": "613d22246775e1cc1c07a4aaed13a897bef83e085f666f1f69d75a14b2529cab",
+      "bytes": 1904
+    },
+    "devices/stackchan/arduino-docs/camera/migration.ino.bin": {
+      "sha256": "8b146956f3f195e4424cfc41a4d3e2291dc98fe53111c01b2204f2fa323f4957",
+      "bytes": 616048
+    },
+    "devices/stackchan/arduino-docs/camera/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/camera/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/camera/migration.ino.merged.bin": {
+      "sha256": "faf5d2051aa1ec02536f03b4cd8d503ce38eff71cd00577b234e227c5d4c2e26",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/camera/migration.ino.elf": {
+      "sha256": "39fdee733ddf5fed0c18dbff7f0aacc67ddbd9645dada9d184923cab587c2937",
+      "bytes": 12795304
+    },
+    "devices/stackchan/arduino-docs/camera/firmware.json": {
+      "sha256": "1e8408959296cc1d07d031a0b646c1d38349b64d0a71c0b4510afa2854dad921",
+      "bytes": 6547
+    },
+    "devices/stackchan/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "bytes": 716
+    },
+    "devices/stackchan/arduino-docs/display/migration.ino.bin": {
+      "sha256": "1ab5e704c0652311246cb2f149787070d144aabff9e5d8a990f8e0a1f894fec0",
+      "bytes": 560272
+    },
+    "devices/stackchan/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "5e4b5ea08b398396f7d1accec14df2e4f5c711ee3f73476e247a51b870603215",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/display/migration.ino.elf": {
+      "sha256": "33d504a7d6f0d1a7754e5544a88cd2dfdb017879290136e0ee0d9994565c3fa4",
+      "bytes": 12255980
+    },
+    "devices/stackchan/arduino-docs/display/firmware.json": {
+      "sha256": "e511452346d694fc9d9cc95e8b415712eae260391fc5024828f6424517b46438",
+      "bytes": 6181
+    },
+    "devices/stackchan/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "bytes": 1754
+    },
+    "devices/stackchan/arduino-docs/imu/migration.ino.bin": {
+      "sha256": "20d2fa0085a24f748c6381a5bacf6c8ffd9bd0f2be2ba6d6253ead03f614cf09",
+      "bytes": 564224
+    },
+    "devices/stackchan/arduino-docs/imu/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/imu/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/imu/migration.ino.merged.bin": {
+      "sha256": "28644bf6f8538ebe06675154a7c1bc12a613725f3d211b9bc7c8de7ba345ed88",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/imu/migration.ino.elf": {
+      "sha256": "c4b8cc99324acc3faaa055b3c1c27e9e3f98bca6977e4706c54184df40c85d94",
+      "bytes": 12266268
+    },
+    "devices/stackchan/arduino-docs/imu/firmware.json": {
+      "sha256": "e0485551f68896d4030a847e250196fe43f8f24b9ecff424a605ea7a7cbde9b6",
+      "bytes": 6854
+    },
+    "devices/stackchan/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "c2480cef0f4597e6a8b3a3f3e91b3e36e186f6647298552c9c7c3996719dab71",
+      "bytes": 3698
+    },
+    "devices/stackchan/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "df07f08fee3c9dbcd559b1e6282f7a4b973d4449fb25341ba9d065ec9a985695",
+      "bytes": 616624
+    },
+    "devices/stackchan/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "ab3a84b75f46fe23d1b58383858c71e1362a0cc7f5ec377d1ebe20577255d6d7",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "4690a906c3f41b540198d8cd8c656e716495a55c6b1d82ebf120cee859fd04e8",
+      "bytes": 13663036
+    },
+    "devices/stackchan/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "4e6ee63099252459ede6de28ef002540fdc04227ac9af74f24ed65b0b4790741",
+      "bytes": 6180
+    },
+    "devices/stackchan/arduino-docs/ltr553/sketch/ltr553/ltr553.ino": {
+      "sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "bytes": 1812
+    },
+    "devices/stackchan/arduino-docs/ltr553/sketch/ltr553/LTR5XX.cpp": {
+      "sha256": "41e97352566f0e31b5720afcff0d15bbc30e92e9e6bbccca2ee4aa6364729208",
+      "bytes": 13978
+    },
+    "devices/stackchan/arduino-docs/ltr553/sketch/ltr553/LTR5XX.h": {
+      "sha256": "97101fc4414f5aa25ae592cf9131ffadcc7f0f4949e6a65a4ffb6d9ce12d92ec",
+      "bytes": 11960
+    },
+    "devices/stackchan/arduino-docs/ltr553/migration.ino.bin": {
+      "sha256": "5a3c3edc92e2f2716c03f360bacb0f74cc2278b28ebc178bc95cc99338e453bb",
+      "bytes": 567520
+    },
+    "devices/stackchan/arduino-docs/ltr553/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/ltr553/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/ltr553/migration.ino.merged.bin": {
+      "sha256": "ade222ce1cd7dfadd9d7717fe8a1213e8d8939979c0cf999cfaaa66184e27233",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/ltr553/migration.ino.elf": {
+      "sha256": "0f4c6cf10a206b4c348717f9430184852c9f6160f3dfef9d86198bf9037f7169",
+      "bytes": 12329728
+    },
+    "devices/stackchan/arduino-docs/ltr553/firmware.json": {
+      "sha256": "3af33e373603aef52b0d7b6ae1fb42816e64f11df3d69e24fd44beeb96e391f3",
+      "bytes": 7517
+    },
+    "devices/stackchan/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "bytes": 4740
+    },
+    "devices/stackchan/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "e457804d7117bb2b1954cd8a9a6899acdba36bd2f225ab4cabe26e99d0ba1164",
+      "bytes": 594176
+    },
+    "devices/stackchan/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "105c273bd254d6ce29cda5da2f2b6a6859a474021190c3792e79a781f4d5cb55",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "53397495ff591eb411802092c726bb94244a612f5a396c131b5d3ffac620fd11",
+      "bytes": 12562328
+    },
+    "devices/stackchan/arduino-docs/mic/firmware.json": {
+      "sha256": "cb3052b751cbebec04861959083cd99a9fe9dd0fa723b113f4e3220a1e810363",
+      "bytes": 8911
+    },
+    "devices/stackchan/arduino-docs/nfc-1/sketch/nfc_1/nfc_1.ino": {
+      "sha256": "6594e2d67f6a36ed58df4d75fdaec3d9d02383c13385d3e05b98bd976334b8f3",
+      "bytes": 3023
+    },
+    "devices/stackchan/arduino-docs/nfc-1/migration.ino.bin": {
+      "sha256": "84cf99eb7bc6c156fe98ed7dd417ce409d0e077996a3263a7dc7ffd394ccf016",
+      "bytes": 744448
+    },
+    "devices/stackchan/arduino-docs/nfc-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/nfc-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/nfc-1/migration.ino.merged.bin": {
+      "sha256": "45171cd101a38a3862d99ee50e7a59f0021a6054643e6bb6eaaf81afe5e46e08",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/nfc-1/migration.ino.elf": {
+      "sha256": "bce2f5ecf6890b1d23ef3b98d0637d42a153c1a65c975ba9894b43f6d86009c4",
+      "bytes": 20099328
+    },
+    "devices/stackchan/arduino-docs/nfc-1/firmware.json": {
+      "sha256": "10398680646f72c76c14efb0aabbb77223d05decf8c98920e035e3c494167462",
+      "bytes": 6563
+    },
+    "devices/stackchan/arduino-docs/nfc-2/sketch/nfc_2/nfc_2.ino": {
+      "sha256": "c27402c35d8ca67d7a5df8fd188ec6a9ff719277f1e7ab5543e4319e2fc6b5a2",
+      "bytes": 2874
+    },
+    "devices/stackchan/arduino-docs/nfc-2/migration.ino.bin": {
+      "sha256": "e3257da5952715b60c00091101c43ae8bb65bf98f4b82f93dc1b0358f6820a2f",
+      "bytes": 707408
+    },
+    "devices/stackchan/arduino-docs/nfc-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/nfc-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/nfc-2/migration.ino.merged.bin": {
+      "sha256": "a1a6509751e255b9c291465991dcaf92d3058d178ac9c491484833fff67ecde7",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/nfc-2/migration.ino.elf": {
+      "sha256": "1def265a82b6799a0b6a5a209c862215af898503f34c4e512d00711546783cc8",
+      "bytes": 19032564
+    },
+    "devices/stackchan/arduino-docs/nfc-2/firmware.json": {
+      "sha256": "fc51a47e79da9c0cc705cc66f92d4fcda1b932fc5157507f978fd3e69311ce53",
+      "bytes": 6829
+    },
+    "devices/stackchan/arduino-docs/nfc-3/sketch/nfc_3/nfc_3.ino": {
+      "sha256": "dabf91a02a089f23407d64a78c0018e380546ded32ea7c246b1b12ace265e734",
+      "bytes": 9116
+    },
+    "devices/stackchan/arduino-docs/nfc-3/migration.ino.bin": {
+      "sha256": "1e621f8b575c772a477208942cd5fcce91b5f79a81ae20e61e1b8c1281b49390",
+      "bytes": 702560
+    },
+    "devices/stackchan/arduino-docs/nfc-3/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/nfc-3/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/nfc-3/migration.ino.merged.bin": {
+      "sha256": "5f5273302c3efaba69c547f7704d16d9dbf69dfb7a211ebc6d85198ca749c344",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/nfc-3/migration.ino.elf": {
+      "sha256": "8def0f540d94a4c2566889d47ee7e97bdb1d190cd0a52fe1ef6f7df0f8540773",
+      "bytes": 19917508
+    },
+    "devices/stackchan/arduino-docs/nfc-3/firmware.json": {
+      "sha256": "8d199e0af73cc54aae03a6b80eabc837ee4dd0edf3ee19deff766d1e0873e141",
+      "bytes": 6556
+    },
+    "devices/stackchan/arduino-docs/nfc-4/sketch/nfc_4/nfc_4.ino": {
+      "sha256": "b1cde9b85bedcaafffd4f91202a7862bca8fea346f70564aceeb9cc2e6a5531e",
+      "bytes": 8260
+    },
+    "devices/stackchan/arduino-docs/nfc-4/migration.ino.bin": {
+      "sha256": "9f289434948c30d06c4fdb08bbc621f3f568d4bfce2da8350154d67a2ae277b3",
+      "bytes": 746816
+    },
+    "devices/stackchan/arduino-docs/nfc-4/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/nfc-4/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/nfc-4/migration.ino.merged.bin": {
+      "sha256": "d3664c72bd40f44477ae3db2dd76e32c667693ee387b115f689e66ac7f2bae56",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/nfc-4/migration.ino.elf": {
+      "sha256": "be3ba45b2176323484b213b4c3db81ce98ccc34cab28b3379f547b210f749e01",
+      "bytes": 20248880
+    },
+    "devices/stackchan/arduino-docs/nfc-4/firmware.json": {
+      "sha256": "79e0c76c0f6e28fe1b0b7d0fc989e7831e8b4fc2efd94db54f5d14651fafdbdf",
+      "bytes": 6578
+    },
+    "devices/stackchan/arduino-docs/nfc-5/sketch/nfc_5/nfc_5.ino": {
+      "sha256": "5670727e662d6c018ce9b18405c637d9b4c9a89317dd7d0148127d480cebbfb2",
+      "bytes": 14010
+    },
+    "devices/stackchan/arduino-docs/nfc-5/migration.ino.bin": {
+      "sha256": "8135a1a542d35c4b951b630fe319ec2253e537158a13c54e8b746fd025009a08",
+      "bytes": 768400
+    },
+    "devices/stackchan/arduino-docs/nfc-5/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/nfc-5/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/nfc-5/migration.ino.merged.bin": {
+      "sha256": "126b3f9e03ef6e0d82b5cccedb3d044b11c9f10b4e53feb71d624015d9f110ed",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/nfc-5/migration.ino.elf": {
+      "sha256": "fce277ebf6802e0cac0503623b1f3d7412ca432be2fe3e72d50ade60ac76b1bd",
+      "bytes": 20315724
+    },
+    "devices/stackchan/arduino-docs/nfc-5/firmware.json": {
+      "sha256": "842518b0673b25e5b5d6cf0f7f75cda7233bcf0e5d8a8099e178f69c81e97344",
+      "bytes": 6224
+    },
+    "devices/stackchan/arduino-docs/nfc-6/sketch/nfc_6/nfc_6.ino": {
+      "sha256": "072ce1be795d4eed45f51363d05a72def128e6fe3e1ad4a9156b9caef0c947e5",
+      "bytes": 16452
+    },
+    "devices/stackchan/arduino-docs/nfc-6/migration.ino.bin": {
+      "sha256": "204630f4016327e42aa874d076e83665254566271035bac9c64da689615b4ac0",
+      "bytes": 748832
+    },
+    "devices/stackchan/arduino-docs/nfc-6/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/nfc-6/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/nfc-6/migration.ino.merged.bin": {
+      "sha256": "55246b997e6f29b5bc93361ad67f1aa6025a434d7b2ccb0dd04e2bf4a9b44dab",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/nfc-6/migration.ino.elf": {
+      "sha256": "b3bdf458d316372d72147ae29bd48476d4b080e14fd3a5eab9e7d1f2c6ff4842",
+      "bytes": 20248856
+    },
+    "devices/stackchan/arduino-docs/nfc-6/firmware.json": {
+      "sha256": "c6f6f49f1b4e9f954688b3ba8134a69d73cec0786436dd3de163982d6c5a4b8e",
+      "bytes": 6566
+    },
+    "devices/stackchan/arduino-docs/pic/sketch/pic/pic.ino": {
+      "sha256": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+      "bytes": 1657
+    },
+    "devices/stackchan/arduino-docs/pic/migration.ino.bin": {
+      "sha256": "3aec8a29f2566854fcc0f35e1ebecea3fc17707750c037cd6618dab6b3614344",
+      "bytes": 619344
+    },
+    "devices/stackchan/arduino-docs/pic/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/pic/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/pic/migration.ino.merged.bin": {
+      "sha256": "b3baf3b52ca6548e7a061cb9322a76b5a5906f50849f062fed64d707ad9a1b7b",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/pic/migration.ino.elf": {
+      "sha256": "476ab3542d8ab32c78dcfd811f3c83695805a2458df4a72b245d616d881fbe91",
+      "bytes": 12990084
+    },
+    "devices/stackchan/arduino-docs/pic/firmware.json": {
+      "sha256": "e9581caab3b986655aeac3c2e60cb55a30a1bb343350f37c1de1bc804fc86172",
+      "bytes": 6484
+    },
+    "devices/stackchan/arduino-docs/rgb/sketch/rgb/rgb.ino": {
+      "sha256": "480dcc6b2b32e27bb43ecf0e0ec02de7d926f29417a63b40f2ade6efb2581399",
+      "bytes": 769
+    },
+    "devices/stackchan/arduino-docs/rgb/migration.ino.bin": {
+      "sha256": "39315820599483c9dc21140cd22370f4a7b3c817cd97d31e2365ea178daf9108",
+      "bytes": 597392
+    },
+    "devices/stackchan/arduino-docs/rgb/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/rgb/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/rgb/migration.ino.merged.bin": {
+      "sha256": "a79bdbcc89ca26e5de3b87d24ae573b29dd727b4bf62e205d484b11f632d7dd4",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/rgb/migration.ino.elf": {
+      "sha256": "5fecbf1ec3af6e7aa60ab60eb291e25f64b85e35fab63bc5735c49b3dd20984f",
+      "bytes": 13354104
+    },
+    "devices/stackchan/arduino-docs/rgb/firmware.json": {
+      "sha256": "058e0993f6adb8ea4f201c9b5f3d4f9e1610b902e2e97ea3c486cad3059c3854",
+      "bytes": 6114
+    },
+    "devices/stackchan/arduino-docs/rtc/sketch/rtc/rtc.ino": {
+      "sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "bytes": 4029
+    },
+    "devices/stackchan/arduino-docs/rtc/migration.ino.bin": {
+      "sha256": "953050cf435175ed012529892faf9e8ced0ea86a51fafaa673b3df9820ab1dad",
+      "bytes": 1118304
+    },
+    "devices/stackchan/arduino-docs/rtc/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/rtc/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/rtc/migration.ino.merged.bin": {
+      "sha256": "049c07bd57ba654ca78dccae3f3310e20ffade2240b87bcb2580a50b539a1244",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/rtc/migration.ino.elf": {
+      "sha256": "82b3ac66a4e46be7a57015e709172d678e18f8e5329e85cb44573a38734221fb",
+      "bytes": 17630816
+    },
+    "devices/stackchan/arduino-docs/rtc/firmware.json": {
+      "sha256": "ff8ace37be2737d2f691df28af0e0eed04315afaca2dcd5cfcfb3f0167635809",
+      "bytes": 6188
+    },
+    "devices/stackchan/arduino-docs/sdcard/sketch/sdcard/sdcard.ino": {
+      "sha256": "8fda97dc43c02781600c2a32bfd5f2d7e4722646c82cf1f5a1046952de8ec93c",
+      "bytes": 1517
+    },
+    "devices/stackchan/arduino-docs/sdcard/migration.ino.bin": {
+      "sha256": "cadc968f648dbe483bf1cc582721e0caebf128a3a200d41d28933b2d45e5fcb6",
+      "bytes": 618320
+    },
+    "devices/stackchan/arduino-docs/sdcard/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/sdcard/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/sdcard/migration.ino.merged.bin": {
+      "sha256": "8e8fc425858858880b80f5b6df60d9d64c02650fa5cf21e2f80757fbf1abafea",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/sdcard/migration.ino.elf": {
+      "sha256": "87a38e423a8e5bc6e3ce3d5d4258fd40d6f7985e7ca63fc1268eb6097559f0b6",
+      "bytes": 12992184
+    },
+    "devices/stackchan/arduino-docs/sdcard/firmware.json": {
+      "sha256": "43eb77e6d4759b36a74a1beced8cef908b53545a25aea92da992785377078077",
+      "bytes": 6542
+    },
+    "devices/stackchan/arduino-docs/servo-1/sketch/servo_1/servo_1.ino": {
+      "sha256": "add84ce5ff41a75e389f55386d0639539da37bd44111697e8ec8bd8f48bab54d",
+      "bytes": 3278
+    },
+    "devices/stackchan/arduino-docs/servo-1/migration.ino.bin": {
+      "sha256": "286c050dc6ca2ea7d05070527f632c52c5f92b77df983c7cf5c978a612e2ddde",
+      "bytes": 599856
+    },
+    "devices/stackchan/arduino-docs/servo-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/servo-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/servo-1/migration.ino.merged.bin": {
+      "sha256": "87ee92e5a4f91214c449616802344e56097acb1d16e143c1c486446e4a55120a",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/servo-1/migration.ino.elf": {
+      "sha256": "86933cbdcf889ab312dc85885ea1a34c3e347af4033cd45091f41a909f7c6106",
+      "bytes": 13361444
+    },
+    "devices/stackchan/arduino-docs/servo-1/firmware.json": {
+      "sha256": "2200790eee938101e4323848905d19c8ca3721174c425bdd642d58e38b3c76db",
+      "bytes": 6168
+    },
+    "devices/stackchan/arduino-docs/servo-2/sketch/servo_2/servo_2.ino": {
+      "sha256": "76aa1a352c55922b7439e8dcca5e204976652dcf2eaa0406603cf6424ccef704",
+      "bytes": 3041
+    },
+    "devices/stackchan/arduino-docs/servo-2/migration.ino.bin": {
+      "sha256": "252939b5f12f399844be7dc7c5b0607e839ac7ea68e704003c73432e7f668697",
+      "bytes": 599248
+    },
+    "devices/stackchan/arduino-docs/servo-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/servo-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/servo-2/migration.ino.merged.bin": {
+      "sha256": "9d0e3639aab9ad81b15bc5b3e242c10bc3c11c80b11028809d2c980dd481b97e",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/servo-2/migration.ino.elf": {
+      "sha256": "39776bf97ee1d34498ba7824c74e7f777b069c799c3a2e1fa19dc78133a9f990",
+      "bytes": 13347500
+    },
+    "devices/stackchan/arduino-docs/servo-2/firmware.json": {
+      "sha256": "ea2f33c2d57c157361e322dc946a7ccee6f500a9f4bdefa1cf04ca24e149e6f2",
+      "bytes": 6515
+    },
+    "devices/stackchan/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "bytes": 524
+    },
+    "devices/stackchan/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "a5b12d7d17c04a6bfaef969d27d2a2ab0ea520cd948bbffb77674cb666f5078e",
+      "bytes": 584480
+    },
+    "devices/stackchan/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "13badd40a80d4ab5db554048a1001ce3c26b05851f648ce15287323d5ed37de6",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "ac2826f227c1587522714d3e9649cf09b7a7df31360dfffcf432a961b9a32e8c",
+      "bytes": 12471812
+    },
+    "devices/stackchan/arduino-docs/speaker/firmware.json": {
+      "sha256": "b878b28e6d0840a8683d0394d7d66c2d714b7bbada13cb138cf075d9ef29823d",
+      "bytes": 6798
+    },
+    "devices/stackchan/arduino-docs/touch/sketch/touch/touch.ino": {
+      "sha256": "38bc2916a6c7d0180ab19116c38a7b16bd9b714944b604cd98ffd96c10cd74da",
+      "bytes": 1538
+    },
+    "devices/stackchan/arduino-docs/touch/migration.ino.bin": {
+      "sha256": "36dfd4bf36c07d28f0f574c875cd270ad15ae5daf8cff77fb89ae3da3ffd6609",
+      "bytes": 567200
+    },
+    "devices/stackchan/arduino-docs/touch/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/touch/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/touch/migration.ino.merged.bin": {
+      "sha256": "7497a0620f6714f668973a0f78479c74577b214b92226a0323f3f2baeac21c4e",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/touch/migration.ino.elf": {
+      "sha256": "daf8b4a2724b253a7136c84776f0fc60946c27dfb6bf6f0219232450c6e0618e",
+      "bytes": 12272436
+    },
+    "devices/stackchan/arduino-docs/touch/firmware.json": {
+      "sha256": "716412316637638b267b43567f8156b971b0a89b02967e0304d13bdcf18507a7",
+      "bytes": 6881
+    },
+    "devices/stackchan/arduino-docs/touchsensor/sketch/touchsensor/touchsensor.ino": {
+      "sha256": "3077e71babdbf696e7c7613be5e5f8e4f0f416dbdab374502e972ace9adea85b",
+      "bytes": 805
+    },
+    "devices/stackchan/arduino-docs/touchsensor/migration.ino.bin": {
+      "sha256": "fed824cf8318434feb456a158179b5334cfacf616dddf89cf793f5f947ea9cfe",
+      "bytes": 597936
+    },
+    "devices/stackchan/arduino-docs/touchsensor/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/touchsensor/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/touchsensor/migration.ino.merged.bin": {
+      "sha256": "8ee8f928e35b92d673c1e357c6b1f3f2227fe96a01a9e0e1d01fa385e1ee6996",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/touchsensor/migration.ino.elf": {
+      "sha256": "f110bb90ef07660023b3390a87281c083bee133ff0a2b4b950d4ba2e1f38a553",
+      "bytes": 13340104
+    },
+    "devices/stackchan/arduino-docs/touchsensor/firmware.json": {
+      "sha256": "8a94454966ea874f6b2b993825a56e6e314fa5ce0231f946edcf697fb2461c0d",
+      "bytes": 7042
+    },
+    "devices/stackchan/arduino-docs/wakeup/sketch/wakeup/wakeup.ino": {
+      "sha256": "b2d7fb62d209af8058bd1c55e9dc63633f4548b3b343b7f85b2d6f3ea08db2ea",
+      "bytes": 1076
+    },
+    "devices/stackchan/arduino-docs/wakeup/migration.ino.bin": {
+      "sha256": "91dd5483d98c3e20f2217278a4b4823dc3226761d8f33bbf73928bbf31d5cbfe",
+      "bytes": 580688
+    },
+    "devices/stackchan/arduino-docs/wakeup/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/wakeup/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/wakeup/migration.ino.merged.bin": {
+      "sha256": "255b42da1866ab99155d64096ec2e95a1b981ca3c474941fadd920d606749f84",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/wakeup/migration.ino.elf": {
+      "sha256": "ce66adadca7e5ed153508c0066fef8153b01a4d2dec1855439542fb1e354853a",
+      "bytes": 12386772
+    },
+    "devices/stackchan/arduino-docs/wakeup/firmware.json": {
+      "sha256": "84fa9145bfd28446eb902c53e729ab22e4093d9951e5e2c0ee7fe8a79ebbaba2",
+      "bytes": 6901
+    },
+    "devices/stackchan/arduino-docs/wav/sketch/wav/wav.ino": {
+      "sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+      "bytes": 6552
+    },
+    "devices/stackchan/arduino-docs/wav/migration.ino.bin": {
+      "sha256": "c3dfad2daa279cd548384ec3cf9e71df40f5e5d3f305fb59ee534614b683c2e9",
+      "bytes": 628064
+    },
+    "devices/stackchan/arduino-docs/wav/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/wav/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/wav/migration.ino.merged.bin": {
+      "sha256": "775f9eb63c34fa39f091196b7936e0511e8afa401be89ac0ae0be9e65f823017",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/wav/migration.ino.elf": {
+      "sha256": "4a340fba4bfc0ab0e111de1d48f40ea983665e15069434e382c089af9dc8a632",
+      "bytes": 13165364
+    },
+    "devices/stackchan/arduino-docs/wav/firmware.json": {
+      "sha256": "a16a90829a408720c8de6fe5de3b2db5695ae4b9144adac4520dc6b79c9c4f36",
+      "bytes": 6765
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/sketch/quickstart_rgb/quickstart_rgb.ino": {
+      "sha256": "bb8facc87eb9f6795e2f91b37b03d873419138efa11691246a9a3e6306e9ebeb",
+      "bytes": 890
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/migration.ino.bin": {
+      "sha256": "8c16603b226ba5c9a0d9d7dd64bfc91dd40e2af215d58e761870596daa7d92a2",
+      "bytes": 597392
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/migration.ino.merged.bin": {
+      "sha256": "789c0690be360cae9853510ddc21acd2be90f55687bbb7a235b2c2ff4f0c93a1",
+      "bytes": 16777216
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/migration.ino.elf": {
+      "sha256": "5c38879b4e1c5242d3509973d7d66c810ecac10581adfcb7beb5334ba6c3f33e",
+      "bytes": 13354104
+    },
+    "devices/stackchan/arduino-docs/quickstart-rgb/firmware.json": {
+      "sha256": "8e1625f75c8cd6a20412985e0e81662f770a2bdff32849705162f3e1ae1b21c9",
+      "bytes": 6340
     }
   },
   "local_files": {
@@ -15658,7 +17226,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 223,
+    "published_cases": 249,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

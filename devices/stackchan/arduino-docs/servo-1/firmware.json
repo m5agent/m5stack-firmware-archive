@@ -1,0 +1,139 @@
+{
+  "device_id": "stackchan",
+  "case": "servo-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/servo",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/servo.md",
+    "section": "Calibration",
+    "code_first_line": 7
+  },
+  "sketch_sha256": "add84ce5ff41a75e389f55386d0639539da37bd44111697e8ec8bd8f48bab54d",
+  "expected_behavior": "StackChan Servo. Command two positions and verify the position feedback over the board UART bus.",
+  "sketch_files": {
+    "servo_1.ino": {
+      "path": "devices/stackchan/arduino-docs/servo-1/sketch/servo_1/servo_1.ino",
+      "storage": "public",
+      "sha256": "add84ce5ff41a75e389f55386d0639539da37bd44111697e8ec8bd8f48bab54d",
+      "bytes": 3278
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/servo-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "286c050dc6ca2ea7d05070527f632c52c5f92b77df983c7cf5c978a612e2ddde",
+      "bytes": 599856
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/servo-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/servo-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/servo-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "87ee92e5a4f91214c449616802344e56097acb1d16e143c1c486446e4a55120a",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/servo-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "86933cbdcf889ab312dc85885ea1a34c3e347af4033cd45091f41a909f7c6106",
+      "bytes": 13361444
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "1e680b232c6a99aac344340a3064ebdb78d7c02af51447298a9bb6f0bf5bbde8",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "87ee92e5a4f91214c449616802344e56097acb1d16e143c1c486446e4a55120a",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "touch saves two SCSCL encoder positions and restores them after displacement",
+          "expected": "StackChan Servo. Command two positions and verify the position feedback over the board UART bus."
+        },
+        "capture_comparison": {
+          "servo-1.png": {
+            "original": {
+              "png_sha256": "3e8d098ce3874e8a2fa8d3db96a61b640b875c82702b7c3f92f8c2e49f275688"
+            },
+            "rebuilt": {
+              "png_sha256": "3e8d098ce3874e8a2fa8d3db96a61b640b875c82702b7c3f92f8c2e49f275688"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (299 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (179 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (837 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2005 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

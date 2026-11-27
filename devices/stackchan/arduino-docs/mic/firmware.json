@@ -1,0 +1,202 @@
+{
+  "device_id": "stackchan",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/mic.md",
+    "section": "Build Requirements",
+    "code_first_line": 13
+  },
+  "sketch_sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+  "expected_behavior": "StackChan Mic. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/stackchan/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "bytes": 4740
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "e457804d7117bb2b1954cd8a9a6899acdba36bd2f225ab4cabe26e99d0ba1164",
+      "bytes": 594176
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "105c273bd254d6ce29cda5da2f2b6a6859a474021190c3792e79a781f4d5cb55",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "53397495ff591eb411802092c726bb94244a612f5a396c131b5d3ffac620fd11",
+      "bytes": 12562328
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "0a54dee47b884d943c8bf602fac27d75580024c48a62ef6c02d7339d21756512",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "105c273bd254d6ce29cda5da2f2b6a6859a474021190c3792e79a781f4d5cb55",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "I²S mic recording played back distinct 733 Hz and 548 Hz signals, with silence control",
+          "expected": "StackChan Mic. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control."
+        },
+        "capture_comparison": {
+          "mic-alternate.png": {
+            "original": {
+              "png_sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7"
+            },
+            "rebuilt": {
+              "png_sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7"
+            },
+            "byte_identical": true
+          },
+          "mic-alternate.wav": {
+            "original": {
+              "wav_sha256": "e02261db9c873b7711478eb6807e6e7a4e6817fcb9f6a68b3e1d8ca4adc1359c",
+              "pcm_sha256": "11bea83f32b09d307b3c76222f48e60fa50613b0e0e353dd97cffe27c601f6a4",
+              "frames": 227688,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "e02261db9c873b7711478eb6807e6e7a4e6817fcb9f6a68b3e1d8ca4adc1359c",
+              "pcm_sha256": "11bea83f32b09d307b3c76222f48e60fa50613b0e0e353dd97cffe27c601f6a4",
+              "frames": 227688,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          },
+          "mic-control.png": {
+            "original": {
+              "png_sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7"
+            },
+            "rebuilt": {
+              "png_sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7"
+            },
+            "byte_identical": true
+          },
+          "mic-control.wav": {
+            "original": {
+              "wav_sha256": "624ad1332eb5128fdd6ecf85aec30c0dde2df92ded2773d18bbc976148998846",
+              "pcm_sha256": "20690a164539be41581a28c79638ed8e63dc904fc9cc2b32ea92dd33ede41abf",
+              "frames": 227688,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "624ad1332eb5128fdd6ecf85aec30c0dde2df92ded2773d18bbc976148998846",
+              "pcm_sha256": "20690a164539be41581a28c79638ed8e63dc904fc9cc2b32ea92dd33ede41abf",
+              "frames": 227688,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          },
+          "mic.png": {
+            "original": {
+              "png_sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7"
+            },
+            "rebuilt": {
+              "png_sha256": "1f353ec909e472c9495ee0703bac40e7328c5a6d717710f1cd4cddf1dca226b7"
+            },
+            "byte_identical": true
+          },
+          "mic.wav": {
+            "original": {
+              "wav_sha256": "b03c36c7ca562b4d77090cca253ddd25e4050003609f59a1a50ef40e7dc25b21",
+              "pcm_sha256": "dafc5fa4ebce3666200ebb050236918bc3f9b9c9a818e055f6aa4f724f793de6",
+              "frames": 227688,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "b03c36c7ca562b4d77090cca253ddd25e4050003609f59a1a50ef40e7dc25b21",
+              "pcm_sha256": "dafc5fa4ebce3666200ebb050236918bc3f9b9c9a818e055f6aa4f724f793de6",
+              "frames": 227688,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (305 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (859 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2090 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

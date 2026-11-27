@@ -1,0 +1,172 @@
+{
+  "device_id": "stackchan",
+  "case": "ltr553",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stackchan/ltr553",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stackchan/ltr553.md",
+    "section": "Build Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+  "expected_behavior": "StackChan LTR553 Proximity Sensor. Inject two light/proximity states and verify the documented sensor output.",
+  "sketch_files": {
+    "ltr553.ino": {
+      "path": "devices/stackchan/arduino-docs/ltr553/sketch/ltr553/ltr553.ino",
+      "storage": "public",
+      "sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "bytes": 1812
+    },
+    "LTR5XX.cpp": {
+      "path": "devices/stackchan/arduino-docs/ltr553/sketch/ltr553/LTR5XX.cpp",
+      "storage": "public",
+      "sha256": "41e97352566f0e31b5720afcff0d15bbc30e92e9e6bbccca2ee4aa6364729208",
+      "bytes": 13978
+    },
+    "LTR5XX.h": {
+      "path": "devices/stackchan/arduino-docs/ltr553/sketch/ltr553/LTR5XX.h",
+      "storage": "public",
+      "sha256": "97101fc4414f5aa25ae592cf9131ffadcc7f0f4949e6a65a4ffb6d9ce12d92ec",
+      "bytes": 11960
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "fixture_sha256": {
+    "https://m5stack-doc.oss-cn-shenzhen.aliyuncs.com/1205/LTR5XX.zip": "c6c84b421b7f98780affd7fd9bdc7fb42c64a68dd599e96fc532179b7b01d1d3"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stackchan/arduino-docs/ltr553/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "5a3c3edc92e2f2716c03f360bacb0f74cc2278b28ebc178bc95cc99338e453bb",
+      "bytes": 567520
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stackchan/arduino-docs/ltr553/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stackchan/arduino-docs/ltr553/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stackchan/arduino-docs/ltr553/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ade222ce1cd7dfadd9d7717fe8a1213e8d8939979c0cf999cfaaa66184e27233",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stackchan/arduino-docs/ltr553/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "0f4c6cf10a206b4c348717f9430184852c9f6160f3dfef9d86198bf9037f7169",
+      "bytes": 12329728
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "a4c29eeca65e774c517358a73a5227d5453794013f9ec18444234193f9b851ec",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ade222ce1cd7dfadd9d7717fe8a1213e8d8939979c0cf999cfaaa66184e27233",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stackchan"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stackchan",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\"",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "two distinct LTR553 ranges and a no-stimulus control",
+          "expected": "StackChan LTR553 Proximity Sensor. Inject two light/proximity states and verify the documented sensor output."
+        },
+        "capture_comparison": {
+          "ltr553-alternate.png": {
+            "original": {
+              "png_sha256": "9ea506a2ddbce39cc118ed01a58d1a5c0df5b60c8ff776948f03f1462fa9301e"
+            },
+            "rebuilt": {
+              "png_sha256": "9ea506a2ddbce39cc118ed01a58d1a5c0df5b60c8ff776948f03f1462fa9301e"
+            },
+            "byte_identical": true
+          },
+          "ltr553-control.png": {
+            "original": {
+              "png_sha256": "a04ffd70e036e64d6672e78c689fe8c56da259d2515b8881bbe303b552e7a50d"
+            },
+            "rebuilt": {
+              "png_sha256": "a04ffd70e036e64d6672e78c689fe8c56da259d2515b8881bbe303b552e7a50d"
+            },
+            "byte_identical": true
+          },
+          "ltr553.png": {
+            "original": {
+              "png_sha256": "7bee83ea37de044dfb0cbf94c2cabcf2ab8eaba140ae346b22f0c1ec77593379"
+            },
+            "rebuilt": {
+              "png_sha256": "7bee83ea37de044dfb0cbf94c2cabcf2ab8eaba140ae346b22f0c1ec77593379"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (299 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (837 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2005 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
