@@ -1,0 +1,160 @@
+{
+  "device_id": "basic-v27",
+  "case": "battery",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core/battery",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core/battery.md",
+    "section": "Example",
+    "code_first_line": 7
+  },
+  "sketch_sha256": "6031178a3df0e9b2e8666404ce787d2eded8b96abf3d3f9f3d8228576b5495fa",
+  "expected_behavior": "Basic/Gray Battery. Inject two battery values and compare the documented voltage/percentage and charge indications.",
+  "sketch_files": {
+    "battery.ino": {
+      "path": "devices/basic-v27/arduino-docs/battery/sketch/battery/battery.ino",
+      "storage": "public",
+      "sha256": "6031178a3df0e9b2e8666404ce787d2eded8b96abf3d3f9f3d8228576b5495fa",
+      "bytes": 617
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/basic-v27/arduino-docs/battery/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "8ad0b56ec1ddaa8abf5157d828ec2176a54b9795f5ecfd17e11675f6f48a98a4",
+      "bytes": 525408
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/basic-v27/arduino-docs/battery/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/basic-v27/arduino-docs/battery/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/basic-v27/arduino-docs/battery/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "4db3c9dea39d8a96cbd1fecd86da035f80342426a3fc3aec7fc96ba0b0a63fcc",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/basic-v27/arduino-docs/battery/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "c9da85cd506a05931031e9c10a56e7c6d81f1e0e04026da98b7ec07b1ee3fd6b",
+      "bytes": 780288
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "5c21f61ea9861cd3c0dc2ee26ce447b95375ca896880cf44e580d95b99cf00f6",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "4db3c9dea39d8a96cbd1fecd86da035f80342426a3fc3aec7fc96ba0b0a63fcc",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-basic-v27"
+      ],
+      "run_commands": [
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-basic-v27",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Baseline and both injected states produced distinct LCD values"
+        },
+        "capture_comparison": {
+          "battery-1.png": {
+            "original": {
+              "png_sha256": "1670e8852763696106e16ed321d1474f20fbe33b37705a222ad038f7d4410ca0"
+            },
+            "rebuilt": {
+              "png_sha256": "1670e8852763696106e16ed321d1474f20fbe33b37705a222ad038f7d4410ca0"
+            },
+            "byte_identical": true
+          },
+          "battery-2.png": {
+            "original": {
+              "png_sha256": "53e0a815d5d1ae2a567cec355a9f174e6d8f98f763d6cfc2796cd145024f8d1a"
+            },
+            "rebuilt": {
+              "png_sha256": "53e0a815d5d1ae2a567cec355a9f174e6d8f98f763d6cfc2796cd145024f8d1a"
+            },
+            "byte_identical": true
+          },
+          "battery-idle.png": {
+            "original": {
+              "png_sha256": "f2f6fc5d387a9a3f4a43c88310931543602e52760a1be7ea30ff9c361f298ce2"
+            },
+            "rebuilt": {
+              "png_sha256": "f2f6fc5d387a9a3f4a43c88310931543602e52760a1be7ea30ff9c361f298ce2"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (275 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

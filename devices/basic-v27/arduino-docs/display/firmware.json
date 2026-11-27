@@ -1,0 +1,151 @@
+{
+  "device_id": "basic-v27",
+  "case": "display",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core/display",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core/display.md",
+    "section": "Example",
+    "code_first_line": 7
+  },
+  "sketch_sha256": "bab91e9ee76fbbffa2f80a643cf70d830e7dc3ccd72de1e0dfddf04f4de408f6",
+  "expected_behavior": "Basic/Gray Display. Observe the documented drawing/animation and verify the expected geometry and visible pixels.",
+  "sketch_files": {
+    "display.ino": {
+      "path": "devices/basic-v27/arduino-docs/display/sketch/display/display.ino",
+      "storage": "public",
+      "sha256": "bab91e9ee76fbbffa2f80a643cf70d830e7dc3ccd72de1e0dfddf04f4de408f6",
+      "bytes": 768
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/basic-v27/arduino-docs/display/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "ae120f1f76ba187785a45b5f1e86547cc4adb6df4f0165e4c94214f7e065ed83",
+      "bytes": 511344
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/basic-v27/arduino-docs/display/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/basic-v27/arduino-docs/display/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/basic-v27/arduino-docs/display/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "6bd906a0804663ac96ad0d9a6afa3b60107abe4f27030c3e67c4a6ea6026a56e",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/basic-v27/arduino-docs/display/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "df852c688b4003ae792ea95e6983e7e3aa1f577e01021c423f085482d16c3451",
+      "bytes": 759760
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "c00432ea9f89c805d67fecd7e073d7699cb04836f2cf50f4f5feea2e7f1a70b5",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "6bd906a0804663ac96ad0d9a6afa3b60107abe4f27030c3e67c4a6ea6026a56e",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-basic-v27"
+      ],
+      "run_commands": [
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-basic-v27",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "320×240 framebuffer contains the filled background and visible color primitives"
+        },
+        "capture_comparison": {
+          "display-first.png": {
+            "original": {
+              "png_sha256": "bb42dd359fbb9c6c7e14accb6784d8878dbb8d20b308e69bf67c5aafc5ed24b3"
+            },
+            "rebuilt": {
+              "png_sha256": "bb42dd359fbb9c6c7e14accb6784d8878dbb8d20b308e69bf67c5aafc5ed24b3"
+            },
+            "byte_identical": true
+          },
+          "display.png": {
+            "original": {
+              "png_sha256": "bb42dd359fbb9c6c7e14accb6784d8878dbb8d20b308e69bf67c5aafc5ed24b3"
+            },
+            "rebuilt": {
+              "png_sha256": "bb42dd359fbb9c6c7e14accb6784d8878dbb8d20b308e69bf67c5aafc5ed24b3"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (272 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (9 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

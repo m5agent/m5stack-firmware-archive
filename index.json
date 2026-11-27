@@ -3375,6 +3375,294 @@
           "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-matrix-v11 $OUT"
         ]
       }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/battery.md",
+        "section": "Example",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "6031178a3df0e9b2e8666404ce787d2eded8b96abf3d3f9f3d8228576b5495fa",
+      "manifest": "devices/basic-v27/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "4db3c9dea39d8a96cbd1fecd86da035f80342426a3fc3aec7fc96ba0b0a63fcc",
+      "original_build": {
+        "firmware_sha256": "5c21f61ea9861cd3c0dc2ee26ce447b95375ca896880cf44e580d95b99cf00f6",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/button.md",
+        "section": "Example",
+        "code_first_line": 9
+      },
+      "sketch_sha256": "68f254bd9152e14c234c2490017a13856bbe75bff1357f0ba6a748eda40cfc07",
+      "manifest": "devices/basic-v27/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9e01bd1512e9350f0c7d71bf537dd6f28ad6012302452847a3b374d7b5048258",
+      "original_build": {
+        "firmware_sha256": "4a307c970d9d92cee5cd5df11de777dbfba2a551dbe27735d13bc82809261c64",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/display.md",
+        "section": "Example",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "bab91e9ee76fbbffa2f80a643cf70d830e7dc3ccd72de1e0dfddf04f4de408f6",
+      "manifest": "devices/basic-v27/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "6bd906a0804663ac96ad0d9a6afa3b60107abe4f27030c3e67c4a6ea6026a56e",
+      "original_build": {
+        "firmware_sha256": "c00432ea9f89c805d67fecd7e073d7699cb04836f2cf50f4f5feea2e7f1a70b5",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "imu",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/imu.md",
+        "section": "Example",
+        "code_first_line": 9
+      },
+      "sketch_sha256": "2304a475f459e2a0bab9016bb166affc4d99280eca231d27f6fa6bd3cd3d6424",
+      "manifest": "devices/basic-v27/arduino-docs/imu/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "91e241fb224413e49f36417593ac5fe9d391904c8eef5c0b3208903a5d2ad4a0",
+      "original_build": {
+        "firmware_sha256": "c9bdd49e6050217f7673b4309eec57c14085c44b6b316f2b7dc8c41165ca1f7c",
+        "verdict": "DOCS-DEFECT",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "DOCS-DEFECT",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "microsd",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/microsd",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/microsd.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "dc5fa6662b6670fdbdf7154acade475cd42945637bcc85569c5f8d187f5f05fa",
+      "manifest": "devices/basic-v27/arduino-docs/microsd/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e97105d9d7576abd8fcaa3295a106a93552a6c5911b60504ef3a2495ab423a20",
+      "original_build": {
+        "firmware_sha256": "a4d33fb3e22c96cec69a895785273b67183e1cde7b24bdd24f96f5539ae06db6",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/speaker.md",
+        "section": "Example",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "df2d2c0160d182d72cd3ba27448785fcf1f19f907f88d6d341d1c58cc0135fd6",
+      "manifest": "devices/basic-v27/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "3d9abf0131589593a3eba25b4af45fc8bca4f8504e1d9c2ea8b249d7162fc881",
+      "original_build": {
+        "firmware_sha256": "6b803b7d19abe9b8cd324a8e8cc6a06ee0676deed06939882e968074edd00fca",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "wakeup",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/wakeup.md",
+        "section": "Example",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "9d89811453d1f8445f0b6816fe2fd28769227f07c1480fe280e311f844805230",
+      "manifest": "devices/basic-v27/arduino-docs/wakeup/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "dd1e3281d50dc758f46c3064296cb1e552548f9f03c9c89cab6ce70854249ffb",
+      "original_build": {
+        "firmware_sha256": "cb1101f8808ae4de9ffbf94519fff68c9dc73b2738019a514dc492fb220c2e9a",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "wav",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/wav",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/wav.md",
+        "section": null,
+        "code_first_line": 5
+      },
+      "sketch_sha256": "3d9477d0702ea03d2f2ec956c52b900d1dce1708ff2844e722071761b59c3462",
+      "manifest": "devices/basic-v27/arduino-docs/wav/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "11664545d0811fc4a7eeed6ce811bff4c80d7095a7cad5fa2cbda207e892d397",
+      "original_build": {
+        "firmware_sha256": "1da096d51257c6be8c700ecb965e0352c54ef55e4634eb3a66bc7837cbf25ce3",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "quickstart-longtextscroll",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5core/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5core/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 33
+      },
+      "sketch_sha256": "3ea1e170e343218e5e960c139600454d0cf14bc7f948567dd9725605c85d5395",
+      "manifest": "devices/basic-v27/arduino-docs/quickstart-longtextscroll/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "bd2bd081033a1d2c87639756a9d33e2b71f16e7a45ae36c4ca353d9d6d495fbd",
+      "original_build": {
+        "firmware_sha256": "eade3623b1942b8ba5feb0d1500a592f01b5b5ffb5263f37163ec68b2468d475",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-basic-v27"
+        ],
+        "run_commands": [
+          "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -6719,6 +7007,258 @@
     "devices/atom-matrix-v11/arduino-docs/quickstart-logoutput/firmware.json": {
       "sha256": "c839b35c0e06482b82a43c6ab1917072ca8817f789cdad0c402387aaa230f406",
       "bytes": 5042
+    },
+    "devices/basic-v27/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "6031178a3df0e9b2e8666404ce787d2eded8b96abf3d3f9f3d8228576b5495fa",
+      "bytes": 617
+    },
+    "devices/basic-v27/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "8ad0b56ec1ddaa8abf5157d828ec2176a54b9795f5ecfd17e11675f6f48a98a4",
+      "bytes": 525408
+    },
+    "devices/basic-v27/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "4db3c9dea39d8a96cbd1fecd86da035f80342426a3fc3aec7fc96ba0b0a63fcc",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "c9da85cd506a05931031e9c10a56e7c6d81f1e0e04026da98b7ec07b1ee3fd6b",
+      "bytes": 780288
+    },
+    "devices/basic-v27/arduino-docs/battery/firmware.json": {
+      "sha256": "f13eee62ed064ce5e49efb57e3bc6830d9963f240ade5c473445cad02870fdba",
+      "bytes": 6063
+    },
+    "devices/basic-v27/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "68f254bd9152e14c234c2490017a13856bbe75bff1357f0ba6a748eda40cfc07",
+      "bytes": 382
+    },
+    "devices/basic-v27/arduino-docs/button/migration.ino.bin": {
+      "sha256": "f57368a3f4e6b3c862bc8bfe241ec72f63e9fa90147a565875db2a33c23e966a",
+      "bytes": 510624
+    },
+    "devices/basic-v27/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "9e01bd1512e9350f0c7d71bf537dd6f28ad6012302452847a3b374d7b5048258",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/button/migration.ino.elf": {
+      "sha256": "2ddfba7c33a78550f9a7caec6624c172f3819207d92daf7ca083cd0fff17d92b",
+      "bytes": 759208
+    },
+    "devices/basic-v27/arduino-docs/button/firmware.json": {
+      "sha256": "df34156c6517f65d7e40ff99377acb3a64aba413b4140867434b3cdd0a9c5972",
+      "bytes": 6757
+    },
+    "devices/basic-v27/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "bab91e9ee76fbbffa2f80a643cf70d830e7dc3ccd72de1e0dfddf04f4de408f6",
+      "bytes": 768
+    },
+    "devices/basic-v27/arduino-docs/display/migration.ino.bin": {
+      "sha256": "ae120f1f76ba187785a45b5f1e86547cc4adb6df4f0165e4c94214f7e065ed83",
+      "bytes": 511344
+    },
+    "devices/basic-v27/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "6bd906a0804663ac96ad0d9a6afa3b60107abe4f27030c3e67c4a6ea6026a56e",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/display/migration.ino.elf": {
+      "sha256": "df852c688b4003ae792ea95e6983e7e3aa1f577e01021c423f085482d16c3451",
+      "bytes": 759760
+    },
+    "devices/basic-v27/arduino-docs/display/firmware.json": {
+      "sha256": "a6d11f9afb2d112a582dca54a35347b8c4df556513d44a2950c69fa3a15b9fa0",
+      "bytes": 5730
+    },
+    "devices/basic-v27/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "2304a475f459e2a0bab9016bb166affc4d99280eca231d27f6fa6bd3cd3d6424",
+      "bytes": 1243
+    },
+    "devices/basic-v27/arduino-docs/imu/migration.ino.bin": {
+      "sha256": "75d3fe79c16f3b8a0b177adc29709d6320a6ac14381ec549776c590692f61e2e",
+      "bytes": 516864
+    },
+    "devices/basic-v27/arduino-docs/imu/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/imu/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/imu/migration.ino.merged.bin": {
+      "sha256": "91e241fb224413e49f36417593ac5fe9d391904c8eef5c0b3208903a5d2ad4a0",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/imu/migration.ino.elf": {
+      "sha256": "3369cea63c1b7c716d51d0899dc878a840f2558ef34783aee904402be4382c83",
+      "bytes": 769588
+    },
+    "devices/basic-v27/arduino-docs/imu/firmware.json": {
+      "sha256": "2ca132e2163ca1a13ef194474cee211aba808378be1f4ca9b4b25391d50d0d8a",
+      "bytes": 5934
+    },
+    "devices/basic-v27/arduino-docs/microsd/sketch/microsd/microsd.ino": {
+      "sha256": "dc5fa6662b6670fdbdf7154acade475cd42945637bcc85569c5f8d187f5f05fa",
+      "bytes": 1659
+    },
+    "devices/basic-v27/arduino-docs/microsd/migration.ino.bin": {
+      "sha256": "d8af2bc6a617fbf9380858a3f9bee5885b0f9dcfa4cc67b3d63201a2fc941c7b",
+      "bytes": 571008
+    },
+    "devices/basic-v27/arduino-docs/microsd/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/microsd/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/microsd/migration.ino.merged.bin": {
+      "sha256": "e97105d9d7576abd8fcaa3295a106a93552a6c5911b60504ef3a2495ab423a20",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/microsd/migration.ino.elf": {
+      "sha256": "8a3ed2fc8bd353d02bb515e6e7bf347ba4a1c278d7ea7fd879eae9903b83b63b",
+      "bytes": 837408
+    },
+    "devices/basic-v27/arduino-docs/microsd/firmware.json": {
+      "sha256": "69d1c587a5097ac24280a909d9c3a40cda9c38c4f245565833effd1bbe285fe8",
+      "bytes": 6095
+    },
+    "devices/basic-v27/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "df2d2c0160d182d72cd3ba27448785fcf1f19f907f88d6d341d1c58cc0135fd6",
+      "bytes": 425
+    },
+    "devices/basic-v27/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "0836599ca56d4efe708e17bec612b9d62135f7fc3562bf729c69cf6ff5281ad8",
+      "bytes": 539040
+    },
+    "devices/basic-v27/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "3d9abf0131589593a3eba25b4af45fc8bca4f8504e1d9c2ea8b249d7162fc881",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "70b1b03f7ec5ec2133214d5d2a933d0abaa8aacebe7a822fd330a67903a7a90a",
+      "bytes": 791120
+    },
+    "devices/basic-v27/arduino-docs/speaker/firmware.json": {
+      "sha256": "5e5e1b329a699089f8ca22c918c0147ed1990ec1b301b7186b96b7c491134e2f",
+      "bytes": 5994
+    },
+    "devices/basic-v27/arduino-docs/wakeup/sketch/wakeup/wakeup.ino": {
+      "sha256": "9d89811453d1f8445f0b6816fe2fd28769227f07c1480fe280e311f844805230",
+      "bytes": 623
+    },
+    "devices/basic-v27/arduino-docs/wakeup/migration.ino.bin": {
+      "sha256": "82c356dcecb46f70981d22bcd034ed5f6c258d1d0f71408520f92f1f4ed2f851",
+      "bytes": 526368
+    },
+    "devices/basic-v27/arduino-docs/wakeup/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/wakeup/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/wakeup/migration.ino.merged.bin": {
+      "sha256": "dd1e3281d50dc758f46c3064296cb1e552548f9f03c9c89cab6ce70854249ffb",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/wakeup/migration.ino.elf": {
+      "sha256": "31df814713037358ea28813b46420d2bf10fe0a2042135c76bab229268a43a27",
+      "bytes": 782220
+    },
+    "devices/basic-v27/arduino-docs/wakeup/firmware.json": {
+      "sha256": "f0f0b143e0e658edcc47ee12f364633288559fa83b83271e89305adc8004b167",
+      "bytes": 5344
+    },
+    "devices/basic-v27/arduino-docs/wav/sketch/wav/wav.ino": {
+      "sha256": "3d9477d0702ea03d2f2ec956c52b900d1dce1708ff2844e722071761b59c3462",
+      "bytes": 6547
+    },
+    "devices/basic-v27/arduino-docs/wav/migration.ino.bin": {
+      "sha256": "266d55330ff2648ac6bc15e6c37477eafcda2aecd3ce56dda343cc95e69625ff",
+      "bytes": 583536
+    },
+    "devices/basic-v27/arduino-docs/wav/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/wav/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/wav/migration.ino.merged.bin": {
+      "sha256": "11664545d0811fc4a7eeed6ce811bff4c80d7095a7cad5fa2cbda207e892d397",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/wav/migration.ino.elf": {
+      "sha256": "8c0b67b139b5d6ab1f1608e56f257473e421c756bc68b1eeb2c5d8c4c5092775",
+      "bytes": 853700
+    },
+    "devices/basic-v27/arduino-docs/wav/firmware.json": {
+      "sha256": "513fe0333e3c5db06fc0482aa4e102646a9045ba82ed463fb9b67d97a6eb1906",
+      "bytes": 5981
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/sketch/quickstart_longtextscroll/quickstart_longtextscroll.ino": {
+      "sha256": "3ea1e170e343218e5e960c139600454d0cf14bc7f948567dd9725605c85d5395",
+      "bytes": 2469
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/migration.ino.bin": {
+      "sha256": "84171d527dba3229d2cfddb357bbf72941a2052ff1b196e4b9b560d8190b771e",
+      "bytes": 834032
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/migration.ino.merged.bin": {
+      "sha256": "bd2bd081033a1d2c87639756a9d33e2b71f16e7a45ae36c4ca353d9d6d495fbd",
+      "bytes": 4194304
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/migration.ino.elf": {
+      "sha256": "8d403e0e835577aa78e8779282ba57cc464563e6794f49f67d9a91b85f8eb5e9",
+      "bytes": 1063652
+    },
+    "devices/basic-v27/arduino-docs/quickstart-longtextscroll/firmware.json": {
+      "sha256": "f896397bc8311cf7f7cf53a02feb86673fba5ff1fe85bfbf14530066211e2072",
+      "bytes": 6086
     }
   },
   "local_files": {
@@ -7294,7 +7834,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 101,
+    "published_cases": 110,
     "storage": "git-lfs"
   }
 }
