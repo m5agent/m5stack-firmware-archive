@@ -1,0 +1,208 @@
+{
+  "device_id": "core2",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core2/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core2/mic.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "946be929a40cb1b3739e53e53cd45ae6c1a700592abf06d6b2ef64d241a7bef8",
+  "expected_behavior": "Core2 MIC Audio Recording. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/core2/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "946be929a40cb1b3739e53e53cd45ae6c1a700592abf06d6b2ef64d241a7bef8",
+      "bytes": 7402
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/core2/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "04b2f36615ea5106ced51ff9b026b8877b114bf5e5280527e0d10251599204c8",
+      "bytes": 599744
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/core2/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8bbf39c747612e9694a5385527f44486bb68c7630d75e74c392c28fc7ceffc32",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/core2/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/core2/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "fa37064b34e7a41ab4a99549b4d54bec4280641d0ef19878b510f85b10a94831",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/core2/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "745a4fb9794df156ee8f90aa5b90500f72b04ee6dc840db7b83c47172d969643",
+      "bytes": 872356
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "95ed59a22eee4cbb6e83c3505a2cfac3cfdf05948718ba1016ceb80d00e90833",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "fa37064b34e7a41ab4a99549b4d54bec4280641d0ef19878b510f85b10a94831",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-core2",
+        "m5stack-core2-axp192"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-core2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "On-card WAV contains silence then the two separately injected PDM-to-PCM tones"
+        },
+        "capture_comparison": {
+          "mic-1234.png": {
+            "original": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "rebuilt": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "byte_identical": true
+          },
+          "mic-733.png": {
+            "original": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "rebuilt": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "byte_identical": true
+          },
+          "mic-idle.png": {
+            "original": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "rebuilt": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "byte_identical": true
+          }
+        }
+      },
+      {
+        "board": "m5stack-core2-axp192",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "On-card WAV contains silence then the two separately injected PDM-to-PCM tones"
+        },
+        "capture_comparison": {
+          "mic-1234.png": {
+            "original": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "rebuilt": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "byte_identical": true
+          },
+          "mic-733.png": {
+            "original": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "rebuilt": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "byte_identical": true
+          },
+          "mic-idle.png": {
+            "original": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "rebuilt": {
+              "png_sha256": "da9290d94812f424850d60991deec5a8e8bcc2ae81123f2dec1bcc550b45056a"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (290 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

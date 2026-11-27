@@ -1,0 +1,152 @@
+{
+  "device_id": "core2",
+  "case": "rgb_led",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core2/rgb_led",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core2/rgb_led.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "a475e27dbb06e462849a92ad89673e43fa2c036d02d18418bda1583af6bb677a",
+  "expected_behavior": "Core2 RGB LED. Verify channel/color order and the populated pixel count through real output.",
+  "sketch_files": {
+    "rgb_led.ino": {
+      "path": "devices/core2/arduino-docs/rgb_led/sketch/rgb_led/rgb_led.ino",
+      "storage": "public",
+      "sha256": "a475e27dbb06e462849a92ad89673e43fa2c036d02d18418bda1583af6bb677a",
+      "bytes": 1449
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/core2/arduino-docs/rgb_led/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "c500fde408293549f44f9620a4174a0b0f758fa5adf37b4cdff3ed3455034066",
+      "bytes": 531232
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/core2/arduino-docs/rgb_led/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8bbf39c747612e9694a5385527f44486bb68c7630d75e74c392c28fc7ceffc32",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/core2/arduino-docs/rgb_led/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/core2/arduino-docs/rgb_led/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "30c5f8ce441528d1acb1c041823b86530820a1d32ecb6a2e10e3c41eebcdaa9a",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/core2/arduino-docs/rgb_led/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "ae5c17434576a42515f7c9fc7cd31803792a99ef4223e3344265ac935199084d",
+      "bytes": 783640
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "22c145f3bc7e2eb6fa208baf056a616fe2ea5aa7fb5f54abc8579dfec6fb8be7",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "30c5f8ce441528d1acb1c041823b86530820a1d32ecb6a2e10e3c41eebcdaa9a",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-core2",
+        "m5stack-core2-axp192"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-core2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "RMT drives ten uniform pixels in red, green and blue order"
+        },
+        "capture_comparison": {}
+      },
+      {
+        "board": "m5stack-core2-axp192",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "RMT drives ten uniform pixels in red, green and blue order"
+        },
+        "capture_comparison": {}
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (278 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

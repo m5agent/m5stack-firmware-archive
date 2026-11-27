@@ -1,0 +1,193 @@
+{
+  "device_id": "core2",
+  "case": "quickstart-scrollgraph",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core2/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core2/program.md",
+    "section": "4. Program Compile & Upload",
+    "section_line": 33
+  },
+  "sketch_sha256": "7449810d0fb6b961770a592f4785a430dee3f16d7dcb5c43333efed30ee662b1",
+  "expected_behavior": "Display continuously scrolling graph with changing plotted values.",
+  "sketch_files": {
+    "quickstart_scrollgraph.ino": {
+      "path": "devices/core2/arduino-docs/quickstart-scrollgraph/sketch/quickstart_scrollgraph/quickstart_scrollgraph.ino",
+      "storage": "public",
+      "sha256": "7449810d0fb6b961770a592f4785a430dee3f16d7dcb5c43333efed30ee662b1",
+      "bytes": 2980
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5GFX",
+  "library_example": "examples/Basic/ScrollGraph/ScrollGraph.ino",
+  "library_source_sha256": "7449810d0fb6b961770a592f4785a430dee3f16d7dcb5c43333efed30ee662b1",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/core2/arduino-docs/quickstart-scrollgraph/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "d43d25cae8f2b3dbaf8bbbb21cb6ff78701fcb8a776129e5e5e05fdd83bedfd4",
+      "bytes": 448048
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/core2/arduino-docs/quickstart-scrollgraph/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8bbf39c747612e9694a5385527f44486bb68c7630d75e74c392c28fc7ceffc32",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/core2/arduino-docs/quickstart-scrollgraph/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/core2/arduino-docs/quickstart-scrollgraph/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "843ad0375f15373a7769009c3a7fea497440ec3eeebb2699e35898e97e893545",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/core2/arduino-docs/quickstart-scrollgraph/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "b1e24f3f8d064efcf06cfcc9b19c02f2e020e8c9646365a1ed5078887f329a26",
+      "bytes": 674524
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "07412636972280e9d75e00ac4a3866dcea7ec5866967d689389b8adb3a5ffb3c",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "843ad0375f15373a7769009c3a7fea497440ec3eeebb2699e35898e97e893545",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-core2",
+        "m5stack-core2-axp192"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-core2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Two different 320×240 LCD frames during scrolling"
+        },
+        "capture_comparison": {
+          "quickstart-scrollgraph-first.png": {
+            "original": {
+              "png_sha256": "ba4fc52d8b365ec298539f24ace71a66816c0e311bab4f5f2def2e51b3ca7f9a"
+            },
+            "rebuilt": {
+              "png_sha256": "1e0398d2311fa477a2877048aa38185885958025e3a63090e38be0695f08f887"
+            },
+            "byte_identical": false
+          },
+          "quickstart-scrollgraph.png": {
+            "original": {
+              "png_sha256": "7af2f1ab51e5c91983737a0cf4210da8d359bba4a6f2e605b3d0cd36d6784fc2"
+            },
+            "rebuilt": {
+              "png_sha256": "a0baba09d3e90c1be26e876bc0ad3495af8f31438abe2f8bf6993a1937bc84e5"
+            },
+            "byte_identical": false
+          }
+        }
+      },
+      {
+        "board": "m5stack-core2-axp192",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Two different 320×240 LCD frames during scrolling"
+        },
+        "capture_comparison": {
+          "quickstart-scrollgraph-first.png": {
+            "original": {
+              "png_sha256": "85ca7143733d2c430151daf14c27118f890209d490146d31f2f73fc01a1428ce"
+            },
+            "rebuilt": {
+              "png_sha256": "b410948d7e46bf4b79c328982e4d8714f7e6dc2681b99668aa0c5fe8300fc276"
+            },
+            "byte_identical": false
+          },
+          "quickstart-scrollgraph.png": {
+            "original": {
+              "png_sha256": "47013ea06ecb6cec3f1cc60425d549e2bdc3c15e04cb5dd05d8b34ec15d48966"
+            },
+            "rebuilt": {
+              "png_sha256": "5bdccc87b46ab0ec0e67ab2272dade26a5246d0e910c561ad2ee581e2ea60867"
+            },
+            "byte_identical": false
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (269 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,172 @@
+{
+  "device_id": "core2",
+  "case": "wakeup",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core2/wakeup",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core2/wakeup.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "f190012543b899df80bb8eff8631958421bc972de116311f863073ef99e7d7e2",
+  "expected_behavior": "Core2 Wakeup. Observe the documented sleep/standby transition, inject the wake source, and verify guest resume/reset.",
+  "sketch_files": {
+    "wakeup.ino": {
+      "path": "devices/core2/arduino-docs/wakeup/sketch/wakeup/wakeup.ino",
+      "storage": "public",
+      "sha256": "f190012543b899df80bb8eff8631958421bc972de116311f863073ef99e7d7e2",
+      "bytes": 857
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/core2/arduino-docs/wakeup/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "639e8c8ffc784a4f45588aa3b7380bede482b8832afa95d2930e3d4f4dd9fcf8",
+      "bytes": 540592
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/core2/arduino-docs/wakeup/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8bbf39c747612e9694a5385527f44486bb68c7630d75e74c392c28fc7ceffc32",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/core2/arduino-docs/wakeup/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/core2/arduino-docs/wakeup/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "817aa8c15d29af25bbf44b98b3963f219a538c6dc8f9f6690950d0be90135155",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/core2/arduino-docs/wakeup/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "812da71326c09591e14944f6e42ef1b8b368b377bde163227628ce460a7f072d",
+      "bytes": 798256
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "e7758f6852e12470e261110d3c69ef2ccc37bfd654f77f6dd6f5105cdb097390",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "817aa8c15d29af25bbf44b98b3963f219a538c6dc8f9f6690950d0be90135155",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-core2",
+        "m5stack-core2-axp192"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-core2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Button input followed by deep-sleep reset and boot"
+        },
+        "capture_comparison": {
+          "wakeup.png": {
+            "original": {
+              "png_sha256": "6459562cf8e7ecb546a07fe0bc74d0fa575dca514f1cb1f5a8be86a1336bf7cd"
+            },
+            "rebuilt": {
+              "png_sha256": "6459562cf8e7ecb546a07fe0bc74d0fa575dca514f1cb1f5a8be86a1336bf7cd"
+            },
+            "byte_identical": true
+          }
+        }
+      },
+      {
+        "board": "m5stack-core2-axp192",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Button input followed by deep-sleep reset and boot"
+        },
+        "capture_comparison": {
+          "wakeup.png": {
+            "original": {
+              "png_sha256": "6459562cf8e7ecb546a07fe0bc74d0fa575dca514f1cb1f5a8be86a1336bf7cd"
+            },
+            "rebuilt": {
+              "png_sha256": "6459562cf8e7ecb546a07fe0bc74d0fa575dca514f1cb1f5a8be86a1336bf7cd"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (281 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

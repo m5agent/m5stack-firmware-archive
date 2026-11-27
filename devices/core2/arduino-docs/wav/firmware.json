@@ -1,0 +1,202 @@
+{
+  "device_id": "core2",
+  "case": "wav",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core2/wav",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core2/wav.md",
+    "section": null,
+    "code_first_line": 5
+  },
+  "sketch_sha256": "475505888f2d4840cdd1f02f888ed08cd4633a305472456b7980c1d98c9acbcf",
+  "expected_behavior": "Core2 Audio Playback. Read the documented audio fixture from SD and verify decoded PCM.",
+  "sketch_files": {
+    "wav.ino": {
+      "path": "devices/core2/arduino-docs/wav/sketch/wav/wav.ino",
+      "storage": "public",
+      "sha256": "475505888f2d4840cdd1f02f888ed08cd4633a305472456b7980c1d98c9acbcf",
+      "bytes": 6552
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/core2/arduino-docs/wav/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "ad99d181fc818863adcc2ea00c9b322086692d4fe251247ad29a34cd8a0f5e70",
+      "bytes": 598656
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/core2/arduino-docs/wav/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8bbf39c747612e9694a5385527f44486bb68c7630d75e74c392c28fc7ceffc32",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/core2/arduino-docs/wav/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/core2/arduino-docs/wav/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "cc2d15f0c640ee59c9e3182744f99b55ebd0b0a9cdeeb62a083d55609004194a",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/core2/arduino-docs/wav/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "a89cc909e666ae6380cbe4459431e866a9c3bed651ebbc24ef34d49d3b36293e",
+      "bytes": 870476
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "353e72bd9bf18ca27cbd09e1ef403ce74a9d4e16265e021fd3a364e8e4cf0bab",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "cc2d15f0c640ee59c9e3182744f99b55ebd0b0a9cdeeb62a083d55609004194a",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-core2",
+        "m5stack-core2-axp192"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-core2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "PCM capture at 48000 Hz contains the required tone(s) and the guest reached playback completion"
+        },
+        "capture_comparison": {
+          "wav.png": {
+            "original": {
+              "png_sha256": "00184312c73fa7732d41a7c6545e9c21c00e08c9fea10ac68bb018d78b1a6376"
+            },
+            "rebuilt": {
+              "png_sha256": "00184312c73fa7732d41a7c6545e9c21c00e08c9fea10ac68bb018d78b1a6376"
+            },
+            "byte_identical": true
+          },
+          "wav.wav": {
+            "original": {
+              "wav_sha256": "daecc5e416cc35f5eb4929ea561e3ce91bd7328f60e7275321ec4cb131885329",
+              "pcm_sha256": "92ac3c60f46d43c8f5efab90d802c761ba1826a01b1ca0d52bb6bef751039ad1",
+              "frames": 590371,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "dc18de2accc6562d30d9fabed71676066cee7a6acb419f84d2db8d4c8ac094cd",
+              "pcm_sha256": "fe134ab9b206c5394dad2c82a73f2656edaceb572268ab2b60746535de4a896e",
+              "frames": 590372,
+              "sample_rate": 48000
+            },
+            "byte_identical": false
+          }
+        }
+      },
+      {
+        "board": "m5stack-core2-axp192",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "PCM capture at 48000 Hz contains the required tone(s) and the guest reached playback completion"
+        },
+        "capture_comparison": {
+          "wav.png": {
+            "original": {
+              "png_sha256": "00184312c73fa7732d41a7c6545e9c21c00e08c9fea10ac68bb018d78b1a6376"
+            },
+            "rebuilt": {
+              "png_sha256": "00184312c73fa7732d41a7c6545e9c21c00e08c9fea10ac68bb018d78b1a6376"
+            },
+            "byte_identical": true
+          },
+          "wav.wav": {
+            "original": {
+              "wav_sha256": "f22d79c9082f7b897cfac482b3d7c6463f8a3b6bf211a51cd7cbe3abab4c9d31",
+              "pcm_sha256": "d2c4472e344ab45e8643c502b081fc500709f8de2c4df70702953e6077886b83",
+              "frames": 590368,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "f22d79c9082f7b897cfac482b3d7c6463f8a3b6bf211a51cd7cbe3abab4c9d31",
+              "pcm_sha256": "d2c4472e344ab45e8643c502b081fc500709f8de2c4df70702953e6077886b83",
+              "frames": 590368,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (290 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

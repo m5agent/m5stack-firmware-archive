@@ -1,0 +1,208 @@
+{
+  "device_id": "core2",
+  "case": "microsd",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5core2/microsd",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5core2/microsd.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "22fcb14cea188dfc616a5881ac039ec6445594cb4667544d85c22e02ba9843fb",
+  "expected_behavior": "Core2 microSD Card. Mount a seeded card and verify the documented file operation and persisted bytes.",
+  "sketch_files": {
+    "microsd.ino": {
+      "path": "devices/core2/arduino-docs/microsd/sketch/microsd/microsd.ino",
+      "storage": "public",
+      "sha256": "22fcb14cea188dfc616a5881ac039ec6445594cb4667544d85c22e02ba9843fb",
+      "bytes": 1662
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_core2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/core2/arduino-docs/microsd/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "c63677abba6a3e2826e5c150ff55760cebd5d8e5672cbede3574d696524eb764",
+      "bytes": 586384
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/core2/arduino-docs/microsd/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8bbf39c747612e9694a5385527f44486bb68c7630d75e74c392c28fc7ceffc32",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/core2/arduino-docs/microsd/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/core2/arduino-docs/microsd/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "8288e4b8c6a513a4f357bf2d47bd7d36d7aa651e9ba6f807620f616155ca2b26",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/core2/arduino-docs/microsd/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "f630f31cb55a068f66081d786e91440bef98de9c15b672da94b40503f06a7c3d",
+      "bytes": 854420
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "8eed68bb6a82813025dd333cd8d10f54f09fa3de70a88d800751c96a7b194660",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "8288e4b8c6a513a4f357bf2d47bd7d36d7aa651e9ba6f807620f616155ca2b26",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-core2",
+        "m5stack-core2-axp192"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-core2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Two guest-decoded images, missing-card control and exact persisted WriteTest.txt"
+        },
+        "capture_comparison": {
+          "microsd-absent.png": {
+            "original": {
+              "png_sha256": "dae2782cc3c7da8c180b13dc42b2a46c377cb3ae7703274d3c23033ac7620682"
+            },
+            "rebuilt": {
+              "png_sha256": "dae2782cc3c7da8c180b13dc42b2a46c377cb3ae7703274d3c23033ac7620682"
+            },
+            "byte_identical": true
+          },
+          "microsd-first.png": {
+            "original": {
+              "png_sha256": "945e9a002a1861bd32c5796b725b9c2e609726d3b468ae0eb72708d491ab6b46"
+            },
+            "rebuilt": {
+              "png_sha256": "945e9a002a1861bd32c5796b725b9c2e609726d3b468ae0eb72708d491ab6b46"
+            },
+            "byte_identical": true
+          },
+          "microsd.png": {
+            "original": {
+              "png_sha256": "a24494703c1decd7e56e1a37e3d7f77c51603bbd05999c9be135b28f56c6dd80"
+            },
+            "rebuilt": {
+              "png_sha256": "a24494703c1decd7e56e1a37e3d7f77c51603bbd05999c9be135b28f56c6dd80"
+            },
+            "byte_identical": true
+          }
+        }
+      },
+      {
+        "board": "m5stack-core2-axp192",
+        "run_command": "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "CORE_PLAN_DIR": "$PLAN_DIR",
+          "CORE_STOCK_DIR": "$FIXTURES_DIR/agent-lx6c/downloads",
+          "CORE_SD_SEED": "$FIXTURES_DIR/agent-lx6c/seed/320x240/core.img"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Two guest-decoded images, missing-card control and exact persisted WriteTest.txt"
+        },
+        "capture_comparison": {
+          "microsd-absent.png": {
+            "original": {
+              "png_sha256": "dae2782cc3c7da8c180b13dc42b2a46c377cb3ae7703274d3c23033ac7620682"
+            },
+            "rebuilt": {
+              "png_sha256": "dae2782cc3c7da8c180b13dc42b2a46c377cb3ae7703274d3c23033ac7620682"
+            },
+            "byte_identical": true
+          },
+          "microsd-first.png": {
+            "original": {
+              "png_sha256": "945e9a002a1861bd32c5796b725b9c2e609726d3b468ae0eb72708d491ab6b46"
+            },
+            "rebuilt": {
+              "png_sha256": "945e9a002a1861bd32c5796b725b9c2e609726d3b468ae0eb72708d491ab6b46"
+            },
+            "byte_identical": true
+          },
+          "microsd.png": {
+            "original": {
+              "png_sha256": "a24494703c1decd7e56e1a37e3d7f77c51603bbd05999c9be135b28f56c6dd80"
+            },
+            "rebuilt": {
+              "png_sha256": "a24494703c1decd7e56e1a37e3d7f77c51603bbd05999c9be135b28f56c6dd80"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (284 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}
