@@ -1,0 +1,158 @@
+{
+  "device_id": "sticks3",
+  "case": "speaker",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5sticks3/speaker",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5sticks3/speaker.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "841b1a1803d610ba73752ffa0607c1325fd5d45ffd6c2a1e7a0f3ff8122c05ed",
+  "expected_behavior": "StickS3 Speaker. Verify the emitted tones or raw PCM on the board audio route.",
+  "sketch_files": {
+    "speaker.ino": {
+      "path": "devices/sticks3/arduino-docs/speaker/sketch/speaker/speaker.ino",
+      "storage": "public",
+      "sha256": "841b1a1803d610ba73752ffa0607c1325fd5d45ffd6c2a1e7a0f3ff8122c05ed",
+      "bytes": 449
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_sticks3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/sticks3/arduino-docs/speaker/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "880e5773f4b4ce6b506eaaeb0164bb3b8a6be4ddf9aed1f2f92cd8b07a0932a8",
+      "bytes": 615104
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/sticks3/arduino-docs/speaker/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/sticks3/arduino-docs/speaker/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/sticks3/arduino-docs/speaker/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "9820d5bef4c87d644b19b9afb77743ebb21fb34bef834d5a0b533166032ceb28",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/sticks3/arduino-docs/speaker/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "4152ee80e62d239579bec902901276d27078ffe630f07823b505fb9aaee8fbe3",
+      "bytes": 12683176
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "f77f6d220413ac3600c032219c9b1659932cd25456838f526a8254bed98885cb",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "9820d5bef4c87d644b19b9afb77743ebb21fb34bef834d5a0b533166032ceb28",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-sticks3"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-sticks3",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/sticks3.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "I2S output contains 7000 Hz and 4000 Hz tones"
+        },
+        "capture_comparison": {
+          "speaker-output.wav": {
+            "original": {
+              "wav_sha256": "480f1fbcb05a03bdfe21fc7c6e921b4352cfc77092a7db6270f5e7fa884aaafb",
+              "pcm_sha256": "2714ca3ec478001842e7064de2cd1653715fd9c4ab190987523124b343297f84",
+              "frames": 94736,
+              "sample_rate": 22050
+            },
+            "rebuilt": {
+              "wav_sha256": "480f1fbcb05a03bdfe21fc7c6e921b4352cfc77092a7db6270f5e7fa884aaafb",
+              "pcm_sha256": "2714ca3ec478001842e7064de2cd1653715fd9c4ab190987523124b343297f84",
+              "frames": 94736,
+              "sample_rate": 22050
+            },
+            "byte_identical": true
+          },
+          "speaker.png": {
+            "original": {
+              "png_sha256": "2af5e8f34723a97382ae486e913ff8714343fd4151428229af20bd65897416ac"
+            },
+            "rebuilt": {
+              "png_sha256": "2af5e8f34723a97382ae486e913ff8714343fd4151428229af20bd65897416ac"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (878 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2152 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

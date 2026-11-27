@@ -1,0 +1,152 @@
+{
+  "device_id": "sticks3",
+  "case": "ir_nec-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5sticks3/ir_nec",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5sticks3/ir_nec.md",
+    "section": "Receiver",
+    "code_first_line": 263
+  },
+  "sketch_sha256": "1e84e1fc824da129d4bda78613bedb1027704f9928f19739d0df88a5f50dd2b9",
+  "expected_behavior": "StickS3 IR Infrared Transmit & Receive. Verify address/command and timing on the actual NEC waveform or receiver input.",
+  "sketch_files": {
+    "ir_nec_2.ino": {
+      "path": "devices/sticks3/arduino-docs/ir_nec-2/sketch/ir_nec_2/ir_nec_2.ino",
+      "storage": "public",
+      "sha256": "1e84e1fc824da129d4bda78613bedb1027704f9928f19739d0df88a5f50dd2b9",
+      "bytes": 5758
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_sticks3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/sticks3/arduino-docs/ir_nec-2/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "2bb216abb0fe5b15681ff0c2b35c62ff550ca0a2792113679ecb914db03b782a",
+      "bytes": 600928
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/sticks3/arduino-docs/ir_nec-2/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/sticks3/arduino-docs/ir_nec-2/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/sticks3/arduino-docs/ir_nec-2/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "5d3f26cc2bb30689b5153968b4d4f5a9617de1444fd41fe6e3c474f5cc3ee4b0",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/sticks3/arduino-docs/ir_nec-2/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "a5b0a9f266fcf6c6f521a2edbd842fd2527fe1eba7801af81299d80076f10e5d",
+      "bytes": 12605724
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "385c5b6c54bb8f865d8ec39473b7b867c6c32d4ba8dd706cff44caa53e1bd86f",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "5d3f26cc2bb30689b5153968b4d4f5a9617de1444fd41fe6e3c474f5cc3ee4b0",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-sticks3"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-sticks3",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/sticks3.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "both guest NEC payloads match the input address and command"
+        },
+        "capture_comparison": {
+          "ir_nec-2-idle.png": {
+            "original": {
+              "png_sha256": "872ed9198c98b89ad74ccbbc8a8a3247b58d60977ffad941b94f42f1cd2453a9"
+            },
+            "rebuilt": {
+              "png_sha256": "872ed9198c98b89ad74ccbbc8a8a3247b58d60977ffad941b94f42f1cd2453a9"
+            },
+            "byte_identical": true
+          },
+          "ir_nec-2.png": {
+            "original": {
+              "png_sha256": "09d3f1d259d6153835e792644b62b18a6cfa4c985fcda6aae1c87bc006adef0f"
+            },
+            "rebuilt": {
+              "png_sha256": "09d3f1d259d6153835e792644b62b18a6cfa4c985fcda6aae1c87bc006adef0f"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (311 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (867 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2122 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

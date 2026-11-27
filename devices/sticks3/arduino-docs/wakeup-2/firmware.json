@@ -1,0 +1,151 @@
+{
+  "device_id": "sticks3",
+  "case": "wakeup-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5sticks3/wakeup",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5sticks3/wakeup.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 64
+  },
+  "sketch_sha256": "8f9b41c8972d400b42ac87893b2938600e4810244340756d28a090d7b363e6f2",
+  "expected_behavior": "StickS3 Wakeup. Observe the documented sleep/standby transition, inject the wake source, and verify guest resume/reset.",
+  "sketch_files": {
+    "wakeup_2.ino": {
+      "path": "devices/sticks3/arduino-docs/wakeup-2/sketch/wakeup_2/wakeup_2.ino",
+      "storage": "public",
+      "sha256": "8f9b41c8972d400b42ac87893b2938600e4810244340756d28a090d7b363e6f2",
+      "bytes": 1326
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_sticks3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-2/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "f2914cc29b1fdc013c2fc5969e8e20f440ebea50f821afc8fb061d782c72d4c0",
+      "bytes": 617920
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-2/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-2/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-2/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "8d789013ddc1fe7dd4074d9461b3750572572c741b021fcc44ccad816e440a00",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/sticks3/arduino-docs/wakeup-2/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "de45176a2483265647618ca2e513074f182d14766709c7d54ead8d53b86e814c",
+      "bytes": 12808744
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "e81fe36a2668548ae3a1dcae6f09b6d2d21bc7ab0d02300689e47e9ff587f233",
+    "verdict": "DOCS-DEFECT",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "DOCS-DEFECT",
+    "original_verdict": "DOCS-DEFECT",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "8d789013ddc1fe7dd4074d9461b3750572572c741b021fcc44ccad816e440a00",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-sticks3"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-sticks3",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/sticks3.bin"
+        },
+        "verdict": "DOCS-DEFECT",
+        "original_verdict": "DOCS-DEFECT",
+        "checker": {
+          "verdict": "DOCS-DEFECT",
+          "reason": "wakeup_2.ino:16 assigns Wire/I2C0 to GPIO47/48. M5.update polls PM1 through M5GFX I2C1, which rewrites the same GPIO output selectors. The later Wire operation fails after the I2C1 remap."
+        },
+        "capture_comparison": {
+          "wakeup-2.png": {
+            "original": {
+              "png_sha256": "e653aa133ac614c01a3adf344e4988bdd00fc7e8f83258441cee89730aa1437e"
+            },
+            "rebuilt": {
+              "png_sha256": "e653aa133ac614c01a3adf344e4988bdd00fc7e8f83258441cee89730aa1437e"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ],
+    "defect": {
+      "file_line": "static/en/arduino/m5sticks3/wakeup.md:80,100",
+      "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+    }
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (314 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "DOCS-DEFECT",
+  "defect": {
+    "file_line": "static/en/arduino/m5sticks3/wakeup.md:80,100",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+  }
+}

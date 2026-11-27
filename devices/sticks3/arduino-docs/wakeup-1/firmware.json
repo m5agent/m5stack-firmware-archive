@@ -1,0 +1,151 @@
+{
+  "device_id": "sticks3",
+  "case": "wakeup-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5sticks3/wakeup",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5sticks3/wakeup.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "437397da2d2dc771751b78c78c20e8a9a2712408c71d19e18fa5099845377cbf",
+  "expected_behavior": "StickS3 Wakeup. Observe the documented sleep/standby transition, inject the wake source, and verify guest resume/reset.",
+  "sketch_files": {
+    "wakeup_1.ino": {
+      "path": "devices/sticks3/arduino-docs/wakeup-1/sketch/wakeup_1/wakeup_1.ino",
+      "storage": "public",
+      "sha256": "437397da2d2dc771751b78c78c20e8a9a2712408c71d19e18fa5099845377cbf",
+      "bytes": 414
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_sticks3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "7e409f5646340dd1c88cf10b11c214b66fea0449f5e14756c3d737816ed386db",
+      "bytes": 609792
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/sticks3/arduino-docs/wakeup-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "a8650e990aaa691e9fb591e5178fc072dc04e80407334dd6d4398b7c8339fca4",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/sticks3/arduino-docs/wakeup-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "52a5989cce096d14e24999ca7062448b15b5fca9f8bec15e91d20540cfe6762d",
+      "bytes": 12603992
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "d0d03b2ea4ddf6f6e32d76ebd96312272a2b62ea957de5e9031fa105a7ca0074",
+    "verdict": "DOCS-DEFECT",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "DOCS-DEFECT",
+    "original_verdict": "DOCS-DEFECT",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "a8650e990aaa691e9fb591e5178fc072dc04e80407334dd6d4398b7c8339fca4",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-sticks3"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-sticks3",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/sticks3.bin"
+        },
+        "verdict": "DOCS-DEFECT",
+        "original_verdict": "DOCS-DEFECT",
+        "checker": {
+          "verdict": "DOCS-DEFECT",
+          "reason": "wakeup_1.ino:18 calls timerSleep(5). The pinned library arms the ESP RTC timer then cuts the ESP's supply through PM1 before entering deep sleep. No PM1 timer was armed."
+        },
+        "capture_comparison": {
+          "wakeup-1.png": {
+            "original": {
+              "png_sha256": "a37275fcc7984d24db6567d77ff9b1fbb6ffaed1756b45b6b825d4a01d7de358"
+            },
+            "rebuilt": {
+              "png_sha256": "a37275fcc7984d24db6567d77ff9b1fbb6ffaed1756b45b6b825d4a01d7de358"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ],
+    "defect": {
+      "file_line": "static/en/arduino/m5sticks3/wakeup.md:32",
+      "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+    }
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (320 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (874 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2120 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "DOCS-DEFECT",
+  "defect": {
+    "file_line": "static/en/arduino/m5sticks3/wakeup.md:32",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+  }
+}
