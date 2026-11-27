@@ -1,0 +1,164 @@
+{
+  "device_id": "atom-matrix-v11",
+  "case": "rgb",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5atom/rgb",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5atom/rgb.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "4ff754ce47dd70afb2cd119dd2ab04d5e21e145232862bc4bfce9be9fb16c0f2",
+  "expected_behavior": "Atom-Lite/Atom-Matrix RGB LED. Verify channel/color order and the populated pixel count through real output.",
+  "sketch_files": {
+    "rgb.ino": {
+      "path": "devices/atom-matrix-v11/arduino-docs/rgb/sketch/rgb/rgb.ino",
+      "storage": "public",
+      "sha256": "4ff754ce47dd70afb2cd119dd2ab04d5e21e145232862bc4bfce9be9fb16c0f2",
+      "bytes": 1447
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_atom",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/atom-matrix-v11/arduino-docs/rgb/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "b7e68b9f56a0c2d18b68e6eaeb57e61cb13ceaca6c85556ccd1d580dac344ff1",
+      "bytes": 519184
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/atom-matrix-v11/arduino-docs/rgb/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/atom-matrix-v11/arduino-docs/rgb/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/atom-matrix-v11/arduino-docs/rgb/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "54b86776080603d07ba2b5d948f3f20864338abc0cebe8027a289acf5924c9d7",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/atom-matrix-v11/arduino-docs/rgb/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "4e3757643a39cc9f492eea5675e3849ac454ccfd84ab6ece2b2447b84e6aaf97",
+      "bytes": 770652
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "832797b24f155fdac3d47d24de0aae74b09932d51417ef3593743331bda2740f",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "54b86776080603d07ba2b5d948f3f20864338abc0cebe8027a289acf5924c9d7",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-atom-matrix-v11"
+      ],
+      "run_commands": [
+        "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-matrix-v11 $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-atom-matrix-v11",
+        "run_command": "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-matrix-v11 $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "ATOM_PLAN_DIR": "$PLAN_DIR",
+          "ATOM_STOCK_DIR": "$FIXTURES_DIR/agent-lx6a/downloads"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "evidence": {
+            "red": true,
+            "green": true,
+            "blue": true
+          }
+        },
+        "capture_comparison": {
+          "rgb-blue.png": {
+            "original": {
+              "png_sha256": "75faabb2ecf72eb307d4815da91ab530eb7e1bc1fb93762126cbd62dcb1e5b28"
+            },
+            "rebuilt": {
+              "png_sha256": "75faabb2ecf72eb307d4815da91ab530eb7e1bc1fb93762126cbd62dcb1e5b28"
+            },
+            "byte_identical": true
+          },
+          "rgb-green.png": {
+            "original": {
+              "png_sha256": "e4d97fb61ba8354642d01afaf26f297c589d4ae17da57a0bab4e692e8542a3cf"
+            },
+            "rebuilt": {
+              "png_sha256": "e4d97fb61ba8354642d01afaf26f297c589d4ae17da57a0bab4e692e8542a3cf"
+            },
+            "byte_identical": true
+          },
+          "rgb-red.png": {
+            "original": {
+              "png_sha256": "7d410f00f042d6f4d88b9f8882ca0efb2c84412ab5b2160286afa7bf876454fe"
+            },
+            "rebuilt": {
+              "png_sha256": "7d410f00f042d6f4d88b9f8882ca0efb2c84412ab5b2160286afa7bf876454fe"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (275 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}
