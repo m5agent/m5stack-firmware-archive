@@ -11929,6 +11929,496 @@
           "python3 $SIM_SRC/tools/run-lx6-stick.py stickc $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
       }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "0a41537bcae3700b14e28cca8a8b73f9fe5ac2cd3e852e43a2d4138d0203e74d",
+      "manifest": "devices/nanoc6/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ac568cc422f53259cba4d57bcd0e1633ae3e9dde3ec733c47f1ea211c0871fb9",
+      "original_build": {
+        "firmware_sha256": "d1246ce3912d47bcb92ffc525aac853eea44754fd281ae5eac51893f70f4d8d5",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "7458578490f911bafc647ce0ed9fded507c2812658bca0ded75652920ad7a882",
+      "manifest": "devices/nanoc6/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "97fb4723d0a13d5e27ad63dfdba194a222ef5fa4eba425ecb0d9a6a13d2ff475",
+      "original_build": {
+        "firmware_sha256": "40d0c54116512409ede2456ba68e439b7326a7ec674830da45fc5a0ab148b27c",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "led",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/led",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/led.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "3c8aaec000cfd103f8284f8be8201cda0e109bebb978437aae303949bab03832",
+      "manifest": "devices/nanoc6/arduino-docs/led/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a0edd8aeb0a36947789f009cf9d73cd4665169c2f80808719bff65d2ffd80eac",
+      "original_build": {
+        "firmware_sha256": "f0178e3964ab0663521330fa2837e86bb06bd98874266231184cfa096728d942",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "program",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/program.md",
+        "section": "4. Program Compile & Upload",
+        "code_first_line": 29
+      },
+      "sketch_sha256": "9218198d9c651ef7a9afdb43e966864775ef8e8d3ee47e226bda1d7d76510f5a",
+      "manifest": "devices/nanoc6/arduino-docs/program/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e524d5ac1f47e2418eb1a9cb784361dcca404e12953dce163acca1404fa24c9a",
+      "original_build": {
+        "firmware_sha256": "aef0eb81f123816bd24a714f0832117201925c176bf22a941dfe20cb295b8bae",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "thread-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+        "section": "1. Simple Node",
+        "code_first_line": 44
+      },
+      "sketch_sha256": "a7c9bc9ec76d779efa1faa1a31b4fe92786e1d485b09281b031a7a29588e1945",
+      "manifest": "devices/nanoc6/arduino-docs/thread-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "47d3783f87f49163f63e5d8bc87ff3a8cc895414d3821f342193b56b08def05e",
+      "original_build": {
+        "firmware_sha256": "c374dae02da13cb15cbb15e58e39438b14ee5f60ac928d1eaac373a8ea85df01",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "thread-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+        "section": "2.1 Leader Node",
+        "code_first_line": 85
+      },
+      "sketch_sha256": "a5e51b7a2e6594b84f9a60d720d5a58dcc2681a9b9f068ebddc1fa7c8a7b2b1e",
+      "manifest": "devices/nanoc6/arduino-docs/thread-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "351830d674a5e32170b7f84be85713d8e7cc81d865e1e6368761f8908a2fcf93",
+      "original_build": {
+        "firmware_sha256": "9884a7e391756606d889140e64c5ea961082b2007107517c180f98bad746e8fe",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/thread-2/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/thread-3/sketch.merged.bin\" \"$PEER_OUT/thread-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 36.0"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "thread-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+        "section": "2.2 Router Node",
+        "code_first_line": 179
+      },
+      "sketch_sha256": "987721d7f14ecf8e97af8ec5fcd313e81bca847ed560c1195a8c5bb39b8d4a7c",
+      "manifest": "devices/nanoc6/arduino-docs/thread-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1fa7fc825f5e1a0a92bd2e4e9bcd28ebee810d3a8e2d003f3a4cf91e332aa9f5",
+      "original_build": {
+        "firmware_sha256": "65e659e8b3d10ae07bec05f5b334d63f9396417115c28fd5630e20e49931ae26",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/thread-2/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/thread-3/sketch.merged.bin\" \"$PEER_OUT/thread-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 36.0"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "thread-4",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+        "section": "3. Thread Scan",
+        "code_first_line": 283
+      },
+      "sketch_sha256": "ca801e9a808f79c6b4a39f0cd1968b61a2975d2eba6f37c4edc866ae77bef6f6",
+      "manifest": "devices/nanoc6/arduino-docs/thread-4/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ce5abe3f9a07ae41c54d9e3d7d1465f0dcd4b4be046277894842f51261a88d13",
+      "original_build": {
+        "firmware_sha256": "0b5195a1dee2419e8119bdf87f1e041288e0e67c92db731355a1c5223c929515",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/thread-2/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/thread-4/sketch.merged.bin\" \"$PEER_OUT/thread-scan\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 36.0"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "thread-5",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+        "section": "4. Simple CLI",
+        "code_first_line": 334
+      },
+      "sketch_sha256": "937e33f485e2cb310c6c431f504c458c52e45434f47bcf962d817a03ab4a96a3",
+      "manifest": "devices/nanoc6/arduino-docs/thread-5/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b1cb53247a4cf1f6cd11c97b96ed76e43c2ee8a1dbbba6bc8e93e4b993b5a53a",
+      "original_build": {
+        "firmware_sha256": "58f218c4eb04c4a89f4760259aa9db2a2bc8fa680791c723f48ab1891a6952f1",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "thread-6",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+        "section": "5. Receive Callback (onReceive)",
+        "code_first_line": 359
+      },
+      "sketch_sha256": "4badb87d4cf67b86dece83d4c8feff531f0e5d9a38ca092df8bd02cc2c796395",
+      "manifest": "devices/nanoc6/arduino-docs/thread-6/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "d828c9b79d24d5ae09a08ac3570989a7350ea98431da1b30b9182fd4b3716578",
+      "original_build": {
+        "firmware_sha256": "bdc3967edaea1c1bc3650929c17ecd885fee58d4cde0b2af81372b395bfd9ee1",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "zigbee-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/zigbee",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/zigbee.md",
+        "section": "Example Program",
+        "code_first_line": 45
+      },
+      "sketch_sha256": "a9cdadcf3667a089f68e7f928c1d904cf94b13f81cac1710503c5880a01bca0b",
+      "manifest": "devices/nanoc6/arduino-docs/zigbee-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b2dfac33979f562d3c05582860878e2c1b6cae685bf7b77ae0b2293f18aef7d5",
+      "original_build": {
+        "firmware_sha256": "ba3097debdd622472d395634b69250f1cff3ff62e78c10390a7ba1ef16196e19",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6",
+          "m5stack-nanoc6-enviii"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-1/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-2/sketch.merged.bin\" \"$PEER_OUT/zigbee-temp\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6-enviii --seconds 43.0 --script 1 \"$ARCHIVE/devices/nanoc6/arduino-docs/fixtures/env-actions.txt\""
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "zigbee-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/zigbee",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/zigbee.md",
+        "section": "Example Program",
+        "code_first_line": 175
+      },
+      "sketch_sha256": "d852a5bc1448986d8ef69c536836557bcd1ba0ac9b1266ca7a25e27937a419ab",
+      "manifest": "devices/nanoc6/arduino-docs/zigbee-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b54a6a827742564d6d85594291403afee153df390ca521b88ab869f1d33c2163",
+      "original_build": {
+        "firmware_sha256": "4da94740068dd5f84ff0cfc18d5bcead00dcfa5e40455c775efbcbb850d05450",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6",
+          "m5stack-nanoc6-enviii"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-1/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-2/sketch.merged.bin\" \"$PEER_OUT/zigbee-temp\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6-enviii --seconds 43.0 --script 1 \"$ARCHIVE/devices/nanoc6/arduino-docs/fixtures/env-actions.txt\""
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "zigbee-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/zigbee",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/zigbee.md",
+        "section": "Example Program",
+        "code_first_line": 364
+      },
+      "sketch_sha256": "7546ca93c003095ffbe939797c9d11761ce69931f7c29fd0011d781ac3388e7b",
+      "manifest": "devices/nanoc6/arduino-docs/zigbee-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "fae2bc82d85ea4bd5261147d6ab392001ec652a70a2368c9ee23854272aa0e8d",
+      "original_build": {
+        "firmware_sha256": "76a73c06b93460db55fe1589b6c1f9d79a0eebbcdbd2567cbf9ed231f242d97b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-4/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-3/sketch.merged.bin\" \"$PEER_OUT/zigbee-scan\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 36.0"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "zigbee-4",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/zigbee",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/zigbee.md",
+        "section": "Example Program",
+        "code_first_line": 488
+      },
+      "sketch_sha256": "8bc5a0fc91e4c5e59851980ff77cb11f0d659b4a5861ee1de821da4bf974b78a",
+      "manifest": "devices/nanoc6/arduino-docs/zigbee-4/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1bf16418b45d2b87ac007442ea487a4011b56cb1ab55ab6101f6cc3fdb230d8b",
+      "original_build": {
+        "firmware_sha256": "36f9f688af953b79e046e99a7468b6274023ea97ebcf721ecac3993b2632500e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-4/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-5/sketch.merged.bin\" \"$PEER_OUT/zigbee-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 38.0 --script 0 \"$ARCHIVE/devices/nanoc6/arduino-docs/fixtures/zigbee-final-actions.txt\" --observe-leds"
+        ]
+      }
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "zigbee-5",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/zigbee",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5nanoc6/zigbee.md",
+        "section": "Example Program",
+        "code_first_line": 602
+      },
+      "sketch_sha256": "a0dc68f46fc6d2f39fb916f1effca20876d9fd73e5f0c71236bbe69e65f21a20",
+      "manifest": "devices/nanoc6/arduino-docs/zigbee-5/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "7be4f18e4e7c85a132c4b10e2c31395cba52a513df1576dc67f3ddfefa97262f",
+      "original_build": {
+        "firmware_sha256": "5478aaf597913668bb0182f80a5a6b28617f6469961765f6c0df5fb3601cb191",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-nanoc6"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+          "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-4/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-5/sketch.merged.bin\" \"$PEER_OUT/zigbee-peer\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 38.0 --script 0 \"$ARCHIVE/devices/nanoc6/arduino-docs/fixtures/zigbee-final-actions.txt\" --observe-leds"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -21989,6 +22479,434 @@
     "devices/stickc/arduino-docs/quickstart-helloworld/firmware.json": {
       "sha256": "c07f70caeedb46974abc038ee3ded281871a0f3590ce551f4d82a140ac333d8e",
       "bytes": 6348
+    },
+    "devices/nanoc6/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "0a41537bcae3700b14e28cca8a8b73f9fe5ac2cd3e852e43a2d4138d0203e74d",
+      "bytes": 364
+    },
+    "devices/nanoc6/arduino-docs/button/migration.ino.bin": {
+      "sha256": "6746521c5ef6d2f5a09785bd74c879533efcfcbec6146e7772a82b4c3445f63a",
+      "bytes": 239664
+    },
+    "devices/nanoc6/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "ac568cc422f53259cba4d57bcd0e1633ae3e9dde3ec733c47f1ea211c0871fb9",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/button/migration.ino.elf": {
+      "sha256": "8f917f70f96a796b6c02c21f1fa448885c68373898d7ff7136536ea4d4ad1b69",
+      "bytes": 5851392
+    },
+    "devices/nanoc6/arduino-docs/button/firmware.json": {
+      "sha256": "e27558ad34b4d59e5cf1e851f3718b7df2c78e843d8ff0e25da9afde7fa7aa8c",
+      "bytes": 4990
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "7458578490f911bafc647ce0ed9fded507c2812658bca0ded75652920ad7a882",
+      "bytes": 1008
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "87b11efbb8a84c4d3674c6d432de1ff18697f706511f788011f5bebbc57ab4a6",
+      "bytes": 250752
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "97fb4723d0a13d5e27ad63dfdba194a222ef5fa4eba425ecb0d9a6a13d2ff475",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "06637ac02de496cc37d4e41a456f6285cd9a431584f7a20cd4551e7017d1acb1",
+      "bytes": 6333304
+    },
+    "devices/nanoc6/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "223c97ac5a5f8e0b49b41bde067f7d94eb4b162dc8fab6c6aa6dbb5493c456a2",
+      "bytes": 4991
+    },
+    "devices/nanoc6/arduino-docs/led/sketch/led/led.ino": {
+      "sha256": "3c8aaec000cfd103f8284f8be8201cda0e109bebb978437aae303949bab03832",
+      "bytes": 253
+    },
+    "devices/nanoc6/arduino-docs/led/migration.ino.bin": {
+      "sha256": "8dc164724b082206d1b3c4fa8685745dc5093b532c1580c0a4ace3c5ae1f60bd",
+      "bytes": 238976
+    },
+    "devices/nanoc6/arduino-docs/led/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/led/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/led/migration.ino.merged.bin": {
+      "sha256": "a0edd8aeb0a36947789f009cf9d73cd4665169c2f80808719bff65d2ffd80eac",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/led/migration.ino.elf": {
+      "sha256": "6e0facbf1b43da7f83027aecf9dd70f10a7a2ea74a5bee74b53321284078384d",
+      "bytes": 5851748
+    },
+    "devices/nanoc6/arduino-docs/led/firmware.json": {
+      "sha256": "5c6e60d4a1b5ce3dfd0735f61fe5531a0a7e648bb5c0aac174ee93ee82d75a2e",
+      "bytes": 4939
+    },
+    "devices/nanoc6/arduino-docs/program/sketch/program/program.ino": {
+      "sha256": "9218198d9c651ef7a9afdb43e966864775ef8e8d3ee47e226bda1d7d76510f5a",
+      "bytes": 590
+    },
+    "devices/nanoc6/arduino-docs/program/migration.ino.bin": {
+      "sha256": "2d8e2b24fe90e5c7feb601a72cf3626efab4c9ceeab18134fc31a2145f608201",
+      "bytes": 261152
+    },
+    "devices/nanoc6/arduino-docs/program/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/program/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/program/migration.ino.merged.bin": {
+      "sha256": "e524d5ac1f47e2418eb1a9cb784361dcca404e12953dce163acca1404fa24c9a",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/program/migration.ino.elf": {
+      "sha256": "52d1469bddce9a3e9676289bcc0e20ad9593d18c1e05933d4aa78a05947522ff",
+      "bytes": 6215916
+    },
+    "devices/nanoc6/arduino-docs/program/firmware.json": {
+      "sha256": "5e9504766f404b8f3710ca4ce92bbf0548612cd7d42a38e57a2af3bbca60a0d8",
+      "bytes": 5020
+    },
+    "devices/nanoc6/arduino-docs/thread-1/sketch/thread_1/thread_1.ino": {
+      "sha256": "a7c9bc9ec76d779efa1faa1a31b4fe92786e1d485b09281b031a7a29588e1945",
+      "bytes": 488
+    },
+    "devices/nanoc6/arduino-docs/thread-1/migration.ino.bin": {
+      "sha256": "763b19ff38b269bac7c6234925f24da7915fcbea1aa6c65458f4c426a139d60e",
+      "bytes": 1082064
+    },
+    "devices/nanoc6/arduino-docs/thread-1/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/thread-1/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/thread-1/migration.ino.merged.bin": {
+      "sha256": "47d3783f87f49163f63e5d8bc87ff3a8cc895414d3821f342193b56b08def05e",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/thread-1/migration.ino.elf": {
+      "sha256": "31769111fd06a544b4cb735ffa47d91a115f3b64a795db70145a338ffbb1f99c",
+      "bytes": 11312440
+    },
+    "devices/nanoc6/arduino-docs/thread-1/firmware.json": {
+      "sha256": "8ecd34712732e67c93020a9a584e6e7c2bda205f8e9ad9bd6f84d00bc9209e59",
+      "bytes": 5013
+    },
+    "devices/nanoc6/arduino-docs/thread-2/sketch/thread_2/thread_2.ino": {
+      "sha256": "a5e51b7a2e6594b84f9a60d720d5a58dcc2681a9b9f068ebddc1fa7c8a7b2b1e",
+      "bytes": 2723
+    },
+    "devices/nanoc6/arduino-docs/thread-2/migration.ino.bin": {
+      "sha256": "b7fbeca1a67eab700941c7f051588cbc182be223009719c85ace76f5f03fd2f9",
+      "bytes": 1082736
+    },
+    "devices/nanoc6/arduino-docs/thread-2/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/thread-2/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/thread-2/migration.ino.merged.bin": {
+      "sha256": "351830d674a5e32170b7f84be85713d8e7cc81d865e1e6368761f8908a2fcf93",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/thread-2/migration.ino.elf": {
+      "sha256": "9032bcd3c7a572c5eb9ac9dbae4420577c6765d7d74788fc76e6a23698ba933d",
+      "bytes": 11317236
+    },
+    "devices/nanoc6/arduino-docs/thread-2/firmware.json": {
+      "sha256": "0082fe55cc0ea6a4b6c1a1e2b934139d13dee5493e4f4e905ba57755c83289b3",
+      "bytes": 5334
+    },
+    "devices/nanoc6/arduino-docs/thread-3/sketch/thread_3/thread_3.ino": {
+      "sha256": "987721d7f14ecf8e97af8ec5fcd313e81bca847ed560c1195a8c5bb39b8d4a7c",
+      "bytes": 2851
+    },
+    "devices/nanoc6/arduino-docs/thread-3/migration.ino.bin": {
+      "sha256": "c770db6b289be5f36e20744a2d5afc02984e9efb22ea3cefbaf2d2b9bfee2683",
+      "bytes": 1082800
+    },
+    "devices/nanoc6/arduino-docs/thread-3/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/thread-3/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/thread-3/migration.ino.merged.bin": {
+      "sha256": "1fa7fc825f5e1a0a92bd2e4e9bcd28ebee810d3a8e2d003f3a4cf91e332aa9f5",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/thread-3/migration.ino.elf": {
+      "sha256": "69eb0f15e0378dca2e2a4e3a4d04d97871ea875b9908b0e0ac0ec3e3c61642a3",
+      "bytes": 11317388
+    },
+    "devices/nanoc6/arduino-docs/thread-3/firmware.json": {
+      "sha256": "083e30c1d6744f3128e1f8ac04320b6e57608f04d512854415932dc1a51f359b",
+      "bytes": 5335
+    },
+    "devices/nanoc6/arduino-docs/thread-4/sketch/thread_4/thread_4.ino": {
+      "sha256": "ca801e9a808f79c6b4a39f0cd1968b61a2975d2eba6f37c4edc866ae77bef6f6",
+      "bytes": 1023
+    },
+    "devices/nanoc6/arduino-docs/thread-4/migration.ino.bin": {
+      "sha256": "7556414e9c7429d744dfdf37c072fe32a0d6ebbc41b2112f795ee99f3d90877e",
+      "bytes": 1082208
+    },
+    "devices/nanoc6/arduino-docs/thread-4/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/thread-4/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/thread-4/migration.ino.merged.bin": {
+      "sha256": "ce5abe3f9a07ae41c54d9e3d7d1465f0dcd4b4be046277894842f51261a88d13",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/thread-4/migration.ino.elf": {
+      "sha256": "e3c5d0a18a1076c6502f5b22e1f248ef65948db10cbf73c6267cf44c65efcd78",
+      "bytes": 11313056
+    },
+    "devices/nanoc6/arduino-docs/thread-4/firmware.json": {
+      "sha256": "9a3bb7fff7af60f36a89ba3304c42e2dd3acbba90b6e54d22b59a596207eaf50",
+      "bytes": 5334
+    },
+    "devices/nanoc6/arduino-docs/thread-5/sketch/thread_5/thread_5.ino": {
+      "sha256": "937e33f485e2cb310c6c431f504c458c52e45434f47bcf962d817a03ab4a96a3",
+      "bytes": 276
+    },
+    "devices/nanoc6/arduino-docs/thread-5/migration.ino.bin": {
+      "sha256": "4b91d37327d2259e612b6579b13e3ed1826446e8c3f87ed0114601797340ee46",
+      "bytes": 1081936
+    },
+    "devices/nanoc6/arduino-docs/thread-5/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/thread-5/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/thread-5/migration.ino.merged.bin": {
+      "sha256": "b1cb53247a4cf1f6cd11c97b96ed76e43c2ee8a1dbbba6bc8e93e4b993b5a53a",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/thread-5/migration.ino.elf": {
+      "sha256": "635043ca7d520c4d5f8e401d8c3ea476362d5094d2512b8ac612d1c4ac676bc3",
+      "bytes": 11312160
+    },
+    "devices/nanoc6/arduino-docs/thread-5/firmware.json": {
+      "sha256": "5413796f69bf146f2e66bac2f02558d785776cf044515771304ad3afb6e7371d",
+      "bytes": 5013
+    },
+    "devices/nanoc6/arduino-docs/thread-6/sketch/thread_6/thread_6.ino": {
+      "sha256": "4badb87d4cf67b86dece83d4c8feff531f0e5d9a38ca092df8bd02cc2c796395",
+      "bytes": 796
+    },
+    "devices/nanoc6/arduino-docs/thread-6/migration.ino.bin": {
+      "sha256": "69daee149f83a6657cc73743fb5715607a851af440aa64f2d4300f6cc6e0516b",
+      "bytes": 1081808
+    },
+    "devices/nanoc6/arduino-docs/thread-6/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/thread-6/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/thread-6/migration.ino.merged.bin": {
+      "sha256": "d828c9b79d24d5ae09a08ac3570989a7350ea98431da1b30b9182fd4b3716578",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/thread-6/migration.ino.elf": {
+      "sha256": "711daf12a761da520c7ae26bb154ff90e27d5fc51b76b72e8cd7162d512b33fa",
+      "bytes": 11327248
+    },
+    "devices/nanoc6/arduino-docs/thread-6/firmware.json": {
+      "sha256": "505aac261b21b295aa021f319c0aca205aeda89e63398d8bc0cfeb39a90202ab",
+      "bytes": 5031
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/sketch/zigbee_1/zigbee_1.ino": {
+      "sha256": "a9cdadcf3667a089f68e7f928c1d904cf94b13f81cac1710503c5880a01bca0b",
+      "bytes": 2814
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.bin": {
+      "sha256": "f226915c1a0824732bd985e56efdc4f5be75be71423c7ef9b39314c9896880a7",
+      "bytes": 678880
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.partitions.bin": {
+      "sha256": "01358d93531719c033d5cd657680cab6579bbfc07c550e1a5d2e8c8977d1b9af",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.merged.bin": {
+      "sha256": "b2dfac33979f562d3c05582860878e2c1b6cae685bf7b77ae0b2293f18aef7d5",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.elf": {
+      "sha256": "c6c299d5bf42da75b07a143137458b3af813b7643407ad090c63d240a2603908",
+      "bytes": 8602540
+    },
+    "devices/nanoc6/arduino-docs/zigbee-1/firmware.json": {
+      "sha256": "b3e40df10c5e5a355e30881d2820c20da9805d1505f72b83234d02367a292dfc",
+      "bytes": 5500
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/sketch/zigbee_2/zigbee_2.ino": {
+      "sha256": "d852a5bc1448986d8ef69c536836557bcd1ba0ac9b1266ca7a25e27937a419ab",
+      "bytes": 5220
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/migration.ino.bin": {
+      "sha256": "8df2aedd185fd04b7512ff4d175fd618e5229878ead2c1ece380fe945aeb5532",
+      "bytes": 586032
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/migration.ino.partitions.bin": {
+      "sha256": "01358d93531719c033d5cd657680cab6579bbfc07c550e1a5d2e8c8977d1b9af",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/migration.ino.merged.bin": {
+      "sha256": "b54a6a827742564d6d85594291403afee153df390ca521b88ab869f1d33c2163",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/migration.ino.elf": {
+      "sha256": "138f681bb54367c9662428f9c0ea47bc38db72f9d336917e4ffd3c7ac80da0db",
+      "bytes": 8683804
+    },
+    "devices/nanoc6/arduino-docs/zigbee-2/firmware.json": {
+      "sha256": "2112e90f13b42fe1cd981af8bbe88186b95daf9d63f268f10eab57262b8fd982",
+      "bytes": 5499
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/sketch/zigbee_3/zigbee_3.ino": {
+      "sha256": "7546ca93c003095ffbe939797c9d11761ce69931f7c29fd0011d781ac3388e7b",
+      "bytes": 3145
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/migration.ino.bin": {
+      "sha256": "9c962b50e835f4b26eada99ae693dff2620ab6ce9abe6a433c02615c56a1ac8a",
+      "bytes": 640272
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/migration.ino.partitions.bin": {
+      "sha256": "01358d93531719c033d5cd657680cab6579bbfc07c550e1a5d2e8c8977d1b9af",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/migration.ino.merged.bin": {
+      "sha256": "fae2bc82d85ea4bd5261147d6ab392001ec652a70a2368c9ee23854272aa0e8d",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/migration.ino.elf": {
+      "sha256": "26581349499d5860232527c87155b04a53d454c1b58ec66b990316dd30858313",
+      "bytes": 8530008
+    },
+    "devices/nanoc6/arduino-docs/zigbee-3/firmware.json": {
+      "sha256": "88850c94d22d837f63da3ea6478f403f7e328906c96fc4390381e56cc3d5225a",
+      "bytes": 5384
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/sketch/zigbee_4/zigbee_4.ino": {
+      "sha256": "8bc5a0fc91e4c5e59851980ff77cb11f0d659b4a5861ee1de821da4bf974b78a",
+      "bytes": 2234
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/migration.ino.bin": {
+      "sha256": "cc787d1c17a2d4a2f62a11c1d709c840e47544ae8a7abf8a881f4c92002d50ff",
+      "bytes": 681808
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/migration.ino.partitions.bin": {
+      "sha256": "01358d93531719c033d5cd657680cab6579bbfc07c550e1a5d2e8c8977d1b9af",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/migration.ino.merged.bin": {
+      "sha256": "1bf16418b45d2b87ac007442ea487a4011b56cb1ab55ab6101f6cc3fdb230d8b",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/migration.ino.elf": {
+      "sha256": "1a4a244e4bd309b23a894e86a3a2741ca2c6009b3415f532e9aa115e8026142e",
+      "bytes": 8672288
+    },
+    "devices/nanoc6/arduino-docs/zigbee-4/firmware.json": {
+      "sha256": "7f29e245a5d12a4d1774dc3c648b6a7d0d46ca54a2539c0bf70540b145d31747",
+      "bytes": 5485
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/sketch/zigbee_5/zigbee_5.ino": {
+      "sha256": "a0dc68f46fc6d2f39fb916f1effca20876d9fd73e5f0c71236bbe69e65f21a20",
+      "bytes": 1544
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/migration.ino.bin": {
+      "sha256": "a856080381d8f8ba075e70dca39ce197ac3daf4cdb28d54d52f7a079e72338d9",
+      "bytes": 564272
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/migration.ino.bootloader.bin": {
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/migration.ino.partitions.bin": {
+      "sha256": "01358d93531719c033d5cd657680cab6579bbfc07c550e1a5d2e8c8977d1b9af",
+      "bytes": 3072
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/migration.ino.merged.bin": {
+      "sha256": "7be4f18e4e7c85a132c4b10e2c31395cba52a513df1576dc67f3ddfefa97262f",
+      "bytes": 4194304
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/migration.ino.elf": {
+      "sha256": "de05a7836f16a557e17452eade9e9dd5bf1b6755ec1b19410a39f79ea7626c5c",
+      "bytes": 8383404
+    },
+    "devices/nanoc6/arduino-docs/zigbee-5/firmware.json": {
+      "sha256": "61c930da390893c1cabd5e5caa326ea6ffed2aa05288ff472472b3e2dda4a5b3",
+      "bytes": 5483
+    },
+    "devices/nanoc6/arduino-docs/fixtures/env-actions.txt": {
+      "sha256": "06918bd6501af417c1e825aa035f1ed5842cfd360bf2d53eb0f1581ea41bf5b5",
+      "bytes": 56
+    },
+    "devices/nanoc6/arduino-docs/fixtures/zigbee-final-actions.txt": {
+      "sha256": "8de88e821925eb8098f630fa6112dae110bb241ed1293619f647eaeb1bc4b82a",
+      "bytes": 90
     }
   },
   "local_files": {
@@ -22564,7 +23482,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 334,
+    "published_cases": 349,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

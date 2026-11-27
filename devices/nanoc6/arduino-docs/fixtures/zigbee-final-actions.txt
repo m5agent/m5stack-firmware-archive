@@ -1,0 +1,5 @@
+12 press btnA 180
+18 press btnA 180
+24 press btnA 180
+31 press btnA 180
+35 press btnA 180

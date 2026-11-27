@@ -1,0 +1,129 @@
+{
+  "device_id": "nanoc6",
+  "case": "zigbee-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/zigbee",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5nanoc6/zigbee.md",
+    "section": "Example Program",
+    "code_first_line": 45
+  },
+  "sketch_sha256": "a9cdadcf3667a089f68e7f928c1d904cf94b13f81cac1710503c5880a01bca0b",
+  "expected_behavior": "NanoC6 Zigbee Arduino. Exercise the documented coordinator/end-device role with its matching peer and verify data exchange.",
+  "sketch_files": {
+    "zigbee_1.ino": {
+      "path": "devices/nanoc6/arduino-docs/zigbee-1/sketch/zigbee_1/zigbee_1.ino",
+      "storage": "public",
+      "sha256": "a9cdadcf3667a089f68e7f928c1d904cf94b13f81cac1710503c5880a01bca0b",
+      "bytes": 2814
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_nano_c6:PartitionScheme=zigbee_zczr,ZigbeeMode=zczr",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "f226915c1a0824732bd985e56efdc4f5be75be71423c7ef9b39314c9896880a7",
+      "bytes": 678880
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "01358d93531719c033d5cd657680cab6579bbfc07c550e1a5d2e8c8977d1b9af",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "b2dfac33979f562d3c05582860878e2c1b6cae685bf7b77ae0b2293f18aef7d5",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/nanoc6/arduino-docs/zigbee-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "c6c299d5bf42da75b07a143137458b3af813b7643407ad090c63d240a2603908",
+      "bytes": 8602540
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "ba3097debdd622472d395634b69250f1cff3ff62e78c10390a7ba1ef16196e19",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "b2dfac33979f562d3c05582860878e2c1b6cae685bf7b77ae0b2293f18aef7d5",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-nanoc6",
+        "m5stack-nanoc6-enviii"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/zigbee-1/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/zigbee-2/sketch.merged.bin\" \"$PEER_OUT/zigbee-temp\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6-enviii --seconds 43.0 --script 1 \"$ARCHIVE/devices/nanoc6/arduino-docs/fixtures/env-actions.txt\""
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-nanoc6",
+        "run_command": "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "check_command": "python3 $SIM_SRC/tools/check-nanoc6.py $OUT $OUT-peers",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS"
+        },
+        "capture_comparison": {}
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (291 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (100 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (768 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1777 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

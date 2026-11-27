@@ -1,0 +1,128 @@
+{
+  "device_id": "nanoc6",
+  "case": "thread-4",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5nanoc6/thread",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5nanoc6/thread.md",
+    "section": "3. Thread Scan",
+    "code_first_line": 283
+  },
+  "sketch_sha256": "ca801e9a808f79c6b4a39f0cd1968b61a2975d2eba6f37c4edc866ae77bef6f6",
+  "expected_behavior": "NanoC6 Thread Arduino. Bring up the documented Thread role and verify CLI/network state with a second virtual node.",
+  "sketch_files": {
+    "thread_4.ino": {
+      "path": "devices/nanoc6/arduino-docs/thread-4/sketch/thread_4/thread_4.ino",
+      "storage": "public",
+      "sha256": "ca801e9a808f79c6b4a39f0cd1968b61a2975d2eba6f37c4edc866ae77bef6f6",
+      "bytes": 1023
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_nano_c6",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/nanoc6/arduino-docs/thread-4/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "7556414e9c7429d744dfdf37c072fe32a0d6ebbc41b2112f795ee99f3d90877e",
+      "bytes": 1082208
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/nanoc6/arduino-docs/thread-4/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a57485bef96b7be694204427b70d920263f076a352956cb0e36b9ffce0fa12a8",
+      "bytes": 20672
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/nanoc6/arduino-docs/thread-4/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/nanoc6/arduino-docs/thread-4/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ce5abe3f9a07ae41c54d9e3d7d1465f0dcd4b4be046277894842f51261a88d13",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/nanoc6/arduino-docs/thread-4/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e3c5d0a18a1076c6502f5b22e1f248ef65948db10cbf73c6267cf44c65efcd78",
+      "bytes": 11313056
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "0b5195a1dee2419e8119bdf87f1e041288e0e67c92db731355a1c5223c929515",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ce5abe3f9a07ae41c54d9e3d7d1465f0dcd4b4be046277894842f51261a88d13",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-nanoc6"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "python3 \"$SIM_SRC/tools/run-nanoc6-peers.py\" \"$SIM\" \"$ROM_DIR/esp32c6_rev0_rom.elf\" \"$FIRMWARE_DIR/nanoc6/thread-2/sketch.merged.bin\" \"$FIRMWARE_DIR/nanoc6/thread-4/sketch.merged.bin\" \"$PEER_OUT/thread-scan\" --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-nanoc6 --seconds 36.0"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-nanoc6",
+        "run_command": "python3 $SIM_SRC/tools/run-nanoc6-docs.py $SIM $ROM_DIR/esp32c6_rev0_rom.elf $FIRMWARE_DIR/nanoc6 $OUT --stock $FIXTURES_DIR/agent-c6a/downloads/nanoc6.bin --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --wall-timeout 360 --jobs 2",
+        "check_command": "python3 $SIM_SRC/tools/check-nanoc6.py $OUT $OUT-peers",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS"
+        },
+        "capture_comparison": {}
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (635 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (101 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (1223 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2492 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
