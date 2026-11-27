@@ -1,0 +1,200 @@
+{
+  "device_id": "atoms3",
+  "case": "quickstart-display",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5atoms3/program.md",
+    "section": "4. Program Compile & Upload",
+    "section_line": 34
+  },
+  "sketch_sha256": "f8420e53df6324d6aa162e7f0e5a1066303c89291989deea367750f9c3210637",
+  "expected_behavior": "Observe the library display demo drawing on the board framebuffer.",
+  "sketch_files": {
+    "quickstart_display.ino": {
+      "path": "devices/atoms3/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino",
+      "storage": "public",
+      "sha256": "f8420e53df6324d6aa162e7f0e5a1066303c89291989deea367750f9c3210637",
+      "bytes": 1144
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_atoms3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5AtomS3",
+  "library_example": "examples/Basics/display/display.ino",
+  "library_source_sha256": "f8420e53df6324d6aa162e7f0e5a1066303c89291989deea367750f9c3210637",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/atoms3/arduino-docs/quickstart-display/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "9e5d87f9bac327ce11368b42564198928e7676ff44564550a5d3d176d9e9ad50",
+      "bytes": 621216
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/atoms3/arduino-docs/quickstart-display/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/atoms3/arduino-docs/quickstart-display/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/atoms3/arduino-docs/quickstart-display/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "1cbf2b0f8631a0b10dea3d3eaff150ebacd081a1aac4845413e90f13fd0a6932",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/atoms3/arduino-docs/quickstart-display/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "d5c554116f2584786bb6715d9b0280b910bae9fe1cc98590623ba29bdd68d0bd",
+      "bytes": 40048708
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "b1f7c15fd5c0a83424f2e483dc1bdbeb3b0efe150c2f69a9f308ffc1bf90d085",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "1cbf2b0f8631a0b10dea3d3eaff150ebacd081a1aac4845413e90f13fd0a6932",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-atoms3",
+        "m5stack-atoms3-gc9107"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-atoms3",
+        "run_command": "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "quickstart-display",
+          "status": "PASS",
+          "detail": "128×128 LCD content, a routed ID read, and guest SPI pixels"
+        },
+        "capture_comparison": {
+          "quickstart-display.png": {
+            "original": {
+              "png_sha256": "9de1513e9886386d2dad09a398ead1119091f1b9fa3a375d800f2f3120d70ba2"
+            },
+            "rebuilt": {
+              "png_sha256": "9de1513e9886386d2dad09a398ead1119091f1b9fa3a375d800f2f3120d70ba2"
+            },
+            "byte_identical": true
+          },
+          "quickstart-display.wav": {
+            "original": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          }
+        }
+      },
+      {
+        "board": "m5stack-atoms3-gc9107",
+        "run_command": "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "quickstart-display",
+          "status": "PASS",
+          "detail": "128×128 LCD content, a routed ID read, and guest SPI pixels"
+        },
+        "capture_comparison": {
+          "quickstart-display.png": {
+            "original": {
+              "png_sha256": "a0fd1705bcde1c9bfae7806dc1cf1e0daffe49535065cb40cabe4de7564222b5"
+            },
+            "rebuilt": {
+              "png_sha256": "d49586e1038d4793a7559bf73bd1ee9ddb20c17b4f642b8c849df110286f4011"
+            },
+            "byte_identical": false
+          },
+          "quickstart-display.wav": {
+            "original": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (299 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (157 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (855 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2060 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
