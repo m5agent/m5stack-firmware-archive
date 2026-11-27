@@ -1,0 +1,40 @@
+{
+  "device_id": "cardputer-adv",
+  "case": "cc1101_cap_rf_rx_example",
+  "source": "uiflow2-docs",
+  "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/cc1101.html",
+  "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+  "docs_location": {
+    "path_at_revision": "docs/source/cap/cc1101.rst",
+    "section": "rf rx",
+    "code_first_line": 116
+  },
+  "verdict": "PASS",
+  "board": "m5stack-cardputer-adv",
+  "storage": "source-only",
+  "sketch_sha256": "725c082f699a054b1b5983cdac62981b3287d24675ee3002efbd5b8058512744",
+  "firmware_sha256": null,
+  "source_file": {
+    "path": "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_rx_example/example.py",
+    "storage": "public",
+    "sha256": "725c082f699a054b1b5983cdac62981b3287d24675ee3002efbd5b8058512744",
+    "bytes": 3930
+  },
+  "cap": "cc1101",
+  "validation": {
+    "lane": "native virtual-device validation",
+    "source_commit": "89318bb6621ed4af75ec11b6465c3a39a4ec95ca",
+    "runtime_sha256": "c02f35edfba6fd3401b660ca85aaea5ece1bd955e1c73bc1ebd20968542f62ba",
+    "stock_uiflow2_sha256": "38b308769e35fe3393bde711e67d27403c32166cf62c10951c19d684fdb38631",
+    "evidence": "evidence/cardputer-adv/uiflow2-cap-summary.json",
+    "result": {
+      "source_sha256": "725c082f699a054b1b5983cdac62981b3287d24675ee3002efbd5b8058512744",
+      "frame_sha256": "08e1145ad857166321b6d7ac9186dd63b4c2921707a3dd5cc07e8dd9c8fba9cb",
+      "serial_sha256": "f8ea17ce5491d2f370e777863e76c76ab0c368ad70d48bcef84fb525f027e047",
+      "runtime_log_sha256": "e88817d33e88ca22aeceadf66055268a2856e567a597189c6fd561c86b7b9ac3",
+      "source_bytes_via_cdc": 3930,
+      "display_summary": "CC1101 RX | Packet received | RX:7 CRC:0 | RSSI: -104.0 dBnLQ|: 40 | RX:CC1101, SEQ=6, Hello",
+      "cap_counters": "[emu] CAP cc1101: 697 SPI bytes, 0 TX (0 UDP), 7 RX, 0 GPS UART bytes, 0 NFC selections"
+    }
+  }
+}

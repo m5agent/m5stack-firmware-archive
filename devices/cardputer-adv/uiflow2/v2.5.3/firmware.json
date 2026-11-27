@@ -1,0 +1,10 @@
+{
+  "device_id": "cardputer-adv",
+  "case": "v2.5.3",
+  "source": "stock-uiflow2",
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/cardputer-adv/program",
+  "storage": "fetch-only",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000936/2113079532912463874/bin/2113079532912463875.bin",
+  "firmware_sha256": "38b308769e35fe3393bde711e67d27403c32166cf62c10951c19d684fdb38631",
+  "bytes": 8384512
+}

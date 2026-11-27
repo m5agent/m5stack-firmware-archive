@@ -1,0 +1,133 @@
+{
+  "lane": "native virtual-device validation",
+  "source_commit": "89318bb6621ed4af75ec11b6465c3a39a4ec95ca",
+  "runtime_sha256": "c02f35edfba6fd3401b660ca85aaea5ece1bd955e1c73bc1ebd20968542f62ba",
+  "firmware_sha256": "38b308769e35fe3393bde711e67d27403c32166cf62c10951c19d684fdb38631",
+  "cases": {
+    "cardputer_adv_callback": {
+      "source_sha256": "09702289a1f1753b424b59e64654d88cf4a49ddc0069d9b97daed525b1e05a11",
+      "frame_sha256": "d9e231e2e96ce2a0b4c1f5ba2a27ca3a4eeabdf6b85343cf2f8a34a553874baa",
+      "serial_sha256": "0d2b6f1ce908754e06a5609bf6042c49cd894d663e7ead7278a3747fd0ddf989",
+      "runtime_log_sha256": "f69c46fdef55a24dc422fc822d4ac014eecea06ce368c9499945c3fb0639c312",
+      "source_bytes_via_cdc": 229,
+      "display_summary": "Stock UIFlow2 Offline screen; device identifiers omitted",
+      "cap_counters": null,
+      "cdc_output": [
+        "97 a",
+        "50 2"
+      ]
+    },
+    "cardputer_adv_lora1262_cap_gps_example": {
+      "source_sha256": "81674bd304f8755f1b9c94ee93d1073799c12c7dcc287000d3c7d56cf6b0e489",
+      "frame_sha256": "8f111144521370d6ecdc5afa0f400fd74bb103ba2658ef53ae04ec68b1626a06",
+      "serial_sha256": "0ccfcf640022e8f5b237738b792158299b48896242e91281a0b20db95ae39240",
+      "runtime_log_sha256": "fbb7c22a58d6d715971c7a309d1cff2c5fbd60adb31db6ac5852d971330d178f",
+      "source_bytes_via_cdc": 1205,
+      "display_summary": "48.1173 | 11.516667 | (12, 35, 19)",
+      "cap_counters": "[emu] CAP lora1262: 0 SPI bytes, 0 TX (0 UDP), 0 RX, 405 GPS UART bytes, 0 NFC selections"
+    },
+    "cardputer_adv_lora1262_cap_receiver_example": {
+      "source_sha256": "6c3765e32fd6d2b730f164fc1aea478d150738f918f25509216325d23678abe9",
+      "frame_sha256": "e83d28726cf50019e2bac582b7d59aa659d8c9c0e13ad6ddc6536f9c0981e4ad",
+      "serial_sha256": "b49b032cde78617cd525e2f27fe4f12686a70c5d3799a96379a7efcbd37b4176",
+      "runtime_log_sha256": "f02e5967794852438c218e692476c6286d4e1ebd71aa6e1f8380fd88ae0129e6",
+      "source_bytes_via_cdc": 1866,
+      "display_summary": "10:0:8]-> | wasm",
+      "cap_counters": "[emu] CAP lora1262: 121 SPI bytes, 0 TX (0 UDP), 1 RX, 0 GPS UART bytes, 0 NFC selections"
+    },
+    "cardputer_adv_lora1262_cap_sender_example": {
+      "source_sha256": "08bb6c92c945c25354dde44133711ccf51fc47320a7e079653f84351ac936f51",
+      "frame_sha256": "f27515a4344f20eda9e498a7722b2acfc139b232a373590baac260bfb018f258",
+      "serial_sha256": "317504db32f04c7304ed68e8f387b21f75ad16779ff75c72c3f5639781e4c659",
+      "runtime_log_sha256": "f805c755baa2a10a163bcdb4fd767ab39eee9dd16d3382912a536c0c882f249d",
+      "source_bytes_via_cdc": 1699,
+      "display_summary": "Sender prompt restored after input",
+      "cap_counters": "[emu] CAP lora1262: 124 SPI bytes, 1 TX (1 UDP), 0 RX, 0 GPS UART bytes, 0 NFC selections"
+    },
+    "cardputer_adv_lora868_cap_gps_example": {
+      "source_sha256": "70045eb1167ab8bdb40a47b68bd21b93402cc1cdf8915e1640db696b65802ba9",
+      "frame_sha256": "0df7bbeba046ddf2e3d4340ea013ff66a9fb775b945d28eeef7cdd662c2667a1",
+      "serial_sha256": "067f26644f2f3363b71ca37f8a0b176fa1688ba38a6b822071b731cf23a7f982",
+      "runtime_log_sha256": "f234b588c25e811e8c57c8830fdf3fce55d54c517d7a8c699b6eac6e4d4c6d2f",
+      "source_bytes_via_cdc": 1198,
+      "display_summary": "37.38746 | 121.97236 | (17, 35, 19)",
+      "cap_counters": "[emu] CAP lora868: 0 SPI bytes, 0 TX (0 UDP), 0 RX, 417 GPS UART bytes, 0 NFC selections"
+    },
+    "cardputer_adv_lora868_cap_receiver_example": {
+      "source_sha256": "174c834489590531f2271229b5b5c0093ea12f1c941826b6d6873fd683778df0",
+      "frame_sha256": "e83d28726cf50019e2bac582b7d59aa659d8c9c0e13ad6ddc6536f9c0981e4ad",
+      "serial_sha256": "f7128b548c67f7b1bd270eb9893669bcf720de6bcaedbd588f3f356ead9ad024",
+      "runtime_log_sha256": "03f9a2b70886d825544d2f93ccc266121614264eeea7aa13bce42124ebae288c",
+      "source_bytes_via_cdc": 1811,
+      "display_summary": "10:0:8]-> | wasm",
+      "cap_counters": "[emu] CAP lora868: 121 SPI bytes, 0 TX (0 UDP), 1 RX, 0 GPS UART bytes, 0 NFC selections"
+    },
+    "cardputer_adv_lora868_cap_sender_example": {
+      "source_sha256": "d5bb7f05ccab053c41e83dc6d85ea6ee9cf1e5036f91614975f07df474c3d626",
+      "frame_sha256": "f27515a4344f20eda9e498a7722b2acfc139b232a373590baac260bfb018f258",
+      "serial_sha256": "a91734886ae25e41c148c1e8c58064a9a687fb50c870a7f43b014756a7b50674",
+      "runtime_log_sha256": "8a351332a8cb1fb5465fed90db264cd2e613af42bbfaafcac1146df2489749aa",
+      "source_bytes_via_cdc": 1662,
+      "display_summary": "Sender prompt restored after input",
+      "cap_counters": "[emu] CAP lora868: 124 SPI bytes, 1 TX (1 UDP), 0 RX, 0 GPS UART bytes, 0 NFC selections"
+    },
+    "cardputer_adv_polling": {
+      "source_sha256": "fd13a3cd8609d343895f66605c5f6271e4d3793a41acda7ab404a49092fd4e8a",
+      "frame_sha256": "d9e231e2e96ce2a0b4c1f5ba2a27ca3a4eeabdf6b85343cf2f8a34a553874baa",
+      "serial_sha256": "03261d0d1b6d150d93520f2fdcbd04edb96edb6ed5b72b774366ccfb23bbccf0",
+      "runtime_log_sha256": "8e825dea7f833281e48d304b7c43776079cbdba9ffaba1551f2b3edff6948fa2",
+      "source_bytes_via_cdc": 181,
+      "display_summary": "Stock UIFlow2 Offline screen; device identifiers omitted",
+      "cap_counters": null,
+      "cdc_output": [
+        "a",
+        "2"
+      ]
+    },
+    "cc1101_cap_nfc_read_id_example": {
+      "source_sha256": "e0df69f68471a717ba4ec23e67945fe7ed312c4c1bd34e6651c18d147bac1c5b",
+      "frame_sha256": "b82c654d0ebb31ee66d999142fd25f9a3937f2fd03f405911b15c53cf6963dc1",
+      "serial_sha256": "56e5619e3313cd1d19ff05dc14ffa88daa59d66fd5f16c6b1e2458c3f3c298c7",
+      "runtime_log_sha256": "7ee3fae504dd7825ba3c6e2a310547094d25501c5dccffd5789b09cfe6210772",
+      "source_bytes_via_cdc": 3304,
+      "display_summary": "Traceback (most recent call last): | File \"<string»\", line 13, in «modules | File \"estring'\", line 59, in setup | File \"cap/cc1101.py\", line 301, in _init_ | TypeError: unexpected keyword argum | ent 'chip'",
+      "cap_counters": "[emu] CAP cc1101: 0 SPI bytes, 0 TX (0 UDP), 0 RX, 0 GPS UART bytes, 0 NFC selections"
+    },
+    "cc1101_cap_nfc_read_id_example-compatible": {
+      "source_sha256": "752dba6ae0d0e96b869005b06f19f4d3a7239496fa6af75a2d72db18e74f3659",
+      "frame_sha256": "1188b3c610c15d7348715e4b15af9f68b99f2eab5479072ee792aecf8639cbef",
+      "serial_sha256": "af0e003c16dbdbc417f7b48981506cc62d186c3a5b1a0eeb6add7a078d5bcff9",
+      "runtime_log_sha256": "f9d02fac41a7c3ba485a31ac9e3f96e92474d2f5bf932b8b4bbcce48eb21368b",
+      "source_bytes_via_cdc": 3929,
+      "display_summary": "NFC card detect | Card detected | UID: [synthetic fixture] | Type: MIFARE_Classic_lK | Memory: 752 bytes",
+      "cap_counters": "[emu] CAP cc1101: 5340 SPI bytes, 0 TX (0 UDP), 0 RX, 0 GPS UART bytes, 28 NFC selections"
+    },
+    "cc1101_cap_nfc_read_id_example-compatible-seven": {
+      "source_sha256": "752dba6ae0d0e96b869005b06f19f4d3a7239496fa6af75a2d72db18e74f3659",
+      "frame_sha256": "d0d95f3806d0ff6b35460155a01de89e130601124507423a9ec396985dff4335",
+      "serial_sha256": "af0e003c16dbdbc417f7b48981506cc62d186c3a5b1a0eeb6add7a078d5bcff9",
+      "runtime_log_sha256": "c305f47827bef52fa3175b2d3bec18eb6af028b3b27fbc8444970e5e13eae2cc",
+      "source_bytes_via_cdc": 3929,
+      "display_summary": "NFC card detect | Card detected | UID: [synthetic fixture] | Type: MIFARE_Ultralight | Memory: 48 bytes",
+      "cap_counters": "[emu] CAP cc1101: 8560 SPI bytes, 0 TX (0 UDP), 0 RX, 0 GPS UART bytes, 28 NFC selections"
+    },
+    "cc1101_cap_rf_rx_example": {
+      "source_sha256": "725c082f699a054b1b5983cdac62981b3287d24675ee3002efbd5b8058512744",
+      "frame_sha256": "08e1145ad857166321b6d7ac9186dd63b4c2921707a3dd5cc07e8dd9c8fba9cb",
+      "serial_sha256": "f8ea17ce5491d2f370e777863e76c76ab0c368ad70d48bcef84fb525f027e047",
+      "runtime_log_sha256": "e88817d33e88ca22aeceadf66055268a2856e567a597189c6fd561c86b7b9ac3",
+      "source_bytes_via_cdc": 3930,
+      "display_summary": "CC1101 RX | Packet received | RX:7 CRC:0 | RSSI: -104.0 dBnLQ|: 40 | RX:CC1101, SEQ=6, Hello",
+      "cap_counters": "[emu] CAP cc1101: 697 SPI bytes, 0 TX (0 UDP), 7 RX, 0 GPS UART bytes, 0 NFC selections"
+    },
+    "cc1101_cap_rf_tx_example": {
+      "source_sha256": "12d62591b8400f84dce2560601b4fe7939785ef6be1f9b574c1b419a58b2ce40",
+      "frame_sha256": "faa103610e5f2f3d90df0555df273967d8eb714e2698bdf1d30fe3fcfea4531f",
+      "serial_sha256": "503d6c38bf75385ad978dbafc41aeccc6696a3c7886dcf34a91d95b8a20b998e",
+      "runtime_log_sha256": "cb158653c02237d36121f468e424789b41a74d02006430c82522a02da7ce0def",
+      "source_bytes_via_cdc": 3425,
+      "display_summary": "CC1101 TX | TXOK | SEQ: 7 | OK: 7 | FAIL: O | TX: CC1101, SEQ=6, Hello",
+      "cap_counters": "[emu] CAP cc1101: 615 SPI bytes, 7 TX (7 UDP), 0 RX, 0 GPS UART bytes, 0 NFC selections"
+    }
+  }
+}

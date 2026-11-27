@@ -1,0 +1,44 @@
+{
+  "device_id": "cardputer-adv",
+  "case": "cardputer_adv_callback",
+  "source": "uiflow2-docs",
+  "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/controllers/cardputer-adv.html",
+  "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+  "docs_location": {
+    "path_at_revision": "docs/source/controllers/cardputer-adv.rst",
+    "section": "callback keyboard input",
+    "code_first_line": 49
+  },
+  "verdict": "PASS",
+  "board": "m5stack-cardputer-adv",
+  "storage": "source-only",
+  "sketch_sha256": "09702289a1f1753b424b59e64654d88cf4a49ddc0069d9b97daed525b1e05a11",
+  "firmware_sha256": null,
+  "source_file": {
+    "path": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_callback/example.py",
+    "storage": "public",
+    "sha256": "09702289a1f1753b424b59e64654d88cf4a49ddc0069d9b97daed525b1e05a11",
+    "bytes": 229
+  },
+  "cap": null,
+  "validation": {
+    "lane": "native virtual-device validation",
+    "source_commit": "89318bb6621ed4af75ec11b6465c3a39a4ec95ca",
+    "runtime_sha256": "c02f35edfba6fd3401b660ca85aaea5ece1bd955e1c73bc1ebd20968542f62ba",
+    "stock_uiflow2_sha256": "38b308769e35fe3393bde711e67d27403c32166cf62c10951c19d684fdb38631",
+    "evidence": "evidence/cardputer-adv/uiflow2-cap-summary.json",
+    "result": {
+      "source_sha256": "09702289a1f1753b424b59e64654d88cf4a49ddc0069d9b97daed525b1e05a11",
+      "frame_sha256": "d9e231e2e96ce2a0b4c1f5ba2a27ca3a4eeabdf6b85343cf2f8a34a553874baa",
+      "serial_sha256": "0d2b6f1ce908754e06a5609bf6042c49cd894d663e7ead7278a3747fd0ddf989",
+      "runtime_log_sha256": "f69c46fdef55a24dc422fc822d4ac014eecea06ce368c9499945c3fb0639c312",
+      "source_bytes_via_cdc": 229,
+      "display_summary": "Stock UIFlow2 Offline screen; device identifiers omitted",
+      "cap_counters": null,
+      "cdc_output": [
+        "97 a",
+        "50 2"
+      ]
+    }
+  }
+}

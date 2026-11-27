@@ -1,0 +1,40 @@
+{
+  "device_id": "cardputer-adv",
+  "case": "cardputer_adv_lora1262_cap_receiver_example",
+  "source": "uiflow2-docs",
+  "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora1262.html",
+  "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+  "docs_location": {
+    "path_at_revision": "docs/source/cap/lora1262.rst",
+    "section": "receiver",
+    "code_first_line": 98
+  },
+  "verdict": "PASS",
+  "board": "m5stack-cardputer-adv",
+  "storage": "source-only",
+  "sketch_sha256": "6c3765e32fd6d2b730f164fc1aea478d150738f918f25509216325d23678abe9",
+  "firmware_sha256": null,
+  "source_file": {
+    "path": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_receiver_example/example.py",
+    "storage": "public",
+    "sha256": "6c3765e32fd6d2b730f164fc1aea478d150738f918f25509216325d23678abe9",
+    "bytes": 1866
+  },
+  "cap": "lora1262",
+  "validation": {
+    "lane": "native virtual-device validation",
+    "source_commit": "89318bb6621ed4af75ec11b6465c3a39a4ec95ca",
+    "runtime_sha256": "c02f35edfba6fd3401b660ca85aaea5ece1bd955e1c73bc1ebd20968542f62ba",
+    "stock_uiflow2_sha256": "38b308769e35fe3393bde711e67d27403c32166cf62c10951c19d684fdb38631",
+    "evidence": "evidence/cardputer-adv/uiflow2-cap-summary.json",
+    "result": {
+      "source_sha256": "6c3765e32fd6d2b730f164fc1aea478d150738f918f25509216325d23678abe9",
+      "frame_sha256": "e83d28726cf50019e2bac582b7d59aa659d8c9c0e13ad6ddc6536f9c0981e4ad",
+      "serial_sha256": "b49b032cde78617cd525e2f27fe4f12686a70c5d3799a96379a7efcbd37b4176",
+      "runtime_log_sha256": "f02e5967794852438c218e692476c6286d4e1ebd71aa6e1f8380fd88ae0129e6",
+      "source_bytes_via_cdc": 1866,
+      "display_summary": "10:0:8]-> | wasm",
+      "cap_counters": "[emu] CAP lora1262: 121 SPI bytes, 0 TX (0 UDP), 1 RX, 0 GPS UART bytes, 0 NFC selections"
+    }
+  }
+}

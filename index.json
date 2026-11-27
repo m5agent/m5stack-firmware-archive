@@ -439,6 +439,232 @@
       "original_build": {
         "firmware_sha256": "c8525e5a00f84f633b180ffffd2643dbba1d5e72107b58ec37b020e1336e117c"
       }
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "38b308769e35fe3393bde711e67d27403c32166cf62c10951c19d684fdb38631",
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/cardputer-adv/program",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000936/2113079532912463874/bin/2113079532912463875.bin",
+      "manifest": "devices/cardputer-adv/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_callback",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/controllers/cardputer-adv.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/controllers/cardputer-adv.rst",
+        "section": "callback keyboard input",
+        "code_first_line": 49
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "09702289a1f1753b424b59e64654d88cf4a49ddc0069d9b97daed525b1e05a11",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_callback/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_lora1262_cap_gps_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora1262.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/lora1262.rst",
+        "section": "gps",
+        "code_first_line": 113
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "81674bd304f8755f1b9c94ee93d1073799c12c7dcc287000d3c7d56cf6b0e489",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_gps_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_lora1262_cap_receiver_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora1262.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/lora1262.rst",
+        "section": "receiver",
+        "code_first_line": 98
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "6c3765e32fd6d2b730f164fc1aea478d150738f918f25509216325d23678abe9",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_receiver_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_lora1262_cap_sender_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora1262.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/lora1262.rst",
+        "section": "sender",
+        "code_first_line": 83
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "08bb6c92c945c25354dde44133711ccf51fc47320a7e079653f84351ac936f51",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_sender_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_lora868_cap_gps_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora868.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/lora868.rst",
+        "section": "gps",
+        "code_first_line": 107
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "70045eb1167ab8bdb40a47b68bd21b93402cc1cdf8915e1640db696b65802ba9",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_gps_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_lora868_cap_receiver_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora868.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/lora868.rst",
+        "section": "receiver",
+        "code_first_line": 92
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "174c834489590531f2271229b5b5c0093ea12f1c941826b6d6873fd683778df0",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_receiver_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_lora868_cap_sender_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/lora868.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/lora868.rst",
+        "section": "sender",
+        "code_first_line": 77
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "d5bb7f05ccab053c41e83dc6d85ea6ee9cf1e5036f91614975f07df474c3d626",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_sender_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cardputer_adv_polling",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/controllers/cardputer-adv.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/controllers/cardputer-adv.rst",
+        "section": "polling keyboard input",
+        "code_first_line": 30
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "fd13a3cd8609d343895f66605c5f6271e4d3793a41acda7ab404a49092fd4e8a",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_polling/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cc1101_cap_nfc_read_id_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/cc1101.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/cc1101.rst",
+        "section": "nfc read id",
+        "code_first_line": 131
+      },
+      "verdict": "DOCS-DEFECT",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "e0df69f68471a717ba4ec23e67945fe7ed312c4c1bd34e6651c18d147bac1c5b",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_nfc_read_id_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cc1101_cap_nfc_read_id_example-compatible",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/cc1101.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/cc1101.rst",
+        "section": "nfc read id",
+        "code_first_line": 131
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "752dba6ae0d0e96b869005b06f19f4d3a7239496fa6af75a2d72db18e74f3659",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_nfc_read_id_example-compatible/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cc1101_cap_rf_rx_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/cc1101.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/cc1101.rst",
+        "section": "rf rx",
+        "code_first_line": 116
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "725c082f699a054b1b5983cdac62981b3287d24675ee3002efbd5b8058512744",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_rx_example/example.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "cc1101_cap_rf_tx_example",
+      "source": "uiflow2-docs",
+      "docs_url": "https://uiflow-micropython.readthedocs.io/en/latest/cap/cc1101.html",
+      "docs_revision": "a61a29409f09f1f4bebae05e15c4bd6dcc4956b6",
+      "docs_location": {
+        "path_at_revision": "docs/source/cap/cc1101.rst",
+        "section": "rf tx",
+        "code_first_line": 101
+      },
+      "verdict": "PASS",
+      "board": "m5stack-cardputer-adv",
+      "storage": "source-only",
+      "sketch_sha256": "12d62591b8400f84dce2560601b4fe7939785ef6be1f9b574c1b419a58b2ce40",
+      "firmware_sha256": null,
+      "manifest": "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_tx_example/example.json"
     }
   ],
   "public_files": {
@@ -1587,6 +1813,114 @@
       "storage": "public",
       "bytes": 1605,
       "sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62"
+    },
+    "evidence/cardputer-adv/uiflow2-cap-summary.json": {
+      "sha256": "12c66455e0678aa5c758c7f07df4c39100e21203c46e21d05dc3643e9b5d3e08",
+      "bytes": 8883
+    },
+    "devices/cardputer-adv/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "092d587293bf7a78fe8864de8994d02becb3e419c48291fe93b0ae068d1c999b",
+      "bytes": 429
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_callback/example.py": {
+      "sha256": "09702289a1f1753b424b59e64654d88cf4a49ddc0069d9b97daed525b1e05a11",
+      "bytes": 229
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_callback/example.json": {
+      "sha256": "c3b83e91d5d300e4c04d0bd66ab60406697b3fe9dbc8d3a767b6ab5eff2fd5ba",
+      "bytes": 1868
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_gps_example/example.py": {
+      "sha256": "81674bd304f8755f1b9c94ee93d1073799c12c7dcc287000d3c7d56cf6b0e489",
+      "bytes": 1205
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_gps_example/example.json": {
+      "sha256": "b39e2675cf9dfaf8a5f7a378c2b19a433720e27ca3f66e751d984da91bd3622a",
+      "bytes": 1866
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_receiver_example/example.py": {
+      "sha256": "6c3765e32fd6d2b730f164fc1aea478d150738f918f25509216325d23678abe9",
+      "bytes": 1866
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_receiver_example/example.json": {
+      "sha256": "7efcc759c9b5f4c54921e4634f46a67214986a906312cd35d05f2b11bd02d716",
+      "bytes": 1862
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_sender_example/example.py": {
+      "sha256": "08bb6c92c945c25354dde44133711ccf51fc47320a7e079653f84351ac936f51",
+      "bytes": 1699
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora1262_cap_sender_example/example.json": {
+      "sha256": "dd8478d973ebc2cbfc13aa0b52822b81efd78ed5db1c7cd89b48ee441fde551d",
+      "bytes": 1874
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_gps_example/example.py": {
+      "sha256": "70045eb1167ab8bdb40a47b68bd21b93402cc1cdf8915e1640db696b65802ba9",
+      "bytes": 1198
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_gps_example/example.json": {
+      "sha256": "99192904ef4fbdb607617055f99a72d0e4cf34ae6deeb4f6d36b649130ac8875",
+      "bytes": 1861
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_receiver_example/example.py": {
+      "sha256": "174c834489590531f2271229b5b5c0093ea12f1c941826b6d6873fd683778df0",
+      "bytes": 1811
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_receiver_example/example.json": {
+      "sha256": "f64324c8cf197e594d52849e6472cb5dcf9a267d31411a8655cd999462284343",
+      "bytes": 1856
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_sender_example/example.py": {
+      "sha256": "d5bb7f05ccab053c41e83dc6d85ea6ee9cf1e5036f91614975f07df474c3d626",
+      "bytes": 1662
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_lora868_cap_sender_example/example.json": {
+      "sha256": "283f2ea200b2c2cff9e4f95f181c33d3bab20d6218ae48c86d37a0c6f2069866",
+      "bytes": 1868
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_polling/example.py": {
+      "sha256": "fd13a3cd8609d343895f66605c5f6271e4d3793a41acda7ab404a49092fd4e8a",
+      "bytes": 181
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cardputer_adv_polling/example.json": {
+      "sha256": "8147c247677c66bb1837fd33a3cdbb72e990ba5457db83bcca0b177485b15235",
+      "bytes": 1859
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_nfc_read_id_example/example.py": {
+      "sha256": "e0df69f68471a717ba4ec23e67945fe7ed312c4c1bd34e6651c18d147bac1c5b",
+      "bytes": 3304
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_nfc_read_id_example/example.json": {
+      "sha256": "6294005a7495d34e4d5201f54dd4df2bc624cebbca671a35c6eb0fb466a43ea7",
+      "bytes": 2312
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_nfc_read_id_example-compatible/example.py": {
+      "sha256": "752dba6ae0d0e96b869005b06f19f4d3a7239496fa6af75a2d72db18e74f3659",
+      "bytes": 3929
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_nfc_read_id_example-compatible/example.json": {
+      "sha256": "fdc14dcce4efad85100320683d546e853cf33e600af614d926cc76c06e97bb34",
+      "bytes": 2679
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_rx_example/example.py": {
+      "sha256": "725c082f699a054b1b5983cdac62981b3287d24675ee3002efbd5b8058512744",
+      "bytes": 3930
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_rx_example/example.json": {
+      "sha256": "425f0e158bdd3c056d476d503bd18f9e3ca72aecfcfd5b620502fd2b6c27e720",
+      "bytes": 1890
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_tx_example/example.py": {
+      "sha256": "12d62591b8400f84dce2560601b4fe7939785ef6be1f9b574c1b419a58b2ce40",
+      "bytes": 3425
+    },
+    "devices/cardputer-adv/uiflow2/docs-examples/cc1101_cap_rf_tx_example/example.json": {
+      "sha256": "41d96928a8431e3838be82dd7934adae863315e2f2d5035cb1490090bcfcdca2",
+      "bytes": 1868
+    },
+    "devices/cardputer-adv/uiflow2/README.md": {
+      "sha256": "e30a0aae4b8a69810bbb9f3667b5e85ea41d0823910837dc852bc926b3608b72",
+      "bytes": 976
     }
   },
   "local_files": {
