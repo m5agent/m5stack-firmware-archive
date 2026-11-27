@@ -2565,6 +2565,176 @@
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3 $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
         ]
       }
+    },
+    {
+      "device_id": "atoms3r",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3r/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atoms3r/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "d396e7eb650779a6c94f70214906e1be959f70260d71d98ffa24fee033bb43bd",
+      "manifest": "devices/atoms3r/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ad8c25cbb8b22232a8cd7c702e2fdccf1002ec35eb22d67650cccf7e81ba66f1",
+      "original_build": {
+        "firmware_sha256": "3177d7dde93ef6560bed80b253d54ee130175bd1c0f3d310a4837156724af196",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atoms3r",
+          "m5stack-atoms3r-gc9107"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
+        ]
+      }
+    },
+    {
+      "device_id": "atoms3r",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3r/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atoms3r/display.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "manifest": "devices/atoms3r/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "94973de851ba9ba1c5fe6a00fac73dd3541d9e66f6f47ee7bfad2f6ec696cc55",
+      "original_build": {
+        "firmware_sha256": "0f80473d0ba32ffcc2727597e55fdf74c3c1febce3b30407b41c6567a2b62d9b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atoms3r",
+          "m5stack-atoms3r-gc9107"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
+        ]
+      }
+    },
+    {
+      "device_id": "atoms3r",
+      "case": "imu",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3r/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atoms3r/imu.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "7230a888f1ab1aced1990ab7cab50946976f6d81b6424ad2482cdf3f1933ff58",
+      "manifest": "devices/atoms3r/arduino-docs/imu/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "dd0c33841746bca35f4c15ecaab60c708257ab24950a3892dc8268c8ee196d21",
+      "original_build": {
+        "firmware_sha256": "031f0e1740dc1c0d8b4f98cf0c82ef40efd6b8982940e15035976eb8c5ebe596",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atoms3r",
+          "m5stack-atoms3r-gc9107"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
+        ]
+      }
+    },
+    {
+      "device_id": "atoms3r",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3r/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atoms3r/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "c139304d73d7a2e1fee75f7db825d396385c271351e1699929f2526dea9944ee",
+      "manifest": "devices/atoms3r/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "335fb78c593af8a55d22b617985c6a0a60cc53ae06c0a47401d6ec1fc8493092",
+      "original_build": {
+        "firmware_sha256": "b1a41a510c2d0bafc148c6dcc1f3fc745b7eee70768d079d3bf5ef8d8120ee31",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atoms3r",
+          "m5stack-atoms3r-gc9107"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
+        ]
+      }
+    },
+    {
+      "device_id": "atoms3r",
+      "case": "quickstart-bargraph",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3r/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atoms3r/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 29
+      },
+      "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "manifest": "devices/atoms3r/arduino-docs/quickstart-bargraph/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ceda7fdc7663474d404f9892e2eaeec8e20b29ce808ecf64dd3cfb810f411bbd",
+      "original_build": {
+        "firmware_sha256": "1ec85316ebfb66f4c239e04e22871d4c975b30c9fee378c0052078dd7f9aede4",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atoms3r",
+          "m5stack-atoms3r-gc9107"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --gc9107"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -5205,6 +5375,146 @@
     "devices/atoms3/arduino-docs/quickstart-display/firmware.json": {
       "sha256": "28270d933c04986da552f512ba9390bdb19907eb2477fe83cf5b1e733984b594",
       "bytes": 8268
+    },
+    "devices/atoms3r/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "d396e7eb650779a6c94f70214906e1be959f70260d71d98ffa24fee033bb43bd",
+      "bytes": 265
+    },
+    "devices/atoms3r/arduino-docs/button/migration.ino.bin": {
+      "sha256": "fc2e937396e88d93c22662c24e34b7496a66f21b3c279da5bfc6e84dce6e7bd5",
+      "bytes": 592032
+    },
+    "devices/atoms3r/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atoms3r/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atoms3r/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "ad8c25cbb8b22232a8cd7c702e2fdccf1002ec35eb22d67650cccf7e81ba66f1",
+      "bytes": 8388608
+    },
+    "devices/atoms3r/arduino-docs/button/migration.ino.elf": {
+      "sha256": "a7ae62b2d6288d1fb0c0b22f9daa33b51fa02314e631c7a07eb18527eafcac0c",
+      "bytes": 12464560
+    },
+    "devices/atoms3r/arduino-docs/button/firmware.json": {
+      "sha256": "0b3d608421d2015122ca6433ab2fc8f7ad945cea946ca63d52cde923111e9181",
+      "bytes": 9958
+    },
+    "devices/atoms3r/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "bytes": 716
+    },
+    "devices/atoms3r/arduino-docs/display/migration.ino.bin": {
+      "sha256": "98048cad67243949816f9e942bb02af7be128e84ee3586eaa6578972fb2b0730",
+      "bytes": 592384
+    },
+    "devices/atoms3r/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atoms3r/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atoms3r/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "94973de851ba9ba1c5fe6a00fac73dd3541d9e66f6f47ee7bfad2f6ec696cc55",
+      "bytes": 8388608
+    },
+    "devices/atoms3r/arduino-docs/display/migration.ino.elf": {
+      "sha256": "e2226d9fecdffc553816e45eb1eb5d8986be65b360a2fc965d67146d6202607e",
+      "bytes": 12473232
+    },
+    "devices/atoms3r/arduino-docs/display/firmware.json": {
+      "sha256": "757e836d954a8e558100ba37637c2fbac0d78fe59df4edec66ec707505b3b234",
+      "bytes": 7977
+    },
+    "devices/atoms3r/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "7230a888f1ab1aced1990ab7cab50946976f6d81b6424ad2482cdf3f1933ff58",
+      "bytes": 1334
+    },
+    "devices/atoms3r/arduino-docs/imu/migration.ino.bin": {
+      "sha256": "497c05b19a0d366fe9e7d92ce99d6e28a00b2c04f04721616c2dc1ae6e53dfbc",
+      "bytes": 596224
+    },
+    "devices/atoms3r/arduino-docs/imu/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atoms3r/arduino-docs/imu/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atoms3r/arduino-docs/imu/migration.ino.merged.bin": {
+      "sha256": "dd0c33841746bca35f4c15ecaab60c708257ab24950a3892dc8268c8ee196d21",
+      "bytes": 8388608
+    },
+    "devices/atoms3r/arduino-docs/imu/migration.ino.elf": {
+      "sha256": "2362ce7de6eb6d0025fb1cb7d2fcdd259dfea2cd24bd6bb1236f9f094b10638f",
+      "bytes": 12482984
+    },
+    "devices/atoms3r/arduino-docs/imu/firmware.json": {
+      "sha256": "1770ed3c48e97f687cb9894f75d508b9d160ebc232d9215dd48cf9f2c695bc1d",
+      "bytes": 12182
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "c139304d73d7a2e1fee75f7db825d396385c271351e1699929f2526dea9944ee",
+      "bytes": 1387
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "19cf8c6fb562eb8238e8c9e4bce6639670e0a0816bb841424f76fc730cbe00e4",
+      "bytes": 596976
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "335fb78c593af8a55d22b617985c6a0a60cc53ae06c0a47401d6ec1fc8493092",
+      "bytes": 8388608
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "6a3205ca6f1803537d92f621c8a9c944eb9d9c82365b8972f586c1924abc0634",
+      "bytes": 12665468
+    },
+    "devices/atoms3r/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "5bbdc951a16733c073509bbfca623a197d65ccd80c17031937fe379274612d9c",
+      "bytes": 7968
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino": {
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/migration.ino.bin": {
+      "sha256": "27f67ccb871989764803e28fd0f42e3eca4c00b254f6863cf344fb44d492d4be",
+      "bytes": 522224
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/migration.ino.merged.bin": {
+      "sha256": "ceda7fdc7663474d404f9892e2eaeec8e20b29ce808ecf64dd3cfb810f411bbd",
+      "bytes": 8388608
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/migration.ino.elf": {
+      "sha256": "1b52daafedb5cc4c4d2c3c2405d5ef15a1734ded7a77184347eb70f39223472b",
+      "bytes": 11031240
+    },
+    "devices/atoms3r/arduino-docs/quickstart-bargraph/firmware.json": {
+      "sha256": "12c77982cd9e9ce6b371df57262763ed8c3bad396391d877ce231af764ce3c50",
+      "bytes": 8297
     }
   },
   "local_files": {
@@ -5780,7 +6090,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 76,
+    "published_cases": 81,
     "storage": "git-lfs"
   }
 }
