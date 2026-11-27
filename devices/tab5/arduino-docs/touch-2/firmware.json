@@ -1,0 +1,197 @@
+{
+  "device_id": "tab5",
+  "case": "touch-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/touch",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5tab5/touch.md",
+    "section": "2.Multi-touch Detection",
+    "code_first_line": 63
+  },
+  "sketch_sha256": "9eda330e13d4e308aa6a4dd59f5637bbd61948d3854c38a54213068c0d6c74a8",
+  "expected_behavior": "Exercise the touch behavior described in the pinned documentation.",
+  "sketch_files": {
+    "sketch.ino": {
+      "path": "devices/tab5/arduino-docs/touch-2/sketch/sketch/sketch.ino",
+      "storage": "public",
+      "sha256": "9eda330e13d4e308aa6a4dd59f5637bbd61948d3854c38a54213068c0d6c74a8",
+      "bytes": 1044
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_tab5",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "sketch.ino.bin": {
+      "path": "devices/tab5/arduino-docs/touch-2/sketch.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "ffca7ebb7116ec060073ad78d035a62e95bdb4a215551945cbbbcb3e8b87b196",
+      "bytes": 539664
+    },
+    "sketch.ino.bootloader.bin": {
+      "path": "devices/tab5/arduino-docs/touch-2/sketch.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "sketch.ino.partitions.bin": {
+      "path": "devices/tab5/arduino-docs/touch-2/sketch.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "sketch.ino.merged.bin": {
+      "path": "devices/tab5/arduino-docs/touch-2/sketch.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "c441164a265ad1a4e943e36881352feb823688ab344c411f6ef2a91a334b6094",
+      "bytes": 16777216
+    },
+    "sketch.ino.elf": {
+      "path": "devices/tab5/arduino-docs/touch-2/sketch.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e70e089cb85114f8afa1d215fe8ae90d8dd8c0eaf8a952c41af93a9ed564976a",
+      "bytes": 12671876
+    }
+  },
+  "merged_image": "sketch.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "sketch.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "sketch.ino.bootloader.bin",
+        "offset": "0x2000"
+      },
+      "partitions": {
+        "file": "sketch.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "5200c13810ea33fe837f8e607100fb0c6d6cfb998e2d3d7692f279f3fd827cb7",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "c441164a265ad1a4e943e36881352feb823688ab344c411f6ef2a91a334b6094",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+      "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+      "boards": [
+        "m5stack-tab5",
+        "m5stack-tab5-st7123"
+      ],
+      "run_commands": [
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5-st7123",
+          "final-st-multi",
+          "$FIRMWARE",
+          "2.8",
+          "--script",
+          "multi.txt",
+          "--debug",
+          "i2c1"
+        ],
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "tab5-multi",
+          "$FIRMWARE",
+          "3.1",
+          "--script",
+          "gt-multi.txt",
+          "--debug",
+          "i2c1"
+        ]
+      ]
+    },
+    "runs": [
+      {
+        "checker": {
+          "case": "touch multi ST7123",
+          "status": "PASS",
+          "evidence": "final-st-multi: Point 1 X:0160 Y:0400, Point 2 X:0540 Y:0880"
+        },
+        "capture_comparison": {
+          "final-st-multi/frame.png": {
+            "original_sha256": "20db6b7ad908ed04a0305c411412d26b08f9ef3a98eafc84860573900da6c6ae",
+            "rebuilt_sha256": "20db6b7ad908ed04a0305c411412d26b08f9ef3a98eafc84860573900da6c6ae",
+            "byte_identical": true
+          }
+        },
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5-st7123",
+            "final-st-multi",
+            "$FIRMWARE",
+            "2.8",
+            "--script",
+            "multi.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ],
+        "boards": [
+          "m5stack-tab5-st7123"
+        ]
+      },
+      {
+        "checker": {
+          "case": "touch multi GT911",
+          "status": "PASS",
+          "evidence": "tab5-multi: Point 1 X:0160 Y:0400, Point 2 X:0540 Y:0880"
+        },
+        "capture_comparison": {
+          "tab5-multi/frame.png": {
+            "original_sha256": "06dfb6e451cc4ce0f5fdb405443512bee00d0036a65e03a577eae346310a2958",
+            "rebuilt_sha256": "9c005985f563d2427a3ae6b5623f8fe462c6fb2c6f47d19aa8f7ffd23bf151b8",
+            "byte_identical": false
+          }
+        },
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-multi",
+            "$FIRMWARE",
+            "3.1",
+            "--script",
+            "gt-multi.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ],
+        "boards": [
+          "m5stack-tab5"
+        ]
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (328 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (800 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1971 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "sketch"
+  },
+  "verdict": "PASS"
+}

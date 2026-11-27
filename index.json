@@ -1121,6 +1121,480 @@
           ]
         ]
       }
+    },
+    {
+      "device_id": "tab5",
+      "case": "rtc-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/rtc.md",
+        "section": "SNTP Network Time",
+        "code_first_line": 65
+      },
+      "sketch_sha256": "10e6bd79bba1c4066897224d6958702fbdda79d949e1d4ead760f7f4608bac84",
+      "manifest": "devices/tab5/arduino-docs/rtc-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "245fd5e7f5bf197d645c405942bbf9447df278f758e5001f991287ac0a41c9f2",
+      "original_build": {
+        "firmware_sha256": "3ee730cd2a52cde76e793ab92d107123ad126fa68bb0b73cf9215386e5988b45",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-sntp-ap",
+            "$FIRMWARE",
+            "18",
+            "--coproc",
+            "$C6_COPROCESSOR",
+            "--wifi",
+            "ssid=ssid,psk=password",
+            "--net",
+            "none,epoch=1764150000",
+            "--debug",
+            "net,i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "speaker-1-corrected",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/speaker.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "da72568b848f4568f7f3d7c333e455c80d34d3faf3c3f3e232f327ed6b435f64",
+      "manifest": "devices/tab5/arduino-docs/speaker-1-corrected/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "2db431bf3ebd65d0cdbf015c008e23aad475aa5c14aeae73514c8e97b67f153f",
+      "original_build": {
+        "firmware_sha256": "16371262cf0778e3bf7ca9fdf739e75e396d194cf16a06ed7ae97ab9ee95511d",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "speaker-final-full",
+            "$FIRMWARE",
+            "12",
+            "--wav",
+            "speaker-1-corrected/final-full.wav",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "touch-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/touch.md",
+        "section": "1.Touch Button Detection",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "796d05c5584a7239c3c69278a5013bbdbe5e3874bcac3826b9cc8e51a3102887",
+      "manifest": "devices/tab5/arduino-docs/touch-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "06831c107905850a32fff5846693daa4a68f272c413016baee672cc11b0e7b63",
+      "original_build": {
+        "firmware_sha256": "febee8f025c1af01f80142af7632850a8eb15b583b2ce3121ad31f594e54fe82",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "final-gt-idle",
+            "$FIRMWARE",
+            "3.1"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "final-gt-press",
+            "$FIRMWARE",
+            "2.8",
+            "--script",
+            "press.txt",
+            "--debug",
+            "i2c1"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "final-gt-release",
+            "$FIRMWARE",
+            "3.1",
+            "--script",
+            "release.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "touch-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/touch.md",
+        "section": "2.Multi-touch Detection",
+        "code_first_line": 63
+      },
+      "sketch_sha256": "9eda330e13d4e308aa6a4dd59f5637bbd61948d3854c38a54213068c0d6c74a8",
+      "manifest": "devices/tab5/arduino-docs/touch-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c441164a265ad1a4e943e36881352feb823688ab344c411f6ef2a91a334b6094",
+      "original_build": {
+        "firmware_sha256": "5200c13810ea33fe837f8e607100fb0c6d6cfb998e2d3d7692f279f3fd827cb7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5",
+          "m5stack-tab5-st7123"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5-st7123",
+            "final-st-multi",
+            "$FIRMWARE",
+            "2.8",
+            "--script",
+            "multi.txt",
+            "--debug",
+            "i2c1"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-multi",
+            "$FIRMWARE",
+            "3.1",
+            "--script",
+            "gt-multi.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "wakeup-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/wakeup.md",
+        "section": "> Description | Second-level wakeup uses the internal RTC timer of the ESP32. The wakeup time precision is at the second level, and the program restarts after wakeup.",
+        "code_first_line": 12
+      },
+      "sketch_sha256": "48b92138247ad9c3f89a26d805389791c928e8fc1603e6c9c2a0620d53aff462",
+      "manifest": "devices/tab5/arduino-docs/wakeup-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "7d989cc03223a5b44a855ef1e43e64e56aa53854d6800a0e70f5f4f6053a8b2e",
+      "original_build": {
+        "firmware_sha256": "03fdb8d56fb9e5d904d56153d2925072e80581f32deb9c0cc69e8d9c339a8aa7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-wake-5s",
+            "$FIRMWARE",
+            "12",
+            "--script",
+            "wake.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "wakeup-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/wakeup.md",
+        "section": "> Description | Wakeup at a specified time uses the RX8130 RTC timer. The wakeup time precision is at the minute level, and the program restarts after wakeup.",
+        "code_first_line": 51
+      },
+      "sketch_sha256": "e9ba4d801550315d03e99ff40ecf8fbec339b928c5097c01252177e52d99d7a6",
+      "manifest": "devices/tab5/arduino-docs/wakeup-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "40c88067e24481a935ebdfeb3e5f13b66f5cadec0a30f7a3db11f5df71fb71a9",
+      "original_build": {
+        "firmware_sha256": "693bdaaf0fb129238fe22a7e621de2d7e9ff6991dc036a415c8386d9aafe9778",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-wake-min-retry",
+            "$FIRMWARE",
+            "65",
+            "--script",
+            "wake.txt",
+            "--timeout",
+            "420s",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "wifi-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/wifi",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/wifi.md",
+        "section": "Wi-Fi STA / AP",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "47240c5d3b80053b0426237ea92f1fca3356641b19234d7c6552b1e0a53a216b",
+      "manifest": "devices/tab5/arduino-docs/wifi-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "f19a2d26b12b4680abe80cc843fbeb9b2e2a9d3813f722dff7c33b0512251b67",
+      "original_build": {
+        "firmware_sha256": "3d73773427725f3b0f69f730e317b98c650ed5879bf5ccd59ab972ea28b0fdf1",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-wifi-ap",
+            "$FIRMWARE",
+            "10",
+            "--coproc",
+            "$C6_COPROCESSOR",
+            "--wifi",
+            "ssid=ssid,psk=password",
+            "--net",
+            "nat",
+            "--debug",
+            "net"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "wifi-1-softap",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/wifi",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/wifi.md",
+        "section": "Wi-Fi STA / AP",
+        "code_first_line": 17
+      },
+      "sketch_sha256": "7d33e7f0de57e2c70ffd72bdaa346ff5f256be02d198335b34c943acb421865a",
+      "manifest": "devices/tab5/arduino-docs/wifi-1-softap/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "39a2f3342e6e699a36c8cf18c7c78d127f869c57ae458f5e820aaf44e47975a6",
+      "original_build": {
+        "firmware_sha256": "de47291086c7340b0391872cae88049deb045067ff8d41ad38b7174ace6a1b41",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-softap",
+            "$FIRMWARE",
+            "10",
+            "--coproc",
+            "$C6_COPROCESSOR",
+            "--wifi-sta",
+            "ssid=ssid,psk=password",
+            "--debug",
+            "wifi-frames"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "wifi-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/wifi",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/wifi.md",
+        "section": "Wi-Fi Scan",
+        "code_first_line": 83
+      },
+      "sketch_sha256": "2cff9e6429b83a04bee57a6f42718a6dcbfd603eac5e57e9f91b6eb4a839d6d5",
+      "manifest": "devices/tab5/arduino-docs/wifi-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "fb8ca429fb797045710145db320723fd03cc11a03ab72da7cedc70d00dc9f082",
+      "original_build": {
+        "firmware_sha256": "b558020fff16675cafc8deb70948c049bf29b94a4328c4b00b6753d3527c6397",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-scan-ap",
+            "$FIRMWARE",
+            "9",
+            "--coproc",
+            "$C6_COPROCESSOR",
+            "--wifi",
+            "ssid=ssid,psk=password",
+            "--net",
+            "none",
+            "--debug",
+            "net"
+          ]
+        ]
+      }
+    },
+    {
+      "device_id": "tab5",
+      "case": "wifi-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/wifi",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5tab5/wifi.md",
+        "section": "Wi-Fi Antenna Switching",
+        "code_first_line": 188
+      },
+      "sketch_sha256": "961a568ea28c06d2125784b08627df031adcf95f212a94d13fd597078e858f5e",
+      "manifest": "devices/tab5/arduino-docs/wifi-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "4e742f78a20910824f89f461a0b0c5b6d5346c7f91b7a889452168beeb7d3074",
+      "original_build": {
+        "firmware_sha256": "dd6ded2e6e7795ab6aed3158afa939403a43bc72881602af705b9bb2b96328b9",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+        "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+        "boards": [
+          "m5stack-tab5"
+        ],
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "tab5-antenna",
+            "$FIRMWARE",
+            "3",
+            "--debug",
+            "i2c1"
+          ]
+        ]
+      }
     }
   ],
   "public_files": {
@@ -2641,6 +3115,286 @@
     "devices/tab5/arduino-docs/rtc-1/firmware.json": {
       "sha256": "d59cc880874c4f9e649e7d34911416f95a2cdce0a5390eb561d51fcb2bb8a4a2",
       "bytes": 5194
+    },
+    "devices/tab5/arduino-docs/rtc-2/sketch/sketch/sketch.ino": {
+      "sha256": "10e6bd79bba1c4066897224d6958702fbdda79d949e1d4ead760f7f4608bac84",
+      "bytes": 4035
+    },
+    "devices/tab5/arduino-docs/rtc-2/sketch.ino.bin": {
+      "sha256": "bf9e449b542990cc6c0dd2aaacf3c3472ea72426059bb0f2daa50dc8821364ea",
+      "bytes": 873136
+    },
+    "devices/tab5/arduino-docs/rtc-2/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/rtc-2/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/rtc-2/sketch.ino.merged.bin": {
+      "sha256": "245fd5e7f5bf197d645c405942bbf9447df278f758e5001f991287ac0a41c9f2",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/rtc-2/sketch.ino.elf": {
+      "sha256": "c703f3cdb0a391356fa9989bea2db7e271b8bfd698328f8b7afd179aac7fd697",
+      "bytes": 17262676
+    },
+    "devices/tab5/arduino-docs/rtc-2/firmware.json": {
+      "sha256": "32c2299eeeb7fec9fb664e76fc45c7222dac9ccc7efeb3362f4e7ea5750aa643",
+      "bytes": 5569
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/sketch/sketch/sketch.ino": {
+      "sha256": "da72568b848f4568f7f3d7c333e455c80d34d3faf3c3f3e232f327ed6b435f64",
+      "bytes": 567
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.bin": {
+      "sha256": "07c2446ba812f74b46f72bf45bff6fa2202376d76aaf43164d25e4940392f0af",
+      "bytes": 563568
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.merged.bin": {
+      "sha256": "2db431bf3ebd65d0cdbf015c008e23aad475aa5c14aeae73514c8e97b67f153f",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.elf": {
+      "sha256": "cb4a59c23b21783ecdd4244827aed045a273226f362a855ef60b65bdcaf1da02",
+      "bytes": 13035236
+    },
+    "devices/tab5/arduino-docs/speaker-1-corrected/firmware.json": {
+      "sha256": "6f52e67e441e1e57d6f59b2d968f44cbfb75abc147aa7cc6e1cf6e3e0e69150f",
+      "bytes": 6109
+    },
+    "devices/tab5/arduino-docs/touch-1/sketch/sketch/sketch.ino": {
+      "sha256": "796d05c5584a7239c3c69278a5013bbdbe5e3874bcac3826b9cc8e51a3102887",
+      "bytes": 867
+    },
+    "devices/tab5/arduino-docs/touch-1/sketch.ino.bin": {
+      "sha256": "662d436a959e20547cc0850c3bf02052c9346b9cf49f8c076637aa883316bb84",
+      "bytes": 540768
+    },
+    "devices/tab5/arduino-docs/touch-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/touch-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/touch-1/sketch.ino.merged.bin": {
+      "sha256": "06831c107905850a32fff5846693daa4a68f272c413016baee672cc11b0e7b63",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/touch-1/sketch.ino.elf": {
+      "sha256": "586f4dd29fb4d5cc8db62ca30c305aef0b6129aaa52085fef724760129fe5a3a",
+      "bytes": 12674488
+    },
+    "devices/tab5/arduino-docs/touch-1/firmware.json": {
+      "sha256": "23acfcfe229cbe207976c5f58794c52d559d728d7a224351154c3fda605032fd",
+      "bytes": 6676
+    },
+    "devices/tab5/arduino-docs/touch-2/sketch/sketch/sketch.ino": {
+      "sha256": "9eda330e13d4e308aa6a4dd59f5637bbd61948d3854c38a54213068c0d6c74a8",
+      "bytes": 1044
+    },
+    "devices/tab5/arduino-docs/touch-2/sketch.ino.bin": {
+      "sha256": "ffca7ebb7116ec060073ad78d035a62e95bdb4a215551945cbbbcb3e8b87b196",
+      "bytes": 539664
+    },
+    "devices/tab5/arduino-docs/touch-2/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/touch-2/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/touch-2/sketch.ino.merged.bin": {
+      "sha256": "c441164a265ad1a4e943e36881352feb823688ab344c411f6ef2a91a334b6094",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/touch-2/sketch.ino.elf": {
+      "sha256": "e70e089cb85114f8afa1d215fe8ae90d8dd8c0eaf8a952c41af93a9ed564976a",
+      "bytes": 12671876
+    },
+    "devices/tab5/arduino-docs/touch-2/firmware.json": {
+      "sha256": "3c276e1bb7837abbf0ab9f7819372c6f231dae298a2e1e3b10d8193069b2c224",
+      "bytes": 6487
+    },
+    "devices/tab5/arduino-docs/wakeup-1/sketch/sketch/sketch.ino": {
+      "sha256": "48b92138247ad9c3f89a26d805389791c928e8fc1603e6c9c2a0620d53aff462",
+      "bytes": 759
+    },
+    "devices/tab5/arduino-docs/wakeup-1/sketch.ino.bin": {
+      "sha256": "3b94a9a4281d54e3dbb94cc1f31e0d62824e735fbe55de4b262ccde1693bbf35",
+      "bytes": 549456
+    },
+    "devices/tab5/arduino-docs/wakeup-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/wakeup-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/wakeup-1/sketch.ino.merged.bin": {
+      "sha256": "7d989cc03223a5b44a855ef1e43e64e56aa53854d6800a0e70f5f4f6053a8b2e",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/wakeup-1/sketch.ino.elf": {
+      "sha256": "a5c7353a738c17651c00f06087bc78a48cf3b7e0b09cf3dd86cd4e79bc9e1a97",
+      "bytes": 12828920
+    },
+    "devices/tab5/arduino-docs/wakeup-1/firmware.json": {
+      "sha256": "d4d9a6101847cdb59d0469e1e40337a3ea992614b200378647c54b5231757710",
+      "bytes": 5487
+    },
+    "devices/tab5/arduino-docs/wakeup-2/sketch/sketch/sketch.ino": {
+      "sha256": "e9ba4d801550315d03e99ff40ecf8fbec339b928c5097c01252177e52d99d7a6",
+      "bytes": 1622
+    },
+    "devices/tab5/arduino-docs/wakeup-2/sketch.ino.bin": {
+      "sha256": "234aa3ebcb5cee0b941c0a3b1ce537db43f144218b7e03e664b5f8f44c93cfd5",
+      "bytes": 553136
+    },
+    "devices/tab5/arduino-docs/wakeup-2/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/wakeup-2/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/wakeup-2/sketch.ino.merged.bin": {
+      "sha256": "40c88067e24481a935ebdfeb3e5f13b66f5cadec0a30f7a3db11f5df71fb71a9",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/wakeup-2/sketch.ino.elf": {
+      "sha256": "6c828a8323f906a49b38f5cf4f04590f8fc7b94b003bf22013f98a25dafcb6a3",
+      "bytes": 12840072
+    },
+    "devices/tab5/arduino-docs/wakeup-2/firmware.json": {
+      "sha256": "3d0b43b313617c54199b377663a8203358c158c1d5077de655ab8d2e2b391261",
+      "bytes": 5587
+    },
+    "devices/tab5/arduino-docs/wifi-1/sketch/sketch/sketch.ino": {
+      "sha256": "47240c5d3b80053b0426237ea92f1fca3356641b19234d7c6552b1e0a53a216b",
+      "bytes": 1639
+    },
+    "devices/tab5/arduino-docs/wifi-1/sketch.ino.bin": {
+      "sha256": "470db038b56d773f62eea10b62ef9734859c705e001e87b45d626757264d0c88",
+      "bytes": 860880
+    },
+    "devices/tab5/arduino-docs/wifi-1/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/wifi-1/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/wifi-1/sketch.ino.merged.bin": {
+      "sha256": "f19a2d26b12b4680abe80cc843fbeb9b2e2a9d3813f722dff7c33b0512251b67",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/wifi-1/sketch.ino.elf": {
+      "sha256": "0e00873405393ffd9f8b1468f4680d9c4730fc05acb4f5f049f777b1bc1f4dc5",
+      "bytes": 17196836
+    },
+    "devices/tab5/arduino-docs/wifi-1/firmware.json": {
+      "sha256": "3a36087ab71c257abd65e9e6e8b851f01bd6b8cdadb28c6fd36acf48189af198",
+      "bytes": 5523
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/sketch/sketch/sketch.ino": {
+      "sha256": "7d33e7f0de57e2c70ffd72bdaa346ff5f256be02d198335b34c943acb421865a",
+      "bytes": 1156
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/sketch.ino.bin": {
+      "sha256": "bb890359f3621d9cf5815390c4a152706f9e9417ef05731bd4fd083769bd1233",
+      "bytes": 860640
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/sketch.ino.merged.bin": {
+      "sha256": "39a2f3342e6e699a36c8cf18c7c78d127f869c57ae458f5e820aaf44e47975a6",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/sketch.ino.elf": {
+      "sha256": "4b3f866471002568b01cce973e3a6dcdbd07c56c69aabbff1354923bb6631b5d",
+      "bytes": 17196532
+    },
+    "devices/tab5/arduino-docs/wifi-1-softap/firmware.json": {
+      "sha256": "4b95e28f4bc87bd0d8004eb79748f373784f498d6c78fa8ee2fe6593624a21d4",
+      "bytes": 5616
+    },
+    "devices/tab5/arduino-docs/wifi-2/sketch/sketch/sketch.ino": {
+      "sha256": "2cff9e6429b83a04bee57a6f42718a6dcbfd603eac5e57e9f91b6eb4a839d6d5",
+      "bytes": 3203
+    },
+    "devices/tab5/arduino-docs/wifi-2/sketch.ino.bin": {
+      "sha256": "7e2b23af6f5d03542f3707fb7604693379e771d8f7952573a0b9ba5eba641c0e",
+      "bytes": 855472
+    },
+    "devices/tab5/arduino-docs/wifi-2/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/wifi-2/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/wifi-2/sketch.ino.merged.bin": {
+      "sha256": "fb8ca429fb797045710145db320723fd03cc11a03ab72da7cedc70d00dc9f082",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/wifi-2/sketch.ino.elf": {
+      "sha256": "032a1a88011ee9d42d252989ab3cf684d2150c24ca6dd7b484d1787d1f128aff",
+      "bytes": 17190720
+    },
+    "devices/tab5/arduino-docs/wifi-2/firmware.json": {
+      "sha256": "a501ae839644e1a751f85f154b84f0232d89367b86b170e0ff1a919b6fb22cd8",
+      "bytes": 5508
+    },
+    "devices/tab5/arduino-docs/wifi-3/sketch/sketch/sketch.ino": {
+      "sha256": "961a568ea28c06d2125784b08627df031adcf95f212a94d13fd597078e858f5e",
+      "bytes": 208
+    },
+    "devices/tab5/arduino-docs/wifi-3/sketch.ino.bin": {
+      "sha256": "b190e9b2583cad905cae59e5dfdfcf60d39e4af639017e65f29c327b9685b5cb",
+      "bytes": 527760
+    },
+    "devices/tab5/arduino-docs/wifi-3/sketch.ino.bootloader.bin": {
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "devices/tab5/arduino-docs/wifi-3/sketch.ino.partitions.bin": {
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "devices/tab5/arduino-docs/wifi-3/sketch.ino.merged.bin": {
+      "sha256": "4e742f78a20910824f89f461a0b0c5b6d5346c7f91b7a889452168beeb7d3074",
+      "bytes": 16777216
+    },
+    "devices/tab5/arduino-docs/wifi-3/sketch.ino.elf": {
+      "sha256": "aa1306f73b8c9a5ea3e8442061c3272fc8db56df9d6dcc6f5d70063ba6a0cb7b",
+      "bytes": 12652504
+    },
+    "devices/tab5/arduino-docs/wifi-3/firmware.json": {
+      "sha256": "ab297d1ce0766c6b8502ea980cd44fda21f5f81c668fc848f560a4280a39cb9c",
+      "bytes": 5228
     }
   },
   "local_files": {
@@ -3216,7 +3970,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 36,
+    "published_cases": 46,
     "storage": "git-lfs"
   }
 }

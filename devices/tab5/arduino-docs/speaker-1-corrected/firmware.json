@@ -1,0 +1,164 @@
+{
+  "device_id": "tab5",
+  "case": "speaker-1-corrected",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/speaker",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5tab5/speaker.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "da72568b848f4568f7f3d7c333e455c80d34d3faf3c3f3e232f327ed6b435f64",
+  "expected_behavior": "Exercise the speaker behavior described in the pinned documentation.",
+  "sketch_files": {
+    "sketch.ino": {
+      "path": "devices/tab5/arduino-docs/speaker-1-corrected/sketch/sketch/sketch.ino",
+      "storage": "public",
+      "sha256": "da72568b848f4568f7f3d7c333e455c80d34d3faf3c3f3e232f327ed6b435f64",
+      "bytes": 567
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_tab5",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "configuration": "Removed the extra # from the first include.",
+  "variant_of": "speaker-1",
+  "files": {
+    "sketch.ino.bin": {
+      "path": "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "07c2446ba812f74b46f72bf45bff6fa2202376d76aaf43164d25e4940392f0af",
+      "bytes": 563568
+    },
+    "sketch.ino.bootloader.bin": {
+      "path": "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "sketch.ino.partitions.bin": {
+      "path": "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "sketch.ino.merged.bin": {
+      "path": "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "2db431bf3ebd65d0cdbf015c008e23aad475aa5c14aeae73514c8e97b67f153f",
+      "bytes": 16777216
+    },
+    "sketch.ino.elf": {
+      "path": "devices/tab5/arduino-docs/speaker-1-corrected/sketch.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "cb4a59c23b21783ecdd4244827aed045a273226f362a855ef60b65bdcaf1da02",
+      "bytes": 13035236
+    }
+  },
+  "merged_image": "sketch.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "sketch.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "sketch.ino.bootloader.bin",
+        "offset": "0x2000"
+      },
+      "partitions": {
+        "file": "sketch.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "16371262cf0778e3bf7ca9fdf739e75e396d194cf16a06ed7ae97ab9ee95511d",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "2db431bf3ebd65d0cdbf015c008e23aad475aa5c14aeae73514c8e97b67f153f",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+      "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+      "boards": [
+        "m5stack-tab5"
+      ],
+      "run_commands": [
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "speaker-final-full",
+          "$FIRMWARE",
+          "12",
+          "--wav",
+          "speaker-1-corrected/final-full.wav",
+          "--debug",
+          "i2c1"
+        ]
+      ]
+    },
+    "runs": [
+      {
+        "checker": {
+          "case": "speaker corrected",
+          "status": "PASS",
+          "evidence": "five ordered speaker tones from 10 kHz to 2 kHz through codec-gated 48 kHz PCM"
+        },
+        "capture_comparison": {
+          "speaker-final-full/frame.png": {
+            "original_sha256": "61a4deccba2bc7aacc84e309012a2924da73369e9ddf7da61a3cce3ecd5149be",
+            "rebuilt_sha256": "61a4deccba2bc7aacc84e309012a2924da73369e9ddf7da61a3cce3ecd5149be",
+            "byte_identical": true
+          },
+          "speaker-1-corrected/final-full.wav": {
+            "original_sha256": "a5913ee878d43702ee4365eb361262afbecebdba7e997b652591aa74d536a459",
+            "rebuilt_sha256": "a5913ee878d43702ee4365eb361262afbecebdba7e997b652591aa74d536a459",
+            "original_pcm_sha256": "275e9926c46260b022c90037a52ab098ad66410ccf4148e9e4500e761a1458b6",
+            "rebuilt_pcm_sha256": "275e9926c46260b022c90037a52ab098ad66410ccf4148e9e4500e761a1458b6",
+            "byte_identical": true
+          }
+        },
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "speaker-final-full",
+            "$FIRMWARE",
+            "12",
+            "--wav",
+            "speaker-1-corrected/final-full.wav",
+            "--debug",
+            "i2c1"
+          ]
+        ],
+        "boards": [
+          "m5stack-tab5"
+        ]
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (334 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (818 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2043 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "sketch"
+  },
+  "verdict": "PASS"
+}

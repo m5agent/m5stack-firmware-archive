@@ -1,0 +1,201 @@
+{
+  "device_id": "tab5",
+  "case": "touch-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5tab5/touch",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5tab5/touch.md",
+    "section": "1.Touch Button Detection",
+    "code_first_line": 17
+  },
+  "sketch_sha256": "796d05c5584a7239c3c69278a5013bbdbe5e3874bcac3826b9cc8e51a3102887",
+  "expected_behavior": "Exercise the touch behavior described in the pinned documentation.",
+  "sketch_files": {
+    "sketch.ino": {
+      "path": "devices/tab5/arduino-docs/touch-1/sketch/sketch/sketch.ino",
+      "storage": "public",
+      "sha256": "796d05c5584a7239c3c69278a5013bbdbe5e3874bcac3826b9cc8e51a3102887",
+      "bytes": 867
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_tab5",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "sketch.ino.bin": {
+      "path": "devices/tab5/arduino-docs/touch-1/sketch.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "662d436a959e20547cc0850c3bf02052c9346b9cf49f8c076637aa883316bb84",
+      "bytes": 540768
+    },
+    "sketch.ino.bootloader.bin": {
+      "path": "devices/tab5/arduino-docs/touch-1/sketch.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "8c4546521eb6385068e3c1c2b9c1cf0bf1328b24e790f235345764cec26e8f95",
+      "bytes": 20928
+    },
+    "sketch.ino.partitions.bin": {
+      "path": "devices/tab5/arduino-docs/touch-1/sketch.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce",
+      "bytes": 3072
+    },
+    "sketch.ino.merged.bin": {
+      "path": "devices/tab5/arduino-docs/touch-1/sketch.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "06831c107905850a32fff5846693daa4a68f272c413016baee672cc11b0e7b63",
+      "bytes": 16777216
+    },
+    "sketch.ino.elf": {
+      "path": "devices/tab5/arduino-docs/touch-1/sketch.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "586f4dd29fb4d5cc8db62ca30c305aef0b6129aaa52085fef724760129fe5a3a",
+      "bytes": 12674488
+    }
+  },
+  "merged_image": "sketch.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "sketch.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "sketch.ino.bootloader.bin",
+        "offset": "0x2000"
+      },
+      "partitions": {
+        "file": "sketch.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "febee8f025c1af01f80142af7632850a8eb15b583b2ce3121ad31f594e54fe82",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "baseline": "https://github.com/m5agent/agent-work-logs/tree/b2c5b12a4d45e63069a6d15e6393b0c60f72e1b6/records/esp32sim/2026-11-26-tab5-milestone-3",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "06831c107905850a32fff5846693daa4a68f272c413016baee672cc11b0e7b63",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "9ee24265ed60b0b31faa8784b781f21a0666ae22e5ce9be32cbbd297f3a89eaa",
+      "rom_sha256": "948f2c7d108d04a9c3a982f9c1c498fb17f2c4a68abc51f87782592034d7ce44",
+      "boards": [
+        "m5stack-tab5"
+      ],
+      "run_commands": [
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "final-gt-idle",
+          "$FIRMWARE",
+          "3.1"
+        ],
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "final-gt-press",
+          "$FIRMWARE",
+          "2.8",
+          "--script",
+          "press.txt",
+          "--debug",
+          "i2c1"
+        ],
+        [
+          "./run_tab5.sh",
+          "m5stack-tab5",
+          "final-gt-release",
+          "$FIRMWARE",
+          "3.1",
+          "--script",
+          "release.txt",
+          "--debug",
+          "i2c1"
+        ]
+      ]
+    },
+    "runs": [
+      {
+        "checker": {
+          "case": "touch button",
+          "status": "PASS",
+          "evidence": "GT911 press and release redraw the button"
+        },
+        "capture_comparison": {
+          "final-gt-idle/frame.png": {
+            "original_sha256": "6b5d916e0f8a1afc8a990f5569f1abb99ed8f58ce4bf632237b75aad6b62ec13",
+            "rebuilt_sha256": "d6d409a8848cf8c92123ce9a0db1052682b2898919172e11856af168775bf923",
+            "byte_identical": false
+          },
+          "final-gt-press/frame.png": {
+            "original_sha256": "e4446a211f1f9d610cd4807deb9ce52489db4ad6a90e65b55b91c9f1a39a485d",
+            "rebuilt_sha256": "94e3b87d2f0608074c24d7856373a59256c6857d289c1e665519335aae4e26c8",
+            "byte_identical": false
+          },
+          "final-gt-release/frame.png": {
+            "original_sha256": "9c79e2a25bc746e8e0d944a893cabd8b589490f6c762daa46bf17ce450274de0",
+            "rebuilt_sha256": "58f5740b5e8c20f0717c60c3af6e33e12e53088c755f6c2108602ea815261b4f",
+            "byte_identical": false
+          }
+        },
+        "run_commands": [
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "final-gt-idle",
+            "$FIRMWARE",
+            "3.1"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "final-gt-press",
+            "$FIRMWARE",
+            "2.8",
+            "--script",
+            "press.txt",
+            "--debug",
+            "i2c1"
+          ],
+          [
+            "./run_tab5.sh",
+            "m5stack-tab5",
+            "final-gt-release",
+            "$FIRMWARE",
+            "3.1",
+            "--script",
+            "release.txt",
+            "--debug",
+            "i2c1"
+          ]
+        ],
+        "boards": [
+          "m5stack-tab5"
+        ]
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (328 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/riscv32-esp-elf/ (800 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1971 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "sketch"
+  },
+  "verdict": "PASS"
+}
