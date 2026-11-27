@@ -1,0 +1,195 @@
+{
+  "device_id": "stickc-plus-se",
+  "case": "battery",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/battery",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc-plus_se/battery.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "21355c14fb9bafe69de920cffbdf71573d0db4e4714c3d3244cbecc0ea2b844c",
+  "expected_behavior": "StickC-Plus SE Battery. Inject two battery values and compare the documented voltage/percentage and charge indications.",
+  "sketch_files": {
+    "battery.ino": {
+      "path": "devices/stickc-plus-se/arduino-docs/battery/sketch/battery/battery.ino",
+      "storage": "public",
+      "sha256": "21355c14fb9bafe69de920cffbdf71573d0db4e4714c3d3244cbecc0ea2b844c",
+      "bytes": 697
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/battery/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "73ef51b630e7f252f8c2cd599a5f6a1e370e298b28430f682f7b0cc8c9f0114c",
+      "bytes": 524144
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/battery/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/battery/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/battery/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ff4ad9416b04395cd481ae858a025beeddb1e398a1cc994d1c019d82248b03fa",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus-se/arduino-docs/battery/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "d3ad22d33cc9e8dcf90bab32288abe5cfaafdbd2a9a42c2669ed9d6816d568d4",
+      "bytes": 776556
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "76c34229b01a81e4401b7f3251e98cc86e818e375fdab8d2aced53660e5e1849",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ff4ad9416b04395cd481ae858a025beeddb1e398a1cc994d1c019d82248b03fa",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus-se"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus-se",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus-se $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Two simulated battery levels changed the documented display versus default",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 1916,
+            "bounds": [
+              36,
+              1,
+              110,
+              208
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                30484
+              ],
+              [
+                "cdd2cd",
+                1916
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ],
+              "cdd2cd": [
+                36,
+                1,
+                110,
+                208
+              ]
+            },
+            "crc32": "c9dd8e4a"
+          }
+        },
+        "capture_comparison": {
+          "battery-first.png": {
+            "original": {
+              "png_sha256": "194f0dc396aa6df04094b49fe914ea487a13cfb5d03c03c4f093a4b02b75fa10"
+            },
+            "rebuilt": {
+              "png_sha256": "194f0dc396aa6df04094b49fe914ea487a13cfb5d03c03c4f093a4b02b75fa10"
+            },
+            "byte_identical": true
+          },
+          "battery-idle.png": {
+            "original": {
+              "png_sha256": "7c620757a86594b9078b5c420a20afab99c43d3ad31bae540419a8f1380241ad"
+            },
+            "rebuilt": {
+              "png_sha256": "7c620757a86594b9078b5c420a20afab99c43d3ad31bae540419a8f1380241ad"
+            },
+            "byte_identical": true
+          },
+          "battery.png": {
+            "original": {
+              "png_sha256": "b96727473f5d3e00d5f39fe27b4b568e33310ed4b7d490849258ea8f45bc51ac"
+            },
+            "rebuilt": {
+              "png_sha256": "b96727473f5d3e00d5f39fe27b4b568e33310ed4b7d490849258ea8f45bc51ac"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (275 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

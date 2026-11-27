@@ -1,0 +1,192 @@
+{
+  "device_id": "stickc-plus-se",
+  "case": "speaker",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/speaker",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc-plus_se/speaker.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "841b1a1803d610ba73752ffa0607c1325fd5d45ffd6c2a1e7a0f3ff8122c05ed",
+  "expected_behavior": "StickC-Plus SE Speaker. Verify the emitted tones or raw PCM on the board audio route.",
+  "sketch_files": {
+    "speaker.ino": {
+      "path": "devices/stickc-plus-se/arduino-docs/speaker/sketch/speaker/speaker.ino",
+      "storage": "public",
+      "sha256": "841b1a1803d610ba73752ffa0607c1325fd5d45ffd6c2a1e7a0f3ff8122c05ed",
+      "bytes": 449
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "eb8fd62ab1700cdef8b62ac4e0a753720c7ee71cc5d5e83ab985a6c2d508ddff",
+      "bytes": 537616
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "20be87f71b18d9c5f0549b646517c713ee65f3c98928abf5179163d09abed11f",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "1e450f94c57eea1697c4902dc42cdd2a65345dadc1728a12cffabae718cf62ce",
+      "bytes": 791180
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "3e16d4b062dd0103e0d43442e5706c61b3c9885719ccd5f065cc3726ef414f8a",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "20be87f71b18d9c5f0549b646517c713ee65f3c98928abf5179163d09abed11f",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus-se"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus-se",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus-se $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Routed I2S piezo bursts (Hz, ms) [(7000.2, 99.9), (4000.0, 199.8), (7000.2, 95.9), (4000.0, 199.8), (6999.8, 97.1), (4000.0, 128.0)]",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 373,
+            "bounds": [
+              59,
+              83,
+              73,
+              157
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                32027
+              ],
+              [
+                "cdd2cd",
+                373
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ],
+              "cdd2cd": [
+                59,
+                83,
+                73,
+                157
+              ]
+            },
+            "crc32": "f9ca3772"
+          }
+        },
+        "capture_comparison": {
+          "speaker.png": {
+            "original": {
+              "png_sha256": "085764d8dee58e74dc23c92689419c70ee2aa02f9ac184753fae56e89c71e210"
+            },
+            "rebuilt": {
+              "png_sha256": "085764d8dee58e74dc23c92689419c70ee2aa02f9ac184753fae56e89c71e210"
+            },
+            "byte_identical": true
+          },
+          "speaker.wav": {
+            "original": {
+              "wav_sha256": "8f199a28425de03ecbcaa9e4b7896f0ede8f17e7293265f2be9899878b1974fe",
+              "pcm_sha256": "81b0e3dd6312a0ef51b96a6997887e8ccda3085a87f819bb58b1f475398a73f2",
+              "frames": 246788,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "ce4b85913bd751ff92b2e2564644625d5773f1fee75458a76504e0bdcbf6f850",
+              "pcm_sha256": "ec3f4917da1ad0614b0be8c5fad1744304d6beaff8a3a06edc3afd9ebd4f1a76",
+              "frames": 246790,
+              "sample_rate": 48000
+            },
+            "byte_identical": false
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (278 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

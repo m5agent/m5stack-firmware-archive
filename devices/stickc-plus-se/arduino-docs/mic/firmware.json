@@ -1,0 +1,229 @@
+{
+  "device_id": "stickc-plus-se",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc-plus_se/mic.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "4e92c4b688bd105e7df3f5c190e71e7db153f8aa89b313a8c9ffadea3ed4e59f",
+  "expected_behavior": "StickC-Plus SE Microphone. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/stickc-plus-se/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "4e92c4b688bd105e7df3f5c190e71e7db153f8aa89b313a8c9ffadea3ed4e59f",
+      "bytes": 4715
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "884431835cae6e660a272d36511988c195dcabcdfe3d2b2342b1f5ee05201d62",
+      "bytes": 549792
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus-se/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "e0c5fe41ec4955789d4157aceba26892bd21a8fb6a1a2f5199cc4231658fcdab",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus-se/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "f8fd292ccf608e493560eb81a295252d759802be069833ce5509043b08ddd651",
+      "bytes": 806908
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "8e85f5f98100e55722fc419d760b3e76fac85127a12f78be3790990cb1319e1b",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "e0c5fe41ec4955789d4157aceba26892bd21a8fb6a1a2f5199cc4231658fcdab",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus-se"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus-se",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus-se $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Distinct tone and silence frames; routed replay bursts (Hz, ms) [(738.1, 989.0)]",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 6233,
+            "bounds": [
+              0,
+              3,
+              134,
+              237
+            ],
+            "colors": 3,
+            "palette": [
+              [
+                "000000",
+                26167
+              ],
+              [
+                "cdd2cd",
+                6012
+              ],
+              [
+                "cd0000",
+                221
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ],
+              "cdd2cd": [
+                0,
+                3,
+                134,
+                237
+              ],
+              "cd0000": [
+                111,
+                62,
+                127,
+                78
+              ]
+            },
+            "crc32": "a5a45e24"
+          }
+        },
+        "capture_comparison": {
+          "mic-idle.png": {
+            "original": {
+              "png_sha256": "a40619af5784cb5d21d4cc91072b16d993b4b1bab0d667467b4418b30c9c9efb"
+            },
+            "rebuilt": {
+              "png_sha256": "a40619af5784cb5d21d4cc91072b16d993b4b1bab0d667467b4418b30c9c9efb"
+            },
+            "byte_identical": true
+          },
+          "mic-playback.png": {
+            "original": {
+              "png_sha256": "dbbaf9d5afcfb58228ed2b1bec82a947d4582a0c0e59b360a20b27c94657b582"
+            },
+            "rebuilt": {
+              "png_sha256": "dbbaf9d5afcfb58228ed2b1bec82a947d4582a0c0e59b360a20b27c94657b582"
+            },
+            "byte_identical": true
+          },
+          "mic-playback.wav": {
+            "original": {
+              "wav_sha256": "97293e226de5ae3f4fdb644cf2e4a9e686f47fe74767eda0f83871014ea6f098",
+              "pcm_sha256": "4fa36868f70e707dfc3f17904018d03486c271e1ec4312ac7141a3d4397a7820",
+              "frames": 57290,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "e92fc23450eeb3fbaef625d1da66b8d3b027cfd9fa02b3c369bbb6b40f26e423",
+              "pcm_sha256": "197417c4b1b841147f70dcc96f2cc6bb101581105d8a11157aef82573ddfe6d2",
+              "frames": 57291,
+              "sample_rate": 48000
+            },
+            "byte_identical": false
+          },
+          "mic-second.png": {
+            "original": {
+              "png_sha256": "3510ce9bd1f0b1f8161f54c1fa29e33509ce53bfdd5bd82324eaf3c827c07c35"
+            },
+            "rebuilt": {
+              "png_sha256": "3510ce9bd1f0b1f8161f54c1fa29e33509ce53bfdd5bd82324eaf3c827c07c35"
+            },
+            "byte_identical": true
+          },
+          "mic.png": {
+            "original": {
+              "png_sha256": "ebe0d4f07960ca3b43cf6583b445c0cfb48d78eb1d723b2a93ade1d7b23594b7"
+            },
+            "rebuilt": {
+              "png_sha256": "ebe0d4f07960ca3b43cf6583b445c0cfb48d78eb1d723b2a93ade1d7b23594b7"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (278 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

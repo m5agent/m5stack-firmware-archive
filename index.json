@@ -9027,6 +9027,262 @@
           "python3 $SIM_SRC/tools/run-s3c-docs.py stackchan $SIM $OUT --firmware $FIRMWARE_DIR/stackchan --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stackchan-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4 --camera-a $FIXTURES_DIR/agent-camera/pic-a.bmp --camera-b $FIXTURES_DIR/agent-camera/pic-b.bmp --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav --mic-b $FIXTURES_DIR/agent-s3c/mic-548hz-a2800.wav --rtc-wifi \"$RTC_WIFI\""
         ]
       }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/battery.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "21355c14fb9bafe69de920cffbdf71573d0db4e4714c3d3244cbecc0ea2b844c",
+      "manifest": "devices/stickc-plus-se/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ff4ad9416b04395cd481ae858a025beeddb1e398a1cc994d1c019d82248b03fa",
+      "original_build": {
+        "firmware_sha256": "76c34229b01a81e4401b7f3251e98cc86e818e375fdab8d2aced53660e5e1849",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "0be00b8f538e56e073205624b2e5ea680ac8e6deeb88edf2579dafb75f019db0",
+      "manifest": "devices/stickc-plus-se/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "0d9c93089407a0cd643d60a08775187749e1b20ceb7e392a7664b38d8023ad2d",
+      "original_build": {
+        "firmware_sha256": "4241d8be2461d6444c60d5cca6263417a303af6e9d0bda63ec26ce132b0b8612",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/display.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "cedaf7b7431080933d93a19f889aab7900eecd48b329338f961774680cdd9144",
+      "manifest": "devices/stickc-plus-se/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "96277973d6280e5e1fabf52badf0d4579eb1919c69e2d191270b19bcce3f888b",
+      "original_build": {
+        "firmware_sha256": "ec4b2bae22a0bc8516d9deba500b09a171d8e17c4a9a31df5841234ef3b1d730",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "fcfe071c1b0c7a263dbd8d03b714016f0b81ead428139bc7c5e31b1a37e36e1d",
+      "manifest": "devices/stickc-plus-se/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b480e98f817dd9c20e07c573c055a459246e52c3cf0ff70fc673d12350c0d791",
+      "original_build": {
+        "firmware_sha256": "d73af24be9df6bde3c56db6fb1b3dc6081ee8aa092756dbcf939d2f632dcf65d",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/mic.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "4e92c4b688bd105e7df3f5c190e71e7db153f8aa89b313a8c9ffadea3ed4e59f",
+      "manifest": "devices/stickc-plus-se/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e0c5fe41ec4955789d4157aceba26892bd21a8fb6a1a2f5199cc4231658fcdab",
+      "original_build": {
+        "firmware_sha256": "8e85f5f98100e55722fc419d760b3e76fac85127a12f78be3790990cb1319e1b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/speaker.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "841b1a1803d610ba73752ffa0607c1325fd5d45ffd6c2a1e7a0f3ff8122c05ed",
+      "manifest": "devices/stickc-plus-se/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "20be87f71b18d9c5f0549b646517c713ee65f3c98928abf5179163d09abed11f",
+      "original_build": {
+        "firmware_sha256": "3e16d4b062dd0103e0d43442e5706c61b3c9885719ccd5f065cc3726ef414f8a",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "wakeup",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/wakeup.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "6b1a9885cc221d6a14749b844e583832e25e93c39b84fcd8d82b4100ada8e346",
+      "manifest": "devices/stickc-plus-se/arduino-docs/wakeup/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ac84992086b7c7eee328777aa42a73413f2822c157e2aea27d1f3c22466f8193",
+      "original_build": {
+        "firmware_sha256": "921ada10019f9e4c9990352d5edd0a94f191e77be3460cb8616c605e293fe0a8",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "quickstart-scrollgraph",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc-plus_se/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stickc-plus_se/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 40
+      },
+      "sketch_sha256": "7449810d0fb6b961770a592f4785a430dee3f16d7dcb5c43333efed30ee662b1",
+      "manifest": "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9e05a1c2c83c1d8d9e1becb64adfb7b509be88d243b5ef74500088a907b16825",
+      "original_build": {
+        "firmware_sha256": "9b7bebf1eed5f422f22e513825da33c5b9ac8ca66ddc570bd8b06b078736e29a",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stickc-plus-se"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus-se $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus-se.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -16651,6 +16907,230 @@
     "devices/stackchan/arduino-docs/quickstart-rgb/firmware.json": {
       "sha256": "8e1625f75c8cd6a20412985e0e81662f770a2bdff32849705162f3e1ae1b21c9",
       "bytes": 6340
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "21355c14fb9bafe69de920cffbdf71573d0db4e4714c3d3244cbecc0ea2b844c",
+      "bytes": 697
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "73ef51b630e7f252f8c2cd599a5f6a1e370e298b28430f682f7b0cc8c9f0114c",
+      "bytes": 524144
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "ff4ad9416b04395cd481ae858a025beeddb1e398a1cc994d1c019d82248b03fa",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "d3ad22d33cc9e8dcf90bab32288abe5cfaafdbd2a9a42c2669ed9d6816d568d4",
+      "bytes": 776556
+    },
+    "devices/stickc-plus-se/arduino-docs/battery/firmware.json": {
+      "sha256": "dc584d6beab4565a33c4315c32c00fb24222d21fed18bc17314278980fc7b7f9",
+      "bytes": 7015
+    },
+    "devices/stickc-plus-se/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "0be00b8f538e56e073205624b2e5ea680ac8e6deeb88edf2579dafb75f019db0",
+      "bytes": 934
+    },
+    "devices/stickc-plus-se/arduino-docs/button/migration.ino.bin": {
+      "sha256": "f0bdf594d437e825a6e6cbcfdb44c6738a7d37c33da9599ed9a4a3d616fa9000",
+      "bytes": 516192
+    },
+    "devices/stickc-plus-se/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "0d9c93089407a0cd643d60a08775187749e1b20ceb7e392a7664b38d8023ad2d",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/button/migration.ino.elf": {
+      "sha256": "b1f73d5d8e6b2172316b56e73986e5af7626d16305a29bf4e4957d9d5d92cb10",
+      "bytes": 766816
+    },
+    "devices/stickc-plus-se/arduino-docs/button/firmware.json": {
+      "sha256": "43406297bd190ec34137a58633156ac43e1993faae047b520dee8e60fc8fe87c",
+      "bytes": 6992
+    },
+    "devices/stickc-plus-se/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "cedaf7b7431080933d93a19f889aab7900eecd48b329338f961774680cdd9144",
+      "bytes": 766
+    },
+    "devices/stickc-plus-se/arduino-docs/display/migration.ino.bin": {
+      "sha256": "4f2302bc0569bdc82e16e10565af3b3322f35633a2f1b267e991965855ea6f99",
+      "bytes": 511360
+    },
+    "devices/stickc-plus-se/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "96277973d6280e5e1fabf52badf0d4579eb1919c69e2d191270b19bcce3f888b",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/display/migration.ino.elf": {
+      "sha256": "ab42ba7f0d5048c6c04472ba006d0a7260410349284195a7e0019b758534cecc",
+      "bytes": 759760
+    },
+    "devices/stickc-plus-se/arduino-docs/display/firmware.json": {
+      "sha256": "296193e9f39fa525bed129a69f6ed8539e0b3107f152d02ddd47d6d1ce7c567f",
+      "bytes": 7281
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "fcfe071c1b0c7a263dbd8d03b714016f0b81ead428139bc7c5e31b1a37e36e1d",
+      "bytes": 2389
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "c9a153b58a39e4ac635cce658a3c84417c6847fae6602767ea9adf6c7b5cbd0f",
+      "bytes": 520576
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "b480e98f817dd9c20e07c573c055a459246e52c3cf0ff70fc673d12350c0d791",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "dd82f51be18abe6d630ac433207ec48d8a1e74a4bcb6d189d52ce86bbd180880",
+      "bytes": 772652
+    },
+    "devices/stickc-plus-se/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "622a52f308df4146ce2a27910d85786c275d27ab87ba871c46aa10e10cf1bf17",
+      "bytes": 6953
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "4e92c4b688bd105e7df3f5c190e71e7db153f8aa89b313a8c9ffadea3ed4e59f",
+      "bytes": 4715
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "884431835cae6e660a272d36511988c195dcabcdfe3d2b2342b1f5ee05201d62",
+      "bytes": 549792
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "e0c5fe41ec4955789d4157aceba26892bd21a8fb6a1a2f5199cc4231658fcdab",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "f8fd292ccf608e493560eb81a295252d759802be069833ce5509043b08ddd651",
+      "bytes": 806908
+    },
+    "devices/stickc-plus-se/arduino-docs/mic/firmware.json": {
+      "sha256": "bdf7ed281bac0dec8504a36266f932d27b18140c7efa7cb5e84ef5998f17ebde",
+      "bytes": 8203
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "841b1a1803d610ba73752ffa0607c1325fd5d45ffd6c2a1e7a0f3ff8122c05ed",
+      "bytes": 449
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "eb8fd62ab1700cdef8b62ac4e0a753720c7ee71cc5d5e83ab985a6c2d508ddff",
+      "bytes": 537616
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "20be87f71b18d9c5f0549b646517c713ee65f3c98928abf5179163d09abed11f",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "1e450f94c57eea1697c4902dc42cdd2a65345dadc1728a12cffabae718cf62ce",
+      "bytes": 791180
+    },
+    "devices/stickc-plus-se/arduino-docs/speaker/firmware.json": {
+      "sha256": "9b0ef8fd53198952aa192009f6f34231e0cd94947de3ef1807a80c921114383a",
+      "bytes": 7009
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/sketch/wakeup/wakeup.ino": {
+      "sha256": "6b1a9885cc221d6a14749b844e583832e25e93c39b84fcd8d82b4100ada8e346",
+      "bytes": 1029
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/migration.ino.bin": {
+      "sha256": "e0af28b5636c3d1cfc82922a8d0659b51a050faa535858f330cdc9ad58ace648",
+      "bytes": 529008
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/migration.ino.merged.bin": {
+      "sha256": "ac84992086b7c7eee328777aa42a73413f2822c157e2aea27d1f3c22466f8193",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/migration.ino.elf": {
+      "sha256": "10c7ff3e062cbd4895ed4a6543a00497d8bcbe0c4158a221303b241d03f156b6",
+      "bytes": 786340
+    },
+    "devices/stickc-plus-se/arduino-docs/wakeup/firmware.json": {
+      "sha256": "1e5625c5ad1f43fe86651899f0d5ad6e9b53c61d7b1b49c3d89f8d3d0cbc8e8b",
+      "bytes": 6665
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/sketch/quickstart_scrollgraph/quickstart_scrollgraph.ino": {
+      "sha256": "7449810d0fb6b961770a592f4785a430dee3f16d7dcb5c43333efed30ee662b1",
+      "bytes": 2980
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/migration.ino.bin": {
+      "sha256": "b064e4e805d58e747959692edb102d79907c09c4852f69b86cd959ab7d4eff8c",
+      "bytes": 434544
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/migration.ino.merged.bin": {
+      "sha256": "9e05a1c2c83c1d8d9e1becb64adfb7b509be88d243b5ef74500088a907b16825",
+      "bytes": 4194304
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/migration.ino.elf": {
+      "sha256": "0f1ec94a23bef88264ec392272097b2a1da101fce2c862c94045a23151ab7a2b",
+      "bytes": 659384
+    },
+    "devices/stickc-plus-se/arduino-docs/quickstart-scrollgraph/firmware.json": {
+      "sha256": "d1a688a9ac5a1292e624e85e2c1e45e58af743ba6095f618234173c3793ac222",
+      "bytes": 7484
     }
   },
   "local_files": {
@@ -17226,7 +17706,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 249,
+    "published_cases": 257,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {
