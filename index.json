@@ -397,6 +397,48 @@
       "firmware_sha256": "1324f12d3ddd5392f47a9eff537f9ce0b01a8e6e36d829b6bd22cdf82d2c1264",
       "verdict": "PASS",
       "lane": "native esp32sim"
+    },
+    {
+      "device_id": "cardputer",
+      "source": "arduino-docs",
+      "case": "display",
+      "manifest": "devices/cardputer/arduino-docs/display/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/display",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "bace5348fc88939903b37b2327a7b0bf539d4788e720646a000503dad910e8a5",
+      "verdict": "PASS",
+      "lane": "native Device Service esp32sim",
+      "original_build": {
+        "firmware_sha256": "9e7fac31667083a23ac753fcd09fd954c4c1b8cdad7546b3f61307eed1effb8a"
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "source": "arduino-docs",
+      "case": "keyboard",
+      "manifest": "devices/cardputer/arduino-docs/keyboard/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/keyboard",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "0744303cf5e6ee282f8864e1560b1667abc938f4616d08a5c8e224bda17148ed",
+      "verdict": "PASS",
+      "lane": "native Device Service esp32sim",
+      "original_build": {
+        "firmware_sha256": "d22bbdd88cbd0b0ec8120dc0bbc9df9ba27f1542b7fba716098dc3e664a6d072"
+      }
+    },
+    {
+      "device_id": "cardputer",
+      "source": "arduino-docs",
+      "case": "sdcard",
+      "manifest": "devices/cardputer/arduino-docs/sdcard/firmware.json",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/sdcard",
+      "docs_section": "Compilation Requirements",
+      "firmware_sha256": "3cc2ad3fb85130e82f0f759f688b2c7aadd2a64e1c189eef556006d32c41b63e",
+      "verdict": "PASS",
+      "lane": "native Device Service esp32sim",
+      "original_build": {
+        "firmware_sha256": "c8525e5a00f84f633b180ffffd2643dbba1d5e72107b58ec37b020e1336e117c"
+      }
     }
   ],
   "public_files": {
@@ -413,8 +455,8 @@
       "bytes": 1545
     },
     "README.md": {
-      "sha256": "005ba92c183c03b9b74c98837e16feb6616da5de0eef8436fe3b97dd4e973da9",
-      "bytes": 11351
+      "sha256": "157b959935ea9fef69bbe8fd1d3f58955e0e67e15a050eb0a13b486ea00e7fbf",
+      "bytes": 12226
     },
     "build-records/arduino-inventory.json": {
       "sha256": "8b3c329ecb30f8c389a3fc5c8e3b6b4f948685984151f15c361dec5a139983b4",
@@ -1415,6 +1457,136 @@
     "tools/verify.py": {
       "sha256": "aa25e8c9c38e999706cb1e0be3c1dac9bb09ab673389010d5f955980ee3f1fdf",
       "bytes": 3973
+    },
+    "devices/cardputer/arduino-docs/display/display.ino.bin": {
+      "bytes": 552624,
+      "sha256": "f3d0d5762bc7cb4b822b7720ca9a9ec5299b816660b4ce1493b774515e9c5162",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/display/display.ino.bootloader.bin": {
+      "bytes": 20112,
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/display/display.ino.elf": {
+      "bytes": 12680240,
+      "sha256": "c028117a7e33f10bb5f43ddc2b5120a7a3f079274ef9915098afa51200d89914",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/display/display.ino.merged.bin": {
+      "bytes": 4194304,
+      "sha256": "bace5348fc88939903b37b2327a7b0bf539d4788e720646a000503dad910e8a5",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/display/display.ino.partitions.bin": {
+      "bytes": 3072,
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/keyboard/keyboard.ino.bin": {
+      "bytes": 568528,
+      "sha256": "e0eefad39e4edacf4ef59d943c3624289bdb6c1973c259c59624be67a82221ef",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/keyboard/keyboard.ino.bootloader.bin": {
+      "bytes": 20112,
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/keyboard/keyboard.ino.elf": {
+      "bytes": 12802024,
+      "sha256": "020d33a59f33fc75c5573c55e64a4f56e37729cf167190e7167f4cb773905d9f",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/keyboard/keyboard.ino.merged.bin": {
+      "bytes": 4194304,
+      "sha256": "0744303cf5e6ee282f8864e1560b1667abc938f4616d08a5c8e224bda17148ed",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/keyboard/keyboard.ino.partitions.bin": {
+      "bytes": 3072,
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/sdcard/sdcard.ino.bin": {
+      "bytes": 603504,
+      "sha256": "9ac655c45ed056243d510991446238684e4faff62cf9e9477899712838c82c4d",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/sdcard/sdcard.ino.bootloader.bin": {
+      "bytes": 20112,
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/sdcard/sdcard.ino.elf": {
+      "bytes": 13347464,
+      "sha256": "8375d8405cb0765301ea5aa1116f674beda6d0c317a49c43d8c77e1a10c1d029",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/sdcard/sdcard.ino.merged.bin": {
+      "bytes": 4194304,
+      "sha256": "3cc2ad3fb85130e82f0f759f688b2c7aadd2a64e1c189eef556006d32c41b63e",
+      "storage": "git-lfs"
+    },
+    "devices/cardputer/arduino-docs/sdcard/sdcard.ino.partitions.bin": {
+      "bytes": 3072,
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "storage": "git-lfs"
+    },
+    "build-records/rebuild-2026-11-27-cardputer.md": {
+      "storage": "public",
+      "bytes": 1655,
+      "sha256": "4ca70e01b7438dd745009e4dfe85f1e6e4aba83a04a59ccff32ca94309aa39b9"
+    },
+    "evidence/cardputer/2026-11-27-path-clean-summary.json": {
+      "storage": "public",
+      "bytes": 3779,
+      "sha256": "b01185f2e356bf47bb0702cd118d2dad551882d175f93df202da93646c6b04f1"
+    },
+    "devices/cardputer/arduino-docs/sdcard/firmware.json": {
+      "storage": "public",
+      "bytes": 5725,
+      "sha256": "bc4406c1a89212c404afab7bcca2e6c54507da02fd093d123a3693a0488a0b2b"
+    },
+    "devices/cardputer/arduino-docs/sdcard/compile-result.json": {
+      "storage": "public",
+      "bytes": 316,
+      "sha256": "7449aabd6eeafa2604d971211947c489f847176ad7cc100c1424fa5bbf148c81"
+    },
+    "devices/cardputer/arduino-docs/display/firmware.json": {
+      "storage": "public",
+      "bytes": 5755,
+      "sha256": "863686ced8895743976fba97db49d2ee2ecdb21f0ca7462d4701290843798a90"
+    },
+    "devices/cardputer/arduino-docs/display/compile-result.json": {
+      "storage": "public",
+      "bytes": 317,
+      "sha256": "45e1c35bb75ca45854674d74023a4a2080db94bf5040b5a0f833429165a95655"
+    },
+    "devices/cardputer/arduino-docs/keyboard/firmware.json": {
+      "storage": "public",
+      "bytes": 5803,
+      "sha256": "b7958255c282cffb466f1fee0c789bf8339f2faa5b4fc6893213468c4b9e5de9"
+    },
+    "devices/cardputer/arduino-docs/keyboard/compile-result.json": {
+      "storage": "public",
+      "bytes": 318,
+      "sha256": "726a97b0b5c8f4de1d58de68a9e262d3c7f96ddd6ce8e99097b0ccec10fd92a1"
+    },
+    "devices/cardputer/arduino-docs/sdcard/sketch/sdcard/sdcard.ino": {
+      "storage": "public",
+      "bytes": 6342,
+      "sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a"
+    },
+    "devices/cardputer/arduino-docs/display/sketch/display/display.ino": {
+      "storage": "public",
+      "bytes": 724,
+      "sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278"
+    },
+    "devices/cardputer/arduino-docs/keyboard/sketch/keyboard/keyboard.ino": {
+      "storage": "public",
+      "bytes": 1605,
+      "sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62"
     }
   },
   "local_files": {
@@ -1990,7 +2162,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 26,
+    "published_cases": 29,
     "storage": "git-lfs"
   }
 }

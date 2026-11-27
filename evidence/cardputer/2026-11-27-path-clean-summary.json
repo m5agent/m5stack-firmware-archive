@@ -1,0 +1,100 @@
+{
+  "validation": "virtual-device validation",
+  "distinct_build_roots": 2,
+  "path_scan_private_matches": 0,
+  "assets_byte_identical": true,
+  "cases": [
+    {
+      "firmware_sha256": "bace5348fc88939903b37b2327a7b0bf539d4788e720646a000503dad910e8a5",
+      "case": "display",
+      "runtime": "esp32sim",
+      "runtime_identity": {
+        "runtime": "esp32sim",
+        "commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "binary_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer",
+        "control_protocol": 1,
+        "service_patch_sha256": "0d85265fde04f6e24d1eb61059b8132f7387f0f15f5ffb7bb233c75611042f78",
+        "flash_bytes": 8388608,
+        "psram_bytes": 0
+      },
+      "before": {
+        "sha256": "7c7ad0576e0c39348d4c61d1e4d8cb523529bddc969abf0108b41f3b921901a4",
+        "colors": 116
+      },
+      "after": {
+        "sha256": "eb859c35984ff9fee89c13523b4d7cfff4eac845b812667bd6d4750f55ae3f96",
+        "colors": 121
+      },
+      "evidence_zip_sha256": "dcd252a543dcf728d9b2c03adb9305719a6c890e4af564fc7f44a18692d98287",
+      "cleanup": [
+        200,
+        "stopped"
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "firmware_sha256": "0744303cf5e6ee282f8864e1560b1667abc938f4616d08a5c8e224bda17148ed",
+      "case": "keyboard",
+      "runtime": "esp32sim",
+      "runtime_identity": {
+        "runtime": "esp32sim",
+        "commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "binary_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer",
+        "control_protocol": 1,
+        "service_patch_sha256": "0d85265fde04f6e24d1eb61059b8132f7387f0f15f5ffb7bb233c75611042f78",
+        "flash_bytes": 8388608,
+        "psram_bytes": 0
+      },
+      "before": {
+        "sha256": "4f7a6d3afa60d2dac36ddfa98aa4dbff829f556663efe10149c5a3028ee2c724",
+        "colors": 3
+      },
+      "after": {
+        "sha256": "18eeb1fda5d7ac4d62ff542e36f2f03fe3071ae75b958e3ca9b1767162eb61e6",
+        "colors": 3
+      },
+      "evidence_zip_sha256": "487644f7a78c494ebda3bcb9666bcdde59d65c100df6bc41c6271b414813cf56",
+      "cleanup": [
+        200,
+        "stopped"
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "firmware_sha256": "3cc2ad3fb85130e82f0f759f688b2c7aadd2a64e1c189eef556006d32c41b63e",
+      "case": "sdcard",
+      "runtime": "esp32sim",
+      "seed_sha256": "e5a4fc0baa32c4f6f6bb673066d344a4136107dd1c2f43c00b4f6cf08d46cf3e",
+      "runtime_identity": {
+        "runtime": "esp32sim",
+        "commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "binary_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+        "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+        "board": "m5stack-cardputer",
+        "control_protocol": 1,
+        "service_patch_sha256": "0d85265fde04f6e24d1eb61059b8132f7387f0f15f5ffb7bb233c75611042f78",
+        "flash_bytes": 8388608,
+        "psram_bytes": 0
+      },
+      "before": {
+        "sha256": "3767b8dfd5018c7a1dfa28e4d6a84ecb977f90c985eedf414339243d9229465c",
+        "colors": 2
+      },
+      "after": {
+        "sha256": "3767b8dfd5018c7a1dfa28e4d6a84ecb977f90c985eedf414339243d9229465c",
+        "colors": 2
+      },
+      "evidence_zip_sha256": "376d62c48136f4230afff2ccb06285d429133720ad199a194e9f84ad997c2c4b",
+      "cleanup": [
+        200,
+        "stopped"
+      ],
+      "exported_sha256": "0e8e144a59b50ef85c0a126adbfa73a790de339596845b95168e0a2b453de0ca",
+      "verdict": "PASS"
+    }
+  ]
+}

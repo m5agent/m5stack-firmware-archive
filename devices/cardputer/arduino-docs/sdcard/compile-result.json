@@ -1,0 +1,9 @@
+{
+  "device": "cardputer",
+  "case": "sdcard",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "sketch_sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+  "exit_code": 0,
+  "firmware_sha256": "c8525e5a00f84f633b180ffffd2643dbba1d5e72107b58ec37b020e1336e117c",
+  "firmware_bytes": 4194304
+}

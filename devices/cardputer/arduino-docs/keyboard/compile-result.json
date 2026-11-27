@@ -1,0 +1,9 @@
+{
+  "device": "cardputer",
+  "case": "keyboard",
+  "fqbn": "m5stack:esp32:m5stack_cardputer",
+  "sketch_sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+  "exit_code": 0,
+  "firmware_sha256": "d22bbdd88cbd0b0ec8120dc0bbc9df9ba27f1542b7fba716098dc3e664a6d072",
+  "firmware_bytes": 4194304
+}

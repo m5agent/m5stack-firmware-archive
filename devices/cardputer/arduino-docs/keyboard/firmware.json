@@ -1,0 +1,178 @@
+{
+  "device_id": "cardputer",
+  "sku": "K132",
+  "case": "keyboard",
+  "source": "arduino-docs",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/keyboard",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cardputer/keyboard.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 18
+  },
+  "expected_behavior": "Send the physical a, b and Enter keys with the Device Service keyboard input. Confirm the text frame changes.",
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cardputer",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0",
+      "M5Cardputer": "1.1.1"
+    },
+    "library_commits": {
+      "M5Unified": "96576a14247ddc935149145aa6b51943464120f1",
+      "M5GFX": "28d47949bdc84f30881623476f555398e2194313",
+      "M5Cardputer": "2d4fa6646e4e5b47e0af96214b003aa7b15b8d81"
+    }
+  },
+  "sketch_sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+  "sketch_files": {
+    "keyboard.ino": {
+      "path": "devices/cardputer/arduino-docs/keyboard/sketch/keyboard/keyboard.ino",
+      "storage": "public",
+      "sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+      "bytes": 1605
+    }
+  },
+  "files": {
+    "keyboard.ino.bin": {
+      "path": "devices/cardputer/arduino-docs/keyboard/keyboard.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "e0eefad39e4edacf4ef59d943c3624289bdb6c1973c259c59624be67a82221ef",
+      "bytes": 568528
+    },
+    "keyboard.ino.bootloader.bin": {
+      "path": "devices/cardputer/arduino-docs/keyboard/keyboard.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "keyboard.ino.elf": {
+      "path": "devices/cardputer/arduino-docs/keyboard/keyboard.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "020d33a59f33fc75c5573c55e64a4f56e37729cf167190e7167f4cb773905d9f",
+      "bytes": 12802024
+    },
+    "keyboard.ino.merged.bin": {
+      "path": "devices/cardputer/arduino-docs/keyboard/keyboard.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "0744303cf5e6ee282f8864e1560b1667abc938f4616d08a5c8e224bda17148ed",
+      "bytes": 4194304
+    },
+    "keyboard.ino.partitions.bin": {
+      "path": "devices/cardputer/arduino-docs/keyboard/keyboard.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "boot_app0.bin": {
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-cardputer.md",
+  "merged_image": "keyboard.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x150000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "spiffs",
+        "type": "0x1",
+        "subtype": "0x82",
+        "offset": "0x290000",
+        "bytes": 1441792,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0x3f0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ],
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "keyboard.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "keyboard.ino.partitions.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "keyboard.ino.bin"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "d22bbdd88cbd0b0ec8120dc0bbc9df9ba27f1542b7fba716098dc3e664a6d072",
+    "firmware_bytes": 4194304,
+    "compile_record": "devices/cardputer/arduino-docs/keyboard/compile-result.json"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "observation": "Send the physical a, b and Enter keys with the Device Service keyboard input. Confirm the text frame changes.",
+    "label": "virtual-device validation",
+    "date": "2026-11-27",
+    "lane": "native Device Service esp32sim",
+    "firmware_sha256": "0744303cf5e6ee282f8864e1560b1667abc938f4616d08a5c8e224bda17148ed",
+    "checker_report": "evidence/cardputer/2026-11-27-path-clean-summary.json",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "tag": "m5-milestone-radio-sync-20261127",
+      "runtime": "esp32sim",
+      "commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "binary_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cardputer",
+      "control_protocol": 1,
+      "service_patch_sha256": "0d85265fde04f6e24d1eb61059b8132f7387f0f15f5ffb7bb233c75611042f78",
+      "flash_bytes": 8388608,
+      "psram_bytes": 0
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "device_id": "cardputer",
+  "sku": "K132",
+  "case": "display",
+  "source": "arduino-docs",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5cardputer/display",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5cardputer/display.md",
+    "section": "Compilation Requirements",
+    "section_line": 7,
+    "code_first_line": 16
+  },
+  "expected_behavior": "Read changing multicolor 240 × 135 panel frames from the sketch that draws rectangles and circles.",
+  "toolchain": {
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "fqbn": "m5stack:esp32:m5stack_cardputer",
+    "libraries": {
+      "M5Unified": "0.3.0",
+      "M5GFX": "0.3.0",
+      "M5Cardputer": "1.1.1"
+    },
+    "library_commits": {
+      "M5Unified": "96576a14247ddc935149145aa6b51943464120f1",
+      "M5GFX": "28d47949bdc84f30881623476f555398e2194313",
+      "M5Cardputer": "2d4fa6646e4e5b47e0af96214b003aa7b15b8d81"
+    }
+  },
+  "sketch_sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+  "sketch_files": {
+    "display.ino": {
+      "path": "devices/cardputer/arduino-docs/display/sketch/display/display.ino",
+      "storage": "public",
+      "sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+      "bytes": 724
+    }
+  },
+  "files": {
+    "display.ino.bin": {
+      "path": "devices/cardputer/arduino-docs/display/display.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "f3d0d5762bc7cb4b822b7720ca9a9ec5299b816660b4ce1493b774515e9c5162",
+      "bytes": 552624
+    },
+    "display.ino.bootloader.bin": {
+      "path": "devices/cardputer/arduino-docs/display/display.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "display.ino.elf": {
+      "path": "devices/cardputer/arduino-docs/display/display.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "c028117a7e33f10bb5f43ddc2b5120a7a3f079274ef9915098afa51200d89914",
+      "bytes": 12680240
+    },
+    "display.ino.merged.bin": {
+      "path": "devices/cardputer/arduino-docs/display/display.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "bace5348fc88939903b37b2327a7b0bf539d4788e720646a000503dad910e8a5",
+      "bytes": 4194304
+    },
+    "display.ino.partitions.bin": {
+      "path": "devices/cardputer/arduino-docs/display/display.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "boot_app0.bin": {
+      "path": "devices/boot_app0.bin",
+      "storage": "git-lfs",
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0",
+      "bytes": 8192
+    }
+  },
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-cardputer.md",
+  "merged_image": "display.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "partitions": [
+      {
+        "name": "nvs",
+        "type": "0x1",
+        "subtype": "0x2",
+        "offset": "0x9000",
+        "bytes": 20480,
+        "flags": 0
+      },
+      {
+        "name": "otadata",
+        "type": "0x1",
+        "subtype": "0x0",
+        "offset": "0xe000",
+        "bytes": 8192,
+        "flags": 0
+      },
+      {
+        "name": "app0",
+        "type": "0x0",
+        "subtype": "0x10",
+        "offset": "0x10000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "app1",
+        "type": "0x0",
+        "subtype": "0x11",
+        "offset": "0x150000",
+        "bytes": 1310720,
+        "flags": 0
+      },
+      {
+        "name": "spiffs",
+        "type": "0x1",
+        "subtype": "0x82",
+        "offset": "0x290000",
+        "bytes": 1441792,
+        "flags": 0
+      },
+      {
+        "name": "coredump",
+        "type": "0x1",
+        "subtype": "0x3",
+        "offset": "0x3f0000",
+        "bytes": 65536,
+        "flags": 0
+      }
+    ],
+    "segments": {
+      "bootloader": {
+        "offset": "0x0",
+        "file": "display.ino.bootloader.bin"
+      },
+      "partition_table": {
+        "offset": "0x8000",
+        "file": "display.ino.partitions.bin"
+      },
+      "boot_app0": {
+        "offset": "0xe000",
+        "file": "boot_app0.bin"
+      },
+      "application": {
+        "offset": "0x10000",
+        "file": "display.ino.bin"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "9e7fac31667083a23ac753fcd09fd954c4c1b8cdad7546b3f61307eed1effb8a",
+    "firmware_bytes": 4194304,
+    "compile_record": "devices/cardputer/arduino-docs/display/compile-result.json"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "observation": "Read changing multicolor 240 × 135 panel frames from the sketch that draws rectangles and circles.",
+    "label": "virtual-device validation",
+    "date": "2026-11-27",
+    "lane": "native Device Service esp32sim",
+    "firmware_sha256": "bace5348fc88939903b37b2327a7b0bf539d4788e720646a000503dad910e8a5",
+    "checker_report": "evidence/cardputer/2026-11-27-path-clean-summary.json",
+    "simulator": {
+      "repository": "https://github.com/m5agent/esp32sim",
+      "branch": "m5/main",
+      "tag": "m5-milestone-radio-sync-20261127",
+      "runtime": "esp32sim",
+      "commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "binary_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+      "rom_sha256": "c0ce0f338d1de1bdc6efbef1591779a2a42c1ab7d759d3c6ae8ae63a7dd34cfd",
+      "board": "m5stack-cardputer",
+      "control_protocol": 1,
+      "service_patch_sha256": "0d85265fde04f6e24d1eb61059b8132f7387f0f15f5ffb7bb233c75611042f78",
+      "flash_bytes": 8388608,
+      "psram_bytes": 0
+    }
+  }
+}

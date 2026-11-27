@@ -95,3 +95,13 @@ QEMU-WASM Unit 证据见[候选配置摘要](evidence/cores3/accessory-qemu-wasm
 This archive maps 28 Arduino cases and one official UIFlow2 release to their documentation, exact firmware hashes, flash layouts and validation inputs. The pinned esp32sim replay passed 15 CoreS3 and 11 Cardputer-Adv Arduino cases. UIFlow2 v2.5.3 passed boot, USB CDC REPL and framebuffer checks. Two CoreS3 Unit cases passed on QEMU-WASM candidate profiles. All results are virtual-device validation. Hardware validation was NOT RUN.
 
 The public LFS checkout contains the rebuilt BIN and ELF files for all 26 native esp32sim cases. The original hashes and validation remain in each case manifest. See the [rebuild recipe](build-records/rebuild-2026-11-26.md) and [virtual-device validation summary](evidence/arduino-path-clean-summary.json) for reproduction, path scan results, and the original versus rebuilt capture comparison. The UIFlow2 fetch tool verifies the official image from M5Burner.
+
+## Cardputer K132 · 2026-11-27
+
+Three path-clean rebuilds passed native Device Service virtual-device validation. [Rebuild and validation](build-records/rebuild-2026-11-27-cardputer.md)
+
+| Case | Docs | Merged SHA-256 |
+| --- | --- | --- |
+| [display](devices/cardputer/arduino-docs/display/firmware.json) | [Arduino docs](https://docs.m5stack.com/en/arduino/m5cardputer/display) | `bace5348fc88939903b37b2327a7b0bf539d4788e720646a000503dad910e8a5` |
+| [keyboard](devices/cardputer/arduino-docs/keyboard/firmware.json) | [Arduino docs](https://docs.m5stack.com/en/arduino/m5cardputer/keyboard) | `0744303cf5e6ee282f8864e1560b1667abc938f4616d08a5c8e224bda17148ed` |
+| [sdcard](devices/cardputer/arduino-docs/sdcard/firmware.json) | [Arduino docs](https://docs.m5stack.com/en/arduino/m5cardputer/sdcard) | `3cc2ad3fb85130e82f0f759f688b2c7aadd2a64e1c189eef556006d32c41b63e` |
