@@ -1,0 +1,170 @@
+{
+  "device_id": "stickc-plus",
+  "case": "power-5",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc_plus/power",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc_plus/power.md",
+    "section": "ScreenSwitch",
+    "code_first_line": 164
+  },
+  "sketch_sha256": "93eb3b690c68e757b97f4c06637a1e65433a675942d58ec7382e710601d0c3f0",
+  "expected_behavior": "StickC-Plus Power - AXP192. Apply two power or charger states and observe the documented status values or transitions.",
+  "sketch_files": {
+    "power_5.ino": {
+      "path": "devices/stickc-plus/arduino-docs/power-5/sketch/power_5/power_5.ino",
+      "storage": "public",
+      "sha256": "93eb3b690c68e757b97f4c06637a1e65433a675942d58ec7382e710601d0c3f0",
+      "bytes": 218
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus/arduino-docs/power-5/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "960d1df0406179680ac7f8a0a45d147453267b47565f5b5977551e49b26cd4a0",
+      "bytes": 362496
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus/arduino-docs/power-5/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus/arduino-docs/power-5/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus/arduino-docs/power-5/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "878a4b2fd504809d789bd0b84a30549fe1ab30ca9fe0583446d9df35bcdb6f79",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus/arduino-docs/power-5/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "af75450fcacba3d70a25d065655b081fb4737103815443472a73edb3a786c24a",
+      "bytes": 511984
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "0a87807d9c41e40d93cdef25205fed3ad1f7c515a4656a2ffc86476e84e78ad2",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "878a4b2fd504809d789bd0b84a30549fe1ab30ca9fe0583446d9df35bcdb6f79",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Guest ScreenSwitch changed the visible backlight across the two checkpoints",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 0,
+            "bounds": null,
+            "colors": 1,
+            "palette": [
+              [
+                "000000",
+                32400
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ]
+            },
+            "crc32": "fae23ff0"
+          }
+        },
+        "capture_comparison": {
+          "power-5-first.png": {
+            "original": {
+              "png_sha256": "3720da2fd3d3e507859a97f369233c72e16c518694e60c3681e270f58206b70b"
+            },
+            "rebuilt": {
+              "png_sha256": "3720da2fd3d3e507859a97f369233c72e16c518694e60c3681e270f58206b70b"
+            },
+            "byte_identical": true
+          },
+          "power-5.png": {
+            "original": {
+              "png_sha256": "a37275fcc7984d24db6567d77ff9b1fbb6ffaed1756b45b6b825d4a01d7de358"
+            },
+            "rebuilt": {
+              "png_sha256": "a37275fcc7984d24db6567d77ff9b1fbb6ffaed1756b45b6b825d4a01d7de358"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (242 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

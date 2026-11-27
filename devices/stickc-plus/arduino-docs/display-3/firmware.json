@@ -1,0 +1,176 @@
+{
+  "device_id": "stickc-plus",
+  "case": "display-3",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc_plus/display",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc_plus/display.md",
+    "section": "print",
+    "code_first_line": 130
+  },
+  "sketch_sha256": "f1c09511c1a2a847552dc751bf0476c0cf90e7d2788982aa763baccfcb6497ac",
+  "expected_behavior": "StickC-Plus Display. Observe the documented drawing/animation and verify the expected geometry and visible pixels.",
+  "sketch_files": {
+    "display_3.ino": {
+      "path": "devices/stickc-plus/arduino-docs/display-3/sketch/display_3/display_3.ino",
+      "storage": "public",
+      "sha256": "f1c09511c1a2a847552dc751bf0476c0cf90e7d2788982aa763baccfcb6497ac",
+      "bytes": 103
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus/arduino-docs/display-3/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "a398647ba6d11b8970735dc488708b2f50496cc1f334c707cf58bed7a00c6d1c",
+      "bytes": 362416
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus/arduino-docs/display-3/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus/arduino-docs/display-3/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus/arduino-docs/display-3/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "e633f15e461f43abf2ff6076138f770f440e270a3c203047b0157ea0861123dc",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus/arduino-docs/display-3/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "4c206df6f6da24544e1e7fb178f53b0a5ff538c75a93ce3136eed0c3a9b27e1b",
+      "bytes": 511872
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "fd8837bac9ab53bce5d5fb5f7ed853075e60ade4c9743c58161c9df65985c47b",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "e633f15e461f43abf2ff6076138f770f440e270a3c203047b0157ea0861123dc",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Default-font glyph counts and the documented cursor placement match",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 103,
+            "bounds": [
+              0,
+              0,
+              58,
+              7
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                32297
+              ],
+              [
+                "ffffff",
+                103
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ],
+              "ffffff": [
+                0,
+                0,
+                58,
+                7
+              ]
+            },
+            "crc32": "c9885213"
+          }
+        },
+        "capture_comparison": {
+          "display-3.png": {
+            "original": {
+              "png_sha256": "f22a6e9354653698164b986ca2fd92eecdf3af9483ff77774d2cb9376548a73d"
+            },
+            "rebuilt": {
+              "png_sha256": "f22a6e9354653698164b986ca2fd92eecdf3af9483ff77774d2cb9376548a73d"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (242 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}
