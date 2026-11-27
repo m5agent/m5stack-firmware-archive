@@ -1026,6 +1026,17 @@
       "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002379/2116031597838635009/bin/2116031597838635010.bin",
       "bytes": 16121856,
       "manifest": "devices/tab5/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "cardputer-adv",
+      "case": "v2.5.5",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/cardputer-adv/program",
+      "firmware_sha256": "4aec480e7253d11447dec99df56e60e1d79133cf7fc5ca3424357a67e738a0e7",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000936/2122949439364481025/bin/2122949439364481026.bin",
+      "bytes": 8384512,
+      "manifest": "devices/cardputer-adv/uiflow2/v2.5.5/firmware.json"
     }
   ],
   "public_files": {
@@ -2280,8 +2291,8 @@
       "bytes": 1868
     },
     "devices/cardputer-adv/uiflow2/README.md": {
-      "sha256": "e30a0aae4b8a69810bbb9f3667b5e85ea41d0823910837dc852bc926b3608b72",
-      "bytes": 976
+      "sha256": "d0ef1dca6099079b4e0d5e876046a32f5a6b93b3322b83497cb0120fd7681f81",
+      "bytes": 1055
     },
     "build-records/rebuild-2026-11-27-matrix.md": {
       "sha256": "4eaa91aaaf1b2c8a2ed2e01432b94efaa1ae342e5892f7790a9800dd11213bee",
@@ -2486,6 +2497,10 @@
     "devices/tab5/uiflow2/v2.5.4/firmware.json": {
       "sha256": "800546a85887d3a1c3b859b09e0daae4a1cb5b958274a5424629d2fdf094b87c",
       "bytes": 776
+    },
+    "devices/cardputer-adv/uiflow2/v2.5.5/firmware.json": {
+      "sha256": "a7d10ababdcd619eb70afc5f9253bef83a032b7009d20d54cc27b5894a6dfbdb",
+      "bytes": 748
     }
   },
   "local_files": {

@@ -1,0 +1,19 @@
+{
+  "device_id": "cardputer-adv",
+  "case": "v2.5.5",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/cardputer-adv/program",
+  "firmware_sha256": "4aec480e7253d11447dec99df56e60e1d79133cf7fc5ca3424357a67e738a0e7",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000936/2122949439364481025/bin/2122949439364481026.bin",
+  "bytes": 8384512,
+  "validation": {
+    "download_sha256_verified": true,
+    "retrieved": "2026-11-27",
+    "previous_virtual_device_validation": {
+      "verdict": "DOCS-DEFECT",
+      "scope": "NFCCap constructor rejects chip= on the original NFC example",
+      "source_commit": "89318bb6621ed4af75ec11b6465c3a39a4ec95ca"
+    }
+  }
+}
