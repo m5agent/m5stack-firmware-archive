@@ -2595,8 +2595,8 @@
       "bytes": 2242
     },
     "tools/rebuild_arduino.py": {
-      "sha256": "1303d0243f97c8ea1abd92a529cf3b841526b5ae0ff06b8712b8825a557394f3",
-      "bytes": 6932
+      "sha256": "3e73f7e3cd0fef04901882afc22e885ffc42a8d5a60f6b3d98d582a892c391cc",
+      "bytes": 7248
     },
     "tools/run_all_adv.sh": {
       "sha256": "d80f57d0c0c56e0dac1c57364cec2f1e949dd985ec151636925a6eef37bdc093",
@@ -2853,8 +2853,8 @@
       "bytes": 1055
     },
     "build-records/rebuild-2026-11-27-matrix.md": {
-      "sha256": "4eaa91aaaf1b2c8a2ed2e01432b94efaa1ae342e5892f7790a9800dd11213bee",
-      "bytes": 3013
+      "sha256": "92082708121f5b970f1ab82e6f53b72c82f5cac5a1cdff7c81c89dd26d22289e",
+      "bytes": 3460
     },
     "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/quickstart_echorest.ino": {
       "sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",

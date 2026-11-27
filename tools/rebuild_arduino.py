@@ -87,6 +87,10 @@ def rebuild(entry, args, flags, env):
                             stdout=log, stderr=subprocess.STDOUT).returncode
     if rc:
         raise RuntimeError(f"{board}/{case} build failed ({rc}): {log_path}")
+    if reproducibility.get("elf_processing") == "xtensa-esp-elf-objcopy --strip-debug":
+        objcopy = args.data / "packages/m5stack/tools/esp-x32/2411/bin/xtensa-esp-elf-objcopy"
+        subprocess.run([objcopy, "--strip-debug", scratch / "build" / (build_name + ".ino.elf")],
+                       check=True)
     sketch = manifest["merged_image"].removesuffix(".merged.bin")
     for suffix in SUFFIXES:
         shutil.copyfile(scratch / "build" / (build_name + ".ino" + suffix), firmware / (sketch + suffix))

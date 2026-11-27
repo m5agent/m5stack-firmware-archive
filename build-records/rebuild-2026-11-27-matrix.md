@@ -50,3 +50,10 @@ Copy or symlink these from the corresponding verified archive files.
 `$ROM_DIR` contains the matching ROM ELFs from the simulator's ROM fetch helper.
 `$OUT` names a new capture directory. Use the matching fixtures and stock
 firmware listed in the integration record for the relevant board.
+
+Classic ESP32 ELFs include a path from debug sections in a precompiled
+SDK library. Those cases use the pinned `xtensa-esp-elf-objcopy --strip-debug`
+on each ELF after the Arduino build. The defined-symbol names and addresses
+matched before and after stripping in the Atom Lite control. The merged
+flash image is still the original Arduino build output, and each stripped
+ELF and merged image must pass the path scan and double-build comparison.
