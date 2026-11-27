@@ -1595,6 +1595,166 @@
           ]
         ]
       }
+    },
+    {
+      "device_id": "atom-lite",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atom/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atom/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "810ff99259a8a085f730bc67efee1e0984b1ff92227c85b25f3d45067a599e2c",
+      "manifest": "devices/atom-lite/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e683ddbe136075c0996beb3a1d0ed974de3d111c18631b176e61d42e00be01f5",
+      "original_build": {
+        "firmware_sha256": "b07b7c8728d9c06c37ecc401858a8ad113a30995a52502b5c9b40c97ba19937e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-lite"
+        ],
+        "run_commands": [
+          "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-lite $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-lite",
+      "case": "imu",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atom/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atom/imu.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "6dda2372eda1988b24f7c84ebc25d308122227a6399917d8ee2102946bf4a046",
+      "manifest": "devices/atom-lite/arduino-docs/imu/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8282de67893135f11a23a23e5b715e9e3fdd58a34841e874a5223a6f8d7bba0b",
+      "original_build": {
+        "firmware_sha256": "d953190ecd176b1e93a8164c16c4037fe548d96c68bd002ac408095b8b3e3618",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-lite"
+        ],
+        "run_commands": [
+          "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-lite $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-lite",
+      "case": "ir_nec",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atom/ir_nec",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atom/ir_nec.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "e4adcb37eb3ffa233ab5f399df1fcacaf8ddf74a863ac0c194351b025bf32a9f",
+      "manifest": "devices/atom-lite/arduino-docs/ir_nec/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "e9942d3904e4ead9533e74c466672beb0a885d0b02442571c3fa26b77f91dcca",
+      "original_build": {
+        "firmware_sha256": "c975fad25c1c9dc1f1a6a86bffeb6413718ba37dd289b24425011f9701cae73b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-lite"
+        ],
+        "run_commands": [
+          "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-lite $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-lite",
+      "case": "rgb",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atom/rgb",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atom/rgb.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "4ff754ce47dd70afb2cd119dd2ab04d5e21e145232862bc4bfce9be9fb16c0f2",
+      "manifest": "devices/atom-lite/arduino-docs/rgb/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "002863666c861410a2ca43fec61811cee45c55b73314005734d5ee56f5edb3f6",
+      "original_build": {
+        "firmware_sha256": "b76ed7027fa1c4f4b11628d8ecabbacc6c1c210385e76d62f1148a82c25b7b2c",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-lite"
+        ],
+        "run_commands": [
+          "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-lite $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-lite",
+      "case": "quickstart-logoutput",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5atom/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5atom/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 37
+      },
+      "sketch_sha256": "0bb9ef9990836d7da65d5c8547d44a8d4d25eac736db81f06b8a574d1aeb0f12",
+      "manifest": "devices/atom-lite/arduino-docs/quickstart-logoutput/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "572b829860f119284ebc3a8addd17a5ef4f5dd590065c78f8a48db24dcb3f2e2",
+      "original_build": {
+        "firmware_sha256": "2203630d66d7c866c1f1681d08e567094685f5a839005a9f59a84492a480bd49",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-lite"
+        ],
+        "run_commands": [
+          "bash $SIM_SRC/tools/run-lx6-atoms.sh $SIM atom-lite $OUT"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -3395,6 +3555,146 @@
     "devices/tab5/arduino-docs/wifi-3/firmware.json": {
       "sha256": "ab297d1ce0766c6b8502ea980cd44fda21f5f81c668fc848f560a4280a39cb9c",
       "bytes": 5228
+    },
+    "devices/atom-lite/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "810ff99259a8a085f730bc67efee1e0984b1ff92227c85b25f3d45067a599e2c",
+      "bytes": 550
+    },
+    "devices/atom-lite/arduino-docs/button/migration.ino.bin": {
+      "sha256": "1b3461cd53368816dedf6c064b14c7edd593c172c5f65587698ad9c63628fb93",
+      "bytes": 510720
+    },
+    "devices/atom-lite/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/atom-lite/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/atom-lite/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "e683ddbe136075c0996beb3a1d0ed974de3d111c18631b176e61d42e00be01f5",
+      "bytes": 4194304
+    },
+    "devices/atom-lite/arduino-docs/button/migration.ino.elf": {
+      "sha256": "e3c39e0774009ea91aa095b8088c17992278a885dbb8338b40bc1173b438661a",
+      "bytes": 759260
+    },
+    "devices/atom-lite/arduino-docs/button/firmware.json": {
+      "sha256": "dda3d0adf52fd67bffb3a08f7de5f68a86a902ac070e08bc0674840c154ac1cc",
+      "bytes": 4792
+    },
+    "devices/atom-lite/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "6dda2372eda1988b24f7c84ebc25d308122227a6399917d8ee2102946bf4a046",
+      "bytes": 529
+    },
+    "devices/atom-lite/arduino-docs/imu/migration.ino.bin": {
+      "sha256": "63075e0ea75382a1adb347f26f6f09e1db2266373073c68f648cd04655041f64",
+      "bytes": 511072
+    },
+    "devices/atom-lite/arduino-docs/imu/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/atom-lite/arduino-docs/imu/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/atom-lite/arduino-docs/imu/migration.ino.merged.bin": {
+      "sha256": "8282de67893135f11a23a23e5b715e9e3fdd58a34841e874a5223a6f8d7bba0b",
+      "bytes": 4194304
+    },
+    "devices/atom-lite/arduino-docs/imu/migration.ino.elf": {
+      "sha256": "ba91f2a418bfe2da38d24915ef02c06eaec39633aa922637fe0e7a9eddd8d9e2",
+      "bytes": 759704
+    },
+    "devices/atom-lite/arduino-docs/imu/firmware.json": {
+      "sha256": "b38af90d4c3df0460595249b6cdab6cdfc961a25acc2f062ce31d46f187dddbe",
+      "bytes": 4911
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino": {
+      "sha256": "e4adcb37eb3ffa233ab5f399df1fcacaf8ddf74a863ac0c194351b025bf32a9f",
+      "bytes": 1398
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/migration.ino.bin": {
+      "sha256": "e2267041372021f64a31ce80cc7069b274a6be9c1fe7561bee208477f0a29280",
+      "bytes": 515856
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/migration.ino.merged.bin": {
+      "sha256": "e9942d3904e4ead9533e74c466672beb0a885d0b02442571c3fa26b77f91dcca",
+      "bytes": 4194304
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/migration.ino.elf": {
+      "sha256": "95de5d1aaa941b9c056c4bfa3d3738139e1b7ec05de0063e845ee2c0abab4c78",
+      "bytes": 766228
+    },
+    "devices/atom-lite/arduino-docs/ir_nec/firmware.json": {
+      "sha256": "9b70b4494e34dac6aec55f9129448122da2e043608fac20ba79c0fe755e11248",
+      "bytes": 4869
+    },
+    "devices/atom-lite/arduino-docs/rgb/sketch/rgb/rgb.ino": {
+      "sha256": "4ff754ce47dd70afb2cd119dd2ab04d5e21e145232862bc4bfce9be9fb16c0f2",
+      "bytes": 1447
+    },
+    "devices/atom-lite/arduino-docs/rgb/migration.ino.bin": {
+      "sha256": "0c82e171d75ee69b6f28887b5f6dbdc6c2f848fe239d311e90112bba5e56b660",
+      "bytes": 519184
+    },
+    "devices/atom-lite/arduino-docs/rgb/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/atom-lite/arduino-docs/rgb/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/atom-lite/arduino-docs/rgb/migration.ino.merged.bin": {
+      "sha256": "002863666c861410a2ca43fec61811cee45c55b73314005734d5ee56f5edb3f6",
+      "bytes": 4194304
+    },
+    "devices/atom-lite/arduino-docs/rgb/migration.ino.elf": {
+      "sha256": "4e3757643a39cc9f492eea5675e3849ac454ccfd84ab6ece2b2447b84e6aaf97",
+      "bytes": 770652
+    },
+    "devices/atom-lite/arduino-docs/rgb/firmware.json": {
+      "sha256": "f87b18dfd7124f2edca4f1da778f6ce1c148763c7bdacda2af74dc4026aa5833",
+      "bytes": 5955
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/sketch/quickstart_logoutput/quickstart_logoutput.ino": {
+      "sha256": "0bb9ef9990836d7da65d5c8547d44a8d4d25eac736db81f06b8a574d1aeb0f12",
+      "bytes": 4817
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/migration.ino.bin": {
+      "sha256": "9aabbd5ce8bcc69777243467079f85e2223b1305fbc1fb346889e1da29c92fb3",
+      "bytes": 533040
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/migration.ino.bootloader.bin": {
+      "sha256": "a284abdd0e4339f9ae18030953606a21d9d2f86d41d78ac46d606226f03ba939",
+      "bytes": 24928
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/migration.ino.partitions.bin": {
+      "sha256": "aaae2888c5a6a348004b5b436f47abb25ae32e72d9003902955a998eda723edd",
+      "bytes": 3072
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/migration.ino.merged.bin": {
+      "sha256": "572b829860f119284ebc3a8addd17a5ef4f5dd590065c78f8a48db24dcb3f2e2",
+      "bytes": 4194304
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/migration.ino.elf": {
+      "sha256": "51ad2d3816c9b3bd5f51012efd8b3b0a189602e69dad441204cb71027ba3125a",
+      "bytes": 783072
+    },
+    "devices/atom-lite/arduino-docs/quickstart-logoutput/firmware.json": {
+      "sha256": "1bc1969d697e469f88fc42e33318ad39b80d893cdbbc8b7ecc3c89c228cf9d82",
+      "bytes": 4976
     }
   },
   "local_files": {
@@ -3970,7 +4270,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 46,
+    "published_cases": 51,
     "storage": "git-lfs"
   }
 }
