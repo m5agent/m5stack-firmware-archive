@@ -1,0 +1,16 @@
+{
+  "device_id": "atom-echos3r",
+  "case": "v2.5.4",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "firmware_sha256": "9348083af8a30e23bd832822eb81c8af86de8ef0e3f683fbc6c801d78bd6cd7b",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000775/2116030550617395201/bin/2116030550617395202.bin",
+  "bytes": 8384512,
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/atom_echos3r/program",
+  "source_check": "downloaded SHA-256",
+  "source_check_date": "2026-11-27",
+  "previous_virtual_device_validation": {
+    "stock_startup": "PASS",
+    "record": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  }
+}

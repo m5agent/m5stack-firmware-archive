@@ -1,0 +1,16 @@
+{
+  "device_id": "papers3",
+  "case": "v2.5.4",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "firmware_sha256": "87567896973fa61c281fdf3f0e2031f280de1df8d59ac0942302de288096a1fb",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000284/2116031112826097666/bin/2116031112826097667.bin",
+  "bytes": 8384512,
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/m5papers3/program",
+  "source_check": "downloaded SHA-256",
+  "source_check_date": "2026-11-27",
+  "previous_virtual_device_validation": {
+    "stock_startup": "PASS",
+    "record": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  }
+}

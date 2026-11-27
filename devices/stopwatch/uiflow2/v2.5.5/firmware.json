@@ -1,0 +1,16 @@
+{
+  "device_id": "stopwatch",
+  "case": "v2.5.5",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "firmware_sha256": "2d97255a3f1429234606a5e7e68cbe16f5856068c310043979e9eb6c10507513",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002172/2122962770586451969/bin/2122962770586451970.bin",
+  "bytes": 16773120,
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/stopwatch/program",
+  "source_check": "downloaded SHA-256",
+  "source_check_date": "2026-11-27",
+  "previous_virtual_device_validation": {
+    "stock_startup": "PASS",
+    "record": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  }
+}

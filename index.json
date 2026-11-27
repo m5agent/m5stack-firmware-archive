@@ -13,6 +13,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "3dfbaaaa1ea168074d284b40b14fc489821162fb211f568a6a52181e54dab69c"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/button.md",
+        "section": "Compilation Requirements",
+        "section_line": 9,
+        "code_first_line": 17
+      },
+      "sketch_sha256": "85d455adb3297a42ca03fb1f15a70143324357b287a8bb5626baeb82743dce83",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -27,6 +45,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "5d61a3dbefec7bde7a8b7d29040f7e96e6374b5efd4fb702be9d3c5bbdfedb91"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/camera.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "63cf08b2a66ca62d75ef516f0a41c86988451fa044d112594bd07c3efe453b33",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -41,6 +77,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "a88182dc789c1dfe7525ad7ff9a284fd201b6c55375502c895b689cd56af13d6"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/display.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 15
+      },
+      "sketch_sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -55,6 +109,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "3835dc5c8211736869c0f49762855875b09038d4aba8000516bfad9b014655ed"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/imu.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 18
+      },
+      "sketch_sha256": "26c949c2c7e96d39e7b430f5b1d88bedf5c3abcc2f36639c2dc636e9f22c86f6",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -69,6 +141,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "9584d3339e863ee71b8e46ea43048bdc041028be3a0b0fb9e624185fdca40001"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/ltr553.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 15
+      },
+      "sketch_sha256": "0e0f1fb26f069f038449e1e535f36cddf0765c2939cee07e503040199f2d27df",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -83,6 +173,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "ced692208d6b9b778aba1624404f461cbfad1709cee82238d2bcd7abc368a1ae"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/mic.md",
+        "section": "Compilation Requirements",
+        "section_line": 5,
+        "code_first_line": 12
+      },
+      "sketch_sha256": "fc827b5676025599689f08f8e4975f69a72a571bea7fcd939825f855533b88a1",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -97,6 +205,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "f19a304c51f4f88c14c6b8157c06012357548cfd4b691ccef0d7babe7ccbbbe2"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/pic.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 15
+      },
+      "sketch_sha256": "8a7d530772bb9dc3f10ff05cc4325492540b9558dcaff8985a33754742cbe90f",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -111,6 +237,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "7beb59232d1b21d7fb38d4c994582609df364ba918a4b443bf8fdcbd0982112c"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/power.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "904941e528ac9639865cfe085c6c86770a619fb3a24502bcf8b866c078b1718a",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -125,6 +269,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "cf450835c9b8d88f815272158040afee79f0d88cf32b1f46add9bd783b8ab00d"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/rtc.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "67e51519738f70d13cbec6e932fdf98045b4ff4a63b5dab717d912b9736c6dac",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -139,6 +301,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "c97c3efde1aab234c4041d118b13eb9d4b506fd2158181e495ab4e8c8f9190b0"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/sdcard.md",
+        "section": "Build Requirements",
+        "section_line": 7,
+        "code_first_line": 15
+      },
+      "sketch_sha256": "dd780c565d411307ae9fd1cfd22473bd79b5a6a76eea47de68bb332252c81022",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -153,6 +333,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "035d6b0e085b03024f8a10daa46595874113e5e7aa65bb1977526e03bbff1d5c"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/speaker.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "3e3a0ee8ff420069441456ad4aeebe19e0f22bc7775cd9573846251da4f7b365",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -167,6 +365,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "3cec5642f681dc0525c7e6cdbada7189f0ee52f9a95b68b19055571664222606"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/touch.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "fbd1dc6d115e597e01f87f23f8f5bc66518adab1c2e48beac62dc3545902326f",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -181,6 +397,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "2ddff71f4ceca5e79b709ba823b8ecf0828f2016a85e512df779e526e7a9f295"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/wakeup.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "853094e19db56c6bb4af56a60bf7a9dcca54be234ad4172451f81ffe31ece3af",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -195,6 +429,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "22eb0ffce846a6175de97e2c2f82c02bbef092724874b317297cf5c95751bff5"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/wav.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 14
+      },
+      "sketch_sha256": "341749ed7942ee611f123483652da13f152167ccac79bcd231c24b817b399994",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -209,6 +461,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "ac93be27c88cb4ae19d08056a537b06469a1e2b7f6ef8af82c6739d2ff38f34b"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/battery.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 15
+      },
+      "sketch_sha256": "d3293339b895c65ce97cd054d36c64dc23b9dc08960d66480db26d222668b359",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -223,6 +493,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "07ebcecd82c9a64aad457f5e30eac140bfd24db8006506ea6f04489a860dc0e7"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/button.md",
+        "section": "Compilation Requirements",
+        "section_line": 9,
+        "code_first_line": 20
+      },
+      "sketch_sha256": "444450396503479b748d137758cab1a70f206b882fccf06bdaac786f81ad0d81",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -237,6 +525,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "cc1b3e5868feb075e2ec8a5e7211897e8ae1c9635f5d072442ef007273c2a968"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/display.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -251,6 +557,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "f933c50fcc3dca52d9fa8e256ed5ab5e7e1f5d68571f47d9cab976d16ec41b10"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/imu.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "3ce1daa145c499f00b26569097fa82f6d0e41ce4348d820b09553f57488714b3",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -265,6 +589,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "0969326c036e7a88168dcf9dae65de20b71ee501e2ecc1074c86819d10c240fb"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/ir_nec.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "e77a78ffde87b2b87d8a4cad2032bcabbe66dbfd28142100281d3f7d67fff1c9",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -279,6 +621,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "f7edb36bb3662506853773399467841a55bef3d3e16cc3469bc821b4ad7638bf"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/keyboard.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 18
+      },
+      "sketch_sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -293,6 +653,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "1076a8fbac11c2382585c77f7226648dc3753d29e8135b98502ac8462265a8a9"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/mic.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "feb2ceca623c2f6061d79dab21e9e703fc9d91dc29ab1460e8d1aed3d8c5e4e5",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -307,6 +685,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "0bd2b3e56bf693661e8e04b5cbe17365d7346c2e84d03ac7abd6e36b95765132"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/sdcard.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -321,6 +717,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "1be720c9f62e086081f63ff6adf7f907e71f80dcc4816af71050cddd937300b5"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/speaker.md",
+        "section": "Beep Example",
+        "section_line": 17,
+        "code_first_line": 20
+      },
+      "sketch_sha256": "ddc3ff4d8bf7d33254d3fb6d488ec6341299b5d809644154ee1f317e3752f8bc",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -335,6 +749,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "7635ebdc5bbddd6d33dc9bbeeb4d1fd9270c4971b0692595096c24b72f648d8a"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cores3/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 28,
+        "code_first_line": null
+      },
+      "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cores3"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_esp32sim.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -349,6 +781,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "0a93553358ee75cf9125b2fdf9e7671ea096be2c70bc3e4ff4945bc034835717"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 28,
+        "code_first_line": null
+      },
+      "sketch_sha256": "47d9e09adfd9933bb1a70ecd8ffd3c7ecf0ec955ecbaa88d0ed9c9183230e3b3",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -363,6 +813,24 @@
       "lane": "native esp32sim",
       "original_build": {
         "firmware_sha256": "9c2993624b739090d852d7165f49b78300827fe916011c434bc939d63e4e7f3b"
+      },
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/speaker.md",
+        "section": "Play WAV File Example",
+        "section_line": 35,
+        "code_first_line": null
+      },
+      "sketch_sha256": "f250f40ad7f0276e0620eb6d4bd1bed1c96bde18e070098204d8c3dfe85fd2f8",
+      "esp32sim": {
+        "source_commit": "76e8b35710d1879e073f73c4a03bd11b216fb95f",
+        "boards": [
+          "m5stack-cardputer-adv"
+        ],
+        "runtime_sha256": "05a148bee99d3fccc4ff3969296ccf547fea03f2d5f7b9f2d86391060b2b6d9a",
+        "run_commands": [
+          "bash tools/run_all_adv.sh \"$SIM\" \"$OUT\""
+        ]
       }
     },
     {
@@ -374,7 +842,15 @@
       "docs_section": "2. Example",
       "firmware_sha256": "a645e2a79947a01227c69ee565545838722ef0ebd7805d15705039bddcef84ca",
       "verdict": "PASS",
-      "lane": "QEMU-WASM candidate profile"
+      "lane": "QEMU-WASM candidate profile",
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/projects/unit/unit_relay.md",
+        "section": "2. Example",
+        "section_line": 17,
+        "code_first_line": 22
+      },
+      "sketch_sha256": "732fd08370c764fddceedd93ba8e9b261bbfccdfe8e8a5fc8d8528b816c908e3"
     },
     {
       "device_id": "cores3",
@@ -385,7 +861,15 @@
       "docs_section": "2. Example",
       "firmware_sha256": "0bb888aeb6fdde9200b7f81ab15ea314d75303ed6917aea58ff2a507c195e221",
       "verdict": "PASS",
-      "lane": "QEMU-WASM candidate profile"
+      "lane": "QEMU-WASM candidate profile",
+      "docs_revision": "6ee4f2fb9dca1c671e475407cb709109a699cf1a",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/projects/unit/unit_ultrasonic_i2c.md",
+        "section": "2. Example",
+        "section_line": 18,
+        "code_first_line": 23
+      },
+      "sketch_sha256": "195175e6a0aa276d134ec11dec8ca21d969f3a4776386a46f0bc333babf3d5a3"
     },
     {
       "device_id": "cores3",
@@ -410,6 +894,22 @@
       "lane": "native Device Service esp32sim",
       "original_build": {
         "firmware_sha256": "9e7fac31667083a23ac753fcd09fd954c4c1b8cdad7546b3f61307eed1effb8a"
+      },
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/display.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "bc6340beb03509b899c4f24c21cd685d10b58444a3d1e23a1d3de8869617b278",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "runtime_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+        "replay_instructions": "build-records/rebuild-2026-11-27-cardputer.md"
       }
     },
     {
@@ -424,6 +924,22 @@
       "lane": "native Device Service esp32sim",
       "original_build": {
         "firmware_sha256": "d22bbdd88cbd0b0ec8120dc0bbc9df9ba27f1542b7fba716098dc3e664a6d072"
+      },
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/keyboard.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 18
+      },
+      "sketch_sha256": "cabcd52c88f3575e9cf08f7e83f8c4ba84a5bdd904eba84365a022f8af3c5a62",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "runtime_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+        "replay_instructions": "build-records/rebuild-2026-11-27-cardputer.md"
       }
     },
     {
@@ -438,6 +954,22 @@
       "lane": "native Device Service esp32sim",
       "original_build": {
         "firmware_sha256": "c8525e5a00f84f633b180ffffd2643dbba1d5e72107b58ec37b020e1336e117c"
+      },
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5cardputer/sdcard.md",
+        "section": "Compilation Requirements",
+        "section_line": 7,
+        "code_first_line": 16
+      },
+      "sketch_sha256": "51a95e2f653368471f2b193a79e75ceb53ca93619f32ee06dfce3b3836c7af0a",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "boards": [
+          "m5stack-cardputer"
+        ],
+        "runtime_sha256": "f1f478b8a0da96941640f0ccb18709864555fcc6f448ad177d081756271392ae",
+        "replay_instructions": "build-records/rebuild-2026-11-27-cardputer.md"
       }
     },
     {
@@ -3663,6 +4195,336 @@
           "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM basic-v27 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
       }
+    },
+    {
+      "device_id": "atom-echo",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "8bae873945e85eff496670b9fbddcf7b5fecf31c99eba786fc15cce8c8e89472",
+      "download_url": "https://github.com/m5stack/uiflow-micropython/releases/download/2.5.4/uiflow-e437118-esp32-4mb-atomecho-v2.5.4-20261030.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/",
+      "manifest": "devices/atom-echo/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "atom-echos3r",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "9348083af8a30e23bd832822eb81c8af86de8ef0e3f683fbc6c801d78bd6cd7b",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000775/2116030550617395201/bin/2116030550617395202.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atom_echos3r/program",
+      "manifest": "devices/atom-echos3r/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "atom-lite",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "8d13d287e18c56a8a27e5bf1617dca81a1c6d847dc302f034f09854753c184d0",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002571/2098279874229915649/bin/2098279874229915650.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atomlite/program",
+      "manifest": "devices/atom-lite/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "atom-matrix",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "1591382c9b46f10549faa0053b4036aa55f5c8131867b2f039d2650982e7886d",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2099000000000000002/2098279897621549057/bin/2098279897621549058.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atommatrix/program",
+      "manifest": "devices/atom-matrix/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "atom-matrix-v11",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "1591382c9b46f10549faa0053b4036aa55f5c8131867b2f039d2650982e7886d",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2099000000000000002/2098279897621549057/bin/2098279897621549058.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atommatrix/program",
+      "manifest": "devices/atom-matrix-v11/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "atoms3",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "fb294c9780cfc3766fd489e164a1a04dddf54cb989adb113d098fe10cbc52075",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002444/2098279922749624321/bin/2098279922749624322.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atoms3/program",
+      "manifest": "devices/atoms3/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "atoms3-lite",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "338baf7f16703b26fff78619d32e593d8ca4f1934bdad63e3c95eef862f3133c",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2099000000000000004/2098279947072393217/bin/2098279947072393218.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atoms3lite/program",
+      "manifest": "devices/atoms3-lite/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "atoms3r",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "91c0f97c904271d4c47d240165fbf5589d44aa0d753ca17d685bfdce5bff199a",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000001772/2098279973173547010/bin/2098279973173547011.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atoms3r/program",
+      "manifest": "devices/atoms3r/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "atoms3r-cam",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "1b29cc3d838834b3a4713130010815f952cff58619001c76183dd0b0a588f2c1",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000003117/2116030691759919106/bin/2116030691759919107.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atoms3r-cam/program",
+      "manifest": "devices/atoms3r-cam/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "atoms3r-m12",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "1b29cc3d838834b3a4713130010815f952cff58619001c76183dd0b0a588f2c1",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000003117/2116030691759919106/bin/2116030691759919107.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/",
+      "manifest": "devices/atoms3r-m12/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "atoms3u",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "7b8742931a2f88015a3419ba7aee22dfa56abd2c17c742426289a890f715ce1a",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2099000000000000005/2116030715159941121/bin/2116030715159941122.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atoms3u/program",
+      "manifest": "devices/atoms3u/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "atomu",
+      "case": "v0.1",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "59e1236f6c47140270fa485ece305a7a8c36a4fbda96d59f2359c75219ab5497",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2099000000000000001/2117190240810143746/bin/2117190240810143747.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/atomu/program",
+      "manifest": "devices/atomu/uiflow2/v0.1/firmware.json"
+    },
+    {
+      "device_id": "basic-v27",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "613a802da0f496d339a4120c0322c0c7ec1db3d81474b4329077f8b233d4dccb",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000786/2116030764468178946/bin/2116030764468178947.bin",
+      "bytes": 4190208,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5core/program",
+      "manifest": "devices/basic-v27/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "cardputer",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "d9e1287eccb641863e7b1cc7cf057733592403d65aeec2d4b1fa4cb3e8b1b309",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000718/2116030814376202242/bin/2116030814376202243.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/cardputer/program",
+      "manifest": "devices/cardputer/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "core2",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "b228c0e2d877e77a8a352e917ed84f4da8ea92d15b25e28f431a2999620fe3c4",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000003470/2098280227356758018/bin/2098280227356758019.bin",
+      "bytes": 16773120,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5core2/program",
+      "manifest": "devices/core2/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "dial",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "6a0187dad13c491129e9228ca36b9e04adb46ebf9d8d51fca8eca5f9b7332a53",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000879/2098280307254054914/bin/2098280307254054915.bin",
+      "bytes": 8388608,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5dial/program",
+      "manifest": "devices/dial/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "nanoc6",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "f6efc24d96f7b9a97684e63f764ef44b4357556d9b07dec4c1c67eb3d9153ecf",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000001159/2098280414426910722/bin/2098280414426910723.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/nanoc6/program",
+      "manifest": "devices/nanoc6/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "nesso-n1",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "49c4a9a669a2bde5b95416fa19ab8e01fc6bdec6a81bb80f2a0fc07480e1444b",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002638/2098281060085485570/bin/2098281060085485571.bin",
+      "bytes": 16773120,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/arduino_nesso_n1/program",
+      "manifest": "devices/nesso-n1/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "papercolor",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "166dbd7cfccda4ade1b2284774176955776d24a6fb08434b7ef1d8fca5897816",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002033/2098280498975690753/bin/2098280498975690754.bin",
+      "bytes": 16773120,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/papercolor/program",
+      "manifest": "devices/papercolor/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "35a4f99833d334c93986806b9403f81172e9068e3b63ef5a8ef2d20cf281eb18",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2110563172188712962/2116031166261530625/bin/2116031166261530626.bin",
+      "bytes": 16773120,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/paperdiy/program",
+      "manifest": "devices/paperdiy/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "papermono",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "f3da049b65b5a3899d3484594e3bede92a0928e5217fa260925951a777447b05",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/2089633464953118721/2098280529426337794/bin/2098280529426337795.bin",
+      "bytes": 16773120,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/papermono/program",
+      "manifest": "devices/papermono/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "papers3",
+      "case": "v2.5.4",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "87567896973fa61c281fdf3f0e2031f280de1df8d59ac0942302de288096a1fb",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000284/2116031112826097666/bin/2116031112826097667.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5papers3/program",
+      "manifest": "devices/papers3/uiflow2/v2.5.4/firmware.json"
+    },
+    {
+      "device_id": "stackchan",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "9e6e8066ee317691556c4758911a0345ed4e62398f461b364bb90a147c6db5f9",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002716/2098280583558025217/bin/2098280583558025218.bin",
+      "bytes": 16121856,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/stackchan/program",
+      "manifest": "devices/stackchan/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "stamplc",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "ab684b9d79d5fc5527be9450c18bee46171ae1b93716492be8aeeede50511470",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000001222/2098280653347049473/bin/2098280653347049474.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/stamplc/program",
+      "manifest": "devices/stamplc/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "stickc",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "2463fc362f6acfacccb678a2c40aeb733e470ca793ec4a100d2e077baa641f03",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002182/2098280813573656577/bin/2098280813573656578.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5stickc/program",
+      "manifest": "devices/stickc/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "stickc-plus",
+      "case": "v2.5.2",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "6e82447cc87695703dc973a3d2bac00e34619bd5d011970df19f548923241cb2",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000003037/2094351510644318209/bin/2094351510644318210.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5stickcplus/program",
+      "manifest": "devices/stickc-plus/uiflow2/v2.5.2/firmware.json"
+    },
+    {
+      "device_id": "stickc-plus-se",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "0c7055bb8e64afe1d8fa4fd4bdc0961ca0d6366351aca5d6c83eaaf72155ee88",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000003037/2098280835014938626/bin/2098280835014938627.bin",
+      "bytes": 4186112,
+      "docs_url": "https://docs.m5stack.com/en/",
+      "manifest": "devices/stickc-plus-se/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "stickc-plus2",
+      "case": "v2.5.3",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "712fd8ca7d232ca84b1214610b7b7933bca4f19233258736d0db33147b4342dc",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000000742/2098280860075905026/bin/2098280860075905027.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/m5stickcplus2/program",
+      "manifest": "devices/stickc-plus2/uiflow2/v2.5.3/firmware.json"
+    },
+    {
+      "device_id": "sticks3",
+      "case": "v2.5.5",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "b6e024fe156b7d4d418b2d3674b94687d7d66fb88dcd7e4b2c8c3672b8b162eb",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000001693/2122962646011428866/bin/2122962646011428867.bin",
+      "bytes": 8384512,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/sticks3/program",
+      "manifest": "devices/sticks3/uiflow2/v2.5.5/firmware.json"
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "v2.5.5",
+      "source": "stock-uiflow2",
+      "storage": "fetch-only",
+      "firmware_sha256": "2d97255a3f1429234606a5e7e68cbe16f5856068c310043979e9eb6c10507513",
+      "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002172/2122962770586451969/bin/2122962770586451970.bin",
+      "bytes": 16773120,
+      "docs_url": "https://docs.m5stack.com/en/uiflow2/stopwatch/program",
+      "manifest": "devices/stopwatch/uiflow2/v2.5.5/firmware.json"
     }
   ],
   "public_files": {
@@ -3675,12 +4537,12 @@
       "sha256": "ea49267c9c71ac9716166e54bec1a327076f8dbb2fad79475e87c48511d82e01"
     },
     "NOTICE": {
-      "sha256": "f1a134cba68749c63daeabe99bec02666791031503486cca01fe813d6ab28ed6",
-      "bytes": 1545
+      "sha256": "1a29fa5445cba7fbab8e9bc11e9c99e5a28a463e349c202312d2b2e5351b1629",
+      "bytes": 1919
     },
     "README.md": {
-      "sha256": "157b959935ea9fef69bbe8fd1d3f58955e0e67e15a050eb0a13b486ea00e7fbf",
-      "bytes": 12226
+      "sha256": "7ff2c1151831758b91bf53f72dc09330811f29d2d610f58fb57799569b86b3bf",
+      "bytes": 12724
     },
     "build-records/arduino-inventory.json": {
       "sha256": "8b3c329ecb30f8c389a3fc5c8e3b6b4f948685984151f15c361dec5a139983b4",
@@ -4921,8 +5783,8 @@
       "bytes": 1055
     },
     "build-records/rebuild-2026-11-27-matrix.md": {
-      "sha256": "92082708121f5b970f1ab82e6f53b72c82f5cac5a1cdff7c81c89dd26d22289e",
-      "bytes": 3460
+      "sha256": "29a13a9de4d3e82ade16c96db2752fd4bdfb84f58b6dee3aa1eba764700eb75c",
+      "bytes": 4396
     },
     "devices/atom-echo/arduino-docs/quickstart-echorest/sketch/quickstart_echorest/quickstart_echorest.ino": {
       "sha256": "4d43c8e69a438ac4a5ead63130b05530e97b7b828885702ef9c108bc1f6fcc84",
@@ -7259,6 +8121,126 @@
     "devices/basic-v27/arduino-docs/quickstart-longtextscroll/firmware.json": {
       "sha256": "f896397bc8311cf7f7cf53a02feb86673fba5ff1fe85bfbf14530066211e2072",
       "bytes": 6086
+    },
+    "devices/atom-echo/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "a87b5f75437c6e36e0408d844101dafdb34a7090b2897dbcbe50c52b671aa9d2",
+      "bytes": 793
+    },
+    "devices/atom-echos3r/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "e014c406921a24919cc09b8bcdd5f4065fb686de296a7697b635fe86f9da0992",
+      "bytes": 730
+    },
+    "devices/atom-lite/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "df02595b351685311ceff58723755e9af9bd3ac9aec3e871796eddc0ac246a42",
+      "bytes": 723
+    },
+    "devices/atom-matrix/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "d4d5fb62f5f4f4afa94b16b3f222ccc91c084c8524260971ebfb4737ec773a51",
+      "bytes": 727
+    },
+    "devices/atom-matrix-v11/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "195e03a1f881d543ecbe34a6e5583abdd3784365d3017a92c16103f8791ba28d",
+      "bytes": 731
+    },
+    "devices/atoms3/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "76d38779bf83a0ec47dc4f2c214aa1da56e3286ef0a4f331a100d703bdaff1c4",
+      "bytes": 718
+    },
+    "devices/atoms3-lite/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "c218976f434b298cdc14268f4367162f5919136f962a32ef0bfc893bf1088918",
+      "bytes": 727
+    },
+    "devices/atoms3r/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "50800212f1e236e98040138d1a5658a0f253a99db51361d5bcd589fb85eca432",
+      "bytes": 720
+    },
+    "devices/atoms3r-cam/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "ab7cfa0d191a64e700056db0691d8f75cd856cd2ef35ff3db0505bf0a13d3127",
+      "bytes": 728
+    },
+    "devices/atoms3r-m12/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "e3c7860eaf9bb05b2fbb4349feff5b9be3fd4f4755595390b3d0ea8926e56070",
+      "bytes": 701
+    },
+    "devices/atoms3u/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "a0535bc63593c37ad82efdca0c87bc2044502b49839bbef3a1e94c0411d2d3f8",
+      "bytes": 720
+    },
+    "devices/atomu/uiflow2/v0.1/firmware.json": {
+      "sha256": "ba6bf0c4ee4c62da46125172f50ba9d6d83474960b888b32baf84fb348649bcf",
+      "bytes": 714
+    },
+    "devices/basic-v27/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "86d50bdbe8623e26e5a4d0c6eab0fe4815d618c92fe8a1489eb7ffdb522777ca",
+      "bytes": 721
+    },
+    "devices/cardputer/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "9601da10eb7b40421fdd83455cc9bba35c98fd7a4beb39afad6d4d890998fb30",
+      "bytes": 724
+    },
+    "devices/core2/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "3df4f7293f00e858f0a5206cdea01cba65faf7848741b1109efc7d9a56c56cd8",
+      "bytes": 719
+    },
+    "devices/dial/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "9d1ef057a83967259c89a0198ea03ba111c74340995fcda664e206de124e9c8a",
+      "bytes": 716
+    },
+    "devices/nanoc6/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "3bf4444a1c1adeddb1046b8b1d41ff1c6d05dabe62feff0ac576632fd4fe176d",
+      "bytes": 718
+    },
+    "devices/nesso-n1/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "7583bae2a5103f556958df401491f437f722633fe2b72c7ae437fbf894aeaadf",
+      "bytes": 731
+    },
+    "devices/papercolor/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "9ebf81650aebf0519ca486d40985a982bbe96b5f3fe920ccc3081538dbcd0f45",
+      "bytes": 727
+    },
+    "devices/paperdiy/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "31b4e23999cf7619a9221b97d14ec65e4521114b757233a5af2816a45a12342d",
+      "bytes": 723
+    },
+    "devices/papermono/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "237fa164338333c5c5ab18f280c50fa48b3443776115289ebf5c1724cbe21449",
+      "bytes": 725
+    },
+    "devices/papers3/uiflow2/v2.5.4/firmware.json": {
+      "sha256": "48e5c1f97559125237bec1550a9f907f228dfed1d7626fb60ed684eddd3082e2",
+      "bytes": 722
+    },
+    "devices/stackchan/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "9473c5a4eb6d17b0619838a946162c2cf04407ec2148d96bd59736ae44601267",
+      "bytes": 725
+    },
+    "devices/stamplc/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "36a785562bded377ba0f3371e15fb45323663785c331e38c1b4869694ecb695e",
+      "bytes": 720
+    },
+    "devices/stickc/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "8d18a4149447acd641a398114188f1179eb50c1be7ca71a9a7288b5f1ce961f8",
+      "bytes": 720
+    },
+    "devices/stickc-plus/uiflow2/v2.5.2/firmware.json": {
+      "sha256": "cced070646f42a8491429974e4c741d5cf52fb23be5f067a68acde9120f8478d",
+      "bytes": 729
+    },
+    "devices/stickc-plus-se/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "6d66d89f75aab071167694e75c127298f0c67732865f784fbbed50b322ee5a81",
+      "bytes": 704
+    },
+    "devices/stickc-plus2/uiflow2/v2.5.3/firmware.json": {
+      "sha256": "ac2c1485983a048d09615f99063928059221b25e5636e764c89ba0c3d6e4c97d",
+      "bytes": 731
+    },
+    "devices/sticks3/uiflow2/v2.5.5/firmware.json": {
+      "sha256": "ec70cca60dd50b17be52241618f2b62b1029746f13d5b289c3193502f810c27b",
+      "bytes": 720
+    },
+    "devices/stopwatch/uiflow2/v2.5.5/firmware.json": {
+      "sha256": "0da858fe0efd24c99007093435417ff76bf8cf56cd37506688b06899836a1ff6",
+      "bytes": 725
     }
   },
   "local_files": {
@@ -7836,5 +8818,16 @@
     "validation_summary": "evidence/arduino-path-clean-summary.json",
     "published_cases": 110,
     "storage": "git-lfs"
+  },
+  "arduino_docs_index": {
+    "inventory_revision": "7219cc9286c39b463da84053deee40bc234625db",
+    "devices_with_no_dedicated_sketches": {
+      "atomu": "The Arduino documentation has no dedicated AtomU sketch.",
+      "m5stick": "The original matrix exercised factory firmware.",
+      "stickt2": "The original matrix exercised factory firmware."
+    },
+    "tab5_uncompiled_documentation_paths": {
+      "rs485": "The pinned Tab5 Arduino documentation has no RS485 sketch."
+    }
   }
 }

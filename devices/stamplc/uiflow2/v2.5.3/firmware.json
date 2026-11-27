@@ -1,0 +1,16 @@
+{
+  "device_id": "stamplc",
+  "case": "v2.5.3",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "firmware_sha256": "ab684b9d79d5fc5527be9450c18bee46171ae1b93716492be8aeeede50511470",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000001222/2098280653347049473/bin/2098280653347049474.bin",
+  "bytes": 8384512,
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/stamplc/program",
+  "source_check": "downloaded SHA-256",
+  "source_check_date": "2026-11-27",
+  "previous_virtual_device_validation": {
+    "stock_startup": "PASS",
+    "record": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  }
+}

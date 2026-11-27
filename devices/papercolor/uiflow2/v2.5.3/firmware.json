@@ -1,0 +1,16 @@
+{
+  "device_id": "papercolor",
+  "case": "v2.5.3",
+  "source": "stock-uiflow2",
+  "storage": "fetch-only",
+  "firmware_sha256": "166dbd7cfccda4ade1b2284774176955776d24a6fb08434b7ef1d8fca5897816",
+  "download_url": "https://m5burner-cdn.m5stack.com/community/1/1897200000000002033/2098280498975690753/bin/2098280498975690754.bin",
+  "bytes": 16773120,
+  "docs_url": "https://docs.m5stack.com/en/uiflow2/papercolor/program",
+  "source_check": "downloaded SHA-256",
+  "source_check_date": "2026-11-27",
+  "previous_virtual_device_validation": {
+    "stock_startup": "PASS",
+    "record": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  }
+}

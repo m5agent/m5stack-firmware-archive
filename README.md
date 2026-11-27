@@ -1,12 +1,12 @@
 # M5Stack 固件索引与模拟器复测
 
-记录 CoreS3（K128）和 Cardputer-Adv（K132-Adv）的文档例程版本、固件 SHA-256、Flash 布局和复测脚本。2026-11-26，CoreS3 15 个例程和 Cardputer-Adv 11 个例程的去除私有编译路径版镜像在固定版本的 esp32sim 上全部通过。官方 CoreS3 UIFlow2 v2.5.3 通过启动、USB CDC REPL 和 LCD 绘制检查。两项 CoreS3 Unit 用例使用 2026-11-25 的 QEMU-WASM 候选配置。所有通过项均为 **virtual-device validation**。真机验证为 **NOT RUN**。
+记录 M5Stack 文档例程版本、固件 SHA-256、Flash 布局和复测脚本。2026-11-26，CoreS3 15 个例程和 Cardputer-Adv 11 个例程的去除私有编译路径版镜像在固定版本的 esp32sim 上全部通过。官方 CoreS3 UIFlow2 v2.5.3 通过启动、USB CDC REPL 和 LCD 绘制检查。两项 CoreS3 Unit 用例使用 2026-11-25 的 QEMU-WASM 候选配置。所有通过项均为 **virtual-device validation**。真机验证为 **NOT RUN**。
 
 [机器可读索引](index.json)收录完整 SHA-256。各用例清单包含文档小节、源码版本、工具链、实际输入、镜像分段和输出摘要。[来源与许可](NOTICE)记录依赖和固件出处。
 
 ## 获取与校验
 
-Git LFS 提供 26 个 Arduino 例程的合并镜像、应用 BIN、bootloader、分区表、ELF 和共享的 boot_app0，以及压缩 SD 镜像。各例程的 `original_build` 字段保留原始构建的 SHA-256 和验证记录。UIFlow2 由脚本从 M5Burner 下载并校验。
+Git LFS 提供已发布 Arduino 例程的合并镜像、应用 BIN、bootloader、分区表、ELF、共享的 boot_app0 及压缩 SD 镜像。各例程的 `original_build` 字段保留原始构建的 SHA-256 和验证记录。官方 UIFlow2 固件的下载地址和 SHA-256 记录在索引或对应机型清单中。
 
 ```bash
 GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/m5agent/m5stack-firmware-archive.git
@@ -19,6 +19,15 @@ python3 tools/verify.py
 需要 Git LFS 和 Python 3.11+。可选的 `python3 tools/fetch_uiflow2.py` 下载官方 UIFlow2 固件。`python3 tools/import_arduino.py "$PREBUILT"` 可导入历史原件，`python3 tools/verify.py --with-local` 也校验本地原件与 UIFlow2。
 
 [重建命令和工具链](build-records/rebuild-2026-11-26.md)记录了路径映射和版本。[本次验证摘要](evidence/arduino-path-clean-summary.json)包含大小、路径扫描、两次重建的字节比较和行为对比。
+
+## 扩展机型
+
+[机器可读索引](index.json)逐项记录固件下载路径、文档出处、源码版本、
+验证结果和模拟器命令。编译失败的条目保留诊断和原始源码位置。
+[扩展矩阵重建命令](build-records/rebuild-2026-11-27-matrix.md)包含依赖锁、路径映射和对应的复测脚本。
+
+[Cardputer-ADV UIFlow2 源码例程](devices/cardputer-adv/uiflow2/README.md)
+保留实际执行的 MicroPython 源码、CAP 测试结果和官方固件下载散列。
 
 ## esp32sim 复测
 

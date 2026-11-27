@@ -1,7 +1,8 @@
 M5Stack firmware archive
 
-The sketches come from M5Stack Arduino documentation at revision
-6ee4f2fb9dca1c671e475407cb709109a699cf1a. Each firmware.json identifies
+The sketches come from the pinned M5Stack Arduino documentation revisions
+recorded in the case manifests. The earlier CoreS3 and Cardputer-ADV
+firmware uses 6ee4f2fb9dca1c671e475407cb709109a699cf1a. Each firmware.json identifies
 the English page, source section and any linked library example.
 Copyright and applicable terms remain with the respective rightsholders.
 The M5Unified WAV sketch uses the documented Cardputer-Adv chip select
@@ -27,3 +28,8 @@ are available from M5Burner via the URL in the manifest.
 The CoreS3 replay runner adapts the pinned esp32sim runner. Its MIT notice
 is under licenses/. The SD media, camera patterns and input tones were
 generated for virtual-device validation.
+
+The expanded matrix records its library revisions and checksums in
+build-records/arduino-matrix-library-lock.json. The Cardputer-ADV UIFlow2
+entries preserve example source and validation metadata. Stock UIFlow2
+images remain at the official download URLs listed in the manifests.
