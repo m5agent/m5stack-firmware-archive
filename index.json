@@ -3875,8 +3875,8 @@
       "bytes": 4279
     },
     "tools/scan_firmware_paths.py": {
-      "sha256": "110aa436465c759dfeb7b5832af6a19003225803aeecfa1e70b2a1b0ebb1cf7f",
-      "bytes": 2536
+      "sha256": "845dcef7a188de22673789aa4d3b9456f9e580d8f609845b71e601b2978cbf7e",
+      "bytes": 2604
     },
     "tools/verify.py": {
       "sha256": "5da7caf13a009327448eee9d35c64046a347dc3bb4b3c8152e422a4a945f7cdc",

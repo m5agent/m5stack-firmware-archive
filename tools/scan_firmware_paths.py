@@ -45,7 +45,10 @@ def main():
     sdk_counts = Counter()
     hits = 0
     for path in files:
-        result = subprocess.run(["strings", "-a", str(path)], check=True, capture_output=True, text=True)
+        result = subprocess.run(
+            ["strings", "-a", str(path)], check=True, capture_output=True,
+            encoding="utf-8", errors="surrogateescape",
+        )
         bad = 0
         for line in result.stdout.splitlines():
             for prefix in SDK_PREFIXES:
