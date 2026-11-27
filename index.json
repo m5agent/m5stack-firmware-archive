@@ -5001,6 +5001,198 @@
           "python3 $FIXTURES_DIR/agent-integration/lx6b-9ac09fb7/replay-lx6-core.py $SIM_SRC/tools/run-lx6-cores.py $SIM core2 $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --board m5stack-core2-axp192"
         ]
       }
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/paperdiy/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "8d7e9b5ef1ef4277db018cbdebabdd1a875239eac95984a61208800fd277e3fe",
+      "manifest": "devices/paperdiy/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "89e9a989ee3adaaf70e6a47b44ed53ce7eb2de0874ed5c70ba6c70d6cae3f512",
+      "original_build": {
+        "firmware_sha256": "2e299dd63a3959da7f4e0dd0aa1e6127fa9e7710998a88d774ad115eeabf3362",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-paperdiy"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+        ]
+      }
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "display-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/paperdiy/display.md",
+        "section": "Basic Display",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "ac8afb34e5744b9a0cfe3481dfb3f0ac05e11d74a84b712372ecf21145d90bc9",
+      "manifest": "devices/paperdiy/arduino-docs/display-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "28d0a82f1f9cfe95141463a96342abc3f931c5cf574dfa0b33e7a9ef46bb7627",
+      "original_build": {
+        "firmware_sha256": "0a12f73cb2522f0dab3e4cef106cfbf98f832cf20885c4ba6848f8baee492859",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-paperdiy"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+        ]
+      }
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "display-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/paperdiy/display.md",
+        "section": "Refresh Modes",
+        "code_first_line": 109
+      },
+      "sketch_sha256": "6d2f3d783d22ba4d9430af0a942341158f2faf801d91b33fd3f056a0738930f8",
+      "manifest": "devices/paperdiy/arduino-docs/display-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "35693334ef913ea0c8229d1ba858ea6e7c511f3e845b8e3bf083962be8f4b59a",
+      "original_build": {
+        "firmware_sha256": "90b4f27553cd7f05a26fe313129f3930f7f317c4add9e67af398c03069f10601",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-paperdiy"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+        ]
+      }
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "m5pm1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/m5pm1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/paperdiy/m5pm1.md",
+        "section": "Timed Power-On / Power-Off Example",
+        "code_first_line": 132
+      },
+      "sketch_sha256": "9f846502014f587fb677ae27fdc744998bb1d69a628039af58b6496e3b553a8f",
+      "manifest": "devices/paperdiy/arduino-docs/m5pm1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "d957d5b3d968defd9c65dbcbb0472c2a8093f9c21d22c1c4a5dab4c51bcfec37",
+      "original_build": {
+        "firmware_sha256": "121d67d7f6fe57a0a19b2d378900f072f37c33f3281ddddeeda66989ac061f31",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-paperdiy"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+        ]
+      }
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "microsd",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/microsd",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/paperdiy/microsd.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "b48466b8ccdd4e0adcbc148b48e4c8b38a96c92ec52b31e1575f79a61a40b47d",
+      "manifest": "devices/paperdiy/arduino-docs/microsd/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "32862dcf55aeed151eb1760f4dbfd927b5884ab437b51de1db267eca461567f2",
+      "original_build": {
+        "firmware_sha256": "9add8456e09a19fc2b5b89013b7d5f4c1c95d4aba94fc8822c6223a4bba89002",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-paperdiy"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+        ]
+      }
+    },
+    {
+      "device_id": "paperdiy",
+      "case": "quickstart-longtextscroll",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/paperdiy/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 29
+      },
+      "sketch_sha256": "3ea1e170e343218e5e960c139600454d0cf14bc7f948567dd9725605c85d5395",
+      "manifest": "devices/paperdiy/arduino-docs/quickstart-longtextscroll/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "d3593ba6373c673d38d9ad1222ca8caf239c5a249414c2b5817944d66d1656d1",
+      "original_build": {
+        "firmware_sha256": "cbfbb5fe7a2c8f86a4e7d57b36ee1104b7cbdc2afcef228cb4738cddcd4eb892",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-paperdiy"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -9109,6 +9301,174 @@
     "devices/core2/arduino-docs/quickstart-scrollgraph/firmware.json": {
       "sha256": "caf60d7108405f4048bd5db48a9241319830297bd09e8eed194f2fd068be2701",
       "bytes": 7661
+    },
+    "devices/paperdiy/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "8d7e9b5ef1ef4277db018cbdebabdd1a875239eac95984a61208800fd277e3fe",
+      "bytes": 1164
+    },
+    "devices/paperdiy/arduino-docs/button/migration.ino.bin": {
+      "sha256": "10779ed566f91023efe66eb67453935c6c9ee8a6c9de3405ba86afc48c90565e",
+      "bytes": 614544
+    },
+    "devices/paperdiy/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/paperdiy/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/paperdiy/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "89e9a989ee3adaaf70e6a47b44ed53ce7eb2de0874ed5c70ba6c70d6cae3f512",
+      "bytes": 16777216
+    },
+    "devices/paperdiy/arduino-docs/button/migration.ino.elf": {
+      "sha256": "a9d74b6a919b712cc2a3ff2b1b338982c5a8be587fd40a57055c8068675059b1",
+      "bytes": 12565048
+    },
+    "devices/paperdiy/arduino-docs/button/firmware.json": {
+      "sha256": "a66dfb841a59e0f5528acd42a02e704a779bc16e665e99d20fd4a15bae44dbd9",
+      "bytes": 6309
+    },
+    "devices/paperdiy/arduino-docs/display-1/sketch/display_1/display_1.ino": {
+      "sha256": "ac8afb34e5744b9a0cfe3481dfb3f0ac05e11d74a84b712372ecf21145d90bc9",
+      "bytes": 1946
+    },
+    "devices/paperdiy/arduino-docs/display-1/migration.ino.bin": {
+      "sha256": "8e906bfb371be9059b8b72b48ffe0daaba4eb217373d72fbac957ffa1007e77b",
+      "bytes": 614672
+    },
+    "devices/paperdiy/arduino-docs/display-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/paperdiy/arduino-docs/display-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/paperdiy/arduino-docs/display-1/migration.ino.merged.bin": {
+      "sha256": "28d0a82f1f9cfe95141463a96342abc3f931c5cf574dfa0b33e7a9ef46bb7627",
+      "bytes": 16777216
+    },
+    "devices/paperdiy/arduino-docs/display-1/migration.ino.elf": {
+      "sha256": "3f50c7763fcdea12f1b2b5722cb47e6834c18635b3017854eafae0d1aec1b0f1",
+      "bytes": 12570564
+    },
+    "devices/paperdiy/arduino-docs/display-1/firmware.json": {
+      "sha256": "88cb61e84a179de4d9af6d6a0627f41a3967d63e2b92b01d92670a7b47ddbb7b",
+      "bytes": 5982
+    },
+    "devices/paperdiy/arduino-docs/display-2/sketch/display_2/display_2.ino": {
+      "sha256": "6d2f3d783d22ba4d9430af0a942341158f2faf801d91b33fd3f056a0738930f8",
+      "bytes": 2390
+    },
+    "devices/paperdiy/arduino-docs/display-2/migration.ino.bin": {
+      "sha256": "8174a00c0fb8538319f48387f2aa7d8421a9dcdd260a773f20b53b2b37879afd",
+      "bytes": 618320
+    },
+    "devices/paperdiy/arduino-docs/display-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/paperdiy/arduino-docs/display-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/paperdiy/arduino-docs/display-2/migration.ino.merged.bin": {
+      "sha256": "35693334ef913ea0c8229d1ba858ea6e7c511f3e845b8e3bf083962be8f4b59a",
+      "bytes": 16777216
+    },
+    "devices/paperdiy/arduino-docs/display-2/migration.ino.elf": {
+      "sha256": "618a992526bec00951c3d865f377024cad3e0d34020f5f0d314ec8e628d55a73",
+      "bytes": 12568096
+    },
+    "devices/paperdiy/arduino-docs/display-2/firmware.json": {
+      "sha256": "c1665443f8e53bd3c4131fab38963aaa3e32cb8ae45ebb08792c352d05629365",
+      "bytes": 6700
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/sketch/m5pm1/m5pm1.ino": {
+      "sha256": "9f846502014f587fb677ae27fdc744998bb1d69a628039af58b6496e3b553a8f",
+      "bytes": 2624
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/migration.ino.bin": {
+      "sha256": "d04089fc3f73930a1350a2f65edfdf11f9ab502607e5a6322a603676c38498ad",
+      "bytes": 635728
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/migration.ino.merged.bin": {
+      "sha256": "d957d5b3d968defd9c65dbcbb0472c2a8093f9c21d22c1c4a5dab4c51bcfec37",
+      "bytes": 16777216
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/migration.ino.elf": {
+      "sha256": "be28e854991120955e8c071589367dd2cc1cf935123454df706d4be68f80bcd8",
+      "bytes": 12835828
+    },
+    "devices/paperdiy/arduino-docs/m5pm1/firmware.json": {
+      "sha256": "b3aaff03ef5d3dbc959e411b3786eaabbf898a4b0eda85ef86d1d19670ecde39",
+      "bytes": 5863
+    },
+    "devices/paperdiy/arduino-docs/microsd/sketch/microsd/microsd.ino": {
+      "sha256": "b48466b8ccdd4e0adcbc148b48e4c8b38a96c92ec52b31e1575f79a61a40b47d",
+      "bytes": 3083
+    },
+    "devices/paperdiy/arduino-docs/microsd/migration.ino.bin": {
+      "sha256": "b2f1a13d1e5b6e248d2daa58726afa717e0f4323a810efb330bbd1e78df2d984",
+      "bytes": 669168
+    },
+    "devices/paperdiy/arduino-docs/microsd/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/paperdiy/arduino-docs/microsd/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/paperdiy/arduino-docs/microsd/migration.ino.merged.bin": {
+      "sha256": "32862dcf55aeed151eb1760f4dbfd927b5884ab437b51de1db267eca461567f2",
+      "bytes": 16777216
+    },
+    "devices/paperdiy/arduino-docs/microsd/migration.ino.elf": {
+      "sha256": "db7abba95ca957b057bf9b5cfb2f6cd484449367ade49d3d719bc85535e85a60",
+      "bytes": 13290176
+    },
+    "devices/paperdiy/arduino-docs/microsd/firmware.json": {
+      "sha256": "f3cee61bb1876dea1693c5876b9481f6bb5a84bcedbf35ed82218dfb0d5240ff",
+      "bytes": 5967
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/sketch/quickstart_longtextscroll/quickstart_longtextscroll.ino": {
+      "sha256": "3ea1e170e343218e5e960c139600454d0cf14bc7f948567dd9725605c85d5395",
+      "bytes": 2469
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/migration.ino.bin": {
+      "sha256": "64c89f43f44cbc90043a5a61a1156b9828fa573b774ebe7da3d0136c57273ad1",
+      "bytes": 921936
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/migration.ino.merged.bin": {
+      "sha256": "d3593ba6373c673d38d9ad1222ca8caf239c5a249414c2b5817944d66d1656d1",
+      "bytes": 16777216
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/migration.ino.elf": {
+      "sha256": "4b2a79817072a734bd822a9ba4d8c166cd8456b91287e53d8bea8fde360cc680",
+      "bytes": 11460596
+    },
+    "devices/paperdiy/arduino-docs/quickstart-longtextscroll/firmware.json": {
+      "sha256": "c8edfa811b25dd76c225ad105dda3d64b36c225876fca36c0fe0cff22f53bce4",
+      "bytes": 6621
     }
   },
   "local_files": {
@@ -9684,7 +10044,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 124,
+    "published_cases": 130,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

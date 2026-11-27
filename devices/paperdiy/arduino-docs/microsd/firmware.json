@@ -1,0 +1,149 @@
+{
+  "device_id": "paperdiy",
+  "case": "microsd",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/microsd",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/paperdiy/microsd.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 16
+  },
+  "sketch_sha256": "b48466b8ccdd4e0adcbc148b48e4c8b38a96c92ec52b31e1575f79a61a40b47d",
+  "expected_behavior": "PaperDIY microSD Storage. Mount a seeded card and verify the documented file operation and persisted bytes.",
+  "sketch_files": {
+    "microsd.ino": {
+      "path": "devices/paperdiy/arduino-docs/microsd/sketch/microsd/microsd.ino",
+      "storage": "public",
+      "sha256": "b48466b8ccdd4e0adcbc148b48e4c8b38a96c92ec52b31e1575f79a61a40b47d",
+      "bytes": 3083
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/paperdiy/arduino-docs/microsd/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "b2f1a13d1e5b6e248d2daa58726afa717e0f4323a810efb330bbd1e78df2d984",
+      "bytes": 669168
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/paperdiy/arduino-docs/microsd/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/paperdiy/arduino-docs/microsd/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/paperdiy/arduino-docs/microsd/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "32862dcf55aeed151eb1760f4dbfd927b5884ab437b51de1db267eca461567f2",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/paperdiy/arduino-docs/microsd/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "db7abba95ca957b057bf9b5cfb2f6cd484449367ade49d3d719bc85535e85a60",
+      "bytes": 13290176
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "9add8456e09a19fc2b5b89013b7d5f4c1c95d4aba94fc8822c6223a4bba89002",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "32862dcf55aeed151eb1760f4dbfd927b5884ab437b51de1db267eca461567f2",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-paperdiy"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-paperdiy",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "microsd",
+          "verdict": "PASS",
+          "reason": "Guest rendered SD media while the no-card control did not"
+        },
+        "capture_comparison": {
+          "microsd-control.png": {
+            "original": {
+              "png_sha256": "a2111288c020bc4e9e00378aa01903ca3328ca6b4b260d6fdffa329eabd8d0a5"
+            },
+            "rebuilt": {
+              "png_sha256": "a2111288c020bc4e9e00378aa01903ca3328ca6b4b260d6fdffa329eabd8d0a5"
+            },
+            "byte_identical": true
+          },
+          "microsd.png": {
+            "original": {
+              "png_sha256": "9987f4ae8c76e08cae7b1aab00ed2f8611980048cad26e933ec3cd995e6e35bf"
+            },
+            "rebuilt": {
+              "png_sha256": "9987f4ae8c76e08cae7b1aab00ed2f8611980048cad26e933ec3cd995e6e35bf"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (169 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (878 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2105 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

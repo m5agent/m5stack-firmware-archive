@@ -1,0 +1,158 @@
+{
+  "device_id": "paperdiy",
+  "case": "button",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/paperdiy/button",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/paperdiy/button.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "8d7e9b5ef1ef4277db018cbdebabdd1a875239eac95984a61208800fd277e3fe",
+  "expected_behavior": "PaperDIY Button. Press and release each documented key and observe the corresponding event or screen change.",
+  "sketch_files": {
+    "button.ino": {
+      "path": "devices/paperdiy/arduino-docs/button/sketch/button/button.ino",
+      "storage": "public",
+      "sha256": "8d7e9b5ef1ef4277db018cbdebabdd1a875239eac95984a61208800fd277e3fe",
+      "bytes": 1164
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/paperdiy/arduino-docs/button/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "10779ed566f91023efe66eb67453935c6c9ee8a6c9de3405ba86afc48c90565e",
+      "bytes": 614544
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/paperdiy/arduino-docs/button/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/paperdiy/arduino-docs/button/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/paperdiy/arduino-docs/button/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "89e9a989ee3adaaf70e6a47b44ed53ce7eb2de0874ed5c70ba6c70d6cae3f512",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/paperdiy/arduino-docs/button/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "a9d74b6a919b712cc2a3ff2b1b338982c5a8be587fd40a57055c8068675059b1",
+      "bytes": 12565048
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "2e299dd63a3959da7f4e0dd0aa1e6127fa9e7710998a88d774ad115eeabf3362",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "89e9a989ee3adaaf70e6a47b44ed53ce7eb2de0874ed5c70ba6c70d6cae3f512",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-paperdiy"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-paperdiy",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py paperdiy $SIM $FIRMWARE_DIR/paperdiy $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 2 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "button",
+          "verdict": "PASS",
+          "reason": "Each action changed the frame relative to the no-input control"
+        },
+        "capture_comparison": {
+          "button-control.png": {
+            "original": {
+              "png_sha256": "04218896a97de75e982f09069f0f0430007f29653930393303d6a435f4deb9a4"
+            },
+            "rebuilt": {
+              "png_sha256": "04218896a97de75e982f09069f0f0430007f29653930393303d6a435f4deb9a4"
+            },
+            "byte_identical": true
+          },
+          "button-first.png": {
+            "original": {
+              "png_sha256": "a8a72dc9f1ad3390543fd9da64f007fc2d32b1a6f099f478755690ef399338f4"
+            },
+            "rebuilt": {
+              "png_sha256": "a8a72dc9f1ad3390543fd9da64f007fc2d32b1a6f099f478755690ef399338f4"
+            },
+            "byte_identical": true
+          },
+          "button.png": {
+            "original": {
+              "png_sha256": "93dc4ca85fdec52ab183db27909af37d7502a4b657ce0a521799dea217d88fa1"
+            },
+            "rebuilt": {
+              "png_sha256": "93dc4ca85fdec52ab183db27909af37d7502a4b657ce0a521799dea217d88fa1"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (311 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
