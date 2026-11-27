@@ -1,0 +1,191 @@
+{
+  "device_id": "stickc-plus2",
+  "case": "led",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc_plus2/led",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc_plus2/led.md",
+    "section": "Example",
+    "code_first_line": 9
+  },
+  "sketch_sha256": "d30aabda8cfc6a83163bd5e9e1a875ef769e05fcc4bc85f737fcae2c63e10e7b",
+  "expected_behavior": "StickC-Plus2 LED. Verify LED toggle or color sequence at the correct pin and polarity.",
+  "sketch_files": {
+    "led.ino": {
+      "path": "devices/stickc-plus2/arduino-docs/led/sketch/led/led.ino",
+      "storage": "public",
+      "sha256": "d30aabda8cfc6a83163bd5e9e1a875ef769e05fcc4bc85f737fcae2c63e10e7b",
+      "bytes": 611
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/led/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "ce0b90fdb80625872dfa834aaa7a10a892522250f22c7b85ad1665202578aeac",
+      "bytes": 531456
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/led/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a95cc2177f7218df5cd144cb460a8c9a0fc09d894018bd32cc4f2104e75a7087",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/led/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/led/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "92a80c75aff125505ba1d53f388cf32ed395e6b093fa22a31b4e2afb81df986d",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus2/arduino-docs/led/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "d36968dc97711e9e7e407d48d659c2b72b61baec08524a1acb41fbfe92ff6a56",
+      "bytes": 782932
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "bc93ea3cf0931072c3d03a296cabc8a51c398be21296e0ac5285396392f40e34",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "92a80c75aff125505ba1d53f388cf32ed395e6b093fa22a31b4e2afb81df986d",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus2"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus2 $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus2.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus2 $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus2.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus2 $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "G19 SET/CLR edges observed through the GPIO controller",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 762,
+            "bounds": [
+              59,
+              41,
+              75,
+              198
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                31638
+              ],
+              [
+                "009100",
+                762
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ],
+              "009100": [
+                59,
+                41,
+                75,
+                198
+              ]
+            },
+            "crc32": "4f757d51"
+          }
+        },
+        "capture_comparison": {
+          "led.png": {
+            "original": {
+              "png_sha256": "b7786c92d82c3d3e86d120b8a4ecdef2f388a598ed5742e9b359683bb22ec37f"
+            },
+            "rebuilt": {
+              "png_sha256": "b7786c92d82c3d3e86d120b8a4ecdef2f388a598ed5742e9b359683bb22ec37f"
+            },
+            "byte_identical": true
+          },
+          "led.wav": {
+            "original": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (278 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (6 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}

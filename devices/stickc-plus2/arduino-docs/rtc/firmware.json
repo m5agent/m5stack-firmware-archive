@@ -1,0 +1,185 @@
+{
+  "device_id": "stickc-plus2",
+  "case": "rtc",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stickc_plus2/rtc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stickc_plus2/rtc.md",
+    "section": "Example",
+    "code_first_line": 8
+  },
+  "sketch_sha256": "66621f9e5f4f53bbd408e27f8488534b2bdb28d89726a7c6fb3829a14e15ef2a",
+  "expected_behavior": "StickC-Plus2 RTC. Verify RTC read/write and progression. Cases with network configuration also verify sandboxed NTP.",
+  "sketch_files": {
+    "rtc.ino": {
+      "path": "devices/stickc-plus2/arduino-docs/rtc/sketch/rtc/rtc.ino",
+      "storage": "public",
+      "sha256": "66621f9e5f4f53bbd408e27f8488534b2bdb28d89726a7c6fb3829a14e15ef2a",
+      "bytes": 4145
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stickc_plus2",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/rtc/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "d2e9649e0efc2d544366a440d13edfb470275b3b8d479652dbbe04dd4ded9cba",
+      "bytes": 1124480
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/rtc/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a95cc2177f7218df5cd144cb460a8c9a0fc09d894018bd32cc4f2104e75a7087",
+      "bytes": 24928
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/rtc/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stickc-plus2/arduino-docs/rtc/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "37ad3745c6437bd5426440ce1cbc0c17007f2536a186ac8b1421238828c21abc",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/stickc-plus2/arduino-docs/rtc/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "2850df318baeeddfc03dec749d43a234279b3ae9838bb1a6002abd8b259e7663",
+      "bytes": 1535032
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x1000"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "b7c2850ec9a3d3be1a46722261207e46ceba6976991e9cc78f56eaa1b25ea055",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "37ad3745c6437bd5426440ce1cbc0c17007f2536a186ac8b1421238828c21abc",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stickc-plus2"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus2 $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus2.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stickc-plus2",
+        "run_command": "python3 $SIM_SRC/tools/run-lx6-stick.py stickc-plus2 $SIM $PLAN_DIR $FIXTURES_DIR/agent-lx6b/downloads/stickc-plus2.bin $ROM_DIR/esp32_rev300_rom.elf $OUT --jobs 4 --runtime-source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": "python3 $SIM_SRC/tools/check_lx6_stick.py stickc-plus2 $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "Virtual Wi-Fi/SNTP populated the hardware RTC",
+          "frame": {
+            "w": 135,
+            "h": 240,
+            "lit": 1392,
+            "bounds": [
+              88,
+              0,
+              134,
+              226
+            ],
+            "colors": 2,
+            "palette": [
+              [
+                "000000",
+                31008
+              ],
+              [
+                "009100",
+                1392
+              ]
+            ],
+            "regions": {
+              "000000": [
+                0,
+                0,
+                134,
+                239
+              ],
+              "009100": [
+                88,
+                0,
+                134,
+                226
+              ]
+            },
+            "crc32": "92790915"
+          }
+        },
+        "capture_comparison": {
+          "rtc-idle.png": {
+            "original": {
+              "png_sha256": "b8a136f21453f9fcb4bef3cda605f8ae2aa81c53430f25a20bc8d0a1c5e820e2"
+            },
+            "rebuilt": {
+              "png_sha256": "b8a136f21453f9fcb4bef3cda605f8ae2aa81c53430f25a20bc8d0a1c5e820e2"
+            },
+            "byte_identical": true
+          },
+          "rtc.png": {
+            "original": {
+              "png_sha256": "50a9d8c9c42448179e97521fd53afabf48d00502f4f15ebd0498418cd36817e0"
+            },
+            "rebuilt": {
+              "png_sha256": "50a9d8c9c42448179e97521fd53afabf48d00502f4f15ebd0498418cd36817e0"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (440 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (12 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration",
+    "elf_processing": "xtensa-esp-elf-objcopy --strip-debug"
+  },
+  "verdict": "PASS"
+}
