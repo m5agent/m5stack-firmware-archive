@@ -1,0 +1,139 @@
+{
+  "device_id": "papers3",
+  "case": "wakeup",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5papers3/wakeup",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5papers3/wakeup.md",
+    "section": "Build Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "41697f5c39373dc4a07c0a95824efa5c31367de2a79a5a8f706acd3b6d41fbc7",
+  "expected_behavior": "PaperS3 Wakeup. Observe the documented sleep/standby transition, inject the wake source, and verify guest resume/reset.",
+  "sketch_files": {
+    "wakeup.ino": {
+      "path": "devices/papers3/arduino-docs/wakeup/sketch/wakeup/wakeup.ino",
+      "storage": "public",
+      "sha256": "41697f5c39373dc4a07c0a95824efa5c31367de2a79a5a8f706acd3b6d41fbc7",
+      "bytes": 722
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papers3/arduino-docs/wakeup/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "898ccb51ed53caf05fea60e95b67d029811390b2d5d78322f928ae0071c4eaaf",
+      "bytes": 613040
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papers3/arduino-docs/wakeup/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papers3/arduino-docs/wakeup/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papers3/arduino-docs/wakeup/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "cd5e6c9e22e2a4e0962fc6bb7b52d5c2be15f15a20f76712531c3353a33aa576",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papers3/arduino-docs/wakeup/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e15e7fcc7ed4910831bd589bdc6d7f21af01db4a02d631497795d0ef22b96dbe",
+      "bytes": 12604048
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "d2ccb863906c939241b2c252c2dc15226afe3e6d753a5a509aa01a33fb2e3fcf",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "cd5e6c9e22e2a4e0962fc6bb7b52d5c2be15f15a20f76712531c3353a33aa576",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papers3"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papers3",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "wakeup",
+          "verdict": "PASS",
+          "reason": "Original loop resumed after 5.000 s of RTC timer sleep"
+        },
+        "capture_comparison": {
+          "wakeup.png": {
+            "original": {
+              "png_sha256": "bfeb78c2b8fa6376dfe3039f661ba761041c72f516088183f0b9e26865f11c68"
+            },
+            "rebuilt": {
+              "png_sha256": "bfeb78c2b8fa6376dfe3039f661ba761041c72f516088183f0b9e26865f11c68"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (320 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (874 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2120 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

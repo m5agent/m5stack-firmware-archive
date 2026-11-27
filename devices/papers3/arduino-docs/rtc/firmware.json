@@ -1,0 +1,148 @@
+{
+  "device_id": "papers3",
+  "case": "rtc",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5papers3/rtc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5papers3/rtc.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "c4f9fd2e2bf700d5265bc2d6d539cbdd349948b8f466da0700ae6e9a5b450636",
+  "expected_behavior": "PaperS3 RTC Real-Time Clock. Verify RTC read/write and progression. Cases with network configuration also verify sandboxed NTP.",
+  "sketch_files": {
+    "rtc.ino": {
+      "path": "devices/papers3/arduino-docs/rtc/sketch/rtc/rtc.ino",
+      "storage": "public",
+      "sha256": "c4f9fd2e2bf700d5265bc2d6d539cbdd349948b8f466da0700ae6e9a5b450636",
+      "bytes": 3575
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papers3/arduino-docs/rtc/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "ba27bf7f57d5094f9644fc1b6df50e4f4bb77c9056649f131f3cef7511bd0b21",
+      "bytes": 1153600
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papers3/arduino-docs/rtc/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papers3/arduino-docs/rtc/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papers3/arduino-docs/rtc/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "558f632ef63e60efaac440ef8ac5c7fdffc46446a68002ed19c424428bf116a9",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papers3/arduino-docs/rtc/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "f90cf0c86419e25926c2017c25a626f2fa47acee58809006c997f63dcdca8385",
+      "bytes": 17846564
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "2eafc2ba54fd1f93e09991e875bf2e3726c8e004611bfc76d4ae3485db63779c",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "558f632ef63e60efaac440ef8ac5c7fdffc46446a68002ed19c424428bf116a9",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papers3"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papers3",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "rtc",
+          "verdict": "PASS",
+          "reason": "Sandbox NTP, BM8563 calendar progression, and a changed clock screen"
+        },
+        "capture_comparison": {
+          "rtc-control.png": {
+            "original": {
+              "png_sha256": "104b19f0b4e5922b6acd7860e2b2c8af37629c9e5491ac4541c3aa04292d294b"
+            },
+            "rebuilt": {
+              "png_sha256": "104b19f0b4e5922b6acd7860e2b2c8af37629c9e5491ac4541c3aa04292d294b"
+            },
+            "byte_identical": true
+          },
+          "rtc.png": {
+            "original": {
+              "png_sha256": "32975e16924add647131c80a1008db5324b4b7a92fcdc8e87cacfee1708c1b40"
+            },
+            "rebuilt": {
+              "png_sha256": "32975e16924add647131c80a1008db5324b4b7a92fcdc8e87cacfee1708c1b40"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (477 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (168 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (1502 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (3237 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

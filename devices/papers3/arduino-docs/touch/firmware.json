@@ -1,0 +1,148 @@
+{
+  "device_id": "papers3",
+  "case": "touch",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5papers3/touch",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5papers3/touch.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "ba717175901ae6edda2b64e41e85b94ac93ac50ea86de7160632904ec7100061",
+  "expected_behavior": "PaperS3 Touch Screen. Inject two separated points and a release, then verify event and transformed coordinates.",
+  "sketch_files": {
+    "touch.ino": {
+      "path": "devices/papers3/arduino-docs/touch/sketch/touch/touch.ino",
+      "storage": "public",
+      "sha256": "ba717175901ae6edda2b64e41e85b94ac93ac50ea86de7160632904ec7100061",
+      "bytes": 593
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papers3/arduino-docs/touch/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "347feaa8af49da82c1e07fa10acff8c7c1b65e321e231f0827b4cc76b994a9eb",
+      "bytes": 601248
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papers3/arduino-docs/touch/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papers3/arduino-docs/touch/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papers3/arduino-docs/touch/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "25bbd54b33979a2a75d29883da1fb2920fbe9f049cc227de7eac59973da64bf0",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papers3/arduino-docs/touch/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "b1bdff984c8b0617a7e323278cd68e7b59ce93ce6bdcf5a46b3ad1d7b48803ba",
+      "bytes": 12491352
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "ca35f8c5e512f8cbc02b91a8eb760adb475bbe240ae84e6dc87f892145f2bcfc",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "25bbd54b33979a2a75d29883da1fb2920fbe9f049cc227de7eac59973da64bf0",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papers3"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papers3",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "touch",
+          "verdict": "PASS",
+          "reason": "Guest reported two points and silent no-input control"
+        },
+        "capture_comparison": {
+          "touch-control.png": {
+            "original": {
+              "png_sha256": "4c369c2ba250897a1ea4ac2d05c13634fc3405e64d9ea7fc839c92ee20da7c85"
+            },
+            "rebuilt": {
+              "png_sha256": "4c369c2ba250897a1ea4ac2d05c13634fc3405e64d9ea7fc839c92ee20da7c85"
+            },
+            "byte_identical": true
+          },
+          "touch.png": {
+            "original": {
+              "png_sha256": "3f989092d99544c4add1b0270326255b564b25938aca76d3e57d2351725703a8"
+            },
+            "rebuilt": {
+              "png_sha256": "3f989092d99544c4add1b0270326255b564b25938aca76d3e57d2351725703a8"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (311 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

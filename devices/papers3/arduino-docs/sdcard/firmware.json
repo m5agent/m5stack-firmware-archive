@@ -1,0 +1,157 @@
+{
+  "device_id": "papers3",
+  "case": "sdcard",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5papers3/sdcard",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5papers3/sdcard.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "53dc168b87ad1015de4e60ea3e38cd226aca6b8592cf12fd686abbb37cb253f9",
+  "expected_behavior": "PaperS3 microSD Card. Mount a seeded card and verify the documented directory, read/write, or throughput operation.",
+  "sketch_files": {
+    "sdcard.ino": {
+      "path": "devices/papers3/arduino-docs/sdcard/sketch/sdcard/sdcard.ino",
+      "storage": "public",
+      "sha256": "53dc168b87ad1015de4e60ea3e38cd226aca6b8592cf12fd686abbb37cb253f9",
+      "bytes": 1655
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papers3/arduino-docs/sdcard/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "1f952e20b4999071e24bb2ca99379c8c034a920654c2082a0cdf5e18d0071283",
+      "bytes": 652752
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papers3/arduino-docs/sdcard/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papers3/arduino-docs/sdcard/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papers3/arduino-docs/sdcard/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "0fbf7bf359446a8db6bf10c1c93b264ec10e37b57bb0bfd78310b2deeb3618e9",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papers3/arduino-docs/sdcard/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "5438843ee80a259f88823d6238dd7739e3137f34df76b37f5f559674e802a720",
+      "bytes": 13210116
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "db480ab7675db2432c4131a2cbd68db0895c9772759b3f36197b4b6e24c56d21",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "0fbf7bf359446a8db6bf10c1c93b264ec10e37b57bb0bfd78310b2deeb3618e9",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papers3"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papers3",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papers3 $SIM $FIRMWARE_DIR/papers3 $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img --mic $FIXTURES_DIR/agent-audio/mic-733hz.wav",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "sdcard",
+          "verdict": "PASS",
+          "reason": "Two seeded PNGs displayed and the exact WriteTest.txt bytes persisted"
+        },
+        "capture_comparison": {
+          "sdcard-control.png": {
+            "original": {
+              "png_sha256": "eddd2d1e215878933fb97bddc19887b880880a58b15f8027cad35853f6405d4b"
+            },
+            "rebuilt": {
+              "png_sha256": "eddd2d1e215878933fb97bddc19887b880880a58b15f8027cad35853f6405d4b"
+            },
+            "byte_identical": true
+          },
+          "sdcard-first.png": {
+            "original": {
+              "png_sha256": "392f9e88fdc4f3269406ef90c0deba7ce208ee88716413d62cdad737d6d7f04a"
+            },
+            "rebuilt": {
+              "png_sha256": "392f9e88fdc4f3269406ef90c0deba7ce208ee88716413d62cdad737d6d7f04a"
+            },
+            "byte_identical": true
+          },
+          "sdcard.png": {
+            "original": {
+              "png_sha256": "df86305bb131aca1d69b7eba18ffc88021af097a1bb5ae3469ac84915da0d48f"
+            },
+            "rebuilt": {
+              "png_sha256": "df86305bb131aca1d69b7eba18ffc88021af097a1bb5ae3469ac84915da0d48f"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (169 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (878 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2105 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
