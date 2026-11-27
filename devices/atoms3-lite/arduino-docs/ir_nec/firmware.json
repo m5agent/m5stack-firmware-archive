@@ -1,0 +1,145 @@
+{
+  "device_id": "atoms3-lite",
+  "case": "ir_nec",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5atoms3/ir_nec",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5atoms3/ir_nec.md",
+    "section": "Example",
+    "code_first_line": 8
+  },
+  "sketch_sha256": "8b30053440bb3837403cf370ba644860141f1ee0df3d01d8ebd185a0db804e77",
+  "expected_behavior": "AtomS3 IR NEC. Verify address/command and timing on the actual NEC waveform or receiver input.",
+  "sketch_files": {
+    "ir_nec.ino": {
+      "path": "devices/atoms3-lite/arduino-docs/ir_nec/sketch/ir_nec/ir_nec.ino",
+      "storage": "public",
+      "sha256": "8b30053440bb3837403cf370ba644860141f1ee0df3d01d8ebd185a0db804e77",
+      "bytes": 2343
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_atoms3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/atoms3-lite/arduino-docs/ir_nec/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "9439f6752e3724349eaccfe116b25537de70ac731d01d6ba9c4c0e3bcd8b6762",
+      "bytes": 631264
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/atoms3-lite/arduino-docs/ir_nec/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/atoms3-lite/arduino-docs/ir_nec/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/atoms3-lite/arduino-docs/ir_nec/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "62d6a910ba4e04c67b492b8bb40f77a3fa6b24fa00ba1d17f391c9cc6f614004",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/atoms3-lite/arduino-docs/ir_nec/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "26d8b21c02edc48597d31ed21d1a4ea22571fb2b459304dddfa21f4d08916290",
+      "bytes": 40210444
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "108348bb1f41d7232ee17f53e0308193cbc849c470d11d16ac836ae23e6dc573",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "62d6a910ba4e04c67b492b8bb40f77a3fa6b24fa00ba1d17f391c9cc6f614004",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-atoms3-lite"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3-lite $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3-lite.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-atoms3-lite",
+        "run_command": "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3-lite $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3-lite.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "ir_nec",
+          "status": "PASS",
+          "detail": "decoded routed NEC address/command pairs [(4369, 52), (4369, 53), (4369, 54), (4369, 55), (4369, 56), (4369, 57), (4369, 58)]"
+        },
+        "capture_comparison": {
+          "ir_nec.wav": {
+            "original": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "8b8fbafe8679076454429756fa72f11d5f442c87381cc6a4285451d826a9e629",
+              "pcm_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "frames": 0,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (299 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (157 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (855 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2060 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
