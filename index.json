@@ -7209,6 +7209,582 @@
           "bash $SIM_TOOLS/run-s3b-docs.sh sticks3 $SIM $OUT"
         ]
       }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/battery.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "2e2c520f2b6a44d426098b92cce748b2792579a0b04dafbdd3b108bd3a67b688",
+      "manifest": "devices/stopwatch/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "569f39e8b59fb25f5b2474c80a8eb35e98f2485dfbf565c436215ff42bb4e37a",
+      "original_build": {
+        "firmware_sha256": "31a4268b7d826858ab8cfc54843c45e93a3b2681798c8c278e70b0d04c6725e7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "e2ed0efb47617bffc0a9097bdc1cf52e425dd7c8605da1c2150da6139db47d45",
+      "manifest": "devices/stopwatch/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8ca7ddd94a81d73fb033065e6b4d3af7aca42526d5a3e9d3e8b692f26e1805cf",
+      "original_build": {
+        "firmware_sha256": "e1214647179c912de438240a66e01b7b7c90986e75217f3d94fc29fc78f66b45",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/display.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "manifest": "devices/stopwatch/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9fa714f4ef1833334510f684104730ec534273f9d3d2c3ea386eb9f2b0a09fca",
+      "original_build": {
+        "firmware_sha256": "7779575565041730a0120b1a57a0969020b2c3d96362312a7211c38a776f8ec6",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "imu",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/imu",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/imu.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "2d695ce95546cf69178bcc2bcb002d1c7d0788e7ccede89d6918a21d19e9fb37",
+      "manifest": "devices/stopwatch/arduino-docs/imu/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "fa6c53632e9ee598be0b7d96e3c9ffa7b25c2c6c7ed64cb433b86a0cf32cdb61",
+      "original_build": {
+        "firmware_sha256": "2b45dd116a41dd4d11eb3a97028fa4b04c20b537943e9be496ffacebdd59ff69",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "m5pm1_m5ioe1-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md",
+        "section": "Timed Power On / Power Off Example",
+        "code_first_line": 168
+      },
+      "sketch_sha256": "4563c6a2e6124efc9fa26a28aa97e2082ba31263cee458379130b22fecf38328",
+      "manifest": "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "091db38bf4d25fac3419dd2c7f6d2a708b106ad4699f18372d6d4a9cb765d590",
+      "original_build": {
+        "firmware_sha256": "ac93b4dfa409d3d4d2f8ca9f39070107f8f649995f0aa9d99ae11b905b828520",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "m5pm1_m5ioe1-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md",
+        "section": "IMU M5PM1 Wake-up",
+        "code_first_line": 237
+      },
+      "sketch_sha256": "2f11fa7a8c2c02879097a80db25347494af497c1cc13d45aa190889a2e9328c5",
+      "manifest": "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ae25e7ff6594d2c14a8669c00d8510ca6becda113c9f2e1fd7ffc4baafa5ba7e",
+      "original_build": {
+        "firmware_sha256": "c924d9b958f90252628344c0ccdda8bf1fed3b08427492c5700b8bab2852d3fc",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "m5pm1_m5ioe1-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md",
+        "section": "IMU ESP32-S3 Wake-up",
+        "code_first_line": 339
+      },
+      "sketch_sha256": "1b83a2e1d3e20ca2681e1c2297b19a82a7726baae99bb54674b948f71bc6bcef",
+      "manifest": "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "2eb7d1b5235c6c2bd09bae548037d9974f67fa644a03904220bdd2a28e15657b",
+      "original_build": {
+        "firmware_sha256": "2933d4861bd8cdeb47a6c4dad282a3c5c7674b59fa98099cd993c16b3ff789f0",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "m5pm1_m5ioe1-4",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md",
+        "section": "RTC M5PM1 Wake-up",
+        "code_first_line": 484
+      },
+      "sketch_sha256": "3e9a9953c34a375cb756aa80afb1533b8461d8a9e8091cd1214446223ef5d0b3",
+      "manifest": "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "560ebdd9a68670e10256c4801fafad9fb76130cef30129722cd086624c628494",
+      "original_build": {
+        "firmware_sha256": "a4f4e4e909306925bac5eeb2c3433fdb1bbf672c95900ce18654e3c2527888a9",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "m5pm1_m5ioe1-5",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md",
+        "section": "RTC ESP32-S3 Wake-up",
+        "code_first_line": 551
+      },
+      "sketch_sha256": "70ff1fd4989ef230eac4f0d904efd9624aa10827f306e47489abb9fbb50e0ceb",
+      "manifest": "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1391191aad316f71148d7551f9d4e9dfaf7259a012d3d8f9bc1ed9c242c57542",
+      "original_build": {
+        "firmware_sha256": "0a4d70c47e3971a30dee80f38be1027bbfbf9cc2aebd27dfa5b806d5f9f1ef24",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "m5pm1_m5ioe1-6",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/m5pm1_m5ioe1.md",
+        "section": "7. M5IOE1 Peripheral Control",
+        "code_first_line": 651
+      },
+      "sketch_sha256": "c3da106ea73418682ca869d5917fe69f18821d767961e9c410cdd5de1b36f2cd",
+      "manifest": "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8903056e80af79edb13c3c260d3543664572d872ab1bdc7430e812c7a5af1ab3",
+      "original_build": {
+        "firmware_sha256": "d9a67b9fb4db34352e27b1379446f1707f71b830b46e244ff9e88f06e01765fb",
+        "verdict": "DOCS-DEFECT",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "DOCS-DEFECT",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/mic.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 12
+      },
+      "sketch_sha256": "2d0727685ac6ff2f3d45b88c0059d1288925a5a0ce4c7fb0aa58dd87688ee9d6",
+      "manifest": "devices/stopwatch/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9bc78a25901c66844477b7ff0217aa22d61bc2be8f46e4d4cf453ac344432c36",
+      "original_build": {
+        "firmware_sha256": "fec38afa5ceda6cb9b66a4a8366401533af100fcaebaaf11599edd91df7a66ac",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "rtc-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/rtc.md",
+        "section": "Set Local Time",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "2c9d7332707503c2e29a90f69a35e4998dffc30b620056724460cccff062b387",
+      "manifest": "devices/stopwatch/arduino-docs/rtc-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c3a766b1298fbf4f26e44327d4859054ec471aaca7b566dd7a1207444f0a2b3d",
+      "original_build": {
+        "firmware_sha256": "91b3d451e2e14ec7ef2db1ee6748bf954b47813616c5653c3cfc379b1456117b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "rtc-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/rtc.md",
+        "section": "SNTP Network Time",
+        "code_first_line": 66
+      },
+      "sketch_sha256": "c44491b16a5b3ede29b5a0dee00c1b36afb1daf5c20dce16774d257e4a65f8a0",
+      "manifest": "devices/stopwatch/arduino-docs/rtc-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ce53d33b70ae855099bb520e001515c88af651a7066dc1b2bdad55b64fd659ed",
+      "original_build": {
+        "firmware_sha256": "d2ccb4a6d5f948291936771b1996431aa88f030b87f6fa9f227ce6efafcbf179",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/speaker.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "a8a486367d5a1914a6ecff75fb97d753eb1e1394f673e8447ce460e74d2156d9",
+      "manifest": "devices/stopwatch/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8323ecd75ab2a2bf088f0effb67ffc04d2cbf88e37539a21da42159a6168ca6d",
+      "original_build": {
+        "firmware_sha256": "5b54543b8679945f1ecd4a6211009127cd017e5bd19adc8f1fe90ff3bb78281b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "touch-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/touch.md",
+        "section": "Basic Touch",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "59c27520294d5659391135b5d42ceae5e63f2ed8dda4cf314b634d559a609c1e",
+      "manifest": "devices/stopwatch/arduino-docs/touch-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "afb70a130c1a4930d2d2ec21171015f762f243ec5533c12d0ebb066d3173fe93",
+      "original_build": {
+        "firmware_sha256": "41a73ab0baf4b62b78288b08799274804535ae849296cc4f2470d26fdc0150cd",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "touch-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/touch.md",
+        "section": "LGFX_Button",
+        "code_first_line": 72
+      },
+      "sketch_sha256": "1c2f19523f260eb6f7c5bc3dd97b59df8cedd7ba9e5452b04651a4c44a9596f8",
+      "manifest": "devices/stopwatch/arduino-docs/touch-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "3979dc4096b82a6ffbbadc5a6632df544e70c57767a0a889f8b0f9a61f305421",
+      "original_build": {
+        "firmware_sha256": "0faa8092da14a7c8e201f7d6318ef2601e8647a271df57ebdc28e5b0b4b2fd0f",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "vibration",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/vibration",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/vibration.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "ee41925c2135e7416804f664c79b2d3be176f68b272ef4ce5c6e71773b7e31fe",
+      "manifest": "devices/stopwatch/arduino-docs/vibration/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "68fdee8116002dfb4616e2e98b6b7273a61883d3623239a4ae0ef35aa84d7361",
+      "original_build": {
+        "firmware_sha256": "8c835bb6b5ab980799ff7d37ab91a6bb8a96edabd07b1fb5230a5b6317f1efd3",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
+    },
+    {
+      "device_id": "stopwatch",
+      "case": "quickstart-bargraph",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/stopwatch/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 27
+      },
+      "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "manifest": "devices/stopwatch/arduino-docs/quickstart-bargraph/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "beb467f6f65749b4656fabe39a570ab5d8e208b4b2dc6a1d8439202d7a5e39f0",
+      "original_build": {
+        "firmware_sha256": "0165609f74eae7a94a4edaedebb9d4a487e593c73df92815cc986a757b051ec9",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stopwatch"
+        ],
+        "run_commands": [
+          "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -13249,6 +13825,510 @@
     "devices/sticks3/arduino-docs/quickstart-scrollgraph/firmware.json": {
       "sha256": "c10fb4e8d4cd4216bad953834b4f024fea14b107f7def02b185a9bea075e4402",
       "bytes": 5983
+    },
+    "devices/stopwatch/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "2e2c520f2b6a44d426098b92cce748b2792579a0b04dafbdd3b108bd3a67b688",
+      "bytes": 2836
+    },
+    "devices/stopwatch/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "0bdc4aa025064b3fda7ddf4f48c58d23128017bd0af64aa72e6d21c5da35320a",
+      "bytes": 634656
+    },
+    "devices/stopwatch/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "569f39e8b59fb25f5b2474c80a8eb35e98f2485dfbf565c436215ff42bb4e37a",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "032d5f3184d4278bd6682837197066cb1b6e00a18e8dedfa4524d4d3e8b2ce08",
+      "bytes": 12939152
+    },
+    "devices/stopwatch/arduino-docs/battery/firmware.json": {
+      "sha256": "462d0f942a0117998a6da9c625cbeb0a58c75ae1554aa2fe082e12748d0349a6",
+      "bytes": 6153
+    },
+    "devices/stopwatch/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "e2ed0efb47617bffc0a9097bdc1cf52e425dd7c8605da1c2150da6139db47d45",
+      "bytes": 304
+    },
+    "devices/stopwatch/arduino-docs/button/migration.ino.bin": {
+      "sha256": "4fb060c75e6117bed24ca2087ff4a076f3c6f7e954209761c99acd2111122aec",
+      "bytes": 592064
+    },
+    "devices/stopwatch/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "8ca7ddd94a81d73fb033065e6b4d3af7aca42526d5a3e9d3e8b692f26e1805cf",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/button/migration.ino.elf": {
+      "sha256": "48f5b17e49f5cd0e463629a014c6a5e1e0dcc1897708c4f074ac41de75e350b9",
+      "bytes": 12469072
+    },
+    "devices/stopwatch/arduino-docs/button/firmware.json": {
+      "sha256": "88cb05dcb43a9d96152760f2690c9688477c49d4ff734e1a050014948c3b82b9",
+      "bytes": 5415
+    },
+    "devices/stopwatch/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "76562db912438f910f1cb72abb0c2304bcc40bda38f13b8d151489fdbddb3f1d",
+      "bytes": 716
+    },
+    "devices/stopwatch/arduino-docs/display/migration.ino.bin": {
+      "sha256": "2c7400b387f5469d170ba8bc8873a775896cf5a70afdf24c6ed443c41fdc09e4",
+      "bytes": 592400
+    },
+    "devices/stopwatch/arduino-docs/display/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/display/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/display/migration.ino.merged.bin": {
+      "sha256": "9fa714f4ef1833334510f684104730ec534273f9d3d2c3ea386eb9f2b0a09fca",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/display/migration.ino.elf": {
+      "sha256": "abbe831f21d6dac027536b925a63cc60be49271414b0baf42ab146e0c448402b",
+      "bytes": 12477296
+    },
+    "devices/stopwatch/arduino-docs/display/firmware.json": {
+      "sha256": "5b1a2be6ba137909e195c7f8344f8a235b59bbb9e05504e67c6c00d1b8dee8fe",
+      "bytes": 5799
+    },
+    "devices/stopwatch/arduino-docs/imu/sketch/imu/imu.ino": {
+      "sha256": "2d695ce95546cf69178bcc2bcb002d1c7d0788e7ccede89d6918a21d19e9fb37",
+      "bytes": 1456
+    },
+    "devices/stopwatch/arduino-docs/imu/migration.ino.bin": {
+      "sha256": "53a93b92047383f378b19f3bd66ca1f2b7807a6c63bef217a09e8619e9f62e19",
+      "bytes": 597040
+    },
+    "devices/stopwatch/arduino-docs/imu/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/imu/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/imu/migration.ino.merged.bin": {
+      "sha256": "fa6c53632e9ee598be0b7d96e3c9ffa7b25c2c6c7ed64cb433b86a0cf32cdb61",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/imu/migration.ino.elf": {
+      "sha256": "fbbafc673a69a269676b719d77d4ddb3de812f0b6de663396518c6394ac02ae6",
+      "bytes": 12491620
+    },
+    "devices/stopwatch/arduino-docs/imu/firmware.json": {
+      "sha256": "6d3ddd5f847ceec8d33ca66ed894324ba3922aa1acf76011cb0779dafe7e433e",
+      "bytes": 6070
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/sketch/m5pm1_m5ioe1_1/m5pm1_m5ioe1_1.ino": {
+      "sha256": "4563c6a2e6124efc9fa26a28aa97e2082ba31263cee458379130b22fecf38328",
+      "bytes": 1403
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/migration.ino.bin": {
+      "sha256": "dd68c3b92d87d3d95a36d7e4465c1a226523b9daba94b37e590595d11e9d6bfc",
+      "bytes": 622896
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/migration.ino.merged.bin": {
+      "sha256": "091db38bf4d25fac3419dd2c7f6d2a708b106ad4699f18372d6d4a9cb765d590",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/migration.ino.elf": {
+      "sha256": "79d749bfab610da051dddcfce1273db2608f135b573ae957ed64f36cb9403428",
+      "bytes": 12822500
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-1/firmware.json": {
+      "sha256": "44ccaa8686ff743d6ac391f9374f9a9c47fa0ad32fbc4f6b5d659e7b93aec2b9",
+      "bytes": 5462
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/sketch/m5pm1_m5ioe1_2/m5pm1_m5ioe1_2.ino": {
+      "sha256": "2f11fa7a8c2c02879097a80db25347494af497c1cc13d45aa190889a2e9328c5",
+      "bytes": 2859
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/migration.ino.bin": {
+      "sha256": "86d2dfa1352315b2d7fee1f252cac7080603dc5770bc113872f99eaeaf4ac374",
+      "bytes": 646528
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/migration.ino.merged.bin": {
+      "sha256": "ae25e7ff6594d2c14a8669c00d8510ca6becda113c9f2e1fd7ffc4baafa5ba7e",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/migration.ino.elf": {
+      "sha256": "0d8a13d1e5667371f0ba3c9c1c1287520478efb5b969ac7b8adc47c7de63552f",
+      "bytes": 13178072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-2/firmware.json": {
+      "sha256": "1def740df688000da48994e721799a5390b1823a5068136dbac4238e7ee29322",
+      "bytes": 5434
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/sketch/m5pm1_m5ioe1_3/m5pm1_m5ioe1_3.ino": {
+      "sha256": "1b83a2e1d3e20ca2681e1c2297b19a82a7726baae99bb54674b948f71bc6bcef",
+      "bytes": 4209
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/migration.ino.bin": {
+      "sha256": "87bc2d309a5fc5365b033105ee6be6f2e01388edd6dc9acf5419938e5ea61204",
+      "bytes": 649376
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/migration.ino.merged.bin": {
+      "sha256": "2eb7d1b5235c6c2bd09bae548037d9974f67fa644a03904220bdd2a28e15657b",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/migration.ino.elf": {
+      "sha256": "161474da5ad9067a9bc708de5d79447f2b598e5540ebcb8fa398252399222f2c",
+      "bytes": 13180464
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-3/firmware.json": {
+      "sha256": "c5352cd06dbdddbfa8789cbc35c87a0a740d38ff36eab2b30bb7d7837143c157",
+      "bytes": 5417
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/sketch/m5pm1_m5ioe1_4/m5pm1_m5ioe1_4.ino": {
+      "sha256": "3e9a9953c34a375cb756aa80afb1533b8461d8a9e8091cd1214446223ef5d0b3",
+      "bytes": 1502
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/migration.ino.bin": {
+      "sha256": "f2e19b82e8656ac38e5d2346ad98bcea77c8b0151750c749664432e8e89c4f93",
+      "bytes": 623584
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/migration.ino.merged.bin": {
+      "sha256": "560ebdd9a68670e10256c4801fafad9fb76130cef30129722cd086624c628494",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/migration.ino.elf": {
+      "sha256": "7d772a28d0ca067f9ec9ff26fa794461079a1b2af229a5ed0c185f7936f84dda",
+      "bytes": 12830996
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-4/firmware.json": {
+      "sha256": "f1aaa6783dd79ef04412c8c2af86887325e70779ad88db565dfbaed9a92689b5",
+      "bytes": 5429
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/sketch/m5pm1_m5ioe1_5/m5pm1_m5ioe1_5.ino": {
+      "sha256": "70ff1fd4989ef230eac4f0d904efd9624aa10827f306e47489abb9fbb50e0ceb",
+      "bytes": 2565
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/migration.ino.bin": {
+      "sha256": "fb749026d28dc57dc5ed09a75d2e2eb487045dc680134529e418fc453d47d17d",
+      "bytes": 626288
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/migration.ino.merged.bin": {
+      "sha256": "1391191aad316f71148d7551f9d4e9dfaf7259a012d3d8f9bc1ed9c242c57542",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/migration.ino.elf": {
+      "sha256": "24b9dfdbc55c0206bdd9aafc767bb0d6477f595643c70fe4615b68b9eebd4fe3",
+      "bytes": 12832876
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-5/firmware.json": {
+      "sha256": "139eab7f6ac87785c34e016acc7af2a6d596ad99fd9643b407581d4f386cbb6f",
+      "bytes": 5417
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/sketch/m5pm1_m5ioe1_6/m5pm1_m5ioe1_6.ino": {
+      "sha256": "c3da106ea73418682ca869d5917fe69f18821d767961e9c410cdd5de1b36f2cd",
+      "bytes": 3469
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/migration.ino.bin": {
+      "sha256": "5183f49cadd9932574b1799d0e7c4cf48ec5c8975a9750ee2dca5fc3a7ccfbca",
+      "bytes": 659712
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/migration.ino.merged.bin": {
+      "sha256": "8903056e80af79edb13c3c260d3543664572d872ab1bdc7430e812c7a5af1ab3",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/migration.ino.elf": {
+      "sha256": "dc6339085a57380d412ceefc9c2a2e9f40b032ebd934f05b41c372477080dd6e",
+      "bytes": 13228268
+    },
+    "devices/stopwatch/arduino-docs/m5pm1_m5ioe1-6/firmware.json": {
+      "sha256": "43a67d4c2a3e0a50234a2f9822b4aa248e7764f7b33588e83bec94a6a73bced3",
+      "bytes": 6929
+    },
+    "devices/stopwatch/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "2d0727685ac6ff2f3d45b88c0059d1288925a5a0ce4c7fb0aa58dd87688ee9d6",
+      "bytes": 3947
+    },
+    "devices/stopwatch/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "96348a90d747e65bed1025c9dee25ecd7dc445129f62ea0de05b69680e384cc0",
+      "bytes": 625888
+    },
+    "devices/stopwatch/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "9bc78a25901c66844477b7ff0217aa22d61bc2be8f46e4d4cf453ac344432c36",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "ee8725b97adc3b9f0401c54ebf948c43826c21b78dc5f672673f84bde23974ba",
+      "bytes": 12759748
+    },
+    "devices/stopwatch/arduino-docs/mic/firmware.json": {
+      "sha256": "a8c76378318ee5e4e1077997fc04840c61be5193aa42ee596192837c5f67ec5d",
+      "bytes": 9498
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/sketch/rtc_1/rtc_1.ino": {
+      "sha256": "2c9d7332707503c2e29a90f69a35e4998dffc30b620056724460cccff062b387",
+      "bytes": 1230
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/migration.ino.bin": {
+      "sha256": "295d8e045291c67aa35e39c74c49a6d18ce791c2a21cd42bc73c116f0d606c23",
+      "bytes": 597360
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/migration.ino.merged.bin": {
+      "sha256": "c3a766b1298fbf4f26e44327d4859054ec471aaca7b566dd7a1207444f0a2b3d",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/migration.ino.elf": {
+      "sha256": "7d9a82e4743e1b4ee2a56819f32aa39841606d141bc66def4cd5a6e4006a9fc3",
+      "bytes": 12491968
+    },
+    "devices/stopwatch/arduino-docs/rtc-1/firmware.json": {
+      "sha256": "3312393fea2243a4acdeb6a812f4d74d010f441566ecc8feab0bc2d709792d88",
+      "bytes": 5734
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/sketch/rtc_2/rtc_2.ino": {
+      "sha256": "c44491b16a5b3ede29b5a0dee00c1b36afb1daf5c20dce16774d257e4a65f8a0",
+      "bytes": 3589
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/migration.ino.bin": {
+      "sha256": "08ab4c527ce1c6102a71d5fdcdecd7088833d8020f47e927f6a36c12457fee94",
+      "bytes": 1150976
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/migration.ino.merged.bin": {
+      "sha256": "ce53d33b70ae855099bb520e001515c88af651a7066dc1b2bdad55b64fd659ed",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/migration.ino.elf": {
+      "sha256": "cae5d66e5f2c37b471418e8a193af7246fb5e6a65e6e0b4f9455b811a6b03788",
+      "bytes": 17856184
+    },
+    "devices/stopwatch/arduino-docs/rtc-2/firmware.json": {
+      "sha256": "ad4d25e4a88a1db239e57b70fb1d2679c74f7e410ed67a1c72bbfd7df3214bef",
+      "bytes": 5739
+    },
+    "devices/stopwatch/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "a8a486367d5a1914a6ecff75fb97d753eb1e1394f673e8447ce460e74d2156d9",
+      "bytes": 458
+    },
+    "devices/stopwatch/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "e13a5ab6b813c0b0f87f877639548e22ad6280edf8507b75012213eebac8f09e",
+      "bytes": 617856
+    },
+    "devices/stopwatch/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "8323ecd75ab2a2bf088f0effb67ffc04d2cbf88e37539a21da42159a6168ca6d",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "1e512b813382561b65c41efdb81dfb6193bcea92ad288387189138feb76b4ade",
+      "bytes": 12687984
+    },
+    "devices/stopwatch/arduino-docs/speaker/firmware.json": {
+      "sha256": "4dfd6d9636928bf3899684bc92a150035c438a41c8673809a22c41148dd5221c",
+      "bytes": 6084
+    },
+    "devices/stopwatch/arduino-docs/touch-1/sketch/touch_1/touch_1.ino": {
+      "sha256": "59c27520294d5659391135b5d42ceae5e63f2ed8dda4cf314b634d559a609c1e",
+      "bytes": 1520
+    },
+    "devices/stopwatch/arduino-docs/touch-1/migration.ino.bin": {
+      "sha256": "b759008610fc6e771fab5c9ebe0b30a1edf8e0b5d2379f0e36010024af33bc17",
+      "bytes": 600624
+    },
+    "devices/stopwatch/arduino-docs/touch-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/touch-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/touch-1/migration.ino.merged.bin": {
+      "sha256": "afb70a130c1a4930d2d2ec21171015f762f243ec5533c12d0ebb066d3173fe93",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/touch-1/migration.ino.elf": {
+      "sha256": "236af1d932a4f34d2154e9c73357d79519fb5b16f9e465a3446e580b2e2743bb",
+      "bytes": 12496780
+    },
+    "devices/stopwatch/arduino-docs/touch-1/firmware.json": {
+      "sha256": "20da9b015eee9f6e07692a2587876c188ca7db039ca15fb0971167d7994c6faa",
+      "bytes": 6121
+    },
+    "devices/stopwatch/arduino-docs/touch-2/sketch/touch_2/touch_2.ino": {
+      "sha256": "1c2f19523f260eb6f7c5bc3dd97b59df8cedd7ba9e5452b04651a4c44a9596f8",
+      "bytes": 853
+    },
+    "devices/stopwatch/arduino-docs/touch-2/migration.ino.bin": {
+      "sha256": "3347477d1eff2f01fdef900a69f764fa5665b70c30251fb3c0202b26039bd8a6",
+      "bytes": 598528
+    },
+    "devices/stopwatch/arduino-docs/touch-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/touch-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/touch-2/migration.ino.merged.bin": {
+      "sha256": "3979dc4096b82a6ffbbadc5a6632df544e70c57767a0a889f8b0f9a61f305421",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/touch-2/migration.ino.elf": {
+      "sha256": "f8cdb21b82d5221c257538763e6d225a80dbc209db9106761c471417ce2fec01",
+      "bytes": 12491116
+    },
+    "devices/stopwatch/arduino-docs/touch-2/firmware.json": {
+      "sha256": "a744d39b7e85ed92aa0f1ce6b0f2eb8447094130db7c668d9ab60242efde8cab",
+      "bytes": 6515
+    },
+    "devices/stopwatch/arduino-docs/vibration/sketch/vibration/vibration.ino": {
+      "sha256": "ee41925c2135e7416804f664c79b2d3be176f68b272ef4ce5c6e71773b7e31fe",
+      "bytes": 720
+    },
+    "devices/stopwatch/arduino-docs/vibration/migration.ino.bin": {
+      "sha256": "00609ef9bb23c97e55344ff0ec7920c122cc3a241f8a3e55e2badff5ecf054ac",
+      "bytes": 597456
+    },
+    "devices/stopwatch/arduino-docs/vibration/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/vibration/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/vibration/migration.ino.merged.bin": {
+      "sha256": "68fdee8116002dfb4616e2e98b6b7273a61883d3623239a4ae0ef35aa84d7361",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/vibration/migration.ino.elf": {
+      "sha256": "a129ce03f02d1ca582c54eee4e5ad883f81710b887c5a42921c41eb0f44567b2",
+      "bytes": 12491564
+    },
+    "devices/stopwatch/arduino-docs/vibration/firmware.json": {
+      "sha256": "30a4a7391e3fd74ec10d322e58e491a82047fc571b0530d4f16690aa6785c411",
+      "bytes": 5418
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino": {
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.bin": {
+      "sha256": "1b05d53b9684e4a9a5f7bf8961217d632a3b07793eb31ba9cc5c875da0780828",
+      "bytes": 522240
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.merged.bin": {
+      "sha256": "beb467f6f65749b4656fabe39a570ab5d8e208b4b2dc6a1d8439202d7a5e39f0",
+      "bytes": 16777216
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.elf": {
+      "sha256": "beaa1e4671647cf617b3b10d57f9994c4e9b5f148cce077c2e69b4170c6c5a93",
+      "bytes": 11035152
+    },
+    "devices/stopwatch/arduino-docs/quickstart-bargraph/firmware.json": {
+      "sha256": "5e546ed4ce0272de131d0b6f12350f3b48e3bfa74f772cb6d0b1c1df70485189",
+      "bytes": 5967
     }
   },
   "local_files": {
@@ -13824,7 +14904,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 193,
+    "published_cases": 211,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

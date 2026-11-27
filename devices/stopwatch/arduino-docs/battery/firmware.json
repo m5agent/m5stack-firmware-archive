@@ -1,0 +1,162 @@
+{
+  "device_id": "stopwatch",
+  "case": "battery",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/battery",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stopwatch/battery.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "2e2c520f2b6a44d426098b92cce748b2792579a0b04dafbdd3b108bd3a67b688",
+  "expected_behavior": "StopWatch Battery Status. Inject two battery values and compare the documented voltage/percentage and charge indications.",
+  "sketch_files": {
+    "battery.ino": {
+      "path": "devices/stopwatch/arduino-docs/battery/sketch/battery/battery.ino",
+      "storage": "public",
+      "sha256": "2e2c520f2b6a44d426098b92cce748b2792579a0b04dafbdd3b108bd3a67b688",
+      "bytes": 2836
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3:PSRAM=opi",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stopwatch/arduino-docs/battery/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "0bdc4aa025064b3fda7ddf4f48c58d23128017bd0af64aa72e6d21c5da35320a",
+      "bytes": 634656
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stopwatch/arduino-docs/battery/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stopwatch/arduino-docs/battery/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stopwatch/arduino-docs/battery/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "569f39e8b59fb25f5b2474c80a8eb35e98f2485dfbf565c436215ff42bb4e37a",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stopwatch/arduino-docs/battery/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "032d5f3184d4278bd6682837197066cb1b6e00a18e8dedfa4524d4d3e8b2ce08",
+      "bytes": 12939152
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "31a4268b7d826858ab8cfc54843c45e93a3b2681798c8c278e70b0d04c6725e7",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "569f39e8b59fb25f5b2474c80a8eb35e98f2485dfbf565c436215ff42bb4e37a",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stopwatch"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stopwatch",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/stopwatch.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "idle and both sensor inputs produced distinct states"
+        },
+        "capture_comparison": {
+          "battery-first.png": {
+            "original": {
+              "png_sha256": "d664146b2b84cfef46dc215800f30bb34337df5b385d194c2ab597a2c6f2759d"
+            },
+            "rebuilt": {
+              "png_sha256": "d664146b2b84cfef46dc215800f30bb34337df5b385d194c2ab597a2c6f2759d"
+            },
+            "byte_identical": true
+          },
+          "battery-idle.png": {
+            "original": {
+              "png_sha256": "f64ea2ae434913329d16cad99aa0d210b8b9cd4bf1cfbe43e89f5a573c03adc3"
+            },
+            "rebuilt": {
+              "png_sha256": "f64ea2ae434913329d16cad99aa0d210b8b9cd4bf1cfbe43e89f5a573c03adc3"
+            },
+            "byte_identical": true
+          },
+          "battery.png": {
+            "original": {
+              "png_sha256": "4a83bde7aceff251481beaa03edd1a0932ec83d98d0d70838c3d62bbd1a4762b"
+            },
+            "rebuilt": {
+              "png_sha256": "4a83bde7aceff251481beaa03edd1a0932ec83d98d0d70838c3d62bbd1a4762b"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (320 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (877 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2140 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

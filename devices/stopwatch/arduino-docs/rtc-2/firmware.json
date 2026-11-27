@@ -1,0 +1,153 @@
+{
+  "device_id": "stopwatch",
+  "case": "rtc-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/rtc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stopwatch/rtc.md",
+    "section": "SNTP Network Time",
+    "code_first_line": 66
+  },
+  "sketch_sha256": "c44491b16a5b3ede29b5a0dee00c1b36afb1daf5c20dce16774d257e4a65f8a0",
+  "expected_behavior": "StopWatch RTC. Verify RTC read/write and progression. Cases with network configuration also verify sandboxed NTP.",
+  "sketch_files": {
+    "rtc_2.ino": {
+      "path": "devices/stopwatch/arduino-docs/rtc-2/sketch/rtc_2/rtc_2.ino",
+      "storage": "public",
+      "sha256": "c44491b16a5b3ede29b5a0dee00c1b36afb1daf5c20dce16774d257e4a65f8a0",
+      "bytes": 3589
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3:PSRAM=opi",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stopwatch/arduino-docs/rtc-2/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "08ab4c527ce1c6102a71d5fdcdecd7088833d8020f47e927f6a36c12457fee94",
+      "bytes": 1150976
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stopwatch/arduino-docs/rtc-2/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stopwatch/arduino-docs/rtc-2/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stopwatch/arduino-docs/rtc-2/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ce53d33b70ae855099bb520e001515c88af651a7066dc1b2bdad55b64fd659ed",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stopwatch/arduino-docs/rtc-2/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "cae5d66e5f2c37b471418e8a193af7246fb5e6a65e6e0b4f9455b811a6b03788",
+      "bytes": 17856184
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "d2ccb4a6d5f948291936771b1996431aa88f030b87f6fa9f227ce6efafcbf179",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ce53d33b70ae855099bb520e001515c88af651a7066dc1b2bdad55b64fd659ed",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stopwatch"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stopwatch",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/stopwatch.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "RTC calendar advances in the guest"
+        },
+        "capture_comparison": {
+          "rtc-2-early.png": {
+            "original": {
+              "png_sha256": "bcad32a7538df05fd6c797eb42cb0415654d480d678d1d23a18775ddca579d31"
+            },
+            "rebuilt": {
+              "png_sha256": "bcad32a7538df05fd6c797eb42cb0415654d480d678d1d23a18775ddca579d31"
+            },
+            "byte_identical": true
+          },
+          "rtc-2.png": {
+            "original": {
+              "png_sha256": "1eda394ef417b3df0074e884699e88a37f9cf848e48d73b85332c1d581a5efe7"
+            },
+            "rebuilt": {
+              "png_sha256": "1eda394ef417b3df0074e884699e88a37f9cf848e48d73b85332c1d581a5efe7"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (477 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (168 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (1502 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (3237 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

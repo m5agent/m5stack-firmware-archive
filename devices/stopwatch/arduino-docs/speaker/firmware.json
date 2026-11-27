@@ -1,0 +1,159 @@
+{
+  "device_id": "stopwatch",
+  "case": "speaker",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/speaker",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stopwatch/speaker.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 14
+  },
+  "sketch_sha256": "a8a486367d5a1914a6ecff75fb97d753eb1e1394f673e8447ce460e74d2156d9",
+  "expected_behavior": "StopWatch Speaker. Verify the emitted tones or raw PCM on the board audio route.",
+  "sketch_files": {
+    "speaker.ino": {
+      "path": "devices/stopwatch/arduino-docs/speaker/sketch/speaker/speaker.ino",
+      "storage": "public",
+      "sha256": "a8a486367d5a1914a6ecff75fb97d753eb1e1394f673e8447ce460e74d2156d9",
+      "bytes": 458
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3:PSRAM=opi",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stopwatch/arduino-docs/speaker/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "e13a5ab6b813c0b0f87f877639548e22ad6280edf8507b75012213eebac8f09e",
+      "bytes": 617856
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stopwatch/arduino-docs/speaker/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stopwatch/arduino-docs/speaker/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stopwatch/arduino-docs/speaker/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "8323ecd75ab2a2bf088f0effb67ffc04d2cbf88e37539a21da42159a6168ca6d",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stopwatch/arduino-docs/speaker/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "1e512b813382561b65c41efdb81dfb6193bcea92ad288387189138feb76b4ade",
+      "bytes": 12687984
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "5b54543b8679945f1ecd4a6211009127cd017e5bd19adc8f1fe90ff3bb78281b",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "8323ecd75ab2a2bf088f0effb67ffc04d2cbf88e37539a21da42159a6168ca6d",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stopwatch"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stopwatch",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/stopwatch.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "I2S output contains 10000 Hz and 4000 Hz tones"
+        },
+        "capture_comparison": {
+          "speaker-output.wav": {
+            "original": {
+              "wav_sha256": "cd267327808dfafa4c24a9360d9e26b070799a86b4d29a3df2c777dfaedc2bcf",
+              "pcm_sha256": "61af338e4eaa5f65a5b9bdb14d8028ebb97c073c7053880eeeea7cf27b8064b8",
+              "frames": 190616,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "f697b2c79243e69ea7f85ea5a012bcbffef4d1d951cc430a294f93fc24193f45",
+              "pcm_sha256": "45ed6e3f3acb7260d2e008b05bbd238b2aa2c24d059e716056343b7b2ea7f02a",
+              "frames": 190617,
+              "sample_rate": 44100
+            },
+            "byte_identical": false
+          },
+          "speaker.png": {
+            "original": {
+              "png_sha256": "8c45cca2a0788ed9b8137df38ad2138fc56bf51eb9f179972f3fec739c298b88"
+            },
+            "rebuilt": {
+              "png_sha256": "8c45cca2a0788ed9b8137df38ad2138fc56bf51eb9f179972f3fec739c298b88"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (878 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2152 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

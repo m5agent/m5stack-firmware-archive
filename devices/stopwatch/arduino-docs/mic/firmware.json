@@ -1,0 +1,237 @@
+{
+  "device_id": "stopwatch",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stopwatch/mic.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 12
+  },
+  "sketch_sha256": "2d0727685ac6ff2f3d45b88c0059d1288925a5a0ce4c7fb0aa58dd87688ee9d6",
+  "expected_behavior": "StopWatch Mic. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/stopwatch/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "2d0727685ac6ff2f3d45b88c0059d1288925a5a0ce4c7fb0aa58dd87688ee9d6",
+      "bytes": 3947
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3:PSRAM=opi",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stopwatch/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "96348a90d747e65bed1025c9dee25ecd7dc445129f62ea0de05b69680e384cc0",
+      "bytes": 625888
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stopwatch/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stopwatch/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stopwatch/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "9bc78a25901c66844477b7ff0217aa22d61bc2be8f46e4d4cf453ac344432c36",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stopwatch/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "ee8725b97adc3b9f0401c54ebf948c43826c21b78dc5f672673f84bde23974ba",
+      "bytes": 12759748
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "fec38afa5ceda6cb9b66a4a8366401533af100fcaebaaf11599edd91df7a66ac",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "9bc78a25901c66844477b7ff0217aa22d61bc2be8f46e4d4cf453ac344432c36",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stopwatch"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stopwatch",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/stopwatch.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "733 Hz and 997 Hz both reach the speaker and the silent control stays quiet"
+        },
+        "capture_comparison": {
+          "mic-alt-output.wav": {
+            "original": {
+              "wav_sha256": "87a2d627f7fe2a22bda78555187e289c2e342cacd45a9ea67589da3dff482bd1",
+              "pcm_sha256": "7a43ddc5c2dae045ac7faadc2f555fc1f39a215c7844e1c687aa5c05a77d3597",
+              "frames": 161025,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "87a2d627f7fe2a22bda78555187e289c2e342cacd45a9ea67589da3dff482bd1",
+              "pcm_sha256": "7a43ddc5c2dae045ac7faadc2f555fc1f39a215c7844e1c687aa5c05a77d3597",
+              "frames": 161025,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          },
+          "mic-alt.png": {
+            "original": {
+              "png_sha256": "630cdfbeec88dc4861afe54b2bf4a26f70770a11ede4e318322803290f9d1f0e"
+            },
+            "rebuilt": {
+              "png_sha256": "630cdfbeec88dc4861afe54b2bf4a26f70770a11ede4e318322803290f9d1f0e"
+            },
+            "byte_identical": true
+          },
+          "mic-alt.wav": {
+            "original": {
+              "wav_sha256": "099566985afe172833069eab6150a0e8fbbe59df138cc4199ae4f542e0870628",
+              "pcm_sha256": "3a1a9d363d87bebd447bd52cf91df2225a03bc0d900700ca56fe544d43fad448",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "rebuilt": {
+              "wav_sha256": "099566985afe172833069eab6150a0e8fbbe59df138cc4199ae4f542e0870628",
+              "pcm_sha256": "3a1a9d363d87bebd447bd52cf91df2225a03bc0d900700ca56fe544d43fad448",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "byte_identical": true
+          },
+          "mic-output.wav": {
+            "original": {
+              "wav_sha256": "77d6cf9ca16cb609f7c5161ef4a81c7cf538e83c5a9c2bc66f836865d2690c37",
+              "pcm_sha256": "40dd8fa68704437334c367f5706c7eeb1c810c06a6afec372508e641e114e795",
+              "frames": 161025,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "77d6cf9ca16cb609f7c5161ef4a81c7cf538e83c5a9c2bc66f836865d2690c37",
+              "pcm_sha256": "40dd8fa68704437334c367f5706c7eeb1c810c06a6afec372508e641e114e795",
+              "frames": 161025,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          },
+          "mic-silent-output.wav": {
+            "original": {
+              "wav_sha256": "48c9b9a89a4827b01b13dcfcd61e79c01527ca77a840b64ab97dd8e1e789b45c",
+              "pcm_sha256": "28e8fba549f43671edd4a871da1c1516c97f89f11d89b30eab086e43afcdf980",
+              "frames": 161025,
+              "sample_rate": 44100
+            },
+            "rebuilt": {
+              "wav_sha256": "48c9b9a89a4827b01b13dcfcd61e79c01527ca77a840b64ab97dd8e1e789b45c",
+              "pcm_sha256": "28e8fba549f43671edd4a871da1c1516c97f89f11d89b30eab086e43afcdf980",
+              "frames": 161025,
+              "sample_rate": 44100
+            },
+            "byte_identical": true
+          },
+          "mic-silent.png": {
+            "original": {
+              "png_sha256": "630cdfbeec88dc4861afe54b2bf4a26f70770a11ede4e318322803290f9d1f0e"
+            },
+            "rebuilt": {
+              "png_sha256": "630cdfbeec88dc4861afe54b2bf4a26f70770a11ede4e318322803290f9d1f0e"
+            },
+            "byte_identical": true
+          },
+          "mic.png": {
+            "original": {
+              "png_sha256": "630cdfbeec88dc4861afe54b2bf4a26f70770a11ede4e318322803290f9d1f0e"
+            },
+            "rebuilt": {
+              "png_sha256": "630cdfbeec88dc4861afe54b2bf4a26f70770a11ede4e318322803290f9d1f0e"
+            },
+            "byte_identical": true
+          },
+          "mic.wav": {
+            "original": {
+              "wav_sha256": "18cffd89141440ef9c8e597305b1e0230078d57aa83462322637b3e901da8d88",
+              "pcm_sha256": "d476dd9c779437a57b7e020c3b17f1075452ac41edf08f5137702068101a6956",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "rebuilt": {
+              "wav_sha256": "18cffd89141440ef9c8e597305b1e0230078d57aa83462322637b3e901da8d88",
+              "pcm_sha256": "d476dd9c779437a57b7e020c3b17f1075452ac41edf08f5137702068101a6956",
+              "frames": 204000,
+              "sample_rate": 17000
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (882 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2168 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

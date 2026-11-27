@@ -1,0 +1,155 @@
+{
+  "device_id": "stopwatch",
+  "case": "quickstart-bargraph",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/stopwatch/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/stopwatch/program.md",
+    "section": "4. Program Compile & Upload",
+    "section_line": 27
+  },
+  "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+  "expected_behavior": "Display animated colored bar graph on the board framebuffer.",
+  "sketch_files": {
+    "quickstart_bargraph.ino": {
+      "path": "devices/stopwatch/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino",
+      "storage": "public",
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_cores3:PSRAM=opi",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5GFX",
+  "library_example": "examples/Basic/BarGraph/BarGraph.ino",
+  "library_source_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "1b05d53b9684e4a9a5f7bf8961217d632a3b07793eb31ba9cc5c875da0780828",
+      "bytes": 522240
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "beb467f6f65749b4656fabe39a570ab5d8e208b4b2dc6a1d8439202d7a5e39f0",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/stopwatch/arduino-docs/quickstart-bargraph/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "beaa1e4671647cf617b3b10d57f9994c4e9b5f148cce077c2e69b4170c6c5a93",
+      "bytes": 11035152
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "0165609f74eae7a94a4edaedebb9d4a487e593c73df92815cc986a757b051ec9",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "beb467f6f65749b4656fabe39a570ab5d8e208b4b2dc6a1d8439202d7a5e39f0",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stopwatch"
+      ],
+      "run_commands": [
+        "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stopwatch",
+        "run_command": "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR",
+          "GIT_DIR": "$SIM_SRC/.git",
+          "GIT_WORK_TREE": "$SIM_SRC",
+          "S3B_FIRMWARE_DIR": "$FIRMWARE_DIR",
+          "S3B_SOURCE_REV": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+          "S3B_STOCK_IMAGE": "$FIXTURES_DIR/agent-s3b/downloads/stopwatch.bin"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "verdict": "PASS",
+          "reason": "display contains multicolor drawing and changes over time"
+        },
+        "capture_comparison": {
+          "quickstart-bargraph-early.png": {
+            "original": {
+              "png_sha256": "5fcdf1cbb3c47ccac6cb87e354e599e244feebfc6e52c7567be3ac0d6c22750d"
+            },
+            "rebuilt": {
+              "png_sha256": "5fcdf1cbb3c47ccac6cb87e354e599e244feebfc6e52c7567be3ac0d6c22750d"
+            },
+            "byte_identical": true
+          },
+          "quickstart-bargraph.png": {
+            "original": {
+              "png_sha256": "8e1b8cc168efe534ffe0d4810b12851bd2f462ffbd24fd1b277d1ba2362ae7d4"
+            },
+            "rebuilt": {
+              "png_sha256": "8e1b8cc168efe534ffe0d4810b12851bd2f462ffbd24fd1b277d1ba2362ae7d4"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (308 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (137 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (848 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2048 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
