@@ -17,12 +17,6 @@
       "storage": "public",
       "sha256": "54f018e1bd97cb7eab56fa80266ae8fc8286f9dc7187c62a63fb2fc0eefcf55e",
       "bytes": 2765
-    },
-    "chocobo.c": {
-      "path": "devices/atom-echo/arduino-docs/quickstart-playmusic/sketch/quickstart_playmusic/chocobo.c",
-      "storage": "public",
-      "sha256": "190690547728f7b54368534fc14014859609371d9818fd738bd6d00a04108dd5",
-      "bytes": 7373570
     }
   },
   "source_type": "library",
@@ -49,5 +43,9 @@
   "validation": {
     "status": "NOT RUN",
     "reason": "Original sketch did not compile."
+  },
+  "upstream_companion": {
+    "path": "examples/Echo/PlayMusic/chocobo.c",
+    "sha256": "190690547728f7b54368534fc14014859609371d9818fd738bd6d00a04108dd5"
   }
 }

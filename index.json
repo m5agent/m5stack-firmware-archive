@@ -2024,13 +2024,9 @@
       "sha256": "54f018e1bd97cb7eab56fa80266ae8fc8286f9dc7187c62a63fb2fc0eefcf55e",
       "bytes": 2765
     },
-    "devices/atom-echo/arduino-docs/quickstart-playmusic/sketch/quickstart_playmusic/chocobo.c": {
-      "sha256": "190690547728f7b54368534fc14014859609371d9818fd738bd6d00a04108dd5",
-      "bytes": 7373570
-    },
     "devices/atom-echo/arduino-docs/quickstart-playmusic/firmware.json": {
-      "sha256": "6972d2d1430265ccbd16ffa41e497bfd87865541b5a4bdf6f2593aeeb93f82e8",
-      "bytes": 2062
+      "sha256": "b0f6ae49038555e9677e1f3437a2e151f36c33ef6b39b16dd7435007d01625d1",
+      "bytes": 1956
     },
     "devices/atom-echo/arduino-docs/quickstart-recordplay/sketch/quickstart_recordplay/quickstart_recordplay.ino": {
       "sha256": "26c9824965a70a98befe11edf159e256ceebdf5deeb1d0a75806375b6bfa3f49",
