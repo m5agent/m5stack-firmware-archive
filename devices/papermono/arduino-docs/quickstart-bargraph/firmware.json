@@ -1,0 +1,160 @@
+{
+  "device_id": "papermono",
+  "case": "quickstart-bargraph",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papermono/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papermono/program.md",
+    "section": "4. Program Compile & Upload",
+    "section_line": 28
+  },
+  "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+  "expected_behavior": "Display animated colored bar graph on the board framebuffer.",
+  "sketch_files": {
+    "quickstart_bargraph.ino": {
+      "path": "devices/papermono/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino",
+      "storage": "public",
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5GFX",
+  "library_example": "examples/Basic/BarGraph/BarGraph.ino",
+  "library_source_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "c6f28b78c52e61d9307f2e5bd0b6be741229ba7913acc32f23eb1172049ef3cf",
+      "bytes": 522224
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "a66967fd3743a2d966cbbff5b24bb8500b815a2ee92c8e3a7db1869f7a4969ba",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "997154066d54ad920097d128c30f2fc12f7d6d019b939ac184ecd97228b975ed",
+      "bytes": 11031248
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "523fe5f2743dcd8386094ca47928a1c493dbd9c773d46335202c2279c399b653",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "a66967fd3743a2d966cbbff5b24bb8500b815a2ee92c8e3a7db1869f7a4969ba",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papermono"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papermono",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "quickstart-bargraph",
+          "verdict": "PASS",
+          "reason": "White markers and quantized bars animate over a black background"
+        },
+        "capture_comparison": {
+          "quickstart-bargraph-early.png": {
+            "original": {
+              "png_sha256": "d4589d75cae5dd4ba58e3452c4a08a0e96c1c2954fe83070dd8284b8c27e8f0c"
+            },
+            "rebuilt": {
+              "png_sha256": "d4589d75cae5dd4ba58e3452c4a08a0e96c1c2954fe83070dd8284b8c27e8f0c"
+            },
+            "byte_identical": true
+          },
+          "quickstart-bargraph-first.png": {
+            "original": {
+              "png_sha256": "8b774045dc7ceac92f8d8e4d3962a63bf81779a5a0a360860140347a6d3f6b06"
+            },
+            "rebuilt": {
+              "png_sha256": "8b774045dc7ceac92f8d8e4d3962a63bf81779a5a0a360860140347a6d3f6b06"
+            },
+            "byte_identical": true
+          },
+          "quickstart-bargraph.png": {
+            "original": {
+              "png_sha256": "413a070485f89b2fea15a2b53daf305696b23749e34c351cb06a1ec0ed6acb44"
+            },
+            "rebuilt": {
+              "png_sha256": "413a070485f89b2fea15a2b53daf305696b23749e34c351cb06a1ec0ed6acb44"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (308 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (137 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (848 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2048 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

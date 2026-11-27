@@ -1,0 +1,148 @@
+{
+  "device_id": "papermono",
+  "case": "m5pm1_m5ioe1-4",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+    "section": "Waking the M5PM1 with the RTC",
+    "code_first_line": 441
+  },
+  "sketch_sha256": "a6e9ce737c5c680f1fc23d71b6c3695fc9f26f968900891e9dc3443de11828d5",
+  "expected_behavior": "PaperMono M5PM1 & M5IOE1 Power Management. Exercise PMIC and GPIO expander reads/writes and verify register-backed state and interrupts.",
+  "sketch_files": {
+    "m5pm1_m5ioe1_4.ino": {
+      "path": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/sketch/m5pm1_m5ioe1_4/m5pm1_m5ioe1_4.ino",
+      "storage": "public",
+      "sha256": "a6e9ce737c5c680f1fc23d71b6c3695fc9f26f968900891e9dc3443de11828d5",
+      "bytes": 1573
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "a2cc03fff3c0b981bbde3925e874b706fb3fd5d2570e04ede4364784b826c499",
+      "bytes": 625488
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "dcb52a1983cc54b3d9362452c9d7dd175812ae965abbf5c63e1f7c7eb690bec3",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "ba66a773dc3e6dbe377b83622c96e0b1501115cc4b7fdb2ad424a90d14c81d8b",
+      "bytes": 12827144
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "0e8cae8f0e87b5bfaf23b3337418150c70bacd533fc4b270bcf786a6aae38c93",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "dcb52a1983cc54b3d9362452c9d7dd175812ae965abbf5c63e1f7c7eb690bec3",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papermono"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papermono",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "m5pm1_m5ioe1-4",
+          "verdict": "PASS",
+          "reason": "Wake source restored the simulated power rail and restarted the guest"
+        },
+        "capture_comparison": {
+          "m5pm1_m5ioe1-4-control.png": {
+            "original": {
+              "png_sha256": "5a7f5047dd485118857efdbe37d3040daee44531a26f1e83001a6cc3042a7c41"
+            },
+            "rebuilt": {
+              "png_sha256": "5a7f5047dd485118857efdbe37d3040daee44531a26f1e83001a6cc3042a7c41"
+            },
+            "byte_identical": true
+          },
+          "m5pm1_m5ioe1-4.png": {
+            "original": {
+              "png_sha256": "5a7f5047dd485118857efdbe37d3040daee44531a26f1e83001a6cc3042a7c41"
+            },
+            "rebuilt": {
+              "png_sha256": "5a7f5047dd485118857efdbe37d3040daee44531a26f1e83001a6cc3042a7c41"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (314 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (860 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2083 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

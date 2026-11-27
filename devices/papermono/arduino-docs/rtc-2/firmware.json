@@ -1,0 +1,149 @@
+{
+  "device_id": "papermono",
+  "case": "rtc-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papermono/rtc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papermono/rtc.md",
+    "section": "SNTP Network Time",
+    "code_first_line": 108
+  },
+  "sketch_sha256": "f9fa0bb79480878ac33128a8be6f77de7aa7e255dfd1e74815cb0e5043b2099d",
+  "expected_behavior": "PaperMono RTC Real-Time Clock. Verify RTC read/write and progression. Cases with network configuration also verify sandboxed NTP.",
+  "sketch_files": {
+    "rtc_2.ino": {
+      "path": "devices/papermono/arduino-docs/rtc-2/sketch/rtc_2/rtc_2.ino",
+      "storage": "public",
+      "sha256": "f9fa0bb79480878ac33128a8be6f77de7aa7e255dfd1e74815cb0e5043b2099d",
+      "bytes": 4997
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papermono/arduino-docs/rtc-2/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "a3ceb3cf17190f7e4e2161957620ec6b49fd74df7b8e97c70b7ecfd11d3dcada",
+      "bytes": 1173408
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papermono/arduino-docs/rtc-2/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papermono/arduino-docs/rtc-2/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papermono/arduino-docs/rtc-2/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "1022cf0ded2ac16addd2d9f8bfa37264068ddd34208b3a8cc150e9f0d3e5ae99",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papermono/arduino-docs/rtc-2/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "d7289450e894955851728784b904165c1cdea7aac72d66c94f56b07da5da56a9",
+      "bytes": 17938884
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "3d6f86644ff70eb9c0b0d7346b42a5732f1d095523c7e98794526fcc1efc2b24",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "1022cf0ded2ac16addd2d9f8bfa37264068ddd34208b3a8cc150e9f0d3e5ae99",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papermono"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papermono",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "rtc-2",
+          "verdict": "PASS",
+          "reason": "NTP synchronized RTC, guest read back advancing time, and idle control stayed offline"
+        },
+        "capture_comparison": {
+          "rtc-2-control.png": {
+            "original": {
+              "png_sha256": "9756d1352daae7721a6ac0ff571785da48e38027b95c72f19c87f03b6fd3aeda"
+            },
+            "rebuilt": {
+              "png_sha256": "9756d1352daae7721a6ac0ff571785da48e38027b95c72f19c87f03b6fd3aeda"
+            },
+            "byte_identical": true
+          },
+          "rtc-2.png": {
+            "original": {
+              "png_sha256": "c16aad24a6d360ca6df242d47f1372dd0656d13376929ff8f1eba842a53c2f50"
+            },
+            "rebuilt": {
+              "png_sha256": "c16aad24a6d360ca6df242d47f1372dd0656d13376929ff8f1eba842a53c2f50"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (477 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (164 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (1502 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (3237 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

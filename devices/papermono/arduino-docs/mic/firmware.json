@@ -1,0 +1,158 @@
+{
+  "device_id": "papermono",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papermono/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papermono/mic.md",
+    "section": "Build Requirements",
+    "code_first_line": 15
+  },
+  "sketch_sha256": "ad6b9a50563fd738ce018746c2f8faf69a02ec539c1c95997727c432a5cd290f",
+  "expected_behavior": "PaperMono Microphone. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/papermono/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "ad6b9a50563fd738ce018746c2f8faf69a02ec539c1c95997727c432a5cd290f",
+      "bytes": 8396
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papermono/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "74753c0e492429d5ae35e7f6d83a1a78aae1c050e55d459105956f774f4bd11c",
+      "bytes": 677952
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papermono/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papermono/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papermono/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "1cc281cc3724c01aaafa97b1dc41515f26d8beb0cf7188117b2c50359db75cd5",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papermono/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "e037c98ade69192e9503a5e0bccbc24a3f6f128676816e0b79ca26c7b1c2772a",
+      "bytes": 13178820
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "045ad575eb00b9cd6d929c9d17746d2474611f80bfb3683ffc9100aaa151d348",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "1cc281cc3724c01aaafa97b1dc41515f26d8beb0cf7188117b2c50359db75cd5",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papermono"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papermono",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "mic",
+          "verdict": "PASS",
+          "reason": "Guest microphone RMS tracks both input amplitudes and silence ([1138.7, 4562.3, 0.0])"
+        },
+        "capture_comparison": {
+          "mic-control.png": {
+            "original": {
+              "png_sha256": "2ca94868030c0a6730ac2e7d36958dfd68302ba9b3b8d5fd2d7370453911c5c4"
+            },
+            "rebuilt": {
+              "png_sha256": "2ca94868030c0a6730ac2e7d36958dfd68302ba9b3b8d5fd2d7370453911c5c4"
+            },
+            "byte_identical": true
+          },
+          "mic-second.png": {
+            "original": {
+              "png_sha256": "27cbbaec0f29fc3a54b99de98ab218b4ee6152bc3b24870236dd266dae6cfe24"
+            },
+            "rebuilt": {
+              "png_sha256": "27cbbaec0f29fc3a54b99de98ab218b4ee6152bc3b24870236dd266dae6cfe24"
+            },
+            "byte_identical": true
+          },
+          "mic.png": {
+            "original": {
+              "png_sha256": "1fd8d7222b80fb685d1531cfe6368d2a3ab0497caacd8663ce29e9ff449ee129"
+            },
+            "rebuilt": {
+              "png_sha256": "1fd8d7222b80fb685d1531cfe6368d2a3ab0497caacd8663ce29e9ff449ee129"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (320 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (162 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (882 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2168 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

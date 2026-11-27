@@ -5993,6 +5993,742 @@
           "python3 $SIM_SRC/tools/run-paper-docs.py papercolor $SIM $FIRMWARE_DIR/papercolor $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/paper-sd.img"
         ]
       }
+    },
+    {
+      "device_id": "papermono",
+      "case": "battery",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/battery",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/battery.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "52d5689bef73d631f0588de14df279793dea361f8dc5715210268a2849f75971",
+      "manifest": "devices/papermono/arduino-docs/battery/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "6fd7648d1a1da13a43867d469c5a1a72731742ab735792e70787e1d86d5e257e",
+      "original_build": {
+        "firmware_sha256": "04479a058a8ac2511f2262218f0278262f06e8d26701401dc31d932e89915183",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/button.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "9a3bd4c2dbf0627e42737195ff13eceea7346f49c46a65c9dda774fd95cdfb14",
+      "manifest": "devices/papermono/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "5f82e3706413d85ac6486ff5e9f769bad92983964a78355bd49c65e4127aadda",
+      "original_build": {
+        "firmware_sha256": "d38aed26734f2fa6fef09ad7b32d8b8601bcab8bdf5bff5008549115e7791a46",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "buzzer",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/buzzer",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/buzzer.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "241f1e10573d47146e840ede56f200307c030ce318752631f7f652741e64e666",
+      "manifest": "devices/papermono/arduino-docs/buzzer/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "8898b0c622d08d2e151fff5d8c3c2f2800c0b2117088c4d93bcbeec49afce8b6",
+      "original_build": {
+        "firmware_sha256": "0b21e41374ea0a5b269c3978486697ba67359cd671c57239b7c18c4e6a15374d",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "display-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/display.md",
+        "section": "Basic Display",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "7c3296d06c322b70ff58b2cdb3072a0d0bfea34d3e801b3a2e05bc5073832297",
+      "manifest": "devices/papermono/arduino-docs/display-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ae936e626d1fa6563e3a328263f300f148eba9b00a3b63634d6acd7db0f91dbf",
+      "original_build": {
+        "firmware_sha256": "a964f83a7a48a0357b360714099b6d77519373ceb3fff39d8f5f297ccf8440df",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "display-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/display.md",
+        "section": "Refresh Modes",
+        "code_first_line": 161
+      },
+      "sketch_sha256": "688fa34937636cd720a1469d1125bbe7c0a2073ab5e9f5d0461b71f98f0796c9",
+      "manifest": "devices/papermono/arduino-docs/display-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "134ce6e2de5b66b37bd45a1656999850c3d92257d39562bce8d4bcee91189ec6",
+      "original_build": {
+        "firmware_sha256": "186bfe5ede09593832bc8587b423b698f0ee3b577ba3711a9f8a380e85b7b7b7",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "m5pm1_m5ioe1-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+        "section": "Timed Power-On / Power-Off Example",
+        "code_first_line": 122
+      },
+      "sketch_sha256": "ffe6adc5d071293e217c30c791fcfc43f5306cf946ddda47d3fe2644124333c3",
+      "manifest": "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1dc9491495cf41079ed6385b427a724821b3396b972e32941ef15712edc00c8a",
+      "original_build": {
+        "firmware_sha256": "63a479f48ef15fcc1d64b8f8237b2ab439d558de18ccd46319694fce31237862",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "m5pm1_m5ioe1-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+        "section": "Waking the M5PM1 with the IMU",
+        "code_first_line": 192
+      },
+      "sketch_sha256": "57369e25a712ee730e200bd1e3617d676f405e99328cab6e7fe5eb9d167e10e7",
+      "manifest": "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b30f45184f2e17e09ebc469a16f86b7b40afeb9c87219f6e76d48fc406569580",
+      "original_build": {
+        "firmware_sha256": "479caa1b3751277c4c4fdc6285e02867ddbb22bbe5f6b38ef159c47af249d6c2",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "m5pm1_m5ioe1-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+        "section": "Waking the ESP32-S3 with the IMU",
+        "code_first_line": 295
+      },
+      "sketch_sha256": "d0b7dc6672c306b13338e76a2b8ed89f3fb8dc86bb16a724ebcaec04bb591017",
+      "manifest": "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1734dbf6b59cb076c0dd28675faf09b9222c87439ca54a43a1233fb97bff7819",
+      "original_build": {
+        "firmware_sha256": "3643e57edf1d2537e6014c599204352d819849c4ca51c73b3048c50038c43365",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "m5pm1_m5ioe1-4",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+        "section": "Waking the M5PM1 with the RTC",
+        "code_first_line": 441
+      },
+      "sketch_sha256": "a6e9ce737c5c680f1fc23d71b6c3695fc9f26f968900891e9dc3443de11828d5",
+      "manifest": "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "dcb52a1983cc54b3d9362452c9d7dd175812ae965abbf5c63e1f7c7eb690bec3",
+      "original_build": {
+        "firmware_sha256": "0e8cae8f0e87b5bfaf23b3337418150c70bacd533fc4b270bcf786a6aae38c93",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "m5pm1_m5ioe1-5",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+        "section": "Waking the ESP32-S3 with the RTC",
+        "code_first_line": 509
+      },
+      "sketch_sha256": "2731057a20a1a34d416e87b1b2e6f3792f9d13411a49bf6900d1adb7a6c8dbeb",
+      "manifest": "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c02d72a274a5a32898abfca6d56f0faae1adf2bbcef7a4e5362735eda6749706",
+      "original_build": {
+        "firmware_sha256": "b256949827214f4da9a12ea243f17ecb64e4c180b914dc20936faee07a7177c3",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "m5pm1_m5ioe1-6",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/m5pm1_m5ioe1",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/m5pm1_m5ioe1.md",
+        "section": "6. M5IOE1 Peripheral Control",
+        "code_first_line": 624
+      },
+      "sketch_sha256": "71d4db3cdfe6bec6eff978deadb0a9a4ba7b2f288d8e64bdb2f3d91738649f9a",
+      "manifest": "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "59e6df806a2c16622d8d8e9507be8fb2d35c54b41ed73a81d67927e11362b42d",
+      "original_build": {
+        "firmware_sha256": "b1b3e4a304c786e78df293b3c96f59e82aa3b6c720bc8b2234b08535f3965a1f",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/mic.md",
+        "section": "Build Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "ad6b9a50563fd738ce018746c2f8faf69a02ec539c1c95997727c432a5cd290f",
+      "manifest": "devices/papermono/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1cc281cc3724c01aaafa97b1dc41515f26d8beb0cf7188117b2c50359db75cd5",
+      "original_build": {
+        "firmware_sha256": "045ad575eb00b9cd6d929c9d17746d2474611f80bfb3683ffc9100aaa151d348",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "microsd",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/microsd",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/microsd.md",
+        "section": "Build Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "00b104d53412bf9775b760172349fbd78fe1486bdf3c7042a9aa94fb1f34c260",
+      "manifest": "devices/papermono/arduino-docs/microsd/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "b82ea1880dd233ed5678c1a2ab7abbda7d5b61fff685dad9dac3d749cc68276b",
+      "original_build": {
+        "firmware_sha256": "31347ec96d66664274e1acb84b221b8a17fc7f508ecb5052ed7a61cfbdc4c99b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "nfc-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/nfc.md",
+        "section": "Quick Scan and Identification",
+        "code_first_line": 21
+      },
+      "sketch_sha256": "1dd28d5e6578149b9686dc061e5ce87f54f2c615471d42c5806c67ce15a8a427",
+      "manifest": "devices/papermono/arduino-docs/nfc-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ab5b4862761005f634c73d12eab23d5756d5564985fdd429fd1cae5c0b33529e",
+      "original_build": {
+        "firmware_sha256": "b3cb7d0f5e48684271272b327fa5db849b754be89ecd47e450a51137944bd4b5",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "nfc-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/nfc.md",
+        "section": "Full Data Read",
+        "code_first_line": 182
+      },
+      "sketch_sha256": "6525ff2623e35f6b507ccabc353620066ed181261469781d532a94f9182be7e0",
+      "manifest": "devices/papermono/arduino-docs/nfc-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "db11aa877e0125967239c6b23e2991efe4d10001801c65fb81a155e0af0cec35",
+      "original_build": {
+        "firmware_sha256": "b12a7972d9875c55bc1f670b836747193890964009399aaf608b0dc595469ece",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "nfc-3",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/nfc.md",
+        "section": "Reading and Writing NDEF Tags",
+        "code_first_line": 396
+      },
+      "sketch_sha256": "a92a788ad2d0cbcc04c3daac3de5b063dd8f0ce7adc9394d5e7642f61ac0044f",
+      "manifest": "devices/papermono/arduino-docs/nfc-3/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1ff93ba94f80e858c73e1ad2c75c14f7ee7e6aee32343a7bf2738cf4fd5517db",
+      "original_build": {
+        "firmware_sha256": "8c8864f830f20e183b5923058ecb9a3c35019ec7bb61edb507746f26a4917972",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "nfc-4",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/nfc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/nfc.md",
+        "section": "Tag Emulation",
+        "code_first_line": 706
+      },
+      "sketch_sha256": "d94d8b3dc5ae017e66c8d43bb2b087f5356d3eb76d5289c61fcbf270fde78b0f",
+      "manifest": "devices/papermono/arduino-docs/nfc-4/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "fbbf2a03ff11d380cb8ed891db0cc43520f0b7eb1d5b8e95c23077869b5960f4",
+      "original_build": {
+        "firmware_sha256": "12779aaa456094944c1d9fa3aaf614ec410903cfdd2cf539c328e00df2ca8e9d",
+        "verdict": "DOCS-DEFECT",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "DOCS-DEFECT",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "rgb_led",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/rgb_led",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/rgb_led.md",
+        "section": "Build Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "573999f8ff577ca45f017aa5e8fc3dd9bc559bf29fc2dd77a39715a916ec06ce",
+      "manifest": "devices/papermono/arduino-docs/rgb_led/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "4b230ae9a9ad817df9f300f2dae266052581271ef388b80409c9e31839a98254",
+      "original_build": {
+        "firmware_sha256": "d0b564e7b64a6a62471883e436f942713a72ff7803ec92bc187c8ad6608d2bad",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "rtc-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/rtc.md",
+        "section": "Setting the RTC Time Manually",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "5b2409c60bfd807107ae950ff2594a7cae96179f7f43363e41481d9b1aa14886",
+      "manifest": "devices/papermono/arduino-docs/rtc-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "6f74becc3b65e3c9199a1b19f2a03654dbdc63c8b902817ea280b5b2bab897fe",
+      "original_build": {
+        "firmware_sha256": "b91c16b689431545921a2ee6e091d96c433ae4a2010746a5555db4c231b77f55",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "rtc-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/rtc.md",
+        "section": "SNTP Network Time",
+        "code_first_line": 108
+      },
+      "sketch_sha256": "f9fa0bb79480878ac33128a8be6f77de7aa7e255dfd1e74815cb0e5043b2099d",
+      "manifest": "devices/papermono/arduino-docs/rtc-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "1022cf0ded2ac16addd2d9f8bfa37264068ddd34208b3a8cc150e9f0d3e5ae99",
+      "original_build": {
+        "firmware_sha256": "3d6f86644ff70eb9c0b0d7346b42a5732f1d095523c7e98794526fcc1efc2b24",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "touch",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/touch",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/touch.md",
+        "section": "Build Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "787d75e4e338aa36d299f58635bb83f2badbbff720be771cb62dd71425e37ed8",
+      "manifest": "devices/papermono/arduino-docs/touch/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "05682a768ea8bbc8df99d9f2168a25ca749e628d87dd6084c173dfa919fe7b9d",
+      "original_build": {
+        "firmware_sha256": "142c95436677df6fb9b28c6baab48283592156a775b3c6df0656b37291fb134d",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "wakeup",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/wakeup",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/wakeup.md",
+        "section": "Build Requirements",
+        "code_first_line": 14
+      },
+      "sketch_sha256": "6b32ab286dd13aed43eaf821c09f22c214e5cea5c33c3601f8e2008adcfe6332",
+      "manifest": "devices/papermono/arduino-docs/wakeup/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "541a397dbdbf0cf8224288e599bf546c85edfd69fa4c9e65a02b4273050ed602",
+      "original_build": {
+        "firmware_sha256": "bfbd5e881892ed670b5ba84b5ec436cb0a78d931016dfb47d1a2701686b625dd",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
+    },
+    {
+      "device_id": "papermono",
+      "case": "quickstart-bargraph",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/papermono/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/papermono/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 28
+      },
+      "sketch_sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "manifest": "devices/papermono/arduino-docs/quickstart-bargraph/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a66967fd3743a2d966cbbff5b24bb8500b815a2ee92c8e3a7db1869f7a4969ba",
+      "original_build": {
+        "firmware_sha256": "523fe5f2743dcd8386094ca47928a1c493dbd9c773d46335202c2279c399b653",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-papermono"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -10969,6 +11705,650 @@
     "devices/papercolor/arduino-docs/wakeup-2/firmware.json": {
       "sha256": "3d32c744ecd3b9bf753e6701037c82dd4d50e79e553998b7429556326ef884c7",
       "bytes": 5940
+    },
+    "devices/papermono/arduino-docs/battery/sketch/battery/battery.ino": {
+      "sha256": "52d5689bef73d631f0588de14df279793dea361f8dc5715210268a2849f75971",
+      "bytes": 1683
+    },
+    "devices/papermono/arduino-docs/battery/migration.ino.bin": {
+      "sha256": "3351657f39fe80a6e93249ef6d03b56ae5ff1867fb589902e41957a7f25e7f9a",
+      "bytes": 615744
+    },
+    "devices/papermono/arduino-docs/battery/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/battery/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/battery/migration.ino.merged.bin": {
+      "sha256": "6fd7648d1a1da13a43867d469c5a1a72731742ab735792e70787e1d86d5e257e",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/battery/migration.ino.elf": {
+      "sha256": "ea68a0dd8c3b15e872eef9ee499042c481ecaecb582eefd90449fb3e87f05327",
+      "bytes": 12672516
+    },
+    "devices/papermono/arduino-docs/battery/firmware.json": {
+      "sha256": "f5add083d9766b1a94703fbd3bacfd4b8d3ab1d0ceff40ca6f354fd77228b9e5",
+      "bytes": 6295
+    },
+    "devices/papermono/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "9a3bd4c2dbf0627e42737195ff13eceea7346f49c46a65c9dda774fd95cdfb14",
+      "bytes": 991
+    },
+    "devices/papermono/arduino-docs/button/migration.ino.bin": {
+      "sha256": "5dd1a77b975d7ce1f1accfc5ef9169f2383992c1a678da847c331b049a8510b8",
+      "bytes": 605152
+    },
+    "devices/papermono/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "5f82e3706413d85ac6486ff5e9f769bad92983964a78355bd49c65e4127aadda",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/button/migration.ino.elf": {
+      "sha256": "b9332f6ca2f98809bb39e99ad4cdafff1354cb022972f8dc5ef09f9b9c53459a",
+      "bytes": 12552864
+    },
+    "devices/papermono/arduino-docs/button/firmware.json": {
+      "sha256": "3a970c430d96ffa4f84f95e7cc01fdbdb44c35e1ec9ef76b1f20b186a0ac1fec",
+      "bytes": 6252
+    },
+    "devices/papermono/arduino-docs/buzzer/sketch/buzzer/buzzer.ino": {
+      "sha256": "241f1e10573d47146e840ede56f200307c030ce318752631f7f652741e64e666",
+      "bytes": 566
+    },
+    "devices/papermono/arduino-docs/buzzer/migration.ino.bin": {
+      "sha256": "9d22d9b6adf638fd1757c23ca919274b4acb27346c95f383110779b33d3ad22c",
+      "bytes": 622240
+    },
+    "devices/papermono/arduino-docs/buzzer/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/buzzer/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/buzzer/migration.ino.merged.bin": {
+      "sha256": "8898b0c622d08d2e151fff5d8c3c2f2800c0b2117088c4d93bcbeec49afce8b6",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/buzzer/migration.ino.elf": {
+      "sha256": "b9ce347c7f51a2db469f10fcef9a317201711e3773f7f18fdbc14cf07334e64d",
+      "bytes": 12690592
+    },
+    "devices/papermono/arduino-docs/buzzer/firmware.json": {
+      "sha256": "874a90c9e547a7b4c20a7a851973e52da362cfee7cfa2202cbcd9a9f54adfa73",
+      "bytes": 6180
+    },
+    "devices/papermono/arduino-docs/display-1/sketch/display_1/display_1.ino": {
+      "sha256": "7c3296d06c322b70ff58b2cdb3072a0d0bfea34d3e801b3a2e05bc5073832297",
+      "bytes": 2916
+    },
+    "devices/papermono/arduino-docs/display-1/migration.ino.bin": {
+      "sha256": "63f547e953308cc1df839e88eaec9b11e4911dc3f0a419777f32b35126737b28",
+      "bytes": 612944
+    },
+    "devices/papermono/arduino-docs/display-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/display-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/display-1/migration.ino.merged.bin": {
+      "sha256": "ae936e626d1fa6563e3a328263f300f148eba9b00a3b63634d6acd7db0f91dbf",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/display-1/migration.ino.elf": {
+      "sha256": "2c703d1dbdbb2130ae4d5555ae68c4c31d6e4eb69e7c8f918ed2a765fe07e851",
+      "bytes": 12579044
+    },
+    "devices/papermono/arduino-docs/display-1/firmware.json": {
+      "sha256": "38248cd7ea0c4d810deb74a01e072ff1d616176727dc77b072ca051238ef1fd1",
+      "bytes": 5916
+    },
+    "devices/papermono/arduino-docs/display-2/sketch/display_2/display_2.ino": {
+      "sha256": "688fa34937636cd720a1469d1125bbe7c0a2073ab5e9f5d0461b71f98f0796c9",
+      "bytes": 3874
+    },
+    "devices/papermono/arduino-docs/display-2/migration.ino.bin": {
+      "sha256": "758684efc111af16f5ecc3ccde2b5bd40ded474350d8cc006152e77f62c2c755",
+      "bytes": 609472
+    },
+    "devices/papermono/arduino-docs/display-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/display-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/display-2/migration.ino.merged.bin": {
+      "sha256": "134ce6e2de5b66b37bd45a1656999850c3d92257d39562bce8d4bcee91189ec6",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/display-2/migration.ino.elf": {
+      "sha256": "d41747f4cdb83c2c9c6e1d0a74108f2faed73f248a46940ba1f4f935b7189df8",
+      "bytes": 12568500
+    },
+    "devices/papermono/arduino-docs/display-2/firmware.json": {
+      "sha256": "bb1086c3441e8d1894de298bc09e12deaa233c687d9ba74019e6819159ce38d5",
+      "bytes": 6658
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/sketch/m5pm1_m5ioe1_1/m5pm1_m5ioe1_1.ino": {
+      "sha256": "ffe6adc5d071293e217c30c791fcfc43f5306cf946ddda47d3fe2644124333c3",
+      "bytes": 1362
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/migration.ino.bin": {
+      "sha256": "0f008a7f9b17f6abbd5167232cc0bb51ac98ad416692b0b244e530cafc21fb04",
+      "bytes": 625824
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/migration.ino.merged.bin": {
+      "sha256": "1dc9491495cf41079ed6385b427a724821b3396b972e32941ef15712edc00c8a",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/migration.ino.elf": {
+      "sha256": "9d04bffb9d55875e5d0b31d6c05bb68291e7dc2584900282425913620e282af8",
+      "bytes": 12820868
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-1/firmware.json": {
+      "sha256": "d3cc3e3b53e3aeca3886473230f9859bbc592dc9190468a9e01ff2714d32ccdf",
+      "bytes": 5951
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/sketch/m5pm1_m5ioe1_2/m5pm1_m5ioe1_2.ino": {
+      "sha256": "57369e25a712ee730e200bd1e3617d676f405e99328cab6e7fe5eb9d167e10e7",
+      "bytes": 2934
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/migration.ino.bin": {
+      "sha256": "dd09bab6529e789ab9938ffd045f1420252778d58a5b9e66e638a5f1d691c29a",
+      "bytes": 648592
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/migration.ino.merged.bin": {
+      "sha256": "b30f45184f2e17e09ebc469a16f86b7b40afeb9c87219f6e76d48fc406569580",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/migration.ino.elf": {
+      "sha256": "c03b25879a821b7d805d6920b165c49f632453e963f413d9885764684538c38e",
+      "bytes": 13178136
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-2/firmware.json": {
+      "sha256": "d3d5874c431bd36a795402cb84ca73f3486e18a296f8de9d86a0bad5374126df",
+      "bytes": 6315
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/sketch/m5pm1_m5ioe1_3/m5pm1_m5ioe1_3.ino": {
+      "sha256": "d0b7dc6672c306b13338e76a2b8ed89f3fb8dc86bb16a724ebcaec04bb591017",
+      "bytes": 4278
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/migration.ino.bin": {
+      "sha256": "f969d5d49174189ebd4caa775b9fd529159e1b001896e91cc28b958d799a329d",
+      "bytes": 651424
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/migration.ino.merged.bin": {
+      "sha256": "1734dbf6b59cb076c0dd28675faf09b9222c87439ca54a43a1233fb97bff7819",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/migration.ino.elf": {
+      "sha256": "283cf3e1adcdab65eba5bf4ce68b077f94752471ed95d4c3cc56b938e52ec2e3",
+      "bytes": 13180536
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-3/firmware.json": {
+      "sha256": "d36babc3398c37a9928c87c7b4b9fe43fd5d5b59a850d5b5a68ab96eaa12460a",
+      "bytes": 6300
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/sketch/m5pm1_m5ioe1_4/m5pm1_m5ioe1_4.ino": {
+      "sha256": "a6e9ce737c5c680f1fc23d71b6c3695fc9f26f968900891e9dc3443de11828d5",
+      "bytes": 1573
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.bin": {
+      "sha256": "a2cc03fff3c0b981bbde3925e874b706fb3fd5d2570e04ede4364784b826c499",
+      "bytes": 625488
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.merged.bin": {
+      "sha256": "dcb52a1983cc54b3d9362452c9d7dd175812ae965abbf5c63e1f7c7eb690bec3",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/migration.ino.elf": {
+      "sha256": "ba66a773dc3e6dbe377b83622c96e0b1501115cc4b7fdb2ad424a90d14c81d8b",
+      "bytes": 12827144
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-4/firmware.json": {
+      "sha256": "e5a77619bf601826655ab50c46a638ea2bcff84eb69de64febcb502009550ba9",
+      "bytes": 5956
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/sketch/m5pm1_m5ioe1_5/m5pm1_m5ioe1_5.ino": {
+      "sha256": "2731057a20a1a34d416e87b1b2e6f3792f9d13411a49bf6900d1adb7a6c8dbeb",
+      "bytes": 2710
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/migration.ino.bin": {
+      "sha256": "a3032bcb297aa1b11e0bf0484025e16b97d282856933fd25d7c14398cba87fad",
+      "bytes": 628176
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/migration.ino.merged.bin": {
+      "sha256": "c02d72a274a5a32898abfca6d56f0faae1adf2bbcef7a4e5362735eda6749706",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/migration.ino.elf": {
+      "sha256": "c53977f0d376af7ad7a785fcd01851018864fccb58dcc066688a118a012fe73c",
+      "bytes": 12828952
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-5/firmware.json": {
+      "sha256": "d743c8d2f17ef28a4cbfb08b333eb9ef865b99f4a7551dd913b6f0f644a7ec80",
+      "bytes": 5941
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/sketch/m5pm1_m5ioe1_6/m5pm1_m5ioe1_6.ino": {
+      "sha256": "71d4db3cdfe6bec6eff978deadb0a9a4ba7b2f288d8e64bdb2f3d91738649f9a",
+      "bytes": 3935
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/migration.ino.bin": {
+      "sha256": "683a9565334fa9954c1d6ae4a5fa5c89100901c409d7a8001e17bd77f1f01e86",
+      "bytes": 642112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/migration.ino.merged.bin": {
+      "sha256": "59e6df806a2c16622d8d8e9507be8fb2d35c54b41ed73a81d67927e11362b42d",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/migration.ino.elf": {
+      "sha256": "168ebefe3e80a237c3fe8bbc16555c91f6f8b786693b701bb5af380be2cabfe5",
+      "bytes": 13016480
+    },
+    "devices/papermono/arduino-docs/m5pm1_m5ioe1-6/firmware.json": {
+      "sha256": "c9368089781a779867bbcf0f3459fc8ad1729c77877b98b69697319821206f40",
+      "bytes": 5966
+    },
+    "devices/papermono/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "ad6b9a50563fd738ce018746c2f8faf69a02ec539c1c95997727c432a5cd290f",
+      "bytes": 8396
+    },
+    "devices/papermono/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "74753c0e492429d5ae35e7f6d83a1a78aae1c050e55d459105956f774f4bd11c",
+      "bytes": 677952
+    },
+    "devices/papermono/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "1cc281cc3724c01aaafa97b1dc41515f26d8beb0cf7188117b2c50359db75cd5",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "e037c98ade69192e9503a5e0bccbc24a3f6f128676816e0b79ca26c7b1c2772a",
+      "bytes": 13178820
+    },
+    "devices/papermono/arduino-docs/mic/firmware.json": {
+      "sha256": "6457a45ebdc5659164897004b081a78f34375f26253eeb725ceda661200851c6",
+      "bytes": 6238
+    },
+    "devices/papermono/arduino-docs/microsd/sketch/microsd/microsd.ino": {
+      "sha256": "00b104d53412bf9775b760172349fbd78fe1486bdf3c7042a9aa94fb1f34c260",
+      "bytes": 2367
+    },
+    "devices/papermono/arduino-docs/microsd/migration.ino.bin": {
+      "sha256": "8cd5d242e6c99c5e12c0e67f62dfc0cd10a13a83ab49fa9cfa24e7e0480f462b",
+      "bytes": 678096
+    },
+    "devices/papermono/arduino-docs/microsd/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/microsd/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/microsd/migration.ino.merged.bin": {
+      "sha256": "b82ea1880dd233ed5678c1a2ab7abbda7d5b61fff685dad9dac3d749cc68276b",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/microsd/migration.ino.elf": {
+      "sha256": "fa795eaad71a7daae873f90f67703f96bb5baca2887f2a9a8ac45c77f9666ada",
+      "bytes": 13466780
+    },
+    "devices/papermono/arduino-docs/microsd/firmware.json": {
+      "sha256": "ab4b635a08933feb7724d0f1ac685258ce916db6e2c14a0bb38cb8e17a4f6ad6",
+      "bytes": 5934
+    },
+    "devices/papermono/arduino-docs/nfc-1/sketch/nfc_1/nfc_1.ino": {
+      "sha256": "1dd28d5e6578149b9686dc061e5ce87f54f2c615471d42c5806c67ce15a8a427",
+      "bytes": 4342
+    },
+    "devices/papermono/arduino-docs/nfc-1/migration.ino.bin": {
+      "sha256": "d5d51f585128e85810bc5e0b27e5e8fe4af29f73de671cc09dcd1e920844a312",
+      "bytes": 720496
+    },
+    "devices/papermono/arduino-docs/nfc-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/nfc-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/nfc-1/migration.ino.merged.bin": {
+      "sha256": "ab5b4862761005f634c73d12eab23d5756d5564985fdd429fd1cae5c0b33529e",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/nfc-1/migration.ino.elf": {
+      "sha256": "8ca97a0d3c657b6718233c818e04bb3a96f9b0e0eabe720cbe65f52b87f2afa7",
+      "bytes": 19113984
+    },
+    "devices/papermono/arduino-docs/nfc-1/firmware.json": {
+      "sha256": "14cf51ec40b9cba5ef143e39a3bfb535b4b9ce9fd3766ff6a129a1edcf17451c",
+      "bytes": 6276
+    },
+    "devices/papermono/arduino-docs/nfc-2/sketch/nfc_2/nfc_2.ino": {
+      "sha256": "6525ff2623e35f6b507ccabc353620066ed181261469781d532a94f9182be7e0",
+      "bytes": 4450
+    },
+    "devices/papermono/arduino-docs/nfc-2/migration.ino.bin": {
+      "sha256": "5a8c318f2b67a5c56b8806856c1668ae3ced4ac324d9fd06e7eaad95d8e2bf3e",
+      "bytes": 748112
+    },
+    "devices/papermono/arduino-docs/nfc-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/nfc-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/nfc-2/migration.ino.merged.bin": {
+      "sha256": "db11aa877e0125967239c6b23e2991efe4d10001801c65fb81a155e0af0cec35",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/nfc-2/migration.ino.elf": {
+      "sha256": "b3cb55785eb94247a03a360be161abc02ef3286655f8519b28250d77020a5cc0",
+      "bytes": 19270856
+    },
+    "devices/papermono/arduino-docs/nfc-2/firmware.json": {
+      "sha256": "9c3b7a2b511e998a3a92e6f5003dc43491db859190368e760190e900cc46f016",
+      "bytes": 6262
+    },
+    "devices/papermono/arduino-docs/nfc-3/sketch/nfc_3/nfc_3.ino": {
+      "sha256": "a92a788ad2d0cbcc04c3daac3de5b063dd8f0ce7adc9394d5e7642f61ac0044f",
+      "bytes": 8496
+    },
+    "devices/papermono/arduino-docs/nfc-3/migration.ino.bin": {
+      "sha256": "66703cd265625f0a044ebd7c490c6db3518ccf6caa50db2e35e74001b6d723aa",
+      "bytes": 748640
+    },
+    "devices/papermono/arduino-docs/nfc-3/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/nfc-3/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/nfc-3/migration.ino.merged.bin": {
+      "sha256": "1ff93ba94f80e858c73e1ad2c75c14f7ee7e6aee32343a7bf2738cf4fd5517db",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/nfc-3/migration.ino.elf": {
+      "sha256": "0a0f7059106ad3fe9dc6220cf40570bfaee38f7cca0b400d48780d0334448509",
+      "bytes": 19229724
+    },
+    "devices/papermono/arduino-docs/nfc-3/firmware.json": {
+      "sha256": "4d3bb514752401d7441a120729bfb6fd7cd4f629807a48d225e89c12e619fa35",
+      "bytes": 6271
+    },
+    "devices/papermono/arduino-docs/nfc-4/sketch/nfc_4/nfc_4.ino": {
+      "sha256": "d94d8b3dc5ae017e66c8d43bb2b087f5356d3eb76d5289c61fcbf270fde78b0f",
+      "bytes": 5337
+    },
+    "devices/papermono/arduino-docs/nfc-4/migration.ino.bin": {
+      "sha256": "512d0849acd6064b6d44d030372cb248274d41b0a4de0573282669b30ba990cb",
+      "bytes": 724896
+    },
+    "devices/papermono/arduino-docs/nfc-4/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/nfc-4/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/nfc-4/migration.ino.merged.bin": {
+      "sha256": "fbbf2a03ff11d380cb8ed891db0cc43520f0b7eb1d5b8e95c23077869b5960f4",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/nfc-4/migration.ino.elf": {
+      "sha256": "9861ab2b31f6eddd00886185dfea52e6c0f04bdaa15904d09a61cc3da16ce231",
+      "bytes": 19178688
+    },
+    "devices/papermono/arduino-docs/nfc-4/firmware.json": {
+      "sha256": "a7ee1a33d586d9fc31e186f1ebbc174149822cef2f02520b7ff9e517d48a1069",
+      "bytes": 6470
+    },
+    "devices/papermono/arduino-docs/rgb_led/sketch/rgb_led/rgb_led.ino": {
+      "sha256": "573999f8ff577ca45f017aa5e8fc3dd9bc559bf29fc2dd77a39715a916ec06ce",
+      "bytes": 522
+    },
+    "devices/papermono/arduino-docs/rgb_led/migration.ino.bin": {
+      "sha256": "0ad86473b09273887608d29f542650e7316d3fbf129aba731cca474999f2c40d",
+      "bytes": 592208
+    },
+    "devices/papermono/arduino-docs/rgb_led/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/rgb_led/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/rgb_led/migration.ino.merged.bin": {
+      "sha256": "4b230ae9a9ad817df9f300f2dae266052581271ef388b80409c9e31839a98254",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/rgb_led/migration.ino.elf": {
+      "sha256": "a8b05ab3b6db931f774e3072d93123d78e6d0e5d37f341f60cf0ffd4c12b0a90",
+      "bytes": 12470536
+    },
+    "devices/papermono/arduino-docs/rgb_led/firmware.json": {
+      "sha256": "14d7b2dd7e6bde53a64175909f7f1adca713833906f9fe693774c4eb9fafa892",
+      "bytes": 5540
+    },
+    "devices/papermono/arduino-docs/rtc-1/sketch/rtc_1/rtc_1.ino": {
+      "sha256": "5b2409c60bfd807107ae950ff2594a7cae96179f7f43363e41481d9b1aa14886",
+      "bytes": 2291
+    },
+    "devices/papermono/arduino-docs/rtc-1/migration.ino.bin": {
+      "sha256": "fe47c01c359c183c78e2f09ee2bc281e414fafd492d287349c48d8446f062c3a",
+      "bytes": 615440
+    },
+    "devices/papermono/arduino-docs/rtc-1/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/rtc-1/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/rtc-1/migration.ino.merged.bin": {
+      "sha256": "6f74becc3b65e3c9199a1b19f2a03654dbdc63c8b902817ea280b5b2bab897fe",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/rtc-1/migration.ino.elf": {
+      "sha256": "ce7021d6fe7062fc02bd1c94d197141091f005f66528b8a1e680fa5ea238c975",
+      "bytes": 12577760
+    },
+    "devices/papermono/arduino-docs/rtc-1/firmware.json": {
+      "sha256": "b9dbb1228bfae7e65b2d9c6b2d61080812a7bfe18e83fe4430c9ea0f0e3e4d30",
+      "bytes": 5567
+    },
+    "devices/papermono/arduino-docs/rtc-2/sketch/rtc_2/rtc_2.ino": {
+      "sha256": "f9fa0bb79480878ac33128a8be6f77de7aa7e255dfd1e74815cb0e5043b2099d",
+      "bytes": 4997
+    },
+    "devices/papermono/arduino-docs/rtc-2/migration.ino.bin": {
+      "sha256": "a3ceb3cf17190f7e4e2161957620ec6b49fd74df7b8e97c70b7ecfd11d3dcada",
+      "bytes": 1173408
+    },
+    "devices/papermono/arduino-docs/rtc-2/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/rtc-2/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/rtc-2/migration.ino.merged.bin": {
+      "sha256": "1022cf0ded2ac16addd2d9f8bfa37264068ddd34208b3a8cc150e9f0d3e5ae99",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/rtc-2/migration.ino.elf": {
+      "sha256": "d7289450e894955851728784b904165c1cdea7aac72d66c94f56b07da5da56a9",
+      "bytes": 17938884
+    },
+    "devices/papermono/arduino-docs/rtc-2/firmware.json": {
+      "sha256": "9fa9e6021b81bb5a286ad78739e23572161a77266004446c4e420c61b52c6280",
+      "bytes": 5922
+    },
+    "devices/papermono/arduino-docs/touch/sketch/touch/touch.ino": {
+      "sha256": "787d75e4e338aa36d299f58635bb83f2badbbff720be771cb62dd71425e37ed8",
+      "bytes": 2845
+    },
+    "devices/papermono/arduino-docs/touch/migration.ino.bin": {
+      "sha256": "913d6a3f83072703749a4fb9053d172bd9dc5b14ce4ee584856887ee11b7656b",
+      "bytes": 609760
+    },
+    "devices/papermono/arduino-docs/touch/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/touch/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/touch/migration.ino.merged.bin": {
+      "sha256": "05682a768ea8bbc8df99d9f2168a25ca749e628d87dd6084c173dfa919fe7b9d",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/touch/migration.ino.elf": {
+      "sha256": "60355362e61ee73bd3738aefd11cf50257e019437b7a154131cb2cf399610061",
+      "bytes": 12562792
+    },
+    "devices/papermono/arduino-docs/touch/firmware.json": {
+      "sha256": "7a9c1c1bad1c96e98450e98011c4185342c7cfc8202259f41919674deb3f00c6",
+      "bytes": 6608
+    },
+    "devices/papermono/arduino-docs/wakeup/sketch/wakeup/wakeup.ino": {
+      "sha256": "6b32ab286dd13aed43eaf821c09f22c214e5cea5c33c3601f8e2008adcfe6332",
+      "bytes": 2190
+    },
+    "devices/papermono/arduino-docs/wakeup/migration.ino.bin": {
+      "sha256": "f1459cea3c90a64489ee7103d57698475a9c10bee01761884cb7a40a3634d1b6",
+      "bytes": 616864
+    },
+    "devices/papermono/arduino-docs/wakeup/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/wakeup/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/wakeup/migration.ino.merged.bin": {
+      "sha256": "541a397dbdbf0cf8224288e599bf546c85edfd69fa4c9e65a02b4273050ed602",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/wakeup/migration.ino.elf": {
+      "sha256": "97dc0a95d7141fd16a86770bec7e44b3b27cc6f2b76835de3b260448f99cb174",
+      "bytes": 12625456
+    },
+    "devices/papermono/arduino-docs/wakeup/firmware.json": {
+      "sha256": "36660edeba29210309f36580eef5c9399231654e108f5577141e7afcea267393",
+      "bytes": 6304
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/sketch/quickstart_bargraph/quickstart_bargraph.ino": {
+      "sha256": "7345a7b27639534404162c11d53c0ca05fa606075c68ab6a14fee71b4a96f3b0",
+      "bytes": 2320
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.bin": {
+      "sha256": "c6f28b78c52e61d9307f2e5bd0b6be741229ba7913acc32f23eb1172049ef3cf",
+      "bytes": 522224
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.bootloader.bin": {
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.partitions.bin": {
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.merged.bin": {
+      "sha256": "a66967fd3743a2d966cbbff5b24bb8500b815a2ee92c8e3a7db1869f7a4969ba",
+      "bytes": 16777216
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/migration.ino.elf": {
+      "sha256": "997154066d54ad920097d128c30f2fc12f7d6d019b939ac184ecd97228b975ed",
+      "bytes": 11031248
+    },
+    "devices/papermono/arduino-docs/quickstart-bargraph/firmware.json": {
+      "sha256": "d031f2656587ce473629adc6b1540252648f61d7ddb9dd6051328d9847b54842",
+      "bytes": 6465
     }
   },
   "local_files": {
@@ -11544,7 +12924,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 155,
+    "published_cases": 178,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

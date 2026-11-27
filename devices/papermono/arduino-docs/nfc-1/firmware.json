@@ -1,0 +1,158 @@
+{
+  "device_id": "papermono",
+  "case": "nfc-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/papermono/nfc",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/papermono/nfc.md",
+    "section": "Quick Scan and Identification",
+    "code_first_line": 21
+  },
+  "sketch_sha256": "1dd28d5e6578149b9686dc061e5ce87f54f2c615471d42c5806c67ce15a8a427",
+  "expected_behavior": "PaperMono NFC Near-Field Communication. Bring a deterministic virtual tag into range and verify UID or data readback and IRQ.",
+  "sketch_files": {
+    "nfc_1.ino": {
+      "path": "devices/papermono/arduino-docs/nfc-1/sketch/nfc_1/nfc_1.ino",
+      "storage": "public",
+      "sha256": "1dd28d5e6578149b9686dc061e5ce87f54f2c615471d42c5806c67ce15a8a427",
+      "bytes": 4342
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_papers3",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "compatibility_note": "Docs minimum exceeds the requested package. Build receipt exercises 3.2.5.",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/papermono/arduino-docs/nfc-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "d5d51f585128e85810bc5e0b27e5e8fe4af29f73de671cc09dcd1e920844a312",
+      "bytes": 720496
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/papermono/arduino-docs/nfc-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "a72dbf079fb8c2ab607f2d7d81640cdc51a39c37222e519ebc884760c742573e",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/papermono/arduino-docs/nfc-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "ace02503447d0f470692e65fa76002f2d77a92dc81cd3813d8aa66718d716da9",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/papermono/arduino-docs/nfc-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "ab5b4862761005f634c73d12eab23d5756d5564985fdd429fd1cae5c0b33529e",
+      "bytes": 16777216
+    },
+    "migration.ino.elf": {
+      "path": "devices/papermono/arduino-docs/nfc-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "8ca97a0d3c657b6718233c818e04bb3a96f9b0e0eabe720cbe65f52b87f2afa7",
+      "bytes": 19113984
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "b3cb7d0f5e48684271272b327fa5db849b754be89ecd47e450a51137944bd4b5",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "ab5b4862761005f634c73d12eab23d5756d5564985fdd429fd1cae5c0b33529e",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-papermono"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-papermono",
+        "run_command": "python3 $SIM_SRC/tools/run-paper-docs.py papermono $SIM $FIRMWARE_DIR/papermono $OUT --rom-dir $ROM_DIR --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --jobs 4 --sd $FIXTURES_DIR/agent-s3d/followup/mono-seed.img",
+        "check_command": "python3 $SIM_SRC/tools/check-paper-docs.py $OUT",
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "nfc-1",
+          "verdict": "PASS",
+          "reason": "Guest read both programmed UIDs through ST25R3916 IRQ/FIFO and displayed the results"
+        },
+        "capture_comparison": {
+          "nfc-1-control.png": {
+            "original": {
+              "png_sha256": "8ae3645534c56a293f60a1650e69ecdd5e4c886687f1b105610f8da93d5fd710"
+            },
+            "rebuilt": {
+              "png_sha256": "8ae3645534c56a293f60a1650e69ecdd5e4c886687f1b105610f8da93d5fd710"
+            },
+            "byte_identical": true
+          },
+          "nfc-1-first.png": {
+            "original": {
+              "png_sha256": "d17f8f3cd9b60ba4b2b4c6c1441590f6edace186c4428893b24baf6799028255"
+            },
+            "rebuilt": {
+              "png_sha256": "d17f8f3cd9b60ba4b2b4c6c1441590f6edace186c4428893b24baf6799028255"
+            },
+            "byte_identical": true
+          },
+          "nfc-1.png": {
+            "original": {
+              "png_sha256": "4fa5d7fc5824fe4f32c696b0c507ef7d61a003288c60eba6b60457a14e3b28b6"
+            },
+            "rebuilt": {
+              "png_sha256": "4fa5d7fc5824fe4f32c696b0c507ef7d61a003288c60eba6b60457a14e3b28b6"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (320 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (157 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (877 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2140 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
