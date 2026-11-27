@@ -1,0 +1,175 @@
+{
+  "device_id": "atom-echos3r",
+  "case": "mic",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/atom_echos3r/mic",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/atom_echos3r/mic.md",
+    "section": "Compilation Requirements",
+    "code_first_line": 13
+  },
+  "sketch_sha256": "b921b8d5ea7cdd3dc930aa9c5d1cb1c0556c1f47180d97e402f6ab1ebd3222e9",
+  "expected_behavior": "Atom VoiceS3R Microphone. Inject a known PCM/PDM signal and verify the recorded values or waveform, with silence as the control.",
+  "sketch_files": {
+    "mic.ino": {
+      "path": "devices/atom-echos3r/arduino-docs/mic/sketch/mic/mic.ino",
+      "storage": "public",
+      "sha256": "b921b8d5ea7cdd3dc930aa9c5d1cb1c0556c1f47180d97e402f6ab1ebd3222e9",
+      "bytes": 1920
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_atoms3r",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/atom-echos3r/arduino-docs/mic/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "460ddaa0ca5187574056ffe6b59ed41eb9cb98ca733ec6fa4669499892520aef",
+      "bytes": 617520
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/atom-echos3r/arduino-docs/mic/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/atom-echos3r/arduino-docs/mic/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/atom-echos3r/arduino-docs/mic/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "9622fd3612f10c45fc9d68334ad572fc6dbbda62af422360c060f4ad4498c57c",
+      "bytes": 8388608
+    },
+    "migration.ino.elf": {
+      "path": "devices/atom-echos3r/arduino-docs/mic/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "7bbbe01e36e9d39a8c8be7d45533415caa289299faf7586e0bc1c78d5fc5a18a",
+      "bytes": 12731080
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "126e3b596faf146933aef7ffa387b47f8a6702670c3210e8701c9f41272bb831",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "9622fd3612f10c45fc9d68334ad572fc6dbbda62af422360c060f4ad4498c57c",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-atom-echos3r"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-atom-echos3r",
+        "run_command": "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "case": "mic",
+          "status": "PASS",
+          "detail": "idle and tone peaks [0, 637, 3145], recovered input frequencies [True, True]"
+        },
+        "capture_comparison": {
+          "mic-a.wav": {
+            "original": {
+              "wav_sha256": "a87d89620eecf294907f45dce2fea5cd44c6fd9965e6f1905b9b8f2da616b1a3",
+              "pcm_sha256": "c5e6dd771512e2e2215f28202456c92f5f11615a3a04237c6b45f80d971e16cc",
+              "frames": 154369,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "a87d89620eecf294907f45dce2fea5cd44c6fd9965e6f1905b9b8f2da616b1a3",
+              "pcm_sha256": "c5e6dd771512e2e2215f28202456c92f5f11615a3a04237c6b45f80d971e16cc",
+              "frames": 154369,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          },
+          "mic-b.wav": {
+            "original": {
+              "wav_sha256": "87fc33fe8b279adfebcc2f63fd78f9f892129fee881642becac5c33114d704af",
+              "pcm_sha256": "cc1c0dff32faa17ac77ad23916e41c74b10ce2ccc96526c5e694e03d36b383ad",
+              "frames": 154369,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "87fc33fe8b279adfebcc2f63fd78f9f892129fee881642becac5c33114d704af",
+              "pcm_sha256": "cc1c0dff32faa17ac77ad23916e41c74b10ce2ccc96526c5e694e03d36b383ad",
+              "frames": 154369,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          },
+          "mic-still.wav": {
+            "original": {
+              "wav_sha256": "15ded88ca7081c645e1e88b16a8efcdb8df2908123252f4e2919c5bbe99678b2",
+              "pcm_sha256": "6af5b525748ae0446572445120915f920a6b9d6f7ab1c581f4a2754fde81f13b",
+              "frames": 154369,
+              "sample_rate": 48000
+            },
+            "rebuilt": {
+              "wav_sha256": "15ded88ca7081c645e1e88b16a8efcdb8df2908123252f4e2919c5bbe99678b2",
+              "pcm_sha256": "6af5b525748ae0446572445120915f920a6b9d6f7ab1c581f4a2754fde81f13b",
+              "frames": 154369,
+              "sample_rate": 48000
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (317 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (882 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2168 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

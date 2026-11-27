@@ -2895,6 +2895,166 @@
           "python3 $SIM_SRC/tools/run-atom-s3-docs.py atoms3u $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atoms3u.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
         ]
       }
+    },
+    {
+      "device_id": "atom-echos3r",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/atom_echos3r/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/atom_echos3r/button.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 15
+      },
+      "sketch_sha256": "58b36376fd0b6da6ebbeff83058dd911e7368c2a7ac111b6ed5e6effc04ff181",
+      "manifest": "devices/atom-echos3r/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c0c666a30bf166401b149826820b590af94b44513c8dd750fa58bb2d6cf6411f",
+      "original_build": {
+        "firmware_sha256": "7e8c9001c959616fb7e1c3807a21c8e7eb9f81de4096c9473620f8e51f52861b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-echos3r"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-echos3r",
+      "case": "ir",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/atom_echos3r/ir",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/atom_echos3r/ir.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 16
+      },
+      "sketch_sha256": "bbf663e472ead58b20d0971bb93e627be999cb807d4f9fc7c1ca162478ac81a7",
+      "manifest": "devices/atom-echos3r/arduino-docs/ir/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "02d1f985575ea70680f2a763954c49dc485acb521e638f566e748e6434b4a7ee",
+      "original_build": {
+        "firmware_sha256": "66775036416418e857f6c713153807306f53a6373b528b8f25d25e3bd5bad31b",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-echos3r"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-echos3r",
+      "case": "mic",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/atom_echos3r/mic",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/atom_echos3r/mic.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "b921b8d5ea7cdd3dc930aa9c5d1cb1c0556c1f47180d97e402f6ab1ebd3222e9",
+      "manifest": "devices/atom-echos3r/arduino-docs/mic/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9622fd3612f10c45fc9d68334ad572fc6dbbda62af422360c060f4ad4498c57c",
+      "original_build": {
+        "firmware_sha256": "126e3b596faf146933aef7ffa387b47f8a6702670c3210e8701c9f41272bb831",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-echos3r"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-echos3r",
+      "case": "program",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/atom_echos3r/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/atom_echos3r/program.md",
+        "section": "3.Program Compile & Upload",
+        "code_first_line": 22
+      },
+      "sketch_sha256": "c04e6dfdd899a331d2e49a269d13e288a7315094c39b1a65e7f387447e3333c3",
+      "manifest": "devices/atom-echos3r/arduino-docs/program/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ffb776358ee06b84862f3a70371479fcf776427fb2c6628748372780bf6c30ff",
+      "original_build": {
+        "firmware_sha256": "1bafe388731abef4997004085226dfc916a1c47f643308725ed5e9ad88156a89",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-echos3r"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
+    },
+    {
+      "device_id": "atom-echos3r",
+      "case": "speaker",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/atom_echos3r/speaker",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/atom_echos3r/speaker.md",
+        "section": "Compilation Requirements",
+        "code_first_line": 13
+      },
+      "sketch_sha256": "31140c1a0062b4b92f4a04545833128434852ce3e1064040464c9bac64e24d31",
+      "manifest": "devices/atom-echos3r/arduino-docs/speaker/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "7a3d5e746b0857ae70ee11b2cd0bef592930a237a7b22951de93acc7af92ed80",
+      "original_build": {
+        "firmware_sha256": "8c8cf84ea3e36545b4f0705672a163eeb0d23134a38e4f482224aa57cdf3bc8a",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-atom-echos3r"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-atom-s3-docs.py atom-echos3r $SIM $FIRMWARE_DIR $FIXTURES_DIR/agent-s3a/downloads/atom-echos3r.bin $ROM_DIR/esp32s3_rev0_rom.elf $OUT --source 4e257b6be8ee0ed706c2e509d8f31ef7472a424b"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -5815,6 +5975,150 @@
     "devices/atoms3u/arduino-docs/mic/firmware.json": {
       "sha256": "d3a4d6ca045dd973633b5e9451d22ac365bcf409bc20c0f342437172ef2918e5",
       "bytes": 7076
+    },
+    "devices/atom-echos3r/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "58b36376fd0b6da6ebbeff83058dd911e7368c2a7ac111b6ed5e6effc04ff181",
+      "bytes": 635
+    },
+    "devices/atom-echos3r/arduino-docs/button/migration.ino.bin": {
+      "sha256": "056e625b514846cf0d276b50f31734f0c5b2963ead89132ee6d897b080d75b1b",
+      "bytes": 592304
+    },
+    "devices/atom-echos3r/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atom-echos3r/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atom-echos3r/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "c0c666a30bf166401b149826820b590af94b44513c8dd750fa58bb2d6cf6411f",
+      "bytes": 8388608
+    },
+    "devices/atom-echos3r/arduino-docs/button/migration.ino.elf": {
+      "sha256": "70bdbd453330541609964af2cba49e4c009cacdc51b7ebc2861992c2e03d8586",
+      "bytes": 12465488
+    },
+    "devices/atom-echos3r/arduino-docs/button/firmware.json": {
+      "sha256": "ad4a7274d9bbeb086feb48d1a26b745cfb3a018971b42b46695a00beacb0c7eb",
+      "bytes": 6395
+    },
+    "devices/atom-echos3r/arduino-docs/ir/sketch/ir/ir.ino": {
+      "sha256": "bbf663e472ead58b20d0971bb93e627be999cb807d4f9fc7c1ca162478ac81a7",
+      "bytes": 762
+    },
+    "devices/atom-echos3r/arduino-docs/ir/migration.ino.bin": {
+      "sha256": "72ce8ecd47cd55f4487a525c10cd5fd62f5f18b3e0d631fa23db0e95c9a5ee5d",
+      "bytes": 596384
+    },
+    "devices/atom-echos3r/arduino-docs/ir/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atom-echos3r/arduino-docs/ir/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atom-echos3r/arduino-docs/ir/migration.ino.merged.bin": {
+      "sha256": "02d1f985575ea70680f2a763954c49dc485acb521e638f566e748e6434b4a7ee",
+      "bytes": 8388608
+    },
+    "devices/atom-echos3r/arduino-docs/ir/migration.ino.elf": {
+      "sha256": "73b94350e73672bb143a43b98cb90debe10e3b54e287d98a4423a3d3d319b991",
+      "bytes": 12617764
+    },
+    "devices/atom-echos3r/arduino-docs/ir/firmware.json": {
+      "sha256": "2b0bf2cd211f61229af133ec265b6cb899470452146986666318ff0a6fc29f62",
+      "bytes": 5738
+    },
+    "devices/atom-echos3r/arduino-docs/mic/sketch/mic/mic.ino": {
+      "sha256": "b921b8d5ea7cdd3dc930aa9c5d1cb1c0556c1f47180d97e402f6ab1ebd3222e9",
+      "bytes": 1920
+    },
+    "devices/atom-echos3r/arduino-docs/mic/migration.ino.bin": {
+      "sha256": "460ddaa0ca5187574056ffe6b59ed41eb9cb98ca733ec6fa4669499892520aef",
+      "bytes": 617520
+    },
+    "devices/atom-echos3r/arduino-docs/mic/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atom-echos3r/arduino-docs/mic/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atom-echos3r/arduino-docs/mic/migration.ino.merged.bin": {
+      "sha256": "9622fd3612f10c45fc9d68334ad572fc6dbbda62af422360c060f4ad4498c57c",
+      "bytes": 8388608
+    },
+    "devices/atom-echos3r/arduino-docs/mic/migration.ino.elf": {
+      "sha256": "7bbbe01e36e9d39a8c8be7d45533415caa289299faf7586e0bc1c78d5fc5a18a",
+      "bytes": 12731080
+    },
+    "devices/atom-echos3r/arduino-docs/mic/firmware.json": {
+      "sha256": "9876d4c03ba88be03ea95d12b56b1b4d31aa0ee75ce024ee6e3937ced8ff4e93",
+      "bytes": 7094
+    },
+    "devices/atom-echos3r/arduino-docs/program/sketch/program/program.ino": {
+      "sha256": "c04e6dfdd899a331d2e49a269d13e288a7315094c39b1a65e7f387447e3333c3",
+      "bytes": 209
+    },
+    "devices/atom-echos3r/arduino-docs/program/migration.ino.bin": {
+      "sha256": "da056af642c9321ad3050dd83dfb68c91d07e856a9062858751d83f5b7eaadcb",
+      "bytes": 610480
+    },
+    "devices/atom-echos3r/arduino-docs/program/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atom-echos3r/arduino-docs/program/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atom-echos3r/arduino-docs/program/migration.ino.merged.bin": {
+      "sha256": "ffb776358ee06b84862f3a70371479fcf776427fb2c6628748372780bf6c30ff",
+      "bytes": 8388608
+    },
+    "devices/atom-echos3r/arduino-docs/program/migration.ino.elf": {
+      "sha256": "2fddf8cf6f5b4a90f197c88e9a61d9a3614af1edd46a248193b3beced8dc43ac",
+      "bytes": 12672848
+    },
+    "devices/atom-echos3r/arduino-docs/program/firmware.json": {
+      "sha256": "7ca223db8a79ccbb7d5bce922306537d43e46211a107e1b3d23fb4e4d19d4f79",
+      "bytes": 5765
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/sketch/speaker/speaker.ino": {
+      "sha256": "31140c1a0062b4b92f4a04545833128434852ce3e1064040464c9bac64e24d31",
+      "bytes": 474
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/sketch/speaker/test_audio.h": {
+      "sha256": "d3e40caf2c3e8c199b92bd660f71f37066110a2daa61c5c471fa017a75e1fb11",
+      "bytes": 284667
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/migration.ino.bin": {
+      "sha256": "a43793171e8362aeec8e4366c557aca9c1816d84c60d22e68b0d8102bde9c44b",
+      "bytes": 656576
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/migration.ino.bootloader.bin": {
+      "sha256": "e9d6ccf43eef52d63abd2a8d5657548555d649dc704630da1808e9fcd1271100",
+      "bytes": 20112
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/migration.ino.partitions.bin": {
+      "sha256": "1d9cca96de0fe07ad7fc0648b9878ddecd9ce565e38b589ad20fea698ed4c80c",
+      "bytes": 3072
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/migration.ino.merged.bin": {
+      "sha256": "7a3d5e746b0857ae70ee11b2cd0bef592930a237a7b22951de93acc7af92ed80",
+      "bytes": 8388608
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/migration.ino.elf": {
+      "sha256": "e1a269bb538dbb2853b47d8f19bfae98261849c2fbb73bf0b13e609a4798ff7f",
+      "bytes": 12719264
+    },
+    "devices/atom-echos3r/arduino-docs/speaker/firmware.json": {
+      "sha256": "0fcdefd54e367a1f1fe95956687ec6a21b3bbb83b1d9fc78880e2c905f7f9a3c",
+      "bytes": 6137
     }
   },
   "local_files": {
@@ -6390,7 +6694,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 86,
+    "published_cases": 91,
     "storage": "git-lfs"
   }
 }
