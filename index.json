@@ -7785,6 +7785,416 @@
           "bash $SIM_TOOLS/run-s3b-docs.sh stopwatch $SIM $OUT"
         ]
       }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "button",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/button",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/button.md",
+        "section": "Example Program",
+        "code_first_line": 9
+      },
+      "sketch_sha256": "6897b9b197e0a09ca036b21f119ee8982622c438c7bd5d2bfd6abd5066d23a44",
+      "manifest": "devices/stamplc/arduino-docs/button/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "c45085189c9e8e70d6cdbe1fbbad73af50b1c9ff42dd2cd10a2a31f3079e2a9a",
+      "original_build": {
+        "firmware_sha256": "b72054c97509b1de31dfdaed1f72753fd5534fb69eb6b85714d3d1945f6b8112",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "buzzer",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/buzzer",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/buzzer.md",
+        "section": "Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "331eb004c478ddf9031185c894a44fc5db63f5d6028533137a95c7cbab75773c",
+      "manifest": "devices/stamplc/arduino-docs/buzzer/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "3d2faa07a66d2dae6a52a258cc592cbce3450f1382ddac475c88f24bfcf57e65",
+      "original_build": {
+        "firmware_sha256": "dba2154911e9261dee4a9b48aaf8d257e614ed31842afecd17fb61ad7d3c1946",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "can",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/can",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/can.md",
+        "section": "Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "7905b65c921c4b9d2207d7d0133dfdfd3f1bf043c40c30c081805cd543eaebf9",
+      "manifest": "devices/stamplc/arduino-docs/can/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "ed4744130eb0661d56bb907db61f5ac34872e40d2eae6fbc2eaf6391a714e1c7",
+      "original_build": {
+        "firmware_sha256": "0861254ddd2ec68e58e8049e146228602a6d309192e13a42b30879fe304d155d",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/display",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/display.md",
+        "section": "Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "73a87716b73067698ec9bebdf0fedd888a09cd47a38e340efc672cd299186e0b",
+      "manifest": "devices/stamplc/arduino-docs/display/firmware.json",
+      "lane": "native esp32sim",
+      "verdict": "DOCS-DEFECT",
+      "firmware_sha256": null,
+      "compile": {
+        "status": "FAIL",
+        "exit_code": 1,
+        "diagnostic": "error: invalid use of member function 'LGFX_Device& m5::M5_STAMPLC::Display()' (did you forget the '()' ?)"
+      },
+      "defect": {
+        "location": "static/en/arduino/m5stamplc/display.md:25",
+        "baseline": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration/docs-defects.md"
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "input_output-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/input_output",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/input_output.md",
+        "section": "Relay Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "80f9922cd92b07242b95d223a0d0f9f0e88861af25b8ec9e1abf2d53fda6fa09",
+      "manifest": "devices/stamplc/arduino-docs/input_output-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a2dfa56e0dbdbae2c23a121456e6742fcdf4050949d7b9b5aa47d6fc419011ac",
+      "original_build": {
+        "firmware_sha256": "d2d1ad1ca7acc2ecd096809970a30aea46af6a6a0d6cf35cb79f04449280d621",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "input_output-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/input_output",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/input_output.md",
+        "section": "Input Example Program",
+        "code_first_line": 113
+      },
+      "sketch_sha256": "b461abd13ce0ca9d3e01574fe6414ab500bdbda5ff2630c411836968cd7fdfa5",
+      "manifest": "devices/stamplc/arduino-docs/input_output-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "cfb1ccbca2e0dfcba8ed61351a41a88676b71dc51ffa0075ab9716028bd1f080",
+      "original_build": {
+        "firmware_sha256": "45ade951222d33db671e30e4d99bc6b051203c46446875427057ccb4e7ecede9",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "modbus-1",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/modbus",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/modbus.md",
+        "section": "StamPLC Modbus Slave",
+        "code_first_line": 9
+      },
+      "sketch_sha256": "48db50e462b3f95ed26de65aa760a6908d902fabf85f64adffbee397b53d5fce",
+      "manifest": "devices/stamplc/arduino-docs/modbus-1/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "cba15a78fe0f10ea9f347449318a8c28b321ae488115bf349d4799f4c6ebf894",
+      "original_build": {
+        "firmware_sha256": "587f4fb58d9ed3cfa7936f74f2ef6ffd1e6c9f08873fe0627a6b786bfa9b0e7e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "modbus-2",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/modbus",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/modbus.md",
+        "section": "Modbus Master",
+        "code_first_line": 67
+      },
+      "sketch_sha256": "5e008fec1f43c18dcdeb0d84da868332992e443327033f84bfa23499e11e2484",
+      "manifest": "devices/stamplc/arduino-docs/modbus-2/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "a8a42b027c2bd52b0f1460a298771179e6af271f407c1320fbec887149ce31bf",
+      "original_build": {
+        "firmware_sha256": "1b9f2e62d818d52987ee01f26747596fff5e4b7843b5c742e9b2d57af928aa24",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "rgb_led",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/rgb_led",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/rgb_led.md",
+        "section": "Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "8b2ec338a2ccf720687dcbf319dbdd0ac070f3e4f44bd982631758f433824569",
+      "manifest": "devices/stamplc/arduino-docs/rgb_led/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "83612801793207938a84d01e29c6d6fceadb04c3a53603db8db2433e79027fda",
+      "original_build": {
+        "firmware_sha256": "aec74bb14c42b1f5b5bc401143f57be82c17f5e05c81a35dcf7caf0474dbd060",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "rtc",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/rtc",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/rtc.md",
+        "section": "Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "57faaf05f62a906e585ca27c4631ab983725bb2ac5098279ffb1fc996ceb4fc0",
+      "manifest": "devices/stamplc/arduino-docs/rtc/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "5c6ba20b8cb9afa419c0c5920626a639f0fa65ff6918bc3aab3f0f82bb6faa96",
+      "original_build": {
+        "firmware_sha256": "ad3c6c5487d6f077961fad2df8ad46fc33492be15b4f84d3713bcfab1b04d4f8",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "sd_card",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/sd_card",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/sd_card.md",
+        "section": null,
+        "code_first_line": 5
+      },
+      "sketch_sha256": "ae08de065ca3756466b75e193d2f1e7feb7da9dfac3d73b7d28311adbac997f1",
+      "manifest": "devices/stamplc/arduino-docs/sd_card/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "81ea6de8c41d57aa27ae2a643d24e0a0f9c7160773dcfd051dddcd8ff1bce96d",
+      "original_build": {
+        "firmware_sha256": "2866f456591b315fa114ad0320a68a7407a41cbba2b1fa78ce1ecc61b080055c",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "sensor",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/sensor",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/sensor.md",
+        "section": "Example Program",
+        "code_first_line": 7
+      },
+      "sketch_sha256": "10e4b004c188ec4830701c930508eefbf222052c922a8f21e72bb64d1c041fd3",
+      "manifest": "devices/stamplc/arduino-docs/sensor/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "42bedc3ffc52178b7aeb2c055eae9657d6d822f8920130c7f8de6b84870fcbcb",
+      "original_build": {
+        "firmware_sha256": "0bf9f0c4a8f74f9b894b8c1dd14d2222061e006e79f37a8891da49ab72cef75e",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
+    },
+    {
+      "device_id": "stamplc",
+      "case": "quickstart-display",
+      "source": "arduino-docs",
+      "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/program",
+      "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+      "docs_location": {
+        "path_at_revision": "static/en/arduino/m5stamplc/program.md",
+        "section": "4. Program Compile & Upload",
+        "section_line": 27
+      },
+      "sketch_sha256": "7ac1120ce2e4fde4cb313b69af7a16053efd0351c6e632479496dca7db28789d",
+      "manifest": "devices/stamplc/arduino-docs/quickstart-display/firmware.json",
+      "lane": "native esp32sim",
+      "firmware_sha256": "9269a8cc7c2073328afda6ef1905d14828ad5bb6e718bc60b95eecb895a5b446",
+      "original_build": {
+        "firmware_sha256": "0d3fa0f3f6790ec230079d8a82f0e45844df29f3de98be347bb9d4be775a38a5",
+        "verdict": "PASS",
+        "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+      },
+      "verdict": "PASS",
+      "esp32sim": {
+        "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+        "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+        "boards": [
+          "m5stack-stamplc"
+        ],
+        "run_commands": [
+          "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+        ]
+      }
     }
   ],
   "public_files": {
@@ -14329,6 +14739,350 @@
     "devices/stopwatch/arduino-docs/quickstart-bargraph/firmware.json": {
       "sha256": "5e546ed4ce0272de131d0b6f12350f3b48e3bfa74f772cb6d0b1c1df70485189",
       "bytes": 5967
+    },
+    "devices/stamplc/arduino-docs/button/sketch/button/button.ino": {
+      "sha256": "6897b9b197e0a09ca036b21f119ee8982622c438c7bd5d2bfd6abd5066d23a44",
+      "bytes": 655
+    },
+    "devices/stamplc/arduino-docs/button/migration.ino.bin": {
+      "sha256": "83e4ffbdbbfaff26464ab8dc6667f9ffb839b95583e5b7df4f7388f3acb89c53",
+      "bytes": 546240
+    },
+    "devices/stamplc/arduino-docs/button/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/button/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/button/migration.ino.merged.bin": {
+      "sha256": "c45085189c9e8e70d6cdbe1fbbad73af50b1c9ff42dd2cd10a2a31f3079e2a9a",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/button/migration.ino.elf": {
+      "sha256": "00c910c69cc8b833c7294c661a86cb251d632adba8f47d036fcb48182f926307",
+      "bytes": 12095936
+    },
+    "devices/stamplc/arduino-docs/button/firmware.json": {
+      "sha256": "987e69e9700d40775d7accb8e2ea29f06136d05c4b8b7592f58352fc67486ea0",
+      "bytes": 6066
+    },
+    "devices/stamplc/arduino-docs/buzzer/sketch/buzzer/buzzer.ino": {
+      "sha256": "331eb004c478ddf9031185c894a44fc5db63f5d6028533137a95c7cbab75773c",
+      "bytes": 484
+    },
+    "devices/stamplc/arduino-docs/buzzer/migration.ino.bin": {
+      "sha256": "3a450492c77a75343df29bfbb4c73614570c53330ac329c8c1f700ad07e78c30",
+      "bytes": 628992
+    },
+    "devices/stamplc/arduino-docs/buzzer/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/buzzer/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/buzzer/migration.ino.merged.bin": {
+      "sha256": "3d2faa07a66d2dae6a52a258cc592cbce3450f1382ddac475c88f24bfcf57e65",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/buzzer/migration.ino.elf": {
+      "sha256": "be631bd78ac843c342b3e4e1f8cb0e569f4bb4774f16887bc36bae6184145060",
+      "bytes": 13439612
+    },
+    "devices/stamplc/arduino-docs/buzzer/firmware.json": {
+      "sha256": "0e1deda7817e4fa5c59b8f77ed1e2c9d1047d9ec1e65a08b824cebbd433374c3",
+      "bytes": 6318
+    },
+    "devices/stamplc/arduino-docs/can/sketch/can/can.ino": {
+      "sha256": "7905b65c921c4b9d2207d7d0133dfdfd3f1bf043c40c30c081805cd543eaebf9",
+      "bytes": 1637
+    },
+    "devices/stamplc/arduino-docs/can/migration.ino.bin": {
+      "sha256": "34739c0f63785dd42b70e51957c9942842e3bbb27eb23dd816cdf8a65367939d",
+      "bytes": 629792
+    },
+    "devices/stamplc/arduino-docs/can/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/can/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/can/migration.ino.merged.bin": {
+      "sha256": "ed4744130eb0661d56bb907db61f5ac34872e40d2eae6fbc2eaf6391a714e1c7",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/can/migration.ino.elf": {
+      "sha256": "8daf6ba538706ee98761a9cb46cd720965a9cc5338aa601ecfe0059068938730",
+      "bytes": 13453676
+    },
+    "devices/stamplc/arduino-docs/can/firmware.json": {
+      "sha256": "6a097454c7547b7874067ee099bba909d22e1d4925c970bdfe5a666805d15a89",
+      "bytes": 5678
+    },
+    "devices/stamplc/arduino-docs/display/sketch/display/display.ino": {
+      "sha256": "73a87716b73067698ec9bebdf0fedd888a09cd47a38e340efc672cd299186e0b",
+      "bytes": 1764
+    },
+    "devices/stamplc/arduino-docs/display/firmware.json": {
+      "sha256": "f243ebc5ade3a3f04beecbe20a9d01f8c500fd88be9c60a3dca8909204ab1470",
+      "bytes": 1659
+    },
+    "devices/stamplc/arduino-docs/input_output-1/sketch/input_output_1/input_output_1.ino": {
+      "sha256": "80f9922cd92b07242b95d223a0d0f9f0e88861af25b8ec9e1abf2d53fda6fa09",
+      "bytes": 524
+    },
+    "devices/stamplc/arduino-docs/input_output-1/migration.ino.bin": {
+      "sha256": "1ab41324b6ae0305e2d2fddb3916126d451d421a9c3c77a680d29e2e9e9a1807",
+      "bytes": 628288
+    },
+    "devices/stamplc/arduino-docs/input_output-1/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/input_output-1/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/input_output-1/migration.ino.merged.bin": {
+      "sha256": "a2dfa56e0dbdbae2c23a121456e6742fcdf4050949d7b9b5aa47d6fc419011ac",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/input_output-1/migration.ino.elf": {
+      "sha256": "66584764de7ad7916e3b8cce85c6d302e92badfe25e3c741a4a99b7902eb827c",
+      "bytes": 13439620
+    },
+    "devices/stamplc/arduino-docs/input_output-1/firmware.json": {
+      "sha256": "cc11008bd58d6c32c2a4c49bcd5b521464ad5dfba0703c4a9e7a4f8cdd552ffa",
+      "bytes": 5748
+    },
+    "devices/stamplc/arduino-docs/input_output-2/sketch/input_output_2/input_output_2.ino": {
+      "sha256": "b461abd13ce0ca9d3e01574fe6414ab500bdbda5ff2630c411836968cd7fdfa5",
+      "bytes": 618
+    },
+    "devices/stamplc/arduino-docs/input_output-2/migration.ino.bin": {
+      "sha256": "79a2f5794d7f19295024098aa1669468c63406b2638a3060f133e967b25ea9c9",
+      "bytes": 628240
+    },
+    "devices/stamplc/arduino-docs/input_output-2/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/input_output-2/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/input_output-2/migration.ino.merged.bin": {
+      "sha256": "cfb1ccbca2e0dfcba8ed61351a41a88676b71dc51ffa0075ab9716028bd1f080",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/input_output-2/migration.ino.elf": {
+      "sha256": "c46ecf577b5d665e8b3553b155bbb98cf1e4858ad4e35e9fa65cb7f080629e73",
+      "bytes": 13441440
+    },
+    "devices/stamplc/arduino-docs/input_output-2/firmware.json": {
+      "sha256": "34e2567d4347bac5e2762b8663783872711d752126f70af522e3366d9bea84b1",
+      "bytes": 6122
+    },
+    "devices/stamplc/arduino-docs/modbus-1/sketch/modbus_1/modbus_1.ino": {
+      "sha256": "48db50e462b3f95ed26de65aa760a6908d902fabf85f64adffbee397b53d5fce",
+      "bytes": 1320
+    },
+    "devices/stamplc/arduino-docs/modbus-1/migration.ino.bin": {
+      "sha256": "c5b90152068a4a2fe7f71a3115fb3ba4e7386cfc28f76dd10850b5f13bd774fd",
+      "bytes": 628192
+    },
+    "devices/stamplc/arduino-docs/modbus-1/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/modbus-1/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/modbus-1/migration.ino.merged.bin": {
+      "sha256": "cba15a78fe0f10ea9f347449318a8c28b321ae488115bf349d4799f4c6ebf894",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/modbus-1/migration.ino.elf": {
+      "sha256": "f0025bf83faa4f2bf7e7811698aecf3bb94e0b501e7c37c1f4ed47f577cd239b",
+      "bytes": 13439612
+    },
+    "devices/stamplc/arduino-docs/modbus-1/firmware.json": {
+      "sha256": "a79c9ba51519288e9ddcef75f4e71dba1523ce2f1e412b0ff759e56c96a0270b",
+      "bytes": 6082
+    },
+    "devices/stamplc/arduino-docs/modbus-2/sketch/modbus_2/modbus_2.ino": {
+      "sha256": "5e008fec1f43c18dcdeb0d84da868332992e443327033f84bfa23499e11e2484",
+      "bytes": 4720
+    },
+    "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.bin": {
+      "sha256": "6f81c2dfd55645cdf19a87a4b730e4d2e213053e1a055eb3085502a9fe5dd677",
+      "bytes": 319440
+    },
+    "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.merged.bin": {
+      "sha256": "a8a42b027c2bd52b0f1460a298771179e6af271f407c1320fbec887149ce31bf",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.elf": {
+      "sha256": "a72ab20a7b7ea57dd72efe698b8ea7e4782e3e8f6b9a88fe852e5fc8934676f5",
+      "bytes": 6578668
+    },
+    "devices/stamplc/arduino-docs/modbus-2/firmware.json": {
+      "sha256": "e179d2da025db3f609f4d5038336f56e6b6245d768bfc3d3958329f12c7f90d0",
+      "bytes": 6101
+    },
+    "devices/stamplc/arduino-docs/rgb_led/sketch/rgb_led/rgb_led.ino": {
+      "sha256": "8b2ec338a2ccf720687dcbf319dbdd0ac070f3e4f44bd982631758f433824569",
+      "bytes": 898
+    },
+    "devices/stamplc/arduino-docs/rgb_led/migration.ino.bin": {
+      "sha256": "ce47ce43cfd96a060fd2b8d909e39aec011ee693fd57da55d50f86b6f0b8bec2",
+      "bytes": 628576
+    },
+    "devices/stamplc/arduino-docs/rgb_led/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/rgb_led/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/rgb_led/migration.ino.merged.bin": {
+      "sha256": "83612801793207938a84d01e29c6d6fceadb04c3a53603db8db2433e79027fda",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/rgb_led/migration.ino.elf": {
+      "sha256": "3f6a3906214f79f673dd11b024ce473c86a71ea82d0b1a375f134aaeb95610be",
+      "bytes": 13439936
+    },
+    "devices/stamplc/arduino-docs/rgb_led/firmware.json": {
+      "sha256": "936f5fbacb1cb1bfe22c28c991f826e5c5978c0e486579d97fd4843a4cbef428",
+      "bytes": 5670
+    },
+    "devices/stamplc/arduino-docs/rtc/sketch/rtc/rtc.ino": {
+      "sha256": "57faaf05f62a906e585ca27c4631ab983725bb2ac5098279ffb1fc996ceb4fc0",
+      "bytes": 724
+    },
+    "devices/stamplc/arduino-docs/rtc/migration.ino.bin": {
+      "sha256": "409e58266fb3f942d6554ff3d11ed74ab1c6861346d6cdce5a1af85356391e50",
+      "bytes": 628960
+    },
+    "devices/stamplc/arduino-docs/rtc/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/rtc/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/rtc/migration.ino.merged.bin": {
+      "sha256": "5c6ba20b8cb9afa419c0c5920626a639f0fa65ff6918bc3aab3f0f82bb6faa96",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/rtc/migration.ino.elf": {
+      "sha256": "6751ba722dc2cf56dcaa3cd3a7b088e5b2b2bd818cd5638523279efc8aa2505f",
+      "bytes": 13439684
+    },
+    "devices/stamplc/arduino-docs/rtc/firmware.json": {
+      "sha256": "c96ed482b233ce8f748a1d5f275f04f34dc03b592b59f3c03ecdd780384e5c80",
+      "bytes": 5658
+    },
+    "devices/stamplc/arduino-docs/sd_card/sketch/sd_card/sd_card.ino": {
+      "sha256": "ae08de065ca3756466b75e193d2f1e7feb7da9dfac3d73b7d28311adbac997f1",
+      "bytes": 1028
+    },
+    "devices/stamplc/arduino-docs/sd_card/migration.ino.bin": {
+      "sha256": "35f256a04a6f17f8bc62ce94bfe4b89755dd67dc4b452a26e8547537f544b1cd",
+      "bytes": 629824
+    },
+    "devices/stamplc/arduino-docs/sd_card/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/sd_card/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/sd_card/migration.ino.merged.bin": {
+      "sha256": "81ea6de8c41d57aa27ae2a643d24e0a0f9c7160773dcfd051dddcd8ff1bce96d",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/sd_card/migration.ino.elf": {
+      "sha256": "3282926e0db5a4c64682034922703f0baa84a6b04284d4af57e973cbe9dc9043",
+      "bytes": 13481616
+    },
+    "devices/stamplc/arduino-docs/sd_card/firmware.json": {
+      "sha256": "66c45d3e1f571c098f7b8ef06ed6b08852591b57293664a179305a3078cd2f15",
+      "bytes": 5998
+    },
+    "devices/stamplc/arduino-docs/sensor/sketch/sensor/sensor.ino": {
+      "sha256": "10e4b004c188ec4830701c930508eefbf222052c922a8f21e72bb64d1c041fd3",
+      "bytes": 476
+    },
+    "devices/stamplc/arduino-docs/sensor/migration.ino.bin": {
+      "sha256": "fa8e783987d3f629a2a63149d34b75419faa796c0e3b746b0c3b1745b6045ac3",
+      "bytes": 628304
+    },
+    "devices/stamplc/arduino-docs/sensor/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/sensor/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/sensor/migration.ino.merged.bin": {
+      "sha256": "42bedc3ffc52178b7aeb2c055eae9657d6d822f8920130c7f8de6b84870fcbcb",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/sensor/migration.ino.elf": {
+      "sha256": "616ec4b87cd9cc0e71bf61e6bad1ce9ad67b2b4c27675ff6713ad8ca0a2fc218",
+      "bytes": 13439504
+    },
+    "devices/stamplc/arduino-docs/sensor/firmware.json": {
+      "sha256": "b7f1972f456eadb8f7327aee1ff085058904b84d54b4bb9d91ac46a0c2a8359b",
+      "bytes": 6017
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino": {
+      "sha256": "7ac1120ce2e4fde4cb313b69af7a16053efd0351c6e632479496dca7db28789d",
+      "bytes": 1728
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/migration.ino.bin": {
+      "sha256": "18c62f22cc7ba0bc8b22b788b15e5e966842ee24921f844cf38a92665dfe99dd",
+      "bytes": 630576
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/migration.ino.bootloader.bin": {
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/migration.ino.partitions.bin": {
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/migration.ino.merged.bin": {
+      "sha256": "9269a8cc7c2073328afda6ef1905d14828ad5bb6e718bc60b95eecb895a5b446",
+      "bytes": 4194304
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/migration.ino.elf": {
+      "sha256": "b0814bd5e733dbf4b7df5703ca92e37d4bd6e8360a5ab54f3e8146095452a378",
+      "bytes": 13475796
+    },
+    "devices/stamplc/arduino-docs/quickstart-display/firmware.json": {
+      "sha256": "8caefa3d9ed5140fd821a886b0652fc21f3217d0e70ee47392a1cbb5779ccdc9",
+      "bytes": 5943
     }
   },
   "local_files": {
@@ -14904,7 +15658,7 @@
   "arduino_rebuild": {
     "recipe": "build-records/rebuild-2026-11-26.md",
     "validation_summary": "evidence/arduino-path-clean-summary.json",
-    "published_cases": 211,
+    "published_cases": 223,
     "storage": "git-lfs"
   },
   "arduino_docs_index": {

@@ -1,0 +1,148 @@
+{
+  "device_id": "stamplc",
+  "case": "button",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/button",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stamplc/button.md",
+    "section": "Example Program",
+    "code_first_line": 9
+  },
+  "sketch_sha256": "6897b9b197e0a09ca036b21f119ee8982622c438c7bd5d2bfd6abd5066d23a44",
+  "expected_behavior": "StamPLC Button. Press and release each documented key and observe the corresponding event or screen change.",
+  "sketch_files": {
+    "button.ino": {
+      "path": "devices/stamplc/arduino-docs/button/sketch/button/button.ino",
+      "storage": "public",
+      "sha256": "6897b9b197e0a09ca036b21f119ee8982622c438c7bd5d2bfd6abd5066d23a44",
+      "bytes": 655
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stamplc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stamplc/arduino-docs/button/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "83e4ffbdbbfaff26464ab8dc6667f9ffb839b95583e5b7df4f7388f3acb89c53",
+      "bytes": 546240
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stamplc/arduino-docs/button/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stamplc/arduino-docs/button/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stamplc/arduino-docs/button/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "c45085189c9e8e70d6cdbe1fbbad73af50b1c9ff42dd2cd10a2a31f3079e2a9a",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stamplc/arduino-docs/button/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "00c910c69cc8b833c7294c661a86cb251d632adba8f47d036fcb48182f926307",
+      "bytes": 12095936
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "b72054c97509b1de31dfdaed1f72753fd5534fb69eb6b85714d3d1945f6b8112",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "c45085189c9e8e70d6cdbe1fbbad73af50b1c9ff42dd2cd10a2a31f3079e2a9a",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stamplc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stamplc",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "guest rendered all three button labels compared with the untouched screen",
+          "expected": "StamPLC Button. Press and release each documented key and observe the corresponding event or screen change."
+        },
+        "capture_comparison": {
+          "button-control.png": {
+            "original": {
+              "png_sha256": "fb2e8575e237e4d42e01f03efa52e8cd9370cfe8c1c319e564497c167d1fa9fb"
+            },
+            "rebuilt": {
+              "png_sha256": "fb2e8575e237e4d42e01f03efa52e8cd9370cfe8c1c319e564497c167d1fa9fb"
+            },
+            "byte_identical": true
+          },
+          "button.png": {
+            "original": {
+              "png_sha256": "4c94436d4e9ded99cf5e8822ce9ee2f41bae59709ec7dd164dac3ff0af7eca5a"
+            },
+            "rebuilt": {
+              "png_sha256": "4c94436d4e9ded99cf5e8822ce9ee2f41bae59709ec7dd164dac3ff0af7eca5a"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (290 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (156 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (825 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1968 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

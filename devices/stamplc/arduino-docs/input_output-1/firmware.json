@@ -1,0 +1,139 @@
+{
+  "device_id": "stamplc",
+  "case": "input_output-1",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/input_output",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stamplc/input_output.md",
+    "section": "Relay Example Program",
+    "code_first_line": 7
+  },
+  "sketch_sha256": "80f9922cd92b07242b95d223a0d0f9f0e88861af25b8ec9e1abf2d53fda6fa09",
+  "expected_behavior": "StamPLC Input & Output. Change input pins and verify readback plus relay output state.",
+  "sketch_files": {
+    "input_output_1.ino": {
+      "path": "devices/stamplc/arduino-docs/input_output-1/sketch/input_output_1/input_output_1.ino",
+      "storage": "public",
+      "sha256": "80f9922cd92b07242b95d223a0d0f9f0e88861af25b8ec9e1abf2d53fda6fa09",
+      "bytes": 524
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stamplc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stamplc/arduino-docs/input_output-1/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "1ab41324b6ae0305e2d2fddb3916126d451d421a9c3c77a680d29e2e9e9a1807",
+      "bytes": 628288
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stamplc/arduino-docs/input_output-1/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stamplc/arduino-docs/input_output-1/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stamplc/arduino-docs/input_output-1/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "a2dfa56e0dbdbae2c23a121456e6742fcdf4050949d7b9b5aa47d6fc419011ac",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stamplc/arduino-docs/input_output-1/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "66584764de7ad7916e3b8cce85c6d302e92badfe25e3c741a4a99b7902eb827c",
+      "bytes": 13439620
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "d2d1ad1ca7acc2ecd096809970a30aea46af6a6a0d6cf35cb79f04449280d621",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "a2dfa56e0dbdbae2c23a121456e6742fcdf4050949d7b9b5aa47d6fc419011ac",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stamplc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stamplc",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "guest toggled all four modeled relay outputs",
+          "expected": "StamPLC Input & Output. Change input pins and verify readback plus relay output state."
+        },
+        "capture_comparison": {
+          "input_output-1.png": {
+            "original": {
+              "png_sha256": "fdeea095fb81bf634fe7e4d875b2a8d06dca2d547eca77ce5699dc43e13bd923"
+            },
+            "rebuilt": {
+              "png_sha256": "fdeea095fb81bf634fe7e4d875b2a8d06dca2d547eca77ce5699dc43e13bd923"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (308 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (171 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (885 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2162 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}

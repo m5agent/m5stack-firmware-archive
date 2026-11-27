@@ -1,0 +1,151 @@
+{
+  "device_id": "stamplc",
+  "case": "modbus-2",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/modbus",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stamplc/modbus.md",
+    "section": "Modbus Master",
+    "code_first_line": 67
+  },
+  "sketch_sha256": "5e008fec1f43c18dcdeb0d84da868332992e443327033f84bfa23499e11e2484",
+  "expected_behavior": "StamPLC Modbus Slave. Run the documented register transaction over RS485 and check direction/response.",
+  "sketch_files": {
+    "modbus_2.ino": {
+      "path": "devices/stamplc/arduino-docs/modbus-2/sketch/modbus_2/modbus_2.ino",
+      "storage": "public",
+      "sha256": "5e008fec1f43c18dcdeb0d84da868332992e443327033f84bfa23499e11e2484",
+      "bytes": 4720
+    }
+  },
+  "source_type": "inline",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stamplc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5",
+    "library_overrides": {
+      "ArduinoRS485": {
+        "version": "1.0.2",
+        "commit": "2dd70d2c3fc16626c38c1598244daab2ba508d35",
+        "url": "https://github.com/m5stack/ArduinoRS485"
+      },
+      "ArduinoModbus": {
+        "version": "1.0.6",
+        "commit": "f903d0acb782fee791f70f21ab96d1fc9e580d34",
+        "url": "https://github.com/m5stack/ArduinoModbus"
+      }
+    }
+  },
+  "files": {
+    "modbus_2.ino.bin": {
+      "path": "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "6f81c2dfd55645cdf19a87a4b730e4d2e213053e1a055eb3085502a9fe5dd677",
+      "bytes": 319440
+    },
+    "modbus_2.ino.bootloader.bin": {
+      "path": "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "modbus_2.ino.partitions.bin": {
+      "path": "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "modbus_2.ino.merged.bin": {
+      "path": "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "a8a42b027c2bd52b0f1460a298771179e6af271f407c1320fbec887149ce31bf",
+      "bytes": 4194304
+    },
+    "modbus_2.ino.elf": {
+      "path": "devices/stamplc/arduino-docs/modbus-2/modbus_2.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "a72ab20a7b7ea57dd72efe698b8ea7e4782e3e8f6b9a88fe852e5fc8934676f5",
+      "bytes": 6578668
+    }
+  },
+  "merged_image": "modbus_2.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "modbus_2.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "modbus_2.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "modbus_2.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "1b9f2e62d818d52987ee01f26747596fff5e4b7843b5c742e9b2d57af928aa24",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "a8a42b027c2bd52b0f1460a298771179e6af271f407c1320fbec887149ce31bf",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stamplc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stamplc",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "guest slave-peer exchange on RS485 including coils and input registers",
+          "expected": "StamPLC Modbus Slave. Run the documented register transaction over RS485 and check direction/response."
+        },
+        "capture_comparison": {
+          "modbus-2.png": {
+            "original": {
+              "png_sha256": "fdeea095fb81bf634fe7e4d875b2a8d06dca2d547eca77ce5699dc43e13bd923"
+            },
+            "rebuilt": {
+              "png_sha256": "fdeea095fb81bf634fe7e4d875b2a8d06dca2d547eca77ce5699dc43e13bd923"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (248 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (126 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (740 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (1684 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "modbus_2"
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,142 @@
+{
+  "device_id": "stamplc",
+  "case": "quickstart-display",
+  "source": "arduino-docs",
+  "docs_url": "https://docs.m5stack.com/en/arduino/m5stamplc/program",
+  "docs_revision": "7219cc9286c39b463da84053deee40bc234625db",
+  "docs_location": {
+    "path_at_revision": "static/en/arduino/m5stamplc/program.md",
+    "section": "4. Program Compile & Upload",
+    "section_line": 27
+  },
+  "sketch_sha256": "7ac1120ce2e4fde4cb313b69af7a16053efd0351c6e632479496dca7db28789d",
+  "expected_behavior": "Observe the library display demo drawing on the board framebuffer.",
+  "sketch_files": {
+    "quickstart_display.ino": {
+      "path": "devices/stamplc/arduino-docs/quickstart-display/sketch/quickstart_display/quickstart_display.ino",
+      "storage": "public",
+      "sha256": "7ac1120ce2e4fde4cb313b69af7a16053efd0351c6e632479496dca7db28789d",
+      "bytes": 1728
+    }
+  },
+  "source_type": "library",
+  "rebuild_recipe": "build-records/rebuild-2026-11-27-matrix.md",
+  "toolchain": {
+    "fqbn": "m5stack:esp32:m5stack_stamplc",
+    "arduino_cli": "1.3.1",
+    "board_package": "m5stack:esp32@3.2.5"
+  },
+  "library": "M5StamPLC",
+  "library_example": "examples/Basic/Display/Display.ino",
+  "library_source_sha256": "65591bc7b76d290ea25a7148711ea24ab45ca4009a36c123c0f17e8a5dbf2d4b",
+  "files": {
+    "migration.ino.bin": {
+      "path": "devices/stamplc/arduino-docs/quickstart-display/migration.ino.bin",
+      "storage": "git-lfs",
+      "sha256": "18c62f22cc7ba0bc8b22b788b15e5e966842ee24921f844cf38a92665dfe99dd",
+      "bytes": 630576
+    },
+    "migration.ino.bootloader.bin": {
+      "path": "devices/stamplc/arduino-docs/quickstart-display/migration.ino.bootloader.bin",
+      "storage": "git-lfs",
+      "sha256": "71242cb75e7388e23b901146ba56790eb8ab9b0667e1cbc3c28e6770fe60296f",
+      "bytes": 20112
+    },
+    "migration.ino.partitions.bin": {
+      "path": "devices/stamplc/arduino-docs/quickstart-display/migration.ino.partitions.bin",
+      "storage": "git-lfs",
+      "sha256": "148b959cbff1c38aa8e1d5c0ba9d612c54997b945e56a63f41223eef650653a1",
+      "bytes": 3072
+    },
+    "migration.ino.merged.bin": {
+      "path": "devices/stamplc/arduino-docs/quickstart-display/migration.ino.merged.bin",
+      "storage": "git-lfs",
+      "sha256": "9269a8cc7c2073328afda6ef1905d14828ad5bb6e718bc60b95eecb895a5b446",
+      "bytes": 4194304
+    },
+    "migration.ino.elf": {
+      "path": "devices/stamplc/arduino-docs/quickstart-display/migration.ino.elf",
+      "storage": "git-lfs",
+      "sha256": "b0814bd5e733dbf4b7df5703ca92e37d4bd6e8360a5ab54f3e8146095452a378",
+      "bytes": 13475796
+    }
+  },
+  "merged_image": "migration.ino.merged.bin",
+  "flash_layout": {
+    "merged_offset": "0x0",
+    "segments": {
+      "app": {
+        "file": "migration.ino.bin",
+        "offset": "0x10000"
+      },
+      "bootloader": {
+        "file": "migration.ino.bootloader.bin",
+        "offset": "0x0"
+      },
+      "partitions": {
+        "file": "migration.ino.partitions.bin",
+        "offset": "0x8000"
+      }
+    }
+  },
+  "original_build": {
+    "firmware_sha256": "0d3fa0f3f6790ec230079d8a82f0e45844df29f3de98be347bb9d4be775a38a5",
+    "verdict": "PASS",
+    "evidence": "https://github.com/m5agent/agent-work-logs/tree/6806ff46edbe0a5d3c7a28059ca1e6b0adbd6d2e/records/esp32sim/2026-11-27-lx6b-integration"
+  },
+  "validation": {
+    "verdict": "PASS",
+    "original_verdict": "PASS",
+    "match": true,
+    "lane": "native virtual-device validation",
+    "firmware_sha256": "9269a8cc7c2073328afda6ef1905d14828ad5bb6e718bc60b95eecb895a5b446",
+    "esp32sim": {
+      "source_commit": "4e257b6be8ee0ed706c2e509d8f31ef7472a424b",
+      "runtime_sha256": "fee493b91fa122fa511d55636ab7289581b1c14adefd7ae7ac06e9631f3fdd26",
+      "boards": [
+        "m5stack-stamplc"
+      ],
+      "run_commands": [
+        "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4"
+      ]
+    },
+    "runs": [
+      {
+        "board": "m5stack-stamplc",
+        "run_command": "python3 $SIM_SRC/tools/run-s3c-docs.py stamplc $SIM $OUT --firmware $FIRMWARE_DIR/stamplc --inventory $FIXTURES_DIR/agent-plan/arduino-inventory.json --commit 4e257b6be8ee0ed706c2e509d8f31ef7472a424b --stock $FIXTURES_DIR/agent-s3c/downloads/stamplc-uiflow253.bin --sd-seed $FIXTURES_DIR/agent-sd/seed.img --timeout 360 --jobs 4",
+        "check_command": null,
+        "environment": {
+          "ESP32SIM_ROM_DIR": "$ROM_DIR"
+        },
+        "verdict": "PASS",
+        "original_verdict": "PASS",
+        "checker": {
+          "status": "PASS",
+          "reason": "multicolor drawing over ST7789 SPI within the 240×135 crop",
+          "expected": "Observe the library display demo drawing on the board framebuffer."
+        },
+        "capture_comparison": {
+          "quickstart-display.png": {
+            "original": {
+              "png_sha256": "ef27d9908dcba2c5b71d1672de42db8445be69665c2b2584a982d55e784d8ac2"
+            },
+            "rebuilt": {
+              "png_sha256": "ef27d9908dcba2c5b71d1672de42db8445be69665c2b2584a982d55e784d8ac2"
+            },
+            "byte_identical": true
+          }
+        }
+      }
+    ]
+  },
+  "reproducibility": {
+    "double_build": "BYTE-IDENTICAL",
+    "scan": {
+      "status": "PASS",
+      "stdout": "Scanned 5 files with strings -a. Private path or identity matches: 0.\nEspressif prefix /IDF/components/ (308 strings)\nEspressif prefix /builds/idf/crosstool-NG/ (171 strings)\nEspressif prefix /home/runner/.espressif/tools/xtensa-esp-elf/ (885 strings)\nEspressif prefix /home/runner/work/esp32-arduino-lib-builder/ (2162 strings)\n",
+      "stderr": ""
+    },
+    "build_sketch_name": "migration"
+  },
+  "verdict": "PASS"
+}
